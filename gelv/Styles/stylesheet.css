@@ -1,0 +1,535 @@
+/*
+CSS 常用的字體名稱︰
+
+Mac OS：
+華文細黑：STHeiti Light [STXihei]
+華文黑體：STHeiti
+華文楷體：STKaiti
+華文宋體：STSong
+華文仿宋：STFangsong
+儷黑 Pro：LiHei Pro Medium
+儷宋 Pro：LiSong Pro Light
+標楷體：BiauKai
+蘋果儷中黑：Apple LiGothic Medium
+蘋果儷細宋：Apple LiSung Light
+
+Windows：
+新細明體：PMingLiU
+細明體：MingLiU
+標楷體：DFKai-SB
+黑體：SimHei
+宋體：SimSun
+新宋體：NSimSun
+仿宋：FangSong
+楷體：KaiTi
+仿宋_GB2312：FangSong_GB2312
+楷體_GB2312：KaiTi_GB2312
+微軟正黑體：Microsoft JhengHei
+微軟雅黑體：Microsoft YaHei
+
+Office：
+隸書：LiSu
+幼圓：YouYuan
+華文細黑：STXihei
+華文楷體：STKaiti
+華文宋體：STSong
+華文中宋：STZhongsong
+華文仿宋：STFangsong
+方正舒體：FZShuTi
+方正姚體：FZYaoti
+華文彩雲：STCaiyun
+華文琥珀：STHupo
+華文隸書：STLiti
+華文行楷：STXingkai
+華文新魏：STXinwei
+*/
+.bold {
+  font-weight: bold;
+}
+body.bjt {
+  background-image: url(../Images/title.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*
+通用
+*/
+a {
+  text-decoration: none;
+}
+.author, .jiao, .note {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+}
+.futi, .zong {
+  font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+}
+.pgbr {
+  page-break-before: always;
+}
+
+/*
+标题
+*/
+h1 {
+  font-family: "方正小标宋_GBK", "Microsoft YaHei", "Hiragino Sans GB", STHeiti, "华文黑体", "DK-XIAOBIAOSONG";
+  font-size: 1.65em;
+  line-height: 2em;
+  margin-top: 35%;
+  text-align: center;
+}
+h2 {
+  font-family: "DK-FANGSONG", "Microsoft YaHei", "Hiragino Sans GB", STHeiti, "华文黑体", "仿宋", "fs", "fangsong", sans-serif;
+  font-size: 1.3em;
+  margin: 1.5em 0 2em 0;
+  text-align: center;
+}
+h2.h2:nth-of-type(2) {
+	page-break-before: always;
+}
+h3 {
+  font-family: "DK-HEITI", "ht", "黑体", "zw", sans-serif;
+  font-size: 1.15em;
+  font-weight: normal;
+  margin: 2.75em 0 1.5em 0;
+  page-break-before: auto;
+  text-align: center;
+}
+h3:nth-of-type(n+2) {
+  page-break-before: always;
+}
+h3.toc {
+  margin-top: 1em;
+}
+h4 {
+  font-family: "DK-KAITI", "kt", "楷体", "zw", serif;
+  font-size: 1.05em;
+  margin: 1em 0;
+  page-break-before: avoid;
+  text-align: left;
+}
+h4.section {
+  border: 0;
+  display: block;
+  font-family: "DK-HEITI", "ht", "黑体", "zw", sans-serif;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 1em 0em; padding: 0;
+  text-indent: 2em;
+}
+
+img.note {
+  height: 0.75em; width: 0.75em;
+}
+img.page {
+  height:100%; width: 100%;
+  text-align: center;
+}
+
+/*
+文本
+*/
+li a {
+  font-family: "DK-FANGSONG", "仿宋", "STFangsong", "fs", "fangsong", "Microsoft YaHei", "Hiragino Sans GB", STHeiti, "华文黑体", sans-serif;
+}
+p {
+  font-size: 12pt;
+  line-height: 1.35em;
+  text-indent: 2em;
+}
+p.section {
+  border: 0;
+  display: block;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 1em 0em; padding: 0;
+  text-indent: 2em;
+}
+p.yinwen {
+  border-left: 0.15em dotted;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0 0 0.5em 0;
+  padding: 0 0 0.5em 1.85em;
+  text-indent: 0;
+}
+p.yinwen2 {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-size: 1em;
+  line-height: 1.35em;
+  margin: 1em 0 1em 3em;
+  margin: 0.5em 0 1.5em 4em;
+  text-indent: 0;
+}
+p.yintou {
+  duokan-text-indent: 0;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  margin: 1em 0;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+  text-indent: 0;
+}
+p.pz {
+  font-family: "DK-FANGSONG", "FangSong", "STFangSong", "仿宋", "fs", "fangsong", NSimSun, SimSun, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0 0 3em 2em;
+  text-align: left;
+  duokan-text-indent: 0;
+  text-indent: 0;
+}
+span.bold {
+  font-weight: bold;
+}
+span.circle {
+  border-style: dotted;
+  border-color: darkred;
+  border-width: 1px;
+  border-radius: 0.5em;
+  font-size: 1em;
+  height: 1em;
+  width: 1em;
+}
+span.padding {
+  padding-right: 2px;
+}
+span.zhan-ping {
+  background-color: lightcyan;
+}
+span.zhan-ze {
+  background-color: lightyellow;
+}
+span.zuo-zhe {
+	color: darkslategray;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+	font-weight: normal;
+	font-size: 0.85em;
+	padding: 0em .5em;
+}
+span.zhu {
+	color: darkblue;
+}
+ul {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
+/*
+诗词
+*/
+div.center {
+  /*
+  border: 1px dotted lightgray;
+  */
+  line-height: 1em;
+  margin: 0; padding: 0;
+  page-break-before: auto;
+  page-break-inside: avoid;
+  text-align: center;
+}
+sup.yun {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+}
+p.poetry {
+  border-bottom: 0;
+  border-top: 0;
+  display: block;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-size: 1.125em;
+  line-height: 1.35;
+  margin: 0.5em 0em 0.5em 2em;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: left;
+  text-indent: 2em;
+}
+p.shitou {
+  font-family: "DK-FANGSONG", "仿宋", "fs", "fangsong", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1.5em 1em 1em 0;
+  page-break-before: auto;
+  text-align: center;
+  text-indent: 0;
+}
+p.shiming {
+  font-size: 0.8em;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  margin: 0 1em 0 0;
+  padding: 0;
+  text-align: center;
+  text-indent: 0;
+}
+p.shiju {
+  display: inline-block;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  line-height: 1.75em;
+  padding: 0;
+  font-size: 1.1em;
+  text-align: left;
+  text-indent: 0;
+}
+.shizhu {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-size: 0.8em;
+  line-height: 1.25em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  text-indent: 0;
+}
+
+/*
+注解
+*/
+h4.footnote {
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+  font-size: 12pt;
+}
+sup img {
+  height: 0.65em;
+  width: 0.8em;
+}
+ol {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0 auto;
+}
+.hr {
+  width: 60%;
+  margin: 3em 0 0 0.5em;
+  padding: 0;
+  height: 1px;
+  background: #000;
+}
+.duokan-footnote-content {
+  padding: 0 auto;
+  text-align: left;
+}
+.duokan-footnote-item {
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  list-style-type: decimal;
+  margin-bottom: 0.5em;
+  text-align: left;
+  clear: both;
+  color: #000;
+}
+li.duokan-footnote-item a {
+  font-family: "DK-HEITI";
+  text-align: left;
+}
+li.duokan-footnote-item p {
+  display: inline;
+  font-size: 0.95em;
+  vertical-align: top;
+  text-indent: 0;
+}
+
+/*
+詞譜
+*/
+h4.cipu {
+  border-top: 1px dotted lightgray;
+  font-family: "DK-FANGSONG", "仿宋", "fs", "fangsong", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 200%;
+  margin: 2.5em 0 0.75em 0;
+  text-align: left;
+  text-indent: 0;
+}
+div.cipu {
+  line-height: 150%;
+  margin-left: 2em;
+}
+span.cipu {
+  color: dimgray;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+}
+span.ciju {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+}
+
+span.splitter {
+  color: palegoldenrod;
+  /* khahi, lavender wheat */
+}
+
+p.cipu {
+  display: inline-block;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB", STHeiti, "华文黑体", "fs", "fangsong", sans-serif;
+  line-height: 1.75em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-align: left;
+  text-indent: 0;
+}
+
+/*
+附录
+*/
+.calibre {
+  color: #800000;
+  display: block;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 5pt;
+}
+a.index {
+  background-color: lightyellow;
+  text-decoration: none;
+}
+h2.biankuang {
+  background-image: url(../Images/biankuang.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11em;
+  font-size: 1.35em;
+  line-height: 2.75em;
+}
+h3.biaoti {
+  color: #008000;
+  border-top: darkseagreen dotted 0.25em;
+  border-bottom: darkseagreen dotted 1px;
+  display: block;
+  font-family: "Verdana", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.755em;
+  text-align: left;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  padding: 1pt 0;
+  margin: 0 0 1pt;
+}
+h3.h3 {
+  background-color: #FF9;
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.75em;
+  text-align: left;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  padding: 0;
+  margin: 2pt 0;
+}
+p.h5 {
+  text-indent: 0;
+}
+p.right {
+  text-align: right;
+}
+p.space {
+  font-size: 0.1em;
+  line-height: 0.75em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+  text-align: center;
+  text-indent: 0;
+}
+p.yunzi {
+  color: black;
+  display: block;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0;
+  text-indent: 0;
+}
+
+/*
+版权页
+*/
+.booktitle {
+  font-family: "DK-FANGSONG", "FangSong", "STFangSong", "仿宋", "fs", "fangsong", NSimSun, SimSun, sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+.booksubtitle {
+  font-family: "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  font-size: 1.15em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2em;
+  text-indent: 0;
+}
+.bookauthor {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-size: 1.1em;
+  text-align: center;
+  text-indent: 0;
+}
+.bookpub {
+  font-family: "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  text-align: center;
+  margin: 50% 0 0 0;
+  text-indent: 0;
+}
+
+/*
+制作说明页
+*/
+.oval {
+  padding: 5px;
+  margin: 0 1.5em 0 1.5em;
+  background-color: rgba(235, 220, 189, 0.5);
+  border-radius: 15px;
+  box-shadow: #333 0 5px 10px;
+}
+.ovaltitle {
+  color: #8B744A;
+  font-weight: bold;
+  font-family: "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  font-size: 120%;
+  margin: 1em 0.5em;
+  padding: 1em 0em 1.5em 0em;
+  padding-bottom: 14px;
+  text-shadow: 0 1px 1px #fff;
+  text-align: center;
+}
+.ovaltext {
+  color: #9C8A5F;
+  font-family: "DK-XIHEITI", "xiheiti", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: justify;
+}
+.ovalnote {
+  color: #8b794e;
+  font-family: "DK-KAITI", "kt", "楷体", "zw", serif;
+  font-size: 1em;
+  padding: 0em 1em 1em 1em;
+  text-align: justify;
+}
+.line {
+  border: dotted #A2906A;
+  border-width: 1px 0 0 0;
+}
+.speci {
+  background-color: #FFF;
+  /*
+  background-image: url(../Images/girl.png);
+  */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
