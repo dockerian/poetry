@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>清明诗抄</title>
+<link href="../Styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="../Styles/shiji.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  a {
+    text-decoration: none;
+  }
+  body {
+    font-size: 1em;
+    font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+    line-height: 1.25em;
+    margin: 0px;
+    padding: 0;
+  }
+  div.center {
+    text-align: center;
+  }
+
+  h1 {
+    background-image: url(../Images/biankuang.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11em;
+    font-size: 2.5em;
+    font-family: "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+    line-height: 3em;
+    margin: 0.5em 0em 0.5em 0em;
+    text-align: center;
+  }
+  h1 > span {
+    border-color: darkred;
+    border-style: none;
+    border-width: 0.25em;
+    padding: 0.25em;
+  }
+  h2 {
+    font-size: 1.75em;
+    font-family: "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+    line-height: 2.5em;
+    margin: 1em 0em 1em 0.25em;
+    text-align: left;
+  }
+  h2:nth-of-type(n+2) {
+    border-top: dotted lightgray 0.25em;
+    page-break-before: always;
+  }
+  h3, h4 {
+    font-size: 1.25em;
+    font-family: "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+    border-right: inset 0.5em lightgray;
+    line-height: 1.5em;
+    margin: 1em 0em 0.25em 0em;
+    page-break-before: avoid;
+    text-align: left;
+    text-indent: 2em;
+  }
+  h3 {
+    page-break-before: always;
+  }
+  h4.futi, p.futi, p.zong {
+    font-size: 1.25em;
+    font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+    line-height: 1.5em;
+    margin: 0.25em 0em 0.25em 0em;
+    text-indent: 2em;
+  }
+  h4 > span.juan {
+    color: darkslategray;
+    border-radius: 0.25em;
+    border-right: double 0.25em lightgray;
+    border-top: double 0.25em lightgray;
+    padding: 0.25em 0.25em 0.25em 0em;
+  }
+  h4.pgbr {
+    page-break-before: always;
+  }
+  hr {
+    border-width: 0px;
+    border-bottom-color: lightgray;
+    border-bottom-style: dotted;
+    border-bottom-width: 0.25em;
+    margin: 0.75em 0em 0.25em;
+  }
+
+  span.dian {
+    border-bottom: dotted 0.25em yellowgreen;
+    padding-bottom: 0.075em;
+  }
+  span.author, span.shou {
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+    font-weight: normal;
+  }
+  span.futi {
+    font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+  }
+  span.fair {
+    border-bottom: dotted 0.25em darkseagreen;
+    padding-bottom: 0.075em;
+  }
+  span.good {
+    border-bottom: dotted 0.25em orange;
+    padding-bottom: 0.075em;
+  }
+  span.jiao {
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  }
+  span.cibr {
+    display: inline;
+  }
+  span.date, span.year {
+    display: block;
+    color: darkgray;
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+    font-size: 0.625em;
+    line-height: 0.5em;
+    margin: 0em 0.5em 0em 4em;
+    white-space: nowrap;
+    text-indent: 2em;
+    text-align: right;
+  }
+  span.date {
+    font-size: 0.75em;
+  }
+  @media only screen and (min-width: 40em) {
+    div.hide {
+      display: none;
+      visibility: collapse;
+    }
+    span.cibr {
+      line-height: 1em;
+      display: block;
+    }
+    span.date, span.year {
+      display: inline-block;
+      text-indent: 0em;
+    }
+    span.date {
+      margin-left: 0em;
+    }
+  }
+
+  p {
+    font-size: 1.25em;
+    font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+    line-height: 1.5em;
+    margin: 0em 0em 0.25em 0em;
+    text-align: left;
+  }
+  p.author {
+    font-size: 1em;
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "fangsong", "fs", "zw", serif;
+    line-height: 1.5em;
+    margin: 0em 0.25em 0.5em 0em;
+    text-align: right;
+  }
+  p.mulu {
+    font-size: 1.25em;
+    font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+    margin-left: 0.35em;
+    text-indent: 0.25em;
+    white-space: pre;
+  }
+  p.note {
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "fangsong", "fs", "zw", serif;
+    text-indent: 2em;
+  }
+  p.ying {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-indent: 2.55em;
+  }
+  p.right, p.zong {
+    margin-right: 0.25em;
+    text-align: right;
+  }
+  p.spbr {
+    line-height: 0.5em;
+    margin: 0em;
+  }
+  p.poem {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: left;
+    text-indent: 2em;
+  }
+  p.text {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: left;
+    text-indent: 0em;
+  }
+</style>
+</head>
+<body><a name="toc_top"></a>
+<h1 class="biankuang"><span>清明詩鈔</span></h1>
+
+<div id="qm-toc"><ul>
+<li><a href="#qm-vol-01">卷一·诗抄五十八首</a></li>
+<li><a href="#qm-vol-02">卷二·词抄五十四首</a></li>
+<li><a href="#qm-vol-03">卷三·词抄五十四首（續）</a></li>
+<li><a href="#qm-vol-04">卷四·挽联、赋、诔文</a></li>
+<li><a href="#qm-vol-05">卷五·现代散文诗选三首</a></li>
+<li><a href="#qm-vol-06">卷六·散文四篇</a></li>
+<li><a href="#qm-vol-a1">附一·周恩来诗文选</a></li>
+<li><a href="#qm-vol-a2">附二·毛泽东诗词选</a></li>
+</ul></div>
+<p><br/></p>
+
+
+<h3 id="qm-xu">編序</h3>
+<p class="spbr"><br/></p>
+<p class="text">　　少年初涉詩詞，當其時代更迭，古籍猶未開禁，難覓善本。轉學榕城，偶得多卷《清明詩抄》。覽其所編，或集民間雜版，或采縣府學刊，至為大全，皆貫以童懷周之作。非有其人，盖寓同懷周公之意。</p>
+<p class="text">　　周公者恩來，字翔宇，公元一九七六年一月八日逝於國家總理任上。當年清明（歲在丙辰），有數萬之眾集於北京天安門廣場，憑弔此君，並留千百首紀念詩詞，一時爭相傳頌。當其「文革」之末，政爭激烈，而民心向背，舉國同酬。後此事遭禁，更增民憤。</p>
+<p class="text">　　隔一年，時局變換，沉冤得以昭雪。然改革方行，百廢待興，雖有多版流傳，只數載不復刊行。加之經十年之文化禁錮，民間所通，皆得源於官本之毛詞。丙辰清明之詩文，發自肺腑，感人至深。然於國學之道，違韻失律，良莠不齊，實為憾事。</p>
+<p class="text">　　余學求至美，盡數月之功，於披閱間裁剪佳句，存留偉義者，得百餘首，僅十之一也。次年返京，此草稿最為珍藏。後於謄抄之際，或正平仄，或補殘句，或校音律，或精詞字，共成六卷之冊，是曰重訂，至今卅載矣。</p>
+<p class="text">　　值此清明之際，再翻舊章。憶當年之景，有萬民成思；慨其時之情，無千古之例。嘆英雄也，遂成新詞：</p>
+<p class="spbr"><br/></p>
+<p class="poem">久逝容光，歲月塵封，思念遠飄。</p>
+<p class="poem">記當年國喪，陰雲翳翳；人民心碎，淚雨滔滔。</p>
+<p class="poem">萬業親躬，先憂後己，誰比周公品質高？</p>
+<p class="poem">一生夢，為中華崛起，富裕妖嬈。</p>
+<p class="spbr"><br/></p>
+<p class="poem">山河自古多嬌，是烈士拋顱與折腰。</p>
+<p class="poem">想伍毫學社，初揚文采；南昌黃埔，盡顯風騷。</p>
+<p class="poem">外交和談，蜚聲宇內，政治功夫巧射雕。</p>
+<p class="poem">多少代，留傳奇故事，遺唱今朝。</p>
+<p class="spbr"><br/></p>
+<p class="futi">　　右調沁園春•重懷周公和毛詞原韻</p>
+<p class="futi">　　公元二零一一年美國華州•西雅圖</p>
+<p class="futi">　　紹興•竺暉宇昕　記於紗糸軒</p>
+<p class="spbr"><br/></p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-01">重订丙辰清明诗词散文选钞卷之一</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+
+<h3>诗抄　<span class="shou">五十八首</span></h3>
+
+<h4>五言古诗　<span class="shou">九首</span></h4>
+<p class="poem">欲悲闻鬼叫，我哭豺狼笑。洒泪祭雄杰，扬眉剑出鞘。</p>
+<h4 class="futi">又</h4>
+<p class="poem">昨夜西风烈，高堂摧巨松。万民悲蜀相，千古念周公。</p>
+<h4 class="futi">又</h4>
+<p class="poem">风起狂飙落，血染战旗红。儿女多奇志，周公最英雄。</p>
+<h4 class="futi">又</h4>
+<p class="poem">天惊一声雷，地动绝其维。顿时九州寂，无语皆泪水。相告不成声，欲言泪复垂。听时不敢信，信时心已碎。</p>
+<h4 class="futi">又</h4>
+<p class="poem">大鹏瞑慧目，悲歌恸九重。五洲峰峦暗，八亿泪眼红。丹心酬马列，功过任说评。灰撒江河里，碑树人心中。</p>
+<h4 class="futi">又</h4>
+<p class="poem">寒冬长夜尽，大地暖气微。肝胆数十年，死生几多回。绿水青山在，却迎尽瘁灰。怎消万古恨，奈何一旦毁。</p>
+<h4 class="futi">又</h4>
+<p class="poem">噩耗惊四海，哭声遍九州。悲如朔风啸，哀似寒水流。天亦为之痛，地亦为之愁。行路原多难，此去更堪忧。</p>
+<h4 class="futi">又</h4>
+<p class="poem">临危遗血表，慷慨令人哀。碧水含烬骨，青山抱忠骸。终生愿未酬，至死颜不改。圣朝频阙事，何处觅英才。</p>
+<h4 class="futi">又</h4>
+<p class="poem">六十载沧桑，集聚汇一身。八万里雲天，挥揽尽一心。浩气连四海，傲骨照千伦。硝烟弥漫日，戎马度苦辛。美誉播两党，忠诚镌三军。外交国威树，内政党风存。豁然大度怀，挥洒自如神。四方皆翘首，一人牵万襟。功勋垂宇宙，留韵贯乾坤。山川同作证，世代仰经纶。总有无穷力，千秋记忆新。</p>
+<p><br/></p>
+
+<h4>七言古诗　<span class="shou">三十首</span></h4>
+
+<h4>序诗　　<span class="author">舟山堂主人</span></h4>
+<p class="poem">清明雨雪犯中华，岂知风雲冷万家，恸哭九州俱缟素，冲天一恨湿臂纱。大名敞开千心动，泪痕说处堪嗟夸，山摇路移沉古迹，终是青史浪淘沙。</p>
+<h4 class="futi">其二</h4>
+<p class="poem">一篇泪词读几行，哭咏血心胜诗章，重比泰山星陨落，岂容冥府话短长。</p>
+<p><br/></p>
+<p class="poem">音容依旧人已去，何曾托笔记生平。无须翰林书青史，江山千古仰英名。</p>
+<h4 class="futi">又</h4>
+<p class="poem">自从盘古开天地，三皇五帝到於今。谁见相宰平民爱，唯有周公第一人。</p>
+<h4 class="futi">又</h4>
+<p class="poem">碧血丹心为国酬，一生功名贯九州。若非深博人民爱，岂有百姓泪横流。</p>
+<h4 class="futi">又</h4>
+<p class="poem">山河异彩人却逝，天雨人寰动地哀。赤心一叶何有尽，浩荡肝胆报恩来。</p>
+<h4 class="futi">又</h4>
+<p class="poem">桃花已报四月春，翠柏又结八亿心。奈何无情天亦老，狂飙吹雨落幽京。</p>
+<h4 class="futi">又</h4>
+<p class="poem">清明每到泪纷纷，天下几家哭断魂。唯有今年不同处，举国都是心酸人。</p>
+<h4 class="futi">又</h4>
+<p class="poem">睛日忽闻惊天雷，举国失声哭忠魂。一滴热泪一滴血，清明洒向天安门。</p>
+<h4 class="futi">又</h4>
+<p class="poem">绝代忠魂何处寻，天安门前袂成荫。丰碑十丈万行泪，银花千重亿民心。</p>
+<h4 class="futi">又</h4>
+<p class="poem">京城处处皆白花，风吹热泪洒万家。从今岁岁断肠日，定是年年一月八。</p>
+<h4 class="futi">又</h4>
+<p class="poem">讣到家家有泪同，人人悲痛尽由衷。纷纷臂布献花环，托命微民情意浓。</p>
+<h4 class="futi">又</h4>
+<p class="poem">相逢无语泪先盈，启齿欲言已失声。万众一心由衷曲，愿将百死换一生。</p>
+<h4 class="futi">又</h4>
+<p class="poem">久仰人间盖世才，今日强邀管天国。忽听神州齐声唤，天公还我伟人来。</p>
+<h4 class="futi">又</h4>
+<p class="poem">风雨纵横六十年，撑天拔地入雲巅。无常岂必斯人老，八亿人民怒问天。</p>
+<h4 class="futi">又</h4>
+<p class="poem">烟笼雾迷奈何愁，凭谁慧眼望神州。忍看怒涛神州卷，胜似江水向东流。</p>
+<h4 class="futi">又</h4>
+<p class="poem">满腔热血为民洒，一身洁白无玉瑕。总理忠魂浩气在，不教阴风舞中华。</p>
+<h4 class="futi">又</h4>
+<p class="poem">夜随总理讨逆臣，五更醒来泪犹存。若得灵药飞霄汉，愿作英雄马前人。</p>
+<h4 class="futi">又</h4>
+<p class="poem">披荆斩棘九冲杀，镇魑审魅迅雷诧。千军万马多努力，冥家英雄未解甲。</p>
+<h4 class="futi">又</h4>
+<p class="poem">夜来未闻风雨声，鲜花诗句尽扫空。休言碑下空荡荡，指点阶前泪迹浓。</p>
+<h4 class="futi">又</h4>
+<p class="poem">谁说你随晨风归，亲眼见君入红梅。千里风霜质纹硬，百丈冰崖骨花飞。</p>
+<h4 class="futi">又</h4>
+<p class="poem">贞骨高风从险恶，石壁强生尽其乐。比及寒暑暴雨时，昂首犹唱松柏歌。</p>
+<p class="spbr"><br/></p>
+<h4 class="futi">又</h4>
+<p class="poem">悲歌沉沉感雲天，山河黯黯含哀颜。八亿神州泪纷飞，化作江河流万年。英躯长别人世间，丰碑永树是河山。日月光辉千秋颂，天长地久万古传。</p>
+<h4 class="futi">又</h4>
+<p class="poem">功高才高德更高，万古师表绝代豪。无私恩来泽华夏，强国宏图遗我曹。天夺国魂天可恨，谁损英名谁逆潮。金迹丰碑鲜花涌，大定有望看明朝。</p>
+<h4 class="futi">又</h4>
+<p class="poem">为求真理涉重洋，关山初渡路犹长。碑下行立念故相，渝州坐镇结四方。飞流千载音容在，咫尺话开一世窗。出师表成千古恨，飘蓬江海路茫茫。</p>
+<h4 class="futi">又</h4>
+<p class="poem">名著日月光辉天，功树竹帛翰墨间。十回潮狂肝胆赤，万事亲躬鬓毛斑。遗灰已化千畴绿，壮志犹存一片丹。空有如涛伤心泪，故园风雨几经年。</p>
+<h4 class="futi">又</h4>
+<p class="poem">惊闻华夏失栋梁，举国老幼尽哀伤。松柏枝头花如雪，白玉栏杆泪万行。阴雨朦胧觅神采，红心哭碎读残章。此去蓬台还忠骨，遗思大地正苍茫。</p>
+<h4 class="futi">又</h4>
+<p class="poem">揭竿淞沪震亚东，八一南昌军旗红。千山万水书胆赤，弹雨枪林表心忠。滚滚延河知劲草，巍巍宝塔仰青松。龙潭虎穴山城斗，舌剑唇枪退敌雄。苦心聚同一朝业，碧血凝染五星红。为民消得人憔悴，唯愿中华屹立东。千古人间传未死，万世民心记奇功。试问跳梁三竖子，敢把故宫作冬宫。</p>
+<h4 class="futi">又</h4>
+<p class="poem">雷劈太空落巨星，寒风声咽传噩音。泪洒江天五岳泣，浪击长雲四海惊。千年古国叹亘古，万里寰球痛於今。唁电飘飘飞似雪，天河顿凝百丈冰。一曲悲歌震环宇，绕梁三月有余音。丰碑翠柏花无数，曲恸神州蓬雀惊。朵朵乌雲蔽残月，漫漫寒夜泣声轻。鲲鹏展翅九万里，杜鹃声催八亿心。满腔热血权作墨，奋笔疾书墓志铭。</p>
+<h4 class="futi">又　悼杨开慧</h4>
+<p class="poem">飒爽英姿走南北，湘江两岸滚风雷。浏阳门外琼玉碎，忠魂轻扬九霄飞。</p>
+<p><br/></p>
+
+<h4>七言律诗　<span class="shou">八首</span></h4>
+
+<p class="poem">九州何处觅英魂，土有余香水有神。心寄故国春依旧，襟悬碧落月无痕。万家思悉通世变，一肩霜雪挽浮沉。跳脱丹青可亲炙，青光留取照风雲。</p>
+<h4 class="futi">又</h4>
+<p class="poem">残冬虽去亦非春，涕泪横流地失温。桃李哀愁花不绽，天公秉泪雨淋淋。青山忍恸埋忠骨，碧水含悲泣逝魂。今古英雄若鳞比，几人能够似周君。</p>
+<h4 class="futi">又</h4>
+<p class="poem">总理遗骨华夏殉，绿水青山有忠魂。四海高阁名粹美，九州平野宿精神。一生健行师千载，万里躬耕月一轮。潇洒端凝梦长虹，恒汉正是看风雲。</p>
+<h4 class="futi">又</h4>
+<p class="poem">大星忽陨泰山摧，祭奠始知今日悲。寂寂环球旗半落，熙熙广场泪频挥。英名万古垂宇内，伟绩千秋镌丰碑。蓬雀嘁喳徒目送，无言桃李自成蹊。</p>
+<h4 class="futi">又</h4>
+<p class="poem">月隐星稀大地哀，悲歌一霎自天来。黎民呜咽花含泪，骏业峥嵘骨作灰。誉满神州垂国史，名扬寰宇颂宏才。雲鹏振翅搏风起，岭上红梅映日开。</p>
+<h4 class="futi">又　　<span class="author">──郭沫若</span></h4>
+<p class="poem">革命前驱辅弼才，巨星隐翳五洲哀。奔腾泪浪滔滔涌，吊唁人群滚滚来。盛德在民长不没，丰功垂世久弥恢。忠诚与日同辉耀，天不能死地难埋。</p>
+<p class="spbr"><br/></p>
+
+<h4>悼陈毅　<span class="shou">二首</span></h4>
+<p class="poem">闻棋决胜忆飞飙，将魄诗魂不可邀。老帅直肠难再热，人民泪眼迸一朝。始终尽瘁升天烈，善恶分明入地遥。每念穷山风雪夜，军歌凛凛训垂髫。</p>
+<h4 class="futi">其二</h4>
+<p class="poem">雲压西山雪黯天，陵园肃穆悼公眠。丹心壮志赢千战，白发豪言惊四筵。文采风流人共赏，襟怀磊落世争传。忠魂跃马横戈去，斩绝阎罗闹九泉。</p>
+<p><br/></p>
+
+<h4>七言绝句　<span class="shou">九首</span></h4>
+<p class="poem">五洲四海望春回，竟报南天一柱摧。漫道瀛寰空洒泪，鲲鹏翼下是风雷。</p>
+<h4 class="futi">又</h4>
+<p class="poem">四海惊涛奔眼底，九天雲雨注中华。英雄碑下花无数，皆是心花和泪花。</p>
+<h4 class="futi">又</h4>
+<p class="poem">一代英才万古风，威威在目宛如生。垂眉五岳身恭立，啼血三江泪纵横。</p>
+<h4 class="futi">又</h4>
+<p class="poem">雲水苍茫意未平，中宵起坐恸无声。诗心一点梅花血，独吊重霄万古灵。</p>
+<h4 class="futi">又</h4>
+<p class="poem">生是擎天盖世才，如麻国事赖安排。九衢墨径皆遗嗣，何必人生有子来。</p>
+<h4 class="futi">又</h4>
+<p class="poem">一身系得几安危，星陨中天恸地悲。民泣国殇今夜里，山呼海啸唤君回。</p>
+<h4 class="futi">又</h4>
+<p class="poem">上海咽吞热血浓，金沙浪掣战旗红。忆昔箭雨枪林日，犹见英雄展笑容。</p>
+<h4 class="futi">又</h4>
+<p class="poem">晨征肃肃访梅园，犹有梅花着意妍。共道人间春色满，岂忘雪里寸心丹。</p>
+<h4 class="futi">又</h4>
+<p class="poem">一代风流百代骄，人民革命尽英豪。国殇今夜八千里，哀动长江上下潮。</p>
+<p><br/></p>
+
+<h4>八言诗　<span class="shou">一首</span></h4>
+
+<p class="poem">人民的总理人民爱，人民的总理爱人民。总理与人民同甘苦，人民和总理心连心。</p>
+<p><br/></p>
+
+<h4>乐府诗　<span class="shou">一首</span></h4>
+
+<h4>长相思</h4>
+<p class="poem">月存寒，夜犹阑；长相思，在九天。骨香未逝泪未干，人去灯尽春夜残。挑灯不眠空长叹，英魂此去飞雲端。上隔九霄离恨天，下隔黄泉闻波澜。此恨绵绵无绝期，此心哀哀书欲难。长相思，愁肠断。</p>
+<p><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-01">卷一</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-02">重订丙辰清明诗词散文选钞卷之二</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+
+<h3>词抄　<span class="shou">五十四首</span></h3>
+<p><br/></p>
+
+<h4>金缕曲·周年感赋　　<span class="author">──趙樸初</span></h4>
+<p class="poem">转瞬周年矣。念年前伤心情景，谁能忘记。缓缓灵车经过路。万众号哭总理，泪尽也赎公无计。人似川流花似海，天安门尽足觇民意。<span class="cibr"></span>　　为人民、鞠躬尽瘁，死而後已。雪侮霜欺香益烈，功德长留天地。却身与雲飞无际。乱眼妖氛今尽扫，笑蚍蜉撼树谈何易。迎日出，看霞起。</p>
+<p><br/></p>
+
+<h4>苍梧谣　<span class="shou">一首</span></h4>
+<p class="poem">碑。迎送倾盆泪雨飞。英灵在，来年更光辉。</p>
+
+<p class="spbr"><br/></p>
+<h4>桂殿秋　<span class="shou">二首</span></h4>
+<p class="poem">总理逝，万民愁。朵朵白花泪悠悠。一代完人归青史，忠魂遗骨撒九州。</p>
+<h4 class="futi">又</h4>
+<p class="poem">高山青，碧水流。缅怀总理无尽头。纷纷世人都记取，共承遗志写春秋。</p>
+
+<p class="spbr"><br/></p>
+<h4>如梦令　<span class="shou">二首</span></h4>
+<p class="poem">一颗巨星陨落，举国眼含泪花。悲歌传宇宙，哀思英雄碑下。碑下、碑下，青松鲜花披挂。</p>
+<h4 class="futi">又</h4>
+<p class="poem">昔日蜀国智叟，出师一表功厚。热血贯中华，留下英名於後。回首、回首，谨防魏延夺酒。</p>
+
+<p class="spbr"><br/></p>
+<h4>升平乐</h4>
+<p class="futi">访重庆红岩村中共中央南方局故址</p>
+<p class="poem">识途竞说阴阳树，<span class="jiao">【当地山路分歧为二，岔口处有黄果树，其阳通南方局，其阴通军统。】</span>临敌谁如大乐天。<span class="jiao">【周用以戏其夫人邓颍超。】</span>龙潭虎穴想当年。江流不转，霜欺更艳，看红岩丹心一片。</p>
+
+<p class="spbr"><br/></p>
+<h4>长相思　<span class="shou">二首</span></h4>
+<p class="poem">金水流，碧水流，滚滚波涛似悲流。泪寒满面流。朝也愁，暮也愁，无数清明无数愁。谁分点点愁。</p>
+<h4 class="futi">又</h4>
+<p class="poem">清明节，失明节，天地黯然泪不绝。献君泪和雪。思难却，恨难却，新坟三月谁敢掘。捍君一腔血。</p>
+
+<p class="spbr"><br/></p>
+<h4>乌夜啼　<span class="shou">一首</span></h4>
+<p class="poem">春来不见春风，遍山松。点点白花愁苦，寒意浓。<span class="cibr"></span>　　人群动，雕栏上，玉阶中。万民痛哭总理，泪朦胧。</p>
+
+<p class="spbr"><br/></p>
+<h4>卜算子　<span class="shou">三首</span></h4>
+<p class="poem">雄碑望金迹，俯首悼君哀。花环如雪泪湿襟，千里扫墓来。<span class="cibr"></span>　　忠贞国酬报，生死置度外。江河九曲归大海，玉碎光华在。</p>
+<h4 class="futi">又</h4>
+<p class="poem">莽莽天地间，疾风雲崖处。热血寒霜绿苍翠，冰雪浴筋骨。<span class="cibr"></span>　　巍峨恨飘摇，根结万家土。不随芳草争三月，刚毅永如故。</p>
+<h4 class="futi">又</h4>
+<p class="poem">好花人自爱，洁白且芳芬。清香已入万家心，笑看咒花人。<span class="cibr"></span>　　清明来祭花，更有祭花人。哀思一曲祭花诗，我是护花神。</p>
+
+<p class="spbr"><br/></p>
+<h4>采桑子　<span class="shou">一首</span></h4>
+<p class="poem">生死本是人之常，岁岁清明，今又清明，白花如海悼英灵。<span class="cibr"></span>　　一年一度哀先烈，不似前景，胜似前景，心潮澎湃泪纵横。</p>
+
+<p class="spbr"><br/></p>
+<h4>减字木兰花　<span class="shou">二首</span></h4>
+<p class="poem">银花似海，泪飞雪飘为谁来。人心所向，悲歌震动寰宇哀。<span class="cibr"></span>　　赤胆忠心，终生为党苦安排。英名环球，留芳百世难忘怀。</p>
+<h4 class="futi">又</h4>
+<p class="poem">星惊斗转，擎雪扶桑雲柱断。海啸江凝，飞作华夏泪雨倾。<span class="cibr"></span>　　丰碑灿灿，屈指青史千载叹。催马挥戈，万代聆听国际歌。</p>
+
+<p class="spbr"><br/></p>
+<h4>忆秦娥　<span class="shou">二首　并序</span></h4>
+<p class="futi">时值清明，西风斜雨。天安门广场，花环如海；英雄纪念碑畔，哭声如潮。有怀亘古之痛，令民哭也；因念斯人之伟，为国哀者。遂使九州风雲，漾然笔下；四海狂澜、翻卷舌锋。噫！风雨修得英姿，日月炼而精美。呜呼！一朝之毁，千古遗恨。纵有天纸雲墨，亦难书我悲怀。痛兮哀哉！</p>
+<p class="poem">江山血，清明风雨悲思切。悲思切，山林肃立，江河倾泻。<span class="cibr"></span>　　功名不作求大同，伟绩无私凌日月。凌日月，千古不朽，盖世难越。</p>
+<h4 class="futi">又</h4>
+<p class="poem">呜声咽，寒风泪雨雲遮月。雲遮月，长安街上，万民伤别。<span class="cibr"></span>　　从今岁岁清明节，音容笑貌思难绝。思难绝，英灵常在，九天宫阙。</p>
+
+<p class="spbr"><br/></p>
+<h4>清平乐　<span class="shou">一首</span></h4>
+<p class="poem">狂飙落地，化作长江雨。弱柳扶风无力舞，岂耐此番风雨。<span class="cibr"></span>　　任尔风急雨狂，参天自有白杨。傲首横眉冷对，英姿劲骨朝阳。</p>
+
+<p class="spbr"><br/></p>
+<h4>西江月　<span class="shou">三首</span></h4>
+<p class="poem">五十余年心血，四千万里山河。谁知天半起悲歌，忽地巨星陨落。<span class="cibr"></span>　　矢志忠於领袖，尽心力战群魔。一番收获一番多，遍地花红似火。</p>
+<h4 class="futi">又</h4>
+<p class="poem">浩荡江河流水，苍茫大地风烟。遥看碧海与青天，那禁心伤泪泫。<span class="cibr"></span>　　革命功垂宇宙，胸怀吞吐山川。誓承遗志更加鞭，何惧千难万险。</p>
+<h4 class="futi">又</h4>
+<p class="poem">光照山川日月，历经血雨腥风。冲霄浩气鬼神惊，只为人民大众。国际悲歌一曲，阶级大义深情。请看忠骨唤群英，革命铁军驰骋。</p>
+
+<p class="spbr"><br/></p>
+<h4>浪淘沙　<span class="shou">一首</span></h4>
+<p class="poem">四海起狂澜，地覆天翻。惊天鼙鼓破敌谖。安得烈勋英魂现，尽扫顽奸。<span class="cibr"></span>　　借得英雄胆，岂惧春寒。笑指误国夺旗难。更怀总理灵犹在，遍护人间。</p>
+
+<p class="spbr"><br/></p>
+<h4>蝶恋花　<span class="shou">一首</span></h4>
+<p class="poem">炸雷惊诧天地恸，泪洒滔滔、望星落九重。咽抑悲声心震痛，人间天地折一栋。<span class="cibr"></span>　　尽瘁鞠躬日月同，不矜终生无语水流东。伟人一顶苍穹去，寰球千载永记颂。</p>
+
+<p class="spbr"><br/></p>
+<h4>唐多令　<span class="shou">一首</span></h4>
+<p class="poem">巨星堕寰宇，噩耗传九天。飘玉霄弥漫人间。凝望浩天悲泣咽。天地沉，昏暗暗。<span class="cibr"></span>　　一生留功绩，视乾坤扭转壮志酬，毕生无闲。一代豪杰创天下，南北望，无数山。</p>
+
+<p class="spbr"><br/></p>
+<h4>苏幕遮　<span class="shou">一首</span></h4>
+<p class="poem">金迹烁，玉碑矗，素花束束。泪飞倾盆雨，青山处处埋灰骨。神州大地，且为忠魂哭。<span class="cibr"></span>　　英名垂，光辉著。南北东西，战旗万杆树。继业百代绣雄图，九天长护人民解放路。</p>
+
+<p class="spbr"><br/></p>
+<h4>千秋岁　<span class="shou">一首</span></h4>
+<p class="poem">鞠躬尽瘁，功勋万世垂。生无私，死无愧。呜咽寒风骤，凝我眼中泪。瞻苍松、栉风沐雨愈青翠。<span class="cibr"></span>　　忆君丰茂时，倾心全人类。突烟火，走南北。紧随毛主席，迎来神州媚。筹巨厦，为集乾坤大同会。</p>
+
+<p class="spbr"><br/></p>
+<h4>最高楼　<span class="shou">一首</span></h4>
+<p class="poem">长相忆，相忆几时休。峥嵘岁月稠。风雲变幻脱颖出，怒潮漫卷立涛头。众望归，世方期，付春秋。<span class="cibr"></span>　　梦抑真，风采仍潇洒，真不梦，眉间已锁愁。骨灰飞，英名留九州。哀声动苍天，千里狂澜遏飞舟。缟似血，泪成雨，花作丘。</p>
+
+<p class="spbr"><br/></p>
+<h4>八声甘州　<span class="shou">一首</span></h4>
+<p class="poem">骤寒风过，广场徘徊，依旧艳阳天。信难哀耗确，白日可忍，夜深最难。识惯雕鞍未解，盼笑语依然。惊梦三更起，泪透中衫。<span class="cibr"></span>　　恨九天殒才不度势，正中流砥柱，谁佐中原。莫叹时光空逝，待悲浪愁雲尽洗，肝胆对遗言。征师日、英灵重祭，应是泰山。</p>
+
+<p class="spbr"><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-02">卷二</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-03">重订丙辰清明诗词散文选钞卷之三</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+
+<h3>词抄五十四首之续卷　<span class="shou">二十五首</span></h3>
+
+<p class="spbr"><br/></p>
+<h4>满江红　<span class="shou">八首</span></h4>
+<p class="poem">山恸海哭，普天下哀歌处处。多少话、几番欲吐，几番难述。雄姿威容震敌胆，鞠躬尽瘁美名树。创伟业、征战六十载，功勋著。<span class="cibr"></span>　　一生走，风雷路；兴革命，擎天柱。看莺歌燕舞、碧血凝注。带取神州清风袖，遗留赤县红尘步。挥热泪、俯看旧山河，红旗舞。</p>
+<h4 class="futi">又</h4>
+<p class="poem">泪雨愁雲，表多少苍生胸臆。高碑畔、人潮花海，月寒松寂。肝胆此时同破碎，容颜何处重寻觅。共霜天、万众哭号啕，东风湿。<span class="cibr"></span>　　伤心夜，思畴昔；恤黎民，忧家国。念鞠躬尽瘁、罄抛心力。双鬓拼教添白发，环球定使迎红日。在九泉、应是笑如生，长安息。</p>
+<h4 class="futi">又</h4>
+<p class="poem">昆仑横空，五行江精一脉涌。练此身、少达经纬，青孚望重。黄穗内外分白皂，湘陕山水划青红。凭雄才大略英雄胆，成股肱。<span class="cibr"></span>　　结十国，拒两霸；披纵横，连大同。视环球弹丸，谈笑风生。一振国威传天下，十次党争显忠声。聚古往今来风流事，度峥嵘。</p>
+<h4 class="futi">又</h4>
+<p class="poem">山河缟素，抬望眼、寒雲遮月。银波啸、地天摇动，白絮传噩。浩气贯虹冲斗牛，美名压雷飞千界。听万家忆耿耿丹心，悲胸裂。<span class="cibr"></span>　　驾戎马，熬夙夜；驱日寇，耗心血。为东方红遍，一刻未歇。汗浇九州兴钜业，足履四海挥长策。唤大江巨浪涌惊潮，迎春色。</p>
+<h4 class="futi">又</h4>
+<p class="poem">似雪银花，堆香榭、天哭暂歇。春潮动，苍松失语，祭民悲切。赤地袒怀知劲骨，碧天俯首听哀乐。谁能忘一九七六年，清明节。<span class="cibr"></span>　　诗如潮，词沥血；泪难止，声呜咽。问今中古外，敢标二耶？气概威容吞鬼魅，托毫彩雲冲霄阙。吊英魂、忠烈永风存，昭明月。</p>
+<h4 class="futi">又</h4>
+<p class="poem">涌去洪波，普天下黎民痛绝。九万里、狂飙长啸，疾雲骤烈。滚滚延河千重浪，茫茫中岳四月雪。泪眼回、听动地歌吟，凄声切。<span class="cibr"></span>　　降豺虎，功如铁；佐主席，明如月。凌烟阁、永刻义忠勋节。奋斗毕生风骨在，苦功不世昭如雪。愿斯人、永寝故国里，长安歇。</p>
+<h4 class="futi">又</h4>
+<p class="poem">天地呜声，砥柱倒、经纬倾裂。齐哀悼，哭碑声切，今朝痛绝。沥血呕心功一世，六合燃起火光烨。泣唯君、从未顾心身，寥人杰。<span class="cibr"></span>　　君虽故，芳永洁；志未遂，吾人决。请平公辅政，万民朝阙。死後虽无遗子嗣，生前事业国人接。上青天横钺斩朝奸，不妥协。</p>
+<h4 class="futi">又</h4>
+<p class="poem">落雨纷纷，肠愁断、大地呜咽。肝胆碎，哀绝人间，悲伤情烈。伟绩千功留青史，奇略百战争日月。报春归、一柱折南天，风凄切。<span class="cibr"></span>　　七十载，一头雪；光华艳，谁能灭。问苍天记否，月何阴缺？自有一身豪士骨，生来欲洒英雄血。涌惊潮众志正奔腾，朝天阙。</p>
+
+<p class="spbr"><br/></p>
+<h4>水调歌头　<span class="shou">三首</span></h4>
+<p class="poem">总理神州事，澎湃六十年。龙潭虎穴往返，刀斧助桌谈。踏遍险山恶水，历尽欧风亚雨，造福满人间。沿着金光道，寸步不离偏。<span class="cibr"></span>　　精文武，兼刚柔，斗敌顽。事业方兴未艾，噩耗落无端。大地遗灰撒遍，广宇哀声痛彻，泪雨怨苍天。望断征途远，万马快加鞭。</p>
+<h4 class="futi">又</h4>
+<p class="poem">风撼参天树，雨酹九寒天。长空碧落星陨，山水敛容颜。脚踏南疆宝岛，头枕北方莽原，百代凯歌传。魂舞乘风去，遗爱满人间。<span class="cibr"></span>　　金瓯整，两霸斗，防未然。二十五年宏图，仍须勇登攀。辛苦鞠躬尽瘁，至嘱为公为党，心系九万千。荣哀辨真伪，烈慨照贤奸。</p>
+<h4 class="futi">又</h4>
+<p class="poem">传噩五洲恸，四海遍哀音。英魂一代千古，伟绩盖当今。黄浦江涛怒吼，赣水义旗高举，井冈战红缨。率师随主席，征战历艰辛。<span class="cibr"></span>　　延河水，红岩雨，映丹心。冷对魑魅魍魉，凛然鬼神惊。寰宇传扬马列，日理军机国务，尽瘁为人民。今奋神州志，永祭在天灵。</p>
+
+<p class="spbr"><br/></p>
+<h4>扬州慢　<span class="shou">一首</span></h4>
+<p class="poem">前方吃紧，後方紧吃，谁梦中原寇兵。黎园管弦急，沦区膏血腥。自君临危单刀赴，舌剑唇枪兴亡事，威冠雾城。凛然大义，满座皆惊。<span class="cibr"></span>　　鸿门虎胆，嘉陵夜夜作声。传卖国汪蒋，救亡义士，抗日英灵。曾家红岩、翠柏万夫赋，一往深情。铁臂挽山河，丹心永照汗青。</p>
+
+<p class="spbr"><br/></p>
+<h4>念奴娇　<span class="shou">一首</span></h4>
+<p class="poem">胸襟博宇，纳寰球、真是地宽天阔。八亿神州寒共暖，更有全球凉热。五湖惊涛，九州霹雳，四海皆容括。风雲吞吐，狂飙因而飞落。<span class="cibr"></span>　　一生都为人民，把滴滴热血，换来春色。只顾得鞠躬尽瘁，岂念名存史册。万里江山，千秋功业，已把丰碑刻。乘风归去，遗灰大地遍泽。</p>
+
+<p class="spbr"><br/></p>
+<h4>石州慢　<span class="shou">一首</span></h4>
+<p class="poem">十里洋场，东方名都。中华奇辱。花旗飘摇外滩，番轮横行黄浦。牛马奴役，苍颜残衣饥腹。救世神仙知何处？琼楼遥万里，奇冤沉千古。<span class="cibr"></span>　　破曙。浦江潮怒。党结劳工，义竿狂舞。天翻地覆。应笑书生心怯，事机频误。革命还须用武。看烽火红旗高树。今往革命史，炳烛五更读。</p>
+
+<p class="spbr"><br/></p>
+<h4>望远行　<span class="shou">一首</span></h4>
+<p class="poem">腊八乙卯君离别，行程九州何处。视察华北，亲省江南，大地又讴新谱。管弦江河，山岳宛如琴键，一曲响弹风雨。夺丰收之日，幽燕吴楚。<span class="cibr"></span>　　豪语。天地听人裁处。党运筹、经纬机杼。世界新陈，大千代谢，神域念怀翔宇。树立人间极则，一生无我，星火晔晔今古。值清明佳节，邀君歌舞。</p>
+
+<p class="spbr"><br/></p>
+<h4>沁园春　<span class="shou">七首</span></h4>
+<p class="poem">长夜沉沉，可辨依稀，启路曦光。看仿佛书子，风流才智；毕竟将帅，气宇轩昂。黄埔演兵，北伐用将，所向旌旗无强梁。恨贼子、设阴谋诡计，窃军称王。<span class="cibr"></span>　　义旗再举南昌。率精兵征战赴井冈。会四方豪杰，同仇敌忾；发动工农，扩大武装。星火燎原，枯新怎当。十万国军化黄梁。风正猛、望征程漫漫，血热中肠。</p>
+<h4 class="futi">又</h4>
+<p class="poem">萧墙烽惊，山河色变，虎狼猖獗。正风雲幻灭，革命流血；党人肢裂，波澜骤歇。泪洒江流，血涂史页，问苍天从此崩缺。雷电啸、道野火春风，英雄未绝。<span class="cibr"></span>　　政权出自枪杆。听南昌满城炮声彻。令金戈光寒，险关重越；玉宇霞飞，晨光初射。今瞰人间，军旗猎猎，红缨犹溅当年血。千秋史、打响第一枪，功勋昭烈。</p>
+<h4 class="futi">又</h4>
+<p class="poem">忠愤填膺，抱胆浑身，光耀若神。驻狼巢虎穴，笑谈自若；针锋相对，面斥贼臣。阶级嘱咐，民族大义，写就青史不朽文。驱迷雾、有马恩战士，一代人神。<span class="cibr"></span>　　皖南惨案惊闻。蘸恨泪挥毫向乾坤。痛古今奇冤，江南叶项；同袍相戈，谁挽陆沉。黄河之滨，大江南北，怒血燃处丧敌魂。九万里、统军民抗战，剑戟如林。</p>
+<h4 class="futi">又</h4>
+<p class="poem">书读万卷，足迹千疆，交友万邦。映荣蒙碧水，无私铁面；万隆之会，赤旗威扬。烽火连天，风雲变幻，胜券独操斗霸强。开天地、是东方巨手，力挽狂澜。<span class="cibr"></span>　　几番远涉重洋。播爱种友谊花最香。访赤道诸国，良朋携手；于塔礼拜，尼罗情长。击破坚冰，融化寒水，上海公报筑桥梁。公去也、问未竟事业，谁可承当。</p>
+<h4 class="futi">又</h4>
+<p class="poem">险礁暗滩，复雨翻雲，几度急危。把中华舵手，辨明方向；激流勇进，浪急风回。天下将分，妖风作乱，窥测神器耸娥眉。护九鼎、慑奸臣贼胆，天网恢恢。<span class="cibr"></span>　　忠臣自古堪悲。惟谨慎大节并细微。尽满腔热血，泽润民众；肝胆涂地，无论谦卑。日理万机，食寝渐废，德高望众解是非。心操碎、竟一朝归去，天外难追。</p>
+<h4 class="futi">又</h4>
+<p class="poem">星陨长空，泪洒神州，万里湿风。恸擎天柱折，痛悲霄浪；摩雲鹏逝，寂寞苍穹。推倒三山，劈开世界，一代风流百世功。哭社稷、看英雄今古，谁堪配伦。<span class="cibr"></span>　　几多岁月峥嵘。数不尽风光在险峰。忆黄浦操兵，怒潮滚滚；南昌举义，弹炮隆隆。忧患兴邦，笑谈破敌，一片丹心映日红。蓝图在、看伟大祖国，旭日东升。</p>
+<h4 class="futi">又</h4>
+<p class="poem">霹雳惊弦，华表鹤空，百感填膺。正江山似锦，气冲霄汉；光辉九派，屹立峥嵘。万众同心，雄姿英发，矫矫鲲鹏震汉声。天乍黯、遽兰摧玉折，损煞长城。<span class="cibr"></span>　　英明俊秀豪情。抱许国丹心历此生。念壮怀激烈，长征万里；餐风茹雪，百战身经。重整金瓯，鞠躬尽瘁，扭转乾坤愿未平。此一去、胜千秋遗范，万古长青。</p>
+
+<p class="spbr"><br/></p>
+<h4>摸鱼儿　<span class="shou">一首</span></h4>
+<p class="poem">已不见几朝容貌，伤心山岳隔目。天公落泪清明雨，引放白花无数。黄河渡，昆仑路，山山水水君曾步。功勋重顾。记谆嘱留言，唤周公、再共闻鸡起舞。<span class="cibr"></span>　　红场事、拨亿万人前雾。秦皇曾有人妒。旧辙敌仇与民恨，又有新人复古。君莫舞。君不见玉环飞燕皆粪土。山河依故。退居整吴钩，征程万里，还待坎坷步。</p>
+
+<p class="spbr"><br/></p>
+<h4>六洲歌头　<span class="shou">二首</span></h4>
+<p class="poem">天折砥柱，四海雾茫然。晨星灭，英魂逝，不归帆。入广寒。追想一生业，如阳光，哺大地，数十载，功与过，任评谈。恸地哀歌，泪雨堆霜雪，浪震重天。有人狐鬼兔，亦掩面遮颜。无泪徒嚎。野心欢。<span class="cibr"></span>　　看谁人爱，谁人恨，爱与恨，两分明。虽计诡，心徒妄，逆潮轮。事何成。朝阳方出海，四人舞，兽张行。凭名节，驱迷雾，岂留情。有亿万人後继，永瞻望、雄劲碑文。愿回眸笑慰，赤县举红缨。遍地群英。</p>
+<h4 class="futi">又</h4>
+<p class="poem">长空哭断，天际大江流。清明日，潇潇雨，浸歌头。白花愁。风卷哀澜动，痛流断，山雲激，浪天恸，松壑响，共民忧。灰骨飘於、大地苍茫处，遍撒九州。与山河同在，正气势长留。革命恩仇。刻春秋。<span class="cibr"></span>　　概头亡楚，胆飘海，颅悬世，为国酬。驱铁骑，操神策，落敌头。尽奇谋。声显周公馆，义辞正，劲何遒。无眠夜，筹国计，挽沉浮。视功名，贱若土，鞠躬尽瘁孺子牛。竟溘然辞世，民泪满腔休。遗志当酬。</p>
+<p><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-03">卷三</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-04">重订丙辰清明诗词散文选钞卷之四</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+<h3>挽联、赋、诔文</h3>
+
+<p class="spbr"><br/></p>
+<h4>挽联　<span class="shou">一十四幅</span></h4>
+<p class="poem">忠魂不泯、热血一腔化春雨。</p>
+<p class="poem">大义凛然、壮志千秋泣鬼神。</p>
+<h4 class="futi">又</h4>
+<p class="poem">无私无畏、光明磊落、肝胆比日月。</p>
+<p class="poem">为党为国、尽瘁鞠躬、心胸温冬秋。</p>
+<h4 class="futi">又</h4>
+<p class="poem">时光如涛荡泥土。</p>
+<p class="poem">砥柱触天立中流。</p>
+<h4 class="futi">又</h4>
+<p class="poem">神州大地漫漫、论万代英豪。</p>
+<p class="poem">祖国长河滔滔、评千秋功罪。</p>
+<h4 class="futi">又</h4>
+<p class="poem">德深於众、名垂青史江河行地。</p>
+<p class="poem">功高在世、声震寰宇日月经天。</p>
+<h4 class="futi">又</h4>
+<p class="poem">悼总理、心事浩茫连广宇。</p>
+<p class="poem">秉遗志、於无声处听惊雷。</p>
+<h4 class="futi">又</h4>
+<p class="poem">九州埋忠骨、大地生辉、总理精神永驻。</p>
+<p class="poem">八亿仰英灵、民心承露、伟人浩气长存。</p>
+<h4 class="futi">又</h4>
+<p class="poem">家国总理、德大深如海。</p>
+<p class="poem">民族英魂、功高厚比天。</p>
+<h4 class="futi">又</h4>
+<p class="poem">灰撒江河、看不尽波涛、涓滴都是人民泪。</p>
+<p class="poem">志华日月、信无际光焰、浩气长贯赤县天。</p>
+<h4 class="futi">又</h4>
+<p class="poem">忆此日一代巨星陨落、万民痛绝、深恐红色江山被窃。</p>
+<p class="poem">看明朝千簇鲜卉花开、几笔翰墨、尽倾国人肺腑铮言。</p>
+<h4 class="futi">又</h4>
+<p class="poem">丹心操碎人民伟业、似巍巍泰山震寰宇。</p>
+<p class="poem">灰骨撒遍总理恩情、如滴滴雨露润人心。</p>
+<h4 class="futi">又</h4>
+<p class="poem">功高天下而无欲、威震中外而不骄、生为工农、死为工农、问千古英雄有谁能伍？</p>
+<p class="poem">假马列令以诸侯、裹红旗图以权位、这也翻案、那也翻案、使一身解数无事生非！</p>
+<h4 class="futi">又</h4>
+<p class="poem">碧水含烬骨、有魄魂凭托日月。</p>
+<p class="poem">青山抱忠骸、如肝胆显映河山。</p>
+<h4 class="futi">又</h4>
+<p class="poem">生有雄气压五岳。</p>
+<p class="poem">死存英风断千河。</p>
+
+<p class="spbr"><br/></p>
+<h4>吊周公赋</h4>
+<p class="poem">出污泥之珍珠兮，顶青天之巨峰。投青春於西欧兮，书少年之峥嵘。救革命於危急兮，发南昌之炮声。居魔窟而不惧兮，处险境仍从容。参军机之神谋兮，俘百万之敌兵。斥强主於广众兮，抗苏美之欺凌。先黄埔之军校兮，立第一之功勋。驱日寇出国门兮，灭蒋家之千军。执领袖之韬略兮，驭天下之风雲。怀革命之理想兮，握共产之红缨。负华夏之兴亡兮，主大地之浮沉。定三分於乱世兮，反两霸之先锋。倡五项於德里兮，聚亚非於万隆。抒工农之大义兮，振中华之威风。导四海之潮流兮，扬九州之美名。敞胸怀於中外兮，盖明德之古今。献终身於人民兮，尽赤胆之忠贞。位居国家之总理兮，心为人民之仆臣。足涉西莽东原兮，车驰南疆北巡。身躬九百六十万平方公里之山河兮，何顾夏秋冬春。亲政七万万之国民兮，不分昼夜昏晨。鄙荣华若粪土兮，藐富贵若浮雲。忍一人之屈辱兮，支大局於千钧。过历世之奇才兮，超群雄之伟人。一旦名归青史兮，牵动亿万红心。</p>
+
+<p class="spbr"><br/></p>
+<h4>清明诔文</h4>
+<p class="text">　　时值清明，风雲密布。天安门广场、英雄碑下，凭吊者万人。一时白花成海，哀声动地；春雨绵绵，如泪如雪。余亦哀其人之伟，痛斯事之酷，憾不得终其志，乃作诔文、为之一哭曰：</p>
+<p class="text">　　君以盖世之名，垂於宇宙；赫赫之功，高於日月。昔怀少年振奋之理想，负国家兴亡为己任。投身革命，留学西欧；创言共产，宣扬救国。自黄埔军校，树大名播国共两党；始南昌义举，发枪声建人民三军。井冈山上，冲破白匪之封锁；瑞金城头，拥立红军之领导。乃紧随毛泽东，驾长车、驱神兵、操金戈、落敌头，转战南北，马不离鞍；智斗蒋介石，八一楼、长征路、红岩村、梅园林，遗址东西，人未解甲。终驱日寇於门外，赶蒋贼於孤岛。开济建国，凤夜不寐；勤於国事，食不甘味。处高坛之雄辨，惊其座人；发慷慨之陈词，荡之心魄。其身之磊落，透於冰精。鞠躬尽瘁，死而後已。故秦皇一统之伟业，未若其九牛之一毛；而蜀相开国之功勋，何如其沧海之一粟耳。</p>
+<p class="text">　　六十年春秋，对党忠心诚怀；廿七载总理，为民肝脑涂地。重社稷，尽精微；爱百姓，共温凉。长行神州万里，躬察农乡留颜，尊黎民作主，遂使国人痛泪流，万民身欲换公死；远涉重洋千回，邦交国际赞誉，为世界谋福，足令志士嗟今古，亿人由衷为君哭。</p>
+<p class="text">　　叹人生有限，相业无闲。外争国威，倡五项基本原则；内斗党敌，导十大团结宗旨。能以领袖魅力，常居党政高位；全凭组织才能，每度斗争艰险。因捍卫红色政权，粉林彪之碎骨；保护人民领袖，反蒋贼之死党。心广胸阔，称古今第一人；德高望重，居军国副主席。家国千机，惟全心对付；江山万里，是一手扶持。恩来九州遍泽东，翔宇四海皆润之。辉争日月心是师，因真理握在手；功盖山河铁作证，有明德留於今。名高天下固不骄，心系国家而无欲。</p>
+<p class="text">　　问往来五千年，纵横九万里，曾有二耶？</p>
+<p class="text">　　以君之望重，宁退伟人之左右；念君之德深，甘为人民之臣仆。多少秩事佳话，流传街头巷尾；真实音容笑貌，埋藏脑海心田。点点平凡而成其伟大，滴滴热血换来不朽和永恒！</p>
+<p class="text">　　君生为中华崛起，废寝忘食；死为世界红遍，倾心尽血。业未就而抱重疾，功未捷而身先死。呜呼天也，汝堕我东国一星；呜呼地也，汝折我南天一柱矣。此一去，神州自此欲崩缺，赤县从今无支持。岂不哀哉！</p>
+<p class="text">　　而君之骨犹未寒也，斯世乱党，阴风四起。浮雲蔽日，不见长安。如吕后再现，秦桧重生。谤其身以惑天下，毁其名欲篡社稷。用心何险，为人何毒也哉。殊不知翻四届人大之案，不得人心；反十大团结之旨，众叛亲离。人神之所共怒，天地之所不容！</p>
+<p class="text">　　清明祭日，举国哭天；英雄碑下，全民泪眼。幽燕吴楚，管弦山何。星南斗北，天纸难书。对明灯，泪纵横，想自古名相谁堪与列，垂青史名在凌烟阁，最高阙；雨打窗，忽惊梦，恨至今回首中南红壁，谁能忘一九七六年，清明节？</p>
+<p class="text">　　呜呼！悲哉！栋梁之折，砥柱之毁。悲於原野，哭向逝川。诗曰：</p>
+<p class="poem">　　毕生展忠义，一死轻泰山。</p>
+<p class="poem">　　天地英雄气，千秋尚凛然。</p>
+<p><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-04">卷四</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-05">重订丙辰清明诗词散文选钞卷之五</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+<h3>现代散文诗选　<span class="shou">五首</span></h3>
+
+<p class="spbr"><br/></p>
+<h4>一月的哀思　　<span class="author">李瑛</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　我不相信</p>
+<p class="text">　　一九七六年的日历，</p>
+<p class="text">　　会埋着这样苍白的日子；</p>
+<p class="text">　　我不相信</p>
+<p class="text">　　死亡，竟和他的生命</p>
+<p class="text">　　连在了一起；</p>
+<p class="text">　　我不相信</p>
+<p class="text">　　红旗覆盖了他的身体；</p>
+<p class="text">　　我不相信</p>
+<p class="text">　　那火终能使他垂下双臂。</p>
+<p class="text">　　但，千山哀默，</p>
+<p class="text">　　万水波息，</p>
+<p class="text">　　微茫里，只是凝咽无尽的乐笛。</p>
+<p class="spbr"><br/></p>
+<p class="text">　　声音，</p>
+<p class="text">　　这样轻微，</p>
+<p class="text">　　却又这样有力，</p>
+<p class="text">　　──似飓风掠过深海，</p>
+<p class="text">　　──似冷雨抽打大地。</p>
+<p class="text">　　报纸，披着黑纱，</p>
+<p class="text">　　电波，浸着泪滴；</p>
+<p class="text">　　每盏灯，都是哭红的眼，</p>
+<p class="text">　　每颗心，都在流泪抽泣：</p>
+<p class="text">　　总理啊──</p>
+<p class="text">　　周─总─理！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　呵，我们的父亲，</p>
+<p class="text">　　而对死亡，迎击多少强敌，</p>
+<p class="text">　　今天，却惧怕这样一个日子；</p>
+<p class="text">　　我们的母亲，</p>
+<p class="text">　　身抗风雪，战胜多少艰辛，</p>
+<p class="text">　　今天，也忍不位嘤嘤啜泣；</p>
+<p class="text">　　此刻呵，</p>
+<p class="text">　　我们不禁齐声呼唤：</p>
+<p class="text">　　中国，不能失去你啊！</p>
+<p class="text">　　历史，不能忘记你！</p>
+<p class="text">　　人民啊，怎么能够没有你！</p>
+<p class="text">　　革命──需要你！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　且忍住撕心的痛，</p>
+<p class="text">　　却忍不住那泪眼迷离。</p>
+<p class="text">　　一只带泪的花圈，</p>
+<p class="text">　　不知放它在哪里？</p>
+<p class="text">　　几十年，你走遍祖国大地，</p>
+<p class="text">　　一处处深深的记忆，</p>
+<p class="text">　　都欲向你表示</p>
+<p class="text">　　赤诚的心意。</p>
+<p class="spbr"><br/></p>
+<p class="text">　　敬爱的周总理，</p>
+<p class="text">　　我们不能去医院看望你，</p>
+<p class="text">　　攥一张冰冷的报纸，静静地</p>
+<p class="text">　　伫立在长安街的暮色里。</p>
+<p class="text">　　任一月的风，</p>
+<p class="text">　　撩起我的愁发；</p>
+<p class="text">　　任黄昏的灯，</p>
+<p class="text">　　映着晶莹的泪滴。</p>
+<p class="text">　　等待着，等待着──</p>
+<p class="text">　　灵车碾过我的心；</p>
+<p class="text">　　等待着，等待着</p>
+<p class="text">　　──一个忠诚斗士的崇敬</p>
+<p class="text">　　献给你。</p>
+<p class="spbr"><br/></p>
+<p class="text">　　白花铺地呵黑纱束臂，</p>
+<p class="text">　　广场肃穆兮长街沉寂。</p>
+<p class="text">　　如血的残阳，</p>
+<p class="text">　　愁映天安门城楼；</p>
+<p class="text">　　低沉的冬雲，</p>
+<p class="text">　　欲摧半落红旗。</p>
+<p class="spbr"><br/></p>
+<p class="text">　　灵路象一条河，</p>
+<p class="text">　　缓缓地流在深冬的晚风里……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　岂能有人</p>
+<p class="text">　　压制我们缅怀你不朽的功绩。</p>
+<p class="text">　　看此刻丰碑静穆，</p>
+<p class="text">　　万民伫立！</p>
+<p class="text">　　一颗心──一片翻腾的血海，</p>
+<p class="text">　　一双眼──两道冲决的河堤。</p>
+<p class="text">　　多少人呼唤你，扑向灵车；</p>
+<p class="text">　　多少人默默地，</p>
+<p class="text">　　为君行礼；</p>
+<p class="text">　　多少人要和你倾谈</p>
+<p class="text">　　知心的话题……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　灵车涌起的河，</p>
+<p class="text">　　凄凄地流在深冬的寒风里……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　历史</p>
+<p class="text">　　永记着一月十一日：</p>
+<p class="text">　　一辆车</p>
+<p class="text">　　曾碾过一个峥嵘的世纪。</p>
+<p class="text">　　中共英明统帅，</p>
+<p class="text">　　无产阶级的革命者，</p>
+<p class="text">　　国际共产主义战士，</p>
+<p class="text">　　人民的优秀儿子，</p>
+<p class="text">　　为八亿神州</p>
+<p class="text">　　耗尽了最後的血一滴──</p>
+<p class="text">　　就这样</p>
+<p class="text">　　从你熟悉的长安街上从容而过，</p>
+<p class="text">　　西去，西去……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　灵车潮动的河，</p>
+<p class="text">　　轰轰地流在深冬的冰风里……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　茫茫暮霭，</p>
+<p class="text">　　沉沉烟雲；</p>
+<p class="text">　　门动窗开，</p>
+<p class="text">　　轮停耕缀；</p>
+<p class="text">　　疆塞鸣枪，</p>
+<p class="text">　　车船吹笛。</p>
+<p class="text">　　这　就是我们的丧仪：</p>
+<p class="text">　　主会场──</p>
+<p class="text">　　九百六十万平方公里的祖国，</p>
+<p class="text">　　分会场──</p>
+<p class="text">　　五大洲南北东西。</p>
+<p class="text">　　雲水间，</p>
+<p class="text">　　满眼翻飞的挽幛；</p>
+<p class="text">　　风雷中，</p>
+<p class="text">　　充耳坚定的誓语。</p>
+<p class="text">　　江水沉凝，青山肃立，</p>
+<p class="text">　　草木俯首，</p>
+<p class="text">　　星月不移……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　灵车铺开的河，</p>
+<p class="text">　　涩涩地流在深冬的凛风里……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　灵车正西去，西去……</p>
+<p class="text">　　可　那不是你吗，</p>
+<p class="text">　　敬爱的周总理？──</p>
+<p class="text">　　人大会堂</p>
+<p class="text">　　正传出你爽朗的笑声，</p>
+<p class="text">　　天安门前</p>
+<p class="text">　　又走过你矫健的步履；</p>
+<p class="text">　　你正在作政府工作报告，</p>
+<p class="text">　　你正在询问灾区的油盐柴米……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　那不是你吗，午夜灯火依稀？</p>
+<p class="text">　　你关怀着祖国，关怀着世界──</p>
+<p class="text">　　文件上的一个标点，</p>
+<p class="text">　　舞台上的一句台词……</p>
+<p class="text">　　你有力的脉博时刻与</p>
+<p class="text">　　国家的命运、世界的利益</p>
+<p class="text">　　相关休戚。</p>
+<p class="text">　　即使是生命最後一息，</p>
+<p class="text">　　你还在咏读毛主席</p>
+<p class="text">　　不朽的诗句……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　那不是你吗，歌声慷慨激励？</p>
+<p class="text">　　你和我们一起</p>
+<p class="text">　　唱《东方红》，</p>
+<p class="text">　　唱《三大纪律八项注意》，</p>
+<p class="text">　　唱《国际歌》，</p>
+<p class="text">　　唱共产主义……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　那不是你吗，步伐雄健有力？</p>
+<p class="text">　　你仍然和我们走在一起，</p>
+<p class="text">　　永远走在向共产主义、</p>
+<p class="text">　　向四个现代化进军的行列里……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　周总理，</p>
+<p class="text">　　你永远活在我们心里，</p>
+<p class="text">　　你永远活在祖国的神州大地──</p>
+<p class="text">　　一月的哀思永无终止，</p>
+<p class="text">　　革命的潮流因之不息。</p>
+<p class="text">　　……</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h4 class="pgbr">周总理办公室的灯光　　<span class="author">石祥</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　夜呵，静悄悄……</p>
+<p class="text">　　静悄悄……</p>
+<p class="text">　　当祖国度过了沸腾的一昼，</p>
+<p class="text">　　当人们从梦里露出甜蜜的微笑，</p>
+<p class="text">　　当婴儿熟睡的脸上现出幸福的酒窝，</p>
+<p class="text">　　当晶莹的露珠挂上嫩绿的幼苗……</p>
+<p class="text">　　同志呵，你可知道，</p>
+<p class="text">　　我们敬爱的周总理办公室</p>
+<p class="text">　　灯光又亮了通宵？</p>
+<p class="spbr"><br/></p>
+<p class="text">　　呵，春风知道，夏雨知道，</p>
+<p class="text">　　秋霜知道，冬雪知道，</p>
+<p class="text">　　我们敬爱的周总理</p>
+<p class="text">　　几十年如一日，</p>
+<p class="text">　　昼夜为民操劳！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　如果世上真有不知疲倦的人，</p>
+<p class="text">　　我们的周总理</p>
+<p class="text">　　一生休息的最少，最少！</p>
+<p class="text">　　看那办公室的灯光，</p>
+<p class="text">　　就是一个最好的写照：</p>
+<p class="text">　　它点燃的是周总理毕生的心血，</p>
+<p class="text">　　是周总理的红心在闪耀！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　不要说总理九天安息，</p>
+<p class="text">　　这样伟大的革命家几曾睡着？</p>
+<p class="text">　　莫道总理与世长辞，</p>
+<p class="text">　　如此杰出的无产者永远战斗前哨！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　看，周总理从《国际歌》声中走来，</p>
+<p class="text">　　又奔上了中国革命的大道──</p>
+<p class="text">　　黄埔军校政治部的瓦房，</p>
+<p class="text">　　南昌城内的平凡小屋，</p>
+<p class="text">　　周总理办公室的灯光呵，</p>
+<p class="text">　　和启明星一起破晓。</p>
+<p class="text">　　韶山的朝阳照亮东方，</p>
+<p class="text">　　井冈的明月红了一角，</p>
+<p class="text">　　周总理办公室的灯光呵，</p>
+<p class="text">　　化作燎原的熊熊火苗！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　遵义城砖楼上的灯光，</p>
+<p class="text">　　拥立毛泽东的正确领导，</p>
+<p class="text">　　照亮革命征途的航道。</p>
+<p class="text">　　长征路周副主席野营的松油灯，</p>
+<p class="text">　　度过了雪山草地，饥寒病劳，</p>
+<p class="text">　　粉碎了敌军天上滥炸，地面围剿。</p>
+<p class="spbr"><br/></p>
+<p class="text">　　杨家岭窑洞的灯光</p>
+<p class="text">　　和遍地抗日烽火一起燃烧；</p>
+<p class="text">　　在西安，在重庆，</p>
+<p class="text">　　在南京梅园新村三十号，</p>
+<p class="text">　　周副主席办公室的灯光</p>
+<p class="text">　　如插入敌人心脏的尖刀，</p>
+<p class="text">　　也点明了人民解放的前照！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　在中南海，</p>
+<p class="text">　　周总理办公室的灯光，</p>
+<p class="text">　　照着毛泽东选集，马列著作，</p>
+<p class="text">　　照着千百份文件、报告。</p>
+<p class="text">　　灯光下，接见四海宾朋；</p>
+<p class="text">　　灯光下，会谈各地工农代表……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　在出访列国的机舱里，</p>
+<p class="text">　　周总理办公的灯光呵，</p>
+<p class="text">　　和星月一起闪亮；</p>
+<p class="text">　　在巡视祖国的车厢中，</p>
+<p class="text">　　周总理办公的灯光呵，</p>
+<p class="text">　　与车轮一同赛跑！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　最难忘，十年文化大革命，</p>
+<p class="text">　　周总理休息的更少，更少！</p>
+<p class="text">　　频繁的会见，耐心的指教。</p>
+<p class="text">　　在周总理最後的岁月里，</p>
+<p class="text">　　灯光和总理一起经受着病痛的煎熬──</p>
+<p class="text">　　疼痛强忍，牙关紧咬，</p>
+<p class="text">　　哪顾宿敌的陷害，斗争不屈不挠。</p>
+<p class="text">　　眼熬红，面消瘦，</p>
+<p class="text">　　你仍在灯下咏读毛主席的诗稿……</p>
+<p class="spbr"><br/></p>
+<p class="text">　　总理～～直到最後一息，</p>
+<p class="text">　　你又唱起了《国际歌》悲壮的曲调，</p>
+<p class="text">　　英特耐雄纳尔的号角──</p>
+<p class="text">　　一声声，将最後的灯火燃烧！</p>
+<p class="text">　　周总理啊──</p>
+<p class="text">　　你点亮的明灯</p>
+<p class="text">　　在八亿人民心中永照！永照！</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h4 class="pgbr">周总理，你在哪里？　　<span class="author">柯岩</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　周总理，我们的好总理，</p>
+<p class="text">　　你在哪里呵，你在哪里？</p>
+<p class="text">　　你可知道，我们想念你，</p>
+<p class="text">　　──你的人民想念你呵，想念你！</p>
+<p class="spbr"><br/></p>
+<p class="text">　　我们对着高山喊：</p>
+<p class="text">　　周─总─理──</p>
+<p class="text">　　山谷回音：</p>
+<p class="text">　　“他刚离去，他刚离去，</p>
+<p class="text">　　革命征途千万里，</p>
+<p class="text">　　他步步紧随毛主席！”</p>
+<p class="spbr"><br/></p>
+<p class="text">　　我们对着大地喊：</p>
+<p class="text">　　周─总─理──</p>
+<p class="text">　　草木轰鸣：</p>
+<p class="text">　　“他刚离去，他刚离去，</p>
+<p class="text">　　你不见那沉甸甸的谷穗上，</p>
+<p class="text">　　还闪着他辛勤的汗滴……”</p>
+<p class="spbr"><br/></p>
+<p class="text">　　我们对着森林喊：</p>
+<p class="text">　　周─总─理──</p>
+<p class="text">　　松涛阵阵：</p>
+<p class="text">　　“他刚离去，他刚离去，</p>
+<p class="text">　　宿营地上篝火红呵，</p>
+<p class="text">　　伐木工人正在回忆他亲切的笑语。”</p>
+<p class="spbr"><br/></p>
+<p class="text">　　我们对着大海喊：</p>
+<p class="text">　　周─总─理──</p>
+<p class="text">　　海浪声声：</p>
+<p class="text">　　“他刚离去，他刚离去，</p>
+<p class="text">　　你不见海防战士身上，</p>
+<p class="text">　　他亲手给披盖的大衣……”</p>
+<p class="spbr"><br/></p>
+<p class="text">　　我们找遍整个世界，</p>
+<p class="text">　　呵，总理，</p>
+<p class="text">　　你在革命需要的每一个地方，</p>
+<p class="text">　　辽阔大地</p>
+<p class="text">　　到处是你深深的足迹。</p>
+<p class="spbr"><br/></p>
+<p class="text">　　我们回到祖国的心脏，</p>
+<p class="text">　　在天安门前深情地呼唤：</p>
+<p class="text">　　周─总─理──</p>
+<p class="text">　　广场回答：</p>
+<p class="text">　　“呵，轻些呵，轻些，</p>
+<p class="text">　　他正在中南海接见外宾，</p>
+<p class="text">　　他正在政治局出席会议</p>
+<p class="text">　　……”</p>
+<p class="spbr"><br/></p>
+<p class="text">　　总理呵，我们的好总理！</p>
+<p class="text">　　你就在这里呵，就在这里！</p>
+<p class="text">　　──在这里，在这里，在这里……</p>
+<p class="text">　　你永远和我们在一起</p>
+<p class="text">　　──在一起，在一起，在一起……</p>
+<p class="text">　　你永远居住在红太阳升起的地方，</p>
+<p class="text">　　你永远居住在人民心里，</p>
+<p class="text">　　你的人民世世代代想念你！</p>
+<p class="text">　　想念你呵──想念你！</p>
+<p class="text">　　＞想＞念＞你……</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h4 class="pgbr">永恒的瞬间　　<span class="author">佚名</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　（缺）</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h4 class="pgbr">那时的爱　　<span class="author">张若茗</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　我们像星星一样近，</p>
+<p class="text">　　我们像星星一样远。</p>
+<p class="text">　　我们近的摩擦生电，</p>
+<p class="text">　　我们远的天际云端。</p>
+<p class="text">　　你像星星一样明亮，</p>
+<p class="text">　　我像星星一样暗淡。</p>
+<p class="text">　　你明亮的举世瞩目，</p>
+<p class="text">　　我暗淡的彼此不见。</p>
+<p class="text">　　你像星星一样永恒，</p>
+<p class="text">　　我像星星一样短暂。</p>
+<p class="text">　　你永恒的与世长存，</p>
+<p class="text">　　我短暂的瞬间一闪。</p>
+<p class="text">　　我像星星一样热恋，</p>
+<p class="text">　　你像星星一样绝缘。</p>
+<p class="text">　　我热恋的日夜守望，</p>
+<p class="text">　　你绝缘的永难相伴。</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h4 class="pgbr">丰碑　　<span class="author">浩然</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　白云朵朵，</p>
+<p class="text">　　飘来了，</p>
+<p class="text">　　天山的雪莲；</p>
+<p class="text">　　彩霞腾腾，</p>
+<p class="text">　　染红了，</p>
+<p class="text">　　中原的牡丹；</p>
+<p class="text">　　东风阵阵，</p>
+<p class="text">　　吹绿了，</p>
+<p class="text">　　兴安岭的松枝；</p>
+<p class="text">　　旭日冉冉。</p>
+<p class="text">　　绽开了，</p>
+<p class="text">　　五指山的木棉；</p>
+<p class="text">　　从长江两岸，</p>
+<p class="text">　　摘取的金玫瑰；</p>
+<p class="text">　　从井冈哨口，</p>
+<p class="text">　　采集的紫杜鹃……</p>
+<p class="text">　　彩色缤纷结队来，</p>
+<p class="text">　　千枝青翠万朵鲜。</p>
+<p class="text">　　编织起来吧，</p>
+<p class="text">　　用八亿颗火热的心，</p>
+<p class="text">　　连结成一个，</p>
+<p class="text">　　巨大的花环！</p>
+<p class="text">　　擎举起来吧，</p>
+<p class="text">　　用八亿双坚强的手，</p>
+<p class="text">　　虔诚的奉献在，</p>
+<p class="text">　　周恩来同志的</p>
+<p class="text">　　英灵面前！</p>
+<p class="spbr"><br/></p>
+<p><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-05">卷五</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-06">重订丙辰清明诗词散文选钞卷之六</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+<h3>散文四篇</h3>
+<p class="spbr"><br/></p>
+
+<h4>引卡尔·马克思语</h4>
+<p class="text">　　这位出类拔萃和道德高尚的人竟是那样得谦虚，以至於只有在他成为殉难者倒下去之後，全世界才发现他是一位英雄。</p>
+<p class="spbr"><br/></p>
+
+<h4>引弗莱德里奇·恩格斯语</h4>
+<p class="text">　　这个人的逝世，对於欧美战斗着的无产阶级，对於历史科学，都是不可估量的损失。这位巨人逝世以後所形成的空白，不久就会使人感觉到。</p>
+<p class="spbr"><br/></p>
+
+<h4>因为他说真理　<span class="author">（韩素音）</span></h4>
+<p class="text">　　温和和实用主义这两个词，不适用於周恩来总理这位革命家。当我说革命家时，这并不排除现实主义；正相反，革命家是世界上最现实的人，因为他们懂得鼓励和促进各种伟大社会潮流和创造历史的那些真理。周就是这样的人。</p>
+<p class="text">　　我同他会晤过十来次。第一次是在１９５６年。他从来没有试图给我洗脑筋或说服我。我同他的讨论，经常有我不同意他的意见的情况。为什么周恩来在西方很知名和很有声望，我认为，这是因为他是一个非常诚实的人，因为他说真理，因为他平静而合乎逻辑地说出真理，因为他有无限的耐心，因为他想以理服人，而且因为当他听到没有礼貌的话时从来不生气，他只是说，那好吧，再想一下。对大家都是这样。他非常平静地处理各种复杂事务。在中印边境问题上，他也是想和尼赫鲁说理。……他的记忆力是非凡的。１９７１年当他接见我丈夫(他是印度人)时，他谈到喜马拉雅山所有峡谷的高度和名字……他也是一个对人记忆非常好的人。十年前，他曾同某外国人士有过一次小小的争论。十年後，他在一次大的宴会上碰见这人，周离开了自己的座位去找他。周对这个人说，十年前我们讨论过某某事情。你是对的，我错了。他就是这样的人。正是如此，我认为人们对他才特别敬佩。</p>
+<p class="spbr"><br/></p>
+
+<h4>追忆周恩来同志往事</h4>
+<p class="text">　　自一九四六年至一九四九将进三年的时间内，我认识并观察了这位谈吐文雅而热情认真的红色领导人……</p>
+<p class="text">　　周有一个令人感兴趣的奇怪习惯──他的英语相当好，但是他从来不在公开场合讲英语，除非为了纠正他的正式译员的错误。一些美国记者在和谈期间几乎天天同周见面，他们发现他既是忠诚的共产主义者，又是彬彬有礼的人。我从未听到过他象赫鲁晓夫经常在莫斯科表演的那样夸夸其谈。红色中国的第二号人物是在法国接受共产主义的，他在巴黎一家汽车工厂懂得了共产主义。他在政治上机智敏锐，远见卓识，在个人生活上却很朴素。有时，我们在他家的小小住房内边喝茶边谈，我和妻子是他家的受欢迎的客人。但是这些谈论尽管范围广泛，却从来没有激烈争论。当时马歇尔将军同周的会谈持续了好几个月，马歇尔有一次说这位身材细瘦，头发乌黑的共产党人周恩来先生是『我所见过的人当中最有才识者之一』。他很敬佩周。</p>
+<p class="spbr"><br/></p>
+
+<h4>基辛格回忆周恩来</h4>
+<p class="text">　　１９７１年我见到周恩来的时候，他作为中国共产主义运动的一位领导人已经差不多五十年了。他是人民共和国成立以来一直任职的一位总理──担任这个职务将近二十二年──其中有九年兼任外交部长。在谈论哲学、回忆往事、分析历史、探讨谋略以及诙谐善辨等方面，他都是个行家能手。他对事物了如指掌，特别是对有关美国事态发展以及对我个人的背景情况的了解，是令人惊讶的。无论在言谈或举止方面，他都极为干练。这反映了一个人内在的紧张状态；正象他所强调的，他要关注八亿人无穷无尽的日常问题，同时又要关注为维护思想信仰而作出的努力。</p>
+<p class="text">　　周恩来表现出一种非凡的谦和敦厚品德。我们中的一位成员生了病，他也会来看望。尽管在礼仪上我和他有级别的差距，他还是坚持我们的会议在我的住所和人民大会堂轮流举行。中国人似乎对他特别崇敬，觉得在所有的中国领导人中，他具有一种特殊的人品。在一九七五年末的一次访问中，我向一位年轻的翻译问起周恩来的健康情况；她告诉我他的病情严重，说时眼泪汪汪。他逝世以後，在中国，人们那么悲痛地悼念他，这并不是偶然的；七十年代後期，在中国，人们异乎寻常地表现出向往更多的自由时，求教他，并赞美他，这也不是偶然的。他是我见过的两三位给人印象最深刻的人物之一。我对周恩来所代表的制度不抱幻想，但他逝世时，我感到非常悲痛。失去了他，世界将不那么有活力，前景也看得不那么清晰了。我们都从来没有忘记，我们的关系实质上是可好可坏的；我们也都从来没有忽略这种可能性。随着历史的进展，我们两国所走的道路可能只有一个短暂的时刻是并行不悖的。在那以後，两国很有可能发现它们又站在对立的两边。</p>
+<p class="text">　　在我任公职期间，在政治家们为了克服预见中的人类脆弱性而保持某种常住性所进行的无休止的斗争中，我能越过意识形态的壁垒，同一位伟大的人物在一起工作，是引以为欣慰的事情之一。</p>
+<p class="spbr"><br/></p>
+
+<h4>尼克松回忆周恩来</h4>
+<p class="text">　　周恩来无与伦比的个性是我１９７２年去中国时得到的最鲜明的印象之一。</p>
+<p class="text">　　『恩来』的意思是『恩慈而来』，这个名字简明而贴切地体现了他的气度和性格。周恩来外柔内刚。他举止优雅，总是那么精神抖擞，从容自若，使人感觉到他极大的魅力和自信。在个人关系与政治关系中，他忠实地遵循中国的古老的处世之道：决不『撕破面子』。</p>
+<p class="text">　　周的仪表给人的印象是待人热情，开诚布公，善於自制又显然充满激情。他为人机敏练达，胜过我所认识的任何世界领导人。</p>
+<p class="text">　　在正式的会议上，他那轮廓分明的面庞始终是平静的。在听我讲话时，他总是微微偏着头，直视着我的眼睛。人们常用来形容十九世纪爱尔兰伟大的爱国者查尔斯·帕尔内的那句话也很适用於周恩来：他是一座覆盖着冰雪的火山。</p>
+<p class="text">　　在国宴上，周和我都用茅台祝酒，不用香槟。当我们绕宴会厅与五十多位高级官员依次碰杯时，我注意到他非常小心不多喝，与每位客人碰杯後简直酒都没碰上嘴唇。我们回到自己的座位时，两人手里端的仍然是最初斟上的那一杯。然後我们便把剩下的酒一饮而尽。这种酒的劲很大，所以，当周告诉我他在长征中的一些特殊场合一天曾喝过二十五杯茅台时，我感到很惊讶。</p>
+<p class="text">　　中国也许会把周作为使党和国家保持统一的出色的调停者而记得他，但是世界将把他作为中国最杰出的外交家而记得他。周给我留下了四点不可磨灭的印象：他的旺盛的精力，周密的准备，高明的谈判技巧和遇事不慌的镇定态度。他的精力充沛得惊人。在时间比较长的会谈中，双方一些年纪较轻的人露出了倦意，但七十三岁的周却始终头脑敏锐，精神抖擞，聚精会神。他从不离题，从不讲废话，也从不要求休息。如果我们对公报措词有一个分歧在下午会议上没有解决，他并不把问题留给助手，而是在当天余下的时间亲自与基辛格会谈来解决。次日上午他看上去就象在乡间度过了一个宁静的周末刚回来一样精神。他日理万机，工作越繁重，精力越旺盛。权力和责任使他永葆青春。</p>
+<p class="spbr"><br/></p>
+<p class="text">附：<a href="https://m.tangshui.net/post/show/58731afb3a7352b27ffe8301">纪念诗文</a></p>
+<p class="spbr"><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-06">卷六</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-a1">重订丙辰清明诗词散文选钞附卷一</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+<h3>周恩来诗文选</h3>
+<p class="spbr"><br/></p>
+<h4>春日偶成　　<span class="year">一九一四年</span></h4>
+<p class="poem">极目青郊外，烟霾布正浓。中原方逐鹿，<span class="jiao">【汉书·蒯通传：秦失其鹿，天下共逐之。天下纷争，中原逐鹿也。】</span>博浪踵相踪。<span class="jiao">【博浪沙，地名也，留候使人行刺祖龙於此。】</span></p>
+<h4 class="futi">其二</h4>
+<p class="poem">樱花红陌上，柳叶绿池边。燕子声声里，相思又一年。</p>
+<p class="spbr"><br/></p>
+<h4>送蓬仙兄返里有感　　<span class="year">一九一六年初</span></h4>
+<p class="poem">东风催异客，南浦唱骊歌。<span class="jiao">【江淹·别赋：送君南浦，伤如之何。大戴礼：唱骊驹，诗也。】</span>转眼人千里，消魄梦一柯。<span class="jiao">【典出唐·李公佐·南柯记故事。】</span>星离成恨事，雲散奈愁何。欣喜前尘影，因缘文字多。</p>
+<h4 class="futi">其二</h4>
+<p class="poem">同侪争疾走，君独著先鞭。<span class="jiao">【晋书·刘琨传：常恐祖生先吾著鞭。】</span>作嫁怜侬拙，急流让尔贤。群鸦恋晚树，孤雁入寥天。惟有交游旧，临歧意帐然。</p>
+<h4 class="futi">其三</h4>
+<p class="poem">相逢萍水亦前缘，负笈津门岂偶然。扪虱倾谈惊四座，<span class="jiao">【典出晋书·王猛传：扪虱而言，旁若无人。】</span>持蟹下酒话当年。险夷不变应尝胆，<span class="jiao">【典出史记·越王勾践世家。】</span>道义争担敢息肩。待得归农功满日，他年预卜买邻钱。<span class="jiao">【南史·吕僧珍传：宋季雅罢南康郡市，宅居僧珍宅侧。僧珍问宅价。对曰：一千一百万。怪其贵。季雅曰：一百万买宅，千万买邻。】</span></p>
+<p class="spbr"><br/></p>
+<h4>次皋如夫子伤时事原韵　　<span class="year">一九一六年十月</span></h4>
+<p class="poem">茫茫大地起风雲，举国昏沉岂足云。最是伤心秋又到，虫声唧唧不堪闻。</p>
+<h4>附张皋如原诗并序</h4>
+<p class="futi">九月二十八日，阅报见徐州会盟。祸已近在眉睫，政府犹用敷衍主意，国生命已断送数人之手矣！</p>
+<p class="poem">太平希望付烟雲，误国人物何足云。孤客天涯空涕泪，伤心最怕读新闻。</p>
+<p class="spbr"><br/></p>
+<h4>大江歌罢　　<span class="year">一九一七年九月</span></h4>
+<p class="poem">大江歌罢掉头东，邃密群科济世穹。面壁十年图破壁，<span class="jiao">【五灯会元：达摩大师住嵩山少林寺，终日面壁而坐】</span>难酬蹈海亦英雄。<span class="jiao">【史记·鲁仲连邹阳列传、後汉书·逸民传序：蹈海之节、千乘莫移其情。】</span></p>
+<p><br/></p>
+
+<h3>散文诗四首</h3>
+<p class="spbr"><br/></p>
+<h4>雨中岚山　　<span class="year">一九一九年春</span></h4>
+<p class="spbr"><br/></p>
+<p class="poem">雨中二次游岚山，</p>
+<p class="poem">两岸苍松，夹着几株樱。</p>
+<p class="poem">到尽处突见一山高，</p>
+<p class="poem">流出泉水绿如许，绕石照人。</p>
+<p class="poem">潇潇雨，雾蒙浓，</p>
+<p class="poem">一线阳光穿雲出，愈见娇妍。</p>
+<p class="poem">人间的万象真理，愈求愈模糊，</p>
+<p class="poem">──模糊中偶然见着一点光明，</p>
+<p class="poem">真愈觉娇妍。</p>
+<p class="spbr"><br/></p>
+
+<h4>雨後岚山　　<span class="year">一九一九年春</span></h4>
+<p class="spbr"><br/></p>
+<p class="poem">山中雨过雲愈暗，</p>
+<p class="poem">渐近黄昏；</p>
+<p class="poem">万绿中拥出一丛樱，</p>
+<p class="poem">淡红娇嫩，惹得人心醉。</p>
+<p class="poem">自然美，不假人工；</p>
+<p class="spbr"><br/></p>
+<p class="poem">不受人拘束。</p>
+<p class="poem">想起那宗教，礼法，旧文化，……</p>
+<p class="text">　　粉饰的东西，</p>
+<p class="poem">还在那讲什么信仰，情感，美观</p>
+<p class="text">　　的制人学说。</p>
+<p class="spbr"><br/></p>
+<p class="poem">登高远望，青山渺渺，</p>
+<p class="poem">被遮掩的白雲如带；</p>
+<p class="poem">十数电光，射出那渺茫黑暗的城市。</p>
+<p class="poem">此刻岛民心理，</p>
+<p class="poem">仿佛从情景中呼出；</p>
+<p class="poem">元老，军阀，党阀，资本家……</p>
+<p class="poem">从此後“将何所恃”？</p>
+<p class="spbr"><br/></p>
+
+<h4>游日本京都圆山公园　　<span class="year">一九一九年春</span></h4>
+<p class="spbr"><br/></p>
+<p class="poem">满园樱花灿烂；</p>
+<p class="poem">灯光四照，</p>
+<p class="poem">人声嘈杂。</p>
+<p class="poem">小池边杨柳依依，</p>
+<p class="poem">孤单单站着一个女子。</p>
+<p class="poem">樱花杨柳，哪个可爱？</p>
+<p class="poem">冷清清不言不语，</p>
+<p class="poem">可没有人来问她。</p>
+<p class="spbr"><br/></p>
+
+<h4>四次游圆山公园　　<span class="year">一九一九年春</span></h4>
+<p class="spbr"><br/></p>
+<p class="poem">四次来游，</p>
+<p class="poem">满山满谷的『落英缤纷』；</p>
+<p class="poem">树上只剩得青松与绿叶，</p>
+<p class="poem">更何处寻那『淡红姣嫩』的『樱』！</p>
+<p class="spbr"><br/></p>
+<p class="poem">灯火熄，游人渐渐稀，</p>
+<p class="poem">我九天四京炎凉饱看；</p>
+<p class="poem">想人世成败繁枯，都是客观的现象，</p>
+<p class="poem">何曾开芳草春花，</p>
+<p class="poem">自然的美，无碍着的心。</p>
+<p><br/></p>
+
+<h4>东关模范学校第二周年纪念日感言　　<span class="year">一九一二年十月</span></h4>
+<p class="text">　　最可宝贵，最有价值，而又最触动同学诸君之种种感情者，非吾东关模范学校成立第二周年纪念之今日乎？念四小时，一刻千金，拍掌欢呼，全校同庆，亦云盛矣！然余一霎时而怃然。回忆昔日改组成立时缔造之艰难，气象之萧条，岁时再历，同学旧友，十存六七。抚今追昔，神为伤已。一霎时余又欣然，睹今日校舍之宏，人才之盛，跄跄济济，肃肃雍雍，珥笔者纪盛事，观光者相劳慰，已足称一时之嘉会已。而一霎时余更嗒然，夫创之既艰，後难为继。今年今日进步，逾於去年今日；明年今日之进步，未审亦如今年之於去年否也？</p>
+<p class="text">　　嗟呼！负此责任者谁乎？其惟吾校校长教员诸公已耳？其惟吾校全体诸同学已耳？余深爱此最可宝贵、最有价值之第二次纪念日，即不能不厚望我最可钦佩、最可危险、最有成就之全校诸同学也。</p>
+<p class="text">　　吾校司教育之诸公乎。诸公为国家造人才，当殚其聪明，尽其才力。求整顿，宜重实际；务外观，先察内容。勿自隳行检，以失人则效；勿铺张粉饰，以博我名誉；更勿投身政界党会，谋利营私，以纷扰其心志，而日事敷衍。校长为学生择良教材，教习为学生谋造成就，守师严道尊之旨，除嚣张浮躁之习。注重道德而辅之以实利美感，更振之以军国民之精神。教育美满，校风纯正，则此纪念日乃可因之而永久。由第二周年以至第三周年，而达於无穷期之周年者，实赖我司教育诸公之热心维持而已矣。</p>
+<p class="text">　　吾全校之诸同学乎。吾人何人？非即负将来国家责任之国民耶？此地何地？非即造就吾完全国民之学校耶？圣贤书笈，各种科学，何为为吾深究而悉讨；师之口讲指画，友之朝观夕摩，何为为吾相切而相靡利，非即欲吾受完全教育、成伟大人物、克负乎国家将来艰巨之责任耶？以将来如许之重负，基础於小学校三四年中，同学同学，宜如何奋勉，始对之而不愧哉。一物不知，学者之耻。同学其博学乎？好问则裕，自用则小。同学其审问乎？思之思之，鬼神通之；差以毫厘，谬之千里。同学其慎思而明辨乎？学矣，问矣，思辨矣，而犹或浅尝辄止、见异思迁等以求自是而非人焉。吾恐同学之智识亦无由新，道德亦无由固，而欲业人才蔚国器难矣。如是则书不将虚此读，业不将虚此习，师不将虚此教诲，友不将虚此切磋，吾模范学校不将虚此造就，而两周年之光阴又不将虚度过也哉。惟望吾全校诸同学惕然自警而已矣。</p>
+<p class="text">　　余於此纪念日中抒此谬妄，其以前所云者为吾校司教育诸公望，其以後云者为同学诸人勉。韪我，罪我，所弗计也。然而去年今日往矣，今年今日未往而已往矣，明年今日、他年今日，余将拭目而观吾东关之模范学校，更观吾全校同学之学生。</p>
+<p class="spbr"><br/></p>
+<p class="poem"><span class="jiao">【评语】教不如此不足以言教，学不如此不足以言学，学校不如此不足以言学校，文章不如此不足以言文章。</span></p>
+<p class="poem"><span class="jiao">【评语】心长语重，机畅神流。</span></p>
+<p><br/></p>
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-a1">附卷一</a>终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+<p><br/></p>
+<p><br/></p>
+
+
+<h2 id="qm-vol-a2">重订丙辰清明诗词散文选钞附卷二</h2>
+<p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
+<p><br/></p>
+<h3>毛泽东诗词选　<span class="shou">五十首</span></h3>
+<p class="spbr"><br/></p>
+
+<h3>词钞三十四首</h3>
+<p class="spbr"><br/></p>
+
+<h4>贺新郎·给杨开慧　　<span class="year">一九二三年</span></h4>
+<p class="poem">挥手从兹去。更那堪凄然相向，苦情重诉。眼角眉梢都似恨，热泪欲零还住。知误会前番书语。过眼滔滔雲共雾，算人间知己吾和汝。人有病，天知否？<span class="cibr"></span>　　今朝霜重东门路，照横塘半天残月，凄清如许。汽笛一声肠已断，从此天涯孤旅。凭割断愁丝恨缕。要似昆仑崩绝壁，又恰象台风扫寰宇。重比翼，和雲翥。</p>
+<p class="spbr"><br/></p>
+
+<h4>贺新郎·读史　　<span class="year">一九二三年春</span></h4>
+<p class="poem">人猿相揖别，只几个石头磨过，小儿时节。铜铁炉中翻火焰，为问何时猜得，不过是几千寒热。人世难逢开口笑，上疆场彼此弯弓月。流遍了，郊原血。<span class="cibr"></span>　　一篇读罢头飞雪，但记得斑斑点点，几行陈迹。五帝三皇神圣事，骗了无涯过客。有多少风流人物？盗跖庄蹶流誉後，更陈王奋起挥黄钺。歌未竟，东方白。</p>
+<p class="spbr"><br/></p>
+
+<h4>沁园春·长沙　　<span class="year">一九二五年</span></h4>
+<p class="poem">独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？<span class="cibr"></span>　　携来百侣曾游。忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。指点江山，激扬文字，粪土当年万户侯。曾记否，到中流击水，浪遏飞舟？</p>
+<p class="spbr"><br/></p>
+
+<h4>沁园春·雪　　<span class="year">一九三六年</span></h4>
+<p class="poem">北国风光，千里冰封，万里雪飘。望长城内外，惟余莽莽；大河上下，顿失滔滔。山舞银蛇，原驰蜡象，欲与天公试比高。须晴日，看红装素裹，分外妖娆。<span class="cibr"></span>　　江山如此多娇，引无数英雄竞折腰。惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。一代天骄，成吉思汗，只识弯弓射大雕。俱往矣，数风流人物，还看今朝。</p>
+<p class="spbr"><br/></p>
+
+<h4>满江红·和郭沫若同志　　<span class="year">一九六三年</span></h4>
+<p class="poem">小小寰球，有几个苍蝇碰壁。嗡嗡叫，几声凄历，几声抽泣。蚂蚁缘槐夸大国，蚍蜉撼树谈何易。正西风落叶下长安，飞鸣镝。<span class="cibr"></span>　　多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。四海翻腾雲水怒，五洲震荡风雷激。要扫除一切害人虫，全无敌。</p>
+<p class="spbr"><br/></p>
+
+<h4 class="futi">附：郭沫若原词</h4>
+<p class="poem">沧海横流，方显出英雄本色。人六亿，加强团结，坚持原则。天垮下来擎得起，世披靡矣扶之直。听雄鸡一唱遍寰中，东方白。<span class="cibr"></span>　　太阳出，冰山滴；真金在，岂销铄？有雄文四卷，为民立极。桀犬吠尧堪笑止，泥牛入海无消息。迎东风革命展红旗，乾坤赤。</p>
+<p class="spbr"><br/></p>
+
+<h4>念奴娇·昆仑　　<span class="year">一九三五年</span></h4>
+<p class="poem">横空出世，莽昆仑，阅尽人间春色。飞起玉龙三百万，搅得周天寒彻。夏日消溶，江河横溢，人或为鱼鳖。千秋功罪，谁人曾与评说？<span class="cibr"></span>　　而今我谓昆仑：不要这高，不要这多雪。安得倚天抽宝剑，把汝裁为三截？一截遗欧，一截赠美，一截还东国。太平世界，全球同此凉热。</p>
+<p class="spbr"><br/></p>
+
+<h4>念奴娇·鸟儿问答　　<span class="year">一九六五年秋</span></h4>
+<p class="poem">鲲鹏展翅，九万里，翻动扶摇羊角。背负青天朝下看，都是人间城郭。炮火连天，弹痕遍地，吓倒蓬间雀。怎么得了，哎呀我要飞跃。<span class="cibr"></span>　　借问君去何方，雀儿答道：有仙山琼阁。不见前年秋月朗，订了三家条约。还有吃得，土豆烧熟了，再加牛肉。不须放屁，试看天地翻覆。</p>
+<p class="spbr"><br/></p>
+
+<h4>念奴娇·井冈山　　<span class="year">一九六五年</span></h4>
+<p class="poem">参天万木，千百里，飞上南天奇岳。故地重来何所见，多了楼台亭阁。五井碑前，黄洋界上，车子飞如跃。江山如画，古代曾云海绿。<span class="cibr"></span>　　弹指三十八年，人间变了，似天渊翻覆。犹记当时烽火里，九死一生如昨。独有豪情，天际悬明月，风雷磅礴。一声鸡唱，万怪烟消雲落。</p>
+<p class="spbr"><br/></p>
+
+<h4>水调歌头·游泳　　<span class="year">一九五六年</span></h4>
+<p class="poem">才饮长沙水，又食武昌鱼。万里长江横渡，极目楚天舒。不管风吹浪打，胜似闲庭信步，今日得宽余。子在川上曰：逝者如斯夫！<span class="cibr"></span>　　风樯动，龟蛇静，起宏图。一桥飞架南北，天堑变通途。更立西江石壁，截断巫山雲雨，高峡出平湖。神女应无恙，当惊世界殊。</p>
+<p class="spbr"><br/></p>
+
+<h4>水调歌头·重上井冈山　　<span class="year">一九六五年</span></h4>
+<p class="poem">久有凌雲志，重上井冈山。千里来寻故地，旧貌变新颜。到处莺歌燕舞，更有潺潺流水，高路入雲端。过了黄洋界，险处不须看。<span class="cibr"></span>　　风雷动，旌旗奋，是人寰。三十八年过去，弹指一挥间。可上九天揽月，可下五洋捉鳖，谈笑凯歌还。世上无难事，只要肯登攀。</p>
+<p class="spbr"><br/></p>
+
+<h4>渔家傲·反第一次大围剿　　<span class="year">一九三一年春</span></h4>
+<p class="poem">万木霜天红烂漫，天兵怒气冲霄汉。雾满龙冈千嶂暗，齐声唤，前头捉了张辉瓒。<span class="cibr"></span>　　二十万军重入赣，风烟滚滚来天半。唤起工农千百万，同心干，不周山下红旗乱。</p>
+<p class="spbr"><br/></p>
+
+<h4>渔家傲·反第二次大围剿　　<span class="year">一九三一年夏</span></h4>
+<p class="poem">白雲山头雲欲立，白雲山下呼声急，枯木朽株齐努力。枪林逼，飞将军自重霄入。<span class="cibr"></span>　　七百里驱十五日，赣水苍茫闽山碧，横扫千军如卷席。有人泣，为营步步嗟何及！</p>
+<p class="spbr"><br/></p>
+
+<h4>临江仙·给丁玲同志　　<span class="year">一九三六年</span></h4>
+<p class="poem">壁上红旗飘落照，西风漫卷孤城。保安人物一时新。洞中开宴会，招待出牢人。<span class="cibr"></span>　　纤笔一枝谁与似？三千毛瑟精兵。阵图开向陇山东。昨天文小姐，今日武将军。</p>
+<p class="spbr"><br/></p>
+
+<h4>蝶恋花·从汀州向长沙　　<span class="year">一九三零年</span></h4>
+<p class="poem">六月天兵征腐恶，万丈长缨要把鲲鹏缚。赣水那边红一角，偏师借重黄公略。<span class="cibr"></span>　　百万工农齐踊跃，席卷江西直捣湘和赣。国际悲歌歌一曲，狂飙为我从天落。</p>
+<p class="spbr"><br/></p>
+
+<h4>蝶恋花·答李淑一　　<span class="year">一九五七年</span></h4>
+<p class="poem">我失骄杨君失柳，杨柳轻扬直上重霄九。问讯吴刚何所有，吴刚捧出桂花酒。<span class="cibr"></span>　　寂寞嫦娥舒广袖，万里长空且为忠魂舞。忽报人间曾伏虎，泪飞顿作倾盆雨。</p>
+<p class="spbr"><br/></p>
+
+<h4 class="futi">附：李淑一原词《菩萨蛮·惊梦》</h4>
+<p class="poem">兰闺索莫翻身早，夜来触动离愁了。底事太难堪，惊侬晓梦残。征人何处觅，六载无消息。醒忆别伊时，满衫清泪滋。</p>
+<p class="spbr"><br/></p>
+
+<h4>虞美人·给杨开慧　　<span class="year">一九二六年</span></h4>
+<p class="poem">堆来枕上愁何状，江海翻波浪。夜长天色怎难明，寂寞披衣起坐数寒星。<span class="cibr"></span>　　晓来百念都灰烬，剩有离人影。一钩残月向西流，对此不抛眼泪也无由。</p>
+<p class="spbr"><br/></p>
+
+<h4>浪淘沙·北戴河　　<span class="year">一九五四年夏</span></h4>
+<p class="poem">大雨落幽燕，白浪滔天，秦皇岛外打鱼船。一片汪洋都不见，知向谁边？<span class="cibr"></span>　　往事越千年，魏武挥鞭，东临碣石有遗篇。萧瑟秋风今又是，换了人间。</p>
+<p class="spbr"><br/></p>
+
+<h4>西江月·秋收起义　　<span class="year">一九二七年</span></h4>
+<p class="poem">军叫工农革命，旗号镰刀斧头。匡庐一带不停留，要向潇湘直进。<span class="cibr"></span>　　地主重重压迫，农民个个同仇。秋收时节暮雲愁，霹雳一声暴动。</p>
+<p class="spbr"><br/></p>
+
+<h4>西江月·井冈山　　<span class="year">一九二八年</span></h4>
+<p class="poem">山下旌旗在望，山头鼓角相闻。敌军围困万千重，我自岿然不动。<span class="cibr"></span>　　早已森严壁垒，更加众志成城。黄洋界上炮声隆，报道敌军宵遁。</p>
+<p class="spbr"><br/></p>
+
+<h4>清平乐·蒋桂战争　　<span class="year">一九二九年秋</span></h4>
+<p class="poem">风雲突变，军阀重开战。洒向人间都是怨，一枕黄粱再现。<span class="cibr"></span>　　红旗跃过汀江，直下龙岩上杭。收拾金瓯一片，分田分地真忙。</p>
+<p class="spbr"><br/></p>
+
+<h4>清平乐·会昌　　<span class="year">一九三四年</span></h4>
+<p class="poem">东方欲晓，莫道君行早。踏遍青山人未老，风景这边独好。<span class="cibr"></span>　　会昌城外高峰，颠连直接东溟。战士指看南粤，更加郁郁葱葱。</p>
+<p class="spbr"><br/></p>
+
+<h4>清平乐·六盘山　　<span class="year">一九三五年</span></h4>
+<p class="poem">天高雲淡，望断南飞雁。不到长城非好汉，屈指行程二万。<span class="cibr"></span>　　六盘山上高峰，红旗漫卷西风。今日长缨在手，何时缚住苍龙？</p>
+<p class="spbr"><br/></p>
+
+<h4>忆秦娥·娄山关　　<span class="year">一九三五年</span></h4>
+<p class="poem">西风烈，长空雁叫霜晨月。霜晨月，马蹄声碎，喇叭声咽。<span class="cibr"></span>　　雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血。</p>
+<p class="spbr"><br/></p>
+
+<h4>菩萨蛮·黄鹤楼　　<span class="year">一九二七年春</span></h4>
+<p class="poem">茫茫九派流中国，沉沉一线穿南北。烟雨茫苍苍，龟蛇锁大江。<span class="cibr"></span>　　黄鹤知何去？剩有游人处。把酒酹滔滔，心潮逐浪高！</p>
+<p class="spbr"><br/></p>
+
+<h4>菩萨蛮·大柏地　　<span class="year">一九三三年夏</span></h4>
+<p class="poem">赤橙黄绿青蓝紫，谁持彩练当空舞？雨後复斜阳，关山阵阵苍。<span class="cibr"></span>　　当年鏖战急，弹洞前村壁。装点此关山，今朝更好看。</p>
+<p class="spbr"><br/></p>
+
+<h4>卜算子·咏梅</h4>
+<p class="futi">读陆游词，反其义而用之。　　<span class="year">一九六一年</span></p>
+<p class="poem">风雨送春归，飞雪迎春到。已是悬崖百丈冰，犹有花枝俏。<span class="cibr"></span>　　俏也不争春，只把春来报。待到山花烂漫时，她在丛中笑。</p>
+<p class="spbr"><br/></p>
+
+<h4 class="futi">附：陆放翁咏梅原词</h4>
+<p class="poem">驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。<span class="cibr"></span>　　无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。</p>
+<p class="spbr"><br/></p>
+
+<h4>采桑子·重阳　　<span class="year">一九二九年</span></h4>
+<p class="poem">人生易老天难老，岁岁重阳。今又重阳，战地黄花分外香。<span class="cibr"></span>　　一年一度秋风劲，不似春光。胜似春光，寥廓江天万里霜。</p>
+<p class="spbr"><br/></p>
+
+<h4>减字木兰花·广昌路上　　<span class="year">一九三零年</span></h4>
+<p class="poem">漫天皆白，雪里行军情更迫。头上高山，风卷红旗过大关。<span class="cibr"></span>　　此行何去？赣江风雪迷漫处。命令昨颁，十万工农下吉安。</p>
+<p class="spbr"><br/></p>
+
+<h4>浣溪沙·和柳亚子先生　　<span class="year">一九五零年</span></h4>
+<p class="poem">颜触齐王各命前，多年矛盾廓无边，而今一扫纪新元。<span class="cibr"></span>　　最喜诗人高唱至，正和前线捷音联，妙香山上战旗妍。</p>
+<p class="spbr"><br/></p>
+<h4 class="futi">附：柳亚子原词浣溪沙</h4>
+<p class="futi">中央戏剧学院舞蹈团演出《和平鸽》舞剧，欧阳予倩編剧，戴爱莲女士导演兼饰主角，四夕至五夕，连续在怀仁堂奏技。再成短调，欣赏赞美之不尽矣！</p>
+<p class="poem">白鸽连翩奋舞前。工农大众力无边。推翻原子更金圆。<span class="cibr"></span>　　战贩集团仇美帝，和平堡垒拥苏联。天安门上万红妍！</p>
+<p class="spbr"><br/></p>
+
+<h4>浣溪沙·和柳亚子先生　　<span class="year">一九五零年</span></h4>
+<p class="poem">长夜难明赤县天，百年魔怪舞翩跹，人民五亿不团圆。</p>
+<p class="poem">一唱雄鸡天下白，万方乐奏有于阗，诗人兴会更无前。</p>
+<p class="spbr"><br/></p>
+<h4 class="futi">附：柳亚子原词</h4>
+<p class="poem">火树银花不夜天，弟兄姐妹舞翩跹，歌声唱彻月儿圆。</p>
+<p class="poem">不是一人能领导，那容百族共骈阗，良宵盛会喜空前。</p>
+<p class="spbr"><br/></p>
+
+<h4>如梦令·元旦　　<span class="year">一九三零年</span></h4>
+<p class="poem">宁化、清流、归化，路隘林深苔滑。今日向何方，直指武夷山下。山下山下，风展红旗如画。</p>
+<p class="spbr"><br/></p>
+
+<h4>十六字令三首　　<span class="year">一九三四年</span></h4>
+<p class="poem">山，快马加鞭未下鞍。惊回首，离天三尺三。</p>
+<h4 class="futi">又</h4>
+<p class="poem">山，倒海翻江卷巨澜。奔腾急，万马战犹酣。</p>
+<h4 class="futi">又</h4>
+<p class="poem">山，刺破青天锷未残。天欲坠，赖以拄其间。</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h3 class="pgbr">诗钞十六首</h3>
+<p class="spbr"><br/></p>
+
+<h3>七律十二首　<span class="shou">七绝二首　五律二首</span></h3>
+<p class="spbr"><br/></p>
+
+<h4>七律·长征　　<span class="year">一九三五年</span></h4>
+<p class="poem">红军不怕远征难，万水千山只等闲。五岭逶迤腾细浪，乌蒙磅礴走泥丸。金沙水拍雲崖暖，大渡桥横铁索寒。更喜岷山千里雪，三军过後尽开颜。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·人民解放军占领南京　　<span class="year">一九四九年</span></h4>
+<p class="poem">钟山风雨起苍黄，百万雄师过大江。虎踞龙盘今胜昔，天翻地覆慨而慷。宜将剩勇追穷寇，不可沽名学霸王。天若有情天亦老，人间正道是沧桑。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·和柳亚子先生　　<span class="year">一九四九年</span></h4>
+<p class="poem">饮茶粤海未能忘，索句渝州叶正黄。三十一年还旧国，落花时节读华章。牢骚太盛防肠断，风物长宜放眼量。莫道昆明池水浅，观鱼胜过富春江。</p>
+<p class="spbr"><br/></p>
+
+<h4 class="futi">附：柳亚子原诗《感事呈毛主席》</h4>
+<p class="poem">开天辟地君真健，说项依刘我大难。夺席谈经非五鹿，无车弹铗怨决驩。头颅早悔平生贱，肝胆宁忘一寸丹。安得南征驰捷报，分湖便是子陵滩。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·和周世钊同志　　<span class="year">一九五五年</span></h4>
+<p class="poem">春江浩荡暂徘徊，又踏层峰望眼开。风起绿洲吹浪去，雨从青野上山来。尊前谈笑人依旧，域外鸡虫事可哀。莫叹韶华容易逝，卅年仍到赫曦台。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·送瘟神二首　　<span class="year">一九五八年</span></h4>
+<h4 class="futi">其一</h4>
+<p class="poem">绿水青山枉自多，华佗无奈小虫何！千村薜荔人遗失，万户萧疏鬼唱歌。坐地日行八万里，巡天遥看一千河。牛郎欲问瘟神事，一样悲欢逐逝波。</p>
+<h4 class="futi">其二</h4>
+<p class="poem">春风杨柳万千条，六亿神州尽舜尧。红雨随心翻作浪，青山着意化为桥。天连五岭银锄落，地动三河铁臂摇。借问瘟君欲何往，纸船明烛照天烧。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·到韶山　　<span class="year">一九五九年</span></h4>
+<p class="poem">别梦依稀咒逝川，故园三十二年前。红旗卷起农奴戟，黑手高悬霸主鞭。为有牺牲多壮志，敢教日月换新天。喜看稻菽千重浪，遍地英雄下夕烟。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·登庐山　　<span class="year">一九五九年</span></h4>
+<p class="futi">一九五九年六月二十九日登庐山，望鄱阳湖，扬子江。千峦竞秀，万壑争流，红日方升，成诗八句。</p>
+<p class="poem">一山飞峙大江边，跃上葱茏四百旋。冷眼向洋看世界，热风吹雨洒江天。雲横九派浮黄鹤，浪下三吴起白烟。陶令不知何处去，桃花源里可耕田？</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·答友人　　<span class="year">一九六一年</span></h4>
+<p class="poem">九嶷山上白雲飞，帝子乘风下翠微。斑竹一枝千滴泪，红霞万朵百重衣。洞庭波涌连天雪，长岛人歌动地诗。我欲因之梦寥廓，芙蓉国里尽朝晖。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·和郭沫若同志　　<span class="year">一九六一年</span></h4>
+<p class="poem">一从大地起风雷，便有精生白骨堆。僧是愚氓犹可训，妖为鬼蜮必成灾。金猴奋起千钧棒，玉宇澄清万里埃。今日欢呼孙大圣，只缘妖雾又重来。</p>
+<p class="spbr"><br/></p>
+
+<h4 class="futi">附：郭沫若原诗《看孙悟空三打白骨精》</h4>
+<p class="poem">人妖颠倒是非淆，对敌慈悲对友刁。咒念金箍闻万遍，精逃白骨累三遭。千刀当剐唐僧肉，一拔何亏大圣毛。教育及时堪赞赏，猪犹智慧胜愚曹。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·冬雲　　<span class="year">一九六二年</span></h4>
+<p class="poem">雪压冬雲白絮飞，万花纷谢一时稀。高天滚滚寒流急，大地微微暖气吹。独有英雄驱虎豹，更无豪杰怕熊罴。梅花欢喜漫天雪，冻死苍蝇未足奇。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·吊罗荣桓同志　　<span class="year">一九六三年</span></h4>
+<p class="poem">记得当年草上飞，红军队里每相违。长征不是难堪日，战锦方为大问题。斥晏每闻欺大鸟，昆鸡长笑老鹰非。君今不幸离人世，国有疑难可问谁？</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·为李进同志题所摄庐山仙人洞照　　<span class="year">一九六一年</span></h4>
+<p class="poem">暮色苍茫看劲松，乱雲飞渡仍从容。天生一个仙人洞，无限风光在险峰。</p>
+<h4 class="futi">附：江青原诗</h4>
+<p class="poem">江上有奇峰，锁在云雾中。寻常看不见，偶尔露峥嵘。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·为女民兵题照　　<span class="year">一九六一年</span></h4>
+<p class="poem">飒爽英姿五尺枪，曙光初照演兵场。中华儿女多奇志，不爱红装爱武装。</p>
+<p class="spbr"><br/></p>
+
+<h4>五律·登北高峰看山　　<span class="year">一九五九年</span></h4>
+<p class="poem">三上北高峰，杭州一望空。飞凤亭边树，桃花岭上风。热来寻扇子，冷去对佳人。一片飘搖下，欢迎有晓莺。<span class="jiao">（北高峰：在浙江省杭州市灵隐寺後，与南高峰相对峙，为西湖群山之一。在北高峰附近有飞凤亭、桃花岭、扇子岭、美人峰等名胜。根据作者自注，诗中的“扇子”指扇子岭，“佳人”指美人峰。）</span></p>
+<p class="spbr"><br/></p>
+
+<h4>五律·西行　　<span class="year">一九六五年七月</span></h4>
+<p class="poem">万里西行急，乘风御太空。不因鹏翼展，那得鸟途通。海酿千钟酒，山裁万仞葱。风雷驱大地，是处有亲朋。</p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<h3 class="pgbr">毛泽东诗词副編</h3>
+<p class="spbr"><br/></p>
+
+<h4>儿歌·看舞狮　　<span class="year">一九零二年</span></h4>
+<p class="poem">狮子眼鼓鼓，茶菜子，煮豆腐，酒放热些烧，肉放烂些煮。</p>
+<p class="spbr"><br/></p>
+
+<h4>五古·咏井　　<span class="year">一九零六年秋</span></h4>
+<p class="poem">天井四四方，周围是高墙。清清见卵石，小鱼囿中央。只喝井里水，永远养不长。</p>
+<p class="spbr"><br/></p>
+
+<h4>五古·咏指甲花　　<span class="year">一九六零年</span></h4>
+<p class="poem">百花皆竞春，“指甲”独静眠。春季叶始生，炎夏花正艳。叶小枝又弱，种类多且妍。万草披日出，惟婢傲火天。渊明爱逸菊，敦颐好青莲。我独爱“指甲”，取其志更坚。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·耕田乐·农事　　<span class="year">一九零七年</span></h4>
+<p class="poem">耕田乐，天天有事做。近冲一墩田，近水再墩望，多年副产积满仓。农事毕，读书甚馨香，坐待时机自主张。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·改西乡隆盛诗赠父亲（一九零九年）</h4>
+<p class="poem">孩儿立志出乡关，学不成名誓不还。埋骨何须桑梓地，人生无处不青山！</p>
+<p class="spbr"><br/></p>
+
+<h4>七古·咏蛙　　<span class="year">一九一零年</span></h4>
+<p class="poem">独坐池塘如虎踞，绿荫树下养精神。春来我不先开口，哪个虫儿敢作声。</p>
+<p class="spbr"><br/></p>
+
+<h4>五律·残篇　　<span class="year">一九一零年秋</span></h4>
+<p class="poem">晚霭峰间起，归人江上行。雲流千里远，人对一帆轻。落日荒林暗，寒钟古寺生。深林归倦鸟，高阁倚佳人。（下佚）</p>
+<p class="spbr"><br/></p>
+
+<h4>五古·易昌陶　　<span class="year">一九一五年五月</span></h4>
+<p class="poem">去去思君深，思君君不来。愁杀芳年友，悲叹有余哀。衡阳雁声彻，湘滨春溜回。感物念所欢，踯躅南城隈。城隈草萋萋，涔泪侵双题。采采余孤景，日落衡雲西。方期沆瀁游，零落匪所思。永诀从今始，午夜惊鸣鸡。鸣鸡一声唱，汗漫东皋上。冉冉望君来，握手珠眶涨。关山蹇骥足，飞飙拂灵帐。我怀郁如焚，放歌倚列嶂。列嶂青且茜，愿言试长剑。东海有岛夷，北山尽仇怨。荡涤谁氏子，安得辞浮贱。子期竟早亡，牙琴从此绝。琴绝最伤情，朱华春不荣。後来有千日，谁与共平生？望灵荐杯酒，惨淡看铭旌。惆怅中何寄，江天水一泓。</p>
+<p class="spbr"><br/></p>
+
+<h4>五律·鸟啼　　<span class="year">一九一五年五月</span></h4>
+<p class="poem">共泛朱张渡，层冰涨橘汀。鸟啼枫径寂，木落翠微冥。攀险呼俦侣，盘空识健翎。赫曦联韵在，千载德犹馨。</p>
+<p class="spbr"><br/></p>
+
+<h4>杂言·游泳启事　　<span class="year">一九一五年夏</span></h4>
+<p class="poem">铁路之旁兮，水面汪洋。深浅合度兮，生命无妨。凡我同志兮，携手同行。晚餐之後兮，游泳一场。</p>
+<p class="spbr"><br/></p>
+
+<h4>五律·朱张渡　　<span class="year">一九一六年冬</span></h4>
+<p class="poem">共泛朱张渡，层冰涨橘汀。鸟啼枫径寂，木落翠微冥。攀险呼俦侣，盘空识健翎。赫曦联韵在，千载德犹馨。</p>
+<p class="spbr"><br/></p>
+
+<h4>杂言·意志之锻炼　　<span class="year">一九一七年四月一日</span></h4>
+<p class="poem">夫力拔山气盖世，猛烈而已；不斩楼兰誓不还，不畏而已；化家为国，敢为而已；八年於外，三过其门而不入，耐久而已。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·赠刘翰林　　<span class="year">一九一七年夏</span></h4>
+<p class="poem">翻山渡水之名郡（毛），竹杖草履谒学尊（萧）。途见白雲如晶海（萧），沾衣晨露浸饿身（毛）。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·归国谣·今宵月　　<span class="year">一九一八年春</span></h4>
+<p class="poem">今宵月，直把天涯都照彻，清光不令青山失。清溪却向青滩泄，鸡声歇，马嘶人语长亭白。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·过魏都与罗章龙联句　　<span class="year">一九一八年八月十七日</span></h4>
+<p class="poem">横槊赋诗意飞扬，《自明本志》好文章。萧条异代西田墓，铜雀荒沦落夕阳。</p>
+<p class="spbr"><br/></p>
+
+<h4>七古·送纵宇一郎东行　　<span class="year">一九一八年</span></h4>
+<p class="poem">雲开衡岳积阴止，天马凤凰春树里。年少峥嵘屈贾才，山川奇气曾钟此。君行吾为发浩歌，鲲鹏击浪从兹始。洞庭湘水涨连天，艨艟巨舰直东指。无端散出一天愁，幸被东风吹万里。丈夫何事足萦怀，要将宇宙看粟米。沧海横流安足虑，世事纷纭何足理。管却自家身与心，胸中日月常新美。名世於今五百年，诸公碌碌皆余子。平浪宫前友谊多，崇明对马衣带水。东瀛濯剑有书还，我自崖返君去矣。</p>
+<p class="spbr"><br/></p>
+
+<h4>祭文·祭母文　　<span class="year">一九一九年</span></h4>
+<p class="poem">呜呼吾母，遽然而死。寿五十三，生有七子。七子余三，即东民覃。其他不育，二女三男。育吾兄弟，艰辛备历。摧折作磨，因此遘疾。中间万万，皆伤心史。不忍卒书，待徐温吐。今则欲言，只有两端。一则盛德，一则恨偏。吾母高风，首推博爱。远近亲疏，一皆覆载。恺恻慈祥，感动庶汇。爱力所及，原本真诚。不作诳言，不存欺心。整饬成性，一丝不诡。手泽所经，皆有条理。头脑精密，劈理分情。事无遗算，物无遁形。洁净之风，传遍戚里。不染一尘，身心表里。五德荦荦，乃其大端。合其人格，如在上焉。恨偏所在，三纲之末。有志未伸，有求不获。精神痛苦，以此为卓。天乎人欤？倾地一角。次则儿辈，育之成行。如果未熟，介在青黄。病时揽手，酸心结肠。但呼儿辈，各务为良。又次所怀，好亲至爱。或属素恩，或多劳瘁。大小亲疏，均待报赉。总兹所述，盛德所辉。以秉悃忱，则效不违。致於所恨，必补遗缺。念兹在兹，此心不越。养育深恩，春晖朝霭。报之何时？精禽大海。呜呼吾母，母终未死。躯壳虽隳，灵则万古。有生一日，皆报恩时。有生一日，皆伴亲时。今也言长，时则苦短。惟挈大端，置其粗浅。此时家奠，尽此一觞。後有言陈，与日俱长。尚飨！</p>
+<p class="spbr"><br/></p>
+
+<h4>四言·红四军司令部布告　　<span class="year">一九二八年秋</span></h4>
+<p class="poem">红军宗旨，民权革命。赣西一军，声威远震。此番计划，分兵前进。官佐兵伕，服从命令。平买平卖，事实为证。乱烧乱杀，在所必禁。全国各地，压迫太甚。工人农人，十分苦痛。土豪劣绅，横行乡镇。重息重租，人人怨愤。白军士兵，饥寒交并。小资产者，税捐极重。洋货越多，国货受困。帝国主义，哪个不恨？军民匪党，完全反动。口是心非，不能过硬。蒋桂冯阎，同床异梦。冲突已起，军阀倒运。饭可充饥，药能医病。共党主张，极为公正。地主田地，农民收种。债不要还，租不要送。增加工钱，老板担任。八时工作，恰好相称。国队待遇，亟须改订。发给田地，士兵有份。敌方官兵，准其投顺。以前行为，可以不问。累进税法，最为适用。苛税苛捐，扫除干净。城市商人，积铢累寸。只要服从，余皆不论。对待外人，必须严峻。工厂银行，没收归并。外资外债，概不承认。外兵外舰，不准入境。打倒列强，人人高兴。打倒军阀，除恶务尽。统一中华，举国称庆。满蒙回藏，章程自定。国民政府，一群恶棍。合力铲除，肃清乱政。全国工农，风发雷奋。夺取政权，为期日近。革命成功，尽在民众。布告四方，大家起劲。──军长朱德　党代表毛泽东</p>
+<p class="spbr"><br/></p>
+
+<h4>歌谣·洛甫摔跤　　<span class="year">一九三五年</span></h4>
+<p class="poem">洛甫洛甫真英豪，不会行军会摔跤。四脚朝天摔得巧，沒伤胳膊沒伤脑。</p>
+<p class="spbr"><br/></p>
+
+<h4>六言·给彭德怀同志　　<span class="year">一九三五年</span></h4>
+<p class="poem">山高路远坑深，大军纵横驰奔。谁敢横刀立马，唯我彭大将军。</p>
+<p class="spbr"><br/></p>
+
+<h4>四言·祭黄帝陵　　<span class="year">一九三六年十二月</span></h4>
+<p class="futi">中华民国26年4月5日，苏维埃政府主席毛泽东、人民抗日红军总司令朱德敬派代表林祖涵，以鲜花时果之仪致祭於我中华民族始祖轩辕黄帝之陵。</p>
+<p class="poem">赫赫始祖，吾华肇造。胄衍祀绵，岳峨河浩。聪明睿知，光被遐荒。建此伟业，雄立东方。世变沧桑，中更蹉跌。越数千年，强邻蔑德。琉台不守，三韩为墟。辽海燕冀，汉◇何多！以地事敌，敌欲岂足？人执笞绳，我为奴辱。懿维我祖，命世之英。涿鹿奋战，区宇以宁。岂其苗裔，不武如斯：泱泱大国，让其沦胥？东等不才，剑屦俱奋。万里崎岖，为国效命。频年苦斗，备历险夷。匈奴未灭，何以家为？各党各界，团结坚固。不论军民，不分贫富。民族阵线，救国良方。四万万众，坚决抵抗。民主共和，改革内政。亿兆一心，战则必胜。还我河山，卫我国权。此物此志，永矢勿谖。经武整军，昭告列祖。实鉴临之，皇天后土。尚飨！</p>
+<p class="spbr"><br/></p>
+
+<h4>四言·妇女解放　　<span class="year">一九三九年六月一日</span></h4>
+<p class="poem">妇女解放，突起异军，两万万众，奋发为雄。女并驾，如日方东，以此制敌，何敌不倾。到之之法，艰苦斗争，世无难事，有志竟成。有妇人焉，如旱望雲，此編之作，伫看风行。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·忆重庆谈判　　<span class="year">一九四二年秋</span></h4>
+<p class="poem">有田有地皆吾主，无法无天是尔民。重庆有官皆墨吏，延安无土不黄金。炸桥挖路为团结，夺地争城是斗争。遍地哀鸿遍地血，无非一念救苍生。</p>
+<p class="spbr"><br/></p>
+
+<h4>五律·挽戴安澜将军　　<span class="year">一九四三年三月</span></h4>
+<p class="poem">外侮需人御，将军赋采薇。师称机械化，勇夺虎罴威。浴血东瓜守，驱倭棠吉归。沙场竟殒命，壮志也无违。<span class="jiao">（又名“海鸥将军千古”）</span></p>
+<p class="spbr"><br/></p>
+
+<h4>五律·张冠道中　　<span class="year">一九四七年</span></h4>
+<p class="poem">朝雾弥琼宇，征马嘶北风。露湿尘难染，霜笼鸦不惊。戎衣犹铁甲，须眉等银冰。踟蹰张冠道，恍若塞上行。</p>
+<p class="spbr"><br/></p>
+
+<h4>五律·喜闻捷报　　<span class="year">一九四七年</span></h4>
+<p class="futi">中秋步运河上，闻西北野战军收复蟠龙作。</p>
+<p class="poem">秋风度河上，大野入苍穹。佳令随人至，明月傍雲生。故里鸿音绝，妻儿信未通。满宇频翘望，凯歌奏边城。</p>
+<p class="spbr"><br/></p>
+
+<h4>五绝·赞“密使一号”　　<span class="year">一九五零年一月</span></h4>
+<p class="poem">惊涛拍孤岛，碧波映天晓。虎穴藏忠魂，曙光迎来早。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·五雲山　　<span class="year">一九五五年</span></h4>
+<p class="poem">五雲山上五雲飞，远接群峰近拂堤。若问杭州何处好，此中听得野莺啼。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·观潮　　<span class="year">一九五七年九月</span></h4>
+<p class="poem">千里波涛滚滚来，雪花飞向钓鱼台。人山纷赞阵容阔，铁马从容杀敌回。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·刘蕡　　<span class="year">一九五八年</span></h4>
+<p class="poem">千载长天起大雲，中唐俊伟有刘蕡。孤鸿铩羽悲鸣镝，万马齐喑叫一声。<span class="jiao">（刘蕡：中唐大和二年，举贤良方正，刘蕡对策称：“宫闱将变，社稷将危”“阍寺持废立之权”“四凶在朝，虽强必诛”。痛论宦官专权，能废立君主，危害国家，劝皇帝诛灭他们。考官赞赏刘蕡的文章，但惧怕宦官的专横，不敢录取他。令狐楚、牛僧孺都征召他为幕府从事，後授秘书郎。终因宦官诬陷，贬为柳州司户参军，客死他乡。）</span></p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·改梅白《夜登重庆枇杷山》　　<span class="year">一九五八年</span></h4>
+<p class="poem">我来高处欲乘风，暮色苍茫一望中。百万银灯摇倒影，嘉陵江似水晶宫。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·有感仿陆放翁诗　　<span class="year">一九五八年十二月二十一日</span></h4>
+<p class="poem">人类而今上太空，但悲不见五洲同。愚公尽扫饕蚊日，公祭毋忘告马翁。</p>
+<p class="spbr"><br/></p>
+
+<h4>七言·赫鲁晓夫访美　　<span class="year">一九五九年十月</span></h4>
+<p class="poem">西海如今出圣人，涂脂抹粉上豪门。一辆汽车几间屋，三头黄犊半盘银。举世劳民同主子，万年宇宙绝纷争。列宁火焰成灰烬，人类从此入大同。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·莫干山　　<span class="year">一九五九年十一月</span></h4>
+<p class="poem">翻身跃入七人房，回首峰峦入莽苍。四十八般才走过，风驰又已到钱塘。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·读报有感　　<span class="year">一九五九年十二月</span></h4>
+<p class="poem">反苏忆昔闹辟蛙，今日欣看大反华。恶煞腐心兴鼓吹，凶神张口吐烟霞。神州岂止千里恶，赤县原藏万种邪。遍访全球侵略者，惟余此处一孤家。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·读报　　<span class="year">一九五九年十二月</span></h4>
+<p class="poem">托洛斯基到远东，不和不战逞英雄。列宁竟抛头颅後，叶督该拘大鹫峰。敢向邻居试螳臂，只缘自己是狂峰。人人尽说西方好，独惜神州出蠢虫。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·改鲁迅诗　　<span class="year">一九五九年十二月</span></h4>
+<p class="poem">曾惊秋肃临天下，竟遣春温上舌端。尘海苍茫沉百感，金风萧瑟走高官。喜攀飞翼通身暧，苦坠空雲半截寒。悚听自吹皆圣绩，起看敌焰正阑干。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·读报有感　　<span class="year">一九六零年六月十三日</span></h4>
+<p class="poem">托洛斯基返故居，不战不和欲何如？青雲飘下能言鸟，黑海翻起愤怒鱼。爱丽舍宫唇发黑，戴维营里面施朱。新闻岁岁寻常出，独有今年出得殊。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·纪念鲁迅八十寿辰　　<span class="year">一九六一年</span></h4>
+<h4 class="futi">其一</h4>
+<p class="poem">博大胆识铁石坚，刀光剑影任翔旋。龙华喋血不眠夜，犹制小诗赋管弦。</p>
+<h4 class="futi">其二</h4>
+<p class="poem">鉴湖越台名士乡，忧忡为国痛断肠。剑南歌接秋风吟，一例氤氲入诗囊。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·屈原　　<span class="year">一九六一年秋</span></h4>
+<p class="poem">屈子当年赋楚骚，手中握有杀人刀。艾萧太盛椒兰少，一跃冲向万里涛。</p>
+<p class="spbr"><br/></p>
+
+<h4>杂言·八连颂　　<span class="year">一九六三年八月</span></h4>
+<p class="poem">好八连，天下传。为什么？意志坚。为人民，几十年。拒腐蚀，永不沾。因此叫，好八连。解放军，要学习。全军民，要自立。不怕压，不怕迫。不怕刀，不怕戟。不怕鬼，不怕魅。不怕帝，不怕贼。奇儿女，如松柏。上参天，傲霜雪。纪律好，如坚壁。军事好，如霹雳。政治好，称第一。思想好，能分析。分析好，大有益。益在哪？团结力。军民团结如一人，试看天下谁能敌。</p>
+<p class="spbr"><br/></p>
+
+<h4>十六字令·八首　　<span class="year">一九六四年</span></h4>
+<p class="poem">龙，隐雾驱雲驾长风，骤雨霁，天际起霓虹。（龙，革命者)</p>
+<p class="poem">灯，黑沉迷途指归程，红光闪，万众获重生。（灯，革命行动）</p>
+<p class="poem">泉，杳然无底是灵源，清澈澈，谁人藏心间。（泉，革命热情）</p>
+<p class="poem">水，群众饥渴饮且醉，被颠倒，从此夜生辉。（水，革命理论）</p>
+<p class="poem">雷，孤夜深深独不寐，隆隆轰，斩断万年碑。（雷，革命运动；碑，四旧）</p>
+<p class="poem">秋，百花杀尽犹未休，狂飙动，神州落荒流。（秋，革命年代）</p>
+<p class="poem">枪，荧光冥冥过冷芒，忽而怒，平地三尺浪。（枪，革命武装）</p>
+<p class="poem">花，可怜羞弱不胜压，昨夜雪，娇藏在冰崖。（花，革命女将）</p>
+<p class="spbr"><br/></p>
+
+<h4>减字木兰花·经长沙忆　　<span class="year">一九六四年秋</span></h4>
+<p class="poem">四五十年，风雨如晦不重见。过眼飞雲，横竖茫茫一线天。</p>
+<p class="poem">休要夸口，豪杰劫後是民愿，海天环顾，一路走来一路烟。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·洪都　　<span class="year">一九六五年</span></h4>
+<p class="poem">到得洪都又一年，祖生击楫至今传。闻鸡久听南天雨，立马曾挥北地鞭。鬓雪飞来成废料，彩雲长在有新天。年年後浪推前浪，江草江花处处鲜。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·念奴娇·井冈山　　<span class="year">一九六五年五月</span></h4>
+<p class="poem">参天万木，千百里，飞上南天奇岳。故地重来何所见，多了楼台亭阁。五井碑前，黄洋界上，车子飞如跃。江山如画，古代曾云海绿。<span class="cibr"></span>　　弹指三十八年，人间变了，似天渊翻覆。犹记当时烽火里，九死一生如昨。独有豪情，天际悬明月，风雷磅礴。一声鸡唱，万怪烟消雲落。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·卜算子·悼国际共产主义战士艾地同志　　<span class="year">一九六五年十二月</span></h4>
+<p class="poem">疏枝立寒窗，笑在百花前。奈何笑容难为久，春来反凋残。残固不堪残，何须自寻烦？花落自有花开日，蓄芳待来年。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·有所思　　<span class="year">一九六六年</span></h4>
+<p class="poem">正是神都有事时，又来南国踏芳枝。青松怒向苍天发，败叶纷随碧水驰。一阵风雷惊世界，满街红绿走旌旗。凭阑静听潇潇雨，故国人民有所思。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·炮打司令部　　<span class="year">一九六六年八月</span></h4>
+<p class="poem">人民胜利今何在？满路新贵满目衰。核弹高置昆仑巅，摧尽腐朽方释怀。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·将革命进行到底　　<span class="year">一九六七年夏</span></h4>
+<p class="poem">古今多少苍茫事，前车历历未能忘，鸿门宴上宽纵敌，乌江边头何仓皇。秀全空坐失良机，天京终於烟灰场，急世英雄行大劫，莫顾尘界百创伤。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·如梦令·韶山冲　　<span class="year">一九六九年一月</span></h4>
+<p class="poem">扶桑，丰田，龙潭，幼年凫游星汉。而今何处循？梦不见横须贺。何处？何处？无奈石灯阑珊。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·清平乐·警觉苏修　　<span class="year">一九六九年五月</span></h4>
+<p class="poem">穷发之北，海波泛荒垂。熊罴向我蹲且嚎，懦者肝胆破碎。勇士团结一心，暂缓同室搏命。苏修贼心不死，我辈岂是南明。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·念奴娇·长征　　<span class="year">一九七零年一月</span></h4>
+<p class="poem">万里气势，不逶迤，烽烟五津动摇。雪山绝境，荒草地，四散溃逃几国焘。娄山关後，不为人知，阴谋出年少。回首如今多劳？<span class="cibr"></span>　　看我宝刀，永无宁日好。早年空空多浪费，而今点石金。老骥伏枥，变本加厉，做事要彻底。江山已定，谁人敢论功高？</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·清平乐·视察　　<span class="year">一九七一年八月</span></h4>
+<p class="poem">南巡万里，不觉忆古帝。威加海内有余风，秦皇，隋炀，康熙。<span class="cibr"></span>　　彼辈功业为己，我今操劳社稷，踏破官僚机器，挥斥资产阶级。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·念奴娇·有感观菊　　<span class="year">一九七一年秋</span></h4>
+<p class="poem">山野索居，不孤寂，指点神州八亿。洪波涌起落千枝，一花留在天际。潇洒顾盼，无人四季，春情暗自起，谁说众叛亲？<span class="cibr"></span>　　而今更纯，革命混水，严冬方显松柏意。激流出固舟，运筹池畔，并非索居，折断霸王钩。批儒评法，不惜衣宽人瘦。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·读《红楼梦》　　<span class="year">一九七一年</span></h4>
+<p class="poem">杰作红楼传千古，影映封建斥王侯。自古忠臣多逆子，唯有宝黛入神州。</p>
+<p class="spbr"><br/></p>
+
+<h4>七绝·改杜甫《咏怀古迹》　　<span class="year">一九七一年九月</span></h4>
+<p class="poem">群山万壑赴荆门，生长林彪尚有村。一去紫台连朔漠，独留青冢向黄昏。</p>
+<p class="spbr"><br/></p>
+
+<h4>七言·续乔冠华诗　　<span class="year">一九七三年四月</span></h4>
+<p class="poem">八重樱下廖公子，五月花中韩大哥。莫道敝人功业小，北京卖报赚钱多。</p>
+<p class="spbr"><br/></p>
+
+<h4>五言·郭老　　<span class="year">一九七三年五月</span></h4>
+<p class="poem">郭老从柳退，不及柳宗元。名曰共产党，崇拜孔二先。</p>
+<p class="spbr"><br/></p>
+
+<h4>七言·续李白“高阳酒徒”　　<span class="year">一九七三年七月</span></h4>
+<p class="poem">君不见高阳酒徒起草中，长揖山东隆准公。入门不拜骋雄辩，两女辍洗来趋风。东下齐城七十二，指挥楚汉如旋蓬。不料韩信不听话，十万大军下历城。齐王火冒三千丈，抓了酒徒付鼎烹。</p>
+<p class="spbr"><br/></p>
+
+<h4>七言·读〈封建论〉赠郭老　　<span class="year">一九七三年八月</span></h4>
+<p class="poem">劝君少骂秦始皇，焚坑事件要商量。福龙魂死业犹在，孔学名高实秕糠。百代多行秦政制，十批不是好文章。熟读唐人封建论，莫从子厚返文王。</p>
+<p class="spbr"><br/></p>
+
+<h4>五言·大事不讨论　　<span class="year">一九七三年七月</span></h4>
+<p class="poem">大事不讨论，小事天天送。此调不改正，势必出修正。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·诉衷情·江山　　<span class="year">一九七四年</span></h4>
+<p class="poem">父母忠贞为国酬，何曾怕断头？如今天下红遍，江山靠谁守？业未就，身躯倦，鬓已秋；你我之辈，忍将夙愿，付与东流？（特里尔《毛泽东传》。书中说明：“在这段时间，毛似乎回到韶山。在南国宁静的时日里，毛赋下了如许几行。出乎意料，这首词是为周而作的。”）</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·贺新郎·改张元千词悼董必武　　<span class="year">一九七五年四月</span></h4>
+<p class="poem">梦绕神州路，怅秋风，连营画角，故宫离黍。底事昆仑倾砥柱，九地黄流乱注?聚万落千村狐兔。天意从来高难问，况人情易老悲难诉。更南浦，送君去。凉生柳岸催残暑，耿斜河，疏星淡月，断雲微度。万里江山知何处，回首对床夜语。雁不到，书成谁与?目尽青天怀今古，肯儿曹恩怨相尔汝！君且去，休回顾。</p>
+<p class="spbr"><br/></p>
+
+<h4>七律·改鲁迅《亥年残秋偶作》　　<span class="year">一九七四年底</span></h4>
+<p class="poem">曾经秋肃临天下，敢遣春温上笔端。尘海苍茫沉百感，金风萧瑟走千官。喜攀飞翼通身暖，若坠空雲半截寒。竦听荒鸡偏阒寂，起看星斗正阑干。</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·忆秦娥·悼念周恩来同志　　<span class="year">一九七六年一月</span></h4>
+<p class="poem">山河咽，拭泪无语心欲裂。心欲裂，顿摧栋梁，痛失人杰。<span class="cibr"></span>　　江山如画忆丹心，宏图遗愿永不灭。永不灭，新苗茁状，势与天接。<span class="jiao">【風格大異，狀似伪作】</span></p>
+<p class="spbr"><br/></p>
+
+<h4>残句</h4>
+<p class="poem">骤雨东风过远湾，滂然遥接石龙关。<span class="jiao">（缺两句……）</span>野渡苍松横古木，断桥流水动连环。客行此去遵何路？坐眺长亭意转闲。<span class="jiao">（七律·石龙关　一九一六年）</span></p>
+<p class="poem">自信人生二百年，会当水击三千里。<span class="jiao">（七古·一九一六年冬）</span></p>
+<p class="poem">翻山渡水之名郡，竹杖草履谒学尊。途见白雲如晶海，沾衣晨露浸饿身。<span class="jiao">（七绝·一九一七年）</span></p>
+<p class="poem">雲封狮固楼，桥锁玉潭舟。<span class="jiao">（五言·一九一七年夏）</span></p>
+<p class="poem">苍山辞祖国，弱水望邻封。<span class="jiao">（五言·一九一九年）</span></p>
+<p class="poem">千嘤其鸣，求其友声。暴虎入门，懦夫奋臂。<span class="jiao">（四言·致高桂滋　一九三五年十月）</span></p>
+<p class="poem">春草碧色，春水绿波。送君延安，快如之何！<span class="jiao">（四言·送君　一九三九年六月一日）</span></p>
+<p class="poem">军队向前进，生产长一寸。加强纪律性，革命无不胜。<span class="jiao">（五言·纪律　一九四五年十月）</span></p>
+<p class="poem">大事不讨论，小事天天送。此调不改正，势必出修正。<span class="jiao">（五言·一九七三年七月）</span></p>
+<p class="poem">少年倜傥廊庙才，壮志未酬事堪哀。胸罗文章兵百万，胆照华国树千台。雄英无计倾圣主，高节终竟受疑猜。千古同惜长沙傅，空白汩罗步尘埃。<span class="jiao">（七律·咏贾谊）</span></p>
+<p class="poem">贾生才调世无伦，哭泣情怀吊屈文。梁王堕马寻常事，何用哀伤付一生。<span class="jiao">（七绝·贾谊）</span></p>
+<p class="poem">手里有粮，心里不慌。脚踏实地，喜气洋洋。</p>
+<p class="poem">基本吃素，饭後百步。遇事不怒，劳逸适度。<span class="jiao">（养生之道）</span></p>
+<p class="spbr"><br/></p>
+<p class="spbr"><br/></p>
+
+<p class="futi">重订丙辰清明诗词散文选钞<a href="#qm-vol-a2">附卷二</a>终</p>
+
+<p class="futi">清明诗钞全卷终</p>
+<p class="right"><a href="#toc_top">⇑</a></p>
+
+
+</body>
+</html>

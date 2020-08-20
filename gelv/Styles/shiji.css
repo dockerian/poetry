@@ -1,0 +1,213 @@
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 1em;
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+  line-height: 1.25em;
+  margin: 0px;
+  padding: 0;
+}
+img {
+  margin: 0px; padding: 0px;
+  width: 100%;
+}
+
+.author, .jiao, .note {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+}
+.futi, .zong {
+  font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+}
+
+div.center {
+  text-align: center;
+}
+div.xiang {
+  display: block;
+  visibility: visible;
+}
+@media only screen and (max-width: 32em) {
+ div.xiang {
+  display: none;
+  visibility: collapse;
+ }
+}
+
+h1 {
+  background-image: url(../Images/biankuang.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11em;
+  font-size: 2.5em;
+  font-family: "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  line-height: 3em;
+  margin: 0.5em 0em 0.5em 0em;
+  text-align: center;
+}
+h1 > span {
+  border-color: darkred;
+  border-style: none;
+  border-width: 0.25em;
+  padding: 0.25em;
+}
+h2 {
+  font-size: 1.5em;
+  font-family: "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  line-height: 2.5em;
+  margin: 1em 0em 1em 0.25em;
+  text-align: left;
+}
+h2:nth-of-type(n+2) {
+  border-top: dotted lightgray 0.25em;
+  page-break-before: always;
+}
+h3, h4 {
+  font-size: 1em;
+  font-family: "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  border-right: inset 0.5em lightgray;
+  line-height: 1.5em;
+  margin: 1em 0em 0.25em 0em;
+  page-break-before: avoid;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  text-align: left;
+  text-indent: 2em;
+}
+h3 {
+  page-break-before: always;
+}
+h4.futi, p.futi, p.zong {
+  font-size: 1em;
+  font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+  line-height: 1.5em;
+  margin: 0.25em 0em 0.25em 0em;
+  text-indent: 2em;
+}
+h4 > span.juan {
+  color: darkslategray;
+  border-radius: 0.25em;
+  border-right: double 0.25em lightgray;
+  border-top: double 0.25em lightgray;
+  padding: 0.25em 0.25em 0.25em 0em;
+}
+h4.pgbr {
+  page-break-before: always;
+}
+
+hr {
+  border-width: 0px;
+  border-bottom-color: lightgray;
+  border-bottom-style: dotted;
+  border-bottom-width: 0.25em;
+  margin: 0.75em 0em 0.25em;
+}
+
+span.dian {
+  border-bottom: dotted 0.25em yellowgreen;
+  padding-bottom: 0.05em;
+}
+span.author, span.shou {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-weight: normal;
+}
+span.futi {
+  font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+}
+span.fair {
+  border-bottom: dotted 0.25em darkseagreen;
+  padding-bottom: 0.0em;
+}
+span.good {
+  border-bottom: dotted 0.25em orange;
+  padding-bottom: 0.0em;
+}
+span.jiao {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+}
+span.cibr {
+  display: inline;
+}
+span.date, span.year {
+  display: block;
+  color: darkgray;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+  font-size: 0.625em;
+  line-height: 0.5em;
+  margin: 0em 0.5em 0em 4em;
+  white-space: nowrap;
+  text-indent: 2em;
+  text-align: right;
+}
+span.date {
+  font-size: 0.75em;
+}
+@media only screen and (min-width: 40em) {
+  span.cibr {
+    line-height: 1em;
+    display: block;
+  }
+  span.date, span.year {
+    display: inline-block;
+    text-indent: 0em;
+  }
+  span.date {
+    margin-left: 0em;
+  }
+}
+
+p {
+  font-size: 1em;
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+  line-height: 1.5em;
+  margin: 0em 0em 0.25em 0em;
+  text-align: left;
+}
+p.author {
+  font-size: 1em;
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "fangsong", "fs", "zw", serif;
+  line-height: 1.5em;
+  margin: 0em 0.25em 0.5em 0em;
+  text-align: right;
+}
+p.mulu {
+  font-size: 1em;
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", Menlo, Courier, serif;
+  margin-left: 0.35em;
+  text-indent: 0.25em;
+  white-space: pre;
+}
+p.note {
+  font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "fangsong", "fs", "zw", serif;
+  text-indent: 2em;
+}
+p.ying {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-indent: 2.55em;
+}
+p.pause {
+  color: darkgray;
+  text-align: center;
+  text-indent: 0em;
+}
+p.right, p.zong {
+  margin-right: 0.25em;
+  text-align: right;
+}
+p.spbr {
+  line-height: 0.5em;
+  margin: 0em;
+}
+p.poem {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
+  text-indent: 2em;
+}
+p.text {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
+  text-indent: 0em;
+}
