@@ -1,15 +1,17 @@
-# Poetry
+# 律韻合編
 
-> Study notes and tools for Chinese poetry.
+> 備選格律工具、詩詞輯集、及韻文古卷於一隅。
 
 
 <br/><a id="toc" name="toc"></a>
-## Contents
+## 總目
 
-* Epub 電子書
-  - [王力《诗词格律》](./epubs/王力-诗词格律.epub)
+* 電子書籍
+  - [王力《诗词格律》](./books/王力-诗词格律.epub)（增订本）
 
 * 圖書[附錄](./gelv/README.md)
+
+* 舟山[詩詞](./shiji.html)
 
 
 
