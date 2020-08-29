@@ -7,6 +7,7 @@
 
   * [龙榆生《近三百年名家词选》](../books/龙榆生-近三百年名家词选.epub)
   * [王力《诗词格律》](../books/王力-诗词格律.epub)（增订本）
+  * [平水韵表.doc](../books/平水韵表.doc) | [pdf](../books/平水韵表.pdf)
 
 
 <br/><a id="apx" name="apx"></a>
