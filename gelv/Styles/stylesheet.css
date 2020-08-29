@@ -60,6 +60,9 @@ body.bjt {
 a {
   text-decoration: none;
 }
+body {
+  text-align: justify;
+}
 .author, .jiao, .note {
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
 }
@@ -119,6 +122,22 @@ h4.section {
   margin: 1em 0em; padding: 0;
   text-indent: 2em;
 }
+h4.yunbu {
+  vertical-align: middle;
+}
+h4.yunbu span.xulie {
+  border-radius: 1em;
+  border: dotted dimgray 0.125em;
+  margin-right: 0.25em;
+  min-width: 1em; width: 1em;
+  padding: 0.1em 0.25em;
+}
+h4.yunbu span.title {
+  border-radius: 0em 0.35em 0em 0em;
+  border-top: double darkorange 0.25em;
+  border-right: double darkorange 0.25em;
+  padding: 0.25em 0.35em 0.1em 0em;
+}
 
 img.note {
   height: 0.75em; width: 0.75em;
@@ -131,6 +150,14 @@ img.page {
 /*
 文本
 */
+hr {
+  border: none;
+  border-color: dimgray;
+  border-bottom-style: dotted;
+  border-bottom-width: 0.25em;
+  margin: 0.5em 33%;
+  line-height: 1.5em;
+}
 li a {
   font-family: "DK-FANGSONG", "仿宋", "STFangsong", "fs", "fangsong", "Microsoft YaHei", "Hiragino Sans GB", STHeiti, "华文黑体", sans-serif;
 }
@@ -138,6 +165,13 @@ p {
   font-size: 12pt;
   line-height: 1.35em;
   text-indent: 2em;
+}
+p.text {
+  text-indent: 0em;
+}
+p.center {
+  text-align: center;
+  text-indent: 0em;
 }
 p.section {
   border: 0;
@@ -178,7 +212,10 @@ p.pz {
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5em;
-  margin: 0 0 3em 2em;
+  margin: 0em 0em 3em 2em;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  vertical-align: top;
   text-align: left;
   duokan-text-indent: 0;
   text-indent: 0;
@@ -189,9 +226,10 @@ span.bold {
 span.circle {
   border-style: dotted;
   border-color: darkred;
-  border-width: 1px;
+  border-width: 0.05em;
   border-radius: 0.5em;
-  font-size: 1em;
+  font-family: "DK-FANGSONG", "FangSong", "STFangSong", "仿宋", "fs", "fangsong", NSimSun, SimSun, sans-serif;
+  font-size: 0.9em;
   height: 1em;
   width: 1em;
 }
@@ -255,6 +293,7 @@ p.shitou {
   font-size: 1em;
   margin: 1.5em 1em 1em 0;
   page-break-before: auto;
+  page-break-after: avoid;
   text-align: center;
   text-indent: 0;
 }
@@ -263,6 +302,7 @@ p.shiming {
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
   margin: 0 1em 0 0;
   padding: 0;
+  page-break-after: avoid;
   text-align: center;
   text-indent: 0;
 }
@@ -271,6 +311,8 @@ p.shiju {
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
   line-height: 1.75em;
   padding: 0;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   font-size: 1.1em;
   text-align: left;
   text-indent: 0;
@@ -300,6 +342,7 @@ ol {
   margin-bottom: 0;
   padding: 0 auto;
 }
+
 .hr {
   width: 60%;
   margin: 3em 0 0 0.5em;
@@ -342,6 +385,9 @@ h4.cipu {
   font-weight: bold;
   line-height: 200%;
   margin: 2.5em 0 0.75em 0;
+  padding: 0.5em 0em 0em 0em;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   text-align: left;
   text-indent: 0;
 }
@@ -349,11 +395,14 @@ div.cipu {
   line-height: 150%;
   margin-left: 2em;
 }
-span.cipu {
-  color: dimgray;
+div.cige {
+  page-break-inside: avoid;
+}
+p.ciju, span.ciju {
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
 }
-span.ciju {
+span.cipu {
+  color: dimgray;
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
 }
 
@@ -525,11 +574,11 @@ p.yunzi {
   border: dotted #A2906A;
   border-width: 1px 0 0 0;
 }
-.speci {
+.shuo {
   background-color: #FFF;
   /*
   background-image: url(../Images/girl.png);
   */
-  background-repeat: no-repeat;
   background-position: bottom right;
+  background-repeat: no-repeat;
 }
