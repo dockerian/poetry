@@ -21,7 +21,7 @@
     [马蹄韵格](html/matiyun.xhtml)｜
     [格律圖解](html/tujie.html)（
     [名句](html/tujie.html#shici-mingju)｜
-    [散句](html/tujie.html#shici-sanju) ）
+    [锦句](html/tujie.html#shici-miaoju) ）
   - [笠翁对韵](html/shenglv-liweng.xhtml)｜
     [训蒙骈句](html/shenglv-pianjv.xhtml)｜
     [声律启蒙](html/shenglv.xhtml)（
