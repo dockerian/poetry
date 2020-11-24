@@ -89,7 +89,7 @@ h2 {
   margin: 1.5em 0 2em 0;
   text-align: center;
 }
-h2.h2:nth-of-type(2) {
+h2:nth-of-type(n+2) {
 	page-break-before: always;
 }
 h3 {
@@ -225,22 +225,55 @@ span.bold {
 }
 span.circle {
   border-style: dotted;
-  border-color: darkred;
+  border-color: darkgray;
   border-width: 0.05em;
-  border-radius: 0.5em;
+  border-radius: 1em;
   font-family: "DK-FANGSONG", "FangSong", "STFangSong", "仿宋", "fs", "fangsong", NSimSun, SimSun, sans-serif;
-  font-size: 0.9em;
-  height: 1em;
-  width: 1em;
+  font-size: 0.85em;
+  margin: 0.25em 0em;
+  padding: 0.1em 0.25em;
+  vertical-align: middle;
+  height: 0.9em;
+  max-width: 0.9em;
+  width: 0.9em;
 }
 span.padding {
   padding-right: 2px;
 }
+
+span.zhan {
+  font-size: 1em;
+  border-radius: 0.75em;
+  vertical-align: middle;
+  margin: 0.25em 0em;
+  padding: 0.1em 0.1em;
+  height: 0.9em;
+  max-width: 1em;
+  width: 1em;
+}
 span.zhan-ping {
+  color: dimgray;
+  font-size: 0.9em;
+  border-radius: 0.75em;
   background-color: lightcyan;
+  margin: 0.25em 0em;
+  padding: 0.1em 0.2em;
+  vertical-align: middle;
+  height: 0.9em;
+  max-width: 0.9em;
+  width: 0.9em;
 }
 span.zhan-ze {
+  color: dimgray;
+  font-size: 0.9em;
+  border-radius: 0.75em;
   background-color: lightyellow;
+  margin: 0.25em 0em;
+  padding: 0.1em 0.2em;
+  vertical-align: middle;
+  height: 0.9em;
+  max-width: 0.9em;
+  width: 0.9em;
 }
 span.zuo-zhe {
 	color: darkslategray;
@@ -252,6 +285,7 @@ span.zuo-zhe {
 span.zhu {
 	color: darkblue;
 }
+
 ul {
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
   margin-bottom: 0.5em;
@@ -291,7 +325,7 @@ p.shitou {
   font-family: "DK-FANGSONG", "仿宋", "fs", "fangsong", sans-serif;
   font-weight: bold;
   font-size: 1em;
-  margin: 1.5em 1em 1em 0;
+  margin: 1.5em 1em 0.5em 1em;
   page-break-before: auto;
   page-break-after: avoid;
   text-align: center;
@@ -300,7 +334,7 @@ p.shitou {
 p.shiming {
   font-size: 0.8em;
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
-  margin: 0 1em 0 0;
+  margin: 0em 1em 0em 1em;
   padding: 0;
   page-break-after: avoid;
   text-align: center;
@@ -310,6 +344,7 @@ p.shiju {
   display: inline-block;
   font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
   line-height: 1.75em;
+  margin: 0.5em 1em 1em 1em;
   padding: 0;
   page-break-inside: avoid;
   page-break-after: avoid;
@@ -349,6 +384,9 @@ ol {
   padding: 0;
   height: 1px;
   background: #000;
+}
+.hidden {
+  display: none;
 }
 .duokan-footnote-content {
   padding: 0 auto;
@@ -437,6 +475,12 @@ p.cipu {
 a.index {
   background-color: lightyellow;
   text-decoration: none;
+}
+em, .emphasis {
+  font-weight: bold;
+  border-radius: 0.25em;
+  background-color: orange;
+  padding: 0.2em 0.125em;
 }
 h2.biankuang {
   background-image: url(../Images/biankuang.png);
