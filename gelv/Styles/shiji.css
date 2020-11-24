@@ -25,14 +25,14 @@ div.center {
   text-align: center;
 }
 div.xiang {
-  display: block;
+  display: none;
   visibility: visible;
 }
-@media only screen and (max-width: 32em) {
- div.xiang {
-  display: none;
-  visibility: collapse;
- }
+@media only screen and (min-width:32em) and (max-width:58em) {
+  div.xiang {
+    display: block;
+    visibility: collapse;
+  }
 }
 
 h1 {
@@ -63,7 +63,7 @@ h2:nth-of-type(n+2) {
   border-top: dotted lightgray 0.25em;
   page-break-before: always;
 }
-h3, h4 {
+h3, h4, h5 {
   font-size: 1em;
   font-family: "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
   border-right: inset 0.5em lightgray;
@@ -78,13 +78,6 @@ h3, h4 {
 h3 {
   page-break-before: always;
 }
-h4.futi, p.futi, p.zong {
-  font-size: 1em;
-  font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
-  line-height: 1.5em;
-  margin: 0.25em 0em 0.25em 0em;
-  text-indent: 2em;
-}
 h4 > span.juan {
   color: darkslategray;
   border-radius: 0.25em;
@@ -92,7 +85,15 @@ h4 > span.juan {
   border-top: double 0.25em lightgray;
   padding: 0.25em 0.25em 0.25em 0em;
 }
-h4.pgbr {
+
+.futi, p.zong {
+  font-size: 1em;
+  font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+  line-height: 1.5em;
+  margin: 0.25em 0em 0.25em 0em;
+  text-indent: 2em;
+}
+.pgbr {
   page-break-before: always;
 }
 
