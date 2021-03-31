@@ -35,7 +35,7 @@
     display: none;
     visibility: collapse;
   }
-  @media only screen and (min-width:32em) and (max-width:58em) {
+  @media only screen and (min-width:30em) and (max-width:60em) {
   div.xiang {
     display: block;
     visibility: visible;
@@ -58,10 +58,39 @@
       background-image: none;
       background-color: whitesmoke;
       border: double darkgray 0.5em;
+      border-radius: 0.35em;
       margin: 0.5em 25% 1em 25%;
-      padding: 1em 2em 3em 2em;
+      padding: 1em 1em 1.25em 1em;
       text-align: center;
       text-indent: 0em;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    body {
+      zoom: 1.5;
+      /*
+      transform: scale(1, 1.35);
+      transform-origin: 0 0;
+      */
+      -moz-transform: scale(1, 1.35); /* Firefox Property */
+      -moz-transform-origin: 0 0;
+      -o-transform: scale(1, 1.35); /* Opera Property */
+      -o-transform-origin: 0 0;
+      /* Safari Property *//*
+      -webkit-transform: scale(1, 1.35);
+      -webkit-transform-origin: 0 0;
+      */
+    }
+    h1 {
+      padding: 0.25em 0.25em 0.5em 0.25em;
+      zoom: 0.75;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    body { zoom: 2; }
+    h1 {
+      line-height: 2em;
+      padding: 0em 0.25em 0.25em 0.25em;
     }
   }
   h1 > span {
@@ -246,7 +275,7 @@
 <a href="#boathill-wulv">五律</a>
 </div>
 
-<h2 id="boathill-toc">﻿舟山诗词目录　<span class="year">(1979.4─2020.8)</span></h2>
+<h2 id="boathill-toc">﻿舟山诗词目录　<span class="year">(1979.4─2021.3)</span></h2>
 <hr/>
 <p class="mulu">(2) 五律•春游鳝溪　二首　　　　　　　　<a href="#y1979-fuzhou-spring">1979．⒋</a></p>
 <p class="mulu">(2) 五律•秋游青芝寺　二首　　　　　　　<a href="#y1979-fuzhou-fall">1979．⒐</a></p>
@@ -305,7 +334,7 @@
 <p class="mulu">(1) 临江仙•感赋　　　　　　　　　　　　<a href="#y1996-spring">1996．⒊</a></p>
 <p class="mulu">(1) 五律•送别　　　　　　　　　　　　　<a href="#y1996-acrostic">1996．⒋</a></p>
 <p class="mulu">(1) 满江红•致周琳　　　　　　　　　　　<a href="#y1997-zhoulin">1997．⒊</a></p>
-<p class="mulu">(1) 水调歌头•中秋　　　　　　　　　　　<a href="#y1998-midautumn">1998．⒐</a></p>
+<p class="mulu">(1) 水調歌頭•中秋　　　　　　　　　　　<a href="#y1998-midautumn">1998．⒐</a></p>
 <p class="mulu">(1) 金缕曲•中秋寄格格　　　　　　　　　<a href="#y1999-zhoulin">1999．⒐</a></p>
 <p class="mulu">(1) 金缕曲•中秋书怀　　　　　　　　　　<a href="#y1999-midautumn">1999．⒐</a></p>
 <p class="mulu">(1) 新韵文诗•你和雨　　　　　　　　　　<a href="#y2002-rain">2002．⒊</a></p>
@@ -337,7 +366,7 @@
 <p class="mulu">(2) 望海潮•斐济珊瑚海岸　　　　　　　　<a href="#y2010-fiji-coral">2010．⒉</a></p>
 <p class="mulu">(1) 英文诗•告别斐济　　　　　　　　　　<a href="#y2010-fiji-denarau">2010．⒉</a></p>
 <p class="mulu">(2) 山坡羊•西北偏北国家公园二首　　　　<a href="#y2010-yellowstone">2010．⒏</a></p>
-<p class="mulu">(2) 水调歌头•中秋　　　　　　　　　　　<a href="#y2010-midautumn">2010．⒐</a></p>
+<p class="mulu">(2) 水調歌頭•中秋　　　　　　　　　　　<a href="#y2010-midautumn">2010．⒐</a></p>
 <p class="mulu">(1) 英文诗•秋色雷德蒙　　　　　　　　　<a href="#y2010-fall">2010．⒑</a></p>
 <p class="mulu">(1) 七言•梦中梦　　　　　　　　　　　　<a href="#y2010-dream">2010．⒑</a></p>
 <p class="mulu">(2) 七律•寒雨二首　　　　　　　　　　　<a href="#y2011-rain">2011．⒈</a></p>
@@ -386,13 +415,16 @@
 <p class="mulu">(1) 七言•记梦　　　　　　　　　　　　　<a href="#y2020-dream">2020．⒓</a></p>
 <p class="mulu">(6) 南乡子•宇宙往事　　　　　　　　　　<a href="#y2020-kosmos">2020．⒓</a></p>
 <p class="mulu">(1) 菩萨蛮•嫦娥五号奔月归来　　　　　　<a href="#y2020-pusaman">2020．⒓</a></p>
-<p class="mulu">(2) 水调歌头•嫦娥五号　　　　　　　　　<a href="#y2020-shuidiao">2020．⒓</a></p>
+<p class="mulu">(2) 水調歌頭•嫦娥五号　　　　　　　　　<a href="#y2020-shuidiao">2020．⒓</a></p>
 <p class="mulu">(1) 行香子•赠周琳　　　　　　　　　　　<a href="#y2020-shui">2020．⒓</a></p>
-<p class="mulu">(3) 七言•新韵杂篇　　　　　　　　　　　<a href="#y2021-misc">2020．⒈</a></p>
-<p class="mulu">(2) 水调歌头•新年感赋　　　　　　　　　<a href="#y2021-newyear">2020．⒈</a></p>
-<p class="mulu">(1) 水调歌头•祭一月八　　　　　　　　　<a href="#y2021-jan8">2020．⒈</a></p>
+<p class="mulu">(1) 七言•论无题绝句　　　　　　　　　　<a href="#y2021-jueju">2021．⒈</a></p>
+<p class="mulu">(3) 七言•新韵杂篇　　　　　　　　　　　<a href="#y2021-misc">2021．⒈</a></p>
+<p class="mulu">(2) 水調歌頭•新年感赋　　　　　　　　　<a href="#y2021-newyear">2021．⒈</a></p>
+<p class="mulu">(1) 水調歌頭•祭一月八　　　　　　　　　<a href="#y2021-jan8">2021．⒈</a></p>
+<p class="mulu">(1) 水調歌頭•南迁步苏词韵　　　　　　　<a href="#y2021-move">2021．⒊</a></p>
+<p class="mulu">(1) 虞美人•樱花　　　　　　　　　　　　<a href="#y2021-ying">2021．⒊</a></p>
 <hr/>
-<p class="futi">以上留存詩詞凡二百一十九首</p>
+<p class="futi">以上留存詩詞凡二百二十二首</p>
 <p class="right"><a href="#toc_top">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
@@ -542,6 +574,10 @@
 <p class="spbr"><br/></p>
 <h4 class="futi">其二·冬雨</h4>
 <p class="poem">冰窗凍雨人行錯，畫染層層墨。新離小別念難收，愛似一天不見也煩懮。<span class="cibr"></span>　　淅淅瀝瀝屋檐上，續續低吟唱。問君何事枕無眠，惟愿今宵珍重夢輕恬。</p>
+<p class="spbr"><br/></p>
+
+<h4 id="y2021-ying">虞美人·樱花　<span class="date">2021.3.29</span></h4>
+<p class="poem">心争料峭香争暖，争艳争花满。一春一水待朝霞，一岸一堤一树向人家。<span class="cibr"></span>　　落时清丽生时短，时聚时离散。随风随雨付尘沙，随梦随雲随爱到天涯。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2020-kosmos">南乡子·宇宙往事　<span class="date">2020.12. Seattle</span></h4>
@@ -694,7 +730,7 @@
 <p class="spbr"><br/></p>
 <h4 id="y2012-zyx" class="futi">附周琳《西江月》一首　<span class="date">2012.09.23</span></h4>
 <p class="poem">林中遍寻翠竹，落日尽闪余晖，海上茫茫飛细雨，此情依旧如新。<span class="cibr"></span>　　四面环山翠绿，十里麦田金黄，五岳哪有此山强，岁岁年年不忘。</p>
-<p class="note">注：上闋各句尾字及下闋各句首字（諧音）合成此詞標題。</p>
+<p class="note">注：上闋各句尾字（諧音）及下闋各句首字合成此詞標題。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2015-valentine">高陽臺·情若在、当是节　<span class="date">2015.02.14</span></h4>
@@ -702,7 +738,7 @@
 <p class="poem">彩卡一方，鲜花一束，商家描绘成图。美酒杯紅，难呈携侣征途。送迎晩照和晨露，有爱時，萬事心舒。岁华浮，功朽名消，竹翠林疏。<span class="cibr"></span>　　真情不在情人节，在分分你我，秒秒雲殊。在葉之秋，在春雁阵成書。在經風雨彩虹後，再回眸，恋似当初。在能乎，终世相扶，至老相如。</p>
 <p class="spbr"><br/></p>
 
-<h4 id="y1998-midautumn">水调歌头·中秋　<span class="date">1998.9</span></h4>
+<h4 id="y1998-midautumn">水調歌頭·中秋　<span class="date">1998.9</span></h4>
 <p class="poem">明月起遥想，思绪渐情稠。前番一别数日，仿佛已三秋。<span class="fair">细数窗前风景，看破晴空雲影，睹物略生愁</span>。天赐好人愿，佳梦枕边留。<span class="cibr"></span>　　两眸炯，颦妩媚，语温柔。真情相守，平淡之处忘烦忧。共筑二人天地，足慰平生快意，一样雄心酬。美酒赋良辰，相对咏高楼。</p>
 <p class="spbr"><br/></p>
 
@@ -754,6 +790,10 @@
 <p class="note">注：世界观、价值观、人生观，谓之三观。</p>
 <p class="futi">其二</p>
 <p class="poem">代势有更替，国运往复兴。恰时攻守相易，舆论见输赢。合纵连横陷阱，陆海棋分水岭，纸上苦鏖兵。莫信好战争，未必坏和平。<span class="cibr"></span>　　在於度、在於义、在於行。世间真理，常借天道与繁名。一半风雲随性，一半得失定命，醒後梦無凭。身自放持正，心任雨和晴。</p>
+<p class="spbr"><br/></p>
+
+<h4 id="y2021-move">水調歌頭·南迁步苏词韵　<span class="date">2021.03.12</span></h4>
+<p class="poem">冬去花舒展，雁过暖晴空。庭前一派春景，别样抹青红。枕上忽来新句，窗外歇停旧雨，诗意似飞鸿。记得东坡韵，山色有無中。<span class="cibr"></span>　　碧如顷，涛色净，雪连峰。依然故我，不羡湖海钓鱼翁。不羡长轩阔步，不羡高亭远麓，陋室亦文雄。心底水雲济，笔下快哉风。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2021-jan8">水調歌頭·借句祭周公四十五週年<span class="futi">【今韵】</span>　<span class="date">2021.01.08</span></h4>
@@ -968,7 +1008,7 @@
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-qiyan">七言古诗　<span class="shou">二十首</span></h3>
+<h3 id="boathill-qiyan">七言古诗　<span class="shou">二十二首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="y1982-fuzhou-qiyan">江南感赋<span class="shou">三首</span>　<span class="date">1982.10</span></h4>
@@ -1068,6 +1108,10 @@
 <p class="poem">平生未幸见飞碟，遇事不决量子学。黑洞乾坤波粒相，银河天地死生劫。不超宇宙光速限，难测心思雷电约。二向降维箔攻略，三体科幻情成结。</p>
 <h4 id="y2021-misc-3" class="futi">其三</h4>
 <p class="poem">曾闻鲧治河用堵，又说禹治水用疏。如此功过传两代，从来毁誉各分途。焉知神话方舟诺，不复中华陆海湖？後世由因而证果，今人未必识其初。</p>
+
+<h4 id="y2021-jueju">七言·论无题绝句　<span class="date">2021.01</span></h4>
+<p class="poem">半首律诗未写完，一称绝句是留残。無题不在韵长短，有所区分思易难。</p>
+
 <p><br/></p>
 <p class="right"><a href="#toc_top">⇑</a></p>
 <p class="spbr"><br/></p>
@@ -1078,22 +1122,22 @@
 <p class="spbr"><br/></p>
 
 <h4 id="y2007-nwc-ly">七律·流言　<span class="date">2007.5</span></h4>
-<p class="poem">十年盛誉创维艰，一夜诬雲造万千。非女非男舌暗箭，不三不四口狂言。<span class="fair">机关算尽频生妒，谎言流长苦撑圆。罔见庭前如泼妇，安知平日似淑贤</span>。蛮缠胡搅兴而乱，阴唱阳和盖以偏。曾有私心私逐利，本無自重自失颜。撕开表相识迷雾，冲出凡尘洗瘴烟。几历风霜真义在，但经磨炼志弥坚。</p>
+<p class="poem">十年盛誉创维艰，一夜诬雲造万千。非女非男舌暗箭，不三不四口狂言。<span class="fair">机关算尽频生妒，谎话流长苦撑圆。罔见庭前如泼妇，安知平日似淑贤</span>。蛮缠胡搅兴而乱，阴唱阳和盖以偏。曾有私心私逐利，本無自重自汗颜。撕开表相识迷雾，冲出凡尘洗瘴烟。几历风霜真义在，但经磨炼志弥坚。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2007-nwc-new">七律·賀中文學校　<span class="date">2007.06.18.　岁在丁亥五月四日於西雅图</span></h4>
-<p class="poem">海外华人赤子吟，英才教育故乡音。雪峰山下开学院，绿树湖边点翰林。<span class="fair">传统精神追胜古，时新品格汇於今</span>。能集百策成良策，再聚一心献爱心。同济惺惺惜慧智，直言坦坦对胸襟。启迪思想明如月，领读书声语似琴。千选师资德望众，十年经验试真金。中文从此非难事，汉字课堂创又新！</p>
+<p class="poem">海外华人赤子吟，英才教育故乡音。雪峰山下开书院，绿树湖边点翰林。<span class="fair">传统精神追胜古，时新品质汇於今</span>。。能聚百策成良策，再聚一心献爱心。同济惺惺惜慧智，直言坦坦对胸襟。启迪思想明如月，领读书声语似琴。千选师资德望众，十年经验试真金。中文从此非难事，汉字课堂创又新！</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2008-midautumn">七律·中秋月孤懸海外兼詠嬋娟同韻二題　<span class="date">2008.9</span></h4>
 <h4 class="futi">一</h4>
-<p class="poem">晴雲艷靄浴新晨，金玉銀盤看似真。故國彼時達親友，外鄉昨夜望空塵。易成浮海流浪客，難忘江湖老病身。歲歲佳期誰共賞，年年企盼月歸人。</p>
+<p class="poem">晴雲艷靄浴新晨，金玉銀盤看似真。故國彼時達親友，外鄉昨夜望空塵。易成浮海浪流客，難忘江湖老病身。歲歲佳期誰共賞，年年企盼月歸人。</p>
 <h4 class="futi">二</h4>
 <p class="poem">一輪滿玉向新晨，翠宇瓊樓亦幻真。看破凡間如戀土，望穿星界若浮塵。<span class="good">今夕過客遽成夢，昨日紅顔已忘身</span>。值此佳期誰與我，千年等待月中人。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2008-caribbean">七律·加勒比遊記　<span class="date">2008.12</span></h4>
-<p class="poem">贏得幾日賦清閒，遠外藏身碧水邊。<span class="fair">細細銀沙加勒比，邈邈綠島海雲天</span>。岸拍碎浪逐千尺，魚戲飛鷗繞兩舷。深地溫泉蒸氣霧，茫山熱帶雨林煙。泛舟漁火椰風晚，蕩槳熒光月色翩。四季常青瓜果潤，三餐必備菜蔬鮮。迎來旭日晨星落，看盡夕陽好夢圓。此去曾留過客影，歸來賞雪入新年。</p>
+<p class="poem">贏得幾日賦清閒，遠外藏身碧水邊。<span class="fair">細細銀沙加勒比，遥遥綠島海雲天</span>。岸拍碎浪逐千尺，魚戲飛鷗繞兩舷。深地溫泉蒸氣霧，茫山熱帶雨林煙。泛舟漁火椰風晚，蕩槳熒光月色翩。四季常青瓜果潤，三餐必備菜蔬鮮。迎來旭日晨星落，看盡夕陽好夢圓。此去曾留行客影，歸來賞雪入新年。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="y2008-snow">七律·雪花　<span class="date">2008.12</span></h4>
@@ -1210,7 +1254,7 @@
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-wulv">五言律诗　<span class="shou">六十二首</span></h3>
+<h3 id="boathill-wulv">五言律诗　<span class="shou">四十首</span></h3>
 <p class="spbr"><br/></p>
 
 
@@ -1380,7 +1424,7 @@
 <div class="xiang">
 <hr style="margin:0px 25%;width:50%;"/>
 
-<h3 id="boathill-">外编</h3>
+<h3 id="boathill-">外编　<span class="shou">二十四首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="y1995-honglou">红楼集句　<span class="date">1995.11</span></h4>
@@ -1475,7 +1519,7 @@
 <p><br/></p>
 </div>
 
-<p class="zong">　　右录詩詞二百一十九首</p>
+<p class="zong">　　右录詩詞二百二十二首</p>
 <p class="zong">　　纱糸轩藏</p>
 
 <p class="right"><a href="#toc_top">⇑</a></p>
