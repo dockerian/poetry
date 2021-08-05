@@ -11,9 +11,9 @@
   - [王力《诗词格律》](./books/王力-诗词格律.epub)（增订本）
   - [平水韻表.doc](./books/平水韵表.doc)｜[pdf](./books/平水韵表.pdf)
 
-* 圖書[附錄](./gelv/README.md)
+* 舟山[詩詞](./shiji.html) (Updated 2021.08.05)
 
-* 舟山[詩詞](./shiji.html)
+* 圖書[附錄](./gelv/README.md)
 
 
 
