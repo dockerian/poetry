@@ -1,4 +1,4 @@
-舟山堂诗词稿目录　(1979.4─2021.3)
+舟山堂诗词稿目录　(1979.4─2021.8)
 ------------------------------------------------------------
 (2) 五律•春游鳝溪　二首　　　　　　　　1979．⒋
 (2) 五律•秋游青芝寺　二首　　　　　　　1979．⒐
@@ -105,7 +105,7 @@
 (3) 七律•看山三首　　　　　　　　　　　2012．⒍
 (4) 七律•秋興四首　　　　　　　　　　　2012．⒑
 (1) 七律•病中　　　　　　　　　　　　　2013．⒒
-(1) 行香子•火燒天宮　　　　　　　　　　2014．⒉
+(1) 行香子•火燒天宮（附英文版）　　　　2014．⒉
 (1) 雙調憶江南•午後春光　　　　　　　　2014．⒊
 (1) 行香子•春分　　　　　　　　　　　　2014．⒊
 (1) 賀新涼•小別　　　　　　　　　　　　2014．⒊
@@ -146,8 +146,13 @@
 (1) 水調歌頭•祭一月八　　　　　　　　　2021．⒈
 (1) 水調歌頭•南迁步苏词韵　　　　　　　2021．⒊
 (1) 虞美人•樱花　　　　　　　　　　　　2021．⒊
+(1) 英文诗•清平乐　　　　　　　　　　　2021．⒋
+(1) 英文诗•萨瓦纳　　　　　　　　　　　2021．⒍
+(3) 七律•夏梦三首　　　　　　　　　　　2021．⒎
+(3) 七律•空度三首　　　　　　　　　　　2021．⒏
+(1) 水调歌头•周琳　　　　　　　　　　　2021．⒏
 ------------------------------------------------------------
-　　以上留存詩詞凡二百二十二首
+　　以上留存詩詞凡二百三十一首
 
 
 
@@ -160,7 +165,7 @@
 　　無边雲水翠屏中，有怀霜雪映古松。
 　　异国星月家乡梦，他山亭台故土风。
 
-　　词曲九十九首
+　　词曲一百首
 
 　　　　天净沙·今韵斐济十题十八首 (2010.2)
 　　　　一、胜地
@@ -342,23 +347,23 @@
 
 　　　　English version: A Vanilla Song
 
-        Sunset light brown,
-        On the trees and stone
-        Deep blue as sea,
-        Vast sky up high grown
-        Clouds form battle array,
-        Waving out an open zone
-        In the ink, in the color,
-        In this tone
+　　　　Sunset light brown,
+　　　　On the trees and stone
+　　　　Deep blue as sea,
+　　　　Vast sky up high grown
+　　　　Clouds form battle array,
+　　　　Waving out an open zone
+　　　　In the ink, in the color,
+　　　　In this tone
 
-        Life is a time loan,
-        By interest rate unknown
-        Enjoy the moment,
-        With family or alone,
-        Of the beauty and peace
-        Before it is gone
-        Be the dream, be the love,
-        Be your own
+　　　　Life is a time loan,
+　　　　By interest rate unknown
+　　　　Enjoy the moment,
+　　　　With family or alone,
+　　　　Of the beauty and peace
+　　　　Before it is gone
+　　　　Be the dream, be the love,
+　　　　Be your own
 
 　　　　行香子·春分 (2014.3)
 貪看春光，滿目芬芳。湛藍天，深海之窗。青松翠溢，櫻樹姿揚。讓花心醉，草新綠，人新妝。　　經雨風霜，生命徜徉。雪連山，薄霧微茫。斑駁斜影，詩意深藏。願雲留住，歲流金，水流長。
@@ -449,6 +454,9 @@
 　　　　水調歌頭·借句祭周公四十五週年【新韵】 (2021.01.08)
 正道沧桑路，天亦有情無？当年雲恨愁雨，举世恸一哭。故事流传萬户，风采辉煌千古，记得伍豪乎？周公字翔宇，别号必成胡。　　为中华、之崛起、而读书。大江歌罢东去，蹈海创国图。声声语语嘱咐，点点滴滴领悟，伟梦伴征途。灰骨青山处，应慰九州殊。
 
+　　　　水調歌頭·赠周琳 (2021.08.12)
+绝壁方知险，拼力久识坚。风风雨雨得失，理想置於前。山在更高自己、路在最深心底，默默有音弦。眼界梦宽阔，领路王者先。　　养於气，谨於律，比於贤。艰难烦恨相伴，福禄隐身边。平淡人生亦喜、精彩须臾似戏，故事付雲烟。万苦千辛後，一片雪晴天。
+
 　　　　沁園春·重懷周公·和毛詞原韻 (2011.01.08)
 久逝容光，歲月塵封，思念遠飄。記當年國喪，陰雲翳翳；人民心碎，淚雨滔滔。萬業親躬，先憂後已，誰比周公品質高？一生夢，為中華崛起，富裕妖嬈。　　山河自古多嬌，是烈士拋顱與折腰。想伍毫學社，初揚文采；南昌黃埔，盡顯風騷。外交和談，蜚聲宇內，政治功夫巧射雕。多少代，留傳奇故事，遺唱今朝。
 
@@ -484,13 +492,13 @@
 　　　　六洲歌头·夕阳西下 (1982.9)
 雄天望断，雲暗莽如山。斜晖照，惊鸿影，漫天蓝。落红残。万里横雲聚，流金碎，征尘乱；又恰似，寒崖雪，映酡颜。村舍炊烟，灯火三四点，疑是人寰。更夕阳欲去，青雾远腾山，狼籍如棉。共盘餐。　　访林和靖，孤山下，寻竹友，问坡仙。几曾见，夕阳好，对危栏。酒微酣。回想凭生志，空怀恨，叹当年。佳景短，人易老，怕灰髯。疏淡一轮新月，邀相饮，未醉先贪。羡西霞如画，欲踏浪银帆，追逐天边。
 
-　　　　右录词曲九十九首
+　　　　右录词曲一百首
 　　　　纱糸轩藏
 
 
 
 
-　　新韵文诗六首
+　　新韵文诗八首
 
 　　　　雪 (1989.12)
 　　　　已巳年冬清晨，於北京郊外道中
@@ -621,20 +629,58 @@
 
 　　　　English version: Happy Valentine's Day
 
-        Sometimes life could be rough and divine
-        Sometimes love could be hard to define
-        From the day I met you
-        I know my destiny finally had a good sign
-        Like a kite at skyline
-        No matter how far I fly
-        You are always there and give me guideline
+　　　　Sometimes life could be rough and divine
+　　　　Sometimes love could be hard to define
+　　　　From the day I met you
+　　　　I know my destiny finally had a good sign
+　　　　Like a kite at skyline
+　　　　No matter how far I fly
+　　　　You are always there and give me guideline
 
-        So many years have gone by
-        I am so glad you are still mine
-        Spending the rest of my life
-        With you, sounds so fine
-        That is all I want, dear love
-        Because you are my valentine
+　　　　So many years have gone by
+　　　　I am so glad you are still mine
+　　　　Spending the rest of my life
+　　　　With you, sounds so fine
+　　　　That is all I want, dear love
+　　　　Because you are my valentine
+
+
+　　　　Peaceful Purity (2021.04.26)
+
+　　　　Blossom, finery, with clouds along,
+　　　　Remind of a beauty, remind of a song.
+　　　　As gorgeous touch by nature’s tune,
+　　　　As spring breeze all day long.
+
+　　　　In the fairyland, flowers among,
+　　　　Encounter the goddess in the throng
+　　　　At the palace of the heavenly moon,
+　　　　A romantic crossing can’t go wrong.
+
+　　　　附：李白《清平乐》
+　　　　雲想衣裳花想容，春风拂槛露华浓。
+　　　　若非群玉山头见，会向瑶台月下逢。
+
+
+　　　　Savannah (2021.06.28)
+
+　　　　Bring midnight into this town
+　　　　Lightening sky an evening gown
+　　　　Street is singing a plantation song
+　　　　From hundreds of years long
+　　　　Colorful houses in between brown
+　　　　Aged shadow walking down
+　　　　No matter what being strong
+　　　　No mind who’s being wrong
+
+　　　　Against the light of the sun
+　　　　Against air of the wind to run
+　　　　Flower casting on green lawn
+　　　　Curtains frame a window drawn
+　　　　Recall of the miserable recall the fun
+　　　　There’s being there’s none
+　　　　Shine the past empire another dawn
+　　　　All glory days dusted ‘n’ gone
 
 
 
@@ -735,7 +781,7 @@
 
 
 
-　　七言律絕二十八首
+　　七言律絕三十四首
 
 　　　　七律·流言 (2007.5)
 十年盛誉创维艰，一夜诬雲造万千。非女非男舌暗箭，不三不四口狂言。机关算尽频生妒，谎话流长苦撑圆。罔见庭前如泼妇，安知平日似淑贤。蛮缠胡搅兴而乱，阴唱阳和盖以偏。曾有私心私逐利，本無自重自汗颜。撕开表相识迷雾，冲出凡尘洗瘴烟。几历风霜真义在，但经磨炼志弥坚。
@@ -827,6 +873,22 @@
 一阵秋风一阵寒，寒风阵阵到秋残。残秋残雨残花落，落暮落雲落叶繁。繁叶堆金成乱绪，绪思聚墨画前峦。峦前树色丘前谷，谷底溪声心底澜。
 　　　　其二
 难留晚照难留水，值此江河值此潮。棋世如繁如费解，人心似恨似無聊。功名大道疑成伪，言语非常乱必妖。形势风来情困窘，溪山雨落叶飘摇。
+
+　　　　七律·夏梦三首 (2021.7)
+　　　　其一·迂岸【略用杜诗韵】
+晨热风轻草不哀，树高绒挂曳摇回。霞光破雾夕惜下，雲暗识雷雨欲来。古巷深宅藏倦客，新香苦味露湿台。虽迎意气临江水，莫让微愁入酒怀。
+　　　　其二·漫游
+滞留逆旅漂泊客，贪慕人间快乐天。春赏浮雲秋赏月，冬听风雨夏听泉。暇时豪迈江湖远，忙里疏怀汤鼎鲜。因与伊人长聚守，当知此爱久弥坚。
+　　　　其三·随想
+物心难守琉璃净，尘事长随海浪沙。闲瞰雲泥描雪印，漫怀雨墨舞烟霞。天边落日無关爱，眼底浮光有念家。弱水画瓶千世界，虚舟普渡萬重华。
+
+　　　　七律·空度三首 (2021.8)
+量子疑团微变宏，数模推演尽其功。高维猜想弦频动，碎片时间引力穷。率振短长成物粒，回圈离散裂星宫。统一场论無从解，千百思潮是亦空。
+　　　　其二
+今生落落时空界，往事痴痴混沌濛。虚拟衍生真幻境，实征迷逝暗星冲。心从几度冥想里，身在二维程序中。花与非花猜未透，相如具相惑不同。
+　　　　注：【相者，表象，形也。佛语性之对，心生之也。】
+　　　　其三
+光速永恒求本源，时钟缺位毁常观。主宾交换逻辑反，波粒同存辩证繁。圈量空间联互动，质能公式转移难。传播自性非如相，因果纠缠好似禅。
 
 
 
@@ -1067,5 +1129,5 @@
 温存一段爱，赠与梦中人。绿水经春暖，朱颜动情深。长歌流永夜，小睡润新晨。鸳枕应惜玉，红尘已忘身。
 
 
-　　　　右录詩詞二百二十二首
+　　　　右录詩詞二百三十一首
 　　　　纱糸轩藏

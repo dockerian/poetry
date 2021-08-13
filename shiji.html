@@ -53,44 +53,58 @@
     margin: 0.5em 0em 0.5em 0em;
     text-align: center;
   }
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 52em) {
     h1 {
+      /*
       background-image: none;
       background-color: whitesmoke;
       border: double darkgray 0.5em;
       border-radius: 0.35em;
       margin: 0.5em 25% 1em 25%;
       padding: 1em 1em 1.25em 1em;
+      */
       text-align: center;
       text-indent: 0em;
     }
   }
   @media only screen and (min-width: 600px) {
     body {
-      zoom: 1.5;
-      /*
-      transform: scale(1, 1.35);
-      transform-origin: 0 0;
-      */
-      -moz-transform: scale(1, 1.35); /* Firefox Property */
-      -moz-transform-origin: 0 0;
-      -o-transform: scale(1, 1.35); /* Opera Property */
-      -o-transform-origin: 0 0;
-      /* Safari Property *//*
-      -webkit-transform: scale(1, 1.35);
-      -webkit-transform-origin: 0 0;
-      */
+      font-size: 1.5em;
     }
     h1 {
       padding: 0.25em 0.25em 0.5em 0.25em;
-      zoom: 0.75;
     }
   }
   @media only screen and (min-width: 900px) {
-    body { zoom: 2; }
+    body {
+      font-size: 2em;
+    }
     h1 {
-      line-height: 2em;
+      font-size: 1.75em;
       padding: 0em 0.25em 0.25em 0.25em;
+    }
+    h1, h2, .center {
+      zoom: 0.75;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    body {
+      font-size: 2.5em;
+    }
+    h1 {
+      padding: 0em 0.25em 0.25em 0.25em;
+    }
+  }
+  @media print {
+    body {
+      font-size: 1.5em;
+    }
+    h1 {
+      margin-top: 0em;
+      font-size: 2em;
+    }
+    .noprint {
+      display: none;
     }
   }
   h1 > span {
@@ -227,6 +241,14 @@
     text-indent: 0.25em;
     white-space: pre;
   }
+  p.mulu > a:nth-of-type(n+2) {
+    font-size: 0.75em;
+    border: solid 0.1em transparent;
+    border-radius: 0.65em;
+  }
+  p.mulu > a:nth-of-type(n+2):visited {
+    color: gray;
+  }
   p.note {
     font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "fangsong", "fs", "zw", serif;
     text-indent: 2em;
@@ -267,7 +289,7 @@
 <a name="toc_top"></a>
 <h1 class="biankuang">舟山詩詞</h1>
 
-<div class="center">
+<div id="toc_ref" class="center">
 <a href="#boathill-ciqu">词曲</a> |
 <a href="#boathill-xinyun">新韵</a> |
 <a href="#boathill-qiyan">七言</a> |
@@ -304,7 +326,7 @@
 <p class="mulu">(1) 巫山一段雲•雲中飞行　　　　　　　　<a href="#y1984-dalian-flight">1984．⒏</a></p>
 <p class="mulu">(1) 望海潮•旅顺口怀古　　　　　　　　　<a href="#y1984-dalian-sea">1984．⒏</a></p>
 <p class="mulu">(1) 拜星月慢•雨後黄昏，游大连星海公园　<a href="#y1984-dalian-xym">1984．⒏</a></p>
-<p class="mulu">(1) 忆秦娥•清明　　　　　　　　　　　　<a href="#y1985-qingming" id="y1985">1985．⒈</a></p>
+<p class="mulu">(1) 忆秦娥•清明　　　　　　　　　　　　<a href="#y1985-qingming" id="y1985">1985．⒈</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(2) 七言•清明诗钞题後　二首　　　　　　<a href="#y1985-qm">1985．⒈</a></p>
 <p class="mulu">(1) 七言•寄书友人题後　　　　　　　　　<a href="#y1985-xin">1985．⒈</a></p>
 <p class="mulu">(1) 人月圆•十五　　　　　　　　　　　　<a href="#y1985-newyear">1985．⒉</a></p>
@@ -318,14 +340,14 @@
 <p class="mulu">(1) 五律•夜雨邀同窗龚学士戏作　　　　　<a href="#y1988-rain">1988．⒍</a></p>
 <p class="mulu">(1) 散曲•寒夜别　　　　　　　　　　　　<a href="#y1989-farewell">1989．⒈</a></p>
 <p class="mulu">(1) 新韵文诗•雪　　　　　　　　　　　　<a href="#y1989-snow">1989．⒓</a></p>
-<p class="mulu">(1) 五律•壬申新年赋笔　　　　　　　　　<a href="#y1992-newyear" id="y1990">1992．⒉</a></p>
+<p class="mulu">(1) 五律•壬申新年赋笔　　　　　　　　　<a href="#y1992-newyear" id="y1990">1992．⒉</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(1) 五律•榕城留句　　　　　　　　　　　<a href="#y1993-fuzhou">1993．⒊</a></p>
 <p class="mulu">(1) 五律•夜曲　　　　　　　　　　　　　<a href="#y1993-yequ">1993．⒊</a></p>
 <p class="mulu">(1) 临江仙•惜春　　　　　　　　　　　　<a href="#y1994-spring">1994．⒊</a></p>
 <p class="mulu">(2) 五律•秋夜　二首　　　　　　　　　　<a href="#y1994-fall">1994．⒑</a></p>
 <p class="mulu">(2) 五律•离情　二首　　　　　　　　　　<a href="#y1994-fall-night">1994．⒒</a></p>
 <p class="mulu">(3) 五律•集字　三首　　　　　　　　　　<a href="#acrostic">1994．⒓</a></p>
-<p class="mulu">(1) 五律•美人　　　　　　　　　　　　　<a href="#y1995-mei" id="y1995">1995．⒈</a></p>
+<p class="mulu">(1) 五律•美人　　　　　　　　　　　　　<a href="#y1995-mei" id="y1995">1995．⒈</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(6) 五律•留香集　六首　　　　　　　　　<a href="#y1995-liuxiang">1995．⒉</a></p>
 <p class="mulu">(1) 五律•無题　　　　　　　　　　　　　<a href="#y1995-wuti">1995．⒉</a></p>
 <p class="mulu">(1) 五律•相思　　　　　　　　　　　　　<a href="#y1995-xiangsi">1995．⒉</a></p>
@@ -346,10 +368,10 @@
 <p class="mulu">(1) 水調歌頭•中秋　　　　　　　　　　　<a href="#y1998-midautumn">1998．⒐</a></p>
 <p class="mulu">(1) 金缕曲•中秋寄格格　　　　　　　　　<a href="#y1999-zhoulin">1999．⒐</a></p>
 <p class="mulu">(1) 金缕曲•中秋书怀　　　　　　　　　　<a href="#y1999-midautumn">1999．⒐</a></p>
-<p class="mulu">(1) 新韵文诗•你和雨　　　　　　　　　　<a href="#y2002-rain" id="y2000">2002．⒊</a></p>
+<p class="mulu">(1) 新韵文诗•你和雨　　　　　　　　　　<a href="#y2002-rain" id="y2000">2002．⒊</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(1) 五律•今夜　　　　　　　　　　　　　<a href="#y2003-zhoulin">2003．⒋</a></p>
 <p class="mulu">(1) 五律•夏威夷　　　　　　　　　　　　<a href="#y2003-hawaii">2003．⒌</a></p>
-<p class="mulu">(2) 五律•二月登高　　　　　　　　　　　<a href="#y2006-hiking" id="y2005">2006．⒉</a></p>
+<p class="mulu">(2) 五律•二月登高　　　　　　　　　　　<a href="#y2006-hiking" id="y2005">2006．⒉</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(*) 对联•同学盛会　　　　　　　　　　　<a href="#y2006-duilian">2006．⒉</a></p>
 <p class="mulu">(1) 水調歌頭•會東　　　　　　　　　　　<a href="#y2006-reunion">2006．⒊</a></p>
 <p class="mulu">(1) 临江仙•再韻會東　　　　　　　　　　<a href="#y2006-reunion-seattle">2006．⒊</a></p>
@@ -369,7 +391,7 @@
 <p class="mulu">(1) 七言•咏时事　　　　　　　　　　　　<a href="#y2009-news">2009．⒈</a></p>
 <p class="mulu">(2) 七律•己丑中秋同韻二首　　　　　　　<a href="#y2009-midautumn">2009．⒐</a></p>
 <p class="mulu">(2) 五律•冬月遠行二首　　　　　　　　　<a href="#y2009-trip">2009．⒓</a></p>
-<p class="mulu">(1) 七言•雨中思　　　　　　　　　　　　<a href="#y2010-rain" id="y2010">2010．⒈</a></p>
+<p class="mulu">(1) 七言•雨中思　　　　　　　　　　　　<a href="#y2010-rain" id="y2010">2010．⒈</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(2) 虞美人•想念二章（冬雲、冬雨）　　　<a href="#y2010-yumei">2010．⒈</a></p>
 <p class="mulu">18) 天净沙•今韵斐济十题　　　　　　　　<a href="#y2010-fiji">2010．⒉</a></p>
 <p class="mulu">(2) 望海潮•斐济珊瑚海岸　　　　　　　　<a href="#y2010-fiji-coral">2010．⒉</a></p>
@@ -391,7 +413,7 @@
 <p class="mulu">(3) 七律•看山三首　　　　　　　　　　　<a href="#y2012-shan">2012．⒍</a></p>
 <p class="mulu">(4) 七律•秋興四首　　　　　　　　　　　<a href="#y2012-midautumn">2012．⒑</a></p>
 <p class="mulu">(1) 七律•病中　　　　　　　　　　　　　<a href="#y2013-sickness">2013．⒒</a></p>
-<p class="mulu">(1) 行香子•火燒天宮　　　　　　　　　　<a href="#y2014-sunset">2014．⒉</a></p>
+<p class="mulu">(1) 行香子•火燒天宮（附英文版）　　　　<a href="#y2014-sunset">2014．⒉</a></p>
 <p class="mulu">(1) 雙調憶江南•午後春光　　　　　　　　<a href="#y2014-spring-afternoon">2014．⒊</a></p>
 <p class="mulu">(1) 行香子•春分　　　　　　　　　　　　<a href="#y2014-spring-equinox">2014．⒊</a></p>
 <p class="mulu">(1) 賀新涼•小別　　　　　　　　　　　　<a href="#y2014-zhoulin">2014．⒊</a></p>
@@ -402,7 +424,7 @@
 <p class="mulu">(1) 行香子•夏入雪峰　　　　　　　　　　<a href="#y2014-granite-falls">2014．⒎</a></p>
 <p class="mulu">(1) 行香子•朝霞　　　　　　　　　　　　<a href="#y2014-sunrise">2014．⒐</a></p>
 <p class="mulu">(2) 天净沙•秋（二首）　　　　　　　　　<a href="#y2014-fall">2014．⒒</a></p>
-<p class="mulu">(1) 七律•冬晴　　　　　　　　　　　　　<a href="#y2015-fineday" id="y2015">2015．⒈</a></p>
+<p class="mulu">(1) 七律•冬晴　　　　　　　　　　　　　<a href="#y2015-fineday" id="y2015">2015．⒈</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(1) 高陽臺•写在情人节　　　　　　　　　<a href="#y2015-valentine">2015．⒉</a></p>
 <p class="mulu">(1) 五言•佛州劳德戴尔机场　　　　　　　<a href="#y2015-florida">2015．⒊</a></p>
 <p class="mulu">(1) 水調歌頭•皖南行　　　　　　　　　　<a href="#y2016-anhui">2016．⒌</a></p>
@@ -418,7 +440,7 @@
 <p class="mulu">(1) 臨江仙•新西蘭萬納卡　　　　　　　　<a href="#y2019-nzl-wanaka">2019．⒓</a></p>
 <p class="mulu">(1) 行香子•新西蘭懷奧塔普　　　　　　　<a href="#y2019-nzl-waiotapu">2019．⒓</a></p>
 <p class="mulu">(1) 七律•南島綠色　　　　　　　　　　　<a href="#y2019-nzl-green">2019．⒓</a></p>
-<p class="mulu">(2) 七律•空留　　　　　　　　　　　　　<a href="#y2020-kongliu" id="y2020">2020．⒏</a></p>
+<p class="mulu">(2) 七律•空留　　　　　　　　　　　　　<a href="#y2020-kongliu" id="y2020">2020．⒏</a><a href="#toc_ref">&#11139;</a></p>
 <p class="mulu">(1) 七律•赠周琳　　　　　　　　　　　　<a href="#y2020-zhoulin">2020．⒒</a></p>
 <p class="mulu">(2) 七律•残秋　　　　　　　　　　　　　<a href="#y2020-fall">2020．⒒</a></p>
 <p class="mulu">(1) 七言•记梦　　　　　　　　　　　　　<a href="#y2020-dream">2020．⒓</a></p>
@@ -435,10 +457,11 @@
 <p class="mulu">(1) 英文诗•清平乐　　　　　　　　　　　<a href="#y2021-purity">2021．⒋</a></p>
 <p class="mulu">(1) 英文诗•萨瓦纳　　　　　　　　　　　<a href="#y2021-savannah">2021．⒍</a></p>
 <p class="mulu">(3) 七律•夏梦三首　　　　　　　　　　　<a href="#y2021-summer">2021．⒎</a></p>
-<p class="mulu">(2) 七律•空度三首　　　　　　　　　　　<a href="#y2021-quantum">2021．⒏</a></p>
+<p class="mulu">(3) 七律•空度三首　　　　　　　　　　　<a href="#y2021-quantum">2021．⒏</a></p>
+<p class="mulu">(1) 水调歌头•周琳　　　　　　　　　　　<a href="#y2021-zhoulin">2021．⒏</a></p>
 <hr/>
-<p class="futi">以上留存詩詞凡二百三十首</p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="futi">以上留存詩詞凡二百三十一首</p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -451,7 +474,7 @@
 <p class="note">　　异国星月家乡梦，他山亭台故土风。</p>
 <p class="spbr"><br/></p>
 
-<h3 id="boathill-ciqu">词曲　<span class="shou">九十九首</span></h3>
+<h3 id="boathill-ciqu">词曲　<span class="shou">一百首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="y2010-fiji">天净沙·今韵斐济十题<span class="shou">十八首</span>　<span class="date">2010.2</span></h4>
@@ -589,7 +612,7 @@
 <p class="poem">冰窗凍雨人行錯，畫染層層墨。新離小別念難收，愛似一天不見也煩懮。<span class="cibr"></span>　　淅淅瀝瀝屋檐上，續續低吟唱。問君何事枕無眠，惟愿今宵珍重夢輕恬。</p>
 <p class="spbr"><br/></p>
 
-<h4 id="y2021-ying">虞美人·樱花　<span class="date">2021.3.29</span></h4>
+<h4 id="y2021-ying">虞美人·樱花　<span class="date">2021.03.29</span></h4>
 <p class="poem">心争料峭香争暖，争艳争花满。一春一水待朝霞，一岸一堤一树向人家。<span class="cibr"></span>　　落时清丽生时短，时聚时离散。随风随雨付尘沙，随梦随雲随爱到天涯。</p>
 <p class="spbr"><br/></p>
 
@@ -813,6 +836,10 @@
 <p class="poem">正道沧桑路，天亦有情無？当年雲恨愁雨，举世恸一哭。故事流传萬户，风采辉煌千古，记得伍豪乎？周公字翔宇，别号必成胡。<span class="cibr"></span>　　为中华、之崛起、而读书。大江歌罢东去，蹈海创国图。声声语语嘱咐，点点滴滴领悟，伟梦伴征途。灰骨青山处，应慰九州殊。</p>
 <p class="spbr"><br/></p>
 
+<h4 id="y2021-zhoulin">水調歌頭·赠周琳　<span class="date">2021.08.12</span></h4>
+<p class="poem">绝壁方知险，拼力久识坚。风风雨雨得失，理想置於前。山在更高自己、路在最深心底，默默有音弦。眼界梦宽阔，领路王者先。<span class="cibr"></span>　　养於气，谨於律，比於贤。艰难烦恨相伴，福禄隐身边。平淡人生亦喜、精彩须臾似戏，故事付雲烟。万苦千辛後，一片雪晴天。</p>
+<p class="spbr"><br/></p>
+
 <h4 id="y2011-zhou">沁園春·重懷周公<span class="futi">·和毛詞原韻</span>　<span class="date">2011.01.08</span></h4>
 <p class="poem">久逝容光，歲月塵封，思念遠飄。記當年國喪，陰雲翳翳；人民心碎，淚雨滔滔。萬業親躬，先憂後已，誰比周公品質高？一生夢，為中華崛起，富裕妖嬈。<span class="cibr"></span>　　山河自古多嬌，是烈士拋顱與折腰。想伍毫學社，初揚文采；南昌黃埔，盡顯風騷。外交和談，蜚聲宇內，政治功夫巧射雕。多少代，留傳奇故事，遺唱今朝。</p>
 <p class="spbr"><br/></p>
@@ -858,14 +885,14 @@
 <h4 id="y1982-sunset">六洲歌头·夕阳西下　<span class="date">1982.9</span></h4>
 <p class="poem"><span class="fair">雄天望断，雲暗莽如山</span>。斜晖照，惊鸿影，漫天蓝。落红残。万里横雲聚，流金碎，征尘乱；又恰似，寒崖雪，映酡颜。村舍炊烟，灯火三四点，疑是人寰。更夕阳欲去，青雾远腾山，狼籍如棉。共盘餐。<span class="cibr"></span>　　访林和靖，孤山下，寻竹友，问坡仙。几曾见，夕阳好，对危栏。酒微酣。回想凭生志，空怀恨，叹当年。佳景短，人易老，怕灰髯。疏淡一轮新月，邀相饮，未醉先贪。羡西霞如画，欲踏浪银帆，追逐天边。</p>
 <p><br/></p>
-<p class="zong">　　右录词曲九十九首</p>
+<p class="zong">　　右录词曲一百首</p>
 <p class="zong">　　纱糸轩藏</p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-xinyun">新韵文诗　<span class="shou">六首</span></h3>
+<h3 id="boathill-xinyun">新韵文诗　<span class="shou">八首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="y1989-snow">雪　<span class="date">1989.12</span></h4>
@@ -941,7 +968,7 @@
 <p class="spbr"><br/></p>
 <p class="text">　　This winter may come severe</p>
 <p class="text">　　Like tough weather in a career</p>
-<p class="text">　　But there's always hope and fear</p>
+<p class="text">　　But there’s always hope and fear</p>
 <p class="text">　　To find the moment to endear</p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
@@ -975,7 +1002,7 @@
 <p class="text">　　前世今生的我</p>
 <p class="text">　　是你的唯一</p>
 <p class="spbr"><br/></p>
-<h4 class="futi">English version</h4>
+<h4 class="futi pgbr">English version</h4>
 <p class="ying">You are by my side, quietly</p>
 <p class="ying">Love could be like this, silently</p>
 <p class="ying">I imagine the heart of thee</p>
@@ -999,7 +1026,7 @@
 <p class="poem">因爲，你是我的───</p>
 <p class="poem">　　Valentine</p>
 <p class="spbr"><br/></p>
-<h4 class="futi">English version: Happy Valentine's Day</h4>
+<h4 class="futi pgbr">English version: Happy Valentine’s Day</h4>
 <p class="spbr"><br/></p>
 <p class="ying">Sometimes life could be rough and divine</p>
 <p class="ying">Sometimes love could be hard to define</p>
@@ -1021,16 +1048,16 @@
 <p class="spbr"><br/></p>
 <p class="text">　　Blossom, finery, with clouds along,</p>
 <p class="text">　　Remind of a beauty, remind of a song.</p>
-<p class="text">　　As gorgeous touch by nature's tune,</p>
+<p class="text">　　As gorgeous touch by nature’s tune,</p>
 <p class="text">　　As spring breeze all day long.</p>
 <p class="spbr"><br/></p>
 <p class="text">　　In the fairyland, flowers among,</p>
 <p class="text">　　Encounter the goddess in the throng</p>
 <p class="text">　　At the palace of the heavenly moon,</p>
-<p class="text">　　A romantic crossing can't go wrong.</p>
+<p class="text">　　A romantic crossing can’t go wrong.</p>
 <p><br/></p>
 
-<h4 id="y2021-peaceful-purity" class="futi pgbr">附：李白《清平乐》　</h4>
+<h4 id="y2021-peaceful-purity" class="futi">附：李白《清平乐》　</h4>
 <p class="spbr"><br/></p>
 <p class="poem">雲想衣裳花想容，春风拂槛露华浓。</p>
 <p class="poem">若非群玉山头见，会向瑶台月下逢。</p>
@@ -1052,11 +1079,11 @@
 <p class="text">　　Flower casting on green lawn</p>
 <p class="text">　　Curtains frame a window drawn</p>
 <p class="text">　　Recall of the miserable recall the fun</p>
-<p class="text">　　There’s being there's none</p>
+<p class="text">　　There’s being there’s none</p>
 <p class="text">　　Shine the past empire another dawn</p>
 <p class="text">　　All glory days dusted ‘n’ gone</p>
 
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1166,7 +1193,7 @@
 <p class="poem">半首律诗未写完，一称绝句是留残。無题不在韵长短，有所区分思易难。</p>
 
 <p><br/></p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1280,7 +1307,7 @@
 <p class="poem">难留晚照难留水，值此江河值此潮。棋世如繁如费解，人心似恨似無聊。功名大道疑成伪，言语非常乱必妖。形势风来情困窘，溪山雨落叶飘摇。</p>
 
 <h4 id="y2021-summer">七律·夏梦三首　<span class="date">2021.7</span></h4>
-<p class="futi">其一·迂岸【用杜诗韵】</p>
+<p class="futi">其一·迂岸【略用杜诗韵】</p>
 <p class="poem">晨热风轻草不哀，树高绒挂曳摇回。霞光破雾夕惜下，雲暗识雷雨欲来。古巷深宅藏倦客，新香苦味露湿台。虽迎意气临江水，莫让微愁入酒怀。</p>
 <p class="futi">其二·漫游</p>
 <p class="poem">滞留逆旅漂泊客，贪慕人间快乐天。春赏浮雲秋赏月，冬听风雨夏听泉。暇时豪迈江湖远，忙里疏怀汤鼎鲜。因与伊人长聚守，当知此爱久弥坚。</p>
@@ -1297,7 +1324,7 @@
 <p class="poem">光速永恒求本源，时钟缺位毁常观。主宾交换逻辑反，波粒同存辩证繁。圈量空间联互动，质能公式转移难。传播自性非如相，因果纠缠好似禅。</p>
 
 <p><br/></p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1319,7 +1346,7 @@
 <h4 id="y2016-xian">五言·西安謠　<span class="date">2016.05.14</span></h4>
 <p class="poem">列代古都會，大唐不夜城。繁榮呈瑞色，舞樂頌平昇。跑馬青磚路，雄關長漏燈。帝王一統夢，秦俑兵馬坑。妃子深宫嘆，華清池水蒸。而今遺迹處，昔往锺鼓聲。佳肴無繁様，品茶有俊朋。盛朝傳人傑，時世出賢能。男兒多豪邁，巾幗盈彩丰。初識拼烈酒，談笑送新征。不作灞橋别，當歌事業成。相約西雅圖，旬日話重逢。</p>
 <p><br/></p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1348,7 +1375,7 @@
 <h4 class="futi">其二</h4>
 <p class="poem">愁雲渡雨阴，松阶响春霖。<span class="fair">声断芭蕉碎，丝连水镜沉</span>。泥香幽浸草，枝翠绿湿襟。欲去归無路，难融是此心。</p>
 <p class="spbr"><br/></p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 
 
 <h4 id="xishan"><span class="juan">西山集</span></h4>
@@ -1368,7 +1395,7 @@
 
 <h4 id="y1988-rain">夜雨邀龚学士戏作　<span class="date">1988.6</span></h4>
 <p class="poem">夜已四更了，一看三点钟。轻轻窗外雨，剪剪耳边风。老恨蛙声乱，新愁睡意浓。明天考网络，心事两重重。</p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="pause">***<br/></p>
 
 
@@ -1486,7 +1513,7 @@
 <h4 class="futi">又：俄州海岸看夕霞</h4>
 <p class="poem">波特兰，飞车趋向南。锦衣杯影多靓女，点心美食让人馋。难忘是沙滩！</p>
 <p><br/></p>
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1589,9 +1616,9 @@
 <p><br/></p>
 </div>
 
-<p class="zong">　　右录詩詞二百三十首</p>
+<p class="zong">　　右录詩詞二百三十一首</p>
 <p class="zong">　　纱糸轩藏</p>
 
-<p class="right"><a href="#toc_top">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
 </body>
 </html>

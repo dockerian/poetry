@@ -214,3 +214,33 @@ p.text {
   text-align: left;
   text-indent: 0em;
 }
+
+@media screen and (min-width: 50em) {
+  body {
+    font-size: 1.5em;
+  }
+  h1, h2, h3, h4, h5 {
+    margin-top: 0.5em;
+  }
+  h3, h4, h4.futi, h5, p, p.note, p.poem, p.text {
+    font-size: 1.25em;
+  }
+}
+
+@media print {
+  body {
+    font-size: 1.5em;
+  }
+  h1, h2 {
+    margin-top: 0.5em;
+  }
+  h3, h4, h4.futi, h5, p, p.note, p.poem, p.text {
+    font-size: 1.5em;
+  }
+  span.jiao {
+    font-size: 1em;
+  }
+  .noprint {
+    display: none;
+  }
+}
