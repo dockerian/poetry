@@ -144,19 +144,6 @@ span.date, span.year {
 span.date {
   font-size: 0.75em;
 }
-@media only screen and (min-width: 40em) {
-  span.cibr {
-    line-height: 1em;
-    display: block;
-  }
-  span.date, span.year {
-    display: inline-block;
-    text-indent: 0em;
-  }
-  span.date {
-    margin-left: 0em;
-  }
-}
 
 p {
   font-size: 1em;
@@ -215,9 +202,34 @@ p.text {
   text-indent: 0em;
 }
 
-@media screen and (min-width: 50em) {
+@media only screen and (min-width: 40em) {
+  span.cibr {
+    line-height: 1em;
+    display: block;
+  }
+  span.date, span.year {
+    display: inline-block;
+    text-indent: 0em;
+  }
+  span.date {
+    margin-left: 0em;
+  }
+}
+@media screen and (min-width: 52em) {
   body {
     font-size: 1.5em;
+  }
+  h1 {
+    /*
+    background-image: none;
+    background-color: whitesmoke;
+    border: double darkgray 0.5em;
+    border-radius: 0.35em;
+    margin: 0.5em 25% 1em 25%;
+    padding: 1em 1em 1.25em 1em;
+    */
+    text-align: center;
+    text-indent: 0em;
   }
   h1, h2, h3, h4, h5 {
     margin-top: 0.5em;
