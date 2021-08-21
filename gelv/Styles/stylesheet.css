@@ -378,7 +378,6 @@ sup img {
 ol {
   list-style-type: none;
   margin-bottom: 0;
-  padding: 0 auto;
 }
 
 .hr {
@@ -392,7 +391,6 @@ ol {
   display: none;
 }
 .duokan-footnote-content {
-  padding: 0 auto;
   text-align: left;
 }
 .duokan-footnote-item {
