@@ -8,6 +8,7 @@
   * [龙榆生《近三百年名家词选》](../books/龙榆生-近三百年名家词选.epub)
   * [王力《诗词格律》](../books/王力-诗词格律.epub)（增订本）
   * [平水韵表.doc](../books/平水韵表.doc)｜[pdf](../books/平水韵表.pdf)
+  * [词林正韵](./词林正韵.pdf)
 
 
 <br/><a id="apx" name="apx"></a>
@@ -33,7 +34,7 @@
     [弟子规](html/mengxue.xhtml#mengxue-dzg) ·
     [千字文](html/mengxue.xhtml#mengxue-qzw-pinyin)（
     [注释](html/mengxue.xhtml#mengxue-qzw-zhushi) ）
-  - [增广贤文](html/zgxw.xhtml)｜
+  - [增广贤文](html/mengxue-zgxw.xhtml)｜
     [回文集锦](html/huiwen.xhtml)｜
     [对联集锦](html/duilian.xhtml)
   - [平水韵表](html/pingshui.xhtml)｜
