@@ -40,6 +40,7 @@
   - [平水韵表](html/pingshui.xhtml)｜
     [正韵简编](html/cilinzhengyun.xhtml)
   - [十三大辙](html/shisanzhe.html)｜
+    [新词对韵](html/shenglv-duiyun.html)｜
     [拼音韻表](html/xinyun.html)
 
 
