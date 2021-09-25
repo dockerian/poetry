@@ -1,0 +1,5067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<head>
+<title>纱糸轩歌词集</title>
+<link href="../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="../Styles/shiji.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+  a {
+    text-decoration: none;
+  }
+  a.goto {
+    content: "⇑"; /* "⇐" */
+    display: block;
+    margin: -0.35em 0.25em 0.25em 0em;
+    text-align: right;
+  }
+  a.goto:last-of-type {
+    visibility: hidden;
+    height: 0px;
+  }
+  a.goto:hover {
+    color: darkorange;
+    font-size: larger;
+    font-weight: bold;
+  }
+  div.atoc {
+    color: darkgray;
+    line-height: 2em;
+    white-space: nowrap;
+    width: 100%;
+  }
+  div.atoc>span {
+    border-top: double 0.25em lightgray;
+    padding: 0.25em 0em;
+  }
+  div.atoc>span a:hover {
+    background: gold;
+    border-radius: 0.25em;
+    margin: 0em -0.2em;
+    padding: 0em 0.2em;
+  }
+  div.atoc p {
+    line-height: 0.5em;
+  }
+  div#back {
+    background-color: #e0e0e0; /* whitesmoke */
+    position: relative;
+  }
+  div.blog {
+    display: flex;
+    border-top: dotted 0.25em lightgray;
+    border-radius: 0em 0em 1.75em 0em;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em 0em 0.5em 0.5em;
+    page-break-before: always;
+    position: relative;
+    width: 100%;
+    gap: 1em;
+  }
+  div.blog:last-of-type { /* must be in a wrapper */
+    margin-bottom: 0.25em;
+    border-radius: 0;
+  }
+  div.blog:nth-of-type(even) {
+    background-color: aliceblue; /*
+    background-color: lavender;
+    background-color: azure;
+    */
+  }
+  div.blog:nth-of-type(odd) {
+    background-color: oldlace; /*
+    background-color: papayawhip;
+    background-color: seashell;
+    */
+  }
+  div.blog br {
+    border: none;
+    content: ' ';
+    height: 0.25em;
+    display: block;
+    margin-top: -1em;
+    padding: 0em;
+  }
+  div.blog em {
+    color: darkgray;
+    background-color: transparent;
+    border-top: double 0.25em lightgray;
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+    font-style: normal;
+    font-size: 0.75em;
+    margin-top: 0.75em;
+    padding: 0em;
+  }
+  div.blog i {
+    color: darkgray;
+  }
+  div.blog h3.t3, div.blog h4 {
+    border: none;
+    color: darkred;
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0em 0em 0.5em;
+    white-space: nowrap;
+    text-align: left;
+    text-indent: 0em;
+  }
+  div.blog h4 {
+    color: darkolivegreen;
+  }
+  div.blog h3.t3 > a.sup:hover {
+    color: darkorange; font-size: large;
+  }
+  div.blog h3 a.sup {
+    font-size: 0.5em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  div.blog h3 em {
+    border: none;
+    vertical-align: top;
+    padding: 0em;
+    margin: 0em;
+  }
+  div.geci, div.yuan, div.ying, div.tian, div.poem {
+    line-height: 1.5em;
+    margin: 0em 0em 0em 0em;
+    padding-right: 0.5em;
+    white-space: pre;
+  }
+  div.geci, div.yuan, div.poem { /* 中文原词，Oringal lyrics */
+    border-radius: 3.9em;
+    border-right: dotted 1px lightgray;
+    color: darkslategray;
+  }
+  div.geci, div.tian, div.poem {
+    min-width: 20em;
+  }
+  div.ying, div.yuan {
+    min-width: 25em;
+  }
+  div.geci::after, div.yuan::after {
+    content: "";
+    background: lightgray;
+    bottom: 0px; right: 0px;
+    height: 90%;
+    position: relative;
+    width: 0.25em;
+  }
+  div.ying, div.tian, div.poem {
+    color: black;
+  }
+  div.text {
+    font-size: 0.85em;
+    margin: 3.5em 1.5em 0em 0em;
+    padding: 0em 1em 1em 0em;
+    vertical-align: top;
+  }
+  div.text> div#bailout {
+    font-size: 0.75em;
+    color: darkslategray;
+    max-height: 41.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 25.5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  sup {
+    color: darkgray;
+  }
+  h1.h1 {
+    color: lightgray;
+    font-size: 2.25em;
+    background-color: cornflowerblue; /* dodgerblue; */
+    background-image: url('../Images/smx-fangzhuan.png');
+    background-origin: content-box;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1.25em 1.5em;
+    line-height: 2.25em;
+    margin: 0em 0em 0.39em 0em;
+    padding: 0em 0.37em 0em 0.25em;
+    text-align: left;
+    text-indent: 0em;
+  }
+  h2.h2 {
+    color: beige;
+    border: none;
+    background-color: darkseagreen; /* dodgerblue; */
+    font-size: 1.25em;
+    margin: 0.25em 0em 0em 0em;
+    padding: 0em 0.5em 0em 0.25em;
+    page-break-before: always;
+    position: relative;
+  }
+  h2.h2 a.back, div#back a.back {
+    content: "\0020";
+    display: inline-block;
+    position: absolute;
+    bottom: 0px; right: 0px; top: -0.25em; left: 0px;
+    text-align: right;
+    title: "\21D2 Back to Category \21D0";
+    width: 100%;
+  }
+  h3.h3 {
+    border-right-width: 0.75em;
+    page-break-before: avoid;
+    margin: 0.25em 0em;
+    padding-right: 0.5em;
+    text-indent: 0.25em;
+    text-align: right;
+  }
+  ul {
+    display: block;
+    column-count: 2;
+    list-style: none;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0.5em;
+    text-align: right;
+    vertical-align: baseline;
+    white-space: normal;
+    width: 100%;
+  }
+  ul li::after {
+    content: "\0020 ";
+  }
+  ul li:hover {
+    background-color: lavenderblush;
+  }
+  ul li {
+    display: inline-block;
+    margin: 0 1.25em 0em 0em;
+    max-width: 50%; min-width: 25em;
+    padding: 0em;
+    text-align: right;
+    text-indent: 0em;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 50%;
+  }
+  ul li em {
+    color: darkviolet;
+    display: inline;
+    border-radius: 1.5em;
+    border: dotted 1px slateblue;
+    padding: 0.25em 0.39em 0.35em 0.39em;
+    height: 0.5em;
+    width: 0.95em;
+  }
+  ul li q:first-child {
+    color: darkred;
+    font-size: 0.75em;
+    display: inline-block;
+    vertical-align: top;
+    quotes: none;
+  }
+  ul li u, ul li em {
+    font-size: 0.65em;
+    font-style: normal;
+    background-color: transparent;
+    margin: 0em 0.15em 0.25em 0.35em;
+    vertical-align: bottom;
+    text-decoration: none;
+  }
+  ul li u {
+    border-radius: 0.25em;
+    border: solid 1px darkolivegreen;
+    padding: 0em 0.2em 0.15em 0.2em;
+  }
+  ul li u:hover, ul li em:hover {
+    background-color: khaki;
+    border-color: darkkhaki;
+    color: darkred;
+  }
+  ul li u, span a.cu {
+    color: olive;
+  }
+  ul li.mulu b, span a.cp {
+    color: darkgreen;
+  }
+  ul li.ying b, span a.ep {
+    color: royalblue;
+  }
+  ul li.ying q {
+    color: brown;
+    quotes: none;
+  }
+  ul li.ying span, span a.ey {
+    color: midnightblue;
+  }
+  ul li a, span a.cy {
+    color: darkslategray;
+    z-index: 100;
+  }
+  ul li a {
+    font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+  }
+  ul li a:hover, ul li span:hover {
+    color: darkorange;
+    font-weight: bold;
+  }
+  ul li i:hover {
+    color: brown;
+  }
+  ul li i {
+    color: lightgray;
+    font-size: 0.85em;
+    font-style: normal;
+    display: inline-block;
+    max-width: 5.0em; min-width: 5.0em;
+    padding-right: 0.25em;
+    text-align: right;
+    width: 5.0em;
+  }
+@media only screen and (min-width: 39em) {
+  body {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 65em) {
+  body {
+    font-size: 1.5em;
+  }
+  ul {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 29em) {
+  body {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 59em) {
+  div.geci, div.yuan { /* 中文原词，Oringal lyrics */
+    border: none;
+    line-height: 2.75em;
+    margin: 0em 0em 1.25em 0em;
+  }
+  div.tian, div.ying { /* 中文填词，英文译词 */
+    border: none;
+    line-height: 2.75em;
+    /*
+    margin: 0em; top: 1.25em; bottom: -1.25em;
+    */
+    margin: 1.25em 0em 0em 0em;
+    padding-bottom: 1.55em;
+    position: absolute;
+  }
+  div.blog h3.t3 {
+    display: inline-block;
+    padding-bottom: 1em;
+    vertical-align: top;
+  }
+  div.tian em, div.ying em {
+    border: none;
+  }
+  div.blog br {
+    margin: -1.05em 0em;
+  }
+  div.poem br {
+    margin: -0.5em 0em;
+  }
+  ul li::after {
+    content: "\0020\2022"; color: lightgray;
+  }
+  ul li {
+    margin: 0px;
+    max-width: 100%; min-width: 21em;
+    padding: 0em 1em 0em 0em;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+    /*
+    column-count: 1;
+    */
+  }
+}
+@media print {
+  a.goto, h3.t3 > a.sup {
+    visibility: hidden;
+  }
+  h2.h2 {
+    margin-top: 9%;
+  }
+}
+@media only print  and (max-width: 33em) {
+  div.geci, div.yuan, div.text { /* 中文原词，Oringal lyrics */
+    display: none;
+  }
+  ul {
+    column-count: 1;
+  }
+}
+@media only print  and (min-width: 32em) {
+  div.geci { /* 中文原词，Oringal lyrics */
+    min-width: 15em;
+  }
+}
+</style>
+</head>
+<body>
+<h1 class="h1" id="atop">纱糸轩诗词集<a class="goto" href="#atoc"></a></h1>
+
+<h3 class="h3"><a href="#atoc">分类</a>｜目录</h3><div class="atoc">
+<ul>
+  <li id="d20010101x" class="ying"><a href="#p20010101x"><b>The Three Realms</b>〖三种境界〗 <i>2001.01.01.</i></a></li>
+  <li id="d20010923x" class="ying"><a href="#p20010923x"><b>The Way Of The Way</b>〖道德经之一〗 <i>2001.09.23.</i></a></li>
+  <li id="d20030101x"><a href="#p20030101x" title="I Could Fall In Love With You (Selena)"><em title="周琳填词">周</em> I Could Fall In Love ...【我會愛上你】 <i>2003.03.01.</i></a></li>
+  <li id="d20040724x" class="ying"><a href="#p20040724x"><u title="English poem">E</u> <b>Look At The Sky</b>〖望空〗 <i>2004.07.24.</i></a></li>
+  <li id="d20050101x"><a href="#p20050101x"><em title="周琳填词">周</em> Proud Of You【为你骄傲】 <i>2005.01.01.</i></a></li>
+  <li id="d20070508x" class="ying"><a href="#p20070508x"><u title="English poem">E</u> <b>Random Thought</b>〖随笔〗 <i>2007.05.08.</i></a></li>
+  <li id="d20071214x" class="ying"><a href="#p20071214x"><u title="English poem">E</u> <b>A Cyber Dream</b>〖随想〗 <i>2007.12.14.</i></a></li>
+  <li id="d20080126x" class="mulu"><a href="#p20080126x" title="Happy Birthday"><u>白话诗</u>【生日快乐】 <i>2008.01.26.</i></a></li>
+  <li id="d20080202x" class="ying"><a href="#p20080202x" title=""><u title="English poem">E</u> <b>Night Mystery</b>〖<q>梦游</q>〗 <i>2008.02.02.</i></a></li>
+  <li id="d20080207x" class="ying"><a href="#p20080207x" title="Do You Cheer, Do You Hear?"> <b>Do You Hear</b>〖两只老虎〗 <i>2008.02.07.</i></a></li>
+  <li id="d20080415x" class="ying"><a href="#p20080415x" title=""> <b>One Day No See</b>〖一日不見〗 <i>2008.04.15.</i></a></li>
+  <li id="d20080301a"><a href="#p20080301a"><u>ABBA</u> Andante, Andante【曼舞歌兮】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301c"><a href="#p20080301c"><u>ABBA</u> Chiquitita【惜惜其佳】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301d"><a href="#p20080301d"><u>ABBA</u> Dancing Queen【舞之情】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301e"><a href="#p20080301e"><u>ABBA</u> Eagle【飞鹰】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301f"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301h"><a href="#p20080301h"><u>ABBA</u> I Have A Dream【我的梦】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301m"><a href="#p20080301m"><u>ABBA</u> Move On【生活的航程】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301o"><a href="#p20080301o"><u>ABBA</u> One Of Us【你我之间】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301s"><a href="#p20080301s"><u>ABBA</u> Super Trouper【超级演出】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301t"><a href="#p20080301t"><u>ABBA</u> Take A Chance On Me【给我机会】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301x"><a href="#p20080301x"><u>ABBA</u> Thank You For The Music【感谢音乐】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301w"><a href="#p20080301w" title="The Winner Takes It All (ABBA)"><u>ABBA</u> The Winner Takes ...【你赢了我所有】 <i>2008.03.01.</i></a></li>
+  <li id="d20080426d"><a href="#p20080426d"><u title="Boney M">B/M</u> Daddy Cool【爸爸真酷】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426e"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426h"><a href="#p20080426h"><u title="Boney M">B/M</u> Hooray, Hooray!【小妹】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426a"><a href="#p20080426a"><u title="Boney M">B/M</u> I'm Born Again【我的新生】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426b"><a href="#p20080426b"><u title="Boney M">B/M</u> I See A Boat On The River【远行的船】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426c"><a href="#p20080426c"><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426o"><a href="#p20080426o"><u title="Boney M">B/M</u> Ocean Of Fantasy【大海幻想曲】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426v"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426s"><a href="#p20080426s"><u title="Boney M">B/M</u> Sunny【想你】 <i>2008.04.26.</i></a></li>
+  <li id="d20080730x"><a href="#p20080730x" title="Never Gonna Fall In Love Again"><q>☆</q> Never Gonna Fall ...【今夜逝去情不再】 <i>2008.07.30.</i></a></li>
+  <li id="d20081229x" class="ying"><a href="#p20081229x"><u title="English poem">E</u> <b>A Little Too Little</b>〖经济杂言〗 <i>2008.12.29.</i></a></li>
+  <li id="d20081230x" class="ying"><a href="#p20081230x"><u title="English poem">E</u> <b>Caribbean Poems</b>〖加勒比游记〗 <i>2008.12.30.</i></a></li>
+  <li id="d20081225x" class="mulu"><a href="#p20081225x" title="Snow Day At Home"><b></b>【大雪家中】 <i>2008.12.25.</i></a></li>
+  <li id="d20090214x"><a href="#p20090214x"><q>☆</q> Barking At The Moon【对月当歌】 <i>2009.02.14.</i></a></li>
+  <li id="d20090628x" class="mulu"><a href="#p20090628x" title="A Pepper Tree"><b></b>【为了一棵花椒树】 <i>2009.06.28.</i></a></li>
+  <li id="d20090712x" class="mulu"><a href="#p20090712x" title="Epigram – On The Freeway"><u>白话诗</u>【駕車於高速公路戲作】 <i>2009.07.12.</i></a></li>
+  <li id="d20090717x" class="mulu"><a href="#p20090717x" title="Lavender Festival"><u>白话诗</u>【薰衣草节】 <i>2009.07.17.</i></a></li>
+  <li id="d20090720x" class="mulu"><a href="#p20090720x" title="Cook"><u>白话诗</u>【大厨】 <i>2009.07.20.</i></a></li>
+  <li id="d20090801x" class="mulu"><a href="#p20090801x" title="Sesame Ahi (Recipe)"><u>Recipe</u><u>白话诗</u>【當阿黑遇上芝麻】 <i>2009.08.01.</i></a></li>
+  <li id="d20090911x" class="mulu"><a href="#p20090911x" title="Cohort Class at Siver Falls"><b></b>【博士班第一天】 <i>2009.09.11.</i></a></li>
+  <li id="d20091005x" class="ying"><a href="#p20091005x"><u title="English poem">E</u> <b>Full Moon</b>〖<q>中秋二首</q>〗 <i>2009.10.05.</i></a></li>
+  <li id="d20091127x" class="mulu"><a href="#p20091127x" title="Black Friday Shopping"><b></b>【感恩节「血拼」夜】 <i>2009.11.27.</i></a></li>
+  <li id="d20091225x" class="ying"><a href="#p20091225x"><u title="English poem">E</u> <b>Morning Hike</b>〖圣诞早晨〗 <i>2009.12.25.</i></a></li>
+  <li id="d20091231x" class="mulu"><a href="#p20091231x" title="Mala Snacks (Recipe)"><u>Recipe</u><u>白话诗</u>【麻辣花生】 <i>2009.12.31.</i></a></li>
+  <li id="d20100724x" class="mulu"><a href="#p20100724x" title="Cook"><u>白话诗</u>【小资生活】 <i>2010.07.24.</i></a></li>
+  <li id="d20100828x" class="mulu"><a href="#p20100828x"><b>North By Northwest</b>【西北偏北游记】 <i>2010.08.28.</i></a></li>
+  <li id="d20100923p" class="ying"><a href="#p20100923p"><b>Love Poem by Tsangyang Gyatso</b>〖見與不見〗 <i>2010.09.23.</i></a></li>
+  <li id="d20100923x" class="ying"><a href="#p20100923x"><u title="English poem">E</u> <b>Chinese Poems</b>〖古诗英译〗 <i>2010.09.23.</i></a></li>
+  <li id="d20101106x" class="ying"><a href="#p20101106x"><u title="English poem">E</u> <b>Love Song</b>〖<q>愛之歌</q>〗 <i>2010.11.06.</i></a></li>
+  <li id="d20101125x" class="ying"><a href="#p20101125x"><b>Limerick Thanksgiving</b>〖感恩打油〗 <i>2010.11.25.</i></a></li>
+  <li id="d20101201x"><a href="#p20101201x" title="God Rest Ye Merry Gentlemen"><u title="Christian song">C</u> God Rest Ye Merry ...【上帝讓人快樂】 <i>2010.12.01.</i></a></li>
+  <li id="d20101202x"><a href="#p20101202x"><u title="Christian song">C</u> Hark, the Herald Angels Sing【天使高歌】 <i>2010.12.02.</i></a></li>
+  <li id="d20101206x"><a href="#p20101206x"><u title="Christian song">C</u> O Come, All Ye Faithful【萬方齊來敬仰】 <i>2010.12.06.</i></a></li>
+  <li id="d20101209x"><a href="#p20101209x"><u title="Christian song">C</u> What Child Is This【誰之子】 <i>2010.12.09.</i></a></li>
+  <li id="d20101212x" class="ying"><a href="#p20101212x"><u title="English poem">E</u> <b>To Donna and Mike</b>〖聖誕賀卡〗 <i>2010.12.12.</i></a></li>
+  <li id="d20110111x" class="ying"><a href="#p20110111x"><u title="English poem">E</u> <b>Farewell to Sharon</b>〖赠别〗 <i>2011.01.11.</i></a></li>
+  <li id="d20110106x" class="ying"><a href="#p20110106x"><q>☆</q> <u title="English lyrics">L</u> <span>The Puzzle Of Love</span>〖糊涂的爱〗 <i>2011.01.06.</i></a></li>
+  <li id="d20110116x" class="mulu"><a href="#p20110116x" title="Sesame Purple Yam Cake (Recipe)"><u>Recipe</u><u>白话诗</u>【芝麻紫薯饼】 <i>2011.01.16.</i></a></li>
+  <li id="d20110318x" class="ying"><a href="#p20110318x"><q>☆</q> <u title="English lyrics">L</u> <span>Legend</span>〖傳奇〗 <i>2011.03.18.</i></a></li>
+  <li id="d20110318p" class="ying"><a href="#p20110318p"><q>☆</q> <u title="English lyrics">L</u> <span>Coming From The Prairie</span>〖我從草原來〗 <i>2011.03.18.</i></a></li>
+  <li id="d20110321x"><a href="#p20110321x"><em title="Song by Adele">A</em> Set Fire To The Rain【雨落情逝心已焚】 <i>2011.03.21.</i></a></li>
+  <li id="d20121028x"><a href="#p20121028x"><em title="Song by Adele">A</em> Rolling In the Deep【淪陷回憶裡】 <i>2012.10.28.</i></a></li>
+  <li id="d20121030x"><a href="#p20121030x"><em title="Song by Adele">A</em> Don't You Remember【無愛的挽歌】 <i>2012.10.30.</i></a></li>
+  <li id="d20121030s"><a href="#p20121030s"><em title="Song by Adele">A</em> Someone Like You【此情依舊】 <i>2012.10.30.</i></a></li>
+  <li id="d20121031x"><a href="#p20121031x"><em title="Song by Adele">A</em> One And Only【愛的唯一】 <i>2012.10.31.</i></a></li>
+  <li id="d20130112x"><a href="#p20130112x"><q>☆</q> Beauty And A Beat【美麗和旋律】 <i>2013.01.12.</i></a></li>
+  <li id="d20130602x" class="ying"><a href="#p20130602x"><q>☆</q> <u title="English lyrics">L</u> <span>Under A Vast Sky</span>〖海闊天空〗 <i>2013.06.02.</i></a></li>
+  <li id="d20130814x"><a href="#p20130814x"><q>☆</q> Stronger【愛過心更強】 <i>2013.08.14.</i></a></li>
+  <li id="d20130915x"><a href="#p20130915x" title="Working My Way Back To You (1980 by The Spinners)"><q>☆</q> Working My Way Back ...【用心贏你回】 <i>2013.09.15.</i></a></li>
+  <li id="d20130916x"><a href="#p20130916x">Somewhere Over The Rainbow【彩虹之上】 <i>2013.09.16.</i></a></li>
+  <li id="d20140819x"><a href="#p20140819x" title="Anna Kendrick - Cups Song (Pitch Perfect 2012)"><q>☆</q> When I'm Gone【远行快唱】 <i>2014.08.19</i></a></li>
+  <li id="d20151128x"><a href="#p20151128x"><q>☆</q> Demons【心魔】 <i>2015.11.28.</i></a></li>
+  <li id="d20151205x"><a href="#p20151205x"><q>☆</q> Big Girls Don't Cry【不哭的女孩】 <i>2015.12.05.</i></a></li>
+  <li id="d20180126x"><a href="#p20180126x"><q>☆</q> A Million Dreams【萬千夢想】 <i>2018.01.26.</i></a></li>
+  <li id="d20210426x"><a href="#p20210426x"><u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
+<!--
+  <li id="d20x"><a href="#p20x">【】 <i></i></a></li>
+-->
+</ul>
+<p><br/></p>
+</div>
+<div class="content"><!-- the blog wrapper -->
+<div id="atoc" class="atoc center"><span>英文〖
+  <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
+  <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
+  <a class="cy" href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
+  <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
+  <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
+</span>
+<p><br/></p>
+</div><br/>
+
+
+<h2 class="h2" id="english-poems">英文诗歌 (English Poems)<a class="back" href="#atoc"></a></h2>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20010101x">The Three Realms <em>(2001)</em></h3>
+<h4 class="h4">1. Seek, see, and set a goal</h4>
+  “Butterfly Loves Flower”
+   – by Yan-Shu (991~1055):
+  As the green trees withered in
+  The autumn wind of yesterevening,
+  Come up the tower alone, and
+  Overlook the skyline a road reaching ...<br/>
+<h4 class="h4">2. Hard-working on it</h4>
+  “Dwelling Phoenix Tree”
+   – by Liu-Yong (987~1053):
+  No regret of the loosing clothes,
+  And pined away for her worth ...<br/>
+<h4 class="h4">3. Achieve the mastery</h4>
+  New Year’s Eve in “Green-jade Desk”
+   – by Xin-Qiji (1140~1207):
+  Having sought for a thousand times,
+  Turn back to find her under eyes ...<br/>
+<em><i>English Translation by </i> Jason Zhu</em>
+</div>
+<div class="text"><h3 class="t3 text"><em></em></h3>
+<h4 class="h4">王國維《人間詞話》二六 <a class="sup" href="#d20010101x" title="2001.01.01">&#11139;</a></h4>
+  <p>Chinese poems in ancient lyrics<sup>†</sup> figuring the three realms passed through to a success.</p>
+  <p>古今之成大事业、大学问者必经过三种之境界：“昨夜西风凋碧树。独上高楼，望尽天涯路”，此第一境也。“衣带渐宽终不悔，为伊消得人憔悴”，此第二境也。“众里寻他千百度，蓦然回首，那人却在灯火阑珊处”，此第三境也。</p>
+
+<em>† <i>Cited from </i> Wang-GuoWei (1876-1927): “Poetics the World”, section 26</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20010923x">道德经 <em>之一</em></h3>
+  道可道，非常道。
+  名可名，非常名。
+  無、名天地之始；
+  有、名萬物之母。
+  故常無，欲以觀其妙；
+  常有，欲以觀其徼。
+  此兩者，
+  同出而異名，
+  同謂之玄。
+  玄之又玄，
+  眾妙之門。<br/>
+<em>原文：老子《道德经·第一章》 by Lao Tse (BC 570 - BC 470)</em>
+</div>
+<div class="ying"><h3 class="t3 ying">The Way Of The Way  <em>(2001)</em> <a class="sup" href="#d20010923x" title="2001.09.23">&#11139;</a></h3>
+  The way could be the way, but not a normal way;
+  The name could be the name, but not a normal name
+  Nothing, name the beginning of the world;
+  Having, name the origin of the earth
+  So all of nothing, to see its infinite;
+  All of having, to see its limit
+  And name of the difference,
+  Both of them, came from the same
+  And both called mystery
+  Mystery of mysteries, of
+  All marvelous the way<br/>
+<em><i>English Translation by </i> Jason Zhu</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20040724x">Look At The Sky <em>(2004)</em></h3>
+  Look at the sky,
+  It’s up so high.
+  Painting with star all night,
+  That is nothing can buy.
+
+  Sitting side by side,
+  The whole world’s passing by.
+  While hearts hold tight,
+  Never ever say bye-bye.<br/>
+<em>By Divertida LZ 2004.07.24.</em>
+</div>
+<div class="poem"><h3 class="t3 text"><em></em> <a class="sup" href="#d20040724x" title="2004.07.24">&#11139;</a></h3></div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20070508x">Random Thought <em></em></h3>
+  It is cruel, but it is true
+  There is no peace, there is no rule
+  As the world are confused what to do<br/>
+  Someone wants it cool
+  Someone thinks it is cool
+  As there is few can see it thru<br/>
+<em>2007.05.08.</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em> <a class="sup" href="#d20070508x" title="2007.05.08">&#11139;</a></h3></div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20071214x">A Cyber Dream <em></em></h3>
+  I had this dream
+  All bits formed a stream
+  There was green grass, there was blue sky
+  There was virus, there was spy
+  Only in a living house
+  I saw a moving mouse
+  A machine became my host
+  I had to log on as a guest
+  I’m no longer called by name
+  Only the ID could be my fame
+  People were fishing in the ’net
+  Almost everything you could get
+  Shutting down the window
+  Whole world was in shadow
+  Everything out of the memory
+  I dumped this in the diary<br/>
+<em>2007.12.14.</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em> <a class="sup" href="#d20071214x" title="2007.12.14">&#11139;</a></h3></div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20080202x">非打油者，「夢油」是也 <em></em></h3>
+  无眠的灵魂
+  在四处游荡
+  寂静的冬夜里
+  传来一声门响
+  黑暗的恐惧
+  堆积莫名的紧张
+  心中的怪想
+  仿佛最後的抵抗
+  借着微弱灯光
+  我迷朦地张望
+  轻轻走过的
+  原来是俺娘
+<br/>
+<em>没头脑 2008.02.02.</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Night Mystery  <em>(2008)</em> <a class="sup" href="#d20080202x" title="2008.02.02">&#11139;</a></h3>
+  A sleepless soul
+  in the night of winter
+  Stillness in stillness
+  dream came out to wander
+  The dark was deeper
+  the dread was bigger
+  As puzzle built up fever
+  nightmare seized thriller
+  Shadow of a feather
+  sunk heart like a hammer
+  Gently into the picture
+  - it was my dear mother
+<br/>
+<em>Conjugal doggerel series, by Divertida LZ</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20080207x">两只老虎<em></em></h3>
+<h4 class="h4">儿歌版</h4>
+  两只老虎，两只老虎，
+  跑得快，跑得快，
+  一只没有耳朵（眼睛），一只没有尾巴，
+  真奇怪！真奇怪！<br/>
+<h4 class="h4">附原版 (<a href="http://en.wikipedia.org/wiki/Fr%C3%A8re_Jacques" target="_blank">Frère Jacques</a>)</h4>
+  睡眼朦胧，睡眼朦胧
+  约翰兄，约翰兄？
+  外面响起晨钟，外面响起晨钟
+  叮、铛、咚！叮、铛、咚！<br/>
+<em>2008.02.07.</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Do You Hear <em>(2008)</em> <a class="sup" href="#d20080207x" title="2008.02.07">&#11139;</a></h3>
+<h4 class="h4">+ English Translation</h4>
+  There’re two tigers, there’re two tigers
+  Ran like deers, ran like deers
+  One had no tail, one had no ear
+  It’s so weird, it’s so queer<br/>
+<h4 class="h4">+ My English version</h4>
+  Do you cheer, do you hear?
+  I am here, I am near
+  Do you like to stare? Don’t you have to fear?
+  Oh my deer, oh my dear
+<br/>
+<em><i>Lyrics by </i> Jason Zhu</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20080415x">一日不見 <em></em></h3>
+  彼采葛兮。
+  一日不见，如三月兮。
+  彼采萧兮。
+  一日不见，如三秋兮。
+  彼采艾兮。
+  一日不见，如三岁兮。<br/>
+<em>原作出自《诗经•王风•采葛》</em>
+</div>
+<div class="ying"><h3 class="t3 ying">One Day No See <em>(2008)</em> <a class="sup" href="#d20080415x" title="2008.04.15">&#11139;</a></h3>
+  One month no mail, No bail in jail
+  One week no see, Far from the sea
+  One day no call, Long as one fall
+  And far and long, I sing this song
+  As far as long, I send this poem
+  <br/>
+<em>英译：舟山 2008.04.15.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20081229x">A Little Too Little And A Little Too Late <em>(2008.12.29)</em></h3>
+  Without bailout
+  No one wants to get out
+  Who is stimulated?
+  Who will be eliminated?
+  It is a simple math
+  But was taken like a great myth
+  How much was consumed?
+  And how much was produced?
+  Everyone likes to be easy
+  Who else likes the work busy?
+  Better talk than walk
+  Less cares than worry …
+  But continuing to spend in advance
+  We will survive in little chance
+  Just like yesterday’s capitalism
+  Becomes today’s communism<br/>
+<em><i>Poem by </i> Jason Zhu</em>
+</div>
+<div class="text">
+  <div id="bailout"><p class="t3 text"><em>Note:</em> <a class="sup" href="#d20081229x" title="2008.12.29.">&#11139;</a></p>
+  <p>I was watching CNN at the gym. One of the interesting reader’s letters to Lou Dobbs criticized the Bailout plans. Not the exact words, it said “The problem of the US was used to be that many people spent money that they did not have, while the banks lent money to people who could not pay back. Now the government is trying to spend the money that it does not have and lend the money to those who cannot pay back. As consumers and taxpayers, we feel being fooled twice.”</p>
+  <p>Well, is this just a simple “problem” if one can spend money who does not have and does not have to pay back? I think it has become corruption and crisis for a country lives in such “who cares” philosophy. As long as the debt come and go without having to work hard, everyone will support such democracy to share the value (in money). Now, both the stimulus plan and the criticism to American economy seem “a little too little and a little too late”.</p>
+</div></div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20081230x">Caribbean Poems<em>〔英文〕</em></h3>
+<h4 class="h4">前站《波多黎各》</h4>
+  Puerto Rico, sand, beach, coco
+  As warm as weather, rhythm, mambo, tango
+  As vivid as from painter, avocado and mango
+  You can enjoy a day, rest on a pillow
+  You can get away, like ocean breeze blow
+  After a sudden shower, skyline rainbow
+  It’s an ancient mountain echo
+  From thousands years ago<br/>
+<h4 class="h4">第一站《巴贝朵丝》</h4>
+  Come to Barbados
+  Caribbean has never been so close
+  See the blue, see the beach
+  It’s the sky you can reach<br/>
+<h4 class="h4">第二站《圣露西亚》</h4>
+  Saint Lucia, West Indies’ Aloha
+  Black sand beach, red and white villa
+  Tropical garden fuchsia, crystal water aqua
+  Trees of papaya, orchards of banana
+  Drive-in volcano, diving scuba
+  Waterfall spa, Coastal island flora
+  Getaway vista, vacation resort umbra
+  St Lucia, it is my Shangri-La<br/>
+<h4 class="h4">第三站《安提瓜》</h4>
+  A beach always near
+  One per day for a whole year
+  People were born with no fear
+  Who want to die, there is where<br/>
+<h4 class="h4">第四站《妥妥拉》〔西班牙语〕</h4>
+  Arenas en Tortola, mucha mucha musica
+  Playa blanca, una dia romantica<br/>
+<h4 class="h4">第五站《圣托马斯》</h4>
+  A St Thomas day, a Caribbean Saturday
+  An island of getaway, a place to stay
+  Secret beach in Secret Bay
+  Open to sunlight in a ray<br/>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em> <a class="sup" href="#d20081230x" title="2008.12.30">&#11139;</a></h3>
+<div><h4>附：七律一首</h4><pre>
+  赢得几日赋清闲，
+  远外藏身碧水边。
+  细细银沙加勒比，
+  邈邈绿岛海云天。
+  岸拍碎浪逐千尺，
+  鱼戏飞鸥绕两舷。
+  深地温泉蒸气雾，
+  茫山热带雨林烟。
+  泛舟渔火椰风晚，
+  荡桨荧光月色翩。
+  四季常青瓜果润，
+  三餐必备菜蔬鲜。
+  迎来旭日晨星落，
+  看尽夕阳好梦圆。
+  此去曾留过客影，
+  归来赏雪入新年。
+</pre></div></div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20091005x">七律·己丑中秋同韻二首 <em></em></h3>
+  漁舟待晚日西遲，
+  秋露相逢桂殿枝。
+  遠處遠山山遠處，
+  圓時圓月月圓時。
+  彩雲踏去瓊臺路，
+  玉兔追來舊夢詩。
+  飄落浮蓬遊子意，
+  思鄉佳景我因知。<br/>
+  中秋月色映清池，
+  玉殿金風樹影枝。
+  四海停杯邀萬里，
+  普天舉酒祝一時。
+  人間故事誠如夢，
+  秋興情懷總是詩。
+  歲歲團圓能共有，
+  年年信守此相知。<br/>
+<em>原作於西雅圖，己丑中秋</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Full Moon++ <em>(2009)</em> <a class="sup" href="#d20091005x" title="2009.10.05">&#11139;</a></h3>
+  After sunset on fishing boat
+  Evening dew welcomes the moon
+  As far as out of the distant mountain
+  Round and full and bright like noon
+  On colorful cloud road to the never-never land
+  Dreamed poems are only in fairy tale cartoon
+  Away from the hometown in such night
+  Nostalgia is what I found the tune<br/>
+  Reflection on the pond
+  Shadow of trees from the moon
+  The world is sharing the toast
+  On other side of the sea afternoon
+  All of stories from dreams
+  Thus fall poems composed soon
+  A common wish for every year reunion
+  A blessing of shared tune<br/>
+<em>英诗：舟山 2009.10.05.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20091225x">Morning Hike <em>(2009.12.25)</em></h3>
+  Hiking on a Christmas day
+  By the lake from home, not far away
+        Long miles curves the shoreline
+        Paved trail under the sunshine
+  View of waterfront house big and wide
+  Noise of car wind from other side
+        Early geese playing by the water
+        Camera lens shooting like a hunter
+  Nothing more beautiful like this
+  As most of natural life easy to miss
+        Since it is a peaceful holiday
+        on a bright and free Friday
+  With the fresh morning in the air
+  The path knows where to where<br/>
+</div>
+<div class="poem"><h3 class="t3 poem">圣诞早晨<em>【無中文版】</em><a class="sup" href="#d20091225x" title="2009.12.25.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20100923p">见与不见 <em>〔中文〕</em></h3>
+  你见，或者不见我　　　　
+  我就在那里，不悲不喜　　
+  你念，或者不念我　　　　
+  情就在那里，不来不去　　
+  你爱，或者不爱我　　　　
+  爱就在那里，不增不减　　
+  你跟，或者不跟我　　　　
+  我手就在你手里，不舍不弃
+  来我的怀里，或者　　　　
+  让我住进你的心里　　　　
+  默然　相爱　　　　　　　
+  寂静　欢喜　　　　　　　<br/>
+<em>原作：第六世达赖喇嘛·仓央嘉措</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Love Poem by Tsangyang Gyatso <em></em> <a class="sup" href="#d20100923p" title="2010.09.23">&#11139;</a></h3>
+  You see me, or not see me
+  I am there - not sad, nor happy
+  You miss me, or not miss me
+  The feeling is there – not come, nor leave
+  You love me, or not love me
+  The love is there - not more nor less
+  You follow me, or not follow me
+  My hands are in yours – not give up nor apart
+  Come to my arms, or
+  Let me live in your heart
+  Love quietly
+  and joy peacefully<br/>
+<em>English Translation by Divertida LZ 2010.09.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20100923x">古诗英译三首 <em>(2010)</em></h3>
+<h4>元·張養浩《雁儿落帶得勝令·退隱》—— The Clouds</h4>
+  <span>雲来山更佳，</span>　　It looks better with cloud
+  <span>雲去山如画。</span>　　Looks like a picture without
+  <span>山因雲晦明，</span>　　The cloud of mountain's day and night
+  <span>雲共山高下。</span>　　Being the company up to height
+  <span>倚杖立雲沙，回首看山家。</span>　Hiking along the villege home
+  <span>野鹿眠山草，山猿戏野花。</span>　In the flowers to run and roam
+  <span>雲霞，我爱山无价，　　　</span>　Love the mountain love the blue　
+  <span>看时行踏，雲山也爱咱。　</span>　As the clouds love us too<br/>
+<h4>唐·張打油《詠雪》—— The Snow</h4>
+  <span>江山一籠統，</span>　　The world is in grey cell
+  <span>井口似窟窿。</span>　　Mysterious hole over a well
+  <span>黃狗身上白，</span>　　Yellow dog becomes white
+  <span>白狗身上腫。</span>　　White dog looks swell<br/>
+<h4>唐·杜甫《春夜喜雨》—— Rain</h4>
+  <span>好雨知時節，</span>　　Good timing the rain knows
+  <span>當春乃發生。</span>　　As spring comes and follows
+  <span>隨風潜入夜，</span>　　With night breeze blows
+  <span>潤物細無聲。</span>　　All life quietly grows<br/>
+<em><i>English Translation by </i> Jason Zhu</em>
+</div>
+<div class="text"><h3 class="t3 text"><em></em><a class="sup" href="#d20100923x" title="2010.09.23.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20101106x">Love Song <em>(2010)</em></h3>
+  You are by my side
+  quietly
+  Love could be like this
+  silently
+  I imagine the heart of thee
+  like a kite on free
+  flying to where I cannot see
+  and I hold the line
+  firmly
+  But you say to me
+  that I am the kite likely
+  by your care mildly
+  Because you love me, and
+  I am the one the only<br/>
+<em><i>Written by </i> Divertida LZ</em>
+</div>
+<div class="tian"><h3 class="t3 tian">愛之歌 <em>【散文诗】</em><a class="sup" href="#d20101106x" title="">&#11139;</a></h3>
+  你坐在我的身边，　　
+  不言不语　　　　　　
+  爱，有时就是这样，　
+  无声无息　　　　　　
+  我以为你的心，　　　
+  像个风筝　　　　　　
+  想飞，飞到天际　　　
+  而你的线　　　　　　
+  仍在我的手里　　　　
+  你却说，　　　　　　
+  其实你是线　　　　　
+  风筝是我的情意　　　
+  前世今生　　　　　　
+  我是你的唯一<br/>
+<em>2010.11.06.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20101125x">Limerick - Thanksgiving <em>(2010.11.25)</em></h3>
+  It comes again the Thanksgiving
+  To pardon a turkey one year living
+  Why some has the mercy
+  While others tasting juicy
+  Who’re we have thanked for giving?<br/>
+</div>
+<div class="text"><h3 class="t3 text"><em>N/A【無中文版】</em><a class="sup" href="#d20101125x" title="2010.11.25.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20101212x">To Donna and Mike <em>(2010.12.12)</em></h3>
+  As thinking in picture of Mike
+  He's across the country on a bike
+  Some more to describe him alike
+  It's his energy always childlike
+  With a gear of Reebook or Nike
+  Any mountain he dares to hike<br/>
+  Not only he is young and sporty
+  but also he acts decently and bravely
+  That is the president, Dr. Metke
+  Of good quality all the people agree
+  He comes and talks mildly
+  and leaves with charming story<br/>
+  To learn his biography and vita
+  It's the love from his wife Donna
+  She is like in winter the warm mocha
+  and an elegant dance of yoga
+  The world is her teaching plaza
+  of friendship from villa to villa<br/>
+  With bless and love in fullness
+  to dear friends, Merry Christmas
+  Wish you joy all the happiness
+  Wish you the best in Texas
+  Cheer to holiday evening solace
+  It is the greeting from us<br/>
+<em><i>Written by </i> Divertida LZ 2010.12.26.</em>
+</div>
+<div class="poem"><h3 class="t3 poem">聖誕賀卡 <em>【無中文版】</em><a class="sup" href="#d20101212x" title="2010.12.12.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20110111x">Farewell to Sharon <em>(2011.01.11)</em></h3>
+  This is to Dr. McGavick, Sharon
+  The President always has passion
+  She gives us the direction
+  And she takes move and action
+  Onto a new age and vision<br/>
+  It's a tough time when she was chosen
+  To face challenges and load burden
+  In faith, across the ocean
+  And leading us over the mountain
+  She is with us every season<br/>
+  No doubt she is a special woman
+  Many stories worth to be written
+  She's been patient to listen
+  When people are confused and frighten
+  She can show the life in golden<br/>
+  She is not only a captain
+  But also a leader in fashion
+  She always dresses up, with beautiful scarf
+  That she has many more in dozen
+  She is also very good of jewel making
+  To bring friends luck and fortune <br/>
+  She has inspired us with fun
+  In a warm environment like garden
+  Like a new building when sun is risen
+  She presents a great mind that has been proven
+  She deserves honor with ribbon<br/>
+  The farewell party is open
+  To wish her think of us often
+  When she takes next vacation
+  Some moment could be stolen
+  To consult her another question<br/>
+<em><i>Written by </i> Divertida LZ 2011.01.11.</em>
+</div>
+<div class="text"><h3 class="t3 text"><em>N/A【無中文版】</em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20210426x">清平调 <em>〔唐·李白〕</em></h3>
+  雲想衣裳花想容，
+  <i>…………………</i>
+
+  春风拂槛露华浓。
+  <i>…………………</i>
+
+  若非群玉山头见，
+  <i>…………………</i>
+
+  会向瑶台月下逢。
+  <i>…………………</i>
+
+<em>原作：李白《清平调三首》其一</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Peaceful Purity <em>(2021)</em> <a class="sup" href="#d20210426x" title="2021.04.26">&#11139;</a></h3><br/>
+  Blossom, finery, with clouds along,
+  Remind of a beauty, remind of a song.
+
+  As gorgeous touch by nature's tune,
+  As spring breeze all day long.
+
+  In the fairyland, flowers among,
+  Encounter the goddess in the throng.
+
+  At the palace of the heavenly moon,
+  A romantic crossing can't go wrong.
+
+<em>English Translation by Jason Zhu</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<h2 class="h2" id="english-lyrics">英文译词 (English Lyrics)<a class="back" href="#atoc"></a></h2>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20110106x">糊涂的爱 <em>〖原词〗</em></h3>
+  爱有几分能说清楚　
+  还有几分是糊里又糊涂　
+  情有几分　是温存　
+  还有几分是涩涩的酸楚　<br/>
+  忘不掉的一幕一幕　
+  却留不住　往日的温度
+  意念中的热热乎乎　
+  是真是假　是甜还是苦<br/>
+  这就是爱　说也说不清楚　
+  这就是爱　糊里又糊涂　
+  这就是爱　牠忘记了人间的烦恼　
+  这就是爱　能保持着糊涂的温度<br/>
+<i>〖獻給「沒頭腦」〗</i>
+  這就是愛　她有幻想無數　
+  這就是愛　是真情的流露　
+  這就是愛　她帶給你神秘的禮物　
+  這就是愛　是我為你寫下的祝福<br/>
+<em>作词：张和平；原唱：江珊，王志文</em>
+</div>
+<div class="ying"><h3 class="t3 ying">The Puzzle Of Love <em>(2011.01.06)</em> <a class="sup" href="#d20110106x" title="2011.01.06">&#11139;</a></h3>
+  How much is love? No one is sure
+  Leaving uncertain, don't know what to do
+  How much of feeling can tell it is true?
+  Leaving my heart in lost and in blue<br/>
+  There is always dream sweet to pursue
+  Of the answer in seek we learn to
+  There is time to know who's in love with who
+  When all could begin seeing it through<br/>
+  That is the love, full of unsolved issue
+  That is the love, none of remedy to cue
+  That is the love, to make life pure and new
+  That is the love, there's one only for you<br/>
+  <i>(Dedicated to Divertida LZ)</i>
+  This is the love, your beauty in my view
+  This is the love, for long time since I knew
+  This is the love, the love you give me too
+  This is the love, the love only for you<br/>
+<em>填词：舟山 2011.01.06.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20110318x">傳奇 <em>〖原词〗</em></h3>
+  只因为在人群中多看了你一眼
+  再也没能忘掉你的容颜
+  梦想着偶然能有一天再相见
+  从此我开始孤单地思念<br/>
+  想你时你在天边
+  想你时你在眼前
+  想你时你在脑海
+  想你时你在心田<br/>
+  宁愿相信我们前世有约
+  今生的爱情故事不会再改变
+  宁愿用这一生等你发现
+  我一直在你身旁　从未走远……<br/>
+  只因为在人群中多看了你一眼
+  再也没能忘掉你的容颜
+  梦想着偶然能有一天再相见
+  从此我开始孤单地思念<br/>
+  想你时你在天边
+  想你时你在眼前
+  想你时你在脑海
+  想你时你在心田<br/>
+  宁愿相信我们前世有约
+  今生的爱情故事不会再改变
+  宁愿用这一生等你发现
+  我一直在你身旁　从未走远……<br/>
+<em>作曲：李健；作詞：劉兵</em></div>
+<div class="ying"><h3 class="t3 ying">Legend <em>(2011.03.18)</em> <a class="sup" href="#d20110318x" title="2011.03.18.">&#11139;</a></h3>
+  Since in the crowd I had one more glance
+  Never forget the day of your appearance
+  Dreaming in my dream there's a chance seeing you again
+  Have my longing for you in advance<br/>
+  Dreaming you the dream is mine
+  Dreaming you is my dream to shine
+  Dreaming you the dream is thine
+  Dreaming you is my dream to refine<br/>
+  Once having a date in another life
+  Our love will be blessed more as I pray
+  Once having waited for this life
+  I'll be here for you never far away<br/>
+  Since in the crowd I had one more glance
+  Never forget the day of your appearance
+  Dreaming in my dream there is a chance seeing you again
+  Have my longing for you in advance<br/>
+  Dreaming you all dreams to twine
+  Dreaming you has my love to decline
+  Dreaming you our dreams align
+  Dreaming you has my future to define<br/>
+  I believe a date in another life
+  I believe the story has a future to play
+  I believe our love in this life
+  I'll be here for you never far away<br/>
+<em>填词：舟山 2011.03.18</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20110318p">我從草原來 <em>〖原词〗</em></h3>
+  我立马千山外，听风唱着天籁
+  岁月已经更改，心胸依然自在
+  我放歌万里外，明月与我同在
+  远方为我等待，心澎湃<br/>
+  我寻梦梦就在，未来为我盛开
+  天空开始泛白，脚步如此轻快
+  我想爱爱就来，不要寂寞尘埃
+  心里花开不败，才精彩<br/>
+  ☆风从草原来，吹动我心怀
+  　吹来我的爱，这花香的海
+  　我从草原来，温暖你心怀
+  　不变我的情，那天蓝的爱<br/>
+  ※说唱※云白，白出了毡房华盖
+  　　　　草绿，绿出了绵延如海
+  　　　　花红，红出了急风烈马
+  　　　　酒醉，醉出了一生所爱<br/>
+<em>作詞：趙鐵志；原唱：鳳凰傳奇</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Coming From The Prairie <em>(2011.03.18)</em> <a class="sup" href="#d20110318p" title="2011.03.18.">&#11139;</a></h3>
+  Standing my horse high, I join the singing from sky
+  Time changes and flies, my dreams never die
+  Singing out a love song, I have the moon up and bright
+  Your waiting afar for me, my heart stirs, with delight<br/>
+  My dreams coming true, future is all I can do
+  I enjoy a morning walk, while dawn light breakthrough
+  My love coming to find me, I leave my sadness behind
+  Flowers blooming in heart, in a beautiful mind<br/>
+  Coming from the prairie, the wind stirs my heart
+  Bringing the scent of flowers, the sea of love of art
+  Coming from the prairie, the wind can warm your heart
+  Bringing my love, never changed, and never be apart<br/>
+  Clouds white, as Mongolian yurts in sight
+  Grass green, as a sea, as a widescreen
+  Flowers red, fiery steeds are leading ahead
+  Wine mellow, the love in lifetime I follow<br/>
+<em>填词：舟山 2011.03.18</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20130602x">海闊天空 <em>〖原词〗</em></h3>
+  今天我　
+  寒夜里看雪飘过
+  怀著冷却了的心窝飘远方
+  风雨里追赶　
+  雾里分不清影踪
+  天空海阔你与我　
+  可会变（谁没在变）<br/>
+  多少次　迎著冷眼与嘲笑
+  从没有放弃过心中的理想
+  一刹那恍惚　若有所失的感觉
+  不知不觉已变淡　
+  心里爱（谁明白我）<br/>
+  原谅我这一生不羁放纵爱自由
+  也会怕有一天会跌倒
+  背弃了理想　谁人都可以
+  那会怕有一天　只你共我<br/>
+  仍然自由自我
+  永远高唱我歌
+  走遍千里<br/>
+<em><i>Song by </i> Beyond &lt;1993&gt;</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Under A Vast Sky <em>(2013.06.02)</em> <a class="sup" href="#d20130602x" title="2013.06.02.">&#11139;</a></h3>
+  The cold night snow
+  is drifting thru my feelings grow
+  With a broken heart I'm gone for the road too long
+  In the wind and rain,
+  I don't know to where I belong
+  Sky vast and ocean wide
+  but how we can (do as we can)<br/>
+  All the years, all the ridicule that I knew
+  Never give it up to my dream and my song
+  Dimly an instant, lost my mind and my soul
+  Imperceptibly fade away,
+  it's the love (of mine who know)<br/>
+  Forgive me, choosing the way of my life I let go
+  Sometimes there's weakness I have to show ~
+  Desert a dream, anyone can do
+  As long as the world has me and you<br/>
+  Holding life that endow
+  Forever singing as now
+  A long way to go<br/>
+<em>英文填词 2013.06.02.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译词--><!--
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20x"> <em>〖原词〗</em></h3>
+<em>作曲：；作词：；原唱：</em>
+</div>
+<div class="ying"><h3 class="t3 ying"> <em></em> <a class="sup" href="#d20x" title="">&#11139;</a></h3>
+<em>填词：舟山 20</em>
+</div>
+</div>--><!-- blog --><!--
+<a href="#atop" class="goto">⇑</a>
+-->
+
+
+<h2 class="h2" id="chinese-lyrics">中文填词 (Chinese Lyrics)<a class="back" href="#atoc"></a></h2>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20030101x">I Could Fall In Love With You <em>(1999)</em></h3>
+  I could lose my heart tonight
+  If you don’t turn and walk away
+  ’Cause the way I feel I might
+  Lose control and let you stay
+  ’Cause I could take in my arms
+  　　... ... and never let go
+  I could fall in love with you ...(2x)<br/>
+  I can only wonder how
+  Touching you would make me feel
+  But if I take that chance right now
+  Tomorrow will you want me still
+  So I should keep this to myself
+  And never let you know
+  I could fall in love with you (2x)<br/>
+  And I know it is not right
+  And I guess I should try to do what I should do
+  But I could fall in love, fall in love with you
+  I could fall in love with you (2x)<br/>
+  Siempre estoy sonando en ti
+  Besando mis labios, acariciando mi piel
+  Abrazandome con ansias locas
+  Imaginando que me amas
+  Como yo podia amar a ti.<br/>
+  So I should keep this to myself
+  And never let you know
+  I could fall in love, (3x) with you ...<br/>
+<em><i>Songwriters</i>: Keith Thomas; <i>Song by </i>: Selena</em>
+</div>
+<div class="tian"><h3 class="t3 tian">我會愛上你 <em>【填词】</em><a class="sup" href="#d20030101x" title="2003.01.01.">&#11139;</a></h3>
+  我心在今夜迷失　　　　　　
+  如果你不转身消逝。　　　　
+  因为我可能让你　　　　　　
+  停留而失去理智；　　　　　
+  因为我会将你拥入怀，　　　
+  紧紧不松开。　　　　　　　
+  我可能深深爱上你　　　　　<br/>
+  我只能慢慢想象，　　　　　
+  抚摸你的感觉。　　　　　　
+  假如我现在就尝试，　　　　
+  明天是一个新的开始。　　　
+  所以我将一切埋在心中，　　
+  从不曾对你说　　　　　　　
+  我可能深深爱上你　　　　　<br/>
+  而我知道这是错，　　　　　
+  我想我应努力去做我要做　　
+  但我可能会，可能会爱上你　
+  我可能深深爱上你　　　　　<br/>
+  我心总是　感觉到你
+  吻我的嘴唇，抚爱备至
+  肌肤相拥　狂热而焦虑
+  无时或忘　想象你爱我──　
+  就像我一样　渴望爱你<br/>
+  所以我将一切埋在心中，　　
+  从不曾对你说　　　　　　　
+  我已经爱上你……爱你<br/>
+<em>中文填词：周琳 2003.01.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20050101x">Proud Of You <em>(2008 by Fiona Fung)</em></h3>
+  Love in your eyes
+  Sitting silent by my side
+  Going on, holding hands
+  Walking through the nights
+  Hold me up, hold me tight
+  Lift me up to touch the sky
+  Teaching me to love with heart
+  Helping me open my mind<br/>
+  I can fly
+  I’m proud that I can fly
+  To give the best of mine
+  Till the end of the time
+  Believe me I can fly
+  I’m proud that I can fly
+  To give the best of mine
+  The heaven in the sky<br/>
+  Stars in the sky
+  Wishing once upon a time
+  Give me love make me smile
+  Till the end of life
+  Hold me up hold me tight
+  Lift me up to touch the sky
+  Teaching me to love with heart
+  Helping me open my mind<br/>
+  I can fly
+  I’m proud that I can fly
+  To give the best of mine
+  Till the end of the time
+  Believe me I can fly
+  I’m proud that I can fly
+  To give the best of mine
+  The heaven in the sky<br/>
+  Can’t you believe that
+  you light up my way
+  No matter how that ease my path
+  I’ll never lose my faith<br/>
+  See me fly
+  I’m proud to fly up high
+  Show you the best of mine
+  Till the end of the time
+  Believe me I can fly
+  I’m singing in the sky
+  Show you the best of mine
+  The heaven in the sky<br/>
+  Nothing can stop me
+  Spread my wings so wide<br/>
+<em><i>Songwriters</i>: Anders Lee / Kwong Wing Chan</em>
+</div>
+<div class="tian"><h3 class="t3 tian">为你骄傲 <em>【填词】</em><a class="sup" href="#d20050101x" title="">&#11139;</a></h3>
+  爱在眼中
+  静静坐在我身旁
+  向前走，手牵手
+  走过夜　的星光
+  紧紧地，抱着我
+  高举我到天上方
+  教我用真心地爱
+  让我心中更敞亮<br/>
+  我飞翔……
+  我高飞向太阳
+  奉献我最珍藏
+  直到终点时光
+  相信我能飞翔
+  我骄傲我翱翔
+  奉献出最美好
+  那空中的天堂<br/>
+  满星天空
+  很久以前的愿望
+  给我爱，我微笑
+  到生命　耗　光
+  紧抱我，再向上
+  高举我到天上方
+  教我如何用心地爱
+  让我打开了心房<br/>
+  我飞翔……
+  我高飞向太阳
+  奉献我最珍藏
+  直到终点时光
+  相信我能飞翔
+  我骄傲我翱翔
+  奉献出最美好
+  那空中的天堂<br/>
+  是你的信心
+  照亮我的路
+  无论是前途有多难
+  我会跟随我信仰<br/>
+  看我飞
+  我骄傲地向上飞
+  展示我的理想
+  到最後的时光
+  相信我能飞翔
+  在空中我歌唱
+  展示我的理想
+  空中的天　堂<br/>
+  没什么可以阻挡
+  ──我　的翅膀<br/>
+<em>中文填词：周琳 2005.01.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301a">Andante, Andante <em>(ABBA)</em></h3>
+  Take it easy with me, please
+  Touch me gently like a summer evening breeze
+  Take your time, make it slow
+  Andante, Andante
+  Just let the feeling grow
+  Make your fingers soft and light
+  Let your body be the velvet of the night
+  Touch my soul, you know how
+  Andante, Andante
+  Go slowly with me now<br/>
+  <i>Chorus:</i>
+  I’m your music (I am your music and I am your song)
+  I’m your song (I am your music and I am your song)
+  Play me time and time again and make me strong
+  (Play me again ’cause you’re making me strong)
+  Make me sing, make me sound
+  (You make me sing and you make me ...)
+  Andante, Andante
+  Tread lightly on my ground
+  Andante, Andante
+  Oh please don’t let me down<br/>
+  There’s a shimmer in your eyes
+  Like the feeling of a thousand butterflies
+  Please don’t talk, go on, play
+  Andante, Andante
+  And let me float away<br/>
+  <i>(Chorus)</i>
+  Andante, Andante
+  Tread lightly on my ground
+  Andante, Andante
+  Oh please don’t let me down
+  <i>(Repeat to fade)</i><br/>
+<em><i>Songwriters</i>: Benny Andersson / Björn K Ulvaeus</em>
+</div>
+<div class="tian"><h3 class="t3 tian">曼舞歌兮 <em>【填词】</em><a class="sup" href="#d20080301a" title="">&#11139;</a></h3>
+  不徐不急，和我相依
+  輕貼着身體，好像夏日　晚風習習
+  從容施展，你的溫柔
+  緩慢地、緩慢地
+  跟著那感覺走
+  你的撫摸，充滿了愛
+  午夜的迷離，如天鵝絨　神秘色彩
+  撩動心愁，你的眼眸
+  緩步地、緩步地
+  讓我們再携手<br/>
+  <i>【和聲】</i>
+  　爲你思量（爲你思量、我為你歌唱）
+  　爲你歌唱（爲你思量、我為你歌唱）
+  　彈響一曲又一曲，讓我們分享
+  （彈響一曲，讓音樂更響……）
+  　仔細傾聽，歌聲飛揚
+  （你讓我歌唱、你讓我思量……）
+  　緩慢地、緩慢地
+  　步入我的舞場
+  　輕柔地、輕柔地
+  　不要讓我失望<br/>
+  你的眼神，無盡青睞
+  宛如遠黛，有萬千蝴蝶、飛向雲藹
+  無言無語，沁入心扉
+  緩慢地、緩慢地
+  讓我緊緊相隨<br/>
+  <i>【和聲】</i>
+  　緩慢地、緩慢地
+  　步入我的舞場
+  　輕柔地、輕柔地
+  　不要讓我失望……
+  <i>【重複至曲終】</i><br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301c">Chiquitita <em>(ABBA)</em></h3>
+  Chiquitita, tell me what’s wrong
+  You’re enchained by your own sorrow
+  In your eyes there is no hope for tomorrow
+  How I hate to see you like this
+  There is no way you can deny it
+  I can see that you’re oh so sad, so quiet<br/>
+  Chiquitita, tell me the truth
+  I’m a shoulder you can cry on
+  Your best friend, I’m the one you must rely on
+  You were always sure of yourself
+  Now I see you’ve broken a feather
+  I hope we can patch it up together<br/>
+  (Chorus :)
+  Chiquitita, you and I know
+  How the heartaches come and they go
+  and the scars they’re leaving
+  You’ll be dancing once again
+  and the pain will end
+  You will have no time for grieving
+  Chiquitita, you and I cry
+  But the sun is still in the sky
+  and shining above you
+  Let me hear you sing once more
+  like you did before
+  Sing a new song, Chiquitita
+  Try once more like you did before
+  Sing a new song, Chiquitita<br/>
+  So the walls came tumbling down
+  And your love’s a blown out candle
+  All is gone and it seems too hard to handle
+  Chiquitita, tell me the truth
+  There is no way you can deny it
+  I see that you’re oh so sad, so quiet<br/>
+  <i>(Chorus)</i>
+  Try once more like you did before
+  Sing a new song, Chiquitita<br/>
+<em><i>Songwriters</i>: Andersson Benny Goran Bror / Ulvaeus Bjoern K</em>
+</div>
+<div class="tian"><h3 class="t3 tian">惜惜其佳 <em>【填词】</em><a class="sup" href="#d20080301c" title="">&#11139;</a></h3>
+  惜惜其佳，何事心愁（小小女孩，何事而迷惘）
+  情牢困鎖，自設煩憂（難以掙脫　自己的憂愁）
+  悲傷眼眸，無所滯留（在你眼中沒有了明天和以後）
+  不忍見你，神傷至斯（多麽不願見妳如此神傷）
+  深陷其中，情不自己（深陷其中　妳情不自己）
+  靜極而哀，淡若孤寂（我能明瞭妳靜靜的悲哀和孤寂）<br/>
+  惜惜其佳，訴之傾心（小小女孩，告知我心事），
+  放任哭泣，我之肩上（我有妳可　依靠的肩膀），
+  朋友之間，盡可分享（好朋友之間許多事情可以分享）
+  曾經非此，充滿自信（妳也曾經　充滿了自信），
+  如今難免，些許挫折（現在妳只是遇到了挫折），
+  同病相憐，共起振作（我相信我們會一起振作）。<br/>
+  【和聲】
+  惜惜其佳，摒棄憂愁（小小女孩，放棄憂愁），
+  心痛來後，終會帶走（心痛來後終會走），
+  留下傷口，及至無情（它留下傷口無情）。
+  再次起舞，重歸浪漫（再次起舞和浪漫），
+  忘卻心酸，遠離黑暗（明天無黑暗），
+  無謂沉迷，自顧憐影（不必再去　自顧憐影）。
+  惜惜其佳，共我所愛（小小女孩，看看未來），
+  萬里晴靄，照耀陽臺（一片光明照耀陽臺），
+  光映倩影，安逸婀娜（照耀着妳的風采）。
+  為之歡笑，為我行歌（讓我聽妳唱首歌），
+  重新震響，重拾舊我（重拾自我）───
+  新之歌唱，惜惜其佳（新的歌唱，小小女孩）。
+  莫要錯過，人生快樂（不要錯過　新的生活），
+  新之歌唱，惜惜其佳（新的歌唱，小小女孩）。<br/>
+  傾斜高墻，遮擋陽光（倒下的城墻遮住陽光），
+  若妳之愛，迷失星斗（妳的愛像消失的星斗），
+  一切遠去，無可輓留（一切遠去沒有什麽可以保留）
+  惜惜其佳，情之所系（小小女孩，面對現實），
+  心之所累，無可深避（心中負累，無法逃避），
+  默默忍耐，深深靜寂（我看到了妳的忍耐妳的孤寂）<br/>
+  <i>〖和聲〗</i>
+  莫要難過，重拾快樂（不要難過，重新生活），
+  新之歌唱，惜惜其佳（新的歌唱，小小女孩）……<br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301d">Dancing Queen <em>(ABBA)</em></h3>
+  You can dance, you can jive,
+  having the time of your life
+  See that girl, watch that scene,
+  dig in the Dancing Queen<br/>
+  Friday night and the lights are low
+  Looking out for the place to go
+  Where they play the right music,
+  getting in the swing
+  You come in to look for a King
+  Anybody could be that guy
+  Night is young and the music’s high
+  With a bit of rock music, everything is fine
+  You’re in the mood for a dance
+  And when you get the chance...<br/>
+  <i>Chorus:</i>
+  You are the Dancing Queen,
+  young and sweet, only seventeen
+  Dancing Queen, feel the beat from the tambourine
+  You can dance, you can jive,
+  having the time of your life
+  See that girl, watch that scene,
+  dig in the Dancing Queen<br/>
+  You’re a teaser, you turn ’em on
+  Leave them burning and then you’re gone
+  Looking out for another, anyone will do
+  You’re in the mood for a dance
+  And when you get the chance...<br/>
+  <i>(Chorus)</i><br/>
+<em><i>Songwriters</i>: Stig Erik Leopold Anderson / ABBA</em>
+</div>
+<div class="tian"><h3 class="t3 tian">舞之情 <em>【填词】</em><a class="sup" href="#d20080301d" title="">&#11139;</a></h3>
+  舞起來──搖起來──
+  屬于妳生命的時代
+  （舞）一支歌，一曲盡興
+  深陷入歌舞之情<br/>
+  周末夜晚燈光柔
+  找個地方去走走
+  趁着美景和音樂，
+  跳進旋轉舞廳──
+  追尋妳新的一段情
+  不必等待，享受現在
+  夜色未央，音樂響起來
+  只要一點點挑動，所有煩惱就走開
+  帶着你的夢飄入舞池──
+  而當妳翩翩起舞時<br/>
+  <i>【和聲】</i>
+  　撩動着歌舞之情
+  　甜而蜜，歲月正年輕
+  　舞之靈，聽節奏感受鼓如令
+  （噢──耶──）跳起來，擺起來
+  　搖動妳生命的時代
+  （舞）一支歌，一曲盡興
+  　深陷入歌舞之情<br/>
+  妳的熱火似輕狂
+  讓人痴情而迷茫
+  總是尋找着希望，期待爱的奖赏
+  帶着妳的心飄入舞池──
+  而當你翩翩起舞時<br/>
+  <i>〖和聲〗</i><br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301e">Eagle <em>(ABBA)</em></h3>
+  They came flying from far away,
+  now I’m under their spell
+  I love hearing the stories that they tell
+  They’ve seen places beyond my land
+  and they’ve found new horizons
+  They speak strangely but I understand<br/>
+  And I dream I’m an eagle
+  And I dream I can spread my wings
+  Flying high, high, I’m a bird in the sky
+  I’m an eagle that rides on the breeze
+  High, high, what a feeling to fly
+  Over mountains and forests and seas
+  And to go anywhere that I please<br/>
+  As all good friends we talk all night,
+  and we fly wing to wing
+  I have questions and they know everything
+  There’s no limit to what I feel,
+  we climb higher and higher
+  Am I dreaming or is it all real?
+  Is it true I’m an eagle?
+  Is it true I can spread my wings?<br/>
+  <i>Chorus:</i>
+  Flying high, high, I’m a bird in the sky
+  (I’m an eagle)
+  I’m an eagle that rides on the breeze
+  High, high, what a feeling to fly
+  (What a feeling)
+  Over mountains and forests and seas
+  And to go anywhere that I please<br/>
+  And I dream I’m an eagle
+  And I dream I can spread my wings
+  <i>(Chorus x2)</i><br/>
+<em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
+</div>
+<div class="tian"><h3 class="t3 tian">飞鹰 <em>【填词】</em><a class="sup" href="#d20080301e" title="">&#11139;</a></h3>
+  來自遠方他們任意飛
+  我心好似在雲之霄
+  傾聽動人的故事和歡笑
+  他們的航程不能盡覽
+  新的疆域未知其踪
+  可我能聽懂他們的交談（他們的語言我心中了然）<br/>
+  我夢想是一隻神雕
+  我夢想我能展翅如鷹
+  飛向天海雲藹，我像大鳥飛得快
+  好像雄鷹，趁著微風而起
+  天外雲外，飛的感覺真不賴
+  飛越高山、森林、和海域
+  飛向任何去處我願意<br/>
+  就像朋友我們談得來
+  比翼而行看羽翎
+  我有疑問他們看得清
+  無極無限我無所憂
+  一衝高歌入天河
+  不知是真實還是夢游
+  也許我真在遨游
+  也許我真的能飛行<br/>
+  <i>【和聲】</i>
+  飛向天海雲藹，我像大鳥飛得快
+  （我像雄鷹）
+  好像雄鷹，趁著微風而起
+  天外雲外，飛的感覺真不賴
+  （真開懷）
+  飛越高山、森林、和海域
+  飛向任何去處我願意<br/>
+  我夢想是一隻神雕
+  我夢想我能展翅如鷹
+  <i>〖重複〗</i><br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301f">Fernando <em>(ABBA 1976)</em></h3>
+  Can you hear the drums, Fernando?
+  I remember long ago another starry night like this
+  In the firelight, Fernando
+  You were humming to yourself
+  and softly strumming your guitar
+  I could hear the distant drums
+  And sounds of bugle calls were coming from afar<br/>
+  They were closer now, Fernando
+  Every hour every minute seemed to last eternally
+  I was so afraid, Fernando
+  We were young and full of life
+  and none of us prepared to die
+  And I’m not ashamed to say
+  The roar of guns and cannons almost made me cry<br/>
+  <i>Chorus:</i>
+  There was something in the air that night
+  The stars were bright, Fernando
+  They were shining there for you and me
+  For liberty, Fernando
+  Though I never thought that we could lose
+  There’s no regret
+  If I had to do the same again
+  I would, my friend, Fernando<br/>
+  Now we’re old and grey Fernando
+  And since many years
+  I haven’t seen a rifle in your hand
+  Can you hear the drums Fernando?
+  Do you still recall the frightful night
+  We crossed the Rio Grande?
+  I can see it in your eyes
+  How proud you were to fight
+  for freedom in this land<br/>
+  <i>(Chorus, Chorus)</i>
+  Yes, if I had to do the same again
+  I would, my friend, Fernando...<br/>
+<em><i>Songwriters</i>: Stig Erik Leopold Anderson / Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
+</div>
+<div class="tian"><h3 class="t3 tian">费尔南多 <em>【填词】</em><a class="sup" href="#d20080301f" title="">&#11139;</a></h3>
+  還能聽見戰鼓聲嗎，費爾南多？
+  記得從前另一個星光之夜也像如此
+  守在烽火臺的費爾南多
+  你曾哼唱給自己
+  和輕輕彈奏的吉他
+  我能聽見稀疏的戰鼓
+  而軍號聲好像就在遠處回答<br/>
+  他們逼近了戰壕，費爾南多
+  每個小時每一分鍾都像凝固的堡壘
+  我有恐懼伴隨，費爾南多
+  我們的青春多麽無奈
+  不知道死神何時到來
+  而我并沒有懊悔
+  即使槍炮聲讓我哭泣和心哀<br/>
+  <i>【和聲】</i>
+  那天夜晚空中的期待
+  星光的色彩，費爾南多
+  群星閃爍為我和你
+  爲了勝利，費爾南多
+  從未想過我們會失敗
+  從未遺憾
+  這是我們選擇的夜晚
+  心甘情願，費爾南多<br/>
+  如今我們兩鬢斑白，費爾南多
+  而這麽多年
+  我再沒有見你擦拭過槍彈
+  還能聽見戰鼓聲嗎，費爾南多？
+  是否記得那個沉悶的暮靄
+  我們跨越格蘭河岸？
+  我能從你眼中看出來
+  你自豪奮戰的情懷
+  爲了自由的河山<br/>
+  <i>〖和聲〗</i>
+  是啊，這是我們選擇的夜晚
+  心甘情願，費爾南多<br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301h">I Have A Dream <em>(ABBA)</em></h3>
+  I have a dream, a song to sing
+  To help me cope with anything
+  If you see the wonder of a fairy tale
+  You can take the future even if you fail<br/>
+  <i>Chorus:</i>
+  I believe in angels
+  Something good in everything I see
+  I believe in angels
+  When I know the time is right for me
+  I’ll cross the stream -
+  I have a dream<br/>
+  I have a dream, a fantasy
+  To help me through reality
+  And my destination makes it worth the while
+  Pushing through the darkness still another mile<br/>
+  <i>(Chorus)</i>
+  I have a dream, a song to sing
+  To help me cope with anything
+  If you see the wonder of a fairy tale
+  You can take the future even if you fail<br/>
+  <i>(Chorus)</i><br/>
+<em><i>Songwriters</i>: Aleksej Anatolevich Kortnev / Bjoern K. Ulvaeus / Benny Goran Bror Andersson</em>
+</div>
+<div class="tian"><h3 class="t3 tian">我的梦 <em>【填词】</em><a class="sup" href="#d20080301h" title="">&#11139;</a></h3>
+  我有個夢，唱給你聽
+  讓我收穫，所有愛情
+  一個童話故事，感覺真奇妙
+  你能把握未來，即使有困擾<br/>
+  <i>【和聲】：</i>
+  　我相信真理
+  　藏于萬千世界的神奇
+  　我相信真理
+  　我的人生充滿了意義
+  　踏上征程
+  　追逐我夢<br/>
+  我有個夢，幻想之翼
+  讓我面對，現實之迷
+  直到最後終點，鼓勵和關愛
+  經過黑暗時刻，信心依然在<br/>
+  <i>（和聲）</i>
+  　我有個夢，唱給你聽
+  　讓我收穫，所有愛情
+  　一個童話故事，感覺真奇妙
+  　你能把握未來，即使有困擾<br/>
+  <i>〖和聲〗</i><br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301m">Move On <em>(ABBA)</em></h3>
+  “They say a restless body can hide a peaceful soul.
+    A voyager, and a settler,
+    They both have a distant goal.
+    If I explore the heavens,
+    Or if I search inside.
+    Well, it really doesn’t matter as long as
+    I can tell myself – I’ve always tried.”<br/>
+  <i>Chorus:</i>
+  Like a roller in the ocean,
+  Life is motion - Move on
+  Like a wind that’s always blowing,
+  Life is flowing - Move on
+  Like the sunrise in the morning,
+  Life is dawning - Move on
+  How I treasure every minute
+  Being part of it, being in it
+  With the urge to move on<br/>
+  I’ve travelled every country,
+  I’ve travelled in my mind
+  It seems we’re on a journey,
+  a trip through space and time
+  And somewhere lies the answer
+  To all the questions why
+  What really makes the difference
+  Between all dead and living things,
+  the will to stay alive<br/>
+  <i>(Chorus)</i>
+  The morning breeze that ripples
+  the surface of the sea
+  The crying of the seagulls
+  that hover over me
+  I see it and I hear it
+  But how can I explain
+  The wonder of the moment
+  To be alive, to feel the sun
+  That follows every rain…<br/>
+<em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus / Stig Anderson</em>
+</div>
+<div class="tian"><h3 class="t3 tian">生活的航程 <em>【填词】</em><a class="sup" href="#d20080301m" title="">&#11139;</a></h3>
+  『據說不息的生命包藏着內心的安寧。
+  　不管是水手還是居家者，
+  　都有一個遙遠的航程。
+  　無論我遨游太空，
+  　還是探索心靈，那都勿須分明───
+  　只要我可以確信自己
+  　我一直在前行。』<br/>
+  <i>【和聲】</i>
+  　就像浪花乘着海風
+  　生活如航程───徜徉
+  　就像風兒吹個不停
+  　生活如飄萍───飛翔
+  　就像曙光帶來天晴
+  　生活如黎明───陽光
+  　懂得珍貴每個朝夕
+  　深情呼吸，生生不息
+  　把握時機　去啓航<br/>
+  我看盡整個世界
+  我遊遍心的海
+  就像是人生經歷
+  有空間和時代
+  探索中尋求答案
+  把問題想明白
+  參透了一切紅塵
+  人世之間　生死劇情
+  讓願望去等待<br/>
+  <i>〖重複和聲〗</i>
+  晨風吹起了漣漪
+  喚醒海的生機
+  海鷗飛來的哭泣
+  勾起我的孤寂
+  所聽所見有所思
+  難記往事紛紛
+  莫向其間空傷魂
+  感受陽光，生命溫存
+  追隨每滴雨痕……<br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301o">One Of Us <em>(ABBA)</em></h3>
+  They passed me by, all of those great romances
+  You were, I felt, robbing me of my rightful chances
+  My picture clear, everything seemed so easy
+  And so I dealt you the blow
+  One of us had to go
+  Now it's different, I want you to know<br/>
+  One of us is crying / One of us is lying
+  In her lonely bed
+  Staring at the ceiling
+  Wishing she was somewhere else instead
+  One of us is lonely / One of us is only
+  Waiting for a call
+  Sorry for herself feeling stupid feeling small
+  Wishing she had never left at all<br/>
+  I saw myself as a concealed attraction
+  I felt you kept me away from the heat and the action
+  Just like a child, stubborn and misconceiving
+  That's how I started the show
+  One of us had to go
+  Now I've changed and I want you to know<br/>
+  One of us is crying / One of us is lying
+  In her lonely bed
+  Staring at the ceiling
+  Wishing she was somewhere else instead
+  One of us is lonely / One of us is only
+  Waiting for a call
+  Sorry for herself feeling stupid feeling small
+  Wishing she had never left at all
+  Never left at all<br/>
+  Staring at the ceiling
+  Wishing she was somewhere else instead
+  One of us is lonely / One of us is only
+  Waiting for a call<br/>
+<em><i>Songwriters</i>: Ulvaeus Bjoern K / Andersson Benny Sigvard</em>
+</div>
+<div class="tian"><h3 class="t3 tian">我们之间 <em>【填词】</em><a class="sup" href="#d20080301o" title="">&#11139;</a></h3>
+  那舊情不再，一切失去的浪漫事
+  你奪去的愛，讓我感覺天空暗淡地消逝
+  即使我明白，那原本不是我的意思
+  而我們之間的爭鬥
+  必須有一個人要走
+  而到今天，如何能挽救？<br/>
+  你是如此冷冰，你是如此薄情
+  寂寞的無奈
+  愁望天際的眼睛
+  希望遠離這時空和時代
+  我是多麽孤寂，我是多麽失意
+  等待中煎熬
+  內心煩惱　感覺自己太傻自己太渺小
+  希望能回到過去的美好<br/>
+  我無可救藥，封閉了自己的坦誠
+  是你的驕傲，讓我遠離了理智和心聲
+  就像個小孩，固執而又任性
+  讓自己開始了等候
+  逼迫另一個的退後
+  如今孤單，想把你挽留<br/>
+  我是這麽多情，我是這麽不幸
+  無盡的期待
+  愁望天際的眼睛
+  希望遠離這時空和時代
+  你是我的呼吸，你是我的唯一
+  無眠的晨宵
+  內心煩惱　感覺自己太傻自己太渺小
+  希望能回到過去的美好
+  過去的美好<br/>
+  愁望天際的眼睛
+  希望遠離這時空和時代
+  你是我的呼吸，你是我的唯一
+  等你等到老……<br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301s">Super Trouper <em>(ABBA)</em></h3>
+  Super Trouper beams are gonna blind me
+  But I won’t feel blue,
+  Like I always do
+  ’Cause somewhere in the crowd there’s you<br/>
+  I was sick and tired of everything
+  When I called you last night from Glasgow
+  All I do is eat and sleep and sing
+  Wishing every show was the last show
+  (Wishing every show was the last show)
+  So imagine I was glad to hear you’re coming
+  (Glad to hear you’re coming)
+  Suddenly I feel all right
+  (And suddenly it’s gonna be)
+  And it’s gonna be so different
+  When I’m on the stage tonight<br/>
+  <i>Chorus:</i>
+  Tonight the Super Trouper Super Trouper
+  Lights are gonna find me
+  Shining like the sun (Sup-p-per Troup-p-per)
+  Smiling, having sun (Sup-p-per Troup-p-per)
+  Feeling like a number one
+  Tonight the Super Trouper Super Trouper
+  Beams are gonna blind me
+  But I won’t feel blue (Sup-p-per Troup-p-per)
+  Like I always do (Sup-p-per Troup-p-per)
+  ’Cause somewhere in the crowd there’s you<br/>
+  Facing twenty thousand of your friends
+  How can anyone be so lonely
+  Part of a success that never ends
+  Still I’m thinking about you only
+  (Still I’m thinking about you only)
+  There are moments when I think I’m going crazy
+  (Think I’m going crazy)
+  But it’s gonna be alright
+  (You’ll soon be changing everything)
+  Everything will be so different
+  When I’m on the stage tonight<br/>
+  <i>(Chorus)</i>
+  So I’ll be there when you arrive
+  The sight of you will prove to me I’m still alive
+  And when you take me in your arms
+  And hold me tight
+  I know it’s gonna mean so much tonight<br/>
+  <i>(Chorus, Repeat and fade)</i><br/>
+<em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
+</div>
+<div class="tian"><h3 class="t3 tian">超级演出 <em>【填词】</em><a class="sup" href="#d20080301s" title="">&#11139;</a></h3>
+  出色神魄，聚光讓我目迷
+  我不　再孤獨
+  這是我的演出
+  因爲人群中有你的關注<br/>
+  我疲憊的好像一場病
+  而昨夜收到你的問候
+  生活依舊總是不斷的出行
+  期望每一場演出就是最後
+  （期望每場秀都是最後的秀）
+  多麽高興聽到你帶來了你的友情
+  （高興你帶了友情）
+  忽然間我覺得愉快
+  （而一切變得有了意義）
+  而一切變得那麽不一般
+  當我站在今夜的舞臺<br/>
+  <i>【和聲】</i>
+  今夜的出色神魄奪目眼波
+  燈光就在這裏
+  　閃爍像太陽（出色神魄）
+  　微笑有陽光（奪目眼波）
+  感覺我是舞中王
+  今夜的出色神魄奪目眼波
+  聚光讓我著迷
+  我不　再孤獨（出色神魄）
+  這是我的演出（奪目眼波）
+  因爲人群中有你的關注<br/>
+  面對台下觀衆萬萬千
+  我仍然能感到那孤凄
+  多少成功永遠沒個完
+  我只是不停地想起你
+  （我只是不停地想起你）
+  有些時候以爲自己我會變得痴迷
+  （以爲我會變得痴迷）
+  但是最終會無礙
+  （你很快就會轉變一切事情）
+  所有事會那麽不一般
+  當我站在今夜的舞臺<br/>
+  <i>（和聲）</i>
+  所以我等待，你的到來
+  你的眼神將依然證明我的存在
+  而當你擁抱我入懷
+  給我關愛
+  知道今夜是我最大的期待<br/>
+  <i>（重複和聲至曲終）</i><br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301t">Take A Chance On Me <em>(ABBA)</em></h3>
+  <i>Chorus:</i>
+  If you change your mind, I’m the first in line
+  Honey I’m still free / Take a chance on me
+  If you need me, let me know, gonna be around
+  If you’ve got no place to go, if you’re feeling down
+  If you’re all alone when the pretty birds have flown
+  Honey I’m still free / Take a chance on me
+  Gonna do my very best and it ain't no lie
+  If you put me to the test, if you let me try
+  Take a chance on me (That’s all I ask of you honey)<br/>
+  We can go dancing, we can go walking,
+  As long as we’re together
+  Listen to some music, maybe just talking,
+  Get to know you better
+  ’Cos you know I’ve got so much that I wanna do,
+  When I dream I’m alone with you
+  It’s magic -
+  You want me to leave it there, afraid of a love affair
+  But I think you know / That I can’t let go
+  <i>(Chorus)</i> Take a chance on me
+  (Come on, give me a break will you?)
+  Take a chance on me<br/>
+  Oh you can take your time baby,
+  I’m in no hurry, know I’m gonna get you
+  You don’t wanna hurt me, baby don’t worry,
+  I ain’t gonna let you
+  Let me tell you now - My love is strong enough
+  To last when things are rough
+  It’s magic - You say that I waste my time
+  But I can’t get you off my mind
+  No I can’t let go / ’Cos I love you so
+  <i>(Chorus)</i>
+  Gonna do my very best, baby can’t you see
+  Gotta put me to the test, take a chance on me
+  Ba ba ba ba baa, ba ba ba ba baa
+  Honey I’m still free / Take a chance on me<br/>
+<em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
+</div>
+<div class="tian"><h3 class="t3 tian">给我机会 <em>【填词】</em><a class="sup" href="#d20080301t" title="">&#11139;</a></h3>
+  <i>【和聲】</i>
+  如果你覺得孤單　我能陪你作伴
+  我的一切屬于你　你不必有顧忌
+  如果你願意　和我走　一起去闖蕩
+  不管你有什麽樣憂愁　不管你多沮喪
+  每當你感到仿徨　生活中看不到希望
+  一直對你很在意　我的心在等你
+  我會給你最多的愛　給你真誠關懷
+  不要對我不理不睬　對我有點信賴
+  我的機會留給你（你是我全部的希冀）<br/>
+  一起看風景　一起去遠行
+  只要能共有快樂
+  看一看電影　分享些心情
+  瞭解彼此的曲折
+  自從認識你之後　多少希望在等候
+  當我幻想與你遨游──
+  好似奇迹……
+  你總是猶豫徘徊　不願付出你的愛
+  但我等你等太久　我不能再守候
+  <i>〖和聲〗</i>
+  我的機會留給你（來吧，能否給點溫柔）
+  我的機會留給你<br/>
+  我知道你還等待時機
+  我不想太在意　我會得到你所有
+  你無需顧惜　你不必心急
+  我不會放手
+  但你要知道　我的愛無盡無數
+  不管期盼有多苦──
+  這是奇迹……
+  你說我太糾纏　但忘掉你實在難
+  不，我不能放手／因爲我愛你太久
+  <i>〖和聲〗</i>
+  我會給你最多的愛　你還不滿意？
+  不要對我不理不睬　我的機會留給你
+  我的一切屬于你
+  我的心在等你<br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301x">Thank You For The Music <em>(ABBA)</em></h3>
+  I’m nothing special, in fact I’m a bit of a bore
+  If I tell a joke, you’ve probably heard it before
+  But I have a talent, a wonderful thing
+  ’Cause everyone listens when I start to sing
+  I’m so grateful and proud
+  All I want is to sing it out loud<br/>
+ <i>#</i>  So I say
+    Thank you for the music, the songs I’m singing
+    Thanks for all the joy they’re bringing
+    Who can live without it, I ask in all honesty
+    What would life be?
+    Without a song or a dance what are we?
+  So I say thank you for the music
+  For giving it to me <i>#</i><br/>
+  Mother says I was a dancer before I could walk
+  She says I began to sing long before I could talk
+  And I’ve often wondered, how did it all start?
+  Who found out that nothing can capture a heart
+  Like a melody can? - Well, whoever it was, I’m a fan
+  <i>(Repeat ##)</i>
+  I’ve been so lucky, I am the girl with golden hair
+  I wanna sing it out to everybody
+  What a joy, what a life, what a chance!
+  <i>(Repeat ##)</i><br/>
+<em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
+</div>
+<div class="tian"><h3 class="t3 tian">感谢音乐 <em>【填词】</em><a class="sup" href="#d20080301x" title="">&#11139;</a></h3>
+  我沒什麽特別，其實我有點囉嗦
+  若是說個笑料，你也可能看過
+  但我擁有异能，有完美的個性
+  只要我一展歌喉，衆人都愛聽
+  我充滿誠心和驕傲
+  我只想大聲地宣告<br/>
+<i>＃</i> 感謝你
+    感謝你的音樂，我歌唱着愛情
+    感謝所有　快樂帶來的和平
+    給予生命主題，賦予真實的意義
+    沒什麽可比──
+    沒有歌舞的生活　哪有動力？
+  感謝你　感謝你的音樂，
+  它帶來的奇迹<i>＃</i><br/>
+  小時候我還未能走，早已學會舞蹈
+  即使尚未學習說話，早已懂得歌謠
+  我總想知道　這是哪里來的才華
+  能够讓歌聲　抓住心的回答
+  就像樂曲之旋　讓我如此盡歡
+  <i>〖重複＃〗</i>
+  我是如此幸運　我有個美麗童年
+  我想要大聲唱出每刻每時
+  多麽歡喜，多麽幸福，多麽浪漫
+  <i>〖重複＃〗</i><br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080301w">The Winner Takes It All <em>(ABBA)</em></h3>
+  I don’t wanna talk / about the things we’ve gone through
+  Though it’s hurting me, now it’s history
+  I’ve played all my cards, and that’s what you’ve done too
+  Nothing more to say, no more ace to play<br/>
+  The winner takes it all, the loser standing small
+  Beside the victory, that's her destiny<br/>
+  I was in your arms, thinking I belonged there
+  I figured it made sense, building me a fence
+  Building me a home, thinking I’d be strong there
+  But I was a fool, playing by the rules<br/>
+  The gods may throw a dice; their minds as cold as ice
+  And someone way down here, loses someone dear<br/>
+  The winner takes it all, the loser has to fall
+  It’s simple and it’s plain, why should I complain.<br/>
+  But tell me does she kiss, like I used to kiss you?
+  Does it feel the same, when she calls your name?
+  Somewhere deep inside, you must know I miss you
+  But what can I say, rules must be obeyed<br/>
+  The judges will decide, the likes of me abide
+  Spectators of the show, always staying low
+  The game is on again; a lover or a friend
+  A big thing or a small, the winner takes it all<br/>
+  I don’t wanna talk if it makes you feel sad
+  And I understand you’ve come to shake my hand
+  I apologize if it makes you feel bad
+  Seeing me so tense, no self-confidence
+  But you see -
+  The winner takes it all <i>(repeat)</i> ...<br/>
+<em><i>Songwriters</i>: Andersson Benny Goran Bror / Ulvaeus Bjoern K</em>
+</div>
+<div class="tian"><h3 class="t3 tian">你赢了我所有 <em>【填词】</em><a class="sup" href="#d20080301w" title="">&#11139;</a></h3>
+  往事已缥缈，想起曾经的当初。
+  伤心和别离，转眼成昨昔。
+  倾尽我的所有，只换回满盘皆输。
+  失落的苦悲，谁能够体会？<br/>
+  你美丽而骄傲，我自卑又渺小。
+  那最终的失意，也无法逃避。<br/>
+  依偎在你怀中，感受温柔的体贴。
+  若一生不变的相厮，留给我的情思。
+  留给我回味，幻想爱情的炽烈。
+  忽然我醒悟，一世的痴误。<br/>
+  你闪躲的言辞，如冷酷的一颗刺。
+  　过去的一切，灰飞和烟灭。<br/>
+  你胜利地嘲笑，我顿失了依靠。
+  　爱情的善变，我无法去抱怨。<br/>
+  谁能和我相似，象我这样地守候？
+  　一样的缠绵，一样的眷恋。
+  内心的　深处，最深的记忆为你保留。
+  秋去春　又回，我无怨无悔。<br/>
+  这就是我的爱，化作对你的期待。
+  我独自去承受，我的眼泪为谁流？
+  想你一遍一遍，在黑夜的难眠。
+  我灵魂的煎熬，你纵情地燃烧。<br/>
+  逝去的情已老，因为你早已看开。
+  你的前世负担，用我今生来偿还。
+  我承认　失败，接受你的　安排。
+  好像我的官司，输了一次又一次。
+  到头来───　
+  你赢了我所有……<br/>
+<em>中文填词：舟山 2008.03.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426d">Daddy Cool <em>(1976)</em></h3>
+  She’s crazy like a fool
+  — What about it daddy cool
+  She’s crazy like a fool
+  — What about it daddy cool
+  I’m crazy like a fool
+  — What about it daddy cool<br/>
+  Daddy, daddy cool
+  Daddy, daddy cool
+  Daddy, daddy cool
+  Daddy, daddy cool<br/>
+  She’s crazy like a fool
+  What about it daddy cool
+  I’m crazy like a fool
+  What about it daddy cool<br/>
+  Daddy, daddy cool
+  Daddy, daddy cool
+  Daddy, daddy cool ... ...
+  Daddy, daddy cool ... ...<br/>
+<em><i>Songwriters</i>: Frank Farian; George Reyam‎</em>
+</div>
+<div class="tian"><h3 class="t3 tian">爸爸真酷 <em>【填词】</em><a class="sup" href="#d20080426d" title="">&#11139;</a></h3>
+  她疯起来象二百五：只为了爹地真叫酷。
+
+  她就爱爹地肚子鼓：我爹地有个啤酒肚。
+  我爹地说话很老土；可　我爹地真叫酷。
+  爹地──，肚子鼓；爹地──，爹地酷。
+  爹地──，很老土；爹地──，爹地酷。<br/>
+  她爹地衣服没人补：我爹地穿着很暴露。
+  我爹地从来不叫苦；看　我爹地真叫酷。
+  爹地──，很复古；爹地──，爹地酷。
+  爹地──，能吃苦；爹地──，爹地酷。<br/>
+  她爹地睡觉打呼噜：我爹地让人很羡慕。
+  我爹地象只大老虎；听　我爹地真叫酷。
+  爹地──，打呼噜；爹地──，爹地酷。
+  爹地──，大老虎；爹地──，爹地酷。<br/>
+  她爹地总是装糊涂：我爹地生活很幸福。
+  我爹地长得很清楚；我认为爹地真叫酷。
+  爹地──，爱发怒；爹地──，爹地酷。
+  爹地──，很幸福；爹爹──，爹地酷。<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426e">El Lute <em>(1979)</em></h3>
+  This is the story of El Lute -
+  A man who was born to be hunted like a wild animal.
+  Because he was poor - But he refused to accept his fate
+  And today his honor has been restored<br/>
+  He was only nineteen
+  And he was sentenced to die
+  For something that somebody else did
+  And blamed on El Lute<br/>
+  Then they changed it to life
+  And so he could escape
+  From then on they chased him
+  And searched for him day and night
+  All over spain
+  But the search was in vain
+  for El Lute<br/>
+  He had only seen the dark side of life
+  The man they called El Lute
+  And he wanted a home just like you and like me
+  In a country where all would be free
+  So he taught himself to read and to write
+  It didn’t help El Lute
+  He was one who had dared to escape overnight
+  They had to find El Lute<br/>
+  Soon the fame of his name
+  Spread like wild fire all over the land
+  With a price on his head
+  People still gave him bread
+  And they gave him a hand
+  For they knew he was right
+  And his fight was their fight<br/>
+  No one gave you a chance
+  In the spain of those days
+  On the walls every place they had put up
+  The face of El Lute
+  And he robbed where he could
+  just like once Robin Hood
+  They finally caught him and
+  That seemed the end
+  But they caught him in vain
+  Cause a change came for spain
+  And El Lute<br/>
+  He had only seen the dark side of life
+  The man they called El Lute
+  And he wanted a home just like you and like me
+  In a country where all would be free
+  And then freedom really came to his land
+  And also to El Lute
+  Now he walks in the light of a sunny new day
+  The man they called El Lute<br/>
+<em><i>Songwriters</i>: Frank Farian / Fred Jay / Hans Blum</em>
+</div>
+<div class="tian"><h3 class="t3 tian">好汉鲁达 <em>【填词】</em><a class="sup" href="#d20080426e" title="">&#11139;</a></h3>
+  这首歌唱的是好汉鲁达──一位江湖英雄，
+  出家的绿林和尚，扬名在梁山水泊。
+  他不修善果，最终却找到了自己的归所。
+  而今天，他的故事仍在流传。<br/>
+  他后来　法号智深，
+  最初在　军中做提辖；
+  他的大名　早已经传　遍了关西，
+  ──当他还是　好汉鲁达。<br/>
+  可福祸　它总会来，
+  为救女子　杀恶霸，
+  舍了家　亡命天涯，
+  他藏身躲入　山西五台
+  落发为僧
+  江湖再无人称
+  ──好汉鲁达。<br/>
+  在每个传奇历史上　的舞台，
+  人们需要　好汉鲁达。
+  是他豪迈的性情　一直鼓励着我　还有你，
+  追寻古老的　江湖义气。
+  可是英雄的末路都　很悲哀，
+  人们思念　好汉鲁达。
+  他也曾　对清灯　向五祖三圣　问个明白：
+  如何再做　好汉鲁达。<br/>
+  法戒森森的寺院，
+  锁不住他的禅缘、杀人的心魔一片。
+  倒拔垂杨的菜园，
+  看洒家功夫施展，
+  来结交英雄好汉。
+  野猪林　震慑官差；
+  保林冲　沧州之外。<br/>
+  逃亡落草　宝珠寺，
+  在那不平　的人世；
+  打家劫舍　惹官司，四海要捕抓
+  不怕死的　好汉鲁达。
+  他们得罪　了官府，
+  三山聚义　闹江湖；
+  打下青州　上了梁山，
+  百八兄弟伙伴，
+  再立忠义旗幡。
+  留下千古美谈──　
+  和　好汉鲁达。<br/>
+  在每个传奇历史上　的舞台，
+  人们需要　好汉鲁达。
+  是他豪迈的性情　一直鼓励着　我还有你，
+  追寻古老的　江湖义气。
+  等到他把世间一切　都看开，
+  正果修成　好汉鲁达。
+  今日方知我是我　是新的存在，
+  顿悟前缘　好汉鲁达。<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426h">Hooray, Hooray! It’s A Holi-Holiday <em>(1979)</em></h3>
+  Di-di-di-di-du di-di-di-di-du heydiheydihoh
+  Di-di-di-di-du di-di-di-di-du heydiheydihoh
+  Di-di-di-di-du di-di-di-di-du heydiheydihoh
+  Di-di-di-di-du di-di-di-di-du heydiheydihoh<br/>
+  There’s a place I know where we should go
+  Won’ t you take me there your lady fair
+  There’s a brook near-by the grass grows
+  Where we both can hide side by side –
+  heydiheydihoh<br/>
+  There’s a country fair not far from there - heydiheydihoh
+  on a carousel the dingdong bell - heydiheydihoh
+  on the loop di loop we swing and swoop - heydiheydihoh
+  and what else we’ll do is up to you - heydiheydihoh<br/>
+  Hooray! Hooray! It’s A Holi-Holiday
+  What a world of fun for everyone, holi-holiday
+  Hooray! Hooray! It’s A Holi-Holiday
+  Sing a summer song, skip along, holi-holiday
+  It’s a holi-holiday<br/>
+  Well, I’m game - Fun is the thing I’m after
+  Now let’s a’live it up today
+  Get set for love and laughter<br/>
+  Well, let’s go - Time isn’t here for wasting
+  Life is so full of sweet sweet things
+  I’d like to do some tasting<br/>
+  In the country side we take a ride - heydiheydihoh
+  Where the stars will shine lots of time - heydiheydihoh
+  Back of your old car we might get far - heydiheydihoh
+  In the summerbreeze we feel at ease - heydiheydihoh
+  <br/>
+  Hooray! Hooray! It’s A Holi-Holiday
+  What a world of fun for everyone, holi-holiday
+  Hooray! Hooray! It’s A Holi-Holiday
+  Sing a summer song, skip along, holi-holiday
+  It’s a holi-holiday<br/>
+  Hooray! Hooray! It’s A Holi-Holiday
+  What a world of fun for everyone, holi-holiday
+  Hooray! Hooray! It’s A Holi-Holiday
+  Sing a summer song, skip along, holi-holiday
+  It’s a holi-holiday, it’s a holi-holiday<br/>
+<em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
+</div>
+<div class="tian"><h3 class="t3 tian">小妹 <em>【填词】</em><a class="sup" href="#d20080426h" title="">&#11139;</a></h3>
+  太阳向远走，月亮上山头，等你等你呦。
+  我心常期待，门前独徘徊，盼你盼你噢。
+  晚风多轻柔，小河水慢流，想你想你呦。
+  思念阔如海，痴想真无奈，爱你爱你噢。<br/>
+  小妹，小妹！长得多妩媚。
+  淡淡两弯眉，一双眼眸醉，看你看你呦。
+  小妹，小妹！笑得多甜美。
+  我愿常想随，我的心紧追，爱你爱你噢。
+  这是爱你爱你噢！<br/>
+  你的人儿走，我的心儿留，等你等你呦。
+  漫步在窗外，苦闷去又来，盼你盼你噢。
+  何时再牵手，何时常相守？想你想你呦。
+  此生的依赖，拥你入胸怀，爱你爱你噢。<br/>
+  小妹，小妹！想你难入睡。
+  三餐无滋味，悲喜都落泪，念你念你呦。
+  小妹，小妹！盼你入梦帏。
+  照亮我心扉，今夜一起飞，爱你爱你噢。
+  这是爱你爱你噢！<br/>
+  噢，小妹──
+  送给我甜蜜和心碎。
+  我甘愿尝尽爱情苦味，爱你爱到无悔。<br/>
+  噢，小妹──
+  点亮我心底的光辉。
+  我一定找遍世间花卉，换你一生安慰。<br/>
+  小妹，小妹！想你难入睡。
+  三餐无滋味，悲喜都落泪，念你念你呦。
+  小妹，小妹！盼你入梦帏。
+  照亮我心扉，今夜一起飞，爱你爱你噢。
+  这是爱你爱你噢！<br/>
+  两厢添忧愁，一夕岁消瘦，等你等你呦。
+  你心在不在？此情该不该？盼你盼你噢。
+  请你抬起头，不要再害羞，想你想你呦。
+  一起看云霭，共同的情怀，爱你爱你噢。
+  <br/>
+  小妹，小妹！长得多妩媚。
+  淡淡两弯眉，一双眼眸醉，看你看你呦。
+  小妹，小妹！笑得多甜美。
+  我愿常想随，我的心紧追，爱你爱你噢。
+  这是爱你爱你噢！<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426a">I Am Born Again <em>(1979)</em></h3>
+  I’m born again, I feel free
+  No longer alone
+  A bright light is shinning
+  And shows me a world that I own
+  I can see my way through
+  I know I will walk beside you
+  All those prayers of mine weren’t in vain
+   I’m born again<br/>
+  I’m born again, I feel free
+  - There’s a quite different me
+  No longer I’m tossed
+  - Like a ship on an unruly sea
+  I’ve been blessed with a love
+  - That’s meant for the rest of my time
+  All those prayers they were not in vain
+  - I’m born again<br/>
+  Since love touched my heart right
+  My life has a meaning
+  I feel I’m no longer drifting in space
+  I believe once again that there is a tomorrow
+  A brand new tomorrow, I know I can face<br/>
+  I’m born again, I feel free
+  No longer alone
+  A bright light is shinning
+  And shows me a world that I own
+  I can see my way through
+  I know I will walk beside you
+  All those prayers of mine weren’t in vain
+   I’m born again<br/>
+  All those prayers they weren’t in vain
+  – ’Cause I’m born again<br/>
+<em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
+</div>
+<div class="tian"><h3 class="t3 tian">我的新生 <em>【填词】</em><a class="sup" href="#d20080426a" title="">&#11139;</a></h3>
+  获得重生在今天，
+  获自由，不再孤单。
+  迎来光明的詩篇，
+  照耀我的世界燦爛。
+  看见我未来道路，
+  终将走在你的身邊。
+  所有祈祷的願望会实現，
+  重生在今天。<br/>
+  我的新生在今天，
+  我心里──一切有了意义。
+  从此　不再漂泊
+  　找不到　爱的信息。
+  我感激　爱的祝福，
+  　伴随我到生命终点。
+  所有祈盼的心願能兑現，
+  ──重生在今天。<br/>
+  是你的爱點亮我眼睛──　
+  生活重現了光明。
+  我不会再迷失，无依靠的情思。
+  我坚持我的信念──终有美好的明天。
+  一个全新的世界，我能够感知。<br/>
+  获得新生在今天，
+  让自由，不再孤单。
+  明白萬載的真言，
+  照亮我的世界無邊。
+  看见我未来的路，
+  终于有了你的指點。
+  所有祈祷的願望会实現，
+  重生在今天。<br/>
+  所有祈盼的心願已实現，
+  只因重生在今天。<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426b">I See A Boat On The River <em>(1980)</em></h3>
+  He left on a boat / Just to follow a dream
+  He had to find.
+  You can’t hold a man / When he follows a dream
+  That’s on his mind.<br/>
+  I see a boat on the river – It’s sailing away
+  - Down to the ocean, Where to I can’t say.
+  Boat on the river – It’s sailing away
+  - Down to the ocean - Where to I can’t say.<br/>
+  I waited for him / Such a very long time,
+  Don’t know what for
+  Cause I should have known / When he left on the boat
+  We’ll meet no more.<br/>
+  I see a boat on the river – It’s sailing away
+  - Down to the ocean, Where to I can’t say.
+  Boat on the river – It’s sailing away
+  - Down to the ocean – Where to I can’t say.
+  Boat on the river – You’re bound for the sea.
+  If you should find him - Please greet him from me.<br/>
+  There were people who came
+  And said it’s really a shame,
+  Why did he take off
+  To follow just a dream.
+  But I guess they were wrong,
+  In life you’re sailing along
+  And things don’t turn out
+  As simple as they seem.<br/>
+  Boat on the river – It’s sailing away
+  - Down to the ocean - Where to I can’t say.
+  I see a boat on the river – It’s sailing away
+  - Down to the ocean, Where to I can’t say.
+  I see a boat on the river – You’re bound for the sea,
+  If you should find him - Please greet him from me.<br/>
+<em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
+</div>
+<div class="tian"><h3 class="t3 tian">远行的船 <em>【填词】</em><a class="sup" href="#d20080426b" title="">&#11139;</a></h3>
+  你扬起远帆，驶向那未知旅程，
+  去　追一个梦。
+  谁能够阻挡　你满怀理想出征，
+  掀开传奇人生。<br/>
+  我望着河面的船儿，它一去不回。
+  　　　大海的波声，和我心相随。
+  　　　远行的船儿，它一去不回。
+  　　　飞逝的波涛，有我心相随。<br/>
+  我无尽徘徊，付出了岁月等待──　
+  没有你的寂寞。
+  谁知道离别　换来持久的分开，
+  让　一世错过。<br/>
+  我望着河面的船儿，它一去不回。
+  　　　大海的波声，和我心相随。
+  　　＊远行的船儿，它一去不回。
+  　　　飞逝的波涛，有我心相随。
+  　　　远行的船儿，挥手又离去。
+  　　　带走我思念，记得我心意。<br/>
+  这里的人们都说
+  爱上你本来是错。
+  为何要离我而去，
+  从此就失去音信。
+  我知道宽阔海洋，
+  你只能尽力去闯。
+  无论结局会如何，
+  唯有我爱你至今。<br/>
+  河面的船儿，它一去不回。
+  大海的波声，和我心相随。
+  我望着远行的船儿，它一去不回。
+  　　　飞逝的波涛，有我心相随。
+  我望着远行的船儿，挥手又离去。
+  　　　带走我思念，记得我心意。<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426c">Mary's Boy Child / Oh My Lord <em>(1978)</em></h3>
+  Mary’s boy child Jesus Christ,
+  Was born on Christmas Day.
+  And man will live for evermore,
+  Because of Christmas Day.<br/>
+  Long time ago in Bethlehem,
+  So the Holy Bible say,
+  Mary's boy child Jesus Christ,
+  Was born on Christmas Day.<br/>
+  *Hark, now hear the angels sing,
+  A king was born today,
+  And man will live for evermore,
+  Because of Christmas Day.
+  Mary’s boy child Jesus Christ,
+  Was born on Christmas Day.<br/>
+  While shepherds watch their flocks by night,
+  They see a bright new shining star,
+  They hear a choir sing a song,
+  The music seemed to come from afar.<br/>
+  Hark, now hear the angels sing,
+  A king was born today,
+  And man will live for evermore,
+  Because of Christmas Day.<br/>
+  Mmmmmm......<br/>
+  For a moment the world was aglow,
+  All the bells rang out
+  There were tears of joy and laughter,
+  People shouted "let everyone know,
+  There is hope for all to find peace".<br/>
+  (Now Joseph and his wife Mary
+  came to Bethlehem that night
+  they found no place to bear her child
+  not a single room was in sight)<br/>
+  And then they found a little nook,
+  In a stable all forlorn.
+  And in a manger cold and dark,
+  Mary’s little boy was born.<br/>
+  <i>---</i>
+  Oh my lord - You sent your son to save us
+  Oh my lord - Your very self you gave us
+  Oh my lord - That sin may not enslave us
+  And love may reign once more<br/>
+  Oh my lord - When in the crib they found him
+  Oh my lord - A golden halo crowned him
+  Oh my lord - They gathered all around him
+  To see him and adore (this day will live forever)
+  Oh my lord (so praise the lord)
+  They had become to doubt you
+  Oh my lord (he is the truth forever)
+  What did they know about you
+  Oh my lord (so praise the lord)
+  But they were lost without you
+  They needed you so bad (his light is shining on us)<br/>
+  Oh my lord (so praise the lord)
+  With the childs adoration
+  Oh my lord (he is a personation)
+  There came great jubilation
+  Oh my lord (so praise the lord)
+  And full of admiration
+  They realized what they had
+  (until the sun falls from the sky)<br/>
+  Oh my lord (oh praise the lord)
+  You sent your son to save us
+  Oh my lord (this day will live forever)
+  Your very self you gave us
+  Oh my lord (so praise the lord)
+  That sin may not enslave us
+  And love may reign once more<br/>
+<em><i>Songwriters</i>: Fred Jay / Frank Farian / Jester Hairston</em>
+</div>
+<div class="tian"><h3 class="t3 tian">玛丽的孩子 <em>【填词】</em><a class="sup" href="#d20080426c" title="">&#11139;</a></h3>
+  瑪麗的孩子神之子，
+  出生　在　圣誕夜。
+  世人從此　得永生，
+  因為　神　的契約。<br/>
+  很久以前　在伯利恒，
+  圣經講述了這章節。
+  瑪麗的孩子，是神之子，
+  出生　在　圣誕夜。<br/>
+  我們聽到天使之歌，
+  耶穌來到這個世界。
+  世人從此　得永生，
+  因為　神　的契約。
+  瑪麗的孩子，是神之子，
+  出生　在　圣誕夜。<br/>
+  當牧人守候在深夜，
+  看見一個新星的光華。
+  伴隨着美妙的音樂，
+  這天籟仿佛來自雲涯。<br/>
+  我們聽到天使之歌，
+  耶穌來到這個世界。
+  世人從此　得永生，
+  為了　神　的契約。<br/>
+  <i>＃〖和聲〗</i><br/>
+  當時整個世界變明亮，
+  所有鐘聲敲響。
+  淚水中喜悅和歡笑的寧祥，
+  這是福音在大地的傳唱，
+  這是人類和平的希望。<br/>
+  （約瑟和他的妻子瑪麗
+  　來到伯利恒的那個夜晚，
+  　他們找不到地方
+  　讓瑪麗分娩……）<br/>
+  他們找到了一個角落，
+  沒人居住的場所，
+  頂著夜風和寒冷，
+  瑪麗讓孩子降生了。<br/>
+  <i>☆☆☆☆☆☆☆☆☆☆</i>
+  我的主，您讓神子來解救我
+  我的主，您的一切給了我
+  我的主，讓罪惡不再征服我
+  而大愛能給予我的會更多<br/>
+  我的主，當他們在馬槽邊找到他
+  我的主，金色光環籠罩著他
+  我的主，人們圍繞簇擁著他
+  探訪他和崇拜他（這一天名留萬古）
+  我的主（要贊美我主）
+  有人開始產生疑惑
+  我的主（他是真理永駐）
+  他們怎知您的杰作
+  我的主（要贊美我主）
+  沒有您人們如何生活
+  我們需要您最多最多
+  （我主光輝圣潔萬物）<br/>
+  我的主（要贊美我主）
+  充滿孩子般的仰慕
+  我的主（最偉大的人物）
+  整個世界都在慶祝
+  我的主（要贊美我主）
+  我們要贊美萬物
+  深切知曉我心何屬（直到世界的盡處）<br/>
+  我的主（要贊美我主）
+  您讓神子來解救我
+  我的主（這一天永不沒落）
+  您的一切給了我
+  我的主（要贊美我主）
+  讓罪惡不再征服我
+  而大愛能給予我的會更多（……）<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426o">Ocean Of Fantasy <em>(1979)</em></h3>
+  My world is filled with oceans
+  Oceans of fantasy
+  The never never land of emotions
+  Come down and follow me
+  You’ll see the secret places
+  Where all the rivers end
+  And pirate ships of old
+  Filled with diamonds and with gold
+  Just waiting for a friend<br/>
+  All you can hear is the music
+  of stillness and pure harmony
+  Magical mirrors reflecting the light
+  That colors the sea
+  You’ll be surrounded by angel like creatures
+  Who tend to your dreams
+  Deeper and deeper you fall in a trance
+  Much more real
+  Much more real than it seems<br/>
+  Come share with me the oceans
+  Oceans of fantasy
+  Where you can lose your soul forever
+  Like in a melody
+  Oceans of fantasy, Oceans of fantasy (2x)<br/>
+  My world is filled with oceans
+  Oceans of fantasy
+  The never never land of emotions
+  Come down and follow me<br/>
+<em><i>Songwriters</i>: Frank Farian</em>
+</div>
+<div class="tian"><h3 class="t3 tian">大海幻想曲 <em>【填词】</em><a class="sup" href="#d20080426o" title="">&#11139;</a></h3>
+  大海绚烂我的人生
+  她像一首幻想曲
+  那无边无际的漫想激情
+  让我们走到一起
+  多少神秘尽归于斯
+  她容纳了百川
+  海盗船长（的）铁钩
+  搜遍了富饶的金瓯
+  留下传说的宝船<br/>
+  所有你能想象的音乐
+  充满了宁静与和谐
+  魔镜反射的奇异色彩
+  一直照亮到海底
+  天使像精灵一样围绕着你
+  飞入了梦里
+  越来越深地跌进了昏迷
+  好像真实
+  和真的一样相似<br/>
+  分享这蔚蓝的人生
+  像大海的幻想曲
+  让灵魂迷失在无边的旅程
+  似融入了无词曲──　
+  大海的幻想曲，大海的幻想曲……<br/>
+  大海丰富了人生
+  像一首幻想曲
+  那无忧无虑岛的恋情
+  让我们在一起<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426v">River Of Babylon <em>(1978)</em></h3>
+  <i>*</i> By the rivers of Babylon,
+  there we sat down;
+  ye-eah we wept,
+  when we remembered Zion. <i>(Repeat *)</i><br/>
+  <i>#</i> When the wicked –
+    Carried us away in captivity
+    - Require from us a song -
+    Now how shall we sing the Lord’s song
+    in a strange land?
+  <i>(Repeat #)</i>
+  Let the words of our mouths
+  and the meditation of our hearts
+  be acceptable in Thy sight here tonight <i>(Repeat)</i><br/>
+  <i>(Repeat *, 2x)</i><br/>
+  By the rivers of Babylon (the waters of Babylon)
+  there we sat down (You got to sing a song)
+  ye-eah we wept, (Sing a song of love)
+  when we remember Zion. (Yeah yeah yeah yeah yeah)<br/>
+  By the rivers of Babylon (by the rivers of Babylon)
+  there we sat down (You hear the people cry)
+  ye-eah we wept, (They need their God)
+  when we remember Zion. (Ooh, got the power)<br/>
+  By the rivers of Babylon, (oh yeah yeah)
+  where we sat down (yeah yeah)
+  Ye-eah we wept.........<br/>
+<em><i>Songwriters</i>: Brent Dowe / Frank Farian / George Reyam / Trevor McNaughton</em>
+</div>
+<div class="tian"><h3 class="t3 tian">巴比伦之河 <em>【填词】</em><a class="sup" href="#d20080426v" title="">&#11139;</a></h3>
+  坐在巴比倫的河岸上，
+  我們惆悵，
+  流著眼泪，
+  重溫着復國的夢想。<br/>
+  背井離鄉，
+  遠離故土　的滋養，
+  囚禁中奴隸的歌唱，
+  要怎樣讓上帝的歌聲
+  在异邦成長？
+  <i>＃</i>
+  祖祖輩輩的信仰，
+  深入我心和冥想。
+  在萬世矚目中傳播和宣揚。<br/>
+  <i>☆〖重復上段，進入和聲〗</i><br/>
+  坐在巴比倫的河岸上，（巴比倫河岸上）
+  我們惆悵。（我們一起歌唱）
+  流著眼泪，（對故国的感傷）
+  重溫着復國的夢想。（不盡的思量）<br/>
+  走在巴比倫的河岸上，（巴比倫河岸上）
+  我們徜徉。（傾聽人們歌唱）
+  擦去眼泪，（和對上帝的信仰）
+  憧憬着復國的希望。（獲得力量）<br/>
+  聆聽巴比倫的河岸上，（河岸上）
+  歌聲嘹亮。（充滿想象）
+  ……<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080426s">Sunny <em>(1976)</em></h3>
+  Sunny, yesterday my life was filled with rain.
+  Sunny, you smiled at me and really eased the pain.
+  The dark days are gone, and the bright days are here,
+  My sunny one shines so sincere.
+  Sunny, one so true, I love you.<br/>
+  Sunny, thank you for the sunshine bouquet.
+  Sunny, thank you for the love you brought my way.
+  You gave to me your all and all.
+  Now I feel ten feet tall.
+  Sunny, one so true, I love you.<br/>
+  Sunny, thank you for the truth you let me see.
+  Sunny, thank you for the facts from A to Z.
+  My life was torn like a windblown sand,
+  And the rock was formed when you held my hand.
+  Sunny, one so true, I love you.
+  Sunny~~~~<br/>
+  Sunny, thank you for the smile upon your face.
+  Sunny, thank you for the gleam that shows its grace.
+  You’re my spark of nature’s fire,
+  You’re my sweet complete desire.
+  Sunny, one so true, I love you.<br/>
+  I love you. <i>(6x)</i><br/>
+<em><i>Songwriters</i>: Bobby Hebb</em>
+</div>
+<div class="tian"><h3 class="t3 tian">想你 <em>【填词】</em><a class="sup" href="#d20080426s" title="">&#11139;</a></h3>
+  想你　我怎能放弃对你　的眷恋？
+  想你　那微笑是我心中　的火焰。
+  不论　绿水山岗，不分　昏晓星夜，
+  我想你　的梦　不──能──绝。
+  想你　禁不住，我倾诉！<br/>
+  想你　只记着你的温柔　和妩媚，
+  想你　给我的回味何止　千百倍！
+  你是　我的欢喜，你是　我的忧愁，
+  我想你　的心　不──能──收。
+  想你　全付出　的幸福！<br/>
+  想你　是我对你的赞美　和感激；
+  想你　让我能明白生活　的意义。
+  经过风雨考验，直到沧海桑田…
+  有你在我身边，理想　会实现。
+  想你　真情注、爱心护！
+  想你~~~~<br/>
+  想你　这是我送给你的　一首诗。
+  想你　天地能证明我的　爱与痴。
+  有了你的关怀，不怕挫折失败，
+  我　难以离开　对你　的依赖。
+  想你　情无数，我爱你！<br/>
+  我爱你……　我爱你……<br/>
+<em>中文填词：舟山 2008.04.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20080730x">Never Gonna Fall In Love Again <em>(1978)</em></h3>
+  No use pretending things can still be right
+  There’s really nothing more to say
+  I’ll get along without your kiss good night
+  Just close the door and walk away<br/>
+  Never gonna fall in love again
+  I don’t wanna start with someone new
+  cause I couldn’t bear to see it end
+  Just like me and you
+  No, I never wanna feel the pain
+  Of remembering how it used to be
+  Never gonna fall in love again
+  Just like you and me<br/>
+  At first we thought that love was here to stay
+  The summer made it seem so right
+  But like the sun we watched it fade away
+  From morning into lonely night<br/>
+  Never gonna fall in love again
+  I don’t wanna start with someone new
+  cause I couldn’t bear to see it end
+  Just like me and you
+  No, I never wanna feel the pain
+  Of remembering how it used to be
+  Never gonna fall in love again
+  Just like you and me<br/>
+<em><i>Songwriters</i>: Eric Carmen / Sergei Rachmaninoff</em>
+</div>
+<div class="tian"><h3 class="t3 tian">今夜逝去情不再 <em>【填词】</em><a class="sup" href="#d20080730x" title="2008.07.30.">&#11139;</a></h3>
+  难以伪装我们的感情　还在
+  早已经是无法相面对
+  我将学会习惯没有你　的爱
+  好去承受分离的心碎<br/>
+  今夜逝去情不再
+  谁能和我在一起
+  分担此生的悲哀
+  仍像我和你
+  但是还要多久　去等待
+  再让一切重来过
+  今夜逝去情不再
+  就像你和我<br/>
+  相遇在当初的我们那么美
+  夏日的椰风吹向海
+  看尽了夕阳最後的　安慰
+  剩下我黑暗无依赖<br/>
+  今夜逝去情不再
+  谁能和我在一起
+  分担此生的悲哀
+  仍像我和你
+  但是还要多久　去等待
+  再让一切重来过
+  今夜逝去情不再
+  就像你和我<br/>
+<em>中文填词 2008.07.30.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20090214x">Barking At The Moon <em>(Bolt 2008)</em></h3>
+  I have got so much to give – I swear I do
+  I may not have nine lives –
+  But this one feels brand new
+  Yes, I’ve lived a good one
+  I’ve tried to be true
+  There are some things I never realised
+  Till I met you<br/>
+  How the wind feels on my cheeks
+  When I’m barking at the moon
+  There is no home like the one you’ve got
+  ’Cause that home belongs to you
+  Woo, hoo, here I come
+  Woo, hoo, back to you
+  There is no home like the one you’ve got
+  ’Cause that home belongs to you<br/>
+  Well, I was in trouble bad / I was so confused
+  I may not see in color, babe / But I sure can feel blue
+  I have been a lot of things
+  They may not all be true
+  My experience was so mysterious
+  Till I met you<br/>
+  Now the sun will rise in the east
+  But I’m barking at the moon
+  There is no home like the one you’ve got
+  Cuz that home belongs to you
+  Woo, hoo, here I come
+  Woo, hoo, back to you
+  There is no home like the one you’ve got
+  Cuz that home belongs to you
+  There is no home like the one you’ve got
+  Cuz that home belongs to you<br/>
+  There is no home like the one you’ve got
+  Cuz that home belongs to you...<br/>
+<em><i>Songwriters</i>: Jenny Lewis</em>
+</div>
+<div class="tian"><h3 class="t3 tian">对月当歌 <em>【填词】</em><a class="sup" href="#d20090214x" title="2009.02.14.">&#11139;</a></h3>
+  我的人生　充满祝福──我愿意付出
+  我并没有　太多的企求
+  只希望每一天　的永久
+  不管是喜乐和贫富
+  让一切　归真返朴
+  这种感觉　我不知道就是爱──　
+  爱上你的眼眸<br/>
+  迎面吹来的风　轻抚
+  当我想要对你　倾诉──　
+  找到属于自己　温暖的　家
+  因为有爱在为你　守候
+  呜呼──　归家的路……
+  呜呼──　不再回首……
+  找到属于自己　温暖的　家
+  因为爱　不需要　理由<br/>
+  生活自是有闲愁，我心多烦忧
+  我像个孩子傻乎乎，可一样懂得孤独
+  我的心中有幻想无数
+  但没有愿望可以付诸
+  我的未来　充满迷惑（直到）
+  ──你给了我所有<br/>
+  世界又迎来　新的　日出
+  但我想要　对你倾诉──　
+  找到属于自己　温暖的　家
+  此生有你　陪伴　左右
+  呜呼──　归家（的）路……
+  呜呼──　珍惜所有……
+  　　属于自己　温暖的　家
+  因为有爱　为你　守候
+  找到属于自己　温暖的　家
+  因为爱不需　要　理由<br/>
+  找到属于自己　温暖的　家
+  因为有爱　在…等…候…<br/>
+<em>中文填词 2009.02.14.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20101201x">God Rest Ye Merry Gentlemen <em></em></h3>
+  God rest ye merry gentlemen
+  Let nothing you dismay
+  Remember, Christ, our Saviour
+  Was born on Christmas day
+  To save us all from Satan’s power
+  When we were gone astray
+  O tidings of comfort and joy, comfort and joy
+  O tidings of comfort and joy<br/>
+  In Bethlehem, in Israel,
+  This blessed Babe was born
+  And laid within a manger
+  Upon this blessed morn
+  The which His Mother Mary
+  Did nothing take in scorn
+  O tidings of comfort and joy, Comfort and joy
+  O tidings of comfort and joy<br/>
+  Fear not then, said the Angel,
+  Let nothing you affright,
+  This day is born a Saviour
+  Of a pure Virgin bright,
+  To free all those who trust in Him
+  From Satan’s power and might.
+  O tidings of comfort and joy, comfort and joy
+  O tidings of comfort and joy<br/>
+  From God our Heavenly Father
+  A blessed Angel came;
+  And unto certain Shepherds
+  Brought tidings of the same
+  How that in Bethlehem was born
+  The Son of God by Name.
+  O tidings of comfort and joy, comfort and joy
+  O tidings of comfort and joy<br/>
+
+  The shepherds at those tidings
+  Rejoiced much in mind,
+  And left their flocks a-feeding
+  In tempest, storm and wind
+  And went to Bethlehem straightway
+  The Son of God to find.
+  O tidings of comfort and joy, Comfort and joy
+  O tidings of comfort and joy<br/>
+  And when they came to Bethlehem
+  Where our dear Saviour lay,
+  They found Him in a manger,
+  Where oxen feed on hay;
+  His Mother Mary kneeling down,
+  Unto the Lord did pray.
+  O tidings of comfort and joy, comfort and joy
+  O tidings of comfort and joy<br/>
+  Now to the Lord sing praises,
+  All you within this place,
+  And with true love and brotherhood
+  Each other now embrace;
+  This holy tide of Christmas
+  All other doth deface.
+  O tidings of comfort and joy, comfort and joy
+  O tidings of comfort and joy<br/>
+<em><i>Songwriters</i>: Unknown; <i>Based on </i> "Luke 2"</em>
+</div>
+<div class="tian"><h3 class="t3 tian">上帝讓人快樂 <em>【填词】</em><a class="sup" href="#d20101201x" title="">&#11139;</a></h3>
+  上帝讓人快樂跟隨
+  不再有自卑
+  耶穌基督我的救主
+  在聖誕夜光輝
+  保護我們遠離魔鬼
+  迷途知返回
+  他帶來了喜悅和安慰，喜悅安慰
+  他帶來了喜悅和安慰<br/>
+  　　在伯利恆在以色列
+  　　神子的祥瑞
+  　　他生在陋室受苦纍
+  　　在黎明的晨暉
+  　　他的母親還要承擔
+  　　世俗的謗誹
+  　　他帶來了喜悅和安慰，喜悅安慰
+  　　他帶來了喜悅和安慰<br/>
+  在天之父他的尊貴
+  有天使的相陪
+  就像守護的牧羊人
+  在他　的周圍
+  伯利恆夜，降生城內
+  是聖子的名諱
+  他帶來了喜悅和安慰，喜悅安慰
+  他帶來了喜悅和安慰<br/>
+  　　不要害怕，不要心灰
+  　　不必再惊悴
+  　　今天降臨，我們救主
+  　　是純潔的聖美
+  　　一切信徒，得享自由
+  　　遠離人的罪
+  　　他帶來了喜悅和安慰，喜悅安慰
+  　　他帶來了喜悅和安慰<br/>
+
+  　　牧羊人們聽到消息
+  　　心中似沉醉
+  　　儘管深夜冰雪寒冷
+  　　暴風中紛飛
+  　　一心尋找上帝之子
+  　　伯利恆相會
+  　　他帶來了喜悅和安慰，喜悅安慰
+  　　他帶來了喜悅和安慰<br/>
+  當他們來到伯利恆
+  神子在安睡
+  發現他在牲口棚里
+  喂牛的草堆
+  他的母親瑪麗下跪
+  祈求神慈悲
+  他帶來了喜悅和安慰，喜悅安慰
+  他帶來了喜悅和安慰<br/>
+  歌唱上帝用心贊美
+  無私的饋給
+  他的真愛讓全人類
+  團結力增倍
+  如此聖潔平安夜是
+  萬事中之最
+  他帶來了喜悅和安慰，喜悅安慰
+  他帶來了喜悅和安慰<br/>
+<em>中文填词：舟山 2010.12.01.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20101202x">Hark, the Herald Angels Sing <em>(1739)</em></h3>
+  Hark the herald angels sing
+  “Glory to the newborn King!
+  Peace on earth and mercy mild
+  God and sinners reconciled”
+  Joyful, all ye nations rise
+  Join the triumph of the skies
+  With the angelic host proclaim:
+  “Christ is born in Bethlehem”
+  Hark! The herald angels sing
+  “Glory to the newborn King!”<br/>
+  Christ by highest heav’n adored
+  Christ the everlasting Lord!
+  Late in time behold Him come
+  Offspring of a Virgin’s womb
+  Veiled in flesh the Godhead see
+  Hail the incarnate Deity
+  Pleased as man with man to dwell
+  Jesus, our Emmanuel
+  Hark! The herald angels sing
+  “Glory to the newborn King!”<br/>
+  Hail the heav’n-born Prince of Peace!
+  Hail the Son of Righteousness!
+  Light and life to all He brings
+  Ris’n with healing in His wings
+  Mild He lays His glory by
+  Born that man no more may die
+  Born to raise the sons of earth
+  Born to give them second birth
+  Hark! The herald angels sing
+  “Glory to the newborn King!”<br/>
+<em><i>Songwriters</i>: Felix Mendelssohn</em>
+</div>
+<div class="tian"><h3 class="t3 tian">天使高歌世界聽 <em>【填词】</em><a class="sup" href="#d20101202x" title="">&#11139;</a></h3>
+  天使高歌世界聽：
+  上帝天國已降臨。
+  帶來仁慈和安寧，
+  重歸和諧與和平。
+  億民萬國齊歡慶，
+  勝利聲振九霄晴。
+  基督誕於伯利恆，
+  聖潔宣揚聖子名。
+  天使高唱世界聽：
+  上帝榮耀已降臨。<br/>
+  一切崇拜及致敬，
+  是主基督的永恒。
+  舉世矚目他誕生，
+  聖母孕懷之聖靈。
+  人的肉體上帝影，
+  神的化身和結晶。
+  我主耶穌名為憑，
+  人類相處共太平。
+  天使高唱世界聽：
+  上帝榮耀已降臨。<br/>
+  和平傳播大道行，
+  正義高懸四海清。
+  新的希望和光明，
+  照亮我們的眼睛。
+  他讓世人得永生，
+  獲得仁慈享恩情。
+  神子救贖有萬能，
+  融化愛恨火與冰。
+  天使高唱世界聽：
+  上帝榮耀已降臨。<br/>
+<em>中文填词：舟山 2010.12.02.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20101206x">O Come, All Ye Faithful <em>(1744)</em></h3>
+  O come, all ye faithful, joyful and triumphant,
+  O come ye, O come ye, to Bethlehem.
+  Come and behold Him, born the King of angels;
+  O come, let us adore Him, (3x)
+  Christ the Lord.<br/>
+  True God of true God, Light from Light Eternal,
+  Lo, he shuns not the Virgin’s womb;
+  Son of the Father, begotten, not created;
+  O come, let us adore Him, (3x)
+  Christ the Lord.<br/>
+  Sing, choirs of angels, sing in exultation;
+  Sing, all ye citizens of heaven above!
+  Glory to God, all glory in the highest;
+  O come, let us adore Him, (3x)
+  Christ the Lord.<br/>
+  Yea, Lord, we greet Thee, born this happy morning;
+  Jesus, to Thee be glory given;
+  Word of the Father, now in flesh appearing.
+  O come, let us adore Him, (3x)
+  Christ the Lord...<br/>
+<em><i>Songwriters</i>: John Francis Wade</em>
+</div>
+<div class="tian"><h3 class="t3 tian">萬方齊來敬仰 <em>【填词】</em><a class="sup" href="#d20101206x" title="">&#11139;</a></h3>
+  萬方齊來信仰，歡樂中喜洋洋
+  萬方來、萬方來、到　伯利恆
+  萬里來朝拜他，天生衆神之王
+  萬方來顯示崇敬──　
+  基督之名<br/>
+  他是萬王之王，光之光的永恒
+  他就是　聖潔處子的聖嬰
+  在天的父之子，非同尋常降生
+  萬方來顯示崇敬──　
+  基督之名<br/>
+  聽天使的歌唱，歌唱歡樂之聲
+  聽　唱給在上天堂的衆生
+  榮耀歸于上帝，聖父聖子聖靈
+  萬方來顯示崇敬──　
+  基督之名<br/>
+  主啊我們贊美，在這快樂黎明
+  耶稣是　我们的圣恩荣膺
+  天父新约传承，要让大道普行
+  萬方來顯示崇敬──　
+  基督之名<br/>
+<em>中文填词：舟山 2010.12.06.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20101209x">What Child Is This / Greensleeves <em>(1865)</em></h3>
+  What child is this who laid to rest
+  On Mary’s lap is sleeping
+  Whom angels greet with anthems sweet
+  While shepherds watch are keeping<br/>
+  This, this is Christ the King
+  Whom shepherds guard and angels sing
+  Haste, haste to bring him laud
+  The Babe, the Son of Mary<br/>
+  Why lies he in such mean estate
+  Where ox and ass are feeding
+  Good Christian fear, for sinners here
+  The silent Word is pleading<br/>
+  Nails, spears shall pierce Him through
+  The cross be born for me and you
+  Hail, hail the word meet flesh
+  The Babe, the Son of Mary<br/>
+  So bring Him incense, gold, and myrrh
+  Come peasant king to own Him
+  The King of kings, salvation brings
+  Let loving hearts enthrone Him<br/>
+  This, this is Christ the King
+  Whom shepherds guard and angels sing
+  Haste, haste to bring him laud
+  The Babe, the Son of Mary<br/>
+<em><i>Songwriters</i>: Thomas Hewitt Jones</em>
+</div>
+<div class="tian"><h3 class="t3 tian">誰之子 <em>【填词】</em><a class="sup" href="#d20101209x" title="">&#11139;</a></h3>
+  是誰的孩子在安睡
+  在瑪麗的懷中未醒
+  有天使頌歌的甜美
+  當牧人守護着安寧<br/>
+  這是耶穌神的權柄
+  牧人守衛聖歌傾聽
+  匆匆帶來他的福音
+  瑪麗降生神子聖嬰<br/>
+  有誰生來似此貧羸
+  牛馬槽下無遮無屏
+  為人所累為人贖罪
+  默默真言為世陳情<br/>
+  鐵釘槍刺穿身而過
+  上帝十字為你為我
+  肉体血軀抵風履冰
+  瑪麗降生神子聖嬰<br/>
+  奉獻珍寶油脂香精
+  爲民做主帶來和平
+  萬王之王解救衆生
+  愛心之冠加諸其名<br/>
+  這是耶穌神的權柄
+  牧人守衛聖歌傾聽
+  匆匆帶來他的福音
+  瑪麗降生神子聖嬰<br/>
+<em>中文填词：舟山 2010.12.09.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20110321x">Set Fire To The Rain <em>(2011)</em></h3>
+  I let it fall, my heart,
+  And as it fell, you rose to claim it,
+  It was dark and I was over,
+  Until you kissed my lips and you saved me,
+  My hands, they were strong,
+  But my knees were far too weak,
+  To stand in your arms without falling to your feet,
+  But there's a side to you that I never knew, never knew,
+  All the things you'd say, they were never true, never true,
+  And the games you'd play, you would always win, ...<br/>
+  <i>(Chorus)</i> But I set fire to the rain,
+  Watched it pour as I touched your face,
+  Well, it burned while I cried,
+  'Cause I heard it screaming out your name, your name!<br/>
+  When laying with you I could stay there,
+  Close my eyes, feel you here forever,
+  You and me together, nothing is better,
+  'Cause there's a side to you that I never knew, never knew,
+  All the things you'd say, they were never true, never true,
+  And the games you'd play, you would always win, ...<br/>
+  <i>(Chorus)</i> But I set fire to the rain,
+  Watched it pour as I touched your face,
+  Well, it burned while I cried
+  'Cause I heard it screaming out your name, your name!
+  I set fire to the rain
+  And I threw us into the flames
+  Where it felt something died
+  'Cause I knew that that was the last time, the last time!<br/>
+  Sometimes I wake up by the door,
+  That heart you caught must be waiting for you
+  Even now when we're already over
+  I can't help myself from looking for you.<br/>
+  <i>(Chorus)</i> I set fire to the rain,
+  Watched it pour as I touched your face,
+  Well, it burned while I cried
+  'Cause I heard it screaming out your name, your name
+  I set fire to the rain,
+  And I threw us into the flames
+  Where it felt something die
+  'Cause I knew that that was the last time, the last time<br/>
+  Oh ohhh! Oh noooo
+  Let it burn Oh oh ohhhh...<br/>
+<em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
+</div>
+<div class="tian"><h3 class="t3 tian">雨落情逝心已焚 <em>【填词】</em><a class="sup" href="#d20110321x" title="2011.03.21.">&#11139;</a></h3>
+  譲祂坠落，我的心
+  當祂坠落，你輕輕收起
+  我怕迷失　譲夜捕獲
+  你的吻給我生活的意義
+  我的手握着坚强，
+  但我的双膝乏而無力
+  依偎　在你怀里，不譲自己　失去力氣
+  但你的愛还有没有，譲我猜不透猜不透
+  　你所有的　安慰，從来難信守難信守
+  　我心中的　負累，永遠看不明看不明<br/>
+  我點燃雨中的餘情
+  看雨瓢潑　如決堤的眼睛
+  譲祂燒過，我哭過
+  當我愛過　心中只剩下你的名　你的名<br/>
+  我心依舊，失去你的寂寞
+  閉上雙眼，相守到世界之末
+  不棄不捨，擁有全部的快樂
+  可你的愛还有没有，譲我猜不透猜不透
+  　你所有的　安慰，從来難信守難信守
+  　我心中的　負累，永遠看不明看不明<br/>
+  我點燃雨中的餘情
+  看雨瓢潑　如決堤的眼睛
+  譲祂燒過，我哭過
+  當我愛過　心中只剩下你的名　你的名
+  點燃了火中的餘情
+  我們的愛融化如冰
+  譲我感覺祂的衰敗
+  譲我明白这只是最後的無奈　的無奈<br/>
+  有時喚起我心底的愁
+  屬於你的心，仍然苦苦在等候
+  就算現在我們已經結束
+  你的笑容永遠陪伴在我的左右<br/>
+  看雨中燃燒的餘情
+  看雨瓢潑　如決堤的眼睛
+  當祂燒過，我哭過
+  當我愛過　心中只剩下你的名　你的名
+  點燃了火中的餘情
+  我們的愛融化如冰
+  譲我感覺祂的衰敗
+  譲我明白这只是最後的無奈　的無奈<br/>
+  譲情燃
+  譲情燃……<br/>
+<em>中文填词 2011.03.21.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20121028x">Rolling In the Deep <em></em></h3>
+  There's a fire starting in my heart
+  Reaching a fever pitch and it's bring me out the dark
+  Finally I can see you crystal clear
+  Go ahead and sell me out and I'll lay your ship bare<br/>
+  See how I'll leave, (with) every piece of you
+  Don't underestimate the things that I will do
+  There's a fire starting in my heart
+  Reaching a fever pitch and it's bring me out the dark<br/>
+  The scars of your love remind me of us
+  They keep me thinking that we almost had it all
+  The scars of your love, they leave me breathless
+  I can't help feeling<br/>
+  <i>(Chorus)</i>
+  We could have had it all
+  Rolling in the deep
+  You had my heart inside your hand
+  And you played it to the beat<br/>
+  Baby, I have no story to be told
+  But I've heard one of you and
+  I'm gonna make your head burn
+  Think of me in the depths of your despair
+  Making a home down there as mine
+  Sure won't be shared<br/>
+  <i>(Repeat * and Chorus)</i><br/>
+  Throw your soul through every open door
+  Count your blessings to find what you look for
+  Turn my sorrow into treasured gold
+  You pay me back in kind and reap just what you sow<br/>
+  <i>(Repeat Chorus)</i><br/>
+<em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
+</div>
+<div class="tian"><h3 class="t3 tian">淪陷回憶裡 <em>【填词】</em><a class="sup" href="#d20121028x" title="2012.10.28.">&#11139;</a></h3>
+  我心升起　无名火一把
+  高烧过後　身体更疲乏
+  终於能够　看清了一切
+  你的背叛　让我和过去告别<br/>
+  找遍心中　仇恨的理由
+  将你赶出　我爱情的首都
+  我心升起　无名火一把
+  高烧过後　身体更疲乏<br/>
+  ※　留下的伤口，如回忆一丝丝
+  　　每当我想起，那是爱过的宇宙；
+  　　留下的伤口，让希望的心死
+  　　我无奈呻吟───<br/>
+（合声）
+  ☆　没有你的以後
+  　　我沦陷回忆里
+  　　你操控了我所有　的期盼
+  　　而我只是你的棋<br/>
+  悲局故事　何必长厮守
+  不可能分享的幸福　
+  只会让你心头疼
+  痴情愿想　绝望地破灭
+  不可能得到的答案　
+  终究一样没有解<br/>
+（重复※、☆）<br/>
+  给你自由　似绽放的花朵
+  给你祝福　找到追寻的归所
+  还我心囚　如丰厚的报酬
+  还我伤痛　是你播种的丰收　<br/>
+（重复☆）<br/>
+<em>中文填词 2012.10.28.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20121030x">Don't You Remember <em>(2011)</em></h3>
+  When will I see you again?
+  You left with no goodbye, not a single word was said,
+  No final kiss to seal any seam (anything),
+  I had no idea of the state we were in,<br/>
+  I know I have a fickle heart and a bitterness,
+  And a wandering eye, and heaviness in my head,<br/>
+  But don't you remember? Don't you remember
+  The reason you loved me before?
+  Baby, please remember me once more,<br/>
+  When was the last time you thought of me?
+  Or have you completely erased me from your memory?
+  I often think about where I went wrong,
+  The more I do, the less I know,<br/>
+  But I know I have a fickle heart and a bitterness,
+  And a wandering eye, and a heaviness in my head,<br/>
+  But don't you remember? Don't you remember
+  The reason you loved me before?
+  Baby, please remember me once more,<br/>
+  Gave you the space so you could breathe,
+  I kept my distance so you would be free,
+  And hoped that you'd find that missing piece,
+  To bring you back to me,<br/>
+  Why don't you remember? Don't you remember
+  The reason you loved me before?
+  Baby, please remember me once more,<br/>
+  When will I see you again? ...<br/>
+<em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
+</div>
+<div class="tian"><h3 class="t3 tian">無愛的挽歌 <em>【填词】</em><a class="sup" href="#d20121030x" title="2012.10.30.">&#11139;</a></h3>
+  何时与你再相见？
+  带走我的愛　没留一声告白
+  沒留下一词　你如此的无情
+  在爱与恨之间我分不出输赢<br/>
+  我承认自己　有点傻　有点自私
+  我盲目地去爱　容易迷失受伤害<br/>
+  我不求你太多　不求你太多～
+  ———让一生　换取你的一刻
+  求你　再一次和我聼昔日的歌<br/>
+  我无奈的感叹　有没有打动你
+  还是你早已狠心地磨灭我在记忆里
+  我总是要回想　不堪遗忘
+  可我想的越久　傷的越透<br/>
+  只承认自己　有点傻　有点自私
+  我盲目地去爱　容易迷失受伤害<br/>
+  我不求你太多　不求你太多～
+  ———让一生　换取你的一刻
+  求你　再一次和我聼昔日的歌<br/>
+  我付出一次次　你轻易抛弃
+  我用尽了情思　你却不珍惜
+  祈望有我一半的　痴爱如斯
+  让你回心转意<br/>
+  爱不求你太多　不求你太多～
+  ———让一生　换取你的一刻
+  求你　再一次和我聼昔日的歌<br/>
+  何时与你再相见……<br/>
+<em>中文填词 2012.10.30.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20121030s">Someone Like You <em>(2011)</em></h3>
+  I heard that you're settled down
+  That you found a girl and you're married now
+  I heard that your dreams came true
+  Guess she gave you things I didn't give to you<br/>
+  Old friend, why are you so shy?
+  Ain't like you to hold back or hide from the light<br/>
+  I hate to turn up out of the blue, uninvited
+  But I couldn't stay away, I couldn't fight it
+  I had hoped you'd see my face
+  And that you'd be reminded
+  That for me it isn't over<br/>
+  Never mind, I'll find someone like you
+  I wish nothing but the best for you too
+  Don't forget me, I beg I remember you said,
+  Sometimes it lasts in love but
+  Sometimes it hurts instead<br/>
+  You know how the time flies
+  Only yesterday was the time of our lives
+  We were born and raised in a summer haze
+  Bound by the surprise of our glory days<br/>
+  I hate to turn up out of the blue uninvited
+  But I couldn't stay away, I couldn't fight it
+  I'd hoped you'd see my face
+  And that you'd be reminded
+  That for me it isn't over.<br/>
+  Never mind, I'll find someone like you
+  I wish nothing but the best for you too
+  Don't forget me, I beg I remember you said,
+  Sometimes it lasts in love but
+  Sometimes it hurts instead<br/>
+  Nothing compares, no worries or cares
+  Regrets and mistakes they are memories made.
+  Who would have known how bittersweet
+  this would taste?<br/>
+  Never mind, I'll find someone like you
+  I wish nothing but the best for you
+  Don't forget me, I beg I remember you said,
+  Sometimes it lasts in love but
+  Sometimes it hurts instead<br/>
+<em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
+</div>
+<div class="tian"><h3 class="t3 tian">此情依舊 <em>【填词】</em><a class="sup" href="#d20121030s" title="2012.10.30.">&#11139;</a></h3>
+  得知你終於成了家
+  終於找到了你心中的佳偶
+  得知你終於美夢得酬
+  而她給了你我所不能成就<br/>
+  朋友，為何如此見外？
+  訥言閃躲不似你一貫的風采<br/>
+  我只恨自己又翻出舊苦、和舊愛
+  但我就是無法面對、我無法忘懷
+  多麽奢望你見我一面，
+  看出我的表白
+  在我心底，那份情還在<br/>
+  算了算了，縱然是此情依舊
+  我收拾心情，让你自由如初
+  勿忘別離，我的愛，我還記得你感慨
+  若非是兩情成永愛，
+  惟余傷心和無奈<br/>
+  等候，如時間的漂白
+  過去的一切仿佛昨天的存在───
+  我们曾相互依偎，看尽盛夏余辉
+  而青葱岁月让人意外地沉醉<br/>
+  我只恨自己又翻出舊苦、和舊愛
+  但我就是無法面對、我無法忘懷
+  多麽奢望你見我一面，
+  看出我的表白
+  在我心底，那份情還在<br/>
+  算了算了，縱難尋新戀如舊
+  我給你祝福，願你自由無憂
+  勿忘勿移，我企待，记得你曾經的感慨
+  有時候兩情終成愛，
+  有時只剩下了傷害<br/>
+  初恋最甜美，没有烦恼也無所谓
+  錯過的和後悔，只是記憶的積累
+  谁能品嘗出這是甜是苦，
+  還是悲<br/>
+  算了算了，縱難尋新戀如舊
+  我給你祝福，願你自由無憂
+  勿忘勿移，我企待，记得你曾經的感慨
+  有時候兩情終成愛，
+  有時只剩下了傷害……<br/>
+<em>中文填词 2012.10.30.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20121031x">One And Only <em>(2011)</em></h3>
+  You've been on my mind
+  I grow fonder every day,
+  Lose myself in time
+  Just thinking of your face
+  God only knows
+  Why it's taken me so long
+  To let my doubts go
+  You're the only one that I want<br/>
+  I don't know why I'm scared,
+  I've been here before
+  Every feeling, every word,
+  I've imagined it all,
+  You never know if you never try
+  To forgive your past and simply be mine<br/>
+  I dare you to let me be your, your one and only
+  Promise I'm worthy to hold in your arms
+  So come on and give me the chance
+  To prove that I'm the one who can
+  Walk that mile until the end starts<br/>
+  If I've been on your mind
+  You hang on every word I say
+  Lose yourself in time
+  At the mention of my name
+  Will I ever know
+  How it feels to hold you close?
+  And have you tell me
+  Whichever road I choose you'll go<br/>
+  I don't know why I'm scared
+  'Cause I've been here before
+  Every feeling, every word, I've imagined it all,
+  You'll never know if you never try
+  To forgive your past and simply be mine<br/>
+  I dare you to let me be your, your one and only
+  I promise I'm worthy to hold in your arms
+  So come on and give me the chance
+  To prove that I'm the one who can
+  Walk that mile until the end starts<br/>
+  I know it ain't easy, giving up your heart
+  (Nobody's perfect, trust me I've learned it)<br/>
+  So I dare you to let me be your, your one and only
+  I promise I'm worthy to hold in your arms
+  So come on and give me a chance
+  To prove that I'm the one who can
+  Walk that mile until the end starts<br/>
+<em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
+</div>
+<div class="tian"><h3 class="t3 tian">愛的唯一 <em>【填词】</em><a class="sup" href="#d20121031x" title="2012.10.31.">&#11139;</a></h3>
+  你一直在我心田
+  我每天更爱你多一点
+  迷失了自己和时间
+  一直回味你的容颜
+  谁能猜透（天知道）
+  为何让疑虑尽走　
+  需要在这么久以後
+  因為你是我爱的唯一<br/>
+  我不知道为何畏怯，
+  这些我也曾经历过
+  每一丝心情、每一段波折
+  我都想像过了
+  若没有试过，你永远不明白
+  忘了过去你心就属于我<br/>
+  敢不敢让我成为　成为你爱的唯一
+  保证自己　能中你意　让你拥入怀里
+  你的机会　给我一次
+  来证明我注定伴你一世
+  和你厮守直到轮回复始<br/>
+  如果我在你心田
+  你品味我的一语一言
+  迷失了你自己和时间　
+  我的名字在你耳边
+  此情何时休（我想知道）
+  如何与你相拥相守
+  如何说服你（让你表白）
+  不管那条路，你都愿意一起走<br/>
+  我不知道为何畏怯
+  这些我也曾经历过
+  每一丝心情、每一段波折我都想像过了
+  若没有试过，你永远不明白
+  忘了过去你心就属于我<br/>
+  敢不敢让我成为　成为你爱的唯一
+  保证自己　能中你意　让你拥入怀里
+  你的机会　给我一次
+  来证明我注定伴你一世
+  和你厮守直到轮回复始<br/>
+  我知道这不很容易，让你的心放下
+  （沒有人是完美的，相信我學到了經歷）<br/>
+  敢不敢让我成为　成为你爱的唯一
+  保证自己　能中你意　让你拥入怀里
+  你的机会　给我一次
+  来证明我注定伴你一世
+  和你厮守直到轮回复始<br/>
+<em>中文填词 2012.10.31.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20130112x">Beauty and a Beat <em>(2012)</em></h3>
+  Show you off, tonight I wanna show you off
+  What you got, a billion could've never buy
+  We gonna party like it's 3012 tonight
+  I wanna show you all the finer things in life
+  So just forget about the world, we're young tonight<br/>
+  I'm coming for ya, I'm coming for ya
+  Cause all I need is a beauty and a beat
+  Who can make my life complete
+  It's all 'bout you, when the music makes you move
+  Baby do it like you do<br/>
+  Body rock, I want to see your body rock
+  Take a bow, you're on the hottest ticket now
+  We gonna party like it's 3012 tonight
+  I wanna show you all the finer things in life
+  So let's forget about the world, we're young tonight<br/>
+  I'm coming for ya, I'm coming for ya
+  Cause all I need is a beauty and a beat
+  Who can make my life complete
+  It's all 'bout you, when the music makes you move
+  Baby do it like you do<br/>
+<em><i>Song by </i> Justin Bieber</em>
+</div>
+<div class="tian"><h3 class="t3 tian">美麗和旋律 <em>【填词】</em><a class="sup" href="#d20130112x" title="2013.01.12.">&#11139;</a></h3>
+  炫耀吧，今夜我给你一个舞台──
+  美如画，你的容颜千金也难买
+  我们的聚会象征着华丽的未来
+  我想要展示给你最精致的时代
+  忘了当下趁我们的青春花才开<br/>
+  我为你崇拜，我为你喝彩……
+  在我的──心里──你的美丽似旋律
+  让我的世界如完璧
+  你是我梦所求，随着那音乐的舞步
+  让你的生命更投入<br/>
+  尽情跳，我渴望音乐的拥抱
+  你微笑，征服了所有的骄傲
+  我们的聚会象征华丽的未来
+  我想要展示给你最精致的时代
+  忘了当下趁我们的青春花才开<br/>
+  我为你崇拜，我为你喝彩……
+  在我的──心里──你的美丽似旋律
+  让我的世界有意义
+  你是我梦所求，随着那音乐的舞步
+  让你的生命更投入……<br/>
+<em>中文填词 2013.01.12.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20130814x">Stronger <em>(2012)</em></h3>
+  You know the bed feels warmer
+  Sleeping here alone
+  You know I dream in color
+  And do the things I want
+  You think you got the best of me
+  Think you've had the last laugh
+  Bet you think that everything good is gone
+  Think you left me broken down
+  Think that I'd come running back
+  Baby you don't know me, cause you're dead wrong<br/>
+  What doesn't kill you makes you stronger
+  Stand a little taller
+  Doesn't mean I'm lonely when I'm alone
+  What doesn't kill you makes a fighter
+  Footsteps even lighter
+  Doesn't mean I'm over cause you're gone<br/>
+  What doesn't kill you makes you stronger, stronger
+  Just me, myself and I
+  What doesn't kill you makes you stronger
+  Stand a little taller
+  Doesn't mean I'm lonely when I'm alone<br/>
+  You heard that I was starting over with someone new
+  They told you I was moving on, over you
+  You didn't think that I'd come back
+  I'd come back swinging<br/>
+  You try to break me, but you see
+  What doesn't kill you makes you stronger
+  Stand a little taller
+  Doesn't mean I'm lonely when I'm alone
+  What doesn't kill you makes a fighter
+  Footsteps even lighter
+  Doesn't mean I'm over cause you're gone<br/>
+  What doesn't kill you makes you stronger, stronger
+  Just me, myself and I
+  What doesn't kill you makes you stronger
+  Stand a little taller
+  Doesn't mean I'm lonely when I'm alone<br/>
+  Thanks to you I got a new thing started
+  Thanks to you I'm not the broken-hearted
+  Thanks to you I'm finally thinking about me
+  You know in the end the day you left was
+  just my beginning<br/>
+  In the end ...
+  What doesn't kill you makes you stronger
+  Stand a little taller
+  Doesn't mean I'm lonely when I'm alone
+  What doesn't kill you makes a fighter
+  Footsteps even lighter
+  Doesn't mean I'm over cause you're gone
+  What doesn't kill you makes you stronger, stronger
+  Just me, myself and I
+  What doesn't kill you makes you stronger
+  Stand a little taller
+  Doesn't mean I'm lonely when I'm alone<br/>
+<em><i>Song by </i> Kelly Clarkson</em>
+</div>
+<div class="tian"><h3 class="t3 tian">愛過心更強 <em>【填词】</em><a class="sup" href="#d20130814x" title="2013.08.14.">&#11139;</a></h3>
+  也许还有温暖的被窝
+  似独处的模样
+  也许梦里有五光十色
+  如自由的想象
+  别以为你让我迷失自己
+  以为我让你得了意
+  别以为我的爱和情　为你收藏
+  以为你让我受了伤
+  以为我想回到你身旁
+  其实你会错了意，搞不明白状况<br/>
+  我大难不死，变得更强了
+  站得更加高了
+  不必带着忧伤　独自流浪
+  我大难不死，心想开了
+  脚步更轻快了
+  别以为我错过了　为你独唱<br/>
+  我大难不死，变得更强、更强了
+  忘了你、和过去、和爱
+  我大难不死，变得更强、更强了
+  站得更加高了
+  不必带着忧伤　独自流浪<br/>
+  你得知　我的生活中又有了新朋友
+  告诉你　我找到了方向，弃了旧
+  别以为我不会回来
+  我会回来比输赢<br/>
+  你给我的打击，有了结局：
+  我大难不死，变得更强了
+  站得更高了
+  不必带着忧伤　独自流浪
+  我大难不死，心想开了
+  脚步更轻快了
+  别以为我错过了　为你独唱<br/>
+  我大难不死，变得更强、更强了
+  忘了你、和过去、和爱
+  我大难不死，变得更强了
+  站得更加高了
+  不必带着忧伤　独自流浪<br/>
+  感谢你　我又整装出发了
+  感谢你　我没有让心倾塌
+  感谢你　我终于找到了自己
+  就在你离开了我的那一天　
+  回归我的宁静<br/>
+  到如今……
+  我大难不死，变得更强了
+  站得更加高了
+  不必带着忧伤　独自流浪
+  我大难不死，心想开了
+  脚步更轻快了
+  别以为我错过了　为你独唱
+  我大难不死，变得更强、更强了
+  忘了你、和过去、和爱
+  我大难不死，变得更强了
+  站得更加高了
+  不必带着忧伤　独自流浪……<br/>
+<em>中文填词 2013.08.14.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20130915x">Working My Way Back To You <em>(1979)</em></h3>
+  I'll be working my way back to you, babe
+  With a burning love inside
+  Hey, I'm working my way back to you, babe
+  And the happiness that died
+  I let it get away
+  Do-do, do-da, do (Been paying every day)
+  Do-do, do-da, do<br/>
+  When you were so in love with me
+  I played around like I was free
+  Thought I could have my cake and eat it too
+  But how I cried over losing you<br/>
+  See, I'm down and out
+  But I ain't about to go living my life without you
+  Hey, every day, I made you cry
+  I'll pay and, girl, 'til the day I die<br/>
+  I'll keep working my way back to you, babe
+  With a burning love inside
+  Yeah, I'm working my way back to you, babe
+  And the happiness that died
+  I let it get away
+  Do-do, do-da, do (Been paying every day)
+  Do-do, do-da, do<br/>
+  Oh, I used to love to make you cry
+  It made me feel like a man inside
+  If I had been a man in reality
+  You'd be here, baby, loving me<br/>
+  Now my nights are so long and lonely
+  And I ain't too proud, babe, I just miss you so
+  Girl, but you're too proud, and you won't give in
+  But when I think about all I could win<br/>
+  I'll keep working my way back to you, babe
+  With a burning love inside
+  Yeah, I'm working my way back to you, babe
+  And the happiness that died<br/>
+  I let it get away
+  Do-do, do-da, do (Been paying every day)
+  Do-do, do-da, do
+  (Yooooou, you, babe) My road is kind of long
+  (Yooooou, you, babe) I just gotta get back home<br/>
+  Whoa, I'm really sorry for acting that way
+  I'm really sorry - Ooh, little girl
+  I'm really sorry for telling you lies for so long
+  Oh, please, forgive me, girl, come on
+  (give me a chance)
+  Won't you forgive me, girl, hey
+  (let's have romance)
+  Ooh, forgive me, girl (let's try again)
+  Come on, forgive me, girl
+  I want you over and over
+  And over and over again<br/>
+  I'll keep working my way back to you, babe
+  With a burning love inside
+  Yeah, I'm working my way back to you, babe
+  And the happiness that died<br/>
+  I let it get away
+  Do-do, do-da, do (Been paying every day)
+  Do-do, do-da, do<br/>
+<em><i>Song by </i>: The Spinners</em>
+</div>
+<div class="tian"><h3 class="t3 tian">用心贏你回 <em>【填词】</em><a class="sup" href="#d20130915x" title="2013.09.15.">&#11139;</a></h3>
+  我要用心赢你回来～噢，宝贝
+  点燃生命中的爱
+  我在用心赢你回来～噢，宝贝
+  过去幸福已不在
+  我已错过了机会
+  嘟嘟－嘟嘟－嘟（尝尽每天的後悔）
+  嘟嘟－嘟嘟－嘟<br/>
+  当你为我倾尽全部爱意
+  我行为放浪不懂得珍惜
+  以为自己可以黑暗独处
+  终於不堪失去你的辛苦<br/>
+  就算受伤煎熬
+  我也不愿意不能够停止对你的追求
+  嘿，我已後悔～，我不应该
+  愿挽回你心，用我生命等待<br/>
+  我要用心赢你回来～噢，宝贝
+  点燃生命中的爱
+  我在用心赢你回来～噢，宝贝
+  过去幸福已不在
+  我已错过了机会
+  嘟嘟－嘟嘟－嘟（尝尽每天的後悔）
+  嘟嘟－嘟嘟－嘟<br/>
+  喔我忍心看着你受伤害
+  用来证明我男人的内在
+  若是我有真正的男子气
+  你早就能对我回心转意<br/>
+  漫漫长夜我彷徨而孤寂
+  我不再让自傲停止对你思念的守候
+  可你也有骄傲，你不再有怜悯
+  即使能让我的努力用尽<br/>
+  我要用心赢你回来～噢，宝贝
+  点燃生命中的爱
+  我在用心赢你回来～噢，宝贝
+  过去幸福已不在<br/>
+  我已错过了机会
+  嘟嘟－嘟嘟－嘟（尝尽每天的後悔）
+  嘟嘟－嘟嘟－嘟
+  （喔～哊～宝贝）爱的归途似迷雾笼
+  （喔～哊～宝贝）回家的我期待重重<br/>
+  我真的無意，让你受负累
+  我真的無意……喔，我的女孩
+  我真的無意，忽视你的存在和梦想
+  喔，请你，接受歉意，和我的补偿
+  （再一次尝试）
+  求你接受歉意，我的赎罪
+  （这是我的浪漫的诗）
+  喔，我的歉意，和我（再尝试一次）
+  原谅我的无意，让我
+  和你再一次再一次
+  再一次再见你一面<br/>
+  我要用心赢你回来～噢，宝贝
+  点燃生命中的爱
+  吔～我在用心赢你回来～噢，宝贝
+  过去幸福已不在<br/>
+  我已错过了机会
+  嘟嘟－嘟嘟－嘟（尝尽每天的後悔）
+  嘟嘟－嘟嘟－嘟……<br/>
+<em>中文填词 2013.09.15.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20130916x">Somewhere Over The Rainbow <em></em></h3>
+  Somewhere over the rainbow - Way up high
+  And the dreams that you've dreamed of
+  Once in a lullaby
+  Somewhere over the rainbow - Bluebirds fly
+  And the dreams that you've dreamed of
+  Dreams really do come true ~<br/>
+  Someday I'll wish upon a star
+  And wake up where the clouds are far behind me ...
+  Where trouble melts like lemon drops
+  High above the chimney tops
+  That's where you'll find me ... oh ~<br/>
+  Somewhere over the rainbow - Bluebirds fly
+  And the dreams that you dare to ...
+  Oh why, oh why can't I?<br/>
+  Well, I see trees of green and red roses too,
+  I'll watch them bloom for me and you
+  And I think to myself,
+  What a wonderful world<br/>
+  Well I see skies of blues
+  And I see, clouds of white,
+  And the brightness of day
+  I like the dark and I think to myself,
+  What a wonderful world<br/>
+  The colors of the rainbow so pretty in the sky
+  Are also on the faces of people passing by
+  I see friends shaking hands saying how do you do
+  They're really saying I... I love you
+  I hear babies cry, and I watch them grow
+  They'll learn much more than really know
+  And I think to myself
+  What a wonderful world<br/>
+  Someday I'll wish upon a star
+  And wake up where the clouds are far behind me ...
+  Where troubles melts like lemon drops
+  High above the chimney tops
+  That's where you'll find me ... Oh ~<br/>
+  Somewhere over the rainbow - Way up high
+  And the dreams that you dare to ...
+  Oh why, oh why can't I?<br/>
+  Woo woo woo ...<br/>
+<em><i>Songwriters</i>: Harburg E Y / Arlen Harold</em><br/>
+</div>
+<div class="tian"><h3 class="t3 tian">彩虹之上 <em>【填词】</em><a class="sup" href="#d20130916x" title="2013.09.16.">&#11139;</a></h3>
+  彩虹像蓝天之舟，雲儿白
+  美梦尽如你想象
+  宛似婴儿的情怀
+  彩虹像蓝天之舟，鸟儿飞来
+  美梦尽如你想象
+  成真美梦如画图<br/>
+  许愿未来以星月为家
+  醒来时云朵远在天涯　的边际……
+  烦恼消散如柠檬茶
+  随烟逝去天边晚霞
+  那才是我　梦的园地……<br/>
+  彩虹像蓝天之舟，鸟儿飞来
+  美梦尽入你的蓝图
+  是否在，你心之外～？<br/>
+  当我見绿树成荫和、花红無数
+  她们的绽放，为你我舞
+  而我，想对自己说
+  这世界充满着欢乐<br/>
+  当我看見蓝天楚楚
+  又看見，白色雲彩
+  晴空之下风景优美
+  看夜色如纱，而我，想对自己说
+  这世界充满着欢乐<br/>
+  那七彩的雨虹，美丽地盛开
+  如幸福的人们，在此间徘徊
+  我見朋友们握手时真情——问候会晤
+  他们珍惜真心（的）爱……爱的付出
+  听着哭泣的孩子，学着蹒跚行走
+  他们要学很多，不必忧愁
+  而我，想对自己说
+  这世界充满着欢乐<br/>
+  许愿未来以星月为家
+  醒来时云朵远在天涯　的边际……
+  烦恼消散如柠檬茶
+  随烟逝去天边晚霞
+  那才是我　梦的园地……噢～<br/>
+  彩虹像蓝天之舟，雲儿白
+  美梦尽入你的蓝图
+  是否在，你心之外？<br/>
+  喔……喔……喔……<br/>
+<em>中文填词 2013.09.16.</em><br/>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20140819x">When I'm Gone <em>(2021 by Anna Kendrick)</em></h3>
+  I got my ticket for the long way round
+  Two bottles of whiskey for the way
+  And I sure would like some sweet company
+  And I'm leaving tomorrow
+  Whaddya you say?<br/>
+  When I'm gone (2x)
+  You're gonna miss me when I'm gone
+  You're gonna miss me by my hair
+  You're gonna miss me everywhere
+  Oh, you're gonna miss me when I'm gone<br/>
+<i>**</i> When I'm gone (2x)
+    You're gonna miss me when I'm gone
+    You're gonna miss me by my hair
+    You're gonna miss me everywhere
+    Oh, you're gonna miss me when I'm gone<br/>
+    When I'm gone (2x)
+    You're gonna miss me when I'm gone
+    You're gonna miss me by my walk
+    You're gonna miss me by my talk
+    Oh, you're gonna miss me when I'm gone<br/>
+  I got my ticket for the long way round
+  The one with the prettiest of views
+  It's got mountains, it's got rivers
+  Its got sights to give you shivers
+  But it sure would be prettier with you<br/>
+  <i>* Repeat *</i><br/>
+<em><i>Songwriters</i>: A. P. Carter / Heloise Maud Tunstall-Behrens / Luisa Amanda Gerstein Vallejo</em>
+</div>
+<div class="tian"><h3 class="t3 tian">远行快唱 <em>【填词】</em><a class="sup" href="#d20140819x" title="">&#11139;</a></h3>
+  我带着一张船票去远方
+  再带点儿威士忌不算累
+  寂寞旅途我不想没人陪
+  明天离开你是否
+  有准备？<br/>
+  我心上……我心上……
+  希望你还留在我心上
+  希望你牢记着我的爱
+  希望你明白了我的无奈
+  噢，希望你还留在我心上<br/>
+<i>★</i> 我心上……我心上……
+    希望你还留在我心上
+    希望你牢记着我的爱
+    希望你明白了我的无奈
+    噢，希望你还留在我心上<br/>
+    我心上……我心上……
+    希望你还留在我心上
+    希望你还记得我的难过
+    希望你能想起我的歌
+    噢，希望你还留在我心上<br/>
+  我带着一张船票去远方
+  最好的风景最好的气候
+  那里有山有水、那里有湖有河
+  那里还有最美丽的传说
+  可是没有你最多的温柔<br/>
+  <i>★【重複】</i><br/>
+<em>中文填词：舟山 2014.08.19.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20151128x">Demons <em>(2012 by Imagine Dragons)</em></h3>
+  When the days are cold and the cards are fold
+  And the saints we see are all made of gold
+  When your dreams all fail and the ones we hail
+  Are the worst of all and the blood’s run stale<br/>
+  I wanna hide the truth I wanna shelter you
+  But with the beast inside there’s nowhere we can hide
+  No matter what we breed we still are made of greed
+  This is my kingdom come This is my kingdom come<br/>
+<i>**</i>  When you feel my heat Look into my eyes
+    It’s where my demons hide It’s where my demons hide
+    Don’t get too close It’s dark inside
+    It’s where my demons hide It’s where my demons hide<br/>
+  At the curtain’s call It's the last of all
+  When the lights fade out All the sinners crawl
+  So they dug your grave And the masquerade
+  Will come calling out At the mess you made<br/>
+  Don't wanna let you down But I am hell bound
+  Though this is all for you Don't wanna hide the truth
+  No matter what we breed we still are made of greed
+  This is my kingdom come This is my kingdom come<br/>
+  <i>* Repeat *</i><br/>
+  They say it's what you make I say it's up to fate
+  It's woven in my soul I need to let you go
+  Your eyes, they shine so bright I wanna save that light
+  I can't escape this now Unless you show me how<br/>
+  <i>* Repeat *</i><br/>
+<em><i>Songwriters</i>: Alexander Grant Jr.</em>
+</div>
+<div class="tian"><h3 class="t3 tian">心魔 <em>【填词】</em><a class="sup" href="#d20151128x" title="">&#11139;</a></h3>
+  在冬日的寒流，我結束了等候
+  而聖徒的眼裡，似金黃的深秋
+  當你夢想破碎，因此墮落頹廢
+  在魔鬼的懷抱，甘憑熱血消退<br/>
+  本想為你守護，遠離善惡愛仇
+  但我狂野難耐，沒人能夠躲開
+  無論生生息息，難免渴望期冀
+  唯你是我天堂、唯你是我天堂<br/>
+<i>★</i> 深藏在我眼底，是沸騰的情懷
+    讓我心魔深埋、讓我心魔深埋
+    請不要太接近，我黑暗的內在
+    讓我心魔深埋、讓我心魔深埋<br/>
+  當落幕的樂調，是最後的禱告
+  淡去燈光塵囂，引來罪靈舞蹈
+  翻檢你的是非，掀開你的真偽
+  必有大聲咆哮，指摘身後殘堆<br/>
+  不想讓你失望，可我如此魂傷
+  就此一切原由，未曾對你隱藏
+  無論生生息息，難免渴望期冀
+  唯你是我天堂、唯你是我天堂<br/>
+  <i>★【重複】</i><br/>
+  都說得自所為，我對命運不悔
+  無奈心靈枷鎖，是否應該放手
+  你眼中的光彩，是我心的存在
+  但我已忘了逃，除非是你知道<br/>
+  <i>★【重複】</i><br/>
+<em>中文填词：舟山 2015.11.28.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20151205x">Big Girls Don't Cry <em>(2006 by Fergie)</em></h3>
+  The smell of your skin lingers on me now
+  You're probably on your flight back to your home town
+  I need some shelter of my own protection, baby
+  To be with myself and center
+  Clarity, peace, serenity<br/>
+<i>**</i> I hope you know, I hope you know
+    That this has nothing to do with you
+    It's personal, myself and I
+    We've got some straightenin' out to do
+    And I'm gonna miss you like a child misses their blanket
+    But I've got to get a move on with my life
+    It's time to be a big girl now
+    And big girls don't cry<br/>
+  Don't cry ... Don't cry ... Don't cry<br/>
+  The path that I'm walking I must go alone
+  I must take the baby steps till I'm all grown, all grown
+  Fairy tales don't always have a happy ending, do they?
+  And I foresee the dark ahead if I stay<br/>
+  <i>* Repeat *</i><br/>
+  Like the little school mate in the school yard
+  We'll play jacks and Uno cards
+  I'll be your best friend, and you'll be mine
+  Valentine
+  Yes, you can hold my hand if you want to
+  'Cause I want to hold yours too
+  We'll be playmates and lovers, and share our secret worlds
+  But it's time for me to go home
+  It's getting late and dark outside
+  I need to be with myself and center
+  Clarity, peace, serenity<br/>
+<em><i>Songwriters</i>: Robb Boldt / Stacy Ferguson / Stefanie Ridel / Renee Sandstrom</em>
+</div>
+<div class="tian"><h3 class="t3 tian">不哭的女孩 <em>【填词】</em><a class="sup" href="#d20151205x" title="">&#11139;</a></h3>
+  清早的氣息纏繞在我的懷抱
+  遠去的航班是否已回到家鄉
+  我急於找个地方能安静躲避
+  讓平和迴歸我自己
+  讓愛清晰、真實、心内寧寂<br/>
+<i>★</i> 最後的坚守，最後的持久
+    为你、已傾注了我的所有
+    有我的承諾，有我的青睐
+    為我們的愛找到一條出路
+    想起你不會太久，像个迷戀玩具的小孩
+    但在生活中我要一切看開
+    不再哭泣，不再年少
+    做不哭的女孩……<br/>
+  女孩……女孩……女孩……<br/>
+  我選的路由我行，要一世去獨自闖
+  挣扎为了每一步，走出成長和向上
+  愛的童話并不是總有美麗憧憬結尾
+  而我看清前途迷暗有碍無回<br/>
+  <i>★ 重复 ★</i><br/>
+  像兒時玩伴一起追，一起玩耍
+  一起過家家，一起畫圖畫
+  我是你的緣分，你是我的最帥
+  和最愛
+  讓你我雙雙，把手牽一起跳舞
+  此生祗想與你　共度
+  可以相依相偎、做愛侣、偕老、心事互訴
+  但這一切都太過匆匆
+  看天色已微，而夕陽不在
+  愛已讓平和迴歸　我自己
+  讓愛清晰真實、心内寧寂<br/>
+<em>中文填词：舟山 2015.12.05.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词-->
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20180126x">A Million Dreams <em>(2017 by Huge Jackman)</em></h3>
+  <i># Verse 1: Young P.T. #</i>
+  I close my eyes and I can see
+  The world that's waiting up for me
+  That I call my own
+  Through the dark, through the door
+  Through where no one's been before
+  But it feels like home<br/>
+  <i># Pre-Chorus: Young P.T. #</i>
+  They can say, they can say it all sounds crazy
+  They can say, they can say I've lost my mind
+  I don't care, I don't care, so call me crazy
+  We can live in a world that we design<br/>
+  <i># Chorus: Young P.T. #</i>
+  'Cause every night I lie in bed
+  The brightest colors fill my head
+  A million dreams are keeping me awake
+  I think of what the world could be
+  A vision of the one I see
+  A million dreams is all it's gonna take
+  A million dreams for the world we're gonna make<br/>
+  <i># Verse 2: Young P.T. #</i>
+  There's a house we can build
+  Every room inside is filled
+  With things from far away
+  The special things I compile
+  Each one there to make you smile
+  On a rainy day<br/>
+  <i># Pre-Chorus: Young P.T. #</i>
+  They can say, they can say it all sounds crazy
+  They can say, they can say we've lost our minds
+  I don't care, I don't care if they call us crazy
+  Runaway to a world that we design<br/>
+  <i># Chorus: P.T. Barnum #</i>
+  Every night I lie in bed
+  The brightest colors fill my head
+  A million dreams are keeping me awake
+  I think of what the world could be
+  A vision of the one I see
+  A million dreams is all it's gonna take
+  A million dreams for the world we're gonna make<br/>
+  <i># Bridge: Charity Barnum, with P.T. Barnum #</i>
+  However big, however small
+  Let me be part of it all
+  Share your dreams with me
+  You may be right, you may be wrong
+  But say that you'll bring me along
+  To the world you see
+  To the world I close my eyes to see
+  I close my eyes to see<br/>
+  <i># Chorus: P.T. Barnum, Charity Barnum, together #</i>
+  Every night I lie in bed
+  The brightest colors fill my head
+  A million dreams are keeping me awake
+  A million dreams, a million dreams
+  I think of what the world could be
+  A vision of the one I see
+  A million dreams is all it's gonna take
+  A million dreams for the world we're gonna make<br/>
+  <i># Fade out: P.T. Barnum &amp; Charity Barnum #</i>
+  For the world we're gonna make<br/>
+<em><i>Songwriters</i>: Benj Pasek / Justin Paul</em>
+</div>
+<div class="tian"><h3 class="t3 tian">萬千夢想 <em>【填词】</em><a class="sup" href="#d20180126x" title="">&#11139;</a></h3>
+  <i>童声：</i>
+  我閉上眼，看得更清晰
+  世界为我，展開了謎題
+  等待我選中
+  一路掙扎，一路蹉跎
+  一路風景，無人走過
+  無改我初衷<br/>
+  <i>童声：</i>
+  別怪罪、別怪罪、我的癡迷
+  別怪罪、別怪罪、我如此大膽
+  不在意、不在意、說我癡迷
+  追求一個自我的實現<br/>
+  <i>和声：</i>
+  我每到夜晚　獨自發呆
+  幻想出最美　的色彩
+  萬千夢境　讓我心無寐
+  夢的世界　多麼神奇
+  夢的想象　讓我珍惜
+  萬千夢境　是它造就的美
+  萬千夢境　在我們心中描繪<br/>
+  <i>童声：</i>
+  童話世界　我們造就
+  每個房間　應有盡有
+  天涯海角的寶貝
+  件件費心　我找到
+  樁樁細數　讓你笑
+  如春雨的撫慰<br/>
+  <i>童声：</i>
+  別怪罪、別怪罪、我們癡迷
+  別怪罪、別怪罪、我們太大膽
+  不在意、不在意、說我們癡迷
+  去追逐一個夢想的實現<br/>
+  <i>和声：</i>
+  每到夜晚　獨自發呆
+  幻想出最美　的色彩
+  萬千夢境　讓我心無寐
+  夢的世界　多麼神奇
+  夢的想象　讓我珍惜
+  萬千夢境　是它造就的美
+  萬千夢境　在我們心中描繪<br/>
+  <i>和声：</i>
+  或者是大、或者是小
+  身在其中，有你就好
+  一生共有　美的記憶
+  又或精彩、又或迷惘
+  答應帶我　一起成長
+  讓世界變清晰
+  讓世界閉上眼睛更清晰
+  閉上眼睛更清晰<br/>
+  <i>和声：</i>
+  每到夜晚　獨自發呆
+  幻想出最美　的色彩
+  萬千夢境　讓我心無寐
+  萬千夢裡　萬千夢裡
+  夢的世界　多麼神奇
+  夢的想象　讓我珍惜
+  萬千夢境　是它造就的美
+  萬千夢境　在我們的心中描繪<br/>
+  <i>尾声：</i>
+  在我們的心中描繪<br/>
+<em>中文填词：舟山 2018.01.26.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<!--中文填词--><!--
+<div class="blog">
+<div class="yuan"><h3 class="t3 yuan" id="p20x"> <em></em></h3>
+<em><i>Song by </i> </em>
+</div>
+<div class="tian"><h3 class="t3 tian"> <em>【填词】</em><a class="sup" href="#d20x" title="">&#11139;</a></h3>
+<em>中文填词 20</em>
+</div>
+</div>--><!-- blog --><!--
+<a href="#atop" class="goto">⇑</a>
+-->
+
+
+<h2 class="h2" id="chinese-poems">中文诗词 (Chinese Poems)<a class="back" href="#atoc"></a></h2>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20081225x">大雪家中「坐」三首 <em>(2008.12.25)</em></h3>
+其一
+　　窗外风雪冻，屋里暖融融。今天养筋骨，明日踏青松。<br/>
+其二
+　　中午十二点，我还没吃饭。外面下大雪，不知怎么办？<br/>
+其三
+　　自诩为才女，非是柴火妞；你还弗如我，怎地不知羞？<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20081225x" title="2008.12.25.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20090911x">博士班第一天 <em>(2009.09.11)</em></h3>
+  不少年纪再入学，每月辛苦向南跋。
+  狂飙飞车五百哩，最怕路边藏警察。
+  四个小时到学校，累得都快变傻瓜。
+  还要咬牙去上课，回来已经趴下啦。
+  好在室外有公园，绿意盎然风景佳。
+  没有网络没电话，集体宿舍空间狭。
+  整天三餐美国饭，又想辣椒又想家。
+  十三同学各一方，成就学年第十八。<br/>
+<em><i>By </i> Divertida LZ ── 俄州銀瀑公園</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090911x" title="2009.09.11.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20091127x">感恩节「血拼」夜 <em>(2009.11.27)</em></h3>
+  火鸡一口没吃着，半夜就往商店跑。
+  西雅图城好热闹，人来人往不睡觉。
+  尽管寒风象小刀，热情却似火在烧。
+  逛了东店看西店，衣服买了不老少。
+  老孙悟能波罗蜜，老弟老友没头脑。
+  每人几件新衣袄，血拼之夜心情好。
+  爸爸妈妈多辛苦，又帮排队又拎包。
+  困来两眼要打架，累得走路也弯腰。
+  好不容易回家了，太阳升起高高照。
+  如此身轻图酣梦，今年俗事我尽抛。<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20091127x" title="2009.11.27.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20100828x">西北偏北游记 <em>(2009.08.)</em></h3>
+<h4 class="h4">五言詩☆路上行四首</h4>
+  莫道君行早，路上車不少。風馳向日出，我心在奔跑。
+  一山又一嶺，風景在絕頂。眾人方酣睡，唯有我獨行。
+  開車雖緊張，不忘鹵肉香。能吃上一口，神仙也不當。
+  才見斯波堪，又過愛的河。進了蒙大拿，還有幾道坡。<br/>
+<h4 class="h4">漁歌子☆路上行二首</h4>
+  一路東行蒙大拿，無邊風景詩興發。啃鳳爪，吃豬蹄，生活似此樂哈哈。
+  峻嶺崇山行路俠，青山碧水少人家。愛的河，蒙他拿，我來美國闖天涯。<br/>
+<h4 class="h4">五言詩☆黃石晨雨</h4>
+  薄霧攏青樹，厚雲壓紅木。欲覽山中景，林深不知處。
+  忽晴忽阵雨，时近时遠路。~~ Well, what can we do?<br/>
+<h4 class="h4">七言詩☆黃石裂巖</h4>
+  瓷牙咧嘴迎風站，千刀萬剮不躲閃。
+  歲月無情志更堅，為留人間一驚嘆！<br/>
+<h4 class="h4">五言詩☆冰川行二首</h4>
+  冰川雲霧緲，小鹿滿山跑。險路高低繞，心驚又肉跳。
+  山勢劈聳巖，峽路開亦艱。莫言行車苦，旅游非等閑。
+<h4 class="h4">六言詩☆旅游小記</h4>
+  黃石、提頓、冰川，数天也能看完。若問哪里最好？還得再來一番。<br/>
+<h4 class="h4">七言詩☆離開</h4>
+  墨染群山映平湖，霞藏雲頂照遲曙。
+  氣爽晨新留君住，世間煩惱拋此處。<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20100828x" title="2010.08.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<h2 class="h2" id="chinese-dayou">中文白话 (Chinese Etc.)<a class="back" href="#atoc"></a></h2>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20080126x">生日快樂 <em>(2008.01.26)</em></h3>
+  祝你生日快乐，这是我的存折；
+  祝你生日快乐，送我一辆跑车。
+  祝你生日快乐，you have everyday better;
+  祝你生日快乐，all the future brighter!
+  Happy birthday to you, send wishes in the queue.
+  Happy birthday to you, every year is all new!
+  Happy birthday to you, 爱慕你的眼眸；
+  Happy birthday to you, 祝你永远优秀！
+<br/>
+<em><i>Poem by </i> Boathill</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20080126x" title="2008.01.26.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20090628x">为了一棵花椒树 <em>(2009.06.28)</em></h3>
+  为了一棵花椒树，一行四人坐轮渡。
+  顺利到达玩赏岛，街边买了花一束。
+  小镇街道多集市，看了东铺看西铺。
+  白天见着猫头鹰，眇了一目还扮酷。
+  农贸市场真热闹，墙上还有画一幅。
+  假似真形真扮假，签到提款左右顾。
+  贪玩渐忘有时穷，陌生路寻无觅处。
+  绿茵树下求绿叶，花木丛中找花圃。
+  午後野餐绿豆粥，凉面椒盐糖辣醋。
+  灯塔岛畔望雪岭，雷尼尔山正迷雾。
+  归来阿尔凯海滩，隔岸再看西雅图。
+  送去夕阳无限好，余辉还照月影疏。<br/>
+<em><i>By </i> Divertida LZ ── 二零零九年夏「玩賞島」游記</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090628x" title="2009.06.28.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20090712x">擬舊文學詩一首──駕車於高速公路戲作 <em>(2009.07.12)</em></h3>
+  我们是──　　
+  寄生在车轮上的腐朽阶级，
+  不爱工作，也不爱学习。
+  整日好吃好喝，每天昏睡不起，
+  沉迷了思想，又虚淘了身体。
+  有时也曾想振作自己，
+  可懒惰总是最大的天敌。
+  让舒适摧残了健康、
+  和用金钱也买不到的毅力；
+  才知道没有艰苦的付出，
+  不明白宝葫芦的秘密。
+  挥霍人生作游戏，
+  似在虚拟的空间里逃避。
+  坐井城市的天地，
+  分不清麦子和稻米。
+  如果和劳动人民比一比，
+  这样的生活有何意义？<br/>
+<em><i>Poem by </i> Boathill</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090712x" title="2009.07.12.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20090717x">薰衣草節 <em>(2009.07.17)</em></h3>
+  神秘的薰衣草
+  为了你跨海上岛
+  紫色芳踪没见多少
+  天还热得不得了
+  好在摄影的热情比较高
+  先参观了海底锚
+  又见了风吹的呼啦草
+  可就是没找到小资的情调
+  向海开车把岛绕
+  没想到有一家的颜色这么好
+  如果说明年以後怎么着
+  肯定不会再来把你找<br/>
+<em><i>By </i> Divertida LZ ── Levender Festival</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090717x" title="2009.07.17.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20090720x">大厨 <em>(2009.07.20)</em></h3>
+  莫非我前世是大厨
+  为什么做饭如此牵肠挂腹
+  炖完了猪舌炒猪肚（堵）
+  烧好了大虾烤红薯
+  面包、月饼、还有豆沙酥
+  想做什么都不会打憷
+  只为让「不高兴」享受个口福
+  管他涨不涨将军的肚<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090720x" title="2009.07.20.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20090801x">當阿黑遇上芝麻 <em>(2009.08.01)</em></h3>
+  为了那一瞬间的爱恋
+  我宁愿坠入黑暗的深渊
+  就算是浸熬、就算是油煎
+  就算是受伤还要被撒盐
+
+  命运安排的短暂相逢
+  是生死时刻甜蜜的缠绵
+  只要能和你一起拥裹
+  不在乎未来的艰险
+
+  终于，这一切来到眼前
+  再仔细看看你那美丽的脸
+  红红的面颊滚满了雀斑
+  记住了你的笑容到永远
+
+  滚烫的油锅火花四溅
+  我和你紧搂着跳下绝不埋怨
+  当阿黑遇上芝麻───爱情
+  让我们羽化成仙<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090801x" title="2009.08.01.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20091231x">麻辣花生 <em>(2009.12.31)</em></h3>
+  剥去你的红袍
+  将那白胖的身体抱一抱
+  辣椒、花椒和大料
+  衬托出甜美味道
+
+  亲吻的那一瞬间
+  一生一世都忘不了
+  就算是嘴角烫起大泡
+  吃得再多也嫌少<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20091231x" title="2009.12.31.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20100724x">小资生活 <em>(2010.07.24)</em></h3>
+  才摘蓝莓
+  又吃红豆
+  这样的日子
+  谁不愿意享受
+
+  可是
+  忙工作头大如斗
+  为学习熬到更漏
+  不知何时
+  才能把一切看透
+  痛快来碗粉蒸肉
+  不用担心瘦不瘦<br/>
+<em><i>Written By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20100724x" title="2010.07.24.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="poem"><h3 class="t3 poem" id="p20110116x">大厨 <em>(2011.01.16)</em></h3>
+  将朴素的紫薯
+  轻轻蒸熟
+  剥皮後捣到它
+  六神无主
+  加入豆油、红糖、和炼乳
+  做成一面面的小鼓
+  水里打个滚儿
+  芝麻身上糊
+  烤箱溫度三百五十五<sup>†*</sup>
+  二十分钟就出炉
+  趁热赶紧吃一口
+  谁能说俺美国
+  农民生活苦<br/>
+<em>注<sup>†*</sup>：華氏溫度355°大約相當於攝氏180°。
+<i>Written By </i> Divertida LZ</em>
+</div>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20110116x" title="2011.01.16.">&#11139;</a></h3>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
+</div><!-- content -->
+<div class="atoc center"><span>英文〖
+  <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
+  <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
+  <a class="cy" href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
+  <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
+  <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
+</span>
+<div id="back"><br/><a class="back" href="#atoc"
+  title="⇐ Back to Category ⇒"></a></div>
+</div>
+
+</body>
+</html>
