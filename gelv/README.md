@@ -16,8 +16,9 @@
 
   - [白香詞譜](html/cipu-baixiang.xhtml)
   - [紅樓詩鈔](html/shiji-honglou.xhtml)｜
-    [舟山詩詞](../shiji.html)｜
-    [清明詩鈔](html/shiji-qingming.xhtml)
+    [清明詩鈔](html/shiji-qingming.xhtml)｜
+    [纱糸轩集](html/shiji-lyrics.html)｜
+    [舟山詩詞](../shiji.html)
   - [格律速成](html/5-min.xhtml)｜
     [马蹄韵格](html/matiyun.xhtml)｜
     [格律圖解](html/tujie.html)（
@@ -39,9 +40,9 @@
     [对联集锦](html/duilian.xhtml)
   - [平水韵表](html/pingshui.xhtml)｜
     [正韵简编](html/cilinzhengyun.xhtml)｜
-    [十三大辙](html/shisanzhe.html)
-  - [新词对韵](html/shenglv-duiyun.html)｜
     [拼音韻表](html/xinyun.html)
+  - [新词对韵](html/shenglv-duiyun.html)｜
+    [十三大辙](html/shisanzhe.html)
 
 
 <br/><a id="res" name="res"></a>

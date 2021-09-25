@@ -1,0 +1,406 @@
+/*
+ * CSS for Lyrics
+**/
+  a {
+    text-decoration: none;
+  }
+  a.goto {
+    content: "⇑"; /* "⇐" */
+    display: block;
+    margin: -0.35em 0.25em 0.25em 0em;
+    text-align: right;
+  }
+  a.goto:last-of-type {
+    visibility: hidden;
+    height: 0px;
+  }
+  a.goto:hover {
+    color: darkorange;
+    font-size: larger;
+    font-weight: bold;
+  }
+  div.atoc {
+    color: darkgray;
+    line-height: 2em;
+    white-space: nowrap;
+    width: 100%;
+  }
+  div.atoc>span {
+    border-top: double 0.25em lightgray;
+    padding: 0.25em 0em;
+  }
+  div.atoc>span a:hover {
+    background: gold;
+    border-radius: 0.25em;
+    margin: 0em -0.2em;
+    padding: 0em 0.2em;
+  }
+  div.atoc p {
+    line-height: 0.5em;
+  }
+  div#back {
+    background-color: #e0e0e0; /* whitesmoke */
+    position: relative;
+  }
+  div.blog {
+    display: flex;
+    border-top: dotted 0.25em lightgray;
+    border-radius: 0em 0em 1.75em 0em;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em 0em 0.5em 0.5em;
+    page-break-before: always;
+    position: relative;
+    width: 100%;
+    gap: 1em;
+  }
+  div.blog:last-of-type { /* must be in a wrapper */
+    margin-bottom: 0.25em;
+    border-radius: 0;
+  }
+  div.blog:nth-of-type(even) {
+    background-color: aliceblue; /*
+    background-color: lavender;
+    background-color: azure;
+    */
+  }
+  div.blog:nth-of-type(odd) {
+    background-color: oldlace; /*
+    background-color: papayawhip;
+    background-color: seashell;
+    */
+  }
+  div.blog br {
+    border: none;
+    content: ' ';
+    height: 0.25em;
+    display: block;
+    margin-top: -1em;
+    padding: 0em;
+  }
+  div.blog em {
+    color: darkgray;
+    background-color: transparent;
+    border-top: double 0.25em lightgray;
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+    font-style: normal;
+    font-size: 0.75em;
+    margin-top: 0.75em;
+    padding: 0em;
+  }
+  div.blog i {
+    color: darkgray;
+  }
+  div.blog h3.t3, div.blog h4 {
+    border: none;
+    color: darkred;
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0em 0em 0.5em;
+    white-space: nowrap;
+    text-align: left;
+    text-indent: 0em;
+  }
+  div.blog h4 {
+    color: darkolivegreen;
+  }
+  div.blog h3.t3 > a.sup:hover {
+    color: darkorange; font-size: large;
+  }
+  div.blog h3 a.sup {
+    font-size: 0.5em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  div.blog h3 em {
+    border: none;
+    vertical-align: top;
+    padding: 0em;
+    margin: 0em;
+  }
+  div.geci, div.yuan, div.ying, div.tian, div.poem {
+    line-height: 1.5em;
+    margin: 0em 0em 0em 0em;
+    padding-right: 0.5em;
+    white-space: pre;
+  }
+  div.geci, div.yuan, div.poem { /* 中文原词，Oringal lyrics */
+    border-radius: 3.9em;
+    border-right: dotted 1px lightgray;
+    color: darkslategray;
+  }
+  div.geci, div.tian, div.poem {
+    min-width: 20em;
+  }
+  div.ying, div.yuan {
+    min-width: 25em;
+  }
+  div.geci::after, div.yuan::after {
+    content: "";
+    background: lightgray;
+    bottom: 0px; right: 0px;
+    height: 90%;
+    position: relative;
+    width: 0.25em;
+  }
+  div.ying, div.tian, div.poem {
+    color: black;
+  }
+  div.text {
+    font-size: 0.85em;
+    margin: 3.5em 1.5em 0em 0em;
+    padding: 0em 1em 1em 0em;
+    vertical-align: top;
+  }
+  div.text> div#bailout {
+    font-size: 0.75em;
+    color: darkslategray;
+    max-height: 41.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 25.5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  sup {
+    color: darkgray;
+  }
+  h1.h1 {
+    color: lightgray;
+    font-size: 2.25em;
+    background-color: cornflowerblue; /* dodgerblue; */
+    background-image: url('../Images/smx-fangzhuan.png');
+    background-origin: content-box;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1.25em 1.5em;
+    line-height: 2.25em;
+    margin: 0em 0em 0.39em 0em;
+    padding: 0em 0.37em 0em 0.25em;
+    text-align: left;
+    text-indent: 0em;
+  }
+  h2.h2 {
+    color: beige;
+    border: none;
+    background-color: darkseagreen; /* dodgerblue; */
+    font-size: 1.25em;
+    margin: 0.25em 0em 0em 0em;
+    padding: 0em 0.5em 0em 0.25em;
+    page-break-before: always;
+    position: relative;
+  }
+  h2.h2 a.back, div#back a.back {
+    content: "\0020";
+    display: inline-block;
+    position: absolute;
+    bottom: 0px; right: 0px; top: -0.25em; left: 0px;
+    text-align: right;
+    title: "\21D2 Back to Category \21D0";
+    width: 100%;
+  }
+  h3.h3 {
+    border-right-width: 0.75em;
+    page-break-before: avoid;
+    margin: 0.25em 0em;
+    padding-right: 0.5em;
+    text-indent: 0.25em;
+    text-align: right;
+  }
+  ul {
+    display: block;
+    column-count: 2;
+    list-style: none;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0.5em;
+    text-align: right;
+    vertical-align: baseline;
+    white-space: normal;
+    width: 100%;
+  }
+  ul li::after {
+    content: "\0020 ";
+  }
+  ul li:hover {
+    background-color: lavenderblush;
+  }
+  ul li {
+    display: inline-block;
+    margin: 0 1.25em 0em 0em;
+    max-width: 50%; min-width: 25em;
+    padding: 0em;
+    text-align: right;
+    text-indent: 0em;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 50%;
+  }
+  ul li em {
+    color: darkviolet;
+    display: inline;
+    border-radius: 1.5em;
+    border: dotted 1px slateblue;
+    padding: 0.25em 0.39em 0.35em 0.39em;
+    height: 0.5em;
+    width: 0.95em;
+  }
+  ul li q:first-child {
+    color: darkred;
+    font-size: 0.75em;
+    display: inline-block;
+    vertical-align: top;
+    quotes: none;
+  }
+  ul li u, ul li em {
+    font-size: 0.65em;
+    font-style: normal;
+    background-color: transparent;
+    margin: 0em 0.15em 0.25em 0.35em;
+    vertical-align: bottom;
+    text-decoration: none;
+  }
+  ul li u {
+    border-radius: 0.25em;
+    border: solid 1px darkolivegreen;
+    padding: 0em 0.2em 0.15em 0.2em;
+  }
+  ul li u:hover, ul li em:hover {
+    background-color: khaki;
+    border-color: darkkhaki;
+    color: darkred;
+  }
+  ul li u, span a.cu {
+    color: olive;
+  }
+  ul li.mulu b, span a.cp {
+    color: darkgreen;
+  }
+  ul li.ying b, span a.ep {
+    color: royalblue;
+  }
+  ul li.ying q {
+    color: brown;
+    quotes: none;
+  }
+  ul li.ying span, span a.ey {
+    color: midnightblue;
+  }
+  ul li a, span a.cy {
+    color: darkslategray;
+    z-index: 100;
+  }
+  ul li a {
+    font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+  }
+  ul li a:hover, ul li span:hover {
+    color: darkorange;
+    font-weight: bold;
+  }
+  ul li i:hover {
+    color: brown;
+  }
+  ul li i {
+    color: lightgray;
+    font-size: 0.85em;
+    font-style: normal;
+    display: inline-block;
+    max-width: 5.0em; min-width: 5.0em;
+    padding-right: 0.25em;
+    text-align: right;
+    width: 5.0em;
+  }
+@media only screen and (min-width: 39em) {
+  body {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 65em) {
+  body {
+    font-size: 1.5em;
+  }
+  ul {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 29em) {
+  body {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 59em) {
+  div.geci, div.yuan { /* 中文原词，Oringal lyrics */
+    border: none;
+    line-height: 2.75em;
+    margin: 0em 0em 1.25em 0em;
+  }
+  div.tian, div.ying { /* 中文填词，英文译词 */
+    border: none;
+    line-height: 2.75em;
+    /*
+    margin: 0em; top: 1.25em; bottom: -1.25em;
+    */
+    margin: 1.25em 0em 0em 0em;
+    padding-bottom: 1.55em;
+    position: absolute;
+  }
+  div.blog h3.t3 {
+    display: inline-block;
+    padding-bottom: 1em;
+    vertical-align: top;
+  }
+  div.tian em, div.ying em {
+    border: none;
+  }
+  div.blog br {
+    margin: -1.05em 0em;
+  }
+  div.poem br {
+    margin: -0.5em 0em;
+  }
+  ul li::after {
+    content: "\0020\2022"; color: lightgray;
+  }
+  ul li {
+    margin: 0px;
+    max-width: 100%; min-width: 21em;
+    padding: 0em 1em 0em 0em;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+    /*
+    column-count: 1;
+    */
+  }
+}
+@media print {
+  a.goto, h3.t3 > a.sup {
+    visibility: hidden;
+  }
+  h2.h2 {
+    margin-top: 9%;
+  }
+}
+@media only print  and (max-width: 33em) {
+  div.geci, div.yuan, div.text { /* 中文原词，Oringal lyrics */
+    display: none;
+  }
+  ul {
+    column-count: 1;
+  }
+}
+@media only print  and (min-width: 32em) {
+  div.geci { /* 中文原词，Oringal lyrics */
+    min-width: 15em;
+  }
+}
