@@ -10,47 +10,140 @@
     a {
       text-decoration: none;
     }
+    a.atop {
+      display: block;
+      text-align: right;
+    }
+    h2#digest {
+      page-break-before: always;
+    }
+    h2#digest span {
+      border-bottom: dotted 0.25em darkgray;
+      border-top: dotted 0.25em darkgray;
+      padding: 0.25em 0em;
+    }
+    div.digest h4 {
+      margin-left: -0.25em;
+      text-indent: 0em;
+    }
+    div.center, h4 {
+      page-break-before: avoid;
+    }
+    div.center, h4 {
+      margin: 1em 0em 0em 1.5em;
+      text-align: center;
+    }
+    div.center {
+      margin-left: -1.75em;
+    }
+  @media print {
+    body {
+      font-size: 1.25em;
+    }
+    div.center, h2 {
+      margin-top: 15%;
+    }
+    h4 span {
+      border: solid 0.25em khaki;
+      border-radius: 1.5em;
+      padding: 0.25em;
+    }
+    h4 {
+      page-break-before: auto;
+      padding-top: 1em;
+    }
+  }
   </style>
 </head>
 
-<body>
-<h2 class="biankuang">新词对韵</h2>
-
-<h4 id="jia">麻韵</h4>
+<body id="atop">
+<h2 class="biankuang" id="duiyun">新词对韵</h2>
+<div class="center">
+<h4 id="jia"><span>麻韵</span></h4>
   <p class="poem">滑对糯，辣对麻，紫外对蓝牙。阀值对电量，伏特对落差。</p>
   <p class="poem">潜对埋，顶对刷，博主对大咖。微分对矩阵，衰变对坍塌。</p>
-  <p class="poem">绿茶婊，啤酒扎，近视对老花。耦合对函数，递减对叠加。</p>
+  <p class="poem">奶茶妹，啤酒扎，近视对老花。耦合对函数，递减对叠加。</p>
   <p class="poem">雅典娜，美杜莎，摇滚对桑巴。外包对内卷，看客对吃瓜。</p>
 
-<h4 id="ang">江韵</h4>
+<h4 id="ang"><span>江韵</span></h4>
   <p class="poem">半导体，偏振方，焦点对散光。电核对量子，频率对波长。</p>
   <p class="poem">超声速，表面张，色弱对压强。体积对容量，平面对立方。</p>
   <p class="poem">通气孔，汉明窗，期货对持仓。红移对黑洞，减速对增熵。</p>
-  <p class="poem">分界线，合金钢，挂号对药方。空间对磁场，密室对机房。</p>
+  <p class="poem">分界线，合金钢，飞地对洪荒。空间对磁场，密室对机房。</p>
 
-<h4 id="ong">通韵</h4>
+<h4 id="ong"><span>通韵</span></h4>
   <p class="poem">阔对空，减对升，场量对光能。超波对射线，热寂对熵增。</p>
   <p class="poem">槑对囧，蠢对萌，比重对平衡。蒸发对辐射，气化对沸腾。</p>
   <p class="poem">国对世，足对乒，雨果对图灵。安培对牛顿，地秤对天平。</p>
-  <p class="poem">流对量，岁对龄，滤液对干冰。饭圈死忠粉，职场白骨精。</p>
+  <p class="poem">流对量，岁对龄，滤液对干冰。饭圈高富帅，职场白骨精。</p>
   <p class="poem">王对帝，彩对虹，套路对神功。银河对宇宙，星海对太空，</p>
   <p class="poem">行对旅，交对通，功率对库容。气压对声阻，信号对脉冲。</p>
 
-<h4 id="you">尤韵</h4>
+<h4 id="qyi"><span>齐韵</span></h4>
+  <p class="poem">巧克力，比基尼，地址对信息。超弦对质子，日历对周期。</p>
+  <p class="poem">新射手，老司机，间隙对距离。托福对雅思，试卷对考题。</p>
+  <p class="poem">精油露，海藻泥，反转对逆袭。药方对挂号，病灶对恶疾。</p>
+  <p class="poem">拿分卷，送命题，单边对两极。迷宫对密室，惊险对悬疑。</p>
+  <p class="poem">山楂片，果丹皮，烧烤对扎啤。草根对公知，铁粉对歌迷。</p>
+  <p class="poem">塑料友，假想敌，片警对户籍。裸捐对假唱，昏招对臭棋。</p>
+
+<h4 id="xin"><span>心韵</span></h4>
+  <p class="poem">保险费，退休金，极客对水军。电流对波谷，分贝对噪音。</p>
+  <p class="poem">两面派，一根筋，领带对围巾。摩擦对阻力，惯性对重心。</p>
+  <p class="poem">北上广，南浦津，市两对公斤。排查对推理，结果对原因。</p>
+  <p class="poem">扑尔敏，康乃馨，博导对嘉宾。六姨对三舅，直系对血亲。</p>
+
+<h4 id="you"><span>尤韵</span></h4>
   <p class="poem">单身狗，三脚猫，迷粉对沙雕。发胶对眉笔，腮粉对牙膏。</p>
   <p class="poem">鄙视链，表情包，错位与对焦。毫厘对纳米，温度对身高。</p>
   <p class="poem">酷直帅，耽美弯，剩女对渣男。亚基对欧姆，相变对循环。</p>
   <p class="poem">参考系，艾里斑，光谱对电源。常数对变量，短路对绝缘。</p>
 
-<h4 id="xin">心韵</h4>
-  <p class="poem">保险费，退休金，极客对水军。电流对波谷，分贝对噪音。</p>
-  <p class="poem">两面派，一根筋，领带对围巾。摩擦对阻力，惯性对重心。</p>
+<h4 id="xue"><span>学韵</span></h4>
+  <p class="poem">谐音梗，几字诀，泼妇对破鞋。膈应对得瑟，反话对逆跌。</p>
+  <p class="poem">脱口秀，鸡汤贴，分裂对团结。种马酸爽文，後宫梦蝴蝶。</p>
+  <p class="poem">後遗症，成功学，死忠对妖邪。直销对诈骗，拐卖对打劫。</p>
+  <p class="poem">高铁站，唐人街，抵押对按揭。纸上风景线，舌尖美食节。</p>
 
-<h4 id="">齐韵</h4>
-  <p class="poem">巧克力，比基尼，地址对信息。超弦对粒子，日历对周期。</p>
-  <p class="poem">新射手，老司机，间隙对距离。托福对雅思，试卷对考题。</p>
-
+<p class="center">　　— 舟山 2021.09. 於西雅图 —<br/></p>
+<a href="#atop" class="atop">⇑</a>
 <p><br/></p>
+</div>
 
+
+<h2 id="digest">〔新韵〕<span>声律启蒙</span>〔网摘〕</h2>
+<div class="digest">
+<h4 id="x01"><span>一齐</span></h4>
+  <p class="poem">天对地，虚对实，鼠标对水泥。泡沫对干粉，昏着对臭棋。月皎皎，日迟迟，上火对着急。踏破铁鞋底，磨秃钢嘴皮。拉来投资，写字楼上成一统；做成网站，交易所里惊四夷。</p>
+
+<h4 id="x02"><span>二萧</span></h4>
+  <p class="poem">涨对落，暮对朝，有钱对烧包。宣传对广告，搞大对扩招。帅哥酷，靓妹娇，引凤对吹萧。撒网捕鲸鱼，弯弓射大雕。ＩＸＰ，员工三百犹嫌少，ＣＸＯ，月薪十万不算高。</p>
+
+<h4 id="x03"><span>三江</span></h4>
+  <p class="poem">楼对阁，门对窗，脸蛋对智商。金庸对王朔，内衣对时装。影碟圆，报纸方，合作对互帮。媒体肚儿鼓，网站面子光。大话西游，沐猴而冠成经典；红楼梦断，无人喝彩睡纸箱。</p>
+
+<h4 id="x04"><span>四豪</span></h4>
+  <p class="poem">瓜对果，李对桃，还珠对琼瑶。违禁对冒险，检查对求饶。你胡扯，我穷聊，风月对逍遥。哥哥常晚睡，美眉不早朝。一夜情深，浪漫网友成新宠；三载缘浅，患难连理泣号啕。</p>
+
+<h4 id="x05"><span>五歌</span></h4>
+  <p class="poem">繁对简，少对多，伊妹对伟哥。货到对付款，三轮对单车。你硬扛，我死磕，胡侃对能说。Ｂ２Ｃ卖碗，Ｂ２Ｂ销锅。电子商务，不这么搞怎么搞？数字时代，爱怎么着怎么着。</p>
+
+<h4 id="x06"><span>六麻</span></h4>
+  <p class="poem">一对零，四对八，洗澡对刮痧。小虫成站长，菜鸟变大虾。做了吗？卖了吧，贪心对傻瓜。三十万给个人，二百五是买家。阳光灿烂，乌云滚滚行将至；全线飘红，黑熊晃晃要来啦。</p>
+
+<h4 id="x07"><span>七阳</span></h4>
+  <p class="poem">高对下，短对长，针尖对麦芒。并购对上市，小猫对大王。同室内，卧榻旁，明争对暗防。你出你的国，我留我的洋。寄人篱下，悔不剩勇追穷寇，一走了之，尚可沽名学霸王。</p>
+
+<h4 id="x08"><span>八庚</span></h4>
+  <p class="poem">霜对雪，雨对风，落日对寒冬。减薪对裁员，拔蜡对吹灯。你强努，他硬撑，壮烈对牺牲。开源未见钱，节流柜底清。网络经济，深沟险壑未见底；纳斯达克，崇山峻岭又几重。</p>
+
+<h4 id="x09"><span>九咸</span></h4>
+  <p class="poem">清对浊，苦对咸，卫慧对棉棉。坚持对胜利，习惯对自然。明晃晃，光闪闪，广告对磨盘。主页都收费，伊妹齐来钱。连日辛劳，只盼寒冬早过去；一晌贪欢，还忆去年乐游园。</p>
+
+<h4 id="x10"><span>十侵</span></h4>
+  <p class="poem">破对立，旧对新，残冬对新春。无线对宽带，进步对创新。儿对女，子对孙，网络对乾坤，梦里乾坤大，世上网络亲。游戏笔墨，寄语网络请走好；调侃文字，奉劝各位别当真。</p>
+
+</div>
+<a href="#atop" class="atop">⇑</a>
 </body>
 </html>
