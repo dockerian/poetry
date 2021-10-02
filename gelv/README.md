@@ -16,8 +16,8 @@
 
   - [白香詞譜](html/cipu-baixiang.xhtml)
   - [紅樓詩鈔](html/shiji-honglou.xhtml)｜
-    [清明詩鈔](html/shiji-qingming.xhtml)｜
-    [纱糸轩集](html/shiji-lyrics.html)｜
+    [清明詩鈔](html/shiji-qingming.xhtml)
+  - [纱糸轩集](html/shiji-lyrics.html)｜
     [舟山詩詞](../shiji.html)
   - [格律速成](html/5-min.xhtml)｜
     [马蹄韵格](html/matiyun.xhtml)｜
