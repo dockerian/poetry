@@ -26,6 +26,10 @@
     font-size: larger;
     font-weight: bold;
   }
+  body, p {
+    font-size: 2vw;
+    font-size: 15pt;
+  }
   div.atoc {
     color: darkgray;
     line-height: 2em;
@@ -162,6 +166,7 @@
   }
   div.text {
     font-size: 0.85em;
+    line-height: 1.65em;
     margin: 3.5em 1.5em 0em 0em;
     padding: 0em 1em 1em 0em;
     vertical-align: top;
@@ -322,25 +327,39 @@
     text-align: right;
     width: 5.0em;
   }
-@media only screen and (min-width: 39em) {
-  body {
+@media only screen
+ and (min-device-width: 100px)
+ and (max-device-width: 639px) {
+  body, div, p, ul {
+    font-size: 1.29em;
+  }
+  div.text {
+    display: none;
+  }
+}
+@media only screen
+ and (min-device-width: 640px)
+ and (max-device-width: 1024px) {
+  body, div, p {
+    font-size: 1.15em;
+  }
+}
+@media only screen
+ and (min-device-width: 1023px)
+ and (max-device-width: 1599px) {
+  body, div, p {
     font-size: 1.25em;
   }
 }
-@media only screen and (min-width: 65em) {
-  body {
-    font-size: 1.5em;
+@media only screen and (min-width: 1600px) {
+  div, p {
+    font-size: 1.25em;
   }
   ul {
-    font-size: 0.85em;
+    font-size: 0.89em;
   }
 }
-@media only screen and (max-width: 29em) {
-  body {
-    font-size: 0.85em;
-  }
-}
-@media only screen and (max-width: 59em) {
+@media only screen and (max-width: 1024px) {
   div.geci, div.yuan { /* 中文原词，Oringal lyrics */
     border: none;
     line-height: 2.75em;
@@ -349,11 +368,7 @@
   div.tian, div.ying { /* 中文填词，英文译词 */
     border: none;
     line-height: 2.75em;
-    /*
-    margin: 0em; top: 1.25em; bottom: -1.25em;
-    */
-    margin: 1.25em 0em 0em 0em;
-    padding-bottom: 1.55em;
+    padding: 1.25em 0em 1.55em 0em;
     position: absolute;
   }
   div.blog h3.t3 {
@@ -496,6 +511,7 @@
   <li id="d20151205x"><a href="#p20151205x"><q>☆</q> Big Girls Don't Cry【不哭的女孩】 <i>2015.12.05.</i></a></li>
   <li id="d20180126x"><a href="#p20180126x"><q>☆</q> A Million Dreams【萬千夢想】 <i>2018.01.26.</i></a></li>
   <li id="d20210426x"><a href="#p20210426x"><u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
+  <li id="d20210921x"><a href="#p20210921x"><u title="English poem">E</u> <span>Mid-Autumn〖中秋〗</span> <i>2021.09.21.</i></a></li>
 <!--
   <li id="d20x"><a href="#p20x">【】 <i></i></a></li>
 -->
@@ -514,10 +530,12 @@
 </div><br/>
 
 
+
+
 <h2 class="h2" id="english-poems">英文诗歌 (English Poems)<a class="back" href="#atoc"></a></h2>
 
 
-<!--英文译词-->
+<!--英文译诗-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20010101x">The Three Realms <em>(2001)</em></h3>
 <h4 class="h4">1. Seek, see, and set a goal</h4>
@@ -533,7 +551,7 @@
   No regret of the loosing clothes,
   And pined away for her worth ...<br/>
 <h4 class="h4">3. Achieve the mastery</h4>
-  New Year’s Eve in “Green-jade Desk”
+  New Year's Eve in “Green-jade Desk”
    – by Xin-Qiji (1140~1207):
   Having sought for a thousand times,
   Turn back to find her under eyes ...<br/>
@@ -550,7 +568,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文译诗-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20010923x">道德经 <em>之一</em></h3>
   道可道，非常道。
@@ -584,16 +602,16 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20040724x">Look At The Sky <em>(2004)</em></h3>
   Look at the sky,
-  It’s up so high.
+  It's up so high.
   Painting with star all night,
   That is nothing can buy.
 
   Sitting side by side,
-  The whole world’s passing by.
+  The whole world's passing by.
   While hearts hold tight,
   Never ever say bye-bye.<br/>
 <em>By Divertida LZ 2004.07.24.</em>
@@ -603,7 +621,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20070508x">Random Thought <em></em></h3>
   It is cruel, but it is true
@@ -619,7 +637,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20071214x">A Cyber Dream <em></em></h3>
   I had this dream
@@ -630,9 +648,9 @@
   I saw a moving mouse
   A machine became my host
   I had to log on as a guest
-  I’m no longer called by name
+  I'm no longer called by name
   Only the ID could be my fame
-  People were fishing in the ’net
+  People were fishing in the 'net
   Almost everything you could get
   Shutting down the window
   Whole world was in shadow
@@ -645,7 +663,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20080202x">非打油者，「夢油」是也 <em></em></h3>
   无眠的灵魂
@@ -683,7 +701,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20080207x">两只老虎<em></em></h3>
 <h4 class="h4">儿歌版</h4>
@@ -700,14 +718,14 @@
 </div>
 <div class="ying"><h3 class="t3 ying">Do You Hear <em>(2008)</em> <a class="sup" href="#d20080207x" title="2008.02.07">&#11139;</a></h3>
 <h4 class="h4">+ English Translation</h4>
-  There’re two tigers, there’re two tigers
+  There're two tigers, there're two tigers
   Ran like deers, ran like deers
   One had no tail, one had no ear
-  It’s so weird, it’s so queer<br/>
+  It's so weird, it's so queer<br/>
 <h4 class="h4">+ My English version</h4>
   Do you cheer, do you hear?
   I am here, I am near
-  Do you like to stare? Don’t you have to fear?
+  Do you like to stare? Don't you have to fear?
   Oh my deer, oh my dear
 <br/>
 <em><i>Lyrics by </i> Jason Zhu</em>
@@ -716,7 +734,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文译诗-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20080415x">一日不見 <em></em></h3>
   彼采葛兮。
@@ -740,6 +758,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20081229x">A Little Too Little And A Little Too Late <em>(2008.12.29)</em></h3>
   Without bailout
@@ -756,20 +775,20 @@
   Less cares than worry …
   But continuing to spend in advance
   We will survive in little chance
-  Just like yesterday’s capitalism
-  Becomes today’s communism<br/>
+  Just like yesterday's capitalism
+  Becomes today's communism<br/>
 <em><i>Poem by </i> Jason Zhu</em>
 </div>
 <div class="text">
   <div id="bailout"><p class="t3 text"><em>Note:</em> <a class="sup" href="#d20081229x" title="2008.12.29.">&#11139;</a></p>
-  <p>I was watching CNN at the gym. One of the interesting reader’s letters to Lou Dobbs criticized the Bailout plans. Not the exact words, it said “The problem of the US was used to be that many people spent money that they did not have, while the banks lent money to people who could not pay back. Now the government is trying to spend the money that it does not have and lend the money to those who cannot pay back. As consumers and taxpayers, we feel being fooled twice.”</p>
+  <p>I was watching CNN at the gym. One of the interesting reader's letters to Lou Dobbs criticized the Bailout plans. Not the exact words, it said “The problem of the US was used to be that many people spent money that they did not have, while the banks lent money to people who could not pay back. Now the government is trying to spend the money that it does not have and lend the money to those who cannot pay back. As consumers and taxpayers, we feel being fooled twice.”</p>
   <p>Well, is this just a simple “problem” if one can spend money who does not have and does not have to pay back? I think it has become corruption and crisis for a country lives in such “who cares” philosophy. As long as the debt come and go without having to work hard, everyone will support such democracy to share the value (in money). Now, both the stimulus plan and the criticism to American economy seem “a little too little and a little too late”.</p>
 </div></div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20081230x">Caribbean Poems<em>〔英文〕</em></h3>
 <h4 class="h4">前站《波多黎各》</h4>
@@ -779,15 +798,15 @@
   You can enjoy a day, rest on a pillow
   You can get away, like ocean breeze blow
   After a sudden shower, skyline rainbow
-  It’s an ancient mountain echo
+  It's an ancient mountain echo
   From thousands years ago<br/>
 <h4 class="h4">第一站《巴贝朵丝》</h4>
   Come to Barbados
   Caribbean has never been so close
   See the blue, see the beach
-  It’s the sky you can reach<br/>
+  It's the sky you can reach<br/>
 <h4 class="h4">第二站《圣露西亚》</h4>
-  Saint Lucia, West Indies’ Aloha
+  Saint Lucia, West Indies' Aloha
   Black sand beach, red and white villa
   Tropical garden fuchsia, crystal water aqua
   Trees of papaya, orchards of banana
@@ -809,8 +828,7 @@
   Secret beach in Secret Bay
   Open to sunlight in a ray<br/>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em> <a class="sup" href="#d20081230x" title="2008.12.30">&#11139;</a></h3>
-<div><h4>附：七律一首</h4><pre>
+<div class="text"><h3 class="t3 text"><h4>附：七律一首</h4><em></em> <a class="sup" href="#d20081230x" title="2008.12.30">&#11139;</a></h3><pre>
   赢得几日赋清闲，
   远外藏身碧水边。
   细细银沙加勒比，
@@ -827,12 +845,12 @@
   看尽夕阳好梦圆。
   此去曾留过客影，
   归来赏雪入新年。
-</pre></div></div>
+</pre></div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文译诗-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20091005x">七律·己丑中秋同韻二首 <em></em></h3>
   漁舟待晚日西遲，
@@ -876,6 +894,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20091225x">Morning Hike <em>(2009.12.25)</em></h3>
   Hiking on a Christmas day
@@ -893,13 +912,13 @@
   With the fresh morning in the air
   The path knows where to where<br/>
 </div>
-<div class="poem"><h3 class="t3 poem">圣诞早晨<em>【無中文版】</em><a class="sup" href="#d20091225x" title="2009.12.25.">&#11139;</a></h3>
+<div class="text"><h3 class="t3 text"><em></em><a class="sup" href="#d20091225x" title="2009.12.25.">&#11139;</a></h3>
 </div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文译诗-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20100923p">见与不见 <em>〔中文〕</em></h3>
   你见，或者不见我　　　　
@@ -935,7 +954,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文译诗-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20100923x">古诗英译三首 <em>(2010)</em></h3>
 <h4>元·張養浩《雁儿落帶得勝令·退隱》—— The Clouds</h4>
@@ -965,7 +984,7 @@
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--中文填词-->
+<!--英文诗歌-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20101106x">Love Song <em>(2010)</em></h3>
   You are by my side
@@ -1005,20 +1024,22 @@
 <a href="#atop" class="goto">⇑</a>
 
 
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20101125x">Limerick - Thanksgiving <em>(2010.11.25)</em></h3>
   It comes again the Thanksgiving
   To pardon a turkey one year living
   Why some has the mercy
   While others tasting juicy
-  Who’re we have thanked for giving?<br/>
+  Who're we have thanked for giving?<br/>
 </div>
-<div class="text"><h3 class="t3 text"><em>N/A【無中文版】</em><a class="sup" href="#d20101125x" title="2010.11.25.">&#11139;</a></h3>
+<div class="text"><h3 class="t3 text"><em></em><a class="sup" href="#d20101125x" title="2010.11.25.">&#11139;</a></h3>
 </div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
 
 
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20101212x">To Donna and Mike <em>(2010.12.12)</em></h3>
   As thinking in picture of Mike
@@ -1047,12 +1068,13 @@
   It is the greeting from us<br/>
 <em><i>Written by </i> Divertida LZ 2010.12.26.</em>
 </div>
-<div class="poem"><h3 class="t3 poem">聖誕賀卡 <em>【無中文版】</em><a class="sup" href="#d20101212x" title="2010.12.12.">&#11139;</a></h3>
+<div class="text"><h3 class="t3 text"><em></em><a class="sup" href="#d20101212x" title="2010.12.12.">&#11139;</a></h3>
 </div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
 
 
+<!--英文诗歌-->
 <div class="blog">
 <div class="poem"><h3 class="t3 poem" id="p20110111x">Farewell to Sharon <em>(2011.01.11)</em></h3>
   This is to Dr. McGavick, Sharon
@@ -1088,13 +1110,13 @@
   To consult her another question<br/>
 <em><i>Written by </i> Divertida LZ 2011.01.11.</em>
 </div>
-<div class="text"><h3 class="t3 text"><em>N/A【無中文版】</em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;</a></h3>
+<div class="text"><h3 class="t3 text"><em></em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;</a></h3>
 </div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
 
 
-<!--英文译词-->
+<!--英文译诗歌-->
 <div class="blog">
 <div class="geci"><h3 class="t3 geci" id="p20210426x">清平调 <em>〔唐·李白〕</em></h3>
   雲想衣裳花想容，
@@ -1128,6 +1150,28 @@
 </div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
+
+
+<!--英文译诗-->
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20210921x">中秋 <em>〔中文〕</em></h3>
+  海上生明月，
+  天涯共此时。
+  九州同一梦，
+  千里寄相思。<br/>
+<em>原作：张九龄《望月怀远》</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Full-moon Festival<em></em> <a class="sup" href="#d20210921x" title="2021.09.21">&#11139;</a></h3>
+  Bright moon over the ocean
+  It's the time for a celebration
+  Share the meaning, share the scene
+  Share the being, share the dream<br/>
+<em>English Translation by Jason Zhu 2021.09.21.</em>
+</div>
+</div><!-- blog -->
+<a href="#atop" class="goto">⇑</a>
+
+
 
 
 <h2 class="h2" id="english-lyrics">英文译词 (English Lyrics)<a class="back" href="#atoc"></a></h2>
@@ -1345,6 +1389,8 @@
 -->
 
 
+
+
 <h2 class="h2" id="chinese-lyrics">中文填词 (Chinese Lyrics)<a class="back" href="#atoc"></a></h2>
 
 
@@ -1352,10 +1398,10 @@
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20030101x">I Could Fall In Love With You <em>(1999)</em></h3>
   I could lose my heart tonight
-  If you don’t turn and walk away
-  ’Cause the way I feel I might
+  If you don't turn and walk away
+  'Cause the way I feel I might
   Lose control and let you stay
-  ’Cause I could take in my arms
+  'Cause I could take in my arms
   　　... ... and never let go
   I could fall in love with you ...(2x)<br/>
   I can only wonder how
@@ -1424,11 +1470,11 @@
   Teaching me to love with heart
   Helping me open my mind<br/>
   I can fly
-  I’m proud that I can fly
+  I'm proud that I can fly
   To give the best of mine
   Till the end of the time
   Believe me I can fly
-  I’m proud that I can fly
+  I'm proud that I can fly
   To give the best of mine
   The heaven in the sky<br/>
   Stars in the sky
@@ -1440,23 +1486,23 @@
   Teaching me to love with heart
   Helping me open my mind<br/>
   I can fly
-  I’m proud that I can fly
+  I'm proud that I can fly
   To give the best of mine
   Till the end of the time
   Believe me I can fly
-  I’m proud that I can fly
+  I'm proud that I can fly
   To give the best of mine
   The heaven in the sky<br/>
-  Can’t you believe that
+  Can't you believe that
   you light up my way
   No matter how that ease my path
-  I’ll never lose my faith<br/>
+  I'll never lose my faith<br/>
   See me fly
-  I’m proud to fly up high
+  I'm proud to fly up high
   Show you the best of mine
   Till the end of the time
   Believe me I can fly
-  I’m singing in the sky
+  I'm singing in the sky
   Show you the best of mine
   The heaven in the sky<br/>
   Nothing can stop me
@@ -1530,26 +1576,26 @@
   Andante, Andante
   Go slowly with me now<br/>
   <i>Chorus:</i>
-  I’m your music (I am your music and I am your song)
-  I’m your song (I am your music and I am your song)
+  I'm your music (I am your music and I am your song)
+  I'm your song (I am your music and I am your song)
   Play me time and time again and make me strong
-  (Play me again ’cause you’re making me strong)
+  (Play me again 'cause you're making me strong)
   Make me sing, make me sound
   (You make me sing and you make me ...)
   Andante, Andante
   Tread lightly on my ground
   Andante, Andante
-  Oh please don’t let me down<br/>
-  There’s a shimmer in your eyes
+  Oh please don't let me down<br/>
+  There's a shimmer in your eyes
   Like the feeling of a thousand butterflies
-  Please don’t talk, go on, play
+  Please don't talk, go on, play
   Andante, Andante
   And let me float away<br/>
   <i>(Chorus)</i>
   Andante, Andante
   Tread lightly on my ground
   Andante, Andante
-  Oh please don’t let me down
+  Oh please don't let me down
   <i>(Repeat to fade)</i><br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn K Ulvaeus</em>
 </div>
@@ -1595,23 +1641,23 @@
 <!--中文填词-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301c">Chiquitita <em>(ABBA)</em></h3>
-  Chiquitita, tell me what’s wrong
-  You’re enchained by your own sorrow
+  Chiquitita, tell me what's wrong
+  You're enchained by your own sorrow
   In your eyes there is no hope for tomorrow
   How I hate to see you like this
   There is no way you can deny it
-  I can see that you’re oh so sad, so quiet<br/>
+  I can see that you're oh so sad, so quiet<br/>
   Chiquitita, tell me the truth
-  I’m a shoulder you can cry on
-  Your best friend, I’m the one you must rely on
+  I'm a shoulder you can cry on
+  Your best friend, I'm the one you must rely on
   You were always sure of yourself
-  Now I see you’ve broken a feather
+  Now I see you've broken a feather
   I hope we can patch it up together<br/>
   (Chorus :)
   Chiquitita, you and I know
   How the heartaches come and they go
-  and the scars they’re leaving
-  You’ll be dancing once again
+  and the scars they're leaving
+  You'll be dancing once again
   and the pain will end
   You will have no time for grieving
   Chiquitita, you and I cry
@@ -1623,11 +1669,11 @@
   Try once more like you did before
   Sing a new song, Chiquitita<br/>
   So the walls came tumbling down
-  And your love’s a blown out candle
+  And your love's a blown out candle
   All is gone and it seems too hard to handle
   Chiquitita, tell me the truth
   There is no way you can deny it
-  I see that you’re oh so sad, so quiet<br/>
+  I see that you're oh so sad, so quiet<br/>
   <i>(Chorus)</i>
   Try once more like you did before
   Sing a new song, Chiquitita<br/>
@@ -1689,9 +1735,9 @@
   getting in the swing
   You come in to look for a King
   Anybody could be that guy
-  Night is young and the music’s high
+  Night is young and the music's high
   With a bit of rock music, everything is fine
-  You’re in the mood for a dance
+  You're in the mood for a dance
   And when you get the chance...<br/>
   <i>Chorus:</i>
   You are the Dancing Queen,
@@ -1701,10 +1747,10 @@
   having the time of your life
   See that girl, watch that scene,
   dig in the Dancing Queen<br/>
-  You’re a teaser, you turn ’em on
-  Leave them burning and then you’re gone
+  You're a teaser, you turn 'em on
+  Leave them burning and then you're gone
   Looking out for another, anyone will do
-  You’re in the mood for a dance
+  You're in the mood for a dance
   And when you get the chance...<br/>
   <i>(Chorus)</i><br/>
 <em><i>Songwriters</i>: Stig Erik Leopold Anderson / ABBA</em>
@@ -1748,35 +1794,35 @@
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301e">Eagle <em>(ABBA)</em></h3>
   They came flying from far away,
-  now I’m under their spell
+  now I'm under their spell
   I love hearing the stories that they tell
-  They’ve seen places beyond my land
-  and they’ve found new horizons
+  They've seen places beyond my land
+  and they've found new horizons
   They speak strangely but I understand<br/>
-  And I dream I’m an eagle
+  And I dream I'm an eagle
   And I dream I can spread my wings
-  Flying high, high, I’m a bird in the sky
-  I’m an eagle that rides on the breeze
+  Flying high, high, I'm a bird in the sky
+  I'm an eagle that rides on the breeze
   High, high, what a feeling to fly
   Over mountains and forests and seas
   And to go anywhere that I please<br/>
   As all good friends we talk all night,
   and we fly wing to wing
   I have questions and they know everything
-  There’s no limit to what I feel,
+  There's no limit to what I feel,
   we climb higher and higher
   Am I dreaming or is it all real?
-  Is it true I’m an eagle?
+  Is it true I'm an eagle?
   Is it true I can spread my wings?<br/>
   <i>Chorus:</i>
-  Flying high, high, I’m a bird in the sky
-  (I’m an eagle)
-  I’m an eagle that rides on the breeze
+  Flying high, high, I'm a bird in the sky
+  (I'm an eagle)
+  I'm an eagle that rides on the breeze
   High, high, what a feeling to fly
   (What a feeling)
   Over mountains and forests and seas
   And to go anywhere that I please<br/>
-  And I dream I’m an eagle
+  And I dream I'm an eagle
   And I dream I can spread my wings
   <i>(Chorus x2)</i><br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
@@ -1835,7 +1881,7 @@
   I was so afraid, Fernando
   We were young and full of life
   and none of us prepared to die
-  And I’m not ashamed to say
+  And I'm not ashamed to say
   The roar of guns and cannons almost made me cry<br/>
   <i>Chorus:</i>
   There was something in the air that night
@@ -1843,12 +1889,12 @@
   They were shining there for you and me
   For liberty, Fernando
   Though I never thought that we could lose
-  There’s no regret
+  There's no regret
   If I had to do the same again
   I would, my friend, Fernando<br/>
-  Now we’re old and grey Fernando
+  Now we're old and grey Fernando
   And since many years
-  I haven’t seen a rifle in your hand
+  I haven't seen a rifle in your hand
   Can you hear the drums Fernando?
   Do you still recall the frightful night
   We crossed the Rio Grande?
@@ -1914,7 +1960,7 @@
   Something good in everything I see
   I believe in angels
   When I know the time is right for me
-  I’ll cross the stream -
+  I'll cross the stream -
   I have a dream<br/>
   I have a dream, a fantasy
   To help me through reality
@@ -1964,21 +2010,21 @@
     They both have a distant goal.
     If I explore the heavens,
     Or if I search inside.
-    Well, it really doesn’t matter as long as
-    I can tell myself – I’ve always tried.”<br/>
+    Well, it really doesn't matter as long as
+    I can tell myself – I've always tried.”<br/>
   <i>Chorus:</i>
   Like a roller in the ocean,
   Life is motion - Move on
-  Like a wind that’s always blowing,
+  Like a wind that's always blowing,
   Life is flowing - Move on
   Like the sunrise in the morning,
   Life is dawning - Move on
   How I treasure every minute
   Being part of it, being in it
   With the urge to move on<br/>
-  I’ve travelled every country,
-  I’ve travelled in my mind
-  It seems we’re on a journey,
+  I've travelled every country,
+  I've travelled in my mind
+  It seems we're on a journey,
   a trip through space and time
   And somewhere lies the answer
   To all the questions why
@@ -2122,20 +2168,20 @@
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301s">Super Trouper <em>(ABBA)</em></h3>
   Super Trouper beams are gonna blind me
-  But I won’t feel blue,
+  But I won't feel blue,
   Like I always do
-  ’Cause somewhere in the crowd there’s you<br/>
+  'Cause somewhere in the crowd there's you<br/>
   I was sick and tired of everything
   When I called you last night from Glasgow
   All I do is eat and sleep and sing
   Wishing every show was the last show
   (Wishing every show was the last show)
-  So imagine I was glad to hear you’re coming
-  (Glad to hear you’re coming)
+  So imagine I was glad to hear you're coming
+  (Glad to hear you're coming)
   Suddenly I feel all right
-  (And suddenly it’s gonna be)
-  And it’s gonna be so different
-  When I’m on the stage tonight<br/>
+  (And suddenly it's gonna be)
+  And it's gonna be so different
+  When I'm on the stage tonight<br/>
   <i>Chorus:</i>
   Tonight the Super Trouper Super Trouper
   Lights are gonna find me
@@ -2144,26 +2190,26 @@
   Feeling like a number one
   Tonight the Super Trouper Super Trouper
   Beams are gonna blind me
-  But I won’t feel blue (Sup-p-per Troup-p-per)
+  But I won't feel blue (Sup-p-per Troup-p-per)
   Like I always do (Sup-p-per Troup-p-per)
-  ’Cause somewhere in the crowd there’s you<br/>
+  'Cause somewhere in the crowd there's you<br/>
   Facing twenty thousand of your friends
   How can anyone be so lonely
   Part of a success that never ends
-  Still I’m thinking about you only
-  (Still I’m thinking about you only)
-  There are moments when I think I’m going crazy
-  (Think I’m going crazy)
-  But it’s gonna be alright
-  (You’ll soon be changing everything)
+  Still I'm thinking about you only
+  (Still I'm thinking about you only)
+  There are moments when I think I'm going crazy
+  (Think I'm going crazy)
+  But it's gonna be alright
+  (You'll soon be changing everything)
   Everything will be so different
-  When I’m on the stage tonight<br/>
+  When I'm on the stage tonight<br/>
   <i>(Chorus)</i>
-  So I’ll be there when you arrive
-  The sight of you will prove to me I’m still alive
+  So I'll be there when you arrive
+  The sight of you will prove to me I'm still alive
   And when you take me in your arms
   And hold me tight
-  I know it’s gonna mean so much tonight<br/>
+  I know it's gonna mean so much tonight<br/>
   <i>(Chorus, Repeat and fade)</i><br/>
 <em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
 </div>
@@ -2222,41 +2268,41 @@
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301t">Take A Chance On Me <em>(ABBA)</em></h3>
   <i>Chorus:</i>
-  If you change your mind, I’m the first in line
-  Honey I’m still free / Take a chance on me
+  If you change your mind, I'm the first in line
+  Honey I'm still free / Take a chance on me
   If you need me, let me know, gonna be around
-  If you’ve got no place to go, if you’re feeling down
-  If you’re all alone when the pretty birds have flown
-  Honey I’m still free / Take a chance on me
+  If you've got no place to go, if you're feeling down
+  If you're all alone when the pretty birds have flown
+  Honey I'm still free / Take a chance on me
   Gonna do my very best and it ain't no lie
   If you put me to the test, if you let me try
-  Take a chance on me (That’s all I ask of you honey)<br/>
+  Take a chance on me (That's all I ask of you honey)<br/>
   We can go dancing, we can go walking,
-  As long as we’re together
+  As long as we're together
   Listen to some music, maybe just talking,
   Get to know you better
-  ’Cos you know I’ve got so much that I wanna do,
-  When I dream I’m alone with you
-  It’s magic -
+  'Cos you know I've got so much that I wanna do,
+  When I dream I'm alone with you
+  It's magic -
   You want me to leave it there, afraid of a love affair
-  But I think you know / That I can’t let go
+  But I think you know / That I can't let go
   <i>(Chorus)</i> Take a chance on me
   (Come on, give me a break will you?)
   Take a chance on me<br/>
   Oh you can take your time baby,
-  I’m in no hurry, know I’m gonna get you
-  You don’t wanna hurt me, baby don’t worry,
-  I ain’t gonna let you
+  I'm in no hurry, know I'm gonna get you
+  You don't wanna hurt me, baby don't worry,
+  I ain't gonna let you
   Let me tell you now - My love is strong enough
   To last when things are rough
-  It’s magic - You say that I waste my time
-  But I can’t get you off my mind
-  No I can’t let go / ’Cos I love you so
+  It's magic - You say that I waste my time
+  But I can't get you off my mind
+  No I can't let go / 'Cos I love you so
   <i>(Chorus)</i>
-  Gonna do my very best, baby can’t you see
+  Gonna do my very best, baby can't you see
   Gotta put me to the test, take a chance on me
   Ba ba ba ba baa, ba ba ba ba baa
-  Honey I’m still free / Take a chance on me<br/>
+  Honey I'm still free / Take a chance on me<br/>
 <em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
 </div>
 <div class="tian"><h3 class="t3 tian">给我机会 <em>【填词】</em><a class="sup" href="#d20080301t" title="">&#11139;</a></h3>
@@ -2305,15 +2351,15 @@
 <!--中文填词-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301x">Thank You For The Music <em>(ABBA)</em></h3>
-  I’m nothing special, in fact I’m a bit of a bore
-  If I tell a joke, you’ve probably heard it before
+  I'm nothing special, in fact I'm a bit of a bore
+  If I tell a joke, you've probably heard it before
   But I have a talent, a wonderful thing
-  ’Cause everyone listens when I start to sing
-  I’m so grateful and proud
+  'Cause everyone listens when I start to sing
+  I'm so grateful and proud
   All I want is to sing it out loud<br/>
  <i>#</i>  So I say
-    Thank you for the music, the songs I’m singing
-    Thanks for all the joy they’re bringing
+    Thank you for the music, the songs I'm singing
+    Thanks for all the joy they're bringing
     Who can live without it, I ask in all honesty
     What would life be?
     Without a song or a dance what are we?
@@ -2321,11 +2367,11 @@
   For giving it to me <i>#</i><br/>
   Mother says I was a dancer before I could walk
   She says I began to sing long before I could talk
-  And I’ve often wondered, how did it all start?
+  And I've often wondered, how did it all start?
   Who found out that nothing can capture a heart
-  Like a melody can? - Well, whoever it was, I’m a fan
+  Like a melody can? - Well, whoever it was, I'm a fan
   <i>(Repeat ##)</i>
-  I’ve been so lucky, I am the girl with golden hair
+  I've been so lucky, I am the girl with golden hair
   I wanna sing it out to everybody
   What a joy, what a life, what a chance!
   <i>(Repeat ##)</i><br/>
@@ -2365,20 +2411,20 @@
 <!--中文填词-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301w">The Winner Takes It All <em>(ABBA)</em></h3>
-  I don’t wanna talk / about the things we’ve gone through
-  Though it’s hurting me, now it’s history
-  I’ve played all my cards, and that’s what you’ve done too
+  I don't wanna talk / about the things we've gone through
+  Though it's hurting me, now it's history
+  I've played all my cards, and that's what you've done too
   Nothing more to say, no more ace to play<br/>
   The winner takes it all, the loser standing small
   Beside the victory, that's her destiny<br/>
   I was in your arms, thinking I belonged there
   I figured it made sense, building me a fence
-  Building me a home, thinking I’d be strong there
+  Building me a home, thinking I'd be strong there
   But I was a fool, playing by the rules<br/>
   The gods may throw a dice; their minds as cold as ice
   And someone way down here, loses someone dear<br/>
   The winner takes it all, the loser has to fall
-  It’s simple and it’s plain, why should I complain.<br/>
+  It's simple and it's plain, why should I complain.<br/>
   But tell me does she kiss, like I used to kiss you?
   Does it feel the same, when she calls your name?
   Somewhere deep inside, you must know I miss you
@@ -2387,8 +2433,8 @@
   Spectators of the show, always staying low
   The game is on again; a lover or a friend
   A big thing or a small, the winner takes it all<br/>
-  I don’t wanna talk if it makes you feel sad
-  And I understand you’ve come to shake my hand
+  I don't wanna talk if it makes you feel sad
+  And I understand you've come to shake my hand
   I apologize if it makes you feel bad
   Seeing me so tense, no self-confidence
   But you see -
@@ -2433,19 +2479,19 @@
 <!--中文填词-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426d">Daddy Cool <em>(1976)</em></h3>
-  She’s crazy like a fool
+  She's crazy like a fool
   — What about it daddy cool
-  She’s crazy like a fool
+  She's crazy like a fool
   — What about it daddy cool
-  I’m crazy like a fool
+  I'm crazy like a fool
   — What about it daddy cool<br/>
   Daddy, daddy cool
   Daddy, daddy cool
   Daddy, daddy cool
   Daddy, daddy cool<br/>
-  She’s crazy like a fool
+  She's crazy like a fool
   What about it daddy cool
-  I’m crazy like a fool
+  I'm crazy like a fool
   What about it daddy cool<br/>
   Daddy, daddy cool
   Daddy, daddy cool
@@ -2501,7 +2547,7 @@
   And he wanted a home just like you and like me
   In a country where all would be free
   So he taught himself to read and to write
-  It didn’t help El Lute
+  It didn't help El Lute
   He was one who had dared to escape overnight
   They had to find El Lute<br/>
   Soon the fame of his name
@@ -2590,46 +2636,46 @@
 
 <!--中文填词-->
 <div class="blog">
-<div class="yuan"><h3 class="t3 yuan" id="p20080426h">Hooray, Hooray! It’s A Holi-Holiday <em>(1979)</em></h3>
+<div class="yuan"><h3 class="t3 yuan" id="p20080426h">Hooray, Hooray! It's A Holi-Holiday <em>(1979)</em></h3>
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
   Di-di-di-di-du di-di-di-di-du heydiheydihoh<br/>
-  There’s a place I know where we should go
-  Won’ t you take me there your lady fair
-  There’s a brook near-by the grass grows
+  There's a place I know where we should go
+  Won' t you take me there your lady fair
+  There's a brook near-by the grass grows
   Where we both can hide side by side –
   heydiheydihoh<br/>
-  There’s a country fair not far from there - heydiheydihoh
+  There's a country fair not far from there - heydiheydihoh
   on a carousel the dingdong bell - heydiheydihoh
   on the loop di loop we swing and swoop - heydiheydihoh
-  and what else we’ll do is up to you - heydiheydihoh<br/>
-  Hooray! Hooray! It’s A Holi-Holiday
+  and what else we'll do is up to you - heydiheydihoh<br/>
+  Hooray! Hooray! It's A Holi-Holiday
   What a world of fun for everyone, holi-holiday
-  Hooray! Hooray! It’s A Holi-Holiday
+  Hooray! Hooray! It's A Holi-Holiday
   Sing a summer song, skip along, holi-holiday
-  It’s a holi-holiday<br/>
-  Well, I’m game - Fun is the thing I’m after
-  Now let’s a’live it up today
+  It's a holi-holiday<br/>
+  Well, I'm game - Fun is the thing I'm after
+  Now let's a'live it up today
   Get set for love and laughter<br/>
-  Well, let’s go - Time isn’t here for wasting
+  Well, let's go - Time isn't here for wasting
   Life is so full of sweet sweet things
-  I’d like to do some tasting<br/>
+  I'd like to do some tasting<br/>
   In the country side we take a ride - heydiheydihoh
   Where the stars will shine lots of time - heydiheydihoh
   Back of your old car we might get far - heydiheydihoh
   In the summerbreeze we feel at ease - heydiheydihoh
   <br/>
-  Hooray! Hooray! It’s A Holi-Holiday
+  Hooray! Hooray! It's A Holi-Holiday
   What a world of fun for everyone, holi-holiday
-  Hooray! Hooray! It’s A Holi-Holiday
+  Hooray! Hooray! It's A Holi-Holiday
   Sing a summer song, skip along, holi-holiday
-  It’s a holi-holiday<br/>
-  Hooray! Hooray! It’s A Holi-Holiday
+  It's a holi-holiday<br/>
+  Hooray! Hooray! It's A Holi-Holiday
   What a world of fun for everyone, holi-holiday
-  Hooray! Hooray! It’s A Holi-Holiday
+  Hooray! Hooray! It's A Holi-Holiday
   Sing a summer song, skip along, holi-holiday
-  It’s a holi-holiday, it’s a holi-holiday<br/>
+  It's a holi-holiday, it's a holi-holiday<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
 <div class="tian"><h3 class="t3 tian">小妹 <em>【填词】</em><a class="sup" href="#d20080426h" title="">&#11139;</a></h3>
@@ -2681,37 +2727,37 @@
 <!--中文填词-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426a">I Am Born Again <em>(1979)</em></h3>
-  I’m born again, I feel free
+  I'm born again, I feel free
   No longer alone
   A bright light is shinning
   And shows me a world that I own
   I can see my way through
   I know I will walk beside you
-  All those prayers of mine weren’t in vain
-   I’m born again<br/>
-  I’m born again, I feel free
-  - There’s a quite different me
-  No longer I’m tossed
+  All those prayers of mine weren't in vain
+   I'm born again<br/>
+  I'm born again, I feel free
+  - There's a quite different me
+  No longer I'm tossed
   - Like a ship on an unruly sea
-  I’ve been blessed with a love
-  - That’s meant for the rest of my time
+  I've been blessed with a love
+  - That's meant for the rest of my time
   All those prayers they were not in vain
-  - I’m born again<br/>
+  - I'm born again<br/>
   Since love touched my heart right
   My life has a meaning
-  I feel I’m no longer drifting in space
+  I feel I'm no longer drifting in space
   I believe once again that there is a tomorrow
   A brand new tomorrow, I know I can face<br/>
-  I’m born again, I feel free
+  I'm born again, I feel free
   No longer alone
   A bright light is shinning
   And shows me a world that I own
   I can see my way through
   I know I will walk beside you
-  All those prayers of mine weren’t in vain
-   I’m born again<br/>
-  All those prayers they weren’t in vain
-  – ’Cause I’m born again<br/>
+  All those prayers of mine weren't in vain
+   I'm born again<br/>
+  All those prayers they weren't in vain
+  – 'Cause I'm born again<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
 <div class="tian"><h3 class="t3 tian">我的新生 <em>【填词】</em><a class="sup" href="#d20080426a" title="">&#11139;</a></h3>
@@ -2757,35 +2803,35 @@
 <div class="yuan"><h3 class="t3 yuan" id="p20080426b">I See A Boat On The River <em>(1980)</em></h3>
   He left on a boat / Just to follow a dream
   He had to find.
-  You can’t hold a man / When he follows a dream
-  That’s on his mind.<br/>
-  I see a boat on the river – It’s sailing away
-  - Down to the ocean, Where to I can’t say.
-  Boat on the river – It’s sailing away
-  - Down to the ocean - Where to I can’t say.<br/>
+  You can't hold a man / When he follows a dream
+  That's on his mind.<br/>
+  I see a boat on the river – It's sailing away
+  - Down to the ocean, Where to I can't say.
+  Boat on the river – It's sailing away
+  - Down to the ocean - Where to I can't say.<br/>
   I waited for him / Such a very long time,
-  Don’t know what for
+  Don't know what for
   Cause I should have known / When he left on the boat
-  We’ll meet no more.<br/>
-  I see a boat on the river – It’s sailing away
-  - Down to the ocean, Where to I can’t say.
-  Boat on the river – It’s sailing away
-  - Down to the ocean – Where to I can’t say.
-  Boat on the river – You’re bound for the sea.
+  We'll meet no more.<br/>
+  I see a boat on the river – It's sailing away
+  - Down to the ocean, Where to I can't say.
+  Boat on the river – It's sailing away
+  - Down to the ocean – Where to I can't say.
+  Boat on the river – You're bound for the sea.
   If you should find him - Please greet him from me.<br/>
   There were people who came
-  And said it’s really a shame,
+  And said it's really a shame,
   Why did he take off
   To follow just a dream.
   But I guess they were wrong,
-  In life you’re sailing along
-  And things don’t turn out
+  In life you're sailing along
+  And things don't turn out
   As simple as they seem.<br/>
-  Boat on the river – It’s sailing away
-  - Down to the ocean - Where to I can’t say.
-  I see a boat on the river – It’s sailing away
-  - Down to the ocean, Where to I can’t say.
-  I see a boat on the river – You’re bound for the sea,
+  Boat on the river – It's sailing away
+  - Down to the ocean - Where to I can't say.
+  I see a boat on the river – It's sailing away
+  - Down to the ocean, Where to I can't say.
+  I see a boat on the river – You're bound for the sea,
   If you should find him - Please greet him from me.<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
@@ -2831,7 +2877,7 @@
 <!--中文填词-->
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426c">Mary's Boy Child / Oh My Lord <em>(1978)</em></h3>
-  Mary’s boy child Jesus Christ,
+  Mary's boy child Jesus Christ,
   Was born on Christmas Day.
   And man will live for evermore,
   Because of Christmas Day.<br/>
@@ -2843,7 +2889,7 @@
   A king was born today,
   And man will live for evermore,
   Because of Christmas Day.
-  Mary’s boy child Jesus Christ,
+  Mary's boy child Jesus Christ,
   Was born on Christmas Day.<br/>
   While shepherds watch their flocks by night,
   They see a bright new shining star,
@@ -2866,7 +2912,7 @@
   And then they found a little nook,
   In a stable all forlorn.
   And in a manger cold and dark,
-  Mary’s little boy was born.<br/>
+  Mary's little boy was born.<br/>
   <i>---</i>
   Oh my lord - You sent your son to save us
   Oh my lord - Your very self you gave us
@@ -2981,7 +3027,7 @@
   Oceans of fantasy
   The never never land of emotions
   Come down and follow me
-  You’ll see the secret places
+  You'll see the secret places
   Where all the rivers end
   And pirate ships of old
   Filled with diamonds and with gold
@@ -2990,7 +3036,7 @@
   of stillness and pure harmony
   Magical mirrors reflecting the light
   That colors the sea
-  You’ll be surrounded by angel like creatures
+  You'll be surrounded by angel like creatures
   Who tend to your dreams
   Deeper and deeper you fall in a trance
   Much more real
@@ -3050,7 +3096,7 @@
   <i>#</i> When the wicked –
     Carried us away in captivity
     - Require from us a song -
-    Now how shall we sing the Lord’s song
+    Now how shall we sing the Lord's song
     in a strange land?
   <i>(Repeat #)</i>
   Let the words of our mouths
@@ -3123,8 +3169,8 @@
   Sunny~~~~<br/>
   Sunny, thank you for the smile upon your face.
   Sunny, thank you for the gleam that shows its grace.
-  You’re my spark of nature’s fire,
-  You’re my sweet complete desire.
+  You're my spark of nature's fire,
+  You're my sweet complete desire.
   Sunny, one so true, I love you.<br/>
   I love you. <i>(6x)</i><br/>
 <em><i>Songwriters</i>: Bobby Hebb</em>
@@ -3162,12 +3208,12 @@
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20080730x">Never Gonna Fall In Love Again <em>(1978)</em></h3>
   No use pretending things can still be right
-  There’s really nothing more to say
-  I’ll get along without your kiss good night
+  There's really nothing more to say
+  I'll get along without your kiss good night
   Just close the door and walk away<br/>
   Never gonna fall in love again
-  I don’t wanna start with someone new
-  cause I couldn’t bear to see it end
+  I don't wanna start with someone new
+  cause I couldn't bear to see it end
   Just like me and you
   No, I never wanna feel the pain
   Of remembering how it used to be
@@ -3178,8 +3224,8 @@
   But like the sun we watched it fade away
   From morning into lonely night<br/>
   Never gonna fall in love again
-  I don’t wanna start with someone new
-  cause I couldn’t bear to see it end
+  I don't wanna start with someone new
+  cause I couldn't bear to see it end
   Just like me and you
   No, I never wanna feel the pain
   Of remembering how it used to be
@@ -3224,18 +3270,18 @@
   I have got so much to give – I swear I do
   I may not have nine lives –
   But this one feels brand new
-  Yes, I’ve lived a good one
-  I’ve tried to be true
+  Yes, I've lived a good one
+  I've tried to be true
   There are some things I never realised
   Till I met you<br/>
   How the wind feels on my cheeks
-  When I’m barking at the moon
-  There is no home like the one you’ve got
-  ’Cause that home belongs to you
+  When I'm barking at the moon
+  There is no home like the one you've got
+  'Cause that home belongs to you
   Woo, hoo, here I come
   Woo, hoo, back to you
-  There is no home like the one you’ve got
-  ’Cause that home belongs to you<br/>
+  There is no home like the one you've got
+  'Cause that home belongs to you<br/>
   Well, I was in trouble bad / I was so confused
   I may not see in color, babe / But I sure can feel blue
   I have been a lot of things
@@ -3243,16 +3289,16 @@
   My experience was so mysterious
   Till I met you<br/>
   Now the sun will rise in the east
-  But I’m barking at the moon
-  There is no home like the one you’ve got
+  But I'm barking at the moon
+  There is no home like the one you've got
   Cuz that home belongs to you
   Woo, hoo, here I come
   Woo, hoo, back to you
-  There is no home like the one you’ve got
+  There is no home like the one you've got
   Cuz that home belongs to you
-  There is no home like the one you’ve got
+  There is no home like the one you've got
   Cuz that home belongs to you<br/>
-  There is no home like the one you’ve got
+  There is no home like the one you've got
   Cuz that home belongs to you...<br/>
 <em><i>Songwriters</i>: Jenny Lewis</em>
 </div>
@@ -3303,7 +3349,7 @@
   Let nothing you dismay
   Remember, Christ, our Saviour
   Was born on Christmas day
-  To save us all from Satan’s power
+  To save us all from Satan's power
   When we were gone astray
   O tidings of comfort and joy, comfort and joy
   O tidings of comfort and joy<br/>
@@ -3320,7 +3366,7 @@
   This day is born a Saviour
   Of a pure Virgin bright,
   To free all those who trust in Him
-  From Satan’s power and might.
+  From Satan's power and might.
   O tidings of comfort and joy, comfort and joy
   O tidings of comfort and joy<br/>
   From God our Heavenly Father
@@ -3435,20 +3481,20 @@
   “Christ is born in Bethlehem”
   Hark! The herald angels sing
   “Glory to the newborn King!”<br/>
-  Christ by highest heav’n adored
+  Christ by highest heav'n adored
   Christ the everlasting Lord!
   Late in time behold Him come
-  Offspring of a Virgin’s womb
+  Offspring of a Virgin's womb
   Veiled in flesh the Godhead see
   Hail the incarnate Deity
   Pleased as man with man to dwell
   Jesus, our Emmanuel
   Hark! The herald angels sing
   “Glory to the newborn King!”<br/>
-  Hail the heav’n-born Prince of Peace!
+  Hail the heav'n-born Prince of Peace!
   Hail the Son of Righteousness!
   Light and life to all He brings
-  Ris’n with healing in His wings
+  Ris'n with healing in His wings
   Mild He lays His glory by
   Born that man no more may die
   Born to raise the sons of earth
@@ -3503,7 +3549,7 @@
   O come, let us adore Him, (3x)
   Christ the Lord.<br/>
   True God of true God, Light from Light Eternal,
-  Lo, he shuns not the Virgin’s womb;
+  Lo, he shuns not the Virgin's womb;
   Son of the Father, begotten, not created;
   O come, let us adore Him, (3x)
   Christ the Lord.<br/>
@@ -3550,7 +3596,7 @@
 <div class="blog">
 <div class="yuan"><h3 class="t3 yuan" id="p20101209x">What Child Is This / Greensleeves <em>(1865)</em></h3>
   What child is this who laid to rest
-  On Mary’s lap is sleeping
+  On Mary's lap is sleeping
   Whom angels greet with anthems sweet
   While shepherds watch are keeping<br/>
   This, this is Christ the King
@@ -4482,16 +4528,16 @@
   When the days are cold and the cards are fold
   And the saints we see are all made of gold
   When your dreams all fail and the ones we hail
-  Are the worst of all and the blood’s run stale<br/>
+  Are the worst of all and the blood's run stale<br/>
   I wanna hide the truth I wanna shelter you
-  But with the beast inside there’s nowhere we can hide
+  But with the beast inside there's nowhere we can hide
   No matter what we breed we still are made of greed
   This is my kingdom come This is my kingdom come<br/>
 <i>**</i>  When you feel my heat Look into my eyes
-    It’s where my demons hide It’s where my demons hide
-    Don’t get too close It’s dark inside
-    It’s where my demons hide It’s where my demons hide<br/>
-  At the curtain’s call It's the last of all
+    It's where my demons hide It's where my demons hide
+    Don't get too close It's dark inside
+    It's where my demons hide It's where my demons hide<br/>
+  At the curtain's call It's the last of all
   When the lights fade out All the sinners crawl
   So they dug your grave And the masquerade
   Will come calling out At the mess you made<br/>
@@ -4757,6 +4803,8 @@
 -->
 
 
+
+
 <h2 class="h2" id="chinese-poems">中文诗词 (Chinese Poems)<a class="back" href="#atoc"></a></h2>
 
 
@@ -4846,6 +4894,8 @@
 <a href="#atop" class="goto">⇑</a>
 
 
+
+
 <h2 class="h2" id="chinese-dayou">中文白话 (Chinese Etc.)<a class="back" href="#atoc"></a></h2>
 
 
@@ -4911,7 +4961,7 @@
   这样的生活有何意义？<br/>
 <em><i>Poem by </i> Boathill</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090712x" title="2009.07.12.">&#11139;</a></h3>
+<div class="text"><h3 class="t3 text"><em></em><a class="sup" href="#d20090712x" title="2009.07.12.">&#11139;</a></h3>
 </div>
 </div><!-- blog -->
 <a href="#atop" class="goto">⇑</a>
