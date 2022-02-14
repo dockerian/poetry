@@ -24,4 +24,4 @@
 
 ![格律图谱](./gelv/Images/poem-forms.jpg)
 
-&raquo; Back to <a href="#toc">Contents</a>
+&raquo; Back to <a href="#toc">Contents</a> ｜ <a href="https://dockerian.github.io">Home</a>
