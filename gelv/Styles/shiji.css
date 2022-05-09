@@ -195,6 +195,9 @@ p.poem {
   text-align: left;
   text-indent: 2em;
 }
+p.text span.orig {
+  color: gray;
+}
 p.text {
   font-size: 1em;
   line-height: 1.5em;
