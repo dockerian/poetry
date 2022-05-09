@@ -43,6 +43,7 @@
     [拼音韻表](html/xinyun.html)
   - [新词对韵](html/shenglv-duiyun.html)｜
     [十三大辙](html/shisanzhe.html)
+  - [英诗中译](html/shiji-star.html)
 
 
 <br/><a id="res" name="res"></a>
