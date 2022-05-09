@@ -14,32 +14,32 @@
 <br/><a id="apx" name="apx"></a>
 ## 附录
 
-  - [白香詞譜](html/cipu-baixiang.xhtml)
-  - [紅樓詩鈔](html/shiji-honglou.xhtml)｜
-    [清明詩鈔](html/shiji-qingming.xhtml)
+  - [白香詞譜](html/cipu-baixiang.html)
+  - [紅樓詩鈔](html/shiji-honglou.html)｜
+    [清明詩鈔](html/shiji-qingming.html)
   - [纱糸轩集](html/shiji-lyrics.html)｜
     [舟山詩詞](../shiji.html)
-  - [格律速成](html/5-min.xhtml)｜
-    [马蹄韵格](html/matiyun.xhtml)｜
+  - [格律速成](html/5-min.html)｜
+    [马蹄韵格](html/matiyun.html)｜
     [格律圖解](html/tujie.html)（
     [名句](html/tujie.html#shici-mingju)｜
     [锦句](html/tujie.html#shici-miaoju) ）
-  - [笠翁对韵](html/shenglv-liweng.xhtml)｜
-    [训蒙骈句](html/shenglv-pianjv.xhtml)｜
-    [声律启蒙](html/shenglv.xhtml)（
-    [注释](html/shenglv-zhu.xhtml)｜
-    [详解](html/shenglv-xj.xhtml) ）
-  - [蒙学骈文](html/mengxue.xhtml)‧
-    [三字经](html/mengxue.xhtml#mengxue-szj) ·
-    [百家姓](html/mengxue.xhtml#mengxue-bjx) ·
-    [弟子规](html/mengxue.xhtml#mengxue-dzg) ·
-    [千字文](html/mengxue.xhtml#mengxue-qzw-pinyin)（
-    [注释](html/mengxue.xhtml#mengxue-qzw-zhushi) ）
-  - [增广贤文](html/mengxue-zgxw.xhtml)｜
-    [回文集锦](html/huiwen.xhtml)｜
-    [对联集锦](html/duilian.xhtml)
-  - [平水韵表](html/pingshui.xhtml)｜
-    [正韵简编](html/cilinzhengyun.xhtml)｜
+  - [笠翁对韵](html/shenglv-liweng.html)｜
+    [训蒙骈句](html/shenglv-pianjv.html)｜
+    [声律启蒙](html/shenglv.html)（
+    [注释](html/shenglv-zhu.html)｜
+    [详解](html/shenglv-xj.html) ）
+  - [蒙学骈文](html/mengxue.html)‧
+    [三字经](html/mengxue.html#mengxue-szj) ·
+    [百家姓](html/mengxue.html#mengxue-bjx) ·
+    [弟子规](html/mengxue.html#mengxue-dzg) ·
+    [千字文](html/mengxue.html#mengxue-qzw-pinyin)（
+    [注释](html/mengxue.html#mengxue-qzw-zhushi) ）
+  - [增广贤文](html/mengxue-zgxw.html)｜
+    [回文集锦](html/huiwen.html)｜
+    [对联集锦](html/duilian.html)
+  - [平水韵表](html/pingshui.html)｜
+    [正韵简编](html/cilinzhengyun.html)｜
     [拼音韻表](html/xinyun.html)
   - [新词对韵](html/shenglv-duiyun.html)｜
     [十三大辙](html/shisanzhe.html)
