@@ -16,6 +16,8 @@
 
 * 纱糸轩[歌词集](./gelv/html/shiji-lyrics.html) (including English poems and lyrics)
 
+* 读书[笔记＋杂抄](./blog/mynotes.html)
+
 * 圖書[附錄](./gelv/README.md)
 
 
