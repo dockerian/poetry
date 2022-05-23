@@ -14,6 +14,7 @@
   a.goto {
     content: "⇑"; /* "⇐" */
     display: block;
+    font-size: smaller;
     margin: -0.35em 0.25em 0.25em 0em;
     text-align: right;
   }
@@ -27,8 +28,8 @@
     font-weight: bold;
   }
   body, p {
-    font-size: 2vw;
-    font-size: 15pt;
+    font-family: "Segoe UI", Tahoma, Helvetica, Arial, sans-serif, serif;
+    font-size: 1.25em;
   }
   div.atoc {
     color: darkgray;
@@ -52,6 +53,28 @@
   div#back {
     background-color: #e0e0e0; /* whitesmoke */
     position: relative;
+  }
+  div#home {
+    position: fixed;
+    bottom: 0; right: 0;
+    vertical-align: top;
+    background-color: transparent;
+    margin: 0.5em 0.5em 0.25em 0.5em;
+    padding: 0.35em;
+  }
+  div#home span {
+    border-radius: 1em;
+    background-color: whitesmoke;
+    padding: 0.1em 0.5em 0.25em 0.5em;
+    height: 1em; width: 1.25em;
+    opacity: 0.5;
+  }
+  div#home span:hover {
+    background-color: beige;
+    border: solid 0.125em lightyellow;
+    font-size: larger;
+    font-weight: bold;
+    opacity: 1;
   }
   div.blog {
     display: flex;
@@ -315,7 +338,7 @@
     z-index: 100;
   }
   ul li a {
-    font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
+    font-family: "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif, serif;
   }
   ul li a:hover, ul li span:hover {
     color: darkorange;
@@ -521,6 +544,7 @@
   <li id="d20191227x"><a href="#p20191227x" title="New Zealand's poem"><u>白话诗</u> 【新西兰田园打油诗】 <i>2019.12.27.</i></a></li>
   <li id="d20210426x"><a href="#p20210426x" title="A famous Chinese lyrics in English"><u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
   <li id="d20210921x"><a href="#p20210921x"><u title="English poem">E</u> <span>Mid-Autumn〖中秋〗</span> <i>2021.09.21.</i></a></li>
+  <li id="d20220523x" class="ying"><a href="#p20220523z" title="English cover">〖翻唱〗</a>＋ <a href="#p20220523x"><q>☆</q> <u title="English lyrics">L</u> <span>Lonely Warrior</span>〖孤勇者〗 <i>2022.05.23.</i></a></li>
 <!--
   <li id="d20x"><a href="#p20x">【】 <i></i></a></li>
 -->
@@ -574,7 +598,7 @@
 <em>† <i>Cited from </i> Wang-GuoWei (1876-1927): “Poetics the World”, section 26</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗-->
@@ -608,7 +632,7 @@
 <em><i>English Translation by </i> Jason Zhu</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -627,7 +651,7 @@
 </div>
 <div class="poem"><h3 class="t3 text"><em><a class="sup" href="#d20040724x" title="2004.07.24">&#11139;</a></em></h3></div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -643,7 +667,7 @@
 </div>
 <div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20070508x" title="2007.05.08">&#11139;</a></em></h3></div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -669,7 +693,7 @@
 </div>
 <div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20071214x" title="2007.12.14">&#11139;</a></em></h3></div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -707,7 +731,7 @@
 <em>Conjugal doggerel series, by Divertida LZ</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -740,7 +764,7 @@
 <em><i>Lyrics by </i> Jason Zhu</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗-->
@@ -764,7 +788,7 @@
 <em>英译：舟山 2008.04.15.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -794,7 +818,7 @@
   <p>Well, is this just a simple “problem” if one can spend money who does not have and does not have to pay back? I think it has become corruption and crisis for a country lives in such “who cares” philosophy. As long as the debt come and go without having to work hard, everyone will support such democracy to share the value (in money). Now, both the stimulus plan and the criticism to American economy seem “a little too little and a little too late”.</p>
 </div></div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -856,7 +880,7 @@
   归来赏雪入新年。
 </pre></div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗-->
@@ -900,7 +924,7 @@
 <em>英诗：舟山 2009.10.05.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -924,7 +948,7 @@
 <div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20091225x" title="2009.12.25.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗-->
@@ -960,7 +984,7 @@
 <em>English Translation by Divertida LZ 2010.09.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗-->
@@ -990,7 +1014,7 @@
 <div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20100923x" title="2010.09.23.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -1030,7 +1054,7 @@
 <em>2010.11.06.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -1045,7 +1069,7 @@
 <div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20101125x" title="2010.11.25.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -1080,7 +1104,7 @@
 <div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20101212x" title="2010.12.12.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
@@ -1122,7 +1146,7 @@
 <div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗歌-->
@@ -1158,7 +1182,7 @@
 <em>English Translation by Jason Zhu</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文译诗-->
@@ -1178,7 +1202,7 @@
 <em>English Translation by Jason Zhu 2021.09.21.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-poems" class="goto">⇑</a>
 
 
 
@@ -1229,7 +1253,7 @@
 <em>填词：舟山 2011.01.06.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-lyrics" class="goto">⇑</a>
 
 
 <!--英文译词-->
@@ -1288,7 +1312,7 @@
 <em>填词：舟山 2011.03.18</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-lyrics" class="goto">⇑</a>
 
 
 <!--英文译词-->
@@ -1332,7 +1356,7 @@
 <em>填词：舟山 2011.03.18</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-lyrics" class="goto">⇑</a>
 
 
 <!--英文译词-->
@@ -1382,7 +1406,231 @@
 <em>英文填词 2013.06.02.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#english-lyrics" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20220523x">孤勇者 <em>〖原词〗</em></h3>
+  都 是勇敢的，你额头的伤口
+  　 你的不同 你犯的错
+  都 不必隐藏，你破旧的玩偶
+  　 你的面具 你的自我
+  他们说 要带着光 驯服每一头怪兽
+  他们说 要缝好你的伤 没有人爱小丑
+  为何孤独 不可光荣
+  人只有不完美　值得歌颂
+  谁说污泥满身的不算英雄
+
+  爱你孤身走暗巷，爱你不跪的模样
+  爱你对峙过绝望，不肯哭一场
+  爱你破烂的衣裳，却敢堵命运的枪
+  爱你和我那么像，缺口都一样
+
+  去吗？配吗？这褴褛的披风
+  战吗？战啊！以最卑微的梦
+  致那黑夜中的呜咽与怒吼
+  谁说站在光里的才算英雄
+
+  他们说 要戒了你的狂
+     就像擦掉了污垢
+  他们说 要顺台阶而上
+     而代价是低头
+  那就让我 不可 乘风
+     你一样骄傲着 那种孤勇
+  谁说对弈平凡的不算英雄
+
+  爱你孤身走暗巷，爱你不跪的模样
+  爱你对峙过绝望，不肯哭一场
+  爱你破烂的衣裳，却敢堵命运的枪
+  爱你和我那么像，缺口都一样
+
+  去吗？配吗？这褴褛的披风
+  战吗？战啊！以最卑微的梦
+  致那黑夜中的呜咽与怒吼
+  谁说站在光里的才算英雄
+
+  你的斑驳 与众不同
+  你的沉默 震耳欲聋
+
+  爱你孤身走暗巷，爱你不跪的模样
+  爱你对峙过绝望，不肯哭一场
+  爱你来自于蛮荒，一生不借谁的光
+  你将造你的城邦，在废墟之上
+
+  去吗？去啊！以最卑微的梦
+  战吗？战啊！以最孤高的梦
+  致那黑夜中的呜咽与怒吼
+  谁说站在光里的才算英雄
+
+  <em>作词：唐恬；作曲：钱雷；原唱：陈奕迅</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Lonely Warrior <em>(2022.05.23)</em> <em><a class="sup" href="#d20220523x" title="">&#11139;</em></a></h3>
+  All of the brave, wound from your fall,
+      role of your cast, and your fault
+  Out of the cave, shabby of your doll,
+      behind your mask, in your vault
+  As they said, the light of the sun, for each tamed soul
+  As they said, no harm to be done, no one likes a droll
+  Whynot a glory  to be alone
+  Not only perfect  worth a song
+  Who said low dust can't be hero last long
+
+  Dare you alone without sun, dare you never kneel down
+  Dare you not a fear to shun, let no tear drown
+  Dare you facing to the gun, dare you take off the crown
+  Dare where you came from, have the same frown
+
+  Leave it? Take it? - The raggy on your gown
+  Fight me? Fight it! - Dream to beat it down
+  To the darkness of your sobbing and your roar
+  Who said low light can't be hero last long
+
+  As they said, to break bone of your own,
+     will never hold your vow
+  As they said, to crawl up to crown,
+     with head down to bow
+  Against the pride as it is flown
+     You'll be the warrior alone
+  Who said ordinary can't be hero last long
+
+  Dare you alone without sun, dare you never kneel down
+  Dare you not a fear to shun, let no tear drown
+  Dare you facing to the gun, dare you take off the crown
+  Dare where you came from, have the same frown
+
+  Leave it? Take it? - The raggy on your gown
+  Fight me? Fight it! - Dream to beat it down
+  To the darkness of your sobbing and your roar
+  Who said low light can't be hero last long
+
+  In your shadow, who can get along
+  In your quiet show, I hear it strong
+
+  Dare you alone without sun, dare you never kneel down
+  Dare you not a fear to shun, let no tear drown
+  Dare you came from lown, neither noble or fame sound
+  You'll build your kingstown, over the trash ground
+
+  Leave me? Leave it! - Your petty 'n' slighest dream
+  Fight me? Fight it! - Your pride 'n' lonely dream
+  To the darkness of your sobbing and your roar
+  Who said low light can't be hero last long
+
+  <em>英文填词：舟山 2022.05.23.</em>
+</div>
+</div>
+<a href="#english-lyrics" class="goto">⇑</a>
+
+
+<div class="blog">
+<div class="geci"><h3 class="t3 geci" id="p20220523z">附：孤勇者 <em>〖<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">翻唱</a>〗</em></h3>
+  你眼中是什么
+  像烈火在燃烧
+  诉说着那才是你的本色
+  你已无需隐藏
+  点亮黑暗的勇敢之心，
+    终将汇入星海
+  我高歌，敬这无人喝彩的
+    孤寂征途
+  曲高和寡，相逢的皆是 赤诚之人
+  此般孤独无人诉说
+  人生如赌局，命运娓娓道来
+  若心向光明，更需深入阴影
+
+  愿你安然又无恙
+  爱是既往而不咎
+  愿你走出 半生
+  仍是少年样
+  虽有勇敢荡气回肠
+  答案依旧是迷惘
+  匆匆一生 能找到
+  心的归属 在家乡
+  保持沉默，保持清醒，不懂那些 言外之声
+  我们哭泣，我们奋战，让世界 刮目相看
+  我们在天空翱翔，向上突破
+  即使身处暗夜，赤子之心不变
+
+  反对的意见呗扼杀
+  没人能听见我的怒吼
+  走上更高阶梯的代价
+  是思想的自由
+  不如卸下这副重担
+  总有天我们都将不在人世
+  但我们的精神永垂不朽
+
+  愿你安然又无恙
+  爱是既往而不咎
+  愿你走出 半生
+  仍是少年样
+  虽有勇敢荡气回肠
+  答案依旧是迷惘
+  匆匆一生 能找到
+  心的归属 在家乡
+  保持沉默，保持清醒，不懂那些 言外之声
+  我们哭泣，我们奋战，让世界 刮目相看
+  我们在天空翱翔，向上突破
+  即使身处暗夜，赤子之心不变
+
+  生活如战，你是英雄
+  生活如战，你是英雄
+
+  <em>原词：唐恬；翻唱：之子、阿瑶</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Lonely Warrior <em>(<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">English cover</a>)</em> <em><a class="sup" href="#d20220523x" title="">&#11139;</em></a></h3>
+  What is in your eyes?
+  It's burning like a flame
+  Telling that's who you really are
+  You don't need to hide
+  Brave hearts will shine to light up the night sky
+    and be with the stars
+  I sing this song, to this lonely road
+    with no one to applaud
+  Sing along wherever you are, I see your sincere soul
+  Such loneliness inside untold
+  Life is a gambling game, a story unfolds
+  With the sun in my heart, walk into shadows
+
+  Praying that you are safe and sound
+  Let the bygones be bygones
+  May you far away from town
+  May you come back young
+  Bravery goes in my lungs
+  The answer is not yet found
+  Please remind me at the end
+    what anchors me back down
+  Keep quiet, keep wise! Never read between the lines
+  We cry, we fight! We set it all on fire
+  To the sky we soar, breaking free from below
+  Even in the dark, brave hearts still stay gold
+
+  They tried to mute the different voice
+    and no one could hear me roar
+  Walking up to the next floor
+    my mind will no longer be pure
+  Why don't we just take off the load
+  One day you and I we will be the ghosts
+  Our body dies but this spirit is immortal
+
+  Praying that you are safe and sound
+  Let the bygones be bygones
+  May you far away from town
+  May you come back young
+  Bravery goes in my lungs
+  The answer is not yet found
+  Please remind me at the end
+    what anchors me back down
+  Keep quiet, keep wise! Never read between the lines
+  We cry, we fight! We set it all on fire
+  To the sky we soar, breaking free from below
+  Even in the dark, brave hearts still stay gold
+
+  Life is a war, and you're hero
+  Life is a war, and you're hero
+
+  <em>填词：疏折〔２０２１．１２〕</em>
+</div>
+</div>
+<a href="#english-lyrics" class="goto">⇑</a>
 
 
 <!--英文译词--><!--
@@ -1464,7 +1712,7 @@
 <em>中文填词：周琳 2003.01.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -1568,7 +1816,7 @@
 <em>中文填词：周琳 2005.01.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -1644,7 +1892,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -1728,7 +1976,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -1796,7 +2044,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -1872,7 +2120,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -1954,7 +2202,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2008,7 +2256,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2092,7 +2340,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2170,7 +2418,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2270,7 +2518,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2354,7 +2602,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2414,7 +2662,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2482,7 +2730,7 @@
 <em>中文填词：舟山 2008.03.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2530,7 +2778,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2640,7 +2888,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2730,7 +2978,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2804,7 +3052,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -2880,7 +3128,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3026,7 +3274,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3092,7 +3340,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3154,7 +3402,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3210,7 +3458,7 @@
 <em>中文填词：舟山 2008.04.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3270,7 +3518,7 @@
 <em>中文填词 2008.07.30.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3348,7 +3596,7 @@
 <em>中文填词 2009.02.14.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3474,7 +3722,7 @@
 <em>中文填词：舟山 2010.12.01.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3546,7 +3794,7 @@
 <em>中文填词：舟山 2010.12.02.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3598,7 +3846,7 @@
 <em>中文填词：舟山 2010.12.06.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3658,7 +3906,7 @@
 <em>中文填词：舟山 2010.12.09.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3754,7 +4002,7 @@
 <em>中文填词 2011.03.21.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3824,7 +4072,7 @@
 <em>中文填词 2012.10.28.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -3888,7 +4136,7 @@
 <em>中文填词 2012.10.30.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -3977,7 +4225,7 @@
 <em>中文填词 2012.10.30.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4077,7 +4325,7 @@
 <em>中文填词 2012.10.31.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4128,7 +4376,7 @@
 <em>中文填词 2013.01.12.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4247,7 +4495,7 @@
 <em>中文填词 2013.08.14.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4373,7 +4621,7 @@
 <em>中文填词 2013.09.15.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4464,7 +4712,7 @@
 <em>中文填词 2013.09.16.</em><br/>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4528,7 +4776,7 @@
 <em>中文填词：舟山 2014.08.19.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4592,7 +4840,7 @@
 <em>中文填词：舟山 2015.11.28.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4664,7 +4912,7 @@
 <em>中文填词：舟山 2015.12.05.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4796,7 +5044,7 @@
 <em>中文填词：舟山 2018.01.26.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-lyrics" class="goto">⇑</a>
 
 
 <!--中文填词--><!--
@@ -4830,7 +5078,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20081225x" title="2008.12.25.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-poems" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4848,7 +5096,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090911x" title="2009.09.11.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-poems" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4868,7 +5116,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20091127x" title="2009.11.27.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-poems" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4903,7 +5151,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20100828x" title="2010.08.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-poems" class="goto">⇑</a>
 
 
 <!--中文填词-->
@@ -4929,7 +5177,7 @@
 <em>2019.09.17.</em>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-poems" class="goto">⇑</a>
 
 
 
@@ -4953,7 +5201,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20080126x" title="2008.01.26.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -4975,7 +5223,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090628x" title="2009.06.28.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5002,7 +5250,7 @@
 <div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20090712x" title="2009.07.12.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5024,7 +5272,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090717x" title="2009.07.17.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5042,7 +5290,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090720x" title="2009.07.20.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5071,7 +5319,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090801x" title="2009.08.01.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5090,7 +5338,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20091231x" title="2009.12.31.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5112,7 +5360,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20100724x" title="2010.07.24.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5136,7 +5384,7 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20110116x" title="2011.01.16.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog">
@@ -5155,12 +5403,13 @@
 <div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20191227x" title="2019.12.27.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
-<a href="#atop" class="goto">⇑</a>
+<a href="#chinese-dayou" class="goto">⇑</a>
 
 
 </div><!-- content -->
 
 
+<div id="home"><span><a href="#atop" class="noprint" title="Back to Top">&laquo;</a></span></div>
 <div class="atoc center"><span>英文〖
   <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
   <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
@@ -5168,8 +5417,8 @@
   <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
   <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
 </span>
-<div id="back"><br/><a class="back" href="#atoc"
-  title="⇐ Back to Category ⇒"></a></div>
+<div id="back"><br/><a class="back" href="#atop"
+  title="⇐ Back to Home ⇒"></a></div>
 </div>
 
 </body>
