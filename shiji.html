@@ -41,6 +41,44 @@
     display: none;
   }
 
+  div#acat {
+    display: none;
+    font-size: 0.55em;
+    font-weight: normal;
+    line-height: 1.75em;
+  }
+  div#acat a {
+    color: darkred;
+    border-radius: 0.25em;
+    border: dotted 0.05em darkred;
+    padding: 0.1em 0.25em;
+    margin: 0.35em 0em;
+  }
+  div#atoc {
+    opacity: 0.25;
+    position: fixed;
+    bottom: 0; right: 0;
+    background-color: transparent;
+    line-height: 1.35em;
+    margin: 0.25em 0.25em 0.35em 0em;
+    padding: 0.5em 0.25em;
+    text-align: right;
+  }
+  div#atoc:hover {
+    opacity: 0.9;
+    border-radius: 0.25em;
+    border: double 0.05em whitesmoke;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0.25em;
+    padding: 0.5em;
+  }
+  div#atoc:hover div#acat {
+    display: block;
+    background-color: whitesmoke;
+    opacity: 1;
+  }
   div.center {
     text-align: center;
   }
@@ -288,6 +326,16 @@
 <body>
 <a name="toc_top"></a>
 <h1 class="biankuang">舟山詩詞</h1>
+<div id="atoc" class="noprint">
+<div id="acat">
+&middot; <a href="#boathill-ciqu">词曲</a><br/>
+&middot; <a href="#boathill-xinyun">新韵</a><br/>
+&middot; <a href="#boathill-qiyan">七言</a><br/>
+&middot; <a href="#boathill-qilv">七律</a><br/>
+&middot; <a href="#boathill-wulv">五律</a><br/>
+</div>
+<a href="#toc_top" class="noprint" title="Back to TOC">&laquo;</a>
+</div>
 
 
 <div id="toc_ref" class="center">
