@@ -17,18 +17,43 @@
   body {
     font-size: 1.25em;
   }
+  div#acat a {
+    color: darkred;
+    background-color: transparent;
+    border-radius: 0.25em;
+    padding: 0.25em 0.25em;
+    margin: 0.35em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
+  }
   div#atoc {
     opacity: 0.25;
     background-color: transparent;
     bottom: 0; right: 0;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    text-align: right;
     margin: 0.25em 0.5em 0.35em 0em;
-    padding: 0.5em;
+    padding: 0.25em 0.5em;
     position: fixed;
   }
+  div#atoc div#acat {
+    display: none;
+  }
   div#atoc:hover {
-    opacity: 1;
     font-weight: bold;
-    font-size: larger;
+    opacity: 1;
+  }
+  div#atoc:hover div#acat, div#atoc:active div#acat {
+    display: block;
+    background-color: whitesmoke;
+    border-style: double;
+    border-color: #F0F0F0;
+    border-width: 0.39em 0em 0.39em 0em;
+    border-radius: 0.5em 0em 0.0em 0.5em;
+    padding: 0.5em 0.75em 0.75em 0.75em;
+    opacity: 1;
   }
   h3 {
     margin: 2em 0em 1em 0em;
@@ -80,7 +105,20 @@
 </style>
 </head>
 <body><a id="atop" name="atop"></a>
-<div id="atoc"><a href="#atop" class="noprint" title="Back to TOC">&laquo;</a></div>
+<div id="atoc" class="noprint">
+<div id="acat">
+&middot; <a href="#poem-lines">诗韵散稿</a><br/>
+&middot; <a href="#english-xt">英语翻译</a><br/>
+&middot; <a href="#rand-lines">点滴生活</a><br/>
+&middot; <a href="#rand-think">杂想英语</a><br/>
+&middot; <a href="#hans-punch">妙语手记</a><br/>
+&middot; <a href="#fame-quote">名言摘录</a><br/>
+&middot; <a href="#poem-notes">诗歌文联</a><br/>
+&middot; <a href="#view-notes">论点杂抄</a><br/>
+&middot; <a href="#brainstorm">头脑风暴</a><br/>
+</div>
+<a href="#atop" class="noprint" title="Back to TOC">&laquo;</a>
+</div>
 <h2 id="mynotes">读书笔记</h2>
 
 <ul>
@@ -179,6 +217,7 @@
   <p>＊、Master out of home, one can become bachelor again.〖Upgraded version of "Cat-Away" -- 英譯『山中無老虎，猴子稱霸王』〗<span class="date">(2018.10.12)</span></p>
   <p>＊、Mission of the Four: Set conscience of the world, build fortune for people of all, continue the teachings of past sages, establish peace for future generations.〖北宋张载（横渠）四句：为天地立心，为生民立命，为往圣继绝学，为万世开太平。〗<span class="date">(2021.06.30)</span></p>
   <p>＊、Resentment don't blame government / Misfortune don't say no solution.【命苦不要怪政府，点背不能怨社会】 <span class="date">(2022.03.31)</span></p>
+  <p>＊、Roaring, tumbling, no air flee / Clouds and waves on seven seas / Stirring continents, with hot degrees / Storm and thunder, gutsy to be 【四海翻騰雲水怒，五洲震蕩風雷激。——毛澤東《滿江紅》】<span class="date">(2022.08.09)</span></p>
   <p>＊、The world is in grey cell / Mysterious hole over a well / Yellow dog becomes white / White dog looks swell.【江山一笼统，井上黑窟窿。黄狗身上白，白狗身上肿。】 <span class="date">(2011.01.07)</span></p>
   <p>＊、United we stand, moving mountains and land.【人心齐、泰山移】<span class="date">(2020.03.27)</span></p>
 
@@ -202,6 +241,7 @@
   <p>＊、像這樣皮兒薄餡兒大、肉滑菜嫩、美味多汁的營養減肥小籠包子，我一口氣能吃一斤！<span class="date">(2015.11.03)</span></p>
   <p>＊、公司老闆鼓勵員工：大家好好努力，年底每人發獎金哦！……等到年底時，有員工拿著工資單問老闆：怎麽沒有獎金啊？！老闆很生氣地問：你是「美人」嗎？<span class="date">(2011.12.01)</span></p>
   <p>＊、华州说夏天太热，德州人民都笑了；西雅图说今年要抗旱，够加州人民笑一年的。(Seattle in sauna last night.) <span class="date">(2015.07.02)</span></p>
+  <p>＊、原本是个悲剧的世界，可总有人想表演小丑。<span class="date">(2022.07.08)</span></p>
   <p>＊、口味重點沒關係，只要再多吃兩“口”，就有“品”味了。<span class="date">(2014.04.03)</span></p>
   <p>＊、同学聚会，为什么回国的人要矮一辈儿？〖因为归来仍是少年〗<span class="date">(2022.05.23)</span></p>
   <p>＊、喉痛感冒中。总结：丫梨润肺，薄荷润喉，西瓜嘛……润……肚皮 :-)<span class="date">(2015.04.05)</span></p>
@@ -594,6 +634,7 @@
   <p>＊、手把青秧插满田，低头便见水中天。心地清净方为道，退步原来是向前。（唐·布袋和尚《插秧诗》）</p>
   <p>＊、把酒问青天，天若有情天亦老；举杯邀明月，月如無恨月方圆。（苏轼｜李贺｜李白｜石延年）</p>
   <p>＊、抗疫采风：满载一船明月，平铺千里秋江（宋·张孝祥《西江月黄陵庙》——山东省对日本和歌山县）｜相知无远近，万里尚为邻（唐·张九龄《送韦城李少府》——河南对韩国庆尚北道和大邱市）｜雲海蕩朝日，春色任天涯（明·李日华：赠意大利传教士利玛窦）｜Berg und Tal kommen nicht zusammen, wohl aber die Menschen. / Mountain and valley don't come together, but people do.【山與山不相遇，人和人要相逢。】｜Unis nous vaincrons.【千里同好，堅於金石】<span class="date">(2020.03.27)</span></p>
+  <p>＊、掌上千秋史，胸中百万兵。眼底六洲风雨，笔下有雷声。唤醒蛰龙飞起，扫灭魔炎魅火，挥剑斩长鲸。春满人间世，日照大旗红。／抒慷慨，写鏖战，记长征。天章云锦，织出革命之豪情。细检诗坛李杜，词苑苏辛佳什，未有此奇雄。携卷登山唱，流韵壮东风。（高亨《水调歌头·读毛主席诗词》作於一九六三年十二月）
   <p>＊、故国虽大，好战必亡；天下虽安，忘战必危。——《司马法·仁本》</p>
   <p>＊、故明君贤将，所以动以胜人，成功出于众者，先知也。——《孙子兵法》用间第十三</p>
   <p>＊、易中天《满江红》：揖别林泉，初醒处，悄然皓月。莽原上，龙蛇出没，火光明灭。牛尾羊头相继舞，秋江春岭从容越。更娲皇炼石补天穹，风雷烈。／炎黄骨，蚩尤血；殷王斧，周王钺。望河山万里，雾迷城堞。烟雨苍茫寒漏永，枫林遍野彤云叠。问祖先，我本自何来，须商榷。</p>
@@ -616,6 +657,7 @@
   <p>＊、知存而不知亡，知乐而不知殃。夫存者非存，在于虑亡；乐者非乐，在于虑殃。已虑其源，岂忧其流。兵为凶器，不得已而用之。凡兵之道，莫过於一。一者，阶於道，幾於神。用之在於机，显之在於势，成之在於人。——《六韬·文韬·兵道》</p>
   <p>＊、秦王怫然怒曰：天子之怒，伏屍百萬，流血千里。唐雎曰：大王嘗聞布衣之怒乎？夫專諸之刺王僚也，彗星襲月；聶政之刺韓傀也，白虹貫日；要離之刺慶忌也，蒼鷹擊於殿上。此三子皆布衣之士也，懷怒未發，休祲降于天，與臣而將四矣！若士必怒，伏屍二人，流血五步，天下縞素，今日是也。《战国策·魏策四》</p>
   <p>＊、稚儿擎瓜柳棚下， 细犬逐蝶柳巷中。人间繁华多笑语， 唯我空余两鬓风。（林语堂）</p>
+  <p>＊、紫微行在前，北辰伴两旁；神兵开大道，得胜要逢双。</p>
   <p>＊、红尘有相，纸醉金迷百色烬。浮世無常，痴嗔怨爱萬劫空。</p>
   <p>＊、练得身形如鹤形，千株松下两函经。我来问道無余说，雲在青天水在瓶。选得幽居惬野情，终年無送亦無迎。有时直上孤峰顶，月下披云啸一声。（李翱《赠药山高僧惟俨》）</p>
   <p>＊、绝对：一岁二春双八月，一年两度春秋。〖某年隔年春，又是闰八月〗</p>
@@ -730,9 +772,8 @@
   <p>＊、螃蟹定律：身处底层，很容易陷入互害模式；层次越高，越懂得彼此欣赏，互相成全。蘑菇定律：成长要经历在黑暗中孤独奋战的时光，是最难熬的；如果在前期放弃生长的希望，就只能永远沉寂下去。跳蚤定律：人生只有一种失败，那就是自我设限。<span class="href">〖<a href="https://m.toutiao.com/is/dRA7yUS/" target="_link">三大强者定律 - 今日头条</a>〗</span></p>
   <p>＊、西醫讓你明明白白的死，中醫讓你糊糊涂涂的活。（胡適）</p>
   <p>＊、要完成工业化的前期内卷，必须进行：土地改革，全民基础教育，打碎宗教枷锁、阶级束缚，解放妇女、真正统一全国完成中央集权，这需要一个超级威权人物才能完成。中国成长的痛苦可能在全球最为强烈，但也相对短暂。回避成长选择缓和的疼痛，就如同附骨之蛆，永远不会消散。</p>
-  <p>＊、要让美国人为了全世界人类的利益，放弃个人利益那有多难啊！简直不敢相信，病毒肆虐三年，都不可能有这样的觉悟！毕竟发生在别人身上的痛苦，外人是很难感受到的。长期以来的自私自利让人麻木，不会关心别人，更不用说去保护别人了！【今日头条】<span class="href">〖<a href="https://m.toutiao.com/is/d8QphcU/</p>
-<p>＊、解读：使用全部现有方法，并根据需要创造新的方式，以保护美国的经济利益不受有害政策和做法的影响。大白话翻译：美方可能使用包括但不限制过去使用过的一切手段（贸易战、科技战、金融战以及地缘政治的围堵）甚至会采取新手段。就是会不择手段……https://m.toutiao.com/is/dvVFdac/"
-        target="_link">明暗战线的较量 </a>〗</span></p>
+  <p>＊、要让美国人为了全世界人类的利益，放弃个人利益那有多难啊！简直不敢相信，病毒肆虐三年，都不可能有这样的觉悟！毕竟发生在别人身上的痛苦，外人是很难感受到的。长期以来的自私自利让人麻木，不会关心别人，更不用说去保护别人了！【今日头条】</p>
+  <p>＊、解读：使用全部现有方法，并根据需要创造新的方式，以保护美国的经济利益不受有害政策和做法的影响。大白话翻译：美方可能使用包括但不限制过去使用过的一切手段（贸易战、科技战、金融战以及地缘政治的围堵）甚至会采取新手段。就是会不择手段……<span class="href">〖<a href="https://m.toutiao.com/is/dvVFdac/" target="_link">明暗战线的较量 </a>〗</span></p>
   <p>＊、谈判桌上一切看得见的结果，现实之中造成直接影响的一切原因，都是由看不见的战场上的胜负带来的。经济博弈进入耐力比拼的关键阶段，拼的，是经济韧性，是政策定力，是国运未来。<span class="href">〖<a href="https://m.toutiao.com/is/dvg65E7/" target="_link">大国竞争背景下的经济博弈</a>〗</span></p>
   <p>＊、那些抱怨红绿灯的人，往往是经常违章、不愿遵守交通规则的人。而无视金融监管的人，往往是漠视金融风险、不尊重金融规律的人。</p>
   <p>＊、量子現象。Quantum superposition/collapse/entanglement - 意識是一種量子現象：性觉必明，妄为明觉，本觉明妙，觉明为咎（《楞严经》）／一念不生全体现，六根才动被雲遮（唐·张拙）</p>

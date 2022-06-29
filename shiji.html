@@ -28,16 +28,16 @@
     font-family: "Calibri", "Trebuchet MS", "Tahoma", "Helvetica", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
   }
 
-  .hide-block {
+  #notes {
     display: none;
   }
-  .hide-hover {
+  #arrow {
     display: inline; color: lightgray;
   }
-  .show-hover:hover > .hide-block {
+  #hover:hover>#notes, #hover:active>#notes, #hover:focus>#notes {
     display: block;
   }
-  .show-hover:hover .hide-hover {
+  #hover:hover #arrow, #hover:active #arrow {
     display: none;
   }
 
@@ -49,10 +49,14 @@
   }
   div#acat a {
     color: darkred;
+    background-color: transparent;
     border-radius: 0.25em;
     border: dotted 0.05em darkred;
     padding: 0.1em 0.25em;
     margin: 0.35em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
   }
   div#atoc {
     opacity: 0.25;
@@ -60,11 +64,11 @@
     bottom: 0; right: 0;
     background-color: transparent;
     line-height: 1.35em;
-    margin: 0.25em 0.25em 0.35em 0em;
+    margin: 0.25em 0em 0.35em 0em;
     padding: 0.5em 0.25em;
     text-align: right;
   }
-  div#atoc:hover {
+  div#atoc:hover, div#atoc:active {
     opacity: 0.9;
     border-radius: 0.25em;
     border: double 0.05em whitesmoke;
@@ -74,7 +78,7 @@
     margin: 0.25em;
     padding: 0.5em;
   }
-  div#atoc:hover div#acat {
+  div#atoc:hover div#acat, div#atoc:active div#acat {
     display: block;
     background-color: whitesmoke;
     opacity: 1;
@@ -261,6 +265,14 @@
     margin-right: 0.25em;
     text-align: right;
   }
+  p.right a {
+    color: dodgerblue;
+    opacity: 0.35;
+  }
+  p.right a:hover {
+    color: darkred;
+    opacity: 1;
+  }
   p.spbr {
     line-height: 0.5em;
     margin: 0em;
@@ -314,8 +326,11 @@
       margin-top: 0em;
       font-size: 2em;
     }
-    .noprint {
+    #arrow, .noprint {
       display: none;
+    }
+    #notes {
+      display: block;
     }
   }
 </style>
@@ -331,7 +346,7 @@
 &middot; <a href="#boathill-qilv">七律</a><br/>
 &middot; <a href="#boathill-wulv">五律</a><br/>
 </div>
-<a href="#toc_top" class="noprint" title="Back to TOC">&laquo;</a>
+<a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">&laquo;</a>
 </div>
 
 
@@ -523,7 +538,7 @@
 <p class="mulu">(1) 行香子•寄思　　　　　　　　　　　　<a href="#y2022-spring">2022．⒌</a></p>
 <hr/>
 <p class="futi">以上留存詩詞凡二百五十八首</p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -965,7 +980,7 @@
 <p><br/></p>
 <p class="zong">　　右录词曲一百零四首</p>
 <p class="zong">　　纱糸轩藏</p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1183,7 +1198,7 @@
 <p class="text">　　Shine the past empire another dawn</p>
 <p class="text">　　All glory days dusted ‘n’ gone</p>
 
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1244,9 +1259,9 @@
 <p class="text">　　<span class="fair">我望槑形叹痴样，君观囧字想愁颜</span>。⑥</p>
 <p class="text">　　画面画皮画老虎，雷人雷世雷网坛。⑦</p>
 <p class="text">　　年终盘点流行语，一壶酱油永流传。⑧</p>
-<div class="show-hover">
-<h4 class="futi">典注<span class="hide-hover">&#x25BC;</span></h4>
-<div class="hide-block">
+<div id="hover">
+<h4 class="futi">典注<span id="arrow">&#x25BC;</span></h4>
+<div id="notes">
 <p class="note">①上句：以糯米甜食品名的一个群体统称——胡锦涛主席和温家宝总理的粉丝团。“粉丝”/“饭”：<a href="https://en.wikipedia.org/wiki/Fan_(person)" target="_new">fan(s)</a>谐音。</p>
 <p class="note">②上句：“草根”直译自英文 "grass roots"，一指同政府或决策者相对的势力；或指同主流、精英文化或精英阶层相对应的弱势阶层。</p>
 <p class="note">　下句：“山寨”源於广东话，一种由民间仿造产业现象，以极低成本模仿主流品牌产品，并有所创新和超越。</p>
@@ -1303,7 +1318,7 @@
 <p class="poem">道生一生二生三，万物负阴而抱阳。甚爱名利而大费，多藏贵货必厚亡。受国之垢社稷主，受国不祥天下王。甘食美服闻鸡犬，安居乐俗無往来。不失其所智者久，死而不亡仁者寿。知足不辱堪长久，知止不殆可得存。天下有始以为母，不争天下莫与争。 天子不与庶民同，国之大事祀与戎。万物反者道之动，有生於無道之用。大成若缺用不弊，大盈若冲用不穷。天道损余补不足，人心奉余舍不足。祸兮福之其所倚，福兮祸之其所伏。善从人谏乃明智，达者足以为吾师。信言不美美不信，善者不辩辩不善，知者不博博不知。天下神器不可为，为者败之执者失。为而不争圣人道，无为无败无所持。知荣守辱天下谷，知雄守雌天下溪，知白守黑天下式。无之以为用，有之以为利。图难於其易，为大於其细。知耻後而勇，知礼後而文。施他人於礼，施天下於仁。後其身而先，外其身而存。归元性不二，方便有多门。</p>
 
 <p><br/></p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1478,7 +1493,7 @@
 <p class="poem">再入深山已洗尘，枯苔黄叶落纷纷。烟如早雾飘飘袖，树似夕霞朵朵裙。起舞阳光晴透谷，斑斓枝影乱横纹。秋妆翠岭溪妆色，路在青霄人在雲。</p>
 
 <p><br/></p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1500,7 +1515,7 @@
 <h4 id="y2016-xian">五言·西安謠　<span class="date">2016.05.14</span></h4>
 <p class="poem">列代古都會，大唐不夜城。繁榮呈瑞色，舞樂頌平昇。跑馬青磚路，雄關長漏燈。帝王一統夢，秦俑兵馬坑。妃子深宫嘆，華清池水蒸。而今遺迹處，昔往锺鼓聲。佳肴無繁様，品茶有俊朋。盛朝傳人傑，時世出賢能。男兒多豪邁，巾幗盈彩丰。初識拼烈酒，談笑送新征。不作灞橋别，當歌事業成。相約西雅圖，旬日話重逢。</p>
 <p><br/></p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1529,7 +1544,7 @@
 <h4 class="futi">其二</h4>
 <p class="poem">愁雲渡雨阴，松阶响春霖。<span class="fair">声断芭蕉碎，丝连水镜沉</span>。泥香幽浸草，枝翠绿湿襟。欲去归無路，难融是此心。</p>
 <p class="spbr"><br/></p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 
 
 <h4 id="xishan"><span class="juan">西山集</span></h4>
@@ -1549,7 +1564,7 @@
 
 <h4 id="y1988-rain">夜雨邀龚学士戏作　<span class="date">1988.6</span></h4>
 <p class="poem">夜已四更了，一看三点钟。轻轻窗外雨，剪剪耳边风。老恨蛙声乱，新愁睡意浓。明天考网络，心事两重重。</p>
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="pause">***<br/></p>
 
 
@@ -1676,7 +1691,7 @@
 <p class="poem">一股泼天恨，十年沥胆仇。遭逢千世变，离去两情收。苦困难得悟，爱锁不自由。重生方有念，至死亦無休。忍处风雷静，退时天地留。藏心成巧计，会力破奇谋。舍业为之舍，求仁在所求。放怀千野阔，绕指百般柔。</p>
 <p><br/></p>
 
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1782,6 +1797,6 @@
 <p class="zong">　　右录詩詞二百五十八首</p>
 <p class="zong">　　纱糸轩藏</p>
 
-<p class="right"><a href="#toc_top" class="noprint">⇑</a></p>
+<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 </body>
 </html>

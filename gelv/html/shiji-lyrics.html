@@ -22,7 +22,7 @@
     visibility: hidden;
     height: 0px;
   }
-  a.goto:hover {
+  a.goto:hover, a.goto:active {
     color: darkorange;
     font-size: larger;
     font-weight: bold;
@@ -33,6 +33,7 @@
   }
   div.atoc {
     color: darkgray;
+    cursor: default;
     line-height: 2em;
     white-space: nowrap;
     width: 100%;
@@ -41,7 +42,7 @@
     border-top: double 0.25em lightgray;
     padding: 0.25em 0em;
   }
-  div.atoc>span a:hover {
+  div.atoc>span a:hover, div.atoc>span a:active {
     background: gold;
     border-radius: 0.25em;
     margin: 0em -0.2em;
@@ -50,31 +51,89 @@
   div.atoc p {
     line-height: 0.5em;
   }
-  div#back {
-    background-color: #e0e0e0; /* whitesmoke */
-    position: relative;
+  div#acat {
+    color: gray;
+    cursor: default;
+    display: none;
+    font-size: 0.75em;
+    font-weight: normal;
+    line-height: 1.75em;
+    white-space: nowrap;
   }
-  div#home {
+  div#acat a {
+    color: darkred;
+    background-color: transparent;
+    border-radius: 0.25em;
+    border: dotted 0.05em darkred;
+    padding: 0.1em 0.25em;
+    margin: 0.35em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
+  }
+  div#acat span {
+    color: lightgray;
+  }
+  div#goto {
+    opacity: 0.25;
     position: fixed;
     bottom: 0; right: 0;
-    vertical-align: top;
     background-color: transparent;
+    line-height: 1.35em;
+    margin: 0.25em 0.25em 0.35em 0em;
+    padding: 0.5em 0.25em;
+    text-align: right;
+    vertical-align: top;
     margin: 0.5em 0.5em 0.25em 0.5em;
     padding: 0.35em;
   }
-  div#home span {
+  div#goto:hover, div#goto:active {
+    opacity: 0.9;
+    border-radius: 0.25em;
+    border: double 0.05em whitesmoke;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0.25em;
+    padding: 0.5em;
+  }
+  div#goto:hover div#acat, div#goto:active div#acat {
+    display: block;
+    background-color: whitesmoke;
+    opacity: 1;
+  }
+  div#goto #aquo {
+    display: block;
     border-radius: 1em;
     background-color: whitesmoke;
     padding: 0.1em 0.5em 0.25em 0.5em;
     height: 1em; width: 1.25em;
     opacity: 0.5;
   }
-  div#home span:hover {
+  div#goto #back {
+    display: none;
+  }
+  div#goto:hover #aquo, div#goto:active #aquo {
+    display: none;
+  }
+  div#goto:hover #back, div#goto:active #back {
+    display: inline;
     background-color: beige;
     border: solid 0.125em lightyellow;
+    border-radius: 1em;
     font-size: larger;
     font-weight: bold;
+    height: 1em; width: 1.25em;
+    margin-right: -0.125em;
+    padding: 0.1em 0.35em 0.25em 0.35em;
     opacity: 1;
+  }
+  div#home a {
+    display: block; width: 100%;
+  }
+  div#home {
+    background-color: #e0e0e0; /* whitesmoke */
+    position: relative;
   }
   div.blog {
     display: flex;
@@ -5413,7 +5472,24 @@
 </div><!-- content -->
 
 
-<div id="home"><span><a href="#atop" class="noprint" title="Back to Top">&laquo;</a></span></div>
+<div id="goto" class="noprint">
+  <div id="acat" class="noprint">
+  <a href="#atoc" title="⇐ Back to Category ⇒">分类</a>
+  <br/><span>…………………</span><br/>
+  <span title="English">英语</span>
+  &middot; <a href="#english-poems" title="English Poems">诗歌</a><br/>
+  &middot; <a href="#english-lyrics" title="English Lyrics">译词</a><br/>
+  &middot; <a href="#chinese-lyrics" title="Chinese Lyrics">填词</a><br/>
+  <span title="Chinese">中文</span>
+  &middot; <a href="#chinese-poems" title="Chinese Poems">诗词</a><br/>
+  &middot; <a href="#chinese-dayou" title="Chinese Etc.">白话</a><br/>
+  <br/>
+  </div>
+  <span id="aquo">&laquo;</span>
+  <span id="back"><a href="#atop" class="noprint"
+    title="⇧ Back to Home ⇧"><span>⇧</span></a>
+  </span>
+</div>
 <div class="atoc center"><span>英文〖
   <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
   <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
@@ -5421,8 +5497,9 @@
   <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
   <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
 </span>
-<div id="back"><br/><a class="back" href="#atop"
-  title="⇐ Back to Home ⇒"></a></div>
+<div id="home" class="noprint">
+  <a href="#atop" class="noprint" title="⟰ Back to Home ⟰">&#8679;</a>
+</div>
 </div>
 
 </body>
