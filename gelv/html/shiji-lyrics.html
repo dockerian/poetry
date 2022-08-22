@@ -143,8 +143,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: stretch;
-    margin: 0em 0em 0.5em 0em;
-    padding: 0em 0em 0.5em 0.5em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0.5em 0em;
     page-break-before: always;
     position: relative;
     width: 100%;
@@ -221,19 +221,22 @@
   }
   div.geci, div.yuan, div.ying, div.tian, div.poem {
     line-height: 1.5em;
-    margin: 0em 0em 0em 0em;
-    padding-right: 0.5em;
+    margin: 0em 0.5em 0em 0em;
+    padding: 0em 0.5em 0em 0em;
     white-space: pre;
   }
   div.geci, div.yuan, div.poem { /* 中文原词，Oringal lyrics */
     border-radius: 3.9em;
     border-right: dotted 1px lightgray;
     color: darkslategray;
+    padding-left: 0.5em;
   }
   div.geci, div.tian, div.poem {
+    padding-left: 0.5em;
     min-width: 20em;
   }
   div.ying, div.yuan {
+    padding-left: 0.5em;
     min-width: 25em;
   }
   div.geci::after, div.yuan::after {
@@ -262,6 +265,9 @@
     -webkit-line-clamp: 25.5;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  div.text pre {
+    font-size: 1.25em;
   }
   em a {
     color: darkolivegreen;
@@ -297,7 +303,7 @@
     background-color: darkseagreen; /* dodgerblue; */
     font-size: 1.25em;
     margin: 0.25em 0em 0em 0em;
-    padding: 0em 0.5em 0em 0.25em;
+    padding: 0em 0.5em 0em 0.5em;
     page-break-before: always;
     position: relative;
   }
@@ -456,12 +462,12 @@
   div.geci, div.yuan { /* 中文原词，Oringal lyrics */
     border: none;
     line-height: 2.75em;
-    margin: 0em 0em 1.25em 0em;
+    margin: 0em 0em 1.25em 0.5em;
   }
   div.tian, div.ying { /* 中文填词，英文译词 */
     border: none;
     line-height: 2.75em;
-    padding: 1.25em 0em 1.55em 0em;
+    padding: 1.25em 0em 1.55em 1em;
     position: absolute;
   }
   div.blog h3.t3 {
@@ -633,7 +639,7 @@
 
 <!--英文译诗-->
 <div class="blog">
-<div class="poem"><h3 class="t3 poem" id="p20010101x">The Three Realms <em>(2001)</em></h3>
+<div class="poem"><h3 class="t3" id="p20010101x">The Three Realms <em>(2001)</em></h3>
 <h4 class="h4">1. Seek, see, and set a goal</h4>
   “Butterfly Loves Flower”
    – by Yan-Shu (991~1055):
@@ -653,7 +659,7 @@
   Turn back to find her under eyes ...<br/>
 <em><i>English Translation by </i> Jason Zhu</em>
 </div>
-<div class="text"><h3 class="t3 text"><em></em></h3>
+<div class="text"><h3 class="t3"><em></em></h3>
 <h4 class="h4">王國維《人間詞話》二六 <em style="border:none"><a class="sup" href="#d20010101x" title="2001.01.01">&#11139;</a></em></h4>
   <p>Chinese poems in ancient lyrics<sup>†</sup> figuring the three realms passed through to a success.</p>
   <p>古今之成大事业、大学问者必经过三种之境界：“昨夜西风凋碧树。独上高楼，望尽天涯路”，此第一境也。“衣带渐宽终不悔，为伊消得人憔悴”，此第二境也。“众里寻他千百度，蓦然回首，那人却在灯火阑珊处”，此第三境也。</p>
@@ -666,7 +672,7 @@
 
 <!--英文译诗-->
 <div class="blog">
-<div class="geci"><h3 class="t3 geci" id="p20010923x">道德经 <em>之一</em></h3>
+<div class="geci"><h3 class="t3" id="p20010923x">道德经 <em>之一</em></h3>
   道可道，非常道。
   名可名，非常名。
   無、名天地之始；
@@ -680,7 +686,7 @@
   眾妙之門。<br/>
 <em>原文：老子《道德经·第一章》 by Lao Tse (BC 570 - BC 470)</em>
 </div>
-<div class="ying"><h3 class="t3 ying">The Way Of The Way  <em>(2001)</em> <em><a class="sup" href="#d20010923x" title="2001.09.23">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3">The Way Of The Way  <em>(2001)</em> <em><a class="sup" href="#d20010923x" title="2001.09.23">&#11139;</a></em></h3>
   The way could be the way, but not a normal way;
   The name could be the name, but not a normal name
   Nothing, name the beginning of the world;
