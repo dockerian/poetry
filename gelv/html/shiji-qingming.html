@@ -18,6 +18,49 @@
     margin: 0px;
     padding: 0;
   }
+  div#acat {
+    display: none;
+    font-size: 0.55em;
+    font-weight: normal;
+    line-height: 1.75em;
+  }
+  div#acat a {
+    color: darkred;
+    background-color: transparent;
+    border-radius: 0.25em;
+    border: dotted 0.05em darkred;
+    padding: 0.1em 0.25em;
+    margin: 0.35em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
+  }
+  div#atoc {
+    opacity: 0.25;
+    position: fixed;
+    bottom: 0; right: 0;
+    background-color: transparent;
+    line-height: 1.35em;
+    margin: 0.25em 0em 0.35em 0em;
+    padding: 0.5em 0.25em;
+    text-align: right;
+  }
+  div#atoc:hover, div#atoc:active {
+    opacity: 0.9;
+    border-radius: 0.25em;
+    border: double 0.05em whitesmoke;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0.25em;
+    padding: 0.5em;
+  }
+  div#atoc:hover div#acat, div#atoc:active div#acat {
+    display: block;
+    background-color: whitesmoke;
+    opacity: 1;
+  }
+
   div.center {
     text-align: center;
   }
@@ -68,7 +111,26 @@
     text-indent: 2em;
   }
   h3 {
+    border-right: inset 0.5em lightblue;
     page-break-before: always;
+  }
+  h3:has(span.gang) {
+    border-right: inset 0.5em orange;
+    margin-left: -0.5em;
+  }
+  h3 span.gang {
+    border: dotted orange 0.25em;
+    border-radius: 0.25em;
+    padding: 0.25em;
+  }
+  h3:has(span.futi) {
+    margin-left: -0.5em;
+  }
+  h3 span.futi {
+    padding: 0.25em 0.5em 0.35em 0.5em;
+    background-color: #AFDCAF;/* darkseagreen #8FBC8F */
+    background-color: lightblue;
+    border-radius: 0.25em;
   }
   h4.futi, p.futi, p.zong {
     font-size: 1em;
@@ -100,6 +162,7 @@
     padding-bottom: 0.075em;
   }
   span.author, span.shou {
+    color: slategray;
     font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
     font-weight: normal;
   }
@@ -115,14 +178,15 @@
     padding-bottom: 0.075em;
   }
   span.jiao {
-    font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+    color: darkgray;
+    font-family: "DK-KAITI", "Kai", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "楷书", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
   }
   span.cibr {
     display: inline;
   }
   span.date, span.year {
     display: block;
-    color: darkgray;
+    color: dimgray;
     font-family: "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
     font-size: 0.625em;
     line-height: 0.5em;
@@ -216,7 +280,7 @@
       text-align: center;
       text-indent: 0em;
     }
-    h3, h4, h4.futi, h5, p, p.note, p.poem, p.text {
+    h3, h4, h4.futi, h5, p, p.futi, p.note, p.poem, p.text {
       font-size: 1.25em;
     }
   }
@@ -268,6 +332,23 @@
 </head>
 <body><a name="toc_top"></a>
 <h1 class="biankuang"><span>清明詩鈔</span></h1>
+<div id="atoc" class="noprint">
+<div id="acat">
+<a href="#qm-xu">编序</a><br/>
+<a href="#qm-vol-01">诗抄｜卷一</a><br/>
+<a href="#qm-vol-02">词抄上｜卷二</a><br/>
+<a href="#qm-vol-03">词抄續｜卷三</a><br/>
+<a href="#qm-vol-04">挽联赋诔文｜卷四</a><br/>
+<a href="#qm-vol-05">现代散文诗选｜卷五</a><br/>
+<a href="#qm-vol-06">散文四篇｜卷六</a><br/>
+<a href="#qm-vol-a1">恩来诗文｜附一</a><br/>
+<a href="#qm-vol-a2">主席诗词｜附二</a><br/>
+&middot; <a href="#qm-vol-a2-ci">词抄</a><br/>
+&middot; <a href="#qm-vol-a2-sh">诗抄</a><br/>
+&middot; <a href="#qm-vol-a2-fu">副编</a><br/>
+</div>
+<a href="#toc_top" class="noprint" title="⇐ Back ⇒">&laquo;</a>
+</div>
 
 <div id="qm-toc">
 <h2 id="toc" class="gray">目錄</h2>
@@ -276,7 +357,7 @@
 <li><a href="#qm-vol-02">卷二·词抄五十四首</a></li>
 <li><a href="#qm-vol-03">卷三·词抄五十四首（續）</a></li>
 <li><a href="#qm-vol-04">卷四·挽联、赋、诔文</a></li>
-<li><a href="#qm-vol-05">卷五·现代散文诗选三首</a></li>
+<li><a href="#qm-vol-05">卷五·现代散文诗选五首</a></li>
 <li><a href="#qm-vol-06">卷六·散文四篇</a></li>
 <li><a href="#qm-vol-a1">附一·周恩来诗文选</a></li>
 <li><a href="#qm-vol-a2">附二·毛泽东诗词选</a></li>
@@ -284,7 +365,7 @@
 <p><br/></p>
 
 
-<h3 id="qm-xu">編序</h3>
+<h3 id="qm-xu"><span class="gang">編序</span></h3>
 <p class="spbr"><br/></p>
 <p class="text">　　少年初涉詩詞，當其時代更迭，古籍猶未開禁，難覓善本。轉學榕城，偶得多卷《清明詩抄》。覽其所編，或集民間雜版，或采縣府學刊，至為大全，皆貫以童懷周之作。非有其人，盖寓同懷周公之意。</p>
 <p class="text">　　周公者恩來，字翔宇，公元一九七六年一月八日逝於國家總理任上。當年清明（歲在丙辰），有數萬之眾集於北京天安門廣場，憑弔此君，並留千百首紀念詩詞，一時爭相傳頌。當其「文革」之末，政爭激烈，而民心向背，舉國同酬。後此事遭禁，更增民憤。</p>
@@ -314,7 +395,7 @@
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
 
-<h3>诗抄　<span class="shou">五十八首</span></h3>
+<h3><span class="gang">诗抄</span>　<span class="shou">五十八首</span></h3>
 
 <h4>五言古诗　<span class="shou">九首</span></h4>
 <p class="poem">欲悲闻鬼叫，我哭豺狼笑。洒泪祭雄杰，扬眉剑出鞘。</p>
@@ -462,7 +543,7 @@
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
 
-<h3>词抄　<span class="shou">五十四首</span></h3>
+<h3><span class="gang">词抄</span>　<span class="shou">五十四首</span></h3>
 <p><br/></p>
 
 <h4>金缕曲·周年感赋　　<span class="author">──趙樸初</span></h4>
@@ -575,7 +656,7 @@
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
 
-<h3>词抄五十四首之续卷　<span class="shou">二十五首</span></h3>
+<h3><span class="gang">词抄<span class="citi">五十四首之续卷</span></span>　<span class="shou">二十五首</span></h3>
 
 <p class="spbr"><br/></p>
 <h4>满江红　<span class="shou">八首</span></h4>
@@ -654,7 +735,7 @@
 <h2 id="qm-vol-04">重订丙辰清明诗词散文选钞卷之四</h2>
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
-<h3>挽联、赋、诔文</h3>
+<h3><span class="gang">挽联、赋、诔文</span></h3>
 
 <p class="spbr"><br/></p>
 <h4>挽联　<span class="shou">一十四幅</span></h4>
@@ -728,7 +809,7 @@
 <h2 id="qm-vol-05">重订丙辰清明诗词散文选钞卷之五</h2>
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
-<h3>现代散文诗选　<span class="shou">五首</span></h3>
+<h3><span class="gang">现代散文诗选</span>　<span class="shou">五首</span></h3>
 
 <p class="spbr"><br/></p>
 <h4>一月的哀思　　<span class="author">李瑛</span></h4>
@@ -1057,8 +1138,8 @@
 
 <h4 class="pgbr">永恒的瞬间　　<span class="author">佚名</span></h4>
 <p class="spbr"><br/></p>
-<p class="text">　　（缺）</p>
-<p class="spbr"><br/></p>
+<p class="text">　　<span class="jiao">（缺）</span></p>
+<p><br/></p>
 <p class="spbr"><br/></p>
 
 <h4 class="pgbr">那时的爱　　<span class="author">张若茗</span></h4>
@@ -1122,7 +1203,7 @@
 <h2 id="qm-vol-06">重订丙辰清明诗词散文选钞卷之六</h2>
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
-<h3>散文四篇</h3>
+<h3><span class="gang">散文四篇</span></h3>
 <p class="spbr"><br/></p>
 
 <h4>引卡尔·马克思语</h4>
@@ -1168,13 +1249,19 @@
 <h2 id="qm-vol-a1">重订丙辰清明诗词散文选钞附卷一</h2>
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
-<h3>周恩来诗文选</h3>
+<h3><span class="gang">周恩来诗文选</span></h3>
 <p class="spbr"><br/></p>
+
 <h4>春日偶成　　<span class="year">一九一四年</span></h4>
 <p class="poem">极目青郊外，烟霾布正浓。中原方逐鹿，<span class="jiao">【汉书·蒯通传：秦失其鹿，天下共逐之。天下纷争，中原逐鹿也。】</span>博浪踵相踪。<span class="jiao">【博浪沙，地名也，留候使人行刺祖龙於此。】</span></p>
 <h4 class="futi">其二</h4>
 <p class="poem">樱花红陌上，柳叶绿池边。燕子声声里，相思又一年。</p>
 <p class="spbr"><br/></p>
+
+<h4>与王朴山联句　　<span class="year">一九一五年</span></h4>
+<p class="poem">华年惜绿鬓，午夜啸青锋。学道雄心淡，观时热血浓。无成惭画虎，有待爱潜龙。诗思飞何处？雲山几万重。</p>
+<p class="spbr"><br/></p>
+
 <h4>送蓬仙兄返里有感　　<span class="year">一九一六年初</span></h4>
 <p class="poem">东风催异客，南浦唱骊歌。<span class="jiao">【江淹·别赋：送君南浦，伤如之何。大戴礼：唱骊驹，诗也。】</span>转眼人千里，消魄梦一柯。<span class="jiao">【典出唐·李公佐·南柯记故事。】</span>星离成恨事，雲散奈愁何。欣喜前尘影，因缘文字多。</p>
 <h4 class="futi">其二</h4>
@@ -1182,17 +1269,19 @@
 <h4 class="futi">其三</h4>
 <p class="poem">相逢萍水亦前缘，负笈津门岂偶然。扪虱倾谈惊四座，<span class="jiao">【典出晋书·王猛传：扪虱而言，旁若无人。】</span>持蟹下酒话当年。险夷不变应尝胆，<span class="jiao">【典出史记·越王勾践世家。】</span>道义争担敢息肩。待得归农功满日，他年预卜买邻钱。<span class="jiao">【南史·吕僧珍传：宋季雅罢南康郡市，宅居僧珍宅侧。僧珍问宅价。对曰：一千一百万。怪其贵。季雅曰：一百万买宅，千万买邻。】</span></p>
 <p class="spbr"><br/></p>
+
 <h4>次皋如夫子伤时事原韵　　<span class="year">一九一六年十月</span></h4>
 <p class="poem">茫茫大地起风雲，举国昏沉岂足云。最是伤心秋又到，虫声唧唧不堪闻。</p>
 <h4>附张皋如原诗并序</h4>
 <p class="futi">九月二十八日，阅报见徐州会盟。祸已近在眉睫，政府犹用敷衍主意，国生命已断送数人之手矣！</p>
 <p class="poem">太平希望付烟雲，误国人物何足云。孤客天涯空涕泪，伤心最怕读新闻。</p>
 <p class="spbr"><br/></p>
+
 <h4>大江歌罢　　<span class="year">一九一七年九月</span></h4>
 <p class="poem">大江歌罢掉头东，邃密群科济世穹。面壁十年图破壁，<span class="jiao">【五灯会元：达摩大师住嵩山少林寺，终日面壁而坐】</span>难酬蹈海亦英雄。<span class="jiao">【史记·鲁仲连邹阳列传、後汉书·逸民传序：蹈海之节、千乘莫移其情。】</span></p>
 <p><br/></p>
 
-<h3>散文诗四首</h3>
+<h3><span class="futi">散文诗四首</span></h3>
 <p class="spbr"><br/></p>
 <h4>雨中岚山　　<span class="year">一九一九年春</span></h4>
 <p class="spbr"><br/></p>
@@ -1275,10 +1364,10 @@
 <h2 id="qm-vol-a2">重订丙辰清明诗词散文选钞附卷二</h2>
 <p class="author">紹興竺暉宇昕編　　　　舟山堂藏</p>
 <p><br/></p>
-<h3>毛泽东诗词选　<span class="shou">五十首</span></h3>
+<h3><span class="gang">毛泽东诗词选</span>　<span class="shou">五十首</span></h3>
 <p class="spbr"><br/></p>
 
-<h3>词钞三十四首</h3>
+<h3 id="qm-vol-a2-ci"><span class="futi">词钞三十四首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4>贺新郎·给杨开慧　　<span class="year">一九二三年</span></h4>
@@ -1446,10 +1535,10 @@
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
-<h3 class="pgbr">诗钞十六首</h3>
+<h3 id="qm-vol-a2-sh" class="pgbr"><span class="futi">诗钞十六首</span></h3>
 <p class="spbr"><br/></p>
 
-<h3>七律十二首　<span class="shou">七绝二首　五律二首</span></h3>
+<p class="futi"><span class="shou">七律十二首　七绝二首　五律二首</span></p>
 <p class="spbr"><br/></p>
 
 <h4>七律·长征　　<span class="year">一九三五年</span></h4>
@@ -1519,7 +1608,7 @@
 <p class="spbr"><br/></p>
 
 <h4>五律·登北高峰看山　　<span class="year">一九五九年</span></h4>
-<p class="poem">三上北高峰，杭州一望空。飞凤亭边树，桃花岭上风。热来寻扇子，冷去对佳人。一片飘搖下，欢迎有晓莺。<span class="jiao">（北高峰：在浙江省杭州市灵隐寺後，与南高峰相对峙，为西湖群山之一。在北高峰附近有飞凤亭、桃花岭、扇子岭、美人峰等名胜。根据作者自注，诗中的“扇子”指扇子岭，“佳人”指美人峰。）</span></p>
+<p class="poem">三上北高峰，杭州一望空。飞凤亭边树，桃花岭上风。热来寻扇子，冷去对佳人。一片飘搖下，欢迎有晓莺。<span class="jiao">〖北高峰：在浙江省杭州市灵隐寺後，与南高峰相对峙，为西湖群山之一。在北高峰附近有飞凤亭、桃花岭、扇子岭、美人峰等名胜。根据作者自注，诗中的“扇子”指扇子岭，“佳人”指美人峰。〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>五律·西行　　<span class="year">一九六五年七月</span></h4>
@@ -1527,7 +1616,7 @@
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
-<h3 class="pgbr">毛泽东诗词副編</h3>
+<h3 id="qm-vol-a2-fu" class="pgbr"><span class="futi">毛泽东诗词副編</span></h3>
 <p class="spbr"><br/></p>
 
 <h4>儿歌·看舞狮　　<span class="year">一九零二年</span></h4>
@@ -1555,7 +1644,7 @@
 <p class="spbr"><br/></p>
 
 <h4>五律·残篇　　<span class="year">一九一零年秋</span></h4>
-<p class="poem">晚霭峰间起，归人江上行。雲流千里远，人对一帆轻。落日荒林暗，寒钟古寺生。深林归倦鸟，高阁倚佳人。（下佚）</p>
+<p class="poem">晚霭峰间起，归人江上行。雲流千里远，人对一帆轻。落日荒林暗，寒钟古寺生。深林归倦鸟，高阁倚佳人。<span class="jiao">〖下佚〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>五古·易昌陶　　<span class="year">一九一五年五月</span></h4>
@@ -1602,6 +1691,10 @@
 <p class="poem">红军宗旨，民权革命。赣西一军，声威远震。此番计划，分兵前进。官佐兵伕，服从命令。平买平卖，事实为证。乱烧乱杀，在所必禁。全国各地，压迫太甚。工人农人，十分苦痛。土豪劣绅，横行乡镇。重息重租，人人怨愤。白军士兵，饥寒交并。小资产者，税捐极重。洋货越多，国货受困。帝国主义，哪个不恨？军民匪党，完全反动。口是心非，不能过硬。蒋桂冯阎，同床异梦。冲突已起，军阀倒运。饭可充饥，药能医病。共党主张，极为公正。地主田地，农民收种。债不要还，租不要送。增加工钱，老板担任。八时工作，恰好相称。国队待遇，亟须改订。发给田地，士兵有份。敌方官兵，准其投顺。以前行为，可以不问。累进税法，最为适用。苛税苛捐，扫除干净。城市商人，积铢累寸。只要服从，余皆不论。对待外人，必须严峻。工厂银行，没收归并。外资外债，概不承认。外兵外舰，不准入境。打倒列强，人人高兴。打倒军阀，除恶务尽。统一中华，举国称庆。满蒙回藏，章程自定。国民政府，一群恶棍。合力铲除，肃清乱政。全国工农，风发雷奋。夺取政权，为期日近。革命成功，尽在民众。布告四方，大家起劲。──军长朱德　党代表毛泽东</p>
 <p class="spbr"><br/></p>
 
+<h4>蝶恋花·向板仓　　<span class="year">一九三零年寒冬</span></h4>
+<p class="poem">霞光褪去何凄楚，万箭穿心不似这般苦。奈何吾身百莫赎，待到九泉愧谢汝。<span class="cibr"></span>　　无感霜风侵蚀骨，此生煎熬难与外人吐。恸声悲歌催战鼓，更起刀枪向敌仇。</p>
+<p class="spbr"><br/></p>
+
 <h4>歌谣·洛甫摔跤　　<span class="year">一九三五年</span></h4>
 <p class="poem">洛甫洛甫真英豪，不会行军会摔跤。四脚朝天摔得巧，沒伤胳膊沒伤脑。</p>
 <p class="spbr"><br/></p>
@@ -1624,7 +1717,7 @@
 <p class="spbr"><br/></p>
 
 <h4>五律·挽戴安澜将军　　<span class="year">一九四三年三月</span></h4>
-<p class="poem">外侮需人御，将军赋采薇。师称机械化，勇夺虎罴威。浴血东瓜守，驱倭棠吉归。沙场竟殒命，壮志也无违。<span class="jiao">（又名“海鸥将军千古”）</span></p>
+<p class="poem">外侮需人御，将军赋采薇。师称机械化，勇夺虎罴威。浴血东瓜守，驱倭棠吉归。沙场竟殒命，壮志也无违。<span class="jiao">〖又名“海鸥将军千古”〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>五律·张冠道中　　<span class="year">一九四七年</span></h4>
@@ -1637,7 +1730,7 @@
 <p class="spbr"><br/></p>
 
 <h4>五绝·赞“密使一号”　　<span class="year">一九五零年一月</span></h4>
-<p class="poem">惊涛拍孤岛，碧波映天晓。虎穴藏忠魂，曙光迎来早。<span class="jiao">（“密使一号”指中共在台湾国民党内部级别最高的隐蔽战线英雄吴石，其公开身份是国防部参谋次长，领中将军衔，於一九五零年六月十日於其好友陈宝仓中将一起被杀害於台北马场町。）</span></p>
+<p class="poem">惊涛拍孤岛，碧波映天晓。虎穴藏忠魂，曙光迎来早。<span class="jiao">〖“密使一号”指中共在台湾国民党内部级别最高的隐蔽战线英雄吴石，其公开身份是国防部参谋次长，领中将军衔，於一九五零年六月十日於其好友陈宝仓中将一起被杀害於台北马场町。〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>七绝·五雲山　　<span class="year">一九五五年</span></h4>
@@ -1649,7 +1742,7 @@
 <p class="spbr"><br/></p>
 
 <h4>七绝·刘蕡　　<span class="year">一九五八年</span></h4>
-<p class="poem">千载长天起大雲，中唐俊伟有刘蕡。孤鸿铩羽悲鸣镝，万马齐喑叫一声。<span class="jiao">（刘蕡：中唐大和二年，举贤良方正，刘蕡对策称：“宫闱将变，社稷将危”“阍寺持废立之权”“四凶在朝，虽强必诛”。痛论宦官专权，能废立君主，危害国家，劝皇帝诛灭他们。考官赞赏刘蕡的文章，但惧怕宦官的专横，不敢录取他。令狐楚、牛僧孺都征召他为幕府从事，後授秘书郎。终因宦官诬陷，贬为柳州司户参军，客死他乡。）</span></p>
+<p class="poem">千载长天起大雲，中唐俊伟有刘蕡。孤鸿铩羽悲鸣镝，万马齐喑叫一声。<span class="jiao">〖刘蕡：中唐大和二年，举贤良方正，刘蕡对策称：“宫闱将变，社稷将危”“阍寺持废立之权”“四凶在朝，虽强必诛”。痛论宦官专权，能废立君主，危害国家，劝皇帝诛灭他们。考官赞赏刘蕡的文章，但惧怕宦官的专横，不敢录取他。令狐楚、牛僧孺都征召他为幕府从事，後授秘书郎。终因宦官诬陷，贬为柳州司户参军，客死他乡。〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>七绝·改梅白《夜登重庆枇杷山》　　<span class="year">一九五八年</span></h4>
@@ -1699,7 +1792,12 @@
 <p class="poem">好八连，天下传。为什么？意志坚。为人民，几十年。拒腐蚀，永不沾。因此叫，好八连。解放军，要学习。全军民，要自立。不怕压，不怕迫。不怕刀，不怕戟。不怕鬼，不怕魅。不怕帝，不怕贼。奇儿女，如松柏。上参天，傲霜雪。纪律好，如坚壁。军事好，如霹雳。政治好，称第一。思想好，能分析。分析好，大有益。益在哪？团结力。军民团结如一人，试看天下谁能敌。</p>
 <p class="spbr"><br/></p>
 
-<h4>十六字令·八首　　<span class="year">一九六四年</span></h4>
+<h4>词曲·水调歌头·读《人民战争胜利万岁》题林彪同志　　<span class="year">一九六三年十二月</span></h4>
+<p class="poem">掌上千秋史，胸中百万兵。眼底六州风雨，笔下有雷声。唤醒蛰龙飞起，扫灭魔炎魅火，挥剑斩长鲸。春满人间世，日照大旗红。<span class="cibr"></span>　　抒慷慨，写鏖战，记长征。天章云锦，织出革命之豪情。细检诗坛李杜，词苑苏辛佳什，未有此奇雄。携卷登高唱，流韵壮东风。</p>
+<p class="futi">注：此篇实出自高亨《水调歌头·读毛主席诗词》</p>
+<p class="spbr"><br/></p>
+
+<h4>词曲·十六字令·八首　　<span class="year">一九六四年</span></h4>
 <p class="poem">龙，隐雾驱雲驾长风，骤雨霁，天际起霓虹。（龙，革命者)</p>
 <p class="poem">灯，黑沉迷途指归程，红光闪，万众获重生。（灯，革命行动）</p>
 <p class="poem">泉，杳然无底是灵源，清澈澈，谁人藏心间。（泉，革命热情）</p>
@@ -1710,7 +1808,7 @@
 <p class="poem">花，可怜羞弱不胜压，昨夜雪，娇藏在冰崖。（花，革命女将）</p>
 <p class="spbr"><br/></p>
 
-<h4>减字木兰花·经长沙忆　　<span class="year">一九六四年秋</span></h4>
+<h4>词曲·减字木兰花·经长沙忆　　<span class="year">一九六四年秋</span></h4>
 <p class="poem">四五十年，风雨如晦不重见。过眼飞雲，横竖茫茫一线天。</p>
 <p class="poem">休要夸口，豪杰劫後是民愿，海天环顾，一路走来一路烟。</p>
 <p class="spbr"><br/></p>
@@ -1788,7 +1886,7 @@
 <p class="spbr"><br/></p>
 
 <h4>词曲·诉衷情·江山　　<span class="year">一九七四年</span></h4>
-<p class="poem">父母忠贞为国酬，何曾怕断头？如今天下红遍，江山靠谁守？业未就，身躯倦，鬓已秋；你我之辈，忍将夙愿，付与东流？（特里尔《毛泽东传》。书中说明：“在这段时间，毛似乎回到韶山。在南国宁静的时日里，毛赋下了如许几行。出乎意料，这首词是为周而作的。”）</p>
+<p class="poem">父母忠贞为国酬，何曾怕断头？如今天下红遍，江山靠谁守？业未就，身躯倦，鬓已秋；你我之辈，忍将夙愿，付与东流？<span class="jiao">〖特里尔《毛泽东传》。书中说明：“在这段时间，毛似乎回到韶山。在南国宁静的时日里，毛赋下了如许几行。出乎意料，这首词是为周而作的。”〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>词曲·贺新郎·改张元千词悼董必武　　<span class="year">一九七五年四月</span></h4>
@@ -1800,11 +1898,11 @@
 <p class="spbr"><br/></p>
 
 <h4>词曲·忆秦娥·悼念周恩来同志　　<span class="year">一九七六年一月</span></h4>
-<p class="poem">山河咽，拭泪无语心欲裂。心欲裂，顿摧栋梁，痛失人杰。<span class="cibr"></span>　　江山如画忆丹心，宏图遗愿永不灭。永不灭，新苗茁状，势与天接。<span class="jiao">【風格大異，狀似伪作】</span></p>
+<p class="poem">山河咽，拭泪无语心欲裂。心欲裂，顿摧栋梁，痛失人杰。<span class="cibr"></span>　　江山如画忆丹心，宏图遗愿永不灭。永不灭，新苗茁状，势与天接。<span class="jiao">〖風格大異，狀似伪作〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4>残句</h4>
-<p class="poem">骤雨东风过远湾，滂然遥接石龙关。<span class="jiao">（缺两句……）</span>野渡苍松横古木，断桥流水动连环。客行此去遵何路？坐眺长亭意转闲。<span class="jiao">（七律·石龙关　一九一六年）</span></p>
+<p class="poem">骤雨东风过远湾，滂然遥接石龙关。<span class="jiao">〖缺两句……〗</span>野渡苍松横古木，断桥流水动连环。客行此去遵何路？坐眺长亭意转闲。<span class="jiao">（七律·石龙关　一九一六年）</span></p>
 <p class="poem">自信人生二百年，会当水击三千里。<span class="jiao">（七古·一九一六年冬）</span></p>
 <p class="poem">翻山渡水之名郡，竹杖草履谒学尊。途见白雲如晶海，沾衣晨露浸饿身。<span class="jiao">（七绝·一九一七年）</span></p>
 <p class="poem">雲封狮固楼，桥锁玉潭舟。<span class="jiao">（五言·一九一七年夏）</span></p>
