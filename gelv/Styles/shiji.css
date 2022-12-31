@@ -3,7 +3,7 @@ a {
 }
 body {
   font-size: 1em;
-  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Geneva", sans-serif;
   line-height: 1.25em;
   text-align: justify;
   margin: 0px;
@@ -147,7 +147,7 @@ span.date {
 
 p {
   font-size: 1em;
-  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif;
+  font-family: "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Geneva", sans-serif;
   line-height: 1.5em;
   margin: 0em 0em 0.25em 0em;
   text-align: left;
