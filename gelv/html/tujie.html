@@ -7,6 +7,48 @@
   <title>诗词格律</title>
   <link href="../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
+  div#acat {
+    display: none;
+    font-size: 0.55em;
+    font-weight: normal;
+    line-height: 1.75em;
+  }
+  div#acat a {
+    color: darkred;
+    background-color: transparent;
+    border-radius: 0.25em;
+    border: dotted 0.05em darkred;
+    padding: 0.1em 0.25em;
+    margin: 0.35em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
+  }
+  div#atoc {
+    opacity: 0.25;
+    position: fixed;
+    bottom: 0; right: 0;
+    background-color: transparent;
+    line-height: 1.35em;
+    margin: 0.25em 0em 0.35em 0em;
+    padding: 0.5em 0.25em;
+    text-align: right;
+  }
+  div#atoc:hover, div#atoc:active {
+    opacity: 0.9;
+    border-radius: 0.25em;
+    border: double 0.05em whitesmoke;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0.25em;
+    padding: 0.5em;
+  }
+  div#atoc:hover div#acat, div#atoc:active div#acat {
+    display: block;
+    background-color: whitesmoke;
+    opacity: 1;
+  }
   div.pgbr {
     margin:0; padding:0;
   }
@@ -20,6 +62,15 @@
 <body>
 <a name="toc_top"></a>
 <h2 class="biankuang">诗词集句</h2>
+<div id="atoc" class="noprint">
+<div id="acat">
+&middot; <a href="#shici-format">格律图解</a><br/>
+&middot; <a href="#shici-mingju">七律名篇</a><br/>
+&middot; <a href="#shici-shijing">诗经名句</a><br/>
+&middot; <a href="#shici-miaoju">诗词锦句</a><br/>
+</div>
+<a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">&laquo;</a>
+</div>
 
 <div id="toc_ref" class="center">
   <a href="#shici-mingju">七律名篇</a> |
@@ -29,7 +80,7 @@
 </div>
 
 <div class="pgbr">
-<img class="page" src="../Images/poem-forms.jpg"/>
+<img class="page" id="shici-format" src="../Images/poem-forms.jpg"/>
 </div>
 
 <h3 id="shici-mingju">七律名篇</h3>
@@ -422,6 +473,7 @@
 <p class="para">★、慷慨歌燕市，从容作楚囚。引刀成一快，不负少年头。</p>
 <p class="para">★、我亦飘零久，十年来，深恩负尽，死生师友。——顾贞观《金缕曲》</p>
 <p class="para">★、我住长江头，君住长江尾。日日思君不见君，共饮长江水。此水几时休，此恨何时已。只愿君心似我心，定不负、相思意。——北宋·李之仪《卜算子》</p>
+<p class="para">★、我是清都山水郎，天教分付与疏狂。曾批给雨支云券，累上留云借月章。诗万首，酒千觞。几曾着眼看侯王？玉楼金阙慵归去，且插梅花醉洛阳。——宋·朱敦儒《鹧鸪天·西都作》</p>
 <p class="para">★、我有一瓢酒，可以慰风尘。——韦应物《简卢陟》</p>
 <p class="para">★、我本将心向明月，奈何明月照沟渠。——高明《琵琶记》</p>
 <p class="para">★、我来问道無馀事，雲在青天水在瓶。——李翱（药山寻僧问道，写下了这脍炙人口的诗篇。赵子昂曾录此篇，书文并美。在天为雲，在瓶为水，任其自然，一派逍遥。）</p>
@@ -518,6 +570,7 @@
 <p class="para">★、相思本是无凭语，莫向花牋费泪行。——晏几道《鹧鸪天三首其二》</p>
 <p class="para">★、相逢尽道休官好，林下何曾见一人。——灵澈</p>
 <p class="para">★、知我者，谓我心忧；不知我者，谓我何求。——《诗经》（？）</p>
+<p class="para">★、短剑随枪暮合围，寒风吹血着人飞。朝来道上看归骑，一片红冰冷铁衣。——明·徐渭《龛山凯歌•其二》</p>
 <p class="para">★、福王少小风流惯，不爱江山爱美人。——陈於之《题桃花扇》</p>
 <p class="para">★、禪宗：菩提本無树，明镜亦非台。本来無一物，何处惹尘埃。——慧能</p>
 <p class="para">★、禪宗：身是菩提树，心如明镜台。时时勤拂拭，勿使惹尘埃。——神秀</p>
