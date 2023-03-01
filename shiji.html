@@ -28,19 +28,32 @@
     font-family: "Calibri", "Trebuchet MS", "Tahoma", "Helvetica", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", serif;
   }
 
-  #notes {
-    display: none;
-  }
+  /** 典注的展开和隐藏 **/
   #arrow {
-    display: inline; color: lightgray;
+    cursor: pointer;
+    display: inline;
+    color: lightgray;
+    background: linear-gradient(90deg, darkblue 50%, whitesmoke 100%);
+    line-height: 1.5em;
+    padding: 0.125em 0.5em 0.125em 2em;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
+  #check:not(:checked) + #arrow:after { content: "▼" }
+  #check:not(:checked) + #arrow + #notes { display: none }
+  #check:checked + #arrow:after { content: "▲" }
+  #check:checked + #arrow + #notes { display: block }
+  /*
+  #hover:not(:hover) > #notes { display: none }
+  #hover:not(:hover) > #arrow:after { content: "▼" }
+  #hover:hover > #arrow:after { content: "▲" }
   #hover:hover>#notes, #hover:active>#notes, #hover:focus>#notes {
     display: block;
   }
-  #hover:hover #arrow, #hover:active #arrow {
-    display: none;
-  }
+  */
 
+  /** 右下角菜单的显示和隐藏 **/
   div#acat {
     display: none;
     font-size: 0.55em;
@@ -97,7 +110,8 @@
     }
   }
 
-  h1, h2, h3, h4 {
+  /** 各级标题 **/
+  h1, h2, h3, h4, label {
     font-family: "Segoe UI", "Tahoma", "Arial", "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
   }
   h1 {
@@ -174,6 +188,7 @@
     margin: 0.75em 0em 0.25em;
   }
 
+  /** 正文风格 **/
   span.dian {
     border-bottom: dotted 0.25em yellowgreen;
     padding-bottom: 0.05em;
@@ -297,6 +312,7 @@
     text-indent: 0em;
   }
 
+  /** 设备定义 **/
   @media only screen and (min-width: 600px) {
     body {
       font-size: 1.5em;
@@ -1284,7 +1300,7 @@
 <p class="text">　　画面画皮画老虎，雷人雷世雷网坛。⑦</p>
 <p class="text">　　年终盘点流行语，一壶酱油永流传。⑧</p>
 <div id="hover">
-<h4 class="futi">典注<span id="arrow">&#x25BC;</span></h4>
+<input id="check" type="checkbox" style="display:none" hidden><label id="arrow" for="check">典注</label>
 <div id="notes">
 <p class="note">①上句：以糯米甜食品名的一个群体统称——胡锦涛主席和温家宝总理的粉丝团。“粉丝”/“饭”：<a href="https://en.wikipedia.org/wiki/Fan_(person)" target="_new">fan(s)</a>谐音。</p>
 <p class="note">②上句：“草根”直译自英文 "grass roots"，一指同政府或决策者相对的势力；或指同主流、精英文化或精英阶层相对应的弱势阶层。</p>
