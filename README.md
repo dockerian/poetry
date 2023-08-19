@@ -12,7 +12,7 @@
   - [平水韻表.doc](./books/平水韵表.doc)｜[pdf](./books/平水韵表.pdf)
   - [词林正韵](./books/词林正韵.pdf)
 
-* 舟山[詩詞](./shiji.html) (Updated 2023.03.29)
+* 舟山[詩詞](./shiji.html) (Updated 2023.06.30)
 
 * 纱糸轩[歌词集](./gelv/html/shiji-lyrics.html) (including English poems and lyrics)
 
