@@ -78,12 +78,16 @@
   div#atoc {
     opacity: 0.25;
     position: fixed;
-    bottom: 0; right: 0;
+    bottom: 0.5em; right: 0em;
     background-color: transparent;
     line-height: 1.35em;
-    margin: 0.25em 0em 0.35em 0em;
+    margin: 0.35em 0em 0.35em 0em;
     padding: 0.5em 0.25em;
     text-align: right;
+  }
+  div#atoc a.noprint {
+    font-size: larger;
+    padding: 1em 0.065em;
   }
   div#atoc:hover, div#atoc:active {
     opacity: 0.9;
@@ -95,6 +99,9 @@
     margin: 0.25em;
     padding: 0.5em;
   }
+  div#atoc:hover a.noprint, div#atoc:active a.noprint {
+    font-size: 0.65em;
+  }
   div#atoc:hover div#acat, div#atoc:active div#acat {
     display: block;
     background-color: whitesmoke;
@@ -103,12 +110,12 @@
   div.center {
     text-align: center;
   }
-  div.xiang {
+  div.xiang, span#xmulu {
     display: none;
     visibility: collapse;
   }
   @media only screen and (min-width:30em) and (max-width:60em) {
-  div.xiang {
+  div.xiang, span#xmulu {
     display: block;
     visibility: visible;
     }
@@ -193,7 +200,10 @@
   }
 
   /** 正文风格 **/
-  span.dian {
+  span.dian, .poem u {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
     border-bottom: dotted 0.25em yellowgreen;
     padding-bottom: 0.05em;
   }
@@ -203,11 +213,17 @@
   span.futi {
     font-weight: normal;
   }
-  span.fair {
+  span.fair, .poem i {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
     border-bottom: dotted 0.25em darkseagreen;
     padding-bottom: 0.0em;
   }
-  span.good {
+  span.good, .poem b {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
     border-bottom: dotted 0.25em orange;
     padding-bottom: 0.0em;
   }
@@ -366,24 +382,31 @@
 </style>
 </head>
 <body>
-<a name="toc_top"></a>
+<a name="top_ref"></a>
 <h1 class="biankuang">舟山詩詞</h1>
+
 <div id="atoc" class="noprint">
 <div id="acat">
 &middot; <a href="#boathill-ciqu">词曲</a><br/>
-&middot; <a href="#boathill-xinyun">新韵</a><br/>
-&middot; <a href="#boathill-qiyan">七言</a><br/>
+         <a href="#boathill-diao">长调</a><br/>
+&middot; <a href="#boathill-xiny">新韵</a><br/>
+&middot; <a href="#boathill-qigu">七言</a><br/>
 &middot; <a href="#boathill-qilv">七律</a><br/>
 &middot; <a href="#boathill-wulv">五律</a><br/>
+<span id="xmulu">
+&middot; <a href="#boathill-zaji">外篇</a><br/>
+<span>
 </div>
-<a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">&laquo;</a>
+<a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">&laquo;</a>
+<a href="#end_ref" class="noprint" title="⇐ EOF ⇒">&raquo;</a>
 </div>
+
 
 <div id="toc_ref" class="center">
 
 <a href="#boathill-ciqu">词曲</a> |
-<a href="#boathill-xinyun">新韵</a> |
-<a href="#boathill-qiyan">七言</a> |
+<a href="#boathill-xiny">新韵</a> |
+<a href="#boathill-qigu">七言</a> |
 <a href="#boathill-qilv">七律</a> |
 <a href="#boathill-wulv">五律</a>
 <p class="spbr"><br/></p>
@@ -394,11 +417,12 @@
 <a href="#y2005">2005</a> |
 <a href="#y2010">2010</a> |
 <a href="#y2015">2015</a> |
-<a href="#y2020">2020</a>
+<a href="#y2020">2020</a><!-- |
+<a href="#y2025">2025</a>-->
 </div>
 
 
-<h2 id="boathill-toc">﻿舟山诗词目录　<span class="year">1979.4─2023.6</span></h2>
+<h2 id="boathill-toc">﻿舟山诗词目录　<span class="year">1979.4─2024.2</span></h2>
 <hr/>
 <p class="mulu" id="y1979-chun">(2) 五律•春游鳝溪　二首　　　　　　　　<a href="#p1979-chun">1979．⒋</a></p>
 <p class="mulu" id="y1979-qiuy">(2) 五律•秋游青芝寺　二首　　　　　　　<a href="#p1979-qiuy">1979．⒐</a></p>
@@ -572,17 +596,25 @@
 <p class="mulu" id="y2022-esky">(1) 七律•望夜　　　　　　　　　　　　　<a href="#p2022-esky">2022．⒒</a></p>
 <p class="mulu" id="y2023-zanz">(2) 七律•读《簪中录》笔记　　　　　　　<a href="#p2023-zanz">2023．⒈</a><a id="y2023" href="#toc_ref">&#11139;</a></p>
 <p class="mulu" id="y2023-sant">(2) 七律•读《三体》　　　　　　　　　　<a href="#p2023-sant">2023．⒉</a></p>
-<p class="mulu" id="y2023-bypu">(1) 七律•读《百妖谱》　　　　　　　　　<a href="#p2023-bypu">2023．⒊</a></p>
+<p class="mulu" id="y2023-bypu">(2) 七律•读《百妖谱》　　　　　　　　　<a href="#p2023-bypu">2023．⒊</a></p>
 <p class="mulu" id="y2023-dshi">(1) 水调歌头•读史　　　　　　　　　　　<a href="#p2023-dshi">2023．⒊</a></p>
 <p class="mulu" id="y2023-xiuz">(1) 念奴娇•修真　　　　　　　　　　　　<a href="#p2023-xiuz">2023．⒊</a></p>
-<p class="mulu" id="y2023-zgan">(2) 七律•杂感　　　　　　　　　　　　　<a href="#p2023-zgan">2023．⒊</a></p>
+<p class="mulu" id="y2023-zgan">(4) 七律•杂感　　　　　　　　　　　　　<a href="#p2023-zgan">2023．⒊</a></p>
 <p class="mulu" id="y2023-hang">(1) 五律•雲窗　　　　　　　　　　　　　<a href="#p2023-hang">2023．⒊</a></p>
 <p class="mulu" id="y2023-wtan">(1) 满江红•上海外滩　　　　　　　　　　<a href="#p2023-wtan">2023．⒍</a></p>
 <p class="mulu" id="y2023-xihu">(1) 七律•福州午後鼓楼东街迹行湖滨路　　<a href="#p2023-xihu">2023．⒍</a></p>
 <p class="mulu" id="y2023-xing">(1) 水调歌头•福州行　　　　　　　　　　<a href="#p2023-xing">2023．⒍</a></p>
+<p class="mulu" id="y2023-nilv">(1) 五律•逆旅杂想　　　　　　　　　　　<a href="#p2023-nilv">2023．⒎</a></p>
+<p class="mulu" id="y2023-feix">(1) 七律•雲机飞行签　　　　　　　　　　<a href="#p2023-feix">2023．⒎</a></p>
+<p class="mulu" id="y2023-bing">(1) 七律•病中　　　　　　　　　　　　　<a href="#p2023-bing">2023．⒏</a></p>
+<p class="mulu" id="y2023-ping">(3) 七律•读如水意《战争》三部曲　　　　<a href="#p2023-ping">2023．⒑</a></p>
+<p class="mulu" id="y2023-hlfz">(1) 七律•读如水意《火力法则》　　　　　<a href="#p2023-hlfz">2023．⒓</a></p>
+<p class="mulu" id="y2023-jijv">(1) 七言•菜根谭集句　　　　　　　　　　<a href="#p2023-jijv">2023．⒓</a></p>
+<p class="mulu" id="y2024-dong">(1) 天净沙•旧城　　　　　　　　　　　　<a href="#p2024-dong">2024．⒈</a><a id="y2024" href="#toc_ref">&#11139;</a></p>
+<p class="mulu" id="y2024-vday">(1) 七律•飞简　　　　　　　　　　　　　<a href="#p2024-vday">2024．⒉</a></p>
 <hr/>
-<p class="futi">以上留存詩詞凡二百七十七首</p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="futi">以上留存詩詞凡二百九十首</p>
+<p class="right"><a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -595,7 +627,7 @@
 <p class="note">　　异国星月家乡梦，他山亭台故土风。</p>
 <p class="spbr"><br/></p>
 
-<h3 id="boathill-ciqu"><span>词曲</span>　<span class="shou">一百零九首</span></h3>
+<h3 id="boathill-ciqu"><span>词曲</span>　<span class="shou">一百一十首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-fiji">天净沙·今韵斐济十题<span class="shou">十八首</span>　<span class="date"><a href="#y2010-fiji">2010.2</a></span></h4>
@@ -641,6 +673,10 @@
 <p class="futi">與周琳共填此詞於紗糸軒。</p>
 <p class="poem">深秋、小镇、炊烟。汉堡、薯条、油煎。红叶一片，老人坐想从前。</p>
 <p class="poem">丝巾、长裙、秋绵。白雲、银杏、蓝天。此情依舊、夕阳逝水流年。</p>
+<p class="spbr"><br/></p>
+
+<h4 id="p2024-dong">天净沙·旧城　<span class="date"><a href="#y2024-dong">2024.01.27</a></span></h4>
+<p class="poem">惊雷、秋雨、风寒，群鸦、枯木、声残；市楼如干，千窗相守如樊。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1982-chun">忆江南·榕城春　<span class="date"><a href="#y1982-chun">1982.9</a></span></h4>
@@ -886,16 +922,15 @@
 <p class="poem">如夜如冰，非雾非晴。月方盈、别远离行。春迟残暖，思近空灵。送一夕念、一夕恋、一息明。<span class="cibr"></span>　　天边雨墨，阶下风铃。晓声聽、细数叮咛。今朝未醒，昨梦还轻。似一声乱、一声缓、一生宁。</p>
 <p class="spbr"><br/></p>
 
+
+<a name="boathill-diao"></a>
+
 <h4 id="p1983-qing">满江红·清明　<span class="date"><a href="#y1983-qing">1983.5</a></span></h4>
 <p class="poem">一往情深，今又是寒食祭节。名万古，一年一度、哀思先烈。犹记当年家国恨，志矢解放民族业。传救国，妙手著文章，言词切。<span class="cibr"></span>　　求良策，尽心血。奋国群，党人结。为中华崛起，飞腾世界。高筑神州风雨楼，遍开共产红花叶。看至今、回首字無痕，清明月。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1997-zlin">满江红·致周琳　<span class="date"><a href="#y1997-zlin">1997.3</a></span></h4>
 <p class="poem">已忘柔情，偏又是，柔情困阻。人如玉，眉峰疏淡，风姿楚楚。梦里身形挥不去，胸中绮想奔难住。怕别离，容易负相思，痴成误。<span class="cibr"></span>　　一份爱，深几许；缘两处，何时聚？似滴滴点点，万丝千缕。前世为寻一知己，今生来共君相遇。看两眸，一笑解春心，温存语。</p>
-<p class="spbr"><br/></p>
-<h4 id="p2012-zhyx" class="futi">附：周琳《西江月》一首　<span class="date"><a href="#y1997-zlin" class="futi">2012.09.23</a></span></h4>
-<p class="poem">林中遍寻翠竹，落日尽闪余晖，海上茫茫飛细雨，此情依旧如新。<span class="cibr"></span>　　四面环山翠绿，十里麦田金黄，五岳哪有此山强，岁岁年年不忘。</p>
-<p class="note">注：上闋各句尾字（諧音）及下闋各句首字合成此詞標題。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2022-anni">满江红·週年賦　<span class="date"><a href="#y2022-anni">2022.09.25</a></span></h4>
@@ -909,6 +944,10 @@
 <h4 id="p2015-valentine">高陽臺·情若在、当是节　<span class="date"><a href="#y2015-gaoy">2015.02.14</a></span></h4>
 <p class="futi">與周琳共填此詞於紗糸軒以祝情人節快樂。</p>
 <p class="poem">彩卡一方，鲜花一束，商家描绘成图。美酒杯紅，难呈携侣征途。送迎晩照和晨露，有爱時，萬事心舒。岁华浮，功朽名消，竹翠林疏。<span class="cibr"></span>　　真情不在情人节，在分分你我，秒秒雲殊。在葉之秋，在春雁阵成書。在經風雨彩虹後，再回眸，恋似当初。在能乎，终世相扶，至老相如。</p>
+<p class="spbr"><br/></p>
+<h4 id="p2012-zhyx" class="futi">附：周琳《西江月》一首　<span class="date"><a href="#y2015-gaoy" class="futi">2012.09.23</a></span></h4>
+<p class="poem">林中遍寻翠<u>竹</u>，落日尽闪余<u>晖</u>，海上茫茫飛细<u>雨</u>，此情依旧如<u>新</u>。<span class="cibr"></span>　　<u>四</u>面环山翠绿，<u>十</u>里麦田金黄，<u>五</u>岳哪有此山强，<u>岁</u>岁年年不忘。</p>
+<p class="note">注：上闋各句尾字（諧音）及下闋各句首字合成此詞標題。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1998-zqiu">水调歌头·中秋　<span class="date"><a href="#y1998-zqiu">1998.9</a></span></h4>
@@ -953,7 +992,7 @@
 <p class="futi">其一　</p>
 <p class="poem">千年飞月梦，十载赋星河。嫦娥玉兔着陆，漫步采石车，不见蟾蜍宫阙，敢想时空穿越，桂殿影婆娑。四海涛声起，浩宇响雲歌。<span class="cibr"></span>　　养韬略，谋远策，揽长波。重工科技，一部精器萬重磨。古老相传神话，壮丽和平图画，盛世舞婀娜。九霄鲲鹏志，不负岁蹉跎。</p>
 <p class="futi">其二　和毛词原韵</p>
-<p class="poem">古有冰轮梦，今探火岩山。萬里登临桂殿，一举展新颜。独领漂空妙舞，再启航征阔步，存想寄雲端。不忘披荆路，当记向前看。【觀】<span class="cibr"></span>　　潮之动，心之奋，宇之寰。兴废存亡进退，正反得失间。上溯银河揽月，下蹈潭泥鱼鳖， 天道好相还。科技非常事，勇在苦登攀。</p>
+<p class="poem">古有冰轮梦，今探火岩山。萬里登临桂殿，一举展新颜。独领漂空妙舞，再启航征阔步，存想寄雲端。不忘披荆路，当记向前看。【觀】<span class="cibr"></span>　　潮之动，心之奋，宇之寰。兴废存亡进退，正反得失间。上溯银河揽月，下蹈潭泥鱼鳖，天道好相还。科技非常事，勇在苦登攀。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-newy">水调歌头·新年感赋　<span class="date"><a href="#y2021-newy">2021.01.01</a></span></h4>
@@ -1050,14 +1089,14 @@
 <h4 id="p1982-xiyn">六洲歌头·夕阳西下　<span class="date"><a href="#y1982-xiyn">1982.9</a></span></h4>
 <p class="poem"><span class="fair">雄天望断，雲暗莽如山</span>。斜晖照，惊鸿影，漫天蓝。落红残。万里横雲聚，流金碎，征尘乱；又恰似，寒崖雪，映酡颜。村舍炊烟，灯火三四点，疑是人寰。更夕阳欲去，青雾远腾山，狼籍如棉。共盘餐。<span class="cibr"></span>　　访林和靖，孤山下，寻竹友，问坡仙。几曾见，夕阳好，对危栏。酒微酣。回想凭生志，空怀恨，叹当年。佳景短，人易老，怕灰髯。疏淡一轮新月，邀相饮，未醉先贪。羡西霞如画，欲踏浪银帆，追逐天边。</p>
 <p><br/></p>
-<p class="zong">　　右录词曲一百零九首</p>
+<p class="zong">　　右录词曲一百一十首</p>
 <p class="zong">　　纱糸轩藏</p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-ciqu">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-xinyun"><span>新韵文诗</span>　<span class="shou">九首</span></h3>
+<h3 id="boathill-xiny"><span>新韵文诗</span>　<span class="shou">九首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p1989-snow">雪　<span class="date"><a href="#y1989-snow">1989.12</a></span></h4>
@@ -1138,6 +1177,61 @@
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
+<h4 id="p2010-lovesong" class="futi pgbr">附：愛之歌　<span class="date"><a href="#y2010-fall">2010.12.27</a>. by 周琳</span></h4>
+<p class="spbr"><br/></p>
+<p class="text">　　你坐在我的身边，不言不语</p>
+<p class="text">　　爱，有时就是这样，无声无息</p>
+<p class="text">　　我以为你的心，像个风筝</p>
+<p class="text">　　想飞，飞到天际</p>
+<p class="text">　　而你的线，仍在我的手里</p>
+<p class="text">　　你却说，</p>
+<p class="text">　　其实你是线</p>
+<p class="text">　　风筝是我的情意</p>
+<p class="text">　　前世今生的我</p>
+<p class="text">　　是你的唯一</p>
+<p class="spbr"><br/></p>
+<h4 class="futi pgbr">English version</h4>
+<p class="ying">You are by my side, quietly</p>
+<p class="ying">Love could be like this, silently</p>
+<p class="ying">I imagine the heart of thee</p>
+<p class="ying">Like a kite on free</p>
+<p class="ying">Flying to where I cannot see</p>
+<p class="ying">And I hold the line, firmly</p>
+<p class="ying">But you say to me</p>
+<p class="ying">That I am the kite likely</p>
+<p class="ying">by your care mildly</p>
+<p class="ying">Because you love me, and</p>
+<p class="ying">I am the one the only</p>
+<p><br/></p>
+
+<h4 id="p2011-valentine" class="futi pgbr">附：情人节　<span class="date"><a href="#y2010-fall" class="futi pgbr">2011.02.14. by 周琳</a></span></h4>
+<p class="spbr"><br/></p>
+<p class="poem">無所謂人生是不是無奈</p>
+<p class="poem">不去想如何來把幸福晒</p>
+<p class="poem">不在乎當時沒有天地拜</p>
+<p class="poem">日子，過好才實實在在</p>
+<p class="poem">爲你，我寧願忙裏忙外</p>
+<p class="poem">因爲，你是我的───</p>
+<p class="poem">　　Valentine</p>
+<p class="spbr"><br/></p>
+<h4 class="futi pgbr">English version: Happy Valentine’s Day</h4>
+<p class="spbr"><br/></p>
+<p class="ying">Sometimes life could be rough and divine</p>
+<p class="ying">Sometimes love could be hard to define</p>
+<p class="ying">From the day I met you</p>
+<p class="ying">I know my destiny finally had a good sign</p>
+<p class="ying">Like a kite at skyline</p>
+<p class="ying">No matter how far I fly</p>
+<p class="ying">You are always there and give me guideline</p>
+<p class="spbr"><br/></p>
+<p class="ying">So many years have gone by</p>
+<p class="ying">I am so glad you are still mine</p>
+<p class="ying">Spending the rest of my life</p>
+<p class="ying">With you, sounds so fine</p>
+<p class="ying">That is all I want, dear love</p>
+<p class="ying">Because you are my valentine</p>
+<p><br/></p>
+
 <h4 id="p2011-newy" class="pgbr">In New Start We're　<span class="date"><a href="#y2011-newy">2011.02.02</a>. Sammamish, WA</span></h4>
 <p class="spbr"><br/></p>
 <p class="text">　　Happy New Year, My Dear</p>
@@ -1174,61 +1268,6 @@
 <p class="text">　　春天是埋在夢裏的明天。</p>
 <p class="text">　　黑夜的遐思無邊，</p>
 <p class="text">　　想起是妳的容顏。</p>
-<p><br/></p>
-
-<h4 id="p2010-lovesong" class="futi pgbr">附：愛之歌　<span class="date"><a href="#y2010">2010.12.27</a>. by 周琳</span></h4>
-<p class="spbr"><br/></p>
-<p class="text">　　你坐在我的身边，不言不语</p>
-<p class="text">　　爱，有时就是这样，无声无息</p>
-<p class="text">　　我以为你的心，像个风筝</p>
-<p class="text">　　想飞，飞到天际</p>
-<p class="text">　　而你的线，仍在我的手里</p>
-<p class="text">　　你却说，</p>
-<p class="text">　　其实你是线</p>
-<p class="text">　　风筝是我的情意</p>
-<p class="text">　　前世今生的我</p>
-<p class="text">　　是你的唯一</p>
-<p class="spbr"><br/></p>
-<h4 class="futi pgbr">English version</h4>
-<p class="ying">You are by my side, quietly</p>
-<p class="ying">Love could be like this, silently</p>
-<p class="ying">I imagine the heart of thee</p>
-<p class="ying">Like a kite on free</p>
-<p class="ying">Flying to where I cannot see</p>
-<p class="ying">And I hold the line, firmly</p>
-<p class="ying">But you say to me</p>
-<p class="ying">That I am the kite likely</p>
-<p class="ying">by your care mildly</p>
-<p class="ying">Because you love me, and</p>
-<p class="ying">I am the one the only</p>
-<p><br/></p>
-
-<h4 id="p2011-valentine" class="futi pgbr">附：情人节　<span class="date"><a href="#y2010" class="futi pgbr">2011.02.14. by 周琳</a></span></h4>
-<p class="spbr"><br/></p>
-<p class="poem">無所謂人生是不是無奈</p>
-<p class="poem">不去想如何來把幸福晒</p>
-<p class="poem">不在乎當時沒有天地拜</p>
-<p class="poem">日子，過好才實實在在</p>
-<p class="poem">爲你，我寧願忙裏忙外</p>
-<p class="poem">因爲，你是我的───</p>
-<p class="poem">　　Valentine</p>
-<p class="spbr"><br/></p>
-<h4 class="futi pgbr">English version: Happy Valentine’s Day</h4>
-<p class="spbr"><br/></p>
-<p class="ying">Sometimes life could be rough and divine</p>
-<p class="ying">Sometimes love could be hard to define</p>
-<p class="ying">From the day I met you</p>
-<p class="ying">I know my destiny finally had a good sign</p>
-<p class="ying">Like a kite at skyline</p>
-<p class="ying">No matter how far I fly</p>
-<p class="ying">You are always there and give me guideline</p>
-<p class="spbr"><br/></p>
-<p class="ying">So many years have gone by</p>
-<p class="ying">I am so glad you are still mine</p>
-<p class="ying">Spending the rest of my life</p>
-<p class="ying">With you, sounds so fine</p>
-<p class="ying">That is all I want, dear love</p>
-<p class="ying">Because you are my valentine</p>
 <p><br/></p>
 
 <h4 id="p2021-purity" class="pgbr">Peaceful Purity　<span class="date"><a href="#y2021-puri">2021.04.26</a>. Tacoma, WA</span></h4>
@@ -1270,12 +1309,12 @@
 <p class="text">　　Shine the past empire another dawn</p>
 <p class="text">　　All glory days dusted ‘n’ gone</p>
 
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-xiny">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-qiyan"><span>七言古诗</span>　<span class="shou">二十五首</span></h3>
+<h3 id="boathill-qigu"><span>七言古诗</span>　<span class="shou">二十五首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p1982-qigu">江南感赋<span class="shou">三首</span>　<span class="date"><a href="#y1982-qigu">1982.10</a></span></h4>
@@ -1318,7 +1357,7 @@
 <p class="poem">惊闻飓风掠此地，参天大树连根起。一夜断电数十哩，回到黑暗古世纪。無书無灯伴孤寂，缺网缺乐难游戏。冰床冻窟昏睡时，奇情怪想入梦里。找个工作看监狱，太太开车送我去。每天先到诺曼底，游泳横渡英吉利。白鞋上色用黑漆，做事無功费力气。醒後难料人间事，如此奇谭实有趣。</p>
 <p class="spbr"><br/></p>
 
-<h4 id="p2007-nwcf">七言·讽言·揭秘西北中文政治腐败　<span class="date"><a href="#y2007-nwcf">2007.6</a></span></h4>
+<h4 id="p2007-nwcf">七言·讽言<span class="futi">·揭秘西北中文政治腐败</span>　<span class="date"><a href="#y2007-nwcf">2007.6</a></span></h4>
 <p class="poem">西北中文董事会，奇谈怪想费思量。两朝失误吃亏损，万般遮瞒把祸藏。既惹是非急转嫁，欲加之罪愈荒唐。谎言百炼成真谛，诡道千层做伪装。寡耻恬居宪代表，厚黑攀比古帝皇。绵绵袖手推其任，屡屡插足显势强。曲解章程钻漏洞，借题民主自视长。出则反尔朝夕改，恶果吞食日夜慌。不远余毒文革事，於今又见四人帮。<span class="fair">兴风作浪翻雲雨，指鹿骂槐拼智商。功利极能泯常理，权名甚可丧天良。穷添舆论来迷众，企盼阴谋未曝光。怯懦丛中生泼赖，迟疑时下养流氓</span>。宽怀尚且招污水，放眼妄寻明白郎。莫怪男儿意气短，怎禁女辈志如钢。岂知沥血多年苦，难抵饶舌半寸长。前鉴谁曾听分诉，後师错在哪一方？若無嫉妒形惭愧，安有狭促报复狂？些小盘沙争与斗，奈何看众恨而伤！心存世上公平秤，笃信人间正义张！</p>
 <p class="spbr"><br/></p>
 
@@ -1365,7 +1404,7 @@
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-meng">七言·夢中夢　<span class="date"><a href="#y2010-meng">2010.10.10</a></span></h4>
-<p class="poem">窗外寂聲猶夜半，朦朧記得思緒慢。夢裏忽回前夢影，方知前夢似虛幻。</p>
+<p class="poem">窗外寂聲猶夜半，朦朧記得思緒慢。<span class="good">夢裏忽回前夢影，方知前夢似虛幻</span>。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2020-meng">七言·记梦　<span class="date"><a href="#y2020-meng">2020.12</a></span></h4>
@@ -1392,13 +1431,16 @@
 <h4 id="p2022-ruzi">七言·读《孺子帝》　<span class="date"><a href="#y2022-ruzi">2022.07.31</a></span></h4>
 <p class="poem">雄心纵有千里外，权柄执於十步间。一部奇书孺子帝，本生参透老人言。</p>
 
+<h4 id="p2023-jijv">七言·菜根谭集句<span class="futi">·修身篇</span>　<span class="date"><a href="#y2023-jijv">2023.12</a></span></h4>
+<p class="poem">事功须履薄冰过，炼玉当从烈火来。<i>万善全得一世济，一错方觉百行非</i>。白日欺人夜愧报，红颜失志皓首悲。五更枕席参心体，三时饮食谙世味。洪炉何患镕顽铁，江海不据纳污渎。雲烟影里现真身，始悟形骸为桎梏。躯壳看破有皆空，心常虚则义理居。性命认真万理备，心常实则欲不入。身忙闲暇惕惰气，心放收摄畅天机。钟鼓体虚声击撞，麋鹿性逸养羈縻。创业建功实地着，修德讲道虚处立。时时检点多入少，有无学问真消息。纷扰固溺志之场，枯寂亦槁心之地。<i>栖心元默宁真体，适志恬愉养圆肌</i>。<i>万善莫如心挹损，百福基在念祥慈</i>。不染尘开地天网，常醒避去神鬼矢。明珠入土心障蔽，银饰洗涤情开识。忙处常自闲中检，动时预從静里持。禽鸟声中闻自性，方知情识是戈矛。节名但重非执念，富贵能轻莫系心。容得偏私大学问，消得嫌隙好经纶。<i>天地自当有和气，人心不可无喜神</i>。功夫自难处去做，学问苦得获如金。面上扫开千层甲，胸中涤去数斗尘。不为气撑天地柱，不忍念生物芽根。<i>异於禽兽唯重义，同此牺牲当舍身</i>。身心槁木顽空堕，寒焰敝裘本目真。万变不穷妙之用，百折不回真士襟。欲遇变而无仓忙，常时念念守得定；欲临死而无贪恋，生时事事看得轻。情之同处即为性，舍情则性不可见；欲之公处即为理，舍欲则理不可明。非能绝欲唯寡欲，不可灭情唯平情。为善得心高胜众，施恩结好欲求名。勺水便具四海味，千江总是月光清。尘氛未扫名义重，芥蒂难忘富贵轻。骇俗修业常惊世，标异竹植愈见争。昨日之非不可留，留之则根烬复萌。今日之是不可执，执之则渣滓难烹。<i>是非谢在耳声过，物我忘於月色空</i>。朔雪阴凝杀万物，春风宽厚育三生。天地立心民立命，继学往圣万世平。才敏学问摄其躁，气昂德性融其偏。不同刀案皆鱼肉，已覆倾巢俱卵丸。<i>得意谈天水底月，拂意啮雪火中莲</i>。一念足丧平生善，终身难盖一事愆。拨开尘氛胸冰竞，消却鄙吝月风恬。<i>养性即所以立命，尽人事自可回天</i>。</p>
+
 <p><br/></p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-qigu">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-qilv"><span>七言律绝</span>　<span class="shou">六十二首</span></h3>
+<h3 id="boathill-qilv"><span>七言律绝</span>　<span class="shou">七十二首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2007-nwcl">七律·流言　<span class="date"><a href="#y2007-nwcl">2007.5</a></span></h4>
@@ -1409,7 +1451,7 @@
 <p class="poem">海外华人赤子吟，英才教育故乡音。雪峰山下开书院，绿树湖边点翰林。<span class="fair">传统精神追胜古，时新品质汇於今</span>。能集百策成良策，再聚一心献爱心。同济惺惺惜慧智，直言坦坦对胸襟。启迪思想明如月，领读书声语似琴。千选师资德望众，十年经验试真金。中文从此非难事，汉字课堂创又新！</p>
 <p class="spbr"><br/></p>
 
-<h4 id="p2008-zqiu">七律·中秋月孤懸海外兼詠嬋娟同韻二題　<span class="date"><a href="#y2008-zqiu">2008.9</a></span></h4>
+<h4 id="p2008-zqiu">七律·中秋月<span class="futi">·孤懸海外兼詠嬋娟同韻二題</span>　<span class="date"><a href="#y2008-zqiu">2008.9</a></span></h4>
 <h4 class="futi">一</h4>
 <p class="poem">晴雲艷靄浴新晨，金玉銀盤看似真。故國彼時達親友，外鄉昨夜望空塵。易成浮海浪流客，難忘江湖老病身。歲歲佳期誰共賞，年年企盼月歸人。</p>
 <h4 class="futi">二</h4>
@@ -1535,7 +1577,7 @@
 <p class="futi">其四·读《伊凡雷帝》【新韵】</p>
 <p class="poem">电闪雲空出世奇，一朝加冕大权集。纂编法典军常备，侵覆周边地统一。座上强能鞭宇内，病中弱不举王棋。跻身伟烈独专制，尊号沙皇古至极。</p>
 
-<h4 id="p2021-book-figures">七律·读《<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E6%B1%9F%E5%A4%A7%E6%B2%B3" title="Like a Flowing River">大江大河</a>》 　<span class="date"><a href="#y2021-book">2021.9</a></span></h4>
+<h4 id="p2021-book-figures">七律·读《<a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E6%B1%9F%E5%A4%A7%E6%B2%B3" title="Like a Flowing River">大江大河</a>》 <span class="date"><a href="#y2021-book">2021.9</a></span></h4>
 <p class="futi">其一·宋運萍</p>
 <p class="poem">两眸清水运如萍，一瞬年华命在星。书苦犹甜亲姊语，家常还短爱囡听。万般悔恨埋心事，十载音容灭影形。此世但存留妄念，雲端魂慰亦娉婷。</p>
 <p class="futi">其二·梁思申</p>
@@ -1588,18 +1630,44 @@
 <h4 id="p2023-bypu">七律·读《百妖谱》　<span class="date"><a href="#y2023-bypu">2023.3</a></span></h4>
 <p class="futi">其一·灰狐</p>
 <p class="poem">醉卧林间酣畅梦，不平路上羡侠行。崎岖山背独孤影，失落车痕风雪营。断尾化光全友命，取辰成咒报君听。吞身蜀地幽浮怨，舍己求终恩义名。狐念救赎冤孽果，桃夭看破因缘瓶。还魂造魄空余药，求善磨牙妄念经。尘界重回心忘水，朝阳初霁雨融冰。雲游四海生香色，贪爱五湖盛世情。</p>
+<p class="futi">其一·漱金</p>
+<p class="poem">贫苦无失亲暖被，富足难享辟寒金。持诚本为求归路，悟道唯凭守护心。万力何消游子爱，千箔怎换母慈音。食珠神话非恩造，还愿救赎有义禽。</p>
 
 <h4 id="p2023-zgan">七律·杂感　<span class="date"><a href="#y2023-zgan">2023.2</a></span></h4>
 <p class="futi">其一</p>
-<p class="poem">体宽未必得心宽，易醒通宵困不眠。冬酒温怀三百首，春寒冻骨五十肩。风雲际遇成诗债，坎坷遭逢抵税钱。漫记逝川雲里梦，深耕脑海想中田。</p>
+<p class="poem">体宽未必得心宽，易醒通宵困不眠。冬酒温怀三百首，春寒冻骨五十肩。风雲际遇成诗债，坎坷遭逢抵税钱。<span class="fair">漫记逝川雲里梦，深耕脑海想中田</span>。</p>
 <p class="futi">其二</p>
 <p class="poem">谚云摄影穷三代，我为修片耗一生。观自文章才气好，羡他儿女丽华萌。时空浩虚非成问，名利博涵莫与争。纵有家藏千百物，来无带入去难坑。</p>
+<p class="futi">其三</p>
+<p class="poem">旧镜辞花烟易冷，危巢倾覆水难收。草蛇灰线局深远，挂角羚羊意境悠。拈叶飞花穿越剑，裁冰截雪试吴钩。弧光萬道惊神阵，残影一声破碧秋。</p>
+<p class="futi">其四</p>
+<p class="poem"></p>
 
 <h4 id="p2023-xihu">七律·福州午後<span class="futi">·鼓楼东街迹行湖滨路</span>　<span class="date"><a href="#y2023-xihu">2023.6</a></span></h4>
-<p class="poem">闽水弯弯青板路，福山曲曲马鞍墙。楼台雕柱飞檐瓦，炉鼎碾石高坎堂。荷雨池前听画扇，竹风院後绕亭廊。白雲星梦薰衣枕，墨染诗声待月窗。一树荔枝红点缀，双盛芒果碧圆长。老城肉燕糕茶饼，古岁榕须冷暖凉。窄巷已无昔日影，芭蕉犹带儿时芳。经年忆想成新旅，夏季情思在故乡。</p>
+<p class="poem">闽水弯弯青板路，福山曲曲马鞍墙。楼台雕柱飞檐瓦，炉鼎碾石高坎堂。荷雨池前听画扇，竹风院後绕亭廊。<span class="good">白雲星梦薰衣枕，墨染诗声待月窗</span>。一树荔枝红点缀，双盛芒果碧圆长。老城肉燕糕茶饼，古岁榕须冷暖凉。窄巷已无昔日影，芭蕉犹带儿时芳。经年忆想成新旅，夏季情思在故乡。</p>
+
+<h4 id="p2023-feix">七律·雲机飞行签　<span class="date"><a href="#y2023-feix">2023.07.18</a></span></h4>
+<p class="poem">风从海上浪逐帆，雨是雲中泪点斑。散似薄纱浮似雪，疾如飞马缓如山。无为道法应非显，有袖神仙亦不凡。执念求虚成幻影，持心投影在凡间。</p>
+
+<h4 id="p2023-bing">七律·病中　<span class="date"><a href="#y2023-bing">2023.08.03</a></span></h4>
+<p class="poem">可怜湖色对雲窗，偶染暑湿坐困床。舍以此身成战场，热来遍体似筛糠。轰轰烈烈轮回苦，死死生生爱恨凉。梦後心惊从自影，病中思念向家乡。</p>
+
+<h4 id="p2023-ping">七律·书评<span class="futi">·读如水意《战争三部曲》</span>　<span class="date"><a href="#y2023-ping">2023.10</a></span></h4>
+<p class="futi">其一·佣兵</p>
+<p class="poem">剑影刀光灵与肉，奇谋巧计死中生。佣兵故事狙击手，谍特传奇敢勇营。兄弟泽袍情最烈，师徒朋友义难平。<span class="fair">名传承有惺惺意，善战功无赫赫名</span>。</p>
+<p class="futi">其二·间谍</p>
+<p class="poem"><span class="fair">舍身已忘生杀计，取义当怀死间心</span>。随处雲疑多箭雨，霎时风险胜枪林。英名令字无人见，伟绩丰功泯世吟。国运承平非易与，山河如愿慰知音。</p>
+<p class="futi">其三·末日</p>
+<p class="poem">不期末日危机现，异类英雄雲景從。草蛇灰线伏千里，挂角羚羊觅无踪。看他世界冰眸酷，唯我中华热血浓。无数牺牲无尽意，星辰只在最高峰。</p>
+
+<h4 id="p2023-hlfz">七律·书评<span class="futi">·读《火力法则》【新韵】</span>　<span class="date"><a href="#y2023-hlfz">2023.12</a></span></h4>
+<p class="poem">因为所以科学理，由此故而信仰玄。波粒坍塌真相锁，异能苏醒电光残。星门洞悉穿行路，镜柱支撑宇宙边。守护时空因果律，掀开魔幻武功篇。<span class="fair">两仪四象生八卦，万物三生自本元</span>。无量仙尊位面子，永昌既寿命中天。远离争战平常愿，无恙山河普世观。自有汉家成制度，霸王儒道法其间。</p>
+
+<h4 id="p2024-vday">七律·飞简　<span class="date"><a href="#y2024-vday">2024.02.14</a></span></h4>
+<p class="poem">雨色雲扬飘绪随，凭窗梦远浸晨霏。<span class="fair">唯余思念无余聚，又见君行不见归</span>。<span class="fair">眼底星光眸底泪，柔中侠骨媚中晖</span>。客边碎语呈相倩，犹有新程莫再违。</p>
 
 <p><br/></p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-qilv">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1625,12 +1693,12 @@
 <h4 id="p2021-ming">五言·明宫谋　<span class="date"><a href="#y2021-ming">2021.02.11</a></span></h4>
 <p class="poem">历史是个托，言情占其窝。明宫有真爱，清泪不需多。</p>
 <p><br/></p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-wuyan">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-wulv"><span>五言律诗</span>　<span class="shou">四十三首</span></h3>
+<h3 id="boathill-wulv"><span>五言律诗</span>　<span class="shou">四十四首</span></h3>
 <p class="spbr"><br/></p>
 
 
@@ -1654,7 +1722,7 @@
 <h4 class="futi">其二</h4>
 <p class="poem">愁雲渡雨阴，松阶响春霖。<span class="fair">声断芭蕉碎，丝连水镜沉</span>。泥香幽浸草，枝翠绿湿襟。欲去归無路，难融是此心。</p>
 <p class="spbr"><br/></p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-wulv">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 
 
 <h4 id="z_xishan"><span class="juan">西山集</span></h4>
@@ -1674,7 +1742,7 @@
 
 <h4 id="p1988-rain">夜雨邀龚学士戏作　<span class="date"><a href="#y1988-rain">1988.6</a></span></h4>
 <p class="poem">夜已四更了，一看三点钟。轻轻窗外雨，剪剪耳边风。老恨蛙声乱，新愁睡意浓。明天考网络，心事两重重。</p>
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#boathill-wulv">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="pause">***<br/></p>
 
 
@@ -1805,7 +1873,11 @@
 <p class="poem">梦里初识雨，雨中复践缘。星眸盈爱水，眉黛渺情烟。天是飘雲海，卿如落界仙。待得圆月朗，窗上觅婵娟。</p>
 <p><br/></p>
 
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<h4 id="p2023-nilv">五律·逆旅杂想　<span class="date"><a href="#y2023-nilv">2023.07.01</a></span></h4>
+<p class="poem">夏存冰雪志，日有融金心。非是拂雲手，难得控羽禽。一腔冲宇宙，双胆落胸襟。生死逍遥渡，恩仇快活林。多情藏谷岳，余爱付瑶琴。深巷听棋语，老宅滴水音。殷勤皆茶盏，往复有诗吟。回首江湖路，犹言夜雨侵。</p>
+<p><br/></p>
+
+<p class="right"><a href="#boathill-wulv">&DoubleLeftArrow;</a> <a href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -1821,8 +1893,8 @@
 <p class="spbr"><br/></p>
 
 <h4 id="p1995-liux"><span class="juan">留香集</span>　<span class="date"><a href="#y1995-liux">1995.2</a></span></h4>
-<p class="futi">　　古人云：闺房之中，有甚於画眉者。今揣摩其意，</p>
-<p class="futi">　　拟以新声，并赠予所爱。</p>
+<p class="futi">　　古人云：闺房之中，有甚於画眉者。</p>
+<p class="futi">　　今揣摩其意，拟以新声。</p>
 <p class="spbr"><br/></p>
 <h4 class="futi">其一</h4>
 <p class="poem">勾肩雲半抱，抚背衽分撩。柔腻冰肌雪，香酥玉骨腰。薄纱轻乳晕，羞色暗鲛绡。枕上流莺语，梦中催暖潮。</p>
@@ -1908,9 +1980,9 @@
 <p><br/></p>
 </div>
 
-<p class="zong">　　右录詩詞二百七十七首</p>
+<p class="zong">　　右录詩詞二百九十首</p>
 <p class="zong">　　纱糸轩藏</p>
 
-<p class="right"><a href="#toc_top" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a id="end_ref" href="#top_ref" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 </body>
 </html>
