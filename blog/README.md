@@ -1,16 +1,21 @@
 # 博客杂记
 
+> 读书笔记＋摘抄
+
 <br/><a id="toc" name="toc"></a>
 ## 笔记
 
-* 读书笔记 [html](mynotes.html) | [text](mynotes.txt)
+  * 读书笔记 [html](mynotes.html)｜[text](mynotes.txt)
 
-* 笑料摘抄
+    - 毛泽东[《心之力》](mao-xin.html)
+    - 周恩来：[杂文](zhou.html)
 
-  - [土味情话](mylines.html#qinghua) |
-    [撩妹大全](mylines.html#liaomei)
+  * 笑料摘抄
 
-  - [消化油墨集](../books/消化油墨集.epub)
+    - [土味情话](mylines.html#qinghua) |
+      [撩妹大全](mylines.html#liaomei)
+
+    - [消化油墨集](../books/消化油墨集.epub)
 
 
 <p><br/><br/></p>
