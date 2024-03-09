@@ -4,11 +4,212 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh" xmlns:xml="http://www.w3.org/XML/1998/namespace">
 <head>
-<title>纱糸轩歌词集</title>
+<title>纱糸轩诗歌集 • Lyrics & Poems</title>
+<script type="text/javascript"><!--// script
+  const showAll = async (s,
+      getFunc = document.querySelectorAll,
+      display = 'block') => {
+    try {
+      console.log(`showing all s = ${s}, display = ${display}`);
+      let elems = getFunc.bind(document)(s);
+      let alist = Array.from(elems);
+      alist.forEach((e) => {
+        let v = display != 'none';
+        let o = display != 'none' ? 1 : 0.01;
+        e.style.height = v ? '100%' : '0px';
+        e.style.opacity = o;
+        e.style.visibility = v ? 'visible' : 'collapse';
+        e.style.display = display;
+      });
+      console.log(s, alist.length);
+      return alist;
+    } catch (err) {
+      console.log(err);
+      return [];
+    }
+  };
+  const showBySelector = async (s, display = 'block') => {
+    return showAll(s,
+      document.querySelectorAll,
+      display);
+  };
+  const showSubtitle = async (text = '') => {
+    console.log(`setting subtitle = ${text}`);
+    let getFunc = document.getElementById;
+    let sub = getFunc.bind(document)('subtitle');
+    sub.textContent = text ? `${text}` : '';
+    return sub;
+  };
+  const showByClass = async (cls, disp = 'block') => {
+    console.log(`showByClass, cls=${cls}, display=${disp}`);
+    return showAll(cls,
+      document.getElementsByClassName,
+      disp);
+  };
+  const showByName = async (name, display = 'block') => {
+    let visible = display != 'none' ? true : false;
+    let prop = visible ? 'block' : 'none';
+    return showAll(name,
+      document.getElementsByName,
+      display).then(() => {
+        // console.log(`name = ${name}, prop = ${prop}`)
+        return showBySelector(
+        `div[name=${name}] + a.goto`,
+        prop);
+    });
+  };
+  const showList = async (visible = true) => {
+    let prop = visible ? 'inline-block' : 'none';
+    console.log(`showing list = ${visible}, prop = ${prop}`);
+    return showAll('li',
+      document.getElementsByTagName, prop);
+  };
+  const showBlog = async (visible = true) => {
+    let disp = visible ? 'flex' : 'none';
+    let prop = visible ? 'block' : 'none';
+    return showSubtitle().then(() => {
+      showByClass("blog", disp).then(() => {
+        // console.log(`prop = ${prop}`)
+        return showBySelector(
+        `div.blog + a.goto`, prop);
+      });});
+  };
+  const showBlogByClassName = async (cls) => {
+    let dli = 'inline-block';
+    console.log(`showing blog, cls = ${cls}`);
+    return showByClass(cls, 'flex').then(() => {
+      return showBySelector(
+        `div.${cls} + a.goto`, 'block').then(() => {
+          return showByClass(`${cls}-li`, dli);
+    });});
+  };
+  const showBlogByClass = async (cls) => {
+    return showList(false).then(() => {
+      return showBlog(false).then(() => {
+      return showBlogByClassName(cls);
+    });});
+  };
+  const showBlogByName = async (name) => {
+    let dli = 'inline-block';
+    return showBlog(false).then(() => {
+      return showByName(name, 'flex').then(() => {
+    return showList(false).then(() => {
+      return showByName(`${name}-li`, dli);
+    });});});
+  };
+  const showBlogByStar = async () => {
+    let dli = 'inline-block';
+    console.log('showing stars ...');
+    return showList(false).then(() => {
+      return showBlog(false).then(() => {
+      return showBlogByClassName('show').then(() => {
+      return showBlogByClassName('view');
+    });});});
+  };
+  const show = async (v = 'true') => {
+    return showList(v).then(() => {
+      return showBlog(v);
+    });
+  };
+
+  const getPageAnchor = (page) => {
+    let url = page ? page : window.location.href;
+    // console.log(`page = ${url}`);
+    // let chk = url && url.indexOf('#') != 0;
+    // let ndx = url.indexOf('#');
+    // console.log(`condition == ${chk}, index = ${ndx}`);
+    if (url && url.indexOf('#') > 0) {
+      let tag = url.split('#')[1];
+      // console.log(`page tag = ${tag}`);
+      return tag;
+    }
+    return '';
+  };
+  const getPageUrl = (page) => {
+    let url = page ? page : window.location.href;
+    if (url && url.indexOf('#') != 0) {
+      let pageUrl = url.split('#')[0];
+      return pageUrl;
+    }
+    return url;
+  };
+  const setLocation = (tag, v) => {
+    event.stopPropagation();
+    // console.log(`tag = ${tag}, source = ${v}`);
+    if (typeof tag != 'undefined' && tag) {
+      let url = getPageUrl();
+      console.log(`set location = ${url}#${tag}`);
+      window.location.replace(`${url}#${tag}`);
+      if (tag == 'atop') {
+        window.scrollTo(0, 0);
+        return false;
+      }
+      try {
+        let query = document.querySelector.bind(document);
+        let anchor = query(`#${tag}`).offsetTop;
+        console.log(`anchor to #${tag} ...`);
+        window.scrollTop = anchor;
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    return false;
+  };
+  const showTags = (e = 'atop') => {
+    let chk = typeof e != 'string' || e == '';
+    let tag = chk ? getPageAnchor() : e;
+    console.log(`page anchor/tag = ${tag}`);
+    let subtitle = '';
+    let showFunc = showBlogByName;
+    switch (tag) {
+      case 'engp':
+        showFunc = showBlogByClass;
+        subtitle = "(english poems)";
+        break;
+      case 'show':
+        showFunc = showBlogByStar; // show both stars
+        subtitle = "☆☆☆★★";
+        break;
+      case 'view':
+        showFunc = showBlogByClass;
+        subtitle = "★★★";
+        break;
+      case 'zhyx':
+        subtitle = "(by Jason)";
+        break;
+      case 'zhou':
+        subtitle = "(by Lin)";
+        break;
+      default:
+        tag = 'atop';
+    }
+    console.log(`tag = ${tag}, subtitle = ${subtitle}`);
+    if (subtitle) {
+      showFunc(tag).then(() => {
+        // console.log(`subtitle = ${subtitle}`);
+        showSubtitle(subtitle).then(() => {
+          setLocation(tag, subtitle);
+        });
+      });
+    } else {
+      setLocation(tag, 'all');
+      show();
+    }
+    return false;
+  };
+
+  window.onload = showTags;
+//-->
+</script>
+
+<link href="../Images/smx-fangzhuan.png" rel="icon" type="image/x-icon">
 <link href="../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
 <link href="../Styles/shiji.css" rel="stylesheet" type="text/css"/>
 <style type="text/css">
   a {
+    border: none;
+    outline: none;
+    -moz-outline-style: none;
     text-decoration: none;
   }
   a.goto {
@@ -17,6 +218,7 @@
     font-size: smaller;
     margin: -0.35em 0.25em 0.25em 0em;
     text-align: right;
+    float: right;
   }
   a.goto:last-of-type {
     visibility: hidden;
@@ -27,38 +229,71 @@
     font-size: larger;
     font-weight: bold;
   }
+  a.tags {
+    margin: 0em 0.125em;
+    padding: 0.125em 0.1em;
+    color: lightslategray;
+  }
+  a.tags:visited {
+    color: darkgray;
+  }
+  a.tags:active {
+    border: none;
+    border-bottom: dotted 0.075em powderblue;
+    color: darkslategray;
+  }
+  a.tags:focus {
+    border: none;
+    border-bottom: dotted 0.075em darkred;
+    border-top: dotted 0.075em darkred;
+    color: darkred;
+  }
+  a.tags:hover {
+    border: none;
+    border-radius: 0.25em;
+    background-color: powderblue;
+    color: darkslategray;
+  }
+
   body, p {
     font-family: "Calibri", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif, serif;
     font-size: 1.25em;
+    max-width: 100%;
   }
-  div.atoc {
+
+  div.center {
+    text-align: center;
+  }
+  div.catg {
     color: darkgray;
     cursor: default;
     line-height: 2em;
     white-space: nowrap;
     width: 100%;
   }
-  div.atoc>span {
+  div.catg>span {
     border-top: double 0.25em lightgray;
     padding: 0.25em 0em;
   }
-  div.atoc>span a:hover, div.atoc>span a:active {
+  div.catg>span a:hover, div.catg>span a:active {
     background: gold;
     border-radius: 0.25em;
     margin: 0em -0.2em;
     padding: 0em 0.2em;
   }
-  div.atoc p {
+  div.catg p {
     line-height: 0.5em;
   }
   div#acat {
     color: gray;
     cursor: default;
     display: none;
+    background-color: whitesmoke;
     font-size: 0.75em;
     font-weight: normal;
     line-height: 1.75em;
     white-space: nowrap;
+    max-width: 100%;
   }
   div#acat a {
     color: darkred;
@@ -71,6 +306,13 @@
   div#acat a:hover, div#acat a:active {
     background-color: gold;
   }
+  div#acat a.tags {
+    font-size: smaller;
+  }
+  div#acat a.tags:hover {
+    background-color: lightskyblue;
+    border-color: powderblue;
+  }
   div#acat span {
     color: lightgray;
   }
@@ -78,28 +320,25 @@
     opacity: 0.25;
     position: fixed;
     bottom: 0; right: 0;
+    border-radius: 0.25em 0em 0em 0em;
     background-color: transparent;
     line-height: 1.35em;
-    margin: 0.25em 0.25em 0.35em 0em;
-    padding: 0.5em 0.25em;
+    margin: 0.5em 0.25em 0.25em 0.5em;
+    padding: 0.35em 0.25em;
     text-align: right;
-    vertical-align: top;
-    margin: 0.5em 0.5em 0.25em 0.5em;
-    padding: 0.35em;
   }
   div#goto:hover, div#goto:active {
-    opacity: 0.9;
-    border-radius: 0.25em;
     border: double 0.05em whitesmoke;
     background-color: whitesmoke;
     font-weight: bold;
     font-size: larger;
-    margin: 0.25em;
-    padding: 0.5em;
+    border: dotted 1px lightgray;
+    margin: 0.25em 0em 0em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    opacity: 0.9;
   }
   div#goto:hover div#acat, div#goto:active div#acat {
     display: block;
-    background-color: whitesmoke;
     opacity: 1;
   }
   div#goto #aquo {
@@ -135,6 +374,7 @@
     background-color: #e0e0e0; /* whitesmoke */
     position: relative;
   }
+
   div.blog {
     display: flex;
     border-top: dotted 0.25em lightgray;
@@ -219,6 +459,11 @@
     padding: 0em;
     margin: 0em;
   }
+
+  div.engp, div.show, div.view, div.zhou, div.zhyx {
+    position: relative;
+  }
+
   div.geci, div.yuan, div.ying, div.tian, div.poem {
     line-height: 1.5em;
     margin: 0em 0.5em 0em 0em;
@@ -269,6 +514,7 @@
   div.text pre {
     font-size: 1.25em;
   }
+
   em a {
     color: darkolivegreen;
   }
@@ -279,6 +525,7 @@
   sup {
     color: darkgray;
   }
+
   h1, h2, h3, h4 {
     font-family: "Segoe UI", "Tahoma", "Arial", "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
   }
@@ -291,18 +538,28 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: 1.25em 1.5em;
+    border-bottom: solid cornflowerblue 1px;
     line-height: 2.25em;
-    margin: 0em 0em 0.39em 0em;
+    margin: 0em 0em 0.125em 0em;
     padding: 0em 0.37em 0em 0.25em;
+    white-space: nowrap;
     text-align: left;
     text-indent: 0em;
+    cursor: pointer;
+  }
+  h1.h1 span#subtitle {
+    vertical-align: super;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.5em;
   }
   h2.h2 {
     color: beige;
     border: none;
     background-color: darkseagreen; /* dodgerblue; */
     font-size: 1.25em;
-    margin: 0.25em 0em 0em 0em;
+    line-height: 1.75em;
+    margin: 1em 0em 0em 0em;
     padding: 0em 0.5em 0em 0.5em;
     page-break-before: always;
     position: relative;
@@ -320,17 +577,49 @@
     width: 100%;
   }
   h3.h3 {
+    cursor: pointer;
+    background-color: #FFFF99;
     border-right-width: 0.75em;
     page-break-before: avoid;
-    margin: 0.25em 0em;
+    line-height: 2.75em;
+    margin: 0.125em 0em 0.25em 0em;
     padding-right: 0.5em;
-    text-indent: 0.25em;
     text-align: right;
+    text-indent: 0.25em;
+    vertical-align: middle;
+    white-space: nowrap;
   }
+  h3 span#star {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.95em;
+    color: silver; /* gainsboro */
+  }
+  h3 span#star i {
+    font-style: normal;
+    opacity: 0.5;
+  }
+  h3 span#star a em {
+    border-radius: 0.25em;
+    border: dotted 1px gray;
+    background-color: transparent;
+    font-size: 0.9em;
+    font-style: normal;
+    height: 1em; min-width: 1.25em;
+    padding: 0em 0.25em;
+  }
+  h3 span#nojs {
+    background-color: #FFFF99; /* match to h3 */
+    display: inline-block;
+    margin-left: -15em; /* overlap to left */
+    width: 15em;
+  }
+
   ul {
     display: block;
     column-count: 2;
     list-style: none;
+    line-height: 1.5em;
     margin: 0em 0em 0em 0em;
     padding: 0em 0.5em;
     text-align: right;
@@ -405,6 +694,10 @@
   ul li.ying span, span a.ey {
     color: midnightblue;
   }
+  ul li.engp-li, ul li.show-li, ul li.view-li,
+  ul li.zhou-li, ul li.zhyx-li {
+    white-space: nowrap;
+  }
   ul li a, span a.cy {
     color: darkslategray;
     z-index: 100;
@@ -429,6 +722,7 @@
     text-align: right;
     width: 5.0em;
   }
+
 @media only screen
  and (min-device-width: 100px)
  and (max-device-width: 639px) {
@@ -534,119 +828,167 @@
 </style>
 </head>
 <body>
-<h1 class="h1" id="atop">纱糸轩诗词集<a class="goto" href="#atoc"></a></h1>
+<a id="engp" name="engp"></a><!--anchor: engp-->
+<a id="show" name="show"></a><!--anchor: show-->
+<a id="view" name="view"></a><!--anchor: view-->
+<h1 id="atop" class="h1" title="Lyrics and Poems"
+    onclick="return setLocation('catg', 'h1')">纱糸轩诗歌集
+  <span id="subtitle"></span>
+</h1>
+<a id="zhou" name="zhou"></a><!--anchor: zhou-->
 
-<h3 class="h3"><a href="#atoc">分类</a>｜目录</h3><div class="atoc">
-<ul>
-  <li id="d20010101x" class="ying"><a href="#p20010101x"><b>The Three Realms</b>〖三种境界〗 <i>2001.01.01.</i></a></li>
-  <li id="d20010923x" class="ying"><a href="#p20010923x"><b>The Way Of The Way</b>〖道德经之一〗 <i>2001.09.23.</i></a></li>
-  <li id="d20030101x"><a href="#p20030101x" title="I Could Fall In Love With You (Selena)"><em title="周琳填词">周</em> I Could Fall In Love ...【我會愛上你】 <i>2003.03.01.</i></a></li>
-  <li id="d20040724x" class="ying"><a href="#p20040724x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Look At The Sky</b>〖望空〗 <i>2004.07.24.</i></a></li>
-  <li id="d20050101x"><a href="#p20050101x"><em title="周琳填词">周</em> Proud Of You【为你骄傲】 <i>2005.01.01.</i></a></li>
-  <li id="d20070508x" class="ying"><a href="#p20070508x"><u title="English poem">E</u> <b>Random Thought</b>〖随笔〗 <i>2007.05.08.</i></a></li>
-  <li id="d20071214x" class="ying"><a href="#p20071214x"><u title="English poem">E</u> <b>A Cyber Dream</b>〖网想曲〗 <i>2007.12.14.</i></a></li>
-  <li id="d20080126x" class="mulu"><a href="#p20080126x" title="Happy Birthday"><u>白话诗</u>【生日快乐】 <i>2008.01.26.</i></a></li>
-  <li id="d20080202x" class="ying"><a href="#p20080202x" title="Somnambulate"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Night Mystery</b>〖<q>梦游</q>〗 <i>2008.02.02.</i></a></li>
-  <li id="d20080207x" class="ying"><a href="#p20080207x" title="Do You Cheer, Do You Hear?"> <b>Do You Hear</b>〖两只老虎〗 <i>2008.02.07.</i></a></li>
-  <li id="d20080415x" class="ying"><a href="#p20080415x" title=""> <b>One Day No See</b>〖一日不見〗 <i>2008.04.15.</i></a></li>
-  <li id="d20080301a"><a href="#p20080301a"><u>ABBA</u> Andante, Andante【曼舞歌兮】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301c"><a href="#p20080301c"><u>ABBA</u> Chiquitita【惜惜其佳】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301d"><a href="#p20080301d"><u>ABBA</u> Dancing Queen【舞之情】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301e"><a href="#p20080301e"><u>ABBA</u> Eagle【飞鹰】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301f"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301h"><a href="#p20080301h"><u>ABBA</u> I Have A Dream【我的梦】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301m"><a href="#p20080301m"><u>ABBA</u> Move On【生活的航程】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301o"><a href="#p20080301o"><u>ABBA</u> One Of Us【你我之间】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301s"><a href="#p20080301s"><u>ABBA</u> Super Trouper【超级演出】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301t"><a href="#p20080301t"><u>ABBA</u> Take A Chance On Me【给我机会】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301x"><a href="#p20080301x"><u>ABBA</u> Thank You For The Music【感谢音乐】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301w"><a href="#p20080301w" title="The Winner Takes It All (ABBA)"><u>ABBA</u> The Winner Takes ...【你赢了我所有】 <i>2008.03.01.</i></a></li>
-  <li id="d20080426d"><a href="#p20080426d"><u title="Boney M">B/M</u> Daddy Cool【爸爸真酷】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426e"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426h"><a href="#p20080426h"><u title="Boney M">B/M</u> Hooray, Hooray!【小妹】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426a"><a href="#p20080426a"><u title="Boney M">B/M</u> I'm Born Again【我的新生】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426b"><a href="#p20080426b"><u title="Boney M">B/M</u> I See A Boat On The River【远行的船】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426c"><a href="#p20080426c"><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426o"><a href="#p20080426o"><u title="Boney M">B/M</u> Ocean Of Fantasy【大海幻想曲】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426v"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426s"><a href="#p20080426s"><u title="Boney M">B/M</u> Sunny【想你】 <i>2008.04.26.</i></a></li>
-  <li id="d20080730x"><a href="#p20080730x" title="Never Gonna Fall In Love Again"><q>☆</q> Never Gonna Fall ...【今夜逝去情不再】 <i>2008.07.30.</i></a></li>
-  <li id="d20081229x" class="ying"><a href="#p20081229x"><u title="English poem">E</u> <b>A Little Too Little</b>〖经济杂言〗 <i>2008.12.29.</i></a></li>
-  <li id="d20081230x" class="ying"><a href="#p20081230x"><u title="English poem">E</u> <b>Caribbean Poems</b>〖加勒比游记〗 <i>2008.12.30.</i></a></li>
-  <li id="d20081225x" class="mulu"><a href="#p20081225x" title="Snow Day At Home"><em title="周琳作品">周</em> <b></b>【大雪家中】 <i>2008.12.25.</i></a></li>
-  <li id="d20090214x"><a href="#p20090214x"><q>☆</q> Barking At The Moon【对月当歌】 <i>2009.02.14.</i></a></li>
-  <li id="d20090628x" class="mulu"><a href="#p20090628x" title="A Pepper Tree"><em title="周琳作品">周</em> <b></b>【为了一棵花椒树】 <i>2009.06.28.</i></a></li>
-  <li id="d20090712x" class="mulu"><a href="#p20090712x" title="Epigram – On The Freeway"><u>白话诗</u>【駕車於高速公路戲作】 <i>2009.07.12.</i></a></li>
-  <li id="d20090717x" class="mulu"><a href="#p20090717x" title="Lavender Festival"><em title="周琳作品">周</em> <u>白话诗</u>【薰衣草节】 <i>2009.07.17.</i></a></li>
-  <li id="d20090720x" class="mulu"><a href="#p20090720x" title="Cook"><em title="周琳作品">周</em> <u>白话诗</u>【大厨】 <i>2009.07.20.</i></a></li>
-  <li id="d20090801x" class="mulu"><a href="#p20090801x" title="Sesame Ahi (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【當阿黑遇上芝麻】 <i>2009.08.01.</i></a></li>
-  <li id="d20090911x" class="mulu"><a href="#p20090911x" title="Cohort Class at Siver Falls"><b></b><em title="周琳作品">周</em> 【博士班第一天】 <i>2009.09.11.</i></a></li>
-  <li id="d20091005x" class="ying"><a href="#p20091005x"><u title="English poem">E</u> <b>Full Moon</b>〖<q>中秋二首</q>〗 <i>2009.10.05.</i></a></li>
-  <li id="d20091127x" class="mulu"><a href="#p20091127x" title="Black Friday Shopping"><em title="周琳作品">周</em> <b></b>【感恩节「血拼」夜】 <i>2009.11.27.</i></a></li>
-  <li id="d20091225x" class="ying"><a href="#p20091225x"><u title="English poem">E</u> <b>Morning Hike</b>〖圣诞早晨〗 <i>2009.12.25.</i></a></li>
-  <li id="d20091231x" class="mulu"><a href="#p20091231x" title="Mala Snacks (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【麻辣花生】 <i>2009.12.31.</i></a></li>
-  <li id="d20100724x" class="mulu"><a href="#p20100724x" title="Cook"><em title="周琳作品">周</em> <u>白话诗</u>【小资生活】 <i>2010.07.24.</i></a></li>
-  <li id="d20100828x" class="mulu"><a href="#p20100828x"><em title="周琳作品">周</em> <b>North By Northwest</b>【西北偏北游记】 <i>2010.08.28.</i></a></li>
-  <li id="d20100923p" class="ying"><a href="#p20100923p" title="Love Song by 6th Dalai Lama (Tsangyang Gyatso, 1683-1706)"><em title="周琳填词">周</em><u title="English poems">E</u> <b>Love Song by 6th Dalai</b>〖見與不見〗 <i>2010.09.23.</i></a></li>
-  <li id="d20100923x" class="ying"><a href="#p20100923x" title="Ancient poems translation in English"><u title="English poems">E</u> <b>Chinese Poems in English</b>〖古诗英译〗 <i>2010.09.23.</i></a></li>
-  <li id="d20101106x" class="ying"><a href="#p20101106x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Love Song</b>〖<q>愛之歌</q>〗 <i>2010.11.06.</i></a></li>
-  <li id="d20101125x" class="ying"><a href="#p20101125x"><b>Limerick Thanksgiving</b>〖感恩打油〗 <i>2010.11.25.</i></a></li>
-  <li id="d20101201x"><a href="#p20101201x" title="God Rest Ye Merry Gentlemen (1760, Christmas Carol)"><u title="Christian song">C</u> God Rest Ye Merry ...【上帝讓人快樂】 <i>2010.12.01.</i></a></li>
-  <li id="d20101202x"><a href="#p20101202x" title="Hark, the Herald Angels Sing (1739, Hymns and Sacred Poems)"><u title="Christian song">C</u> Hark, the Herald Angels Sing【天使高歌】 <i>2010.12.02.</i></a></li>
-  <li id="d20101206x"><a href="#p20101206x" title="O Come, All Ye Faithful (1744, Christmas Carol)"><u title="Christian song">C</u> O Come, All Ye Faithful【萬方齊來敬仰】 <i>2010.12.06.</i></a></li>
-  <li id="d20101209x"><a href="#p20101209x" title="What Child Is This (by William Chatterton Dix, 1865)"><u title="Christian song">C</u> What Child Is This【誰之子】 <i>2010.12.09.</i></a></li>
-  <li id="d20101212x" class="ying"><a href="#p20101212x"><u title="English poem">E</u> <b>To Donna and Mike</b>〖聖誕賀卡〗 <i>2010.12.12.</i></a></li>
-  <li id="d20110111x" class="ying"><a href="#p20110111x"><u title="English poem">E</u> <b>Farewell to Sharon</b>〖赠别〗 <i>2011.01.11.</i></a></li>
-  <li id="d20110106x" class="ying"><a href="#p20110106x"><q>☆</q> <u title="English lyrics">L</u> <span>The Puzzle Of Love</span>〖糊涂的爱〗 <i>2011.01.06.</i></a></li>
-  <li id="d20110116x" class="mulu"><a href="#p20110116x" title="Sesame Purple Yam Cake (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【芝麻紫薯饼】 <i>2011.01.16.</i></a></li>
-  <li id="d20110318x" class="ying"><a href="#p20110318x"><q>☆</q> <u title="English lyrics">L</u> <span>Legend</span>〖傳奇〗 <i>2011.03.18.</i></a></li>
-  <li id="d20110318p" class="ying"><a href="#p20110318p"><q>☆</q> <u title="English lyrics">L</u> <span>Coming From The Prairie</span>〖我從草原來〗 <i>2011.03.18.</i></a></li>
-  <li id="d20110321x"><a href="#p20110321x"><em title="Song by Adele">A</em> Set Fire To The Rain【雨落情逝心已焚】 <i>2011.03.21.</i></a></li>
-  <li id="d20121028x"><a href="#p20121028x"><em title="Song by Adele">A</em> Rolling In the Deep【淪陷回憶裡】 <i>2012.10.28.</i></a></li>
-  <li id="d20121030x"><a href="#p20121030x"><em title="Song by Adele">A</em> Don't You Remember【無愛的挽歌】 <i>2012.10.30.</i></a></li>
-  <li id="d20121030s"><a href="#p20121030s"><em title="Song by Adele">A</em> Someone Like You【此情依舊】 <i>2012.10.30.</i></a></li>
-  <li id="d20121031x"><a href="#p20121031x"><em title="Song by Adele">A</em> One And Only【愛的唯一】 <i>2012.10.31.</i></a></li>
-  <li id="d20130112x"><a href="#p20130112x"><q>☆</q> Beauty And A Beat【美麗和旋律】 <i>2013.01.12.</i></a></li>
-  <li id="d20130602x" class="ying"><a href="#p20130602x"><q>☆</q> <u title="English lyrics">L</u> <span>Under A Vast Sky</span>〖海闊天空〗 <i>2013.06.02.</i></a></li>
-  <li id="d20130814x"><a href="#p20130814x"><q>☆</q> Stronger【愛過心更強】 <i>2013.08.14.</i></a></li>
-  <li id="d20130915x"><a href="#p20130915x" title="Working My Way Back To You (1980 by The Spinners)"><q>☆</q> Working My Way Back ...【用心贏你回】 <i>2013.09.15.</i></a></li>
-  <li id="d20130916x"><a href="#p20130916x">Somewhere Over The Rainbow【彩虹之上】 <i>2013.09.16.</i></a></li>
-  <li id="d20140203x"><a href="#p20140203x"><u title="English poem">E</u> <span>A Vanila Song〖行香子·火燒天宮〗</span> <i>2014.02.03.</i></a></li>
-  <li id="d20140819x"><a href="#p20140819x" title="Anna Kendrick - Cups Song (Pitch Perfect 2012)"><q>☆</q> When I'm Gone【远行快唱】 <i>2014.08.19</i></a></li>
-  <li id="d20151128x"><a href="#p20151128x"><q>☆</q> Demons【心魔】 <i>2015.11.28.</i></a></li>
-  <li id="d20151205x"><a href="#p20151205x"><q>☆</q> Big Girls Don't Cry【不哭的女孩】 <i>2015.12.05.</i></a></li>
-  <li id="d20180126x"><a href="#p20180126x"><q>☆</q> A Million Dreams【萬千夢想】 <i>2018.01.26.</i></a></li>
-  <li id="d20190917x"><a href="#p20190917x" title="Love in the world"><u>Y</u> 【世爱有三】 <i>2019.09.17.</i></a></li>
-  <li id="d20191227x"><a href="#p20191227x" title="New Zealand's poem"><u>白话诗</u> 【新西兰田园打油诗】 <i>2019.12.27.</i></a></li>
-  <li id="d20210426x"><a href="#p20210426x" title="A famous Chinese lyrics in English"><u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
-  <li id="d20210921x"><a href="#p20210921x"><u title="English poem">E</u> <span>Mid-Autumn〖中秋〗</span> <i>2021.09.21.</i></a></li>
-  <li id="d20220514x"><a href="#p20220514x"><em title="周琳作品">周</em> <u title="English poem">E</u> <span>Birthday Card〖贺辰〗</span> <i>2022.05.14.</i></a></li>
-  <li id="d20220523x" class="ying"><a href="#p20220523z" title="English cover">〖翻唱〗</a>＋ <a href="#p20220523x"><q>☆</q> <u title="English lyrics">L</u> <span>Lonely Warrior</span>〖孤勇者〗 <i>2022.05.23.</i></a></li>
+<!--toc and tags heading-->
+<h3 id="atoc" class="h3" title="by category or tag"
+    onclick="return setLocation('catg', 'h3')">
+  <span id="star" class="noprint"><a
+    href="#show" onclick="return showTags('show')"
+    title="show ☆☆☆" type="button"
+    class="tags">&star;</a><i>&bull;</i><a
+    href="#engp" onclick="return showTags('engp')"
+    title="english poems;" type="button"
+    class="tags"><em>E</em></a><i>&bull;</i><a
+    href="#view" onclick="return showTags('view')"
+    title="show ★★★" type="button"
+    class="tags">&starf;</a><i>|</i><a
+    href="#zhyx" onclick="return showTags('zhyx')"
+    title="show by Jason" type="button"
+    class="tags">Jason</a><i>|</i><a
+    href="#zhou" onclick="return showTags('zhou')"
+    title="show by Lin" type="button"
+    class="tags">Lin</a><i>|</i><a
+    href="#acat" onclick="return showTags('atoc')"
+    title="show all" type="button"
+    class="tags">All</a><i>|</i>
+  <noscript><span id="nojs">
+    <a href="#acat" title="Category">分类</a>｜
+  </span></noscript>
+  </span>目录
+</h3>
+
+<div class="atoc" name="atoc">
+<ul><!--start toc-->
+  <li id="d20010101x" class="ying engp-li" name="zhyx-li"><a href="#p20010101x"><b>The Three Realms</b>〖三种境界〗 <i>2001.01.01.</i></a></li>
+  <li id="d20010923x" class="ying" name="misc-li"><a href="#p20010923x"><b>The Way Of The Way</b>〖道德经之一〗 <i>2001.09.23.</i></a></li>
+  <li id="d20030101x" name="zhou-li"><a href="#p20030101x" title="I Could Fall In Love With You (Selena)"><em title="周琳填词">周</em> I Could Fall In Love ...【我會愛上你】 <i>2003.03.01.</i></a></li>
+  <li id="d20040724x" class="ying engp-li" name="zhou-li"><a href="#p20040724x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Look At The Sky</b>〖望空〗 <i>2004.07.24.</i></a></li>
+  <li id="d20050101x" name="zhou-li"><a href="#p20050101x"><em title="周琳填词">周</em> Proud Of You【为你骄傲】 <i>2005.01.01.</i></a></li>
+  <li id="d20070508x" class="ying engp-li" name="zhyx-li"><a href="#p20070508x"><u title="English poem">E</u> <b>Random Thought</b>〖随笔〗 <i>2007.05.08.</i></a></li>
+  <li id="d20071214x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20071214x"><u title="English poem">E</u> <b>A Cyber Dream</b>〖网想曲〗 <i>2007.12.14.</i></a></li>
+  <li id="d20080126x" class="mulu" name="zhyx-li"><a href="#p20080126x" title="Happy Birthday"><u>白话诗</u>【生日快乐】 <i>2008.01.26.</i></a></li>
+  <li id="d20080202x" class="ying engp-li view-li" name="zhou-li"><a href="#p20080202x" title="Somnambulate"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Night Mystery</b>〖<q>梦游</q>〗 <i>2008.02.02.</i></a></li>
+  <li id="d20080207x" class="ying" name="zhyx-li"><a href="#p20080207x" title="Do You Cheer, Do You Hear?"> <b>Do You Hear</b>〖两只老虎〗 <i>2008.02.07.</i></a></li>
+  <li id="d20080415x" class="ying engp-li" name="zhyx-li"><a href="#p20080415x" title=""> <b>One Day No See</b>〖一日不見〗 <i>2008.04.15.</i></a></li>
+  <li id="d20080301a" name="zhyx-li"><a href="#p20080301a"><u>ABBA</u> Andante, Andante【曼舞歌兮】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301c" name="zhyx-li"><a href="#p20080301c"><u>ABBA</u> Chiquitita【惜惜其佳】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301d" name="zhyx-li"><a href="#p20080301d"><u>ABBA</u> Dancing Queen【舞之情】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301e" name="zhyx-li"><a href="#p20080301e"><u>ABBA</u> Eagle【飞鹰】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301f" name="zhyx-li"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301h" name="zhyx-li"><a href="#p20080301h"><u>ABBA</u> I Have A Dream【我的梦】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301m" name="zhyx-li"><a href="#p20080301m"><u>ABBA</u> Move On【生活的航程】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301o" name="zhyx-li"><a href="#p20080301o"><u>ABBA</u> One Of Us【你我之间】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301s" name="zhyx-li"><a href="#p20080301s"><u>ABBA</u> Super Trouper【超级演出】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301t" name="zhyx-li"><a href="#p20080301t"><u>ABBA</u> Take A Chance On Me【给我机会】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301x" name="zhyx-li"><a href="#p20080301x"><u>ABBA</u> Thank You For The Music【感谢音乐】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301w" name="zhyx-li"><a href="#p20080301w" title="The Winner Takes It All (ABBA)"><u>ABBA</u> The Winner Takes ...【你赢了我所有】 <i>2008.03.01.</i></a></li>
+  <li id="d20080426d" name="zhyx-li"><a href="#p20080426d"><u title="Boney M">B/M</u> Daddy Cool【爸爸真酷】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426e" name="zhyx-li"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426h" name="zhyx-li"><a href="#p20080426h"><u title="Boney M">B/M</u> Hooray, Hooray!【小妹】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426a" name="zhyx-li"><a href="#p20080426a"><u title="Boney M">B/M</u> I'm Born Again【我的新生】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426b" name="zhyx-li"><a href="#p20080426b"><u title="Boney M">B/M</u> I See A Boat On The River【远行的船】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426c" name="zhyx-li"><a href="#p20080426c"><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426o" name="zhyx-li"><a href="#p20080426o"><u title="Boney M">B/M</u> Ocean Of Fantasy【大海幻想曲】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426v" name="zhyx-li"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426s" name="zhyx-li"><a href="#p20080426s"><u title="Boney M">B/M</u> Sunny【想你】 <i>2008.04.26.</i></a></li>
+  <li id="d20080730x" name="zhyx-li show-li"><a href="#p20080730x" title="Never Gonna Fall In Love Again"><q>☆</q> Never Gonna Fall ...【今夜逝去情不再】 <i>2008.07.30.</i></a></li>
+  <li id="d20081229x" class="ying engp-li" name="zhyx-li"><a href="#p20081229x"><u title="English poem">E</u> <b>A Little Too Little</b>〖经济杂言〗 <i>2008.12.29.</i></a></li>
+  <li id="d20081230x" class="ying engp-li" name="zhyx-li"><a href="#p20081230x"><u title="English poem">E</u> <b>Caribbean Poems</b>〖加勒比游记〗 <i>2008.12.30.</i></a></li>
+  <li id="d20081225x" class="mulu" name="zhou-li"><a href="#p20081225x" title="Snow Day At Home"><em title="周琳作品">周</em> <b></b>【大雪家中】 <i>2008.12.25.</i></a></li>
+  <li id="d20090214x" class="show-li" name="zhyx-li"><a href="#p20090214x"><q>☆</q> Barking At The Moon【对月当歌】 <i>2009.02.14.</i></a></li>
+  <li id="d20090628x" class="mulu" name="zhou-li"><a href="#p20090628x" title="A Pepper Tree"><em title="周琳作品">周</em> <b></b>【为了一棵花椒树】 <i>2009.06.28.</i></a></li>
+  <li id="d20090712x" class="mulu" name="zhyx-li"><a href="#p20090712x" title="Epigram – On The Freeway"><u>白话诗</u>【駕車於高速公路戲作】 <i>2009.07.12.</i></a></li>
+  <li id="d20090717x" class="mulu" name="zhou-li"><a href="#p20090717x" title="Lavender Festival"><em title="周琳作品">周</em> <u>白话诗</u>【薰衣草节】 <i>2009.07.17.</i></a></li>
+  <li id="d20090720x" class="mulu" name="zhou-li"><a href="#p20090720x" title="Cook"><em title="周琳作品">周</em> <u>白话诗</u>【大厨】 <i>2009.07.20.</i></a></li>
+  <li id="d20090801x" class="mulu show-li" name="zhou-li"><a href="#p20090801x" title="Sesame Ahi (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【當阿黑遇上芝麻】 <i>2009.08.01.</i></a></li>
+  <li id="d20090911x" class="mulu" name="zhou-li"><a href="#p20090911x" title="Cohort Class at Siver Falls"><b></b><em title="周琳作品">周</em> 【博士班第一天】 <i>2009.09.11.</i></a></li>
+  <li id="d20091005x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20091005x"><u title="English poem">E</u> <b>Full Moon</b>〖<q>中秋二首</q>〗 <i>2009.10.05.</i></a></li>
+  <li id="d20091127x" class="mulu" name="zhou-li"><a href="#p20091127x" title="Black Friday Shopping"><em title="周琳作品">周</em> <b></b>【感恩节「血拼」夜】 <i>2009.11.27.</i></a></li>
+  <li id="d20091225x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20091225x"><u title="English poem">E</u> <b>Morning Hike</b>〖圣诞早晨〗 <i>2009.12.25.</i></a></li>
+  <li id="d20091231x" class="mulu show-li" name="zhou-li"><a href="#p20091231x" title="Mala Snacks (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【麻辣花生】 <i>2009.12.31.</i></a></li>
+  <li id="d20100724x" class="mulu" name="zhou-li"><a href="#p20100724x" title="Cook"><em title="周琳作品">周</em> <u>白话诗</u>【小资生活】 <i>2010.07.24.</i></a></li>
+  <li id="d20100828x" class="mulu" name="zhou-li"><a href="#p20100828x"><em title="周琳作品">周</em> <b>North By Northwest</b>【西北偏北游记】 <i>2010.08.28.</i></a></li>
+  <li id="d20100923p" class="ying engp-li" name="zhou-li"><a href="#p20100923p" title="Love Song by 6th Dalai Lama (Tsangyang Gyatso, 1683-1706)"><em title="周琳填词">周</em><u title="English poems">E</u> <b>Love Song by 6th Dalai</b>〖見與不見〗 <i>2010.09.23.</i></a></li>
+  <li id="d20100923x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20100923x" title="Ancient poems translation in English"><u title="English poems">E</u> <b>Chinese Poems in English</b>〖古诗英译〗 <i>2010.09.23.</i></a></li>
+  <li id="d20101106x" class="ying engp-li" name="zhou-li"><a href="#p20101106x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Love Song</b>〖<q>愛之歌</q>〗 <i>2010.11.06.</i></a></li>
+  <li id="d20101125x" class="ying engp-li" name="zhyx-li"><a href="#p20101125x"><b>Limerick Thanksgiving</b>〖感恩打油〗 <i>2010.11.25.</i></a></li>
+  <li id="d20101201x" name="zhyx-li"><a href="#p20101201x" title="God Rest Ye Merry Gentlemen (1760, Christmas Carol)"><u title="Christian song">C</u> God Rest Ye Merry ...【上帝讓人快樂】 <i>2010.12.01.</i></a></li>
+  <li id="d20101202x" name="zhyx-li"><a href="#p20101202x" title="Hark, the Herald Angels Sing (1739, Hymns and Sacred Poems)"><u title="Christian song">C</u> Hark, the Herald Angels Sing【天使高歌】 <i>2010.12.02.</i></a></li>
+  <li id="d20101206x" name="zhyx-li"><a href="#p20101206x" title="O Come, All Ye Faithful (1744, Christmas Carol)"><u title="Christian song">C</u> O Come, All Ye Faithful【萬方齊來敬仰】 <i>2010.12.06.</i></a></li>
+  <li id="d20101209x" name="zhyx-li"><a href="#p20101209x" title="What Child Is This (by William Chatterton Dix, 1865)"><u title="Christian song">C</u> What Child Is This【誰之子】 <i>2010.12.09.</i></a></li>
+  <li id="d20101212x" class="ying engp-li" name="zhou-li"><a href="#p20101212x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>To Donna and Mike</b>〖聖誕賀卡〗 <i>2010.12.12.</i></a></li>
+  <li id="d20110111x" class="ying engp-li" name="zhou-li"><a href="#p20110111x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Farewell to Sharon</b>〖赠别〗 <i>2011.01.11.</i></a></li>
+  <li id="d20110106x" class="ying engp-li show-li view-li" name="zhyx-li"><a href="#p20110106x"><q>☆</q> <u title="English lyrics">L</u> <span>The Puzzle Of Love</span>〖糊涂的爱〗 <i>2011.01.06.</i></a></li>
+  <li id="d20110116x" class="mulu" name="zhou-li"><a href="#p20110116x" title="Sesame Purple Yam Cake (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【芝麻紫薯饼】 <i>2011.01.16.</i></a></li>
+  <li id="d20110318x" class="ying engp-li show-li" name="zhyx-li"><a href="#p20110318x"><q>☆</q> <u title="English lyrics">L</u> <span>Legend</span>〖傳奇〗 <i>2011.03.18.</i></a></li>
+  <li id="d20110318p" class="ying engp-li show-li" name="zhyx-li"><a href="#p20110318p"><q>☆</q> <u title="English lyrics">L</u> <span>Coming From The Prairie</span>〖我從草原來〗 <i>2011.03.18.</i></a></li>
+  <li id="d20110321x" name="zhyx-li"><a href="#p20110321x"><em title="Song by Adele">A</em> Set Fire To The Rain【雨落情逝心已焚】 <i>2011.03.21.</i></a></li>
+  <li id="d20121028x" name="zhyx-li"><a href="#p20121028x"><em title="Song by Adele">A</em> Rolling In the Deep【淪陷回憶裡】 <i>2012.10.28.</i></a></li>
+  <li id="d20121030x" name="zhyx-li"><a href="#p20121030x"><em title="Song by Adele">A</em> Don't You Remember【無愛的挽歌】 <i>2012.10.30.</i></a></li>
+  <li id="d20121030s" name="zhyx-li"><a href="#p20121030s"><em title="Song by Adele">A</em> Someone Like You【此情依舊】 <i>2012.10.30.</i></a></li>
+  <li id="d20121031x" name="zhyx-li"><a href="#p20121031x"><em title="Song by Adele">A</em> One And Only【愛的唯一】 <i>2012.10.31.</i></a></li>
+  <li id="d20130112x" class="show-li" name="zhyx-li"><a href="#p20130112x"><q>☆</q> Beauty And A Beat【美麗和旋律】 <i>2013.01.12.</i></a></li>
+  <li id="d20130602x" class="ying engp-li show-li view-li" name="zhyx-li"><a href="#p20130602x"><q>☆</q> <u title="English lyrics">L</u> <span>Under A Vast Sky</span>〖海闊天空〗 <i>2013.06.02.</i></a></li>
+  <li id="d20130814x" class="show-li" name="zhyx-li"><a href="#p20130814x"><q>☆</q> Stronger【愛過心更強】 <i>2013.08.14.</i></a></li>
+  <li id="d20130915x" class="show-li" name="zhyx-li"><a href="#p20130915x" title="Working My Way Back To You (1980 by The Spinners)"><q>☆</q> Working My Way Back ...【用心贏你回】 <i>2013.09.15.</i></a></li>
+  <li id="d20130916x" name="zhyx-li"><a href="#p20130916x">Somewhere Over The Rainbow【彩虹之上】 <i>2013.09.16.</i></a></li>
+  <li id="d20140203x" class="engp-li view-li" name="zhyx-li"><a href="#p20140203x"><u title="English poem">E</u> <span>A Vanila Song〖行香子·火燒天宮〗</span> <i>2014.02.03.</i></a></li>
+  <li id="d20140819x" class="show-li" name="zhyx-li"><a href="#p20140819x" title="Anna Kendrick - Cups Song (Pitch Perfect 2012)"><q>☆</q> When I'm Gone【远行快唱】 <i>2014.08.19</i></a></li>
+  <li id="d20151128x" class="show-li" name="zhyx-li"><a href="#p20151128x"><q>☆</q> Demons【心魔】 <i>2015.11.28.</i></a></li>
+  <li id="d20151205x" class="show-li" name="zhyx-li"><a href="#p20151205x"><q>☆</q> Big Girls Don't Cry【不哭的女孩】 <i>2015.12.05.</i></a></li>
+  <li id="d20180126x" class="show-li" name="zhyx-li"><a href="#p20180126x"><q>☆</q> A Million Dreams【萬千夢想】 <i>2018.01.26.</i></a></li>
+  <li id="d20190917x" class="show-li" name="zhyx-li"><a href="#p20190917x" title="Love in the world"><u>Y</u> 【世爱有三】 <i>2019.09.17.</i></a></li>
+  <li id="d20191227x" name="zhyx-li"><a href="#p20191227x" title="New Zealand's poem"><u>白话诗</u> 【新西兰田园打油诗】 <i>2019.12.27.</i></a></li>
+  <li id="d20210426x" class="engp-li view-li" name="zhyx-li"><a href="#p20210426x" title="A famous Chinese lyrics in English"><u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
+  <li id="d20210921x" class="engp-li view-li" name="zhyx-li"><a href="#p20210921x"><u title="English poem">E</u> <span>Mid-Autumn〖中秋〗</span> <i>2021.09.21.</i></a></li>
+  <li id="d20220514x" class="engp-li" name="zhou-li"><a href="#p20220514x"><em title="周琳作品">周</em> <u title="English poem">E</u> <span>Birthday Card〖贺辰〗</span> <i>2022.05.14.</i></a></li>
+  <li id="d20220523x" class="ying engp-li engp-li show-li view-li" name="zhyx-li"><a href="#p20220523z" title="English cover">〖翻唱〗</a>＋ <a href="#p20220523x"><q>☆</q> <u title="English lyrics">L</u> <span>Lonely Warrior</span>〖孤勇者〗 <i>2022.05.23.</i></a></li>
 <!--
-  <li id="d20x"><a href="#p20x">【】 <i></i></a></li>
+  <li id="d20001231x" name="name-li"><a href="#p20001231x">【】 <i></i></a></li>
 -->
-</ul>
+</ul><!-- end toc-->
 <p><br/></p>
 </div>
+
 <div class="content"><!-- the blog wrapper -->
-<div id="atoc" class="atoc center"><span>英文〖
-  <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
-  <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
-  <a class="cy" href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
-  <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
-  <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
+<!--Category List-->
+<a id="zhyx" name="zhyx"></a><!--anchor: zhyx-->
+<div id="catg" class="catg center"><span>英文〖
+  <a class="ep" onclick="return setLocation('english-poems')"
+    href="#english-poems" title="English Poems">诗歌</a> |
+  <a class="ey" onclick="return setLocation('english-lyrics')"
+    href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
+  <a class="cy" onclick="return setLocation('chinese-lyrics')"
+    href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
+  <a class="cp" onclick="return setLocation('chinese-poems')"
+    href="#chinese-poems" title="Chinese Poems">诗词</a> |
+  <a class="cu" onclick="return setLocation('chinese-dayou')"
+    href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
 </span>
+</div>
 <p><br/></p>
-</div><br/>
+<a onclick="return setLocation('atop', '⇑')"
+  href="#atop" class="goto">⇑</a>
+<a onclick="return setLocation('atoc', '⇐')"
+  href="#atoc" class="goto">⇐</a>
 
 
 
-
-<h2 class="h2" id="english-poems">英文诗歌 (English Poems)<a class="back" href="#atop"></a></h2>
+<!--Start Blogs-->
+<h2 class="h2" onclick="return setLocation('atop', 'h2')"
+  id="english-poems">英文诗歌 (English Poems)</h2>
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp" name="zhyx">
 <div class="poem"><h3 class="t3" id="p20010101x">The Three Realms <em>(2001)</em></h3>
 <h4 class="h4">1. Seek, see, and set a goal</h4>
   “Butterfly Loves Flower”
@@ -679,7 +1021,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog" name="misc">
 <div class="geci"><h3 class="t3" id="p20010923x">道德经 <em>之一</em></h3>
   道可道，非常道。
   名可名，非常名。
@@ -713,7 +1055,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20040724x">Look At The Sky <em>(2004)</em></h3>
   Look at the sky,
   It's up so high.
@@ -732,7 +1074,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20070508x">Random Thought <em></em></h3>
   It is cruel, but it is true
   There is no peace, there is no rule
@@ -748,7 +1090,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20071214x">A Cyber Dream <em></em></h3>
   I had this dream
   All bits formed a stream
@@ -774,7 +1116,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp view" name="zhou">
 <div class="geci"><h3 class="t3 geci" id="p20080202x">非打油者，「夢油」是也 <em></em></h3>
   无眠的灵魂
   在四处游荡
@@ -812,7 +1154,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20080207x">两只老虎<em></em></h3>
 <h4 class="h4">儿歌版</h4>
   两只老虎，两只老虎，
@@ -845,7 +1187,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20080415x">一日不見 <em></em></h3>
   彼采葛兮。
   一日不见，如三月兮。
@@ -869,7 +1211,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20081229x">A Little Too Little And A Little Too Late <em>(2008.12.29)</em></h3>
   Without bailout
   No one wants to get out
@@ -899,7 +1241,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20081230x">Caribbean Poems<em>〔英文〕</em></h3>
 <h4 class="h4">前站《波多黎各》</h4>
   Puerto Rico, sand, beach, coco
@@ -961,7 +1303,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20091005x">七律·己丑中秋同韻二首 <em></em></h3>
   漁舟待晚日西遲，
   秋露相逢桂殿枝。
@@ -1005,7 +1347,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20091225x">Morning Hike <em>(2009.12.25)</em></h3>
   Hiking on a Christmas day
   By the lake from home, not far away
@@ -1029,7 +1371,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp" name="zhou">
 <div class="geci"><h3 class="t3 geci" id="p20100923p">见与不见 <em>〔中文〕</em></h3>
   你见，或者不见我　　　　
   我就在那里，不悲不喜　　
@@ -1065,7 +1407,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20100923x">古诗英译三首 <em>(2010)</em></h3>
 <h4>元·張養浩《雁儿落帶得勝令·退隱》—— The Clouds</h4>
   <span>雲来山更佳，</span>　　It looks better with cloud
@@ -1095,7 +1437,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhou">
 <div class="yuan"><h3 class="t3 yuan" id="p20101106x">Love Song <em>(2010)</em></h3>
   You are by my side
   quietly
@@ -1135,7 +1477,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20101125x">Limerick - Thanksgiving <em>(2010.11.25)</em></h3>
   It comes again the Thanksgiving
   To pardon a turkey one year living
@@ -1150,7 +1492,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20101212x">To Donna and Mike <em>(2010.12.12)</em></h3>
   As thinking in picture of Mike
   He's across the country on a bike
@@ -1185,7 +1527,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20110111x">Farewell to Sharon <em>(2011.01.11)</em></h3>
   This is to Dr. McGavick, Sharon
   The President always has passion
@@ -1223,10 +1565,11 @@
 <div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;</a></em></h3>
 </div>
 </div><!-- blog -->
+<a href="#english-poems" class="goto">⇑</a>
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20140203x">A Vanila Song <em>(2014.02.03)</em></h3>
   Sunset light brown,
   On the trees and stone
@@ -1267,7 +1610,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20210426x">清平调 <em>〔唐·李白〕</em></h3>
   雲想衣裳花想容，
   <i>…………………</i>
@@ -1303,7 +1646,7 @@
 
 
 <!--英文译诗-->
-<div class="blog">
+<div class="blog engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20210921x">中秋 <em>〔中文〕</em></h3>
   海上生明月，
   天涯共此时。
@@ -1323,7 +1666,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog">
+<div class="blog engp" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20220514x">Birthday Card <em></em></h3>
   Always so very fine
   And kindness for me to remind
@@ -1344,11 +1687,12 @@
 
 
 
-<h2 class="h2" id="english-lyrics">英文译词 (English Lyrics)<a class="back" href="#atop"></a></h2>
+<h2 class="h2" onclick="return setLocation('catg', 'h2')"
+    id="english-lyrics">英文译词 (English Lyrics)</h2>
 
 
 <!--英文译词-->
-<div class="blog">
+<div class="blog engp show view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20110106x">糊涂的爱 <em>〖原词〗</em></h3>
   爱有几分能说清楚　
   还有几分是糊里又糊涂　
@@ -1394,7 +1738,7 @@
 
 
 <!--英文译词-->
-<div class="blog">
+<div class="blog engp show" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20110318x">傳奇 <em>〖原词〗</em></h3>
   只因为在人群中多看了你一眼
   再也没能忘掉你的容颜
@@ -1453,7 +1797,7 @@
 
 
 <!--英文译词-->
-<div class="blog">
+<div class="blog engp show" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20110318p">我從草原來 <em>〖原词〗</em></h3>
   我立马千山外，听风唱着天籁
   岁月已经更改，心胸依然自在
@@ -1497,7 +1841,7 @@
 
 
 <!--英文译词-->
-<div class="blog">
+<div class="blog engp show view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20130602x">海闊天空 <em>〖原词〗</em></h3>
   今天我　
   寒夜里看雪飘过
@@ -1546,7 +1890,7 @@
 <a href="#english-lyrics" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog engp show view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20220523x">孤勇者 <em>〖原词〗</em></h3>
   都 是勇敢的，你额头的伤口
   　 你的不同 你犯的错
@@ -1659,7 +2003,7 @@
 <a href="#english-lyrics" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog engp" name="misc">
 <div class="geci"><h3 class="t3 geci" id="p20220523z">附：孤勇者 <em>〖<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">翻唱</a>〗</em></h3>
   你眼中是什么
   像烈火在燃烧
@@ -1771,7 +2115,7 @@
 
 
 <!--英文译词--><!--
-<div class="blog">
+<div class="blog" name="zhxx">
 <div class="geci"><h3 class="t3 geci" id="p20x"> <em>〖原词〗</em></h3>
 <em>作曲：；作词：；原唱：</em>
 </div>
@@ -1779,17 +2123,18 @@
 <em>填词：舟山 20</em>
 </div>
 </div>--><!-- blog --><!--
-<a href="#atop" class="goto">⇑</a>
+<a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
 -->
 
 
 
 
-<h2 class="h2" id="chinese-lyrics">中文填词 (Chinese Lyrics)<a class="back" href="#atop"></a></h2>
+<h2 class="h2" onclick="return setLocation('catg', 'h2')"
+    id="chinese-lyrics">中文填词 (Chinese Lyrics)</h2>
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="yuan"><h3 class="t3 yuan" id="p20030101x">I Could Fall In Love With You <em>(1999)</em></h3>
   I could lose my heart tonight
   If you don't turn and walk away
@@ -1853,7 +2198,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="yuan"><h3 class="t3 yuan" id="p20050101x">Proud Of You <em>(2008 by Fiona Fung)</em></h3>
   Love in your eyes
   Sitting silent by my side
@@ -1957,7 +2302,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301a">Andante, Andante <em>(ABBA)</em></h3>
   Take it easy with me, please
   Touch me gently like a summer evening breeze
@@ -2033,7 +2378,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301c">Chiquitita <em>(ABBA)</em></h3>
   Chiquitita, tell me what's wrong
   You're enchained by your own sorrow
@@ -2117,7 +2462,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301d">Dancing Queen <em>(ABBA)</em></h3>
   You can dance, you can jive,
   having the time of your life
@@ -2185,7 +2530,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301e">Eagle <em>(ABBA)</em></h3>
   They came flying from far away,
   now I'm under their spell
@@ -2261,7 +2606,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301f">Fernando <em>(ABBA 1976)</em></h3>
   Can you hear the drums, Fernando?
   I remember long ago another starry night like this
@@ -2343,7 +2688,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301h">I Have A Dream <em>(ABBA)</em></h3>
   I have a dream, a song to sing
   To help me cope with anything
@@ -2397,7 +2742,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301m">Move On <em>(ABBA)</em></h3>
   “They say a restless body can hide a peaceful soul.
     A voyager, and a settler,
@@ -2481,7 +2826,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301o">One Of Us <em>(ABBA)</em></h3>
   They passed me by, all of those great romances
   You were, I felt, robbing me of my rightful chances
@@ -2559,7 +2904,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301s">Super Trouper <em>(ABBA)</em></h3>
   Super Trouper beams are gonna blind me
   But I won't feel blue,
@@ -2659,7 +3004,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301t">Take A Chance On Me <em>(ABBA)</em></h3>
   <i>Chorus:</i>
   If you change your mind, I'm the first in line
@@ -2743,7 +3088,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301x">Thank You For The Music <em>(ABBA)</em></h3>
   I'm nothing special, in fact I'm a bit of a bore
   If I tell a joke, you've probably heard it before
@@ -2803,7 +3148,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301w">The Winner Takes It All <em>(ABBA)</em></h3>
   I don't wanna talk / about the things we've gone through
   Though it's hurting me, now it's history
@@ -2871,7 +3216,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426d">Daddy Cool <em>(1976)</em></h3>
   She's crazy like a fool
   — What about it daddy cool
@@ -2919,7 +3264,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426e">El Lute <em>(1979)</em></h3>
   This is the story of El Lute -
   A man who was born to be hunted like a wild animal.
@@ -3029,7 +3374,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426h">Hooray, Hooray! It's A Holi-Holiday <em>(1979)</em></h3>
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
@@ -3119,7 +3464,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426a">I Am Born Again <em>(1979)</em></h3>
   I'm born again, I feel free
   No longer alone
@@ -3193,7 +3538,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426b">I See A Boat On The River <em>(1980)</em></h3>
   He left on a boat / Just to follow a dream
   He had to find.
@@ -3269,7 +3614,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426c">Mary's Boy Child / Oh My Lord <em>(1978)</em></h3>
   Mary's boy child Jesus Christ,
   Was born on Christmas Day.
@@ -3415,7 +3760,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426o">Ocean Of Fantasy <em>(1979)</em></h3>
   My world is filled with oceans
   Oceans of fantasy
@@ -3481,7 +3826,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426v">River Of Babylon <em>(1978)</em></h3>
   <i>*</i> By the rivers of Babylon,
   there we sat down;
@@ -3543,7 +3888,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426s">Sunny <em>(1976)</em></h3>
   Sunny, yesterday my life was filled with rain.
   Sunny, you smiled at me and really eased the pain.
@@ -3599,7 +3944,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080730x">Never Gonna Fall In Love Again <em>(1978)</em></h3>
   No use pretending things can still be right
   There's really nothing more to say
@@ -3659,7 +4004,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20090214x">Barking At The Moon <em>(Bolt 2008)</em></h3>
   I have got so much to give – I swear I do
   I may not have nine lives –
@@ -3737,7 +4082,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101201x">God Rest Ye Merry Gentlemen <em>(1760)</em></h3>
   God rest ye merry gentlemen
   Let nothing you dismay
@@ -3863,7 +4208,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101202x">Hark, the Herald Angels Sing <em>(1739)</em></h3>
   Hark the herald angels sing
   “Glory to the newborn King!
@@ -3935,7 +4280,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101206x">O Come, All Ye Faithful <em>(1744)</em></h3>
   O come, all ye faithful, joyful and triumphant,
   O come ye, O come ye, to Bethlehem.
@@ -3987,7 +4332,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101209x">What Child Is This / Greensleeves <em>(1865)</em></h3>
   What child is this who laid to rest
   On Mary's lap is sleeping
@@ -4047,7 +4392,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20110321x">Set Fire To The Rain <em>(2011)</em></h3>
   I let it fall, my heart,
   And as it fell, you rose to claim it,
@@ -4143,7 +4488,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121028x">Rolling In the Deep <em></em></h3>
   There's a fire starting in my heart
   Reaching a fever pitch and it's bring me out the dark
@@ -4213,7 +4558,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121030x">Don't You Remember <em>(2011)</em></h3>
   When will I see you again?
   You left with no goodbye, not a single word was said,
@@ -4276,7 +4621,7 @@
 <a href="#chinese-lyrics" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121030s">Someone Like You <em>(2011)</em></h3>
   I heard that you're settled down
   That you found a girl and you're married now
@@ -4366,7 +4711,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121031x">One And Only <em>(2011)</em></h3>
   You've been on my mind
   I grow fonder every day,
@@ -4465,7 +4810,7 @@
 <a href="#chinese-lyrics" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20130112x">Beauty and a Beat <em>(2012)</em></h3>
   Show you off, tonight I wanna show you off
   What you got, a billion could've never buy
@@ -4516,7 +4861,7 @@
 <a href="#chinese-lyrics" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20130814x">Stronger <em>(2012)</em></h3>
   You know the bed feels warmer
   Sleeping here alone
@@ -4636,7 +4981,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20130915x">Working My Way Back To You <em>(1979)</em></h3>
   I'll be working my way back to you, babe
   With a burning love inside
@@ -4761,7 +5106,7 @@
 <a href="#chinese-lyrics" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20130916x">Somewhere Over The Rainbow <em></em></h3>
   Somewhere over the rainbow - Way up high
   And the dreams that you've dreamed of
@@ -4853,7 +5198,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20140819x">When I'm Gone <em>(2012 by Anna Kendrick)</em></h3>
   I got my ticket for the long way round
   Two bottles of whiskey for the way
@@ -4917,7 +5262,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20151128x">Demons <em>(2012 by Imagine Dragons)</em></h3>
   When the days are cold and the cards are fold
   And the saints we see are all made of gold
@@ -4981,7 +5326,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20151205x">Big Girls Don't Cry <em>(2006 by Fergie)</em></h3>
   The smell of your skin lingers on me now
   You're probably on your flight back to your home town
@@ -5053,7 +5398,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20180126x">A Million Dreams <em>(2017 by Huge Jackman)</em></h3>
   <i># Verse 1: Young P.T. #</i>
   I close my eyes and I can see
@@ -5185,7 +5530,7 @@
 
 
 <!--中文填词--><!--
-<div class="blog">
+<div class="blog" name="zhxx">
 <div class="yuan"><h3 class="t3 yuan" id="p20x"> <em></em></h3>
 <em><i>Song by </i> </em>
 </div>
@@ -5193,16 +5538,17 @@
 <em>中文填词 20</em>
 </div>
 </div>--><!-- blog --><!--
-<a href="#atop" class="goto">⇑</a>
+<a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
 -->
 
 
 
 
-<h2 class="h2" id="chinese-poems">中文诗词 (Chinese Poems)<a class="back" href="#atop"></a></h2>
+<h2 class="h2" onclick="return setLocation('catg', 'h2')"
+    id="chinese-poems">中文诗词 (Chinese Poems)</h2>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20081225x">大雪家中「坐」三首 <em>(2008.12.25)</em></h3>
 其一
 　　窗外风雪冻，屋里暖融融。今天养筋骨，明日踏青松。<br/>
@@ -5218,7 +5564,7 @@
 <a href="#chinese-poems" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20090911x">博士班第一天 <em>(2009.09.11)</em></h3>
   不少年纪再入学，每月辛苦向南跋。
   狂飙飞车五百哩，最怕路边藏警察。
@@ -5236,7 +5582,7 @@
 <a href="#chinese-poems" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20091127x">感恩节「血拼」夜 <em>(2009.11.27)</em></h3>
   火鸡一口没吃着，半夜就往商店跑。
   西雅图城好热闹，人来人往不睡觉。
@@ -5256,7 +5602,7 @@
 <a href="#chinese-poems" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20100828x">西北偏北游记 <em>(2009.08.)</em></h3>
 <h4 class="h4">五言詩☆路上行四首</h4>
   莫道君行早，路上車不少。風馳向日出，我心在奔跑。
@@ -5295,7 +5641,7 @@
 
 
 <!--中文填词-->
-<div class="blog">
+<div class="blog show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20190917x">Untitled <em>(2004)</em></h3>
   I love three things in this world,
   The sun, the moon, and you.
@@ -5322,10 +5668,11 @@
 
 
 
-<h2 class="h2" id="chinese-dayou">中文白话 (Chinese Etc.)<a class="back" href="#atop"></a></h2>
+<h2 class="h2" onclick="return setLocation('catg', 'h2')"
+    id="chinese-dayou">中文白话 (Chinese Etc.)</h2>
 
 
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20080126x">生日快樂 <em>(2008.01.26)</em></h3>
   祝你生日快乐，这是我的存折；
   祝你生日快乐，送我一辆跑车。
@@ -5344,7 +5691,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20090628x">为了一棵花椒树 <em>(2009.06.28)</em></h3>
   为了一棵花椒树，一行四人坐轮渡。
   顺利到达玩赏岛，街边买了花一束。
@@ -5366,7 +5713,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20090712x">擬舊文學詩一首──駕車於高速公路戲作 <em>(2009.07.12)</em></h3>
   我们是──　　
   寄生在车轮上的腐朽阶级，
@@ -5393,7 +5740,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20090717x">薰衣草節 <em>(2009.07.17)</em></h3>
   神秘的薰衣草
   为了你跨海上岛
@@ -5415,7 +5762,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20090720x">大厨 <em>(2009.07.20)</em></h3>
   莫非我前世是大厨
   为什么做饭如此牵肠挂腹
@@ -5433,7 +5780,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog show" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20090801x">當阿黑遇上芝麻 <em>(2009.08.01)</em></h3>
   为了那一瞬间的爱恋
   我宁愿坠入黑暗的深渊
@@ -5462,7 +5809,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog show" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20091231x">麻辣花生 <em>(2009.12.31)</em></h3>
   剥去你的红袍
   将那白胖的身体抱一抱
@@ -5481,7 +5828,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20100724x">小资生活 <em>(2010.07.24)</em></h3>
   才摘蓝莓
   又吃红豆
@@ -5503,7 +5850,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhou">
 <div class="poem"><h3 class="t3 poem" id="p20110116x">大厨 <em>(2011.01.16)</em></h3>
   将朴素的紫薯
   轻轻蒸熟
@@ -5527,7 +5874,7 @@
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
-<div class="blog">
+<div class="blog" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20191227x">新西兰田园打油诗 <em>(2019.12.27)</em></h3>
   寂静的山谷，没什么人住。
   时晴时烟雨，山色笼迷雾。
@@ -5549,25 +5896,51 @@
 </div><!-- content -->
 
 
+<!--Bottom-Left Anchor-->
 <div id="goto" class="noprint">
   <div id="acat" class="noprint">
-  <a href="#atoc" title="⇐ Back to Category ⇒">分类</a>
-  <br/><span>…………………</span><br/>
+  <a href="#atoc" title="⇐ Back to TOC ⇒"
+     onclick="return setLocation('atoc', 'acat')">目录</a><br/>
+  <a href="#catg" title="⇐ Back to Category ⇒"
+     onclick="return setLocation('catg', 'acat')">分类</a>
+  <br/>
+  <a href="#zhyx" title="Show by Jason" class="tags"
+     onclick="return showTags('zhyx')">Jason</a>
+  <a href="#zhou" title="Show by Lin" class="tags"
+     onclick="return showTags('zhou')">Lin</a>
+  <a href="#atop" title="Show all" class="tags"
+     onclick="return showTags('atop')">All</a>
+  <br/>
+  <a href="#show" title="Show ☆☆☆" class="tags"
+     onclick="return showTags('show')">&star;</a>
+  <a href="#engp" title="English poems" class="tags"
+     onclick="return showTags('engp')">E</a>
+  <a href="#view" title="Show ★★★" class="tags"
+     onclick="return showTags('view')">&starf;</a>
+  <p><span>………………</span></p>
   <span title="English">英语</span>
-  &middot; <a href="#english-poems" title="English Poems">诗歌</a><br/>
-  &middot; <a href="#english-lyrics" title="English Lyrics">译词</a><br/>
-  &middot; <a href="#chinese-lyrics" title="Chinese Lyrics">填词</a><br/>
+  &middot; <a onclick="return setLocation('english-poems')"
+    href="#english-poems" title="English Poems">诗歌</a><br/>
+  &middot; <a onclick="return setLocation('english-lyrics')"
+    href="#english-lyrics" title="English Lyrics">译词</a><br/>
+  &middot; <a onclick="return setLocation('chinese-lyrics')"
+    href="#chinese-lyrics" title="Chinese Lyrics">填词</a><br/>
   <span title="Chinese">中文</span>
-  &middot; <a href="#chinese-poems" title="Chinese Poems">诗词</a><br/>
-  &middot; <a href="#chinese-dayou" title="Chinese Etc.">白话</a><br/>
+  &middot; <a onclick="return setLocation('chinese-poems')"
+    href="#chinese-poems" title="Chinese Poems">诗词</a><br/>
+  &middot; <a onclick="return setLocation('chinese-dayou')"
+    href="#chinese-dayou" title="Chinese Etc.">白话</a><br/>
   <br/>
   </div>
   <span id="aquo">&laquo;</span>
   <span id="back"><a href="#atop" class="noprint"
+    onclick="return setLocation('atop', 'id-back')"
     title="⇧ Back to Home ⇧"><span>⇧</span></a>
   </span>
 </div>
-<div class="atoc center"><span>英文〖
+
+<!--Category List-->
+<div class="catg center"><span>英文〖
   <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
   <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
   <a class="cy" href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
@@ -5575,7 +5948,9 @@
   <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
 </span>
 <div id="home" class="noprint">
-  <a href="#atop" class="noprint" title="⟰ Back to Home ⟰">&#8679;</a>
+  <a href="#atop" class="noprint"
+    onclick="return setLocation('atop', 'id-home')"
+    title="⟰ Back to Home ⟰">&#8679;</a>
 </div>
 </div>
 
