@@ -616,14 +616,18 @@
     vertical-align: top;
     white-space: normal;
   }
-  div.text> div#bailout {
-    font-size: 0.75em;
+  div.text > div.note {
+    font-size: 1em;
     color: darkslategray;
-    max-height: 41.5em;
+    max-height: 32.5em;
     display: -webkit-box;
     -webkit-line-clamp: 25.5;
     -webkit-box-orient: vertical;
+    vertical-align: top;
     overflow: hidden;
+  }
+  div.text > div.note > p.note {
+    font-size: 0.85em;
   }
   div.text pre {
     font-size: 1.25em;
@@ -677,7 +681,7 @@
     background-color: darkseagreen; /* dodgerblue; */
     font-size: 1.25em;
     line-height: 1.75em;
-    margin: 1em 0em 0em 0em;
+    margin: 1.25em 0em 0em 0em;
     padding: 0em 0.5em 0em 0.5em;
     page-break-before: always;
     position: relative;
@@ -1088,10 +1092,11 @@
   <li id="d20140819x" class="show-li" name="zhyx-li"><a href="#p20140819x" title="Anna Kendrick - Cups Song (Pitch Perfect 2012)"><q>☆</q> When I'm Gone【远行快唱】 <i>2014.08.19</i></a></li>
   <li id="d20151128x" class="show-li" name="zhyx-li"><a href="#p20151128x"><q>☆</q> Demons【心魔】 <i>2015.11.28.</i></a></li>
   <li id="d20151205x" class="show-li" name="zhyx-li"><a href="#p20151205x"><q>☆</q> Big Girls Don't Cry【不哭的女孩】 <i>2015.12.05.</i></a></li>
+  <li id="d20160504x" class="mulu" name="zhou-li"><a href="#p20160504x" title="Youth Day 4th of May"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【打油诗三首】 <i>2016.05.04.</i></a></li>
   <li id="d20180126x" class="show-li" name="zhyx-li"><a href="#p20180126x"><q>☆</q> A Million Dreams【萬千夢想】 <i>2018.01.26.</i></a></li>
   <li id="d20190917x" class="show-li" name="zhyx-li"><a href="#p20190917x" title="Love in the world"><u>Y</u> 【世爱有三】 <i>2019.09.17.</i></a></li>
   <li id="d20191227x" name="zhyx-li"><a href="#p20191227x" title="New Zealand's poem"><u>白话诗</u> 【新西兰田园打油诗】 <i>2019.12.27.</i></a></li>
-  <li id="d20210426x" class="engp-li view-li" name="zhyx-li"><a href="#p20210426x" title="A famous Chinese lyrics in English"><u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
+  <li id="d20210426x" class="engp-li view-li" name="zhyx-li"><a href="#p20210426x" title="A famous Chinese lyrics in English"><q>☆</q> <u title="English poem">E</u> <span>Peaceful Purity〖清平调〗</span> <i>2021.04.26.</i></a></li>
   <li id="d20210921x" class="engp-li view-li" name="zhyx-li"><a href="#p20210921x"><u title="English poem">E</u> <span>Mid-Autumn〖中秋〗</span> <i>2021.09.21.</i></a></li>
   <li id="d20220514x" class="engp-li" name="zhou-li"><a href="#p20220514x"><em title="周琳作品">周</em> <u title="English poem">E</u> <span>Birthday Card〖贺辰〗</span> <i>2022.05.14.</i></a></li>
   <li id="d20220523x" class="ying engp-li engp-li show-li view-li" name="zhyx-li"><a href="#p20220523z" title="English cover">〖翻唱〗</a>＋ <a href="#p20220523x"><q>☆</q> <u title="English lyrics">L</u> <span>Lonely Warrior</span>〖孤勇者〗 <i>2022.05.23.</i></a></li>
@@ -1117,8 +1122,23 @@
   <a class="cu" onclick="return setLocation('chinese-dayou')"
     href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
 </span>
-</div>
-<p><br/></p>
+<p class="catg center links"> &raquo;
+  <a href="https://divertidalz.blogspot.com/search/label/Poem"
+     title="divertialz poems blog"
+     target="_blog">poems</a>
+  <a href="https://divertidalz.blogspot.com/search/label/Poem"
+     title="divertialz poems blog"
+     target="_blog">blog</a> &bull;
+  <a href="./shiji.html" target="_blog"
+     title="Jason's poetry">poetry</a> &bull;
+  <a href="https://dockerian.github.io" target="_"
+     title="dockerian home">dockerian</a> &bull;
+  <a href="../" target="_blog"
+     title="collection and tools">misc</a> &laquo;
+  <br/>
+</p>
+</div><!--#catg-->
+<!--anchor links-->
 <a onclick="return setLocation('atop', '⇑')"
   href="#atop" class="goto">⇑</a>
 <a onclick="return setLocation('atoc', '⇐')"
@@ -1154,7 +1174,7 @@
 <em><i>English Translation by </i> Jason Zhu</em>
 </div>
 <div class="text"><h3 class="t3"><em></em></h3>
-<h4 class="h4">王國維《人間詞話》二六 <em style="border:none"><a class="sup" href="#d20010101x" title="2001.01.01">&#11139;</a></em></h4>
+<h4 class="h4">王國維《人間詞話》二六 <em style="border:none"><a class="sup" href="#d20010101x" title="2001.01.01">&#11139;&nbsp;</a></em></h4>
   <p>Chinese poems in ancient lyrics<sup>†</sup> figuring the three realms passed through to a success.</p>
   <p>古今之成大事业、大学问者必经过三种之境界：“昨夜西风凋碧树。独上高楼，望尽天涯路”，此第一境也。“衣带渐宽终不悔，为伊消得人憔悴”，此第二境也。“众里寻他千百度，蓦然回首，那人却在灯火阑珊处”，此第三境也。</p>
 
@@ -1180,7 +1200,7 @@
   眾妙之門。<br/>
 <em>原文：老子《道德经·第一章》 by Lao Tse (BC 570 - BC 470)</em>
 </div>
-<div class="ying"><h3 class="t3">The Way Of The Way  <em>(2001)</em> <em><a class="sup" href="#d20010923x" title="2001.09.23">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3">The Way Of The Way  <em>(2001)</em> <em><a class="sup" href="#d20010923x" title="2001.09.23">&#11139;&nbsp;</a></em></h3>
   The way could be the way, but not a normal way;
   The name could be the name, but not a normal name
   Nothing, name the beginning of the world;
@@ -1212,7 +1232,7 @@
   Never ever say bye-bye.<br/>
 <em>By Divertida LZ 2004.07.24.</em>
 </div>
-<div class="poem"><h3 class="t3 text"><em><a class="sup" href="#d20040724x" title="2004.07.24">&#11139;</a></em></h3></div>
+<div class="poem"><h3 class="t3 text"><em><a class="sup" href="#d20040724x" title="2004.07.24">&#11139;&nbsp;</a></em></h3></div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
 
@@ -1228,7 +1248,7 @@
   As there is few can see it thru<br/>
 <em>2007.05.08.</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20070508x" title="2007.05.08">&#11139;</a></em></h3></div>
+<div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20070508x" title="2007.05.08">&#11139;&nbsp;</a></em></h3></div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
 
@@ -1254,7 +1274,7 @@
   I dumped this in the diary<br/>
 <em>2007.12.14.</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20071214x" title="2007.12.14">&#11139;</a></em></h3></div>
+<div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20071214x" title="2007.12.14">&#11139;&nbsp;</a></em></h3></div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
 
@@ -1277,7 +1297,7 @@
 <br/>
 <em>没头脑 2008.02.02.</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Night Mystery  <em>(2008)</em> <em><a class="sup" href="#d20080202x" title="2008.02.02">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Night Mystery  <em>(2008)</em> <em><a class="sup" href="#d20080202x" title="2008.02.02">&#11139;&nbsp;</a></em></h3>
   A sleepless soul
   in the night of winter
   Stillness in stillness
@@ -1312,7 +1332,7 @@
   叮、铛、咚！叮、铛、咚！<br/>
 <em>2008.02.07.</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Do You Hear <em>(2008)</em> <em><a class="sup" href="#d20080207x" title="2008.02.07">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Do You Hear <em>(2008)</em> <em><a class="sup" href="#d20080207x" title="2008.02.07">&#11139;&nbsp;</a></em></h3>
 <h4 class="h4">+ English Translation</h4>
   There're two tigers, there're two tigers
   Ran like deers, ran like deers
@@ -1341,7 +1361,7 @@
   一日不见，如三岁兮。<br/>
 <em>原作出自《诗经•王风•采葛》</em>
 </div>
-<div class="ying"><h3 class="t3 ying">One Day No See <em>(2008)</em> <em><a class="sup" href="#d20080415x" title="2008.04.15">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">One Day No See <em>(2008)</em> <em><a class="sup" href="#d20080415x" title="2008.04.15">&#11139;&nbsp;</a></em></h3>
   One month no mail, No bail in jail
   One week no see, Far from the sea
   One day no call, Long as one fall
@@ -1376,9 +1396,9 @@
 <em><i>Poem by </i> Jason Zhu</em>
 </div>
 <div class="text">
-  <div id="bailout"><p class="t3 text"><em>Note:</em> <em><a class="sup" href="#d20081229x" title="2008.12.29.">&#11139;</a></em></p>
-  <p>I was watching CNN at the gym. One of the interesting reader's letters to Lou Dobbs criticized the Bailout plans. Not the exact words, it said “The problem of the US was used to be that many people spent money that they did not have, while the banks lent money to people who could not pay back. Now the government is trying to spend the money that it does not have and lend the money to those who cannot pay back. As consumers and taxpayers, we feel being fooled twice.”</p>
-  <p>Well, is this just a simple “problem” if one can spend money who does not have and does not have to pay back? I think it has become corruption and crisis for a country lives in such “who cares” philosophy. As long as the debt come and go without having to work hard, everyone will support such democracy to share the value (in money). Now, both the stimulus plan and the criticism to American economy seem “a little too little and a little too late”.</p>
+  <div class="note" id="bailout"><p class="t3 text"><em>Note:</em> <em><a class="sup" href="#d20081229x" title="2008.12.29.">&#11139;&nbsp;</a></em></p>
+  <p class="note">I was watching CNN at the gym. One of the interesting reader's letters to Lou Dobbs criticized the Bailout plans. Not the exact words, it said “The problem of the US was used to be that many people spent money that they did not have, while the banks lent money to people who could not pay back. Now the government is trying to spend the money that it does not have and lend the money to those who cannot pay back. As consumers and taxpayers, we feel being fooled twice.”</p>
+  <p class="note">Well, is this just a simple “problem” if one can spend money who does not have and does not have to pay back? I think it has become corruption and crisis for a country lives in such “who cares” philosophy. As long as the debt come and go without having to work hard, everyone will support such democracy to share the value (in money). Now, both the stimulus plan and the criticism to American economy seem “a little too little and a little too late”.</p>
 </div></div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -1424,7 +1444,7 @@
   Secret beach in Secret Bay
   Open to sunlight in a ray<br/>
 </div>
-<div class="text"><h3 class="t3 text"><h4>附：七律一首</h4><em><a class="sup" href="#d20081230x" title="2008.12.30">&#11139;</a></em></h3><pre>
+<div class="text"><a class="sup" href="#d20081230x" title="2008.12.30">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2008/12/caribbean-vacation.html" title="Blog: Caribbean Vacation" target="_blog">&raquo; Caribbean Trip (Blog)</a></em><br/><h3 class="t3 text"><em>附：七律一首</em></h3><pre>
   赢得几日赋清闲，
   远外藏身碧水边。
   细细银沙加勒比，
@@ -1467,7 +1487,7 @@
   年年信守此相知。<br/>
 <em>原作於西雅圖，己丑中秋</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Full Moon++ <em>(2009)</em> <em><a class="sup" href="#d20091005x" title="2009.10.05">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Full Moon++ <em>(2009)</em> <em><a class="sup" href="#d20091005x" title="2009.10.05">&#11139;&nbsp;</a></em></h3>
   After sunset on fishing boat
   Evening dew welcomes the moon
   As far as out of the distant mountain
@@ -1508,7 +1528,7 @@
   With the fresh morning in the air
   The path knows where to where<br/>
 </div>
-<div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20091225x" title="2009.12.25.">&#11139;</a></em></h3>
+<div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20091225x" title="2009.12.25.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -1531,7 +1551,7 @@
   寂静　欢喜　　　　　　　<br/>
 <em>原作：第六世达赖喇嘛·仓央嘉措</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Love Poem by Tsangyang Gyatso <em><a class="sup" href="#d20100923p" title="2010.09.23">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Love Poem by Tsangyang Gyatso <em><a class="sup" href="#d20100923p" title="2010.09.23">&#11139;&nbsp;</a></em></h3>
   You see me, or not see me
   I am there - not sad, nor happy
   You miss me, or not miss me
@@ -1574,7 +1594,7 @@
   <span>潤物細無聲。</span>　　All life quietly grows<br/>
 <em><i>English Translation by </i> Jason Zhu</em>
 </div>
-<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20100923x" title="2010.09.23.">&#11139;</a></em></h3>
+<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20100923x" title="2010.09.23.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -1599,7 +1619,7 @@
   I am the one the only<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="tian"><h3 class="t3 tian">愛之歌 <em>【散文诗】</em> <em><a class="sup" href="#d20101106x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">愛之歌 <em>【散文诗】</em> <em><a class="sup" href="#d20101106x" title="">&#11139;&nbsp;</a></em></h3>
   你坐在我的身边，　　
   不言不语　　　　　　
   爱，有时就是这样，　
@@ -1629,7 +1649,7 @@
   While others tasting juicy
   Who're we have thanked for giving?<br/>
 </div>
-<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20101125x" title="2010.11.25.">&#11139;</a></em></h3>
+<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20101125x" title="2010.11.25.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -1664,7 +1684,7 @@
   It is the greeting from us<br/>
 <em><i>By </i> Divertida LZ 2010.12.26.</em>
 </div>
-<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20101212x" title="2010.12.12.">&#11139;</a></em></h3>
+<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20101212x" title="2010.12.12.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -1706,7 +1726,7 @@
   To consult her another question<br/>
 <em><i>By </i> Divertida LZ 2011.01.11.</em>
 </div>
-<div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;</a></em></h3>
+<div class="text"><h3 class="t3 text"><em><a class="sup" href="#d20110111x" title="2011.01.11.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -1734,7 +1754,7 @@
 <br/>
 <em><i>By </i> Boathill 2014.02.03.</em>
 </div>
-<div class="text"><h3 class="t3 text"><h4>附：行香子·火燒天宮</h4> <em><a class="sup" href="#d20140203x" title="2014.02.03">&#11139;</a></em></h3><pre>
+<div class="text"><h3 class="t3 text"><h4>附：行香子·火燒天宮</h4> <em><a class="sup" href="#d20140203x" title="2014.02.03">&#11139;&nbsp;</a></em></h3><pre>
   夕照如铜，畫染晴松。
   　望天蓝，似海深穹。
   千帆逐陣，萬浪随風。
@@ -1770,7 +1790,7 @@
 
 <em>原作：李白《清平调三首》其一</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Peaceful Purity <em>(2021)</em> <em><a class="sup" href="#d20210426x" title="2021.04.26">&#11139;</a></em></h3><br/>
+<div class="ying"><h3 class="t3 ying">Peaceful Purity <em>(2021)</em> <em><a class="sup" href="#d20210426x" title="2021.04.26">&#11139;&nbsp;</a></em></h3><br/>
   Blossom, finery, with clouds along,
   Remind of a beauty, remind of a song.
 
@@ -1798,7 +1818,7 @@
   千里寄相思。<br/>
 <em>原作：张九龄《望月怀远》</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Full-moon Festival<em><a class="sup" href="#d20210921x" title="2021.09.21">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Full-moon Festival<em><a class="sup" href="#d20210921x" title="2021.09.21">&#11139;&nbsp;</a></em></h3>
   Bright moon over the ocean
   It's the time for a celebration
   Share the meaning, share the scene
@@ -1824,7 +1844,7 @@
 <br/>
 <em><i>By </i> Divertida LZ 2022.05.14.</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20220514x" title="2022.05.14">&#11139;</a></em></h3></div>
+<div class="poem"><h3 class="t3 poem"><em><a class="sup" href="#d20220514x" title="2022.05.14">&#11139;&nbsp;</a></em></h3></div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
 
@@ -1857,7 +1877,7 @@
   這就是愛　是我為你寫下的祝福<br/>
 <em>作词：张和平；原唱：江珊，王志文</em>
 </div>
-<div class="ying"><h3 class="t3 ying">The Puzzle Of Love <em>(2011.01.06)</em> <em><a class="sup" href="#d20110106x" title="2011.01.06">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">The Puzzle Of Love <em>(2011.01.06)</em> <em><a class="sup" href="#d20110106x" title="2011.01.06">&#11139;&nbsp;</a></em></h3>
   How much is love? No one is sure
   Leaving uncertain, don't know what to do
   How much of feeling can tell it is true?
@@ -1909,7 +1929,7 @@
   宁愿用这一生等你发现
   我一直在你身旁　从未走远……<br/>
 <em>作曲：李健；作詞：劉兵</em></div>
-<div class="ying"><h3 class="t3 ying">Legend <em>(2011.03.18)</em> <em><a class="sup" href="#d20110318x" title="2011.03.18.">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Legend <em>(2011.03.18)</em> <em><a class="sup" href="#d20110318x" title="2011.03.18.">&#11139;&nbsp;</a></em></h3>
   Since in the crowd I had one more glance
   Never forget the day of your appearance
   Dreaming in my dream there's a chance seeing you again
@@ -1961,7 +1981,7 @@
   　　　　酒醉，醉出了一生所爱<br/>
 <em>作詞：趙鐵志；原唱：鳳凰傳奇</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Coming From The Prairie <em>(2011.03.18)</em> <em><a class="sup" href="#d20110318p" title="2011.03.18.">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Coming From The Prairie <em>(2011.03.18)</em> <em><a class="sup" href="#d20110318p" title="2011.03.18.">&#11139;&nbsp;</a></em></h3>
   Standing my horse high, I join the singing from sky
   Time changes and flies, my dreams never die
   Singing out a love song, I have the moon up and bright
@@ -2008,7 +2028,7 @@
   走遍千里<br/>
 <em><i>Song by </i> Beyond &lt;1993&gt;</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Under A Vast Sky <em>(2013.06.02)</em> <em><a class="sup" href="#d20130602x" title="2013.06.02.">&#11139;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Under A Vast Sky <em>(2013.06.02)</em> <em><a class="sup" href="#d20130602x" title="2013.06.02.">&#11139;&nbsp;</a></em></h3>
   The cold night snow
   is drifting thru my feelings grow
   With a broken heart I'm gone for the road too long
@@ -2089,7 +2109,7 @@
 
   <em>作词：唐恬；作曲：钱雷；原唱：陈奕迅</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Lonely Warrior <em>(2022.05.23)</em> <em><a class="sup" href="#d20220523x" title="">&#11139;</em></a></h3>
+<div class="ying"><h3 class="t3 ying">Lonely Warrior <em>(2022.05.23)</em> <em><a class="sup" href="#d20220523x" title="">&#11139;&nbsp;</em></a></h3>
   All of the brave, wound from your fall,
       role of your cast, and your fault
   Out of the cave, shabby of your doll,
@@ -2201,7 +2221,7 @@
 
   <em>原词：唐恬；翻唱：之子、阿瑶</em>
 </div>
-<div class="ying"><h3 class="t3 ying">Lonely Warrior <em>(<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">English cover</a>)</em> <em><a class="sup" href="#d20220523x" title="">&#11139;</em></a></h3>
+<div class="ying"><h3 class="t3 ying">Lonely Warrior <em>(<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">English cover</a>)</em> <em><a class="sup" href="#d20220523x" title="">&#11139;&nbsp;</em></a></h3>
   What is in your eyes?
   It's burning like a flame
   Telling that's who you really are
@@ -2263,7 +2283,7 @@
 <div class="geci"><h3 class="t3 geci" id="p20x"> <em>〖原词〗</em></h3>
 <em>作曲：；作词：；原唱：</em>
 </div>
-<div class="ying"><h3 class="t3 ying"> <em><a class="sup" href="#d20x" title="">&#11139;</em></a></h3>
+<div class="ying"><h3 class="t3 ying"> <em><a class="sup" href="#d20x" title="">&#11139;&nbsp;</em></a></h3>
 <em>填词：舟山 20</em>
 </div>
 </div>--><!-- blog --><!--
@@ -2308,7 +2328,7 @@
   I could fall in love, (3x) with you ...<br/>
 <em><i>Songwriters</i>: Keith Thomas; <i>Song by </i>: Selena</em>
 </div>
-<div class="tian"><h3 class="t3 tian">我會愛上你 <em>【填词】</em><em><a class="sup" href="#d20030101x" title="2003.01.01.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">我會愛上你 <em>【填词】</em><em><a class="sup" href="#d20030101x" title="2003.01.01.">&#11139;&nbsp;</a></em></h3>
   我心在今夜迷失　　　　　　
   如果你不转身消逝。　　　　
   因为我可能让你　　　　　　
@@ -2392,7 +2412,7 @@
   Spread my wings so wide<br/>
 <em><i>Songwriters</i>: Anders Lee / Kwong Wing Chan</em>
 </div>
-<div class="tian"><h3 class="t3 tian">为你骄傲 <em>【填词】</em><em><a class="sup" href="#d20050101x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">为你骄傲 <em>【填词】</em><em><a class="sup" href="#d20050101x" title="">&#11139;&nbsp;</a></em></h3>
   爱在眼中
   静静坐在我身旁
   向前走，手牵手
@@ -2482,7 +2502,7 @@
   <i>(Repeat to fade)</i><br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn K Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">曼舞歌兮 <em>【填词】</em><em><a class="sup" href="#d20080301a" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">曼舞歌兮 <em>【填词】</em><em><a class="sup" href="#d20080301a" title="">&#11139;&nbsp;</a></em></h3>
   不徐不急，和我相依
   輕貼着身體，好像夏日　晚風習習
   從容施展，你的溫柔
@@ -2562,7 +2582,7 @@
   Sing a new song, Chiquitita<br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">惜惜其佳 <em>【填词】</em><em><a class="sup" href="#d20080301c" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">惜惜其佳 <em>【填词】</em><em><a class="sup" href="#d20080301c" title="">&#11139;&nbsp;</a></em></h3>
   惜惜其佳，何事心愁（小小女孩，何事而迷惘）
   情牢困鎖，自設煩憂（難以掙脫　自己的憂愁）
   悲傷眼眸，無所滯留（在你眼中沒有了明天和以後）
@@ -2638,7 +2658,7 @@
   <i>(Chorus)</i><br/>
 <em><i>Songwriters</i>: Stig Erik Leopold Anderson / ABBA</em>
 </div>
-<div class="tian"><h3 class="t3 tian">舞之情 <em>【填词】</em><em><a class="sup" href="#d20080301d" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">舞之情 <em>【填词】</em><em><a class="sup" href="#d20080301d" title="">&#11139;&nbsp;</a></em></h3>
   舞起來──搖起來──
   屬于妳生命的時代
   （舞）一支歌，一曲盡興
@@ -2710,7 +2730,7 @@
   <i>(Chorus x2)</i><br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">飞鹰 <em>【填词】</em><em><a class="sup" href="#d20080301e" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">飞鹰 <em>【填词】</em><em><a class="sup" href="#d20080301e" title="">&#11139;&nbsp;</a></em></h3>
   來自遠方他們任意飛
   我心好似在雲之霄
   傾聽動人的故事和歡笑
@@ -2789,7 +2809,7 @@
   I would, my friend, Fernando...<br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">费尔南多 <em>【填词】</em><em><a class="sup" href="#d20080301f" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">费尔南多 <em>【填词】</em><em><a class="sup" href="#d20080301f" title="">&#11139;&nbsp;</a></em></h3>
   還能聽見戰鼓聲嗎，費爾南多？
   記得從前另一個星光之夜也像如此
   守在烽火臺的費爾南多
@@ -2857,7 +2877,7 @@
   <i>(Chorus)</i><br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">我的梦 <em>【填词】</em><em><a class="sup" href="#d20080301h" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">我的梦 <em>【填词】</em><em><a class="sup" href="#d20080301h" title="">&#11139;&nbsp;</a></em></h3>
   我有個夢，唱給你聽
   讓我收穫，所有愛情
   一個童話故事，感覺真奇妙
@@ -2926,7 +2946,7 @@
   That follows every rain…<br/>
 <em><i>Songwriters</i>: Benny Andersson / Björn Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">生活的航程 <em>【填词】</em><em><a class="sup" href="#d20080301m" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">生活的航程 <em>【填词】</em><em><a class="sup" href="#d20080301m" title="">&#11139;&nbsp;</a></em></h3>
   『據說不息的生命包藏着內心的安寧。
   　不管是水手還是居家者，
   　都有一個遙遠的航程。
@@ -3007,7 +3027,7 @@
   Waiting for a call<br/>
 <em><i>Songwriters</i>: Ulvaeus Bjoern K / Andersson Benny Sigvard</em>
 </div>
-<div class="tian"><h3 class="t3 tian">我们之间 <em>【填词】</em><em><a class="sup" href="#d20080301o" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">我们之间 <em>【填词】</em><em><a class="sup" href="#d20080301o" title="">&#11139;&nbsp;</a></em></h3>
   那舊情不再，一切失去的浪漫事
   你奪去的愛，讓我感覺天空暗淡地消逝
   即使我明白，那原本不是我的意思
@@ -3096,7 +3116,7 @@
   <i>(Chorus, Repeat and fade)</i><br/>
 <em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">超级演出 <em>【填词】</em><em><a class="sup" href="#d20080301s" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">超级演出 <em>【填词】</em><em><a class="sup" href="#d20080301s" title="">&#11139;&nbsp;</a></em></h3>
   出色神魄，聚光讓我目迷
   我不　再孤獨
   這是我的演出
@@ -3188,7 +3208,7 @@
   Honey I'm still free / Take a chance on me<br/>
 <em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">给我机会 <em>【填词】</em><em><a class="sup" href="#d20080301t" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">给我机会 <em>【填词】</em><em><a class="sup" href="#d20080301t" title="">&#11139;&nbsp;</a></em></h3>
   <i>【和聲】</i>
   如果你覺得孤單　我能陪你作伴
   我的一切屬于你　你不必有顧忌
@@ -3260,7 +3280,7 @@
   <i>(Repeat ##)</i><br/>
 <em><i>Songwriters</i>: Benny Goran Bror Andersson / Bjoern K Ulvaeus</em>
 </div>
-<div class="tian"><h3 class="t3 tian">感谢音乐 <em>【填词】</em><em><a class="sup" href="#d20080301x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">感谢音乐 <em>【填词】</em><em><a class="sup" href="#d20080301x" title="">&#11139;&nbsp;</a></em></h3>
   我沒什麽特別，其實我有點囉嗦
   若是說個笑料，你也可能看過
   但我擁有异能，有完美的個性
@@ -3324,7 +3344,7 @@
   The winner takes it all <i>(repeat)</i> ...<br/>
 <em><i>Songwriters</i>: Andersson Benny Goran Bror / Ulvaeus Bjoern K</em>
 </div>
-<div class="tian"><h3 class="t3 tian">你赢了我所有 <em>【填词】</em><em><a class="sup" href="#d20080301w" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">你赢了我所有 <em>【填词】</em><em><a class="sup" href="#d20080301w" title="">&#11139;&nbsp;</a></em></h3>
   往事已缥缈，想起曾经的当初。
   伤心和别离，转眼成昨昔。
   倾尽我的所有，只换回满盘皆输。
@@ -3382,7 +3402,7 @@
   Daddy, daddy cool ... ...<br/>
 <em><i>Songwriters</i>: Frank Farian; George Reyam‎</em>
 </div>
-<div class="tian"><h3 class="t3 tian">爸爸真酷 <em>【填词】</em><em><a class="sup" href="#d20080426d" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">爸爸真酷 <em>【填词】</em><em><a class="sup" href="#d20080426d" title="">&#11139;&nbsp;</a></em></h3>
   她疯起来象二百五：只为了爹地真叫酷。
 
   她就爱爹地肚子鼓：我爹地有个啤酒肚。
@@ -3461,7 +3481,7 @@
   The man they called El Lute<br/>
 <em><i>Songwriters</i>: Frank Farian / Fred Jay / Hans Blum</em>
 </div>
-<div class="tian"><h3 class="t3 tian">好汉鲁达 <em>【填词】</em><em><a class="sup" href="#d20080426e" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">好汉鲁达 <em>【填词】</em><em><a class="sup" href="#d20080426e" title="">&#11139;&nbsp;</a></em></h3>
   这首歌唱的是好汉鲁达──一位江湖英雄，
   出家的绿林和尚，扬名在梁山水泊。
   他不修善果，最终却找到了自己的归所。
@@ -3561,7 +3581,7 @@
   It's a holi-holiday, it's a holi-holiday<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
-<div class="tian"><h3 class="t3 tian">小妹 <em>【填词】</em><em><a class="sup" href="#d20080426h" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">小妹 <em>【填词】</em><em><a class="sup" href="#d20080426h" title="">&#11139;&nbsp;</a></em></h3>
   太阳向远走，月亮上山头，等你等你呦。
   我心常期待，门前独徘徊，盼你盼你噢。
   晚风多轻柔，小河水慢流，想你想你呦。
@@ -3643,7 +3663,7 @@
   – 'Cause I'm born again<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
-<div class="tian"><h3 class="t3 tian">我的新生 <em>【填词】</em><em><a class="sup" href="#d20080426a" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">我的新生 <em>【填词】</em><em><a class="sup" href="#d20080426a" title="">&#11139;&nbsp;</a></em></h3>
   获得重生在今天，
   获自由，不再孤单。
   迎来光明的詩篇，
@@ -3718,7 +3738,7 @@
   If you should find him - Please greet him from me.<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
-<div class="tian"><h3 class="t3 tian">远行的船 <em>【填词】</em><em><a class="sup" href="#d20080426b" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">远行的船 <em>【填词】</em><em><a class="sup" href="#d20080426b" title="">&#11139;&nbsp;</a></em></h3>
   你扬起远帆，驶向那未知旅程，
   去　追一个梦。
   谁能够阻挡　你满怀理想出征，
@@ -3829,7 +3849,7 @@
   And love may reign once more<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian / Jester Hairston</em>
 </div>
-<div class="tian"><h3 class="t3 tian">玛丽的孩子 <em>【填词】</em><em><a class="sup" href="#d20080426c" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">玛丽的孩子 <em>【填词】</em><em><a class="sup" href="#d20080426c" title="">&#11139;&nbsp;</a></em></h3>
   瑪麗的孩子神之子，
   出生　在　圣誕夜。
   世人從此　得永生，
@@ -3935,7 +3955,7 @@
   Come down and follow me<br/>
 <em><i>Songwriters</i>: Frank Farian</em>
 </div>
-<div class="tian"><h3 class="t3 tian">大海幻想曲 <em>【填词】</em><em><a class="sup" href="#d20080426o" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">大海幻想曲 <em>【填词】</em><em><a class="sup" href="#d20080426o" title="">&#11139;&nbsp;</a></em></h3>
   大海绚烂我的人生
   她像一首幻想曲
   那无边无际的漫想激情
@@ -3999,7 +4019,7 @@
   Ye-eah we wept.........<br/>
 <em><i>Songwriters</i>: Brent Dowe / Trevor McNaughton</em>
 </div>
-<div class="tian"><h3 class="t3 tian">巴比伦之河 <em>【填词】</em><em><a class="sup" href="#d20080426v" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">巴比伦之河 <em>【填词】</em><em><a class="sup" href="#d20080426v" title="">&#11139;&nbsp;</a></em></h3>
   坐在巴比倫的河岸上，
   我們惆悵，
   流著眼泪，
@@ -4058,7 +4078,7 @@
   I love you. <i>(6x)</i><br/>
 <em><i>Songwriters</i>: Bobby Hebb</em>
 </div>
-<div class="tian"><h3 class="t3 tian">想你 <em>【填词】</em><em><a class="sup" href="#d20080426s" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">想你 <em>【填词】</em><em><a class="sup" href="#d20080426s" title="">&#11139;&nbsp;</a></em></h3>
   想你　我怎能放弃对你　的眷恋？
   想你　那微笑是我心中　的火焰。
   不论　绿水山岗，不分　昏晓星夜，
@@ -4116,7 +4136,7 @@
   Just like you and me<br/>
 <em><i>Songwriters</i>: Eric Carmen / Sergei Rachmaninoff</em>
 </div>
-<div class="tian"><h3 class="t3 tian">今夜逝去情不再 <em>【填词】</em><em><a class="sup" href="#d20080730x" title="2008.07.30.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">今夜逝去情不再 <em>【填词】</em><em><a class="sup" href="#d20080730x" title="2008.07.30.">&#11139;&nbsp;</a></em></h3>
   难以伪装我们的感情　还在
   早已经是无法相面对
   我将学会习惯没有你　的爱
@@ -4185,7 +4205,7 @@
   Cuz that home belongs to you...<br/>
 <em><i>Songwriters</i>: Jenny Lewis</em>
 </div>
-<div class="tian"><h3 class="t3 tian">对月当歌 <em>【填词】</em><em><a class="sup" href="#d20090214x" title="2009.02.14.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">对月当歌 <em>【填词】</em><em><a class="sup" href="#d20090214x" title="2009.02.14.">&#11139;&nbsp;</a></em></h3>
   我的人生　充满祝福──我愿意付出
   我并没有　太多的企求
   只希望每一天　的永久
@@ -4287,7 +4307,7 @@
   O tidings of comfort and joy<br/>
 <em><i>Songwriters</i>: <a href="https://en.wikipedia.org/wiki/God_Rest_You_Merry,_Gentlemen" target="_wiki">Unknown</a>; <i>Based on </i> "Luke 2"</em>
 </div>
-<div class="tian"><h3 class="t3 tian">上帝讓人快樂 <em>【填词】</em><em><a class="sup" href="#d20101201x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">上帝讓人快樂 <em>【填词】</em><em><a class="sup" href="#d20101201x" title="">&#11139;&nbsp;</a></em></h3>
   上帝讓人快樂跟隨
   不再有自卑
   耶穌基督我的救主
@@ -4386,7 +4406,7 @@
   “Glory to the newborn King!”<br/>
 <em><i>Songwriters</i>: <a href="https://en.wikipedia.org/wiki/Hark!_The_Herald_Angels_Sing" target="_wiki">Felix Mendelssohn</a></em>
 </div>
-<div class="tian"><h3 class="t3 tian">天使高歌世界聽 <em>【填词】</em><em><a class="sup" href="#d20101202x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">天使高歌世界聽 <em>【填词】</em><em><a class="sup" href="#d20101202x" title="">&#11139;&nbsp;</a></em></h3>
   天使高歌世界聽：
   上帝天國已降臨。
   帶來仁慈和安寧，
@@ -4448,7 +4468,7 @@
   Christ the Lord...<br/>
 <em><i>Songwriters</i>: <a href="https://en.wikipedia.org/wiki/O_Come,_All_Ye_Faithful" target="_wiki">John Francis Wade</a></em>
 </div>
-<div class="tian"><h3 class="t3 tian">萬方齊來敬仰 <em>【填词】</em><em><a class="sup" href="#d20101206x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">萬方齊來敬仰 <em>【填词】</em><em><a class="sup" href="#d20101206x" title="">&#11139;&nbsp;</a></em></h3>
   萬方齊來信仰，歡樂中喜洋洋
   萬方來、萬方來、到　伯利恆
   萬里來朝拜他，天生衆神之王
@@ -4504,7 +4524,7 @@
   The Babe, the Son of Mary<br/>
 <em><i>Songwriters</i>: <a href="https://en.wikipedia.org/wiki/What_Child_Is_This%3F" target="_wiki">Thomas Hewitt Jones</a></em>
 </div>
-<div class="tian"><h3 class="t3 tian">誰之子 <em>【填词】</em><em><a class="sup" href="#d20101209x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">誰之子 <em>【填词】</em><em><a class="sup" href="#d20101209x" title="">&#11139;&nbsp;</a></em></h3>
   是誰的孩子在安睡
   在瑪麗的懷中未醒
   有天使頌歌的甜美
@@ -4582,7 +4602,7 @@
   Let it burn Oh oh ohhhh...<br/>
 <em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
 </div>
-<div class="tian"><h3 class="t3 tian">雨落情逝心已焚 <em>【填词】</em><em><a class="sup" href="#d20110321x" title="2011.03.21.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">雨落情逝心已焚 <em>【填词】</em><em><a class="sup" href="#d20110321x" title="2011.03.21.">&#11139;&nbsp;</a></em></h3>
   譲祂坠落，我的心
   當祂坠落，你輕輕收起
   我怕迷失　譲夜捕獲
@@ -4665,7 +4685,7 @@
   <i>(Repeat Chorus)</i><br/>
 <em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
 </div>
-<div class="tian"><h3 class="t3 tian">淪陷回憶裡 <em>【填词】</em><em><a class="sup" href="#d20121028x" title="2012.10.28.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">淪陷回憶裡 <em>【填词】</em><em><a class="sup" href="#d20121028x" title="2012.10.28.">&#11139;&nbsp;</a></em></h3>
   我心升起　无名火一把
   高烧过後　身体更疲乏
   终於能够　看清了一切
@@ -4732,7 +4752,7 @@
   When will I see you again? ...<br/>
 <em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
 </div>
-<div class="tian"><h3 class="t3 tian">無愛的挽歌 <em>【填词】</em><em><a class="sup" href="#d20121030x" title="2012.10.30.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">無愛的挽歌 <em>【填词】</em><em><a class="sup" href="#d20121030x" title="2012.10.30.">&#11139;&nbsp;</a></em></h3>
   何时与你再相见？
   带走我的愛　没留一声告白
   沒留下一词　你如此的无情
@@ -4808,7 +4828,7 @@
   Sometimes it hurts instead<br/>
 <em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
 </div>
-<div class="tian"><h3 class="t3 tian">此情依舊 <em>【填词】</em><em><a class="sup" href="#d20121030s" title="2012.10.30.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">此情依舊 <em>【填词】</em><em><a class="sup" href="#d20121030s" title="2012.10.30.">&#11139;&nbsp;</a></em></h3>
   得知你終於成了家
   終於找到了你心中的佳偶
   得知你終於美夢得酬
@@ -4903,7 +4923,7 @@
   Walk that mile until the end starts<br/>
 <em><i>Songwriters</i>: Adele Laurie Blue Adkins</em>
 </div>
-<div class="tian"><h3 class="t3 tian">愛的唯一 <em>【填词】</em><em><a class="sup" href="#d20121031x" title="2012.10.31.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">愛的唯一 <em>【填词】</em><em><a class="sup" href="#d20121031x" title="2012.10.31.">&#11139;&nbsp;</a></em></h3>
   你一直在我心田
   我每天更爱你多一点
   迷失了自己和时间
@@ -4978,7 +4998,7 @@
   Baby do it like you do<br/>
 <em><i>Song by </i> Justin Bieber</em>
 </div>
-<div class="tian"><h3 class="t3 tian">美麗和旋律 <em>【填词】</em><em><a class="sup" href="#d20130112x" title="2013.01.12.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">美麗和旋律 <em>【填词】</em><em><a class="sup" href="#d20130112x" title="2013.01.12.">&#11139;&nbsp;</a></em></h3>
   炫耀吧，今夜我给你一个舞台──
   美如画，你的容颜千金也难买
   我们的聚会象征着华丽的未来
@@ -5063,7 +5083,7 @@
   Doesn't mean I'm lonely when I'm alone<br/>
 <em><i>Song by </i> Kelly Clarkson</em>
 </div>
-<div class="tian"><h3 class="t3 tian">愛過心更強 <em>【填词】</em><em><a class="sup" href="#d20130814x" title="2013.08.14.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">愛過心更強 <em>【填词】</em><em><a class="sup" href="#d20130814x" title="2013.08.14.">&#11139;&nbsp;</a></em></h3>
   也许还有温暖的被窝
   似独处的模样
   也许梦里有五光十色
@@ -5186,7 +5206,7 @@
   Do-do, do-da, do<br/>
 <em><i>Song by </i>: The Spinners</em>
 </div>
-<div class="tian"><h3 class="t3 tian">用心贏你回 <em>【填词】</em><em><a class="sup" href="#d20130915x" title="2013.09.15.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">用心贏你回 <em>【填词】</em><em><a class="sup" href="#d20130915x" title="2013.09.15.">&#11139;&nbsp;</a></em></h3>
   我要用心赢你回来～噢，宝贝
   点燃生命中的爱
   我在用心赢你回来～噢，宝贝
@@ -5294,7 +5314,7 @@
   Woo woo woo ...<br/>
 <em><i>Songwriters</i>: Harburg E Y / Arlen Harold</em><br/>
 </div>
-<div class="tian"><h3 class="t3 tian">彩虹之上 <em>【填词】</em><em><a class="sup" href="#d20130916x" title="2013.09.16.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">彩虹之上 <em>【填词】</em><em><a class="sup" href="#d20130916x" title="2013.09.16.">&#11139;&nbsp;</a></em></h3>
   彩虹像蓝天之舟，雲儿白
   美梦尽如你想象
   宛似婴儿的情怀
@@ -5372,7 +5392,7 @@
   <i>* Repeat *</i><br/>
 <em><i>Songwriters</i>: A. P. Carter / Luisa Gerstein</em>
 </div>
-<div class="tian"><h3 class="t3 tian">远行快唱 <em>【填词】</em><em><a class="sup" href="#d20140819x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">远行快唱 <em>【填词】</em><em><a class="sup" href="#d20140819x" title="">&#11139;&nbsp;</a></em></h3>
   我带着一张船票去远方
   再带点儿威士忌不算累
   寂寞旅途我不想没人陪
@@ -5436,7 +5456,7 @@
   <i>* Repeat *</i><br/>
 <em><i>Songwriters</i>: Alexander Grant Jr.</em>
 </div>
-<div class="tian"><h3 class="t3 tian">心魔 <em>【填词】</em><em><a class="sup" href="#d20151128x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">心魔 <em>【填词】</em><em><a class="sup" href="#d20151128x" title="">&#11139;&nbsp;</a></em></h3>
   在冬日的寒流，我結束了等候
   而聖徒的眼裡，似金黃的深秋
   當你夢想破碎，因此墮落頹廢
@@ -5504,7 +5524,7 @@
   Clarity, peace, serenity<br/>
 <em><i>Songwriters</i>: Stacy Ferguson / Toby Gad</em>
 </div>
-<div class="tian"><h3 class="t3 tian">不哭的女孩 <em>【填词】</em><em><a class="sup" href="#d20151205x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">不哭的女孩 <em>【填词】</em><em><a class="sup" href="#d20151205x" title="">&#11139;&nbsp;</a></em></h3>
   清早的氣息纏繞在我的懷抱
   遠去的航班是否已回到家鄉
   我急於找个地方能安静躲避
@@ -5606,7 +5626,7 @@
   For the world we're gonna make<br/>
 <em><i>Songwriters</i>: Benj Pasek / Justin Paul</em>
 </div>
-<div class="tian"><h3 class="t3 tian">萬千夢想 <em>【填词】</em><em><a class="sup" href="#d20180126x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">萬千夢想 <em>【填词】</em><em><a class="sup" href="#d20180126x" title="">&#11139;&nbsp;</a></em></h3>
   <i>童声：</i>
   我閉上眼，看得更清晰
   世界为我，展開了謎題
@@ -5678,7 +5698,7 @@
 <div class="yuan"><h3 class="t3 yuan" id="p20x"> <em></em></h3>
 <em><i>Song by </i> </em>
 </div>
-<div class="tian"><h3 class="t3 tian"> <em>【填词】</em><em><a class="sup" href="#d20x" title="">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian"> <em>【填词】</em><em><a class="sup" href="#d20x" title="">&#11139;&nbsp;</a></em></h3>
 <em>中文填词 20</em>
 </div>
 </div>--><!-- blog --><!--
@@ -5702,7 +5722,7 @@
 　　自诩为才女，非是柴火妞；你还弗如我，怎地不知羞？<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20081225x" title="2008.12.25.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20081225x" title="2008.12.25.">&#11139;&nbsp;</a><em><a href="" title="Blog: Snow Christmas" target="_blog">&raquo; Snow Christmas (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-poems" class="goto">⇑</a>
@@ -5720,7 +5740,7 @@
   十三同学各一方，成就学年第十八。<br/>
 <em><i>By </i> Divertida LZ ── 俄州銀瀑公園</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090911x" title="2009.09.11.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090911x" title="2009.09.11.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/09/cclp18-orientation-day.html" title="Blog: CCLP18 - Orientation Day" target="_blog">&raquo; CCLP18 Orientation (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-poems" class="goto">⇑</a>
@@ -5740,7 +5760,7 @@
   如此身轻图酣梦，今年俗事我尽抛。<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20091127x" title="2009.11.27.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20091127x" title="2009.11.27.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/11/shopping-on-thanksgiving-night.html" title="Blog: Shopping on Thanksgiving Night" target="_blog">&raquo; Black Friday Eve (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-poems" class="goto">⇑</a>
@@ -5778,7 +5798,7 @@
   相伴十余载，不是我独行。<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20100828x" title="2010.08.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20100828x" title="2010.08.">&#11139;&nbsp;</a>&nbsp;<em><a href="https://divertidalz.blogspot.com/search/label/Yellowstone" title="Blog: North by Northwest" target="_blog">&raquo; North by Northwest</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-poems" class="goto">⇑</a>
@@ -5796,7 +5816,7 @@
   You are the world!<br/>
 <em><i>Original author</i>: Anonym</em>
 </div>
-<div class="tian"><h3 class="t3 tian">無题 <em>【试译】</em><em><a class="sup" href="#d20190917x" title="2019.09.17.">&#11139;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">無题 <em>【试译】</em><em><a class="sup" href="#d20190917x" title="2019.09.17.">&#11139;&nbsp;</a></em></h3>
   世有萬千，三愛於吾：
   在日在月，
   在卿之故。
@@ -5829,7 +5849,7 @@
 <br/>
 <em><i>Poem by </i> Boathill</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20080126x" title="2008.01.26.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20080126x" title="2008.01.26.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5851,7 +5871,7 @@
   送去夕阳无限好，余辉还照月影疏。<br/>
 <em><i>By </i> Divertida LZ ── 二零零九年夏「玩賞島」游記</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090628x" title="2009.06.28.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090628x" title="2009.06.28.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/06/seattle-vashon-island.html" title="Blog: Seattle - Vashon Island" target="_blog">&raquo; Seattle - Vashon Island (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5878,7 +5898,7 @@
   这样的生活有何意义？<br/>
 <em><i>Poem by </i> Boathill</em>
 </div>
-<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20090712x" title="2009.07.12.">&#11139;</a></em></h3>
+<div class="text"><h3 class="t3 text"><em></em><em><a class="sup" href="#d20090712x" title="2009.07.12.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5900,7 +5920,7 @@
   肯定不会再来把你找<br/>
 <em><i>By </i> Divertida LZ ── Levender Festival</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090717x" title="2009.07.17.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090717x" title="2009.07.17.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/07/lavender-festival.html" title="Blog: Levender Festival" target="_blog">&raquo; Levendar Festival (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5918,7 +5938,7 @@
   管他涨不涨将军的肚<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090720x" title="2009.07.20.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090720x" title="2009.07.20.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/07/bakery-house.html" title="Blog: Bakery House" target="_blog">&raquo; Bakery House (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5947,7 +5967,7 @@
   让我们羽化成仙<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20090801x" title="2009.08.01.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20090801x" title="2009.08.01.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/08/sesame-ahi.html" title="Blog: Sesame Ahi (Recipe)" target="_blog">&raquo; Sesame Ahi (Recipe)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5966,7 +5986,7 @@
   吃得再多也嫌少<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20091231x" title="2009.12.31.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20091231x" title="2009.12.31.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2009/12/ma-la-hua-sheng.html" title="Blog: Mala/Hot-Spicy Peanuts (Recipe)" target="_blog">&raquo; Mala/Hot-Spicy Peanuts (Recipe)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -5988,14 +6008,14 @@
   不用担心瘦不瘦<br/>
 <em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20100724x" title="2010.07.24.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20100724x" title="2010.07.24.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2010/07/blueberry-u-pick.html" title="Blog: Blueberry U-Pick" target="_blog">&raquo; Blueberry U-Pick (Blog)</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
 
 
 <div class="blog" name="zhou">
-<div class="poem"><h3 class="t3 poem" id="p20110116x">大厨 <em>(2011.01.16)</em></h3>
+<div class="poem"><h3 class="t3 poem" id="p20110116x">芝麻紫薯饼 <em>(2011.01.16)</em></h3>
   将朴素的紫薯
   轻轻蒸熟
   剥皮後捣到它
@@ -6009,11 +6029,49 @@
   趁热赶紧吃一口
   谁能说俺美国
   农民生活苦<br/>
-<em>注<sup>†*</sup>：華氏溫度355°大約相當於攝氏180°。
-<i>By </i> Divertida LZ</em>
+<em><i>By </i> Divertida LZ</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20110116x" title="2011.01.16.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><a class="sup" href="#d20110116x" title="2011.01.16.">&#11139;&nbsp;</a><em><a href="https://divertidalz.blogspot.com/2011/01/sesame-purple-yam-cake.html" title="Blog: Sesame Purple Yam Cake" target="_blog">&raquo; Sesame Purple Yam Cake</a></em></h3>
+
+
+
+
+
+
+
+
+<em>注<sup>†*</sup>：華氏溫度355°大約相當於攝氏180°。</em>
 </div>
+</div><!-- blog -->
+<a href="#chinese-dayou" class="goto">⇑</a>
+
+
+<div class="blog" name="zhou">
+<div class="poem"><h3 class="t3 poem" id="p20160504x">打油诗 <em>(2016.05.04)</em></h3>
+  其一、
+  一个碎鸡蛋，两碗小汤圆，
+  三勺醪糟酒，四口就喝完。
+
+  其二、
+  春日天晴好，臭美把镜照。
+  能猫忽惊叫，蛮腰哪儿去了？
+  从前曾窈窕，也令人倾倒。
+  如今逝如梦，方知恨多少。
+
+  其三、
+  一路风光无限好，只恨不能把相照。
+  春雨冬雪和冰雹，全都让我赶上了。
+  加油不忘买咖啡，吃饭还需豆腐煲。
+  车祸现场警察躁，乱七八糟不好搞。
+  酒店碰上幸运号，舒舒服服床上倒。
+  伴着潺潺河水声，我自逍遥睡大觉。
+<br/>
+<em><i>By </i> Divertida LZ</em>
+</div>
+<div class="text">
+  <div class="note" id="youthday"><a class="sup" href="#d20160504x" title="2016.05.04.">&#11139;&nbsp;</a><p class="t3 text"><em></em><em><a href="https://divertidalz.blogspot.com/2016/04/da-you.html" title='Youth Day 4th of May' target="_blog">&raquo; Blog</a> | 博文原注：</em></p>
+  <p class="note">今天五月四号青年节。一早就有人事问题急着解决，上午在分校开会到两点，然後出发去华盛顿州东部的雅克玛参加华州负责学生工作的副校长会议。两个半小时开了二百五十公里（瞧瞧这数），到达这个以农业为主的城市，曾经有几年常来这里摘樱桃。以前都是和家人一起来，今天一个人开车好孤单。油也没了，作为一个忠实客户，在卡斯口加油，当然顺便买杯冰拿铁。里面尽是墨西哥人，他们在这里的农场，葡萄园，樱桃园工作。本来我想对付晚饭，但明后天都是西餐，最有可能的墨西哥餐肯定对不起我可怜的中国胃，所以找了家韩国馆，也剧难吃，但至少还能下咽。饭後去酒店的路上见到一个车祸现场，好多警察在忙碌。终于到了酒店，要了对着雅克玛河的房间，看看我有多么的运气，又是一个二五零的房间号。</p>
+</div></div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
 
@@ -6031,7 +6089,7 @@
   吹干我的内裤。<br/>
 <em><i>By </i> Boathill</em>
 </div>
-<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20191227x" title="2019.12.27.">&#11139;</a></em></h3>
+<div class="poem"><h3 class="t3 poem"><em></em><em><a class="sup" href="#d20191227x" title="2019.12.27.">&#11139;&nbsp;</a></em></h3>
 </div>
 </div><!-- blog -->
 <a href="#chinese-dayou" class="goto">⇑</a>
@@ -6113,15 +6171,16 @@
      onclick="return showTags('atop')">全</a>
   </div>
 
-  <p class="catg center links"> &bull;
+  <p class="catg center links"> &raquo;
     <a href="https://divertidalz.blogspot.com/"
-       title="divertialz blog">blog</a> &bull;
-    <a href="https://dockerian.github.io/poetry/shiji.html"
-       title="Jason's poetry collection">poetry</a> &bull;
-    <a href="https://dockerian.github.io"
+       title="divertialz blog"
+       target="_blog">blog</a> &bull;
+    <a href="./shiji.html" target="_blog"
+       title="Jason's poetry">poetry</a> &bull;
+    <a href="https://dockerian.github.io" target="_"
        title="dockerian home">dockerian</a> &bull;
-    <a href="../"
-      title="more collection and tools">others</a> &bull;
+    <a href="../" target="_blog"
+       title="collection and tools">misc</a> &laquo;
   </p>
   <div id="home" class="noprint">
     <a href="#atop" class="noprint"
