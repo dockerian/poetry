@@ -137,9 +137,10 @@
     event.stopPropagation();
     // console.log(`tag = ${tag}, source = ${v}`);
     if (typeof tag != 'undefined' && tag) {
-      let url = getPageUrl();
-      console.log(`set location = ${url}#${tag}`);
-      window.location.replace(`${url}#${tag}`);
+      let pageUrl = getPageUrl();
+      let url = `${pageUrl}#${tag}`;
+      console.log(`set location = ${url}`);
+      window.location.replace(url);
       if (tag == 'atop') {
         window.scrollTo(0, 0);
         return false;
@@ -202,9 +203,9 @@
 //-->
 </script>
 
-<link href="../Images/smx-fangzhuan.png" rel="icon" type="image/x-icon">
-<link href="../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
-<link href="../Styles/shiji.css" rel="stylesheet" type="text/css"/>
+<link href="gelv/Images/smx-fangzhuan.png" rel="icon" type="image/x-icon">
+<link href="gelv/Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="gelv/Styles/shiji.css" rel="stylesheet" type="text/css"/>
 <style type="text/css">
   a {
     border: none;
@@ -533,7 +534,7 @@
     color: lightgray;
     font-size: 2.25em;
     background-color: cornflowerblue; /* dodgerblue; */
-    background-image: url('../Images/smx-fangzhuan.png');
+    background-image: url('gelv/Images/smx-fangzhuan.png');
     background-origin: content-box;
     background-position: right;
     background-repeat: no-repeat;
