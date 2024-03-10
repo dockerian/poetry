@@ -5,7 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh" xmlns:xml="http://www.w3.org/XML/1998/namespace">
 <head>
 <title>纱糸轩诗歌集 • Lyrics & Poems</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Jason Zhu"/>
+<meta name="description" content="Lyrics and Poems"/>
+<meta name="keywords" content="lyrics,poems,诗歌,翻译,填词,divertidalz,boathill,blog"/>
 <script type="text/javascript"><!--// script
+
+  var atag = ''; // NOTE: page top anchor is 'atop'
 
   const doCount = async (s, disp, c) => {
     let docFunc = document.getElementById;
@@ -23,7 +29,15 @@
       elemVal.textContent = '';
     }
     return 0;
-  }
+  };
+  const showSubtitle = async (text = '') => {
+    console.log(`setting subtitle = ${text}`);
+    let getFunc = document.getElementById;
+    let sub = getFunc.bind(document)('subtitle');
+    sub.textContent = text ? `${text}` : '';
+    return sub;
+  };
+
   const showAll = async (s,
       getFunc = document.querySelectorAll,
       display = 'block') => {
@@ -52,13 +66,6 @@
       document.querySelectorAll,
       display);
   };
-  const showSubtitle = async (text = '') => {
-    console.log(`setting subtitle = ${text}`);
-    let getFunc = document.getElementById;
-    let sub = getFunc.bind(document)('subtitle');
-    sub.textContent = text ? `${text}` : '';
-    return sub;
-  };
   const showByClass = async (cls, disp = 'block') => {
     console.log(`showByClass, cls=${cls}, display=${disp}`);
     return showAll(cls,
@@ -77,6 +84,7 @@
         prop);
     });
   };
+
   const showList = async (visible = true) => {
     let prop = visible ? 'inline-block' : 'none';
     console.log(`showing list = ${visible}, prop = ${prop}`);
@@ -131,6 +139,25 @@
     });
   };
 
+  const clearSelection = () => {
+    let sel = window.getSelection ?
+      window.getSelection() : document.selection;
+    if (sel) {
+      if (sel.empty) {
+        sel.empty(); // older browsers, Safari, IE
+      } else if (sel.removeAllRanges) {
+        sel.removeAllRanges();
+      }
+    }
+  };
+  const getCounts = () => {
+    let docFunc = document.getElementById;
+    let getElem = docFunc.bind(document);
+    let elemVal = getElem('counter');
+    let counter = parseInt(elemVal.textContent, 10);
+    let sum = isNaN(counter) ? 0 : counter;
+    return sum;
+  };
   const getPageAnchor = (page) => {
     let url = page ? page : window.location.href;
     // console.log(`page = ${url}`);
@@ -174,15 +201,41 @@
     }
     return false;
   };
+  const showOnCounts = () => {
+    let counts = getCounts();
+    let starts = counts == 0 && atag == '';
+    let ataged = counts != 0 && atag != '';
+    console.log(`counts = ${counts}, atag = ${atag}`);
+    if (starts) {
+      setLocation('catg', 'showOnCounts');
+    } else if (ataged) {
+      showTags('atop');
+      clearSelection();
+    } else {
+      showTags(atag);
+    }
+    return false;
+  };
   const showTags = (e = 'atop') => {
     let chk = typeof e != 'string' || e == '';
     let tag = chk ? getPageAnchor() : e;
     console.log(`page anchor/tag = ${tag}`);
     let subtitle = '';
-    let showFunc = showBlogByName;
+    let showFunc = showBlogByClass;
     switch (tag) {
+      case 'abba':
+        subtitle = "(ABBA Lyrics)";
+        break;
+      case 'adele':
+        subtitle = "(Adele Lyrics)";
+        break;
+      case 'boneym':
+        subtitle = "(Boney M Lyrics)";
+        break;
+      case 'holly':
+        subtitle = "(Christian Songs)";
+        break;
       case 'engp':
-        showFunc = showBlogByClass;
         subtitle = "(english poems)";
         break;
       case 'show':
@@ -190,13 +243,14 @@
         subtitle = "☆☆☆★★";
         break;
       case 'view':
-        showFunc = showBlogByClass;
         subtitle = "★★★";
         break;
       case 'zhyx':
+        showFunc = showBlogByName;
         subtitle = "(by Jason)";
         break;
       case 'zhou':
+        showFunc = showBlogByName;
         subtitle = "(by Lin)";
         break;
       default:
@@ -204,6 +258,7 @@
     }
     console.log(`tag = ${tag}, subtitle = ${subtitle}`);
     if (subtitle) {
+      atag = tag; // save selected tag
       showFunc(tag).then(() => {
         // console.log(`subtitle = ${subtitle}`);
         showSubtitle(subtitle).then(() => {
@@ -274,12 +329,21 @@
     color: darkslategray;
   }
 
+  body, div.blog {
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    width: 100vw !important;
+  }
   body, p {
     font-family: "Calibri", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif, serif;
     font-size: 1.25em;
-    max-width: 100%;
   }
-
+  div > p.links {
+    font-size: smaller;
+    margin: 0.75em 0em 0.75em 0em;
+    white-space: nowrap;
+    text-align: center;
+  }
   div.center {
     text-align: center;
   }
@@ -303,14 +367,16 @@
   div.catg p {
     line-height: 0.5em;
   }
+
   div#acat {
     color: gray;
     cursor: default;
-    display: none;
+    border-radius: 0.5em;
     background-color: whitesmoke;
-    font-size: 0.75em;
+    font-size: 0.9em;
     font-weight: normal;
     line-height: 1.75em;
+    margin: 0.5em 0em 1em 0em;
     white-space: nowrap;
     max-width: 100%;
   }
@@ -335,56 +401,85 @@
   div#acat span {
     color: lightgray;
   }
+
   div#goto {
-    opacity: 0.25;
+    opacity: 0.3;
     position: fixed;
     bottom: 0; right: 0;
     border-radius: 0.25em 0em 0em 0em;
     background-color: transparent;
     line-height: 1.35em;
-    margin: 0.5em 0.25em 0.25em 0.5em;
-    padding: 0.35em 0.25em;
+    margin: 0.5em 0em 0em 0.5em;
+    padding: 0em 0.0em 0em 0em;
     text-align: right;
   }
-  div#goto:hover, div#goto:active {
-    border: double 0.05em whitesmoke;
-    background-color: whitesmoke;
-    font-weight: bold;
-    font-size: larger;
-    border: dotted 1px lightgray;
-    margin: 0.25em 0em 0em 0.5em;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    opacity: 0.9;
+  #cbox {
+    display: none; /* hide always */
   }
-  div#goto:hover div#acat, div#goto:active div#acat {
+  #cbox:checked ~ div#goto,
+  #cbox:checked ~ div#goto #hide,
+  div#goto:hover, div#goto:active {
+    opacity: 0.95;
+  }
+  #cbox:checked ~ div#goto div#menu,
+  div#goto:hover div#menu, div#goto:active div#menu {
     display: block;
-    opacity: 1;
+    opacity: 0.95;
+  }
+  #cbox:checked ~ div#goto #aquo,
+  div#goto:hover #aquo, div#goto:active #aquo {
+    display: none;
   }
   div#goto #aquo {
-    display: block;
+    display: inline-block;
     border-radius: 1em;
     background-color: whitesmoke;
     padding: 0.1em 0.5em 0.25em 0.5em;
     height: 1em; width: 1.25em;
+    right: 1em; bottom: 1.75em;
+    position: fixed;
     opacity: 0.5;
   }
-  div#goto #back {
-    display: none;
+  div#goto p {
+    line-height: 0.5em;
+    margin: 0.5em 0;
   }
-  div#goto:hover #aquo, div#goto:active #aquo {
+  div#menu {
     display: none;
+    background-color: whitesmoke;
+    border-radius: 0.5em 0em 0em 0em;
+    border: dotted 1px lightgray;
+    padding: 0.5em 1em;
+    position: relative;
   }
-  div#goto:hover #back, div#goto:active #back {
-    display: inline;
+  div#menu #back {
+    display: inline-block;
     background-color: beige;
     border: solid 0.125em lightyellow;
     border-radius: 1em;
     font-size: larger;
     font-weight: bold;
-    height: 1em; width: 1.25em;
-    margin-right: -0.125em;
+    height: 1em; width: 1em;
+    margin: 0em -0.125em 0.5em 0;
     padding: 0.1em 0.35em 0.25em 0.35em;
     opacity: 1;
+  }
+  div#menu #hide {
+    float: left;
+    font-size: 1em;
+    color: darkslategray;
+    cursor: pointer;
+    border: none;
+    border-radius: 1em;
+    height: 1em; width: 1em;
+    left: 1.25em; top: 1.25em;
+    position: absolute;
+    margin: -0.25em -0.5em -0.5em -0.5em;
+    padding: 0em 1em 1em 0;
+    opacity: 0;
+  }
+  div#menu #hide:hover {
+    color: darkred;
   }
   div#home a {
     display: block; width: 100%;
@@ -406,7 +501,6 @@
     padding: 0em 0em 0.5em 0em;
     page-break-before: always;
     position: relative;
-    width: 100%;
     gap: 1em;
   }
   div.blog:last-of-type { /* must be in a wrapper */
@@ -520,6 +614,7 @@
     margin: 3.5em 1.5em 0em 0em;
     padding: 0em 1em 1em 0em;
     vertical-align: top;
+    white-space: normal;
   }
   div.text> div#bailout {
     font-size: 0.75em;
@@ -600,19 +695,33 @@
     width: 100%;
   }
   h3.h3 {
+    display: block;
     cursor: pointer;
     background-color: #FFFF99;
     border-right-width: 0.75em;
-    page-break-before: avoid;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
     line-height: 2.75em;
     margin: 0.125em 0em 0.25em 0em;
     padding-right: 0.5em;
+    page-break-before: avoid;
     text-align: right;
     text-indent: 0.25em;
     vertical-align: middle;
     white-space: nowrap;
+    user-select: none;
+  }
+  h3 span#hamb label {
+    color: darkslategray;
+    cursor: pointer;
+  }
+  h3 span#hbar {
+    display: inline-block;
+    flex-grow: 1;
   }
   h3 span#star {
+    display: inline-block;
     font-style: normal;
     font-weight: normal;
     font-size: 0.95em;
@@ -851,27 +960,34 @@
 </style>
 </head>
 <body>
+<a id="abba" name="abba"></a><!--anchor: abba-->
+<a id="adele" name="adele"></a><!--anchor: adele-->
+<a id="boneym" name="boneym"></a><!--anchor: boneym-->
+<a id="holly" name="holly"></a><!--anchor: holly-->
 <a id="engp" name="engp"></a><!--anchor: engp-->
 <a id="show" name="show"></a><!--anchor: show-->
 <a id="view" name="view"></a><!--anchor: view-->
-<h1 id="atop" class="h1" title="Lyrics and Poems"
-    onclick="return setLocation('catg', 'h1')">纱糸轩诗歌集
-  <span id="subtitle"></span><span id="counter"></span>
-</h1>
 <a id="zhou" name="zhou"></a><!--anchor: zhou-->
 
+<!--Heading Title Bar-->
+<h1 id="atop" class="h1" title="Lyrics and Poems"
+    onclick="return showOnCounts()">纱糸轩诗歌集
+  <span id="subtitle"></span><span id="counter"></span>
+</h1>
+
 <!--toc and tags heading-->
-<h3 id="atoc" class="h3" title="by category or tag"
-    onclick="return setLocation('catg', 'h3')">
+<h3 id="atoc" class="h3">
+  <span id="hbar" title="by category or tag"
+    onclick="return setLocation('catg', 'h3')">&nbsp;</span>
   <span id="star" class="noprint"><a
     href="#show" onclick="return showTags('show')"
     title="show ☆☆☆" type="button"
     class="tags">&star;</a><i>&bull;</i><a
     href="#engp" onclick="return showTags('engp')"
-    title="english poems;" type="button"
+    title="english poems" type="button"
     class="tags"><em>E</em></a><i>&bull;</i><a
     href="#view" onclick="return showTags('view')"
-    title="show ★★★" type="button"
+    title="view ★★★" type="button"
     class="tags">&starf;</a><i>|</i><a
     href="#zhyx" onclick="return showTags('zhyx')"
     title="show by Jason" type="button"
@@ -879,14 +995,19 @@
     href="#zhou" onclick="return showTags('zhou')"
     title="show by Lin" type="button"
     class="tags">Lin</a><i>|</i><a
-    href="#acat" onclick="return showTags('atoc')"
+    href="#acat" onclick="return showTags('atop')"
     title="show all" type="button"
     class="tags">All</a><i>|</i>
   <noscript><span id="nojs">
     <a href="#acat" title="Category">分类</a>｜
   </span></noscript>
-  </span>目录
+  <span id="hamb" title="quick menu toggle">
+    <label for="cbox">&equiv;</label>
+  </span><i>|</i>
+  </span>
+  <span>目录</span>
 </h3>
+<input id="cbox" name="cbox" type="checkbox" hidden />
 
 <div class="atoc" name="atoc">
 <ul><!--start toc-->
@@ -898,30 +1019,30 @@
   <li id="d20070508x" class="ying engp-li" name="zhyx-li"><a href="#p20070508x"><u title="English poem">E</u> <b>Random Thought</b>〖随笔〗 <i>2007.05.08.</i></a></li>
   <li id="d20071214x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20071214x"><u title="English poem">E</u> <b>A Cyber Dream</b>〖网想曲〗 <i>2007.12.14.</i></a></li>
   <li id="d20080126x" class="mulu" name="zhyx-li"><a href="#p20080126x" title="Happy Birthday"><u>白话诗</u>【生日快乐】 <i>2008.01.26.</i></a></li>
-  <li id="d20080202x" class="ying engp-li view-li" name="zhou-li"><a href="#p20080202x" title="Somnambulate"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Night Mystery</b>〖<q>梦游</q>〗 <i>2008.02.02.</i></a></li>
+  <li id="d20080202x" class="ying engp-li show-li" name="zhou-li"><a href="#p20080202x" title="Somnambulate"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Night Mystery</b>〖<q>梦游</q>〗 <i>2008.02.02.</i></a></li>
   <li id="d20080207x" class="ying" name="zhyx-li"><a href="#p20080207x" title="Do You Cheer, Do You Hear?"> <b>Do You Hear</b>〖两只老虎〗 <i>2008.02.07.</i></a></li>
   <li id="d20080415x" class="ying engp-li" name="zhyx-li"><a href="#p20080415x" title=""> <b>One Day No See</b>〖一日不見〗 <i>2008.04.15.</i></a></li>
-  <li id="d20080301a" name="zhyx-li"><a href="#p20080301a"><u>ABBA</u> Andante, Andante【曼舞歌兮】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301c" name="zhyx-li"><a href="#p20080301c"><u>ABBA</u> Chiquitita【惜惜其佳】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301d" name="zhyx-li"><a href="#p20080301d"><u>ABBA</u> Dancing Queen【舞之情】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301e" name="zhyx-li"><a href="#p20080301e"><u>ABBA</u> Eagle【飞鹰】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301f" name="zhyx-li"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301h" name="zhyx-li"><a href="#p20080301h"><u>ABBA</u> I Have A Dream【我的梦】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301m" name="zhyx-li"><a href="#p20080301m"><u>ABBA</u> Move On【生活的航程】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301o" name="zhyx-li"><a href="#p20080301o"><u>ABBA</u> One Of Us【你我之间】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301s" name="zhyx-li"><a href="#p20080301s"><u>ABBA</u> Super Trouper【超级演出】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301t" name="zhyx-li"><a href="#p20080301t"><u>ABBA</u> Take A Chance On Me【给我机会】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301x" name="zhyx-li"><a href="#p20080301x"><u>ABBA</u> Thank You For The Music【感谢音乐】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301w" name="zhyx-li"><a href="#p20080301w" title="The Winner Takes It All (ABBA)"><u>ABBA</u> The Winner Takes ...【你赢了我所有】 <i>2008.03.01.</i></a></li>
-  <li id="d20080426d" name="zhyx-li"><a href="#p20080426d"><u title="Boney M">B/M</u> Daddy Cool【爸爸真酷】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426e" name="zhyx-li"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426h" name="zhyx-li"><a href="#p20080426h"><u title="Boney M">B/M</u> Hooray, Hooray!【小妹】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426a" name="zhyx-li"><a href="#p20080426a"><u title="Boney M">B/M</u> I'm Born Again【我的新生】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426b" name="zhyx-li"><a href="#p20080426b"><u title="Boney M">B/M</u> I See A Boat On The River【远行的船】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426c" name="zhyx-li"><a href="#p20080426c"><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426o" name="zhyx-li"><a href="#p20080426o"><u title="Boney M">B/M</u> Ocean Of Fantasy【大海幻想曲】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426v" name="zhyx-li"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426s" name="zhyx-li"><a href="#p20080426s"><u title="Boney M">B/M</u> Sunny【想你】 <i>2008.04.26.</i></a></li>
+  <li id="d20080301a" class="abba-li" name="zhyx-li"><a href="#p20080301a"><u>ABBA</u> Andante, Andante【曼舞歌兮】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301c" class="abba-li show-li" name="zhyx-li"><a href="#p20080301c"><q>☆</q> <u>ABBA</u> Chiquitita【惜惜其佳】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301d" class="abba-li" name="zhyx-li"><a href="#p20080301d"><u>ABBA</u> Dancing Queen【舞之情】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301e" class="abba-li" name="zhyx-li"><a href="#p20080301e"><u>ABBA</u> Eagle【飞鹰】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301f" class="abba-li" name="zhyx-li"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301h" class="abba-li" name="zhyx-li"><a href="#p20080301h"><u>ABBA</u> I Have A Dream【我的梦】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301m" class="abba-li" name="zhyx-li"><a href="#p20080301m"><u>ABBA</u> Move On【生活的航程】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301o" class="abba-li show-li" name="zhyx-li"><a href="#p20080301o"><q>☆</q> <u>ABBA</u> One Of Us【你我之间】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301s" class="abba-li" name="zhyx-li"><a href="#p20080301s"><u>ABBA</u> Super Trouper【超级演出】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301t" class="abba-li" name="zhyx-li"><a href="#p20080301t"><u>ABBA</u> Take A Chance On Me【给我机会】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301x" class="abba-li" name="zhyx-li"><a href="#p20080301x"><u>ABBA</u> Thank You For The Music【感谢音乐】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301w" class="abba-li" name="zhyx-li"><a href="#p20080301w" title="The Winner Takes It All (ABBA)"><u>ABBA</u> The Winner Takes ...【你赢了我所有】 <i>2008.03.01.</i></a></li>
+  <li id="d20080426d" class="boneym-li" name="zhyx-li"><a href="#p20080426d"><u title="Boney M">B/M</u> Daddy Cool【爸爸真酷】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426e" class="boneym-li" name="zhyx-li"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426h" class="boneym-li" name="zhyx-li"><a href="#p20080426h"><u title="Boney M">B/M</u> Hooray, Hooray!【小妹】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426a" class="boneym-li holly-li show-li" name="zhyx-li"><q>☆</q> <a href="#p20080426a"><u title="Christian song">H</u><u title="Boney M">B/M</u> I'm Born Again【我的新生】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426b" class="boneym-li" name="zhyx-li"><a href="#p20080426b"><u title="Boney M">B/M</u> I See A Boat On The River【远行的船】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426c" class="boneym-li holly-li" name="zhyx-li"><a href="#p20080426c"><u title="Christian song">H</u><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426o" class="boneym-li" name="zhyx-li"><a href="#p20080426o"><u title="Boney M">B/M</u> Ocean Of Fantasy【大海幻想曲】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426v" class="boneym-li" name="zhyx-li"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426s" class="boneym-li" name="zhyx-li"><a href="#p20080426s"><u title="Boney M">B/M</u> Sunny【想你】 <i>2008.04.26.</i></a></li>
   <li id="d20080730x" name="zhyx-li show-li"><a href="#p20080730x" title="Never Gonna Fall In Love Again"><q>☆</q> Never Gonna Fall ...【今夜逝去情不再】 <i>2008.07.30.</i></a></li>
   <li id="d20081229x" class="ying engp-li" name="zhyx-li"><a href="#p20081229x"><u title="English poem">E</u> <b>A Little Too Little</b>〖经济杂言〗 <i>2008.12.29.</i></a></li>
   <li id="d20081230x" class="ying engp-li" name="zhyx-li"><a href="#p20081230x"><u title="English poem">E</u> <b>Caribbean Poems</b>〖加勒比游记〗 <i>2008.12.30.</i></a></li>
@@ -943,21 +1064,21 @@
   <li id="d20100923x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20100923x" title="Ancient poems translation in English"><u title="English poems">E</u> <b>Chinese Poems in English</b>〖古诗英译〗 <i>2010.09.23.</i></a></li>
   <li id="d20101106x" class="ying engp-li" name="zhou-li"><a href="#p20101106x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Love Song</b>〖<q>愛之歌</q>〗 <i>2010.11.06.</i></a></li>
   <li id="d20101125x" class="ying engp-li" name="zhyx-li"><a href="#p20101125x"><b>Limerick Thanksgiving</b>〖感恩打油〗 <i>2010.11.25.</i></a></li>
-  <li id="d20101201x" name="zhyx-li"><a href="#p20101201x" title="God Rest Ye Merry Gentlemen (1760, Christmas Carol)"><u title="Christian song">C</u> God Rest Ye Merry ...【上帝讓人快樂】 <i>2010.12.01.</i></a></li>
-  <li id="d20101202x" name="zhyx-li"><a href="#p20101202x" title="Hark, the Herald Angels Sing (1739, Hymns and Sacred Poems)"><u title="Christian song">C</u> Hark, the Herald Angels Sing【天使高歌】 <i>2010.12.02.</i></a></li>
-  <li id="d20101206x" name="zhyx-li"><a href="#p20101206x" title="O Come, All Ye Faithful (1744, Christmas Carol)"><u title="Christian song">C</u> O Come, All Ye Faithful【萬方齊來敬仰】 <i>2010.12.06.</i></a></li>
-  <li id="d20101209x" name="zhyx-li"><a href="#p20101209x" title="What Child Is This (by William Chatterton Dix, 1865)"><u title="Christian song">C</u> What Child Is This【誰之子】 <i>2010.12.09.</i></a></li>
+  <li id="d20101201x" class="holly-li" name="zhyx-li"><a href="#p20101201x" title="God Rest Ye Merry Gentlemen (1760, Christmas Carol)"><u title="Christian song">H</u> God Rest Ye Merry ...【上帝讓人快樂】 <i>2010.12.01.</i></a></li>
+  <li id="d20101202x" class="holly-li show-li" name="zhyx-li"><a href="#p20101202x" title="Hark, the Herald Angels Sing (1739, Hymns and Sacred Poems)"><u title="Christian song">H</u> Hark, the Herald Angels Sing【天使高歌】 <i>2010.12.02.</i></a></li>
+  <li id="d20101206x" class="holly-li" name="zhyx-li"><a href="#p20101206x" title="O Come, All Ye Faithful (1744, Christmas Carol)"><u title="Christian song">H</u> O Come, All Ye Faithful【萬方齊來敬仰】 <i>2010.12.06.</i></a></li>
+  <li id="d20101209x" class="holly-li" name="zhyx-li"><a href="#p20101209x" title="What Child Is This (by William Chatterton Dix, 1865)"><u title="Christian song">H</u> What Child Is This【誰之子】 <i>2010.12.09.</i></a></li>
   <li id="d20101212x" class="ying engp-li" name="zhou-li"><a href="#p20101212x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>To Donna and Mike</b>〖聖誕賀卡〗 <i>2010.12.12.</i></a></li>
   <li id="d20110111x" class="ying engp-li" name="zhou-li"><a href="#p20110111x"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Farewell to Sharon</b>〖赠别〗 <i>2011.01.11.</i></a></li>
   <li id="d20110106x" class="ying engp-li show-li view-li" name="zhyx-li"><a href="#p20110106x"><q>☆</q> <u title="English lyrics">L</u> <span>The Puzzle Of Love</span>〖糊涂的爱〗 <i>2011.01.06.</i></a></li>
   <li id="d20110116x" class="mulu" name="zhou-li"><a href="#p20110116x" title="Sesame Purple Yam Cake (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【芝麻紫薯饼】 <i>2011.01.16.</i></a></li>
   <li id="d20110318x" class="ying engp-li show-li" name="zhyx-li"><a href="#p20110318x"><q>☆</q> <u title="English lyrics">L</u> <span>Legend</span>〖傳奇〗 <i>2011.03.18.</i></a></li>
   <li id="d20110318p" class="ying engp-li show-li" name="zhyx-li"><a href="#p20110318p"><q>☆</q> <u title="English lyrics">L</u> <span>Coming From The Prairie</span>〖我從草原來〗 <i>2011.03.18.</i></a></li>
-  <li id="d20110321x" name="zhyx-li"><a href="#p20110321x"><em title="Song by Adele">A</em> Set Fire To The Rain【雨落情逝心已焚】 <i>2011.03.21.</i></a></li>
-  <li id="d20121028x" name="zhyx-li"><a href="#p20121028x"><em title="Song by Adele">A</em> Rolling In the Deep【淪陷回憶裡】 <i>2012.10.28.</i></a></li>
-  <li id="d20121030x" name="zhyx-li"><a href="#p20121030x"><em title="Song by Adele">A</em> Don't You Remember【無愛的挽歌】 <i>2012.10.30.</i></a></li>
-  <li id="d20121030s" name="zhyx-li"><a href="#p20121030s"><em title="Song by Adele">A</em> Someone Like You【此情依舊】 <i>2012.10.30.</i></a></li>
-  <li id="d20121031x" name="zhyx-li"><a href="#p20121031x"><em title="Song by Adele">A</em> One And Only【愛的唯一】 <i>2012.10.31.</i></a></li>
+  <li id="d20110321x" class="adele-li" name="zhyx-li"><a href="#p20110321x"><em title="Song by Adele">A</em> Set Fire To The Rain【雨落情逝心已焚】 <i>2011.03.21.</i></a></li>
+  <li id="d20121028x" class="adele-li" name="zhyx-li"><a href="#p20121028x"><em title="Song by Adele">A</em> Rolling In the Deep【淪陷回憶裡】 <i>2012.10.28.</i></a></li>
+  <li id="d20121030x" class="adele-li" name="zhyx-li"><a href="#p20121030x"><em title="Song by Adele">A</em> Don't You Remember【無愛的挽歌】 <i>2012.10.30.</i></a></li>
+  <li id="d20121030s" class="adele-li show-li" name="zhyx-li"><a href="#p20121030s"><q>☆</q> <em title="Song by Adele">A</em> Someone Like You【此情依舊】 <i>2012.10.30.</i></a></li>
+  <li id="d20121031x" class="adele-li" name="zhyx-li"><a href="#p20121031x"><em title="Song by Adele">A</em> One And Only【愛的唯一】 <i>2012.10.31.</i></a></li>
   <li id="d20130112x" class="show-li" name="zhyx-li"><a href="#p20130112x"><q>☆</q> Beauty And A Beat【美麗和旋律】 <i>2013.01.12.</i></a></li>
   <li id="d20130602x" class="ying engp-li show-li view-li" name="zhyx-li"><a href="#p20130602x"><q>☆</q> <u title="English lyrics">L</u> <span>Under A Vast Sky</span>〖海闊天空〗 <i>2013.06.02.</i></a></li>
   <li id="d20130814x" class="show-li" name="zhyx-li"><a href="#p20130814x"><q>☆</q> Stronger【愛過心更強】 <i>2013.08.14.</i></a></li>
@@ -1139,7 +1260,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog engp view" name="zhou">
+<div class="blog engp show" name="zhou">
 <div class="geci"><h3 class="t3 geci" id="p20080202x">非打油者，「夢油」是也 <em></em></h3>
   无眠的灵魂
   在四处游荡
@@ -2325,7 +2446,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301a">Andante, Andante <em>(ABBA)</em></h3>
   Take it easy with me, please
   Touch me gently like a summer evening breeze
@@ -2401,7 +2522,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301c">Chiquitita <em>(ABBA)</em></h3>
   Chiquitita, tell me what's wrong
   You're enchained by your own sorrow
@@ -2485,7 +2606,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301d">Dancing Queen <em>(ABBA)</em></h3>
   You can dance, you can jive,
   having the time of your life
@@ -2553,7 +2674,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301e">Eagle <em>(ABBA)</em></h3>
   They came flying from far away,
   now I'm under their spell
@@ -2629,7 +2750,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301f">Fernando <em>(ABBA 1976)</em></h3>
   Can you hear the drums, Fernando?
   I remember long ago another starry night like this
@@ -2711,7 +2832,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301h">I Have A Dream <em>(ABBA)</em></h3>
   I have a dream, a song to sing
   To help me cope with anything
@@ -2765,7 +2886,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301m">Move On <em>(ABBA)</em></h3>
   “They say a restless body can hide a peaceful soul.
     A voyager, and a settler,
@@ -2849,7 +2970,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301o">One Of Us <em>(ABBA)</em></h3>
   They passed me by, all of those great romances
   You were, I felt, robbing me of my rightful chances
@@ -2927,7 +3048,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301s">Super Trouper <em>(ABBA)</em></h3>
   Super Trouper beams are gonna blind me
   But I won't feel blue,
@@ -3027,7 +3148,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301t">Take A Chance On Me <em>(ABBA)</em></h3>
   <i>Chorus:</i>
   If you change your mind, I'm the first in line
@@ -3111,7 +3232,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301x">Thank You For The Music <em>(ABBA)</em></h3>
   I'm nothing special, in fact I'm a bit of a bore
   If I tell a joke, you've probably heard it before
@@ -3171,7 +3292,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog abba" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080301w">The Winner Takes It All <em>(ABBA)</em></h3>
   I don't wanna talk / about the things we've gone through
   Though it's hurting me, now it's history
@@ -3239,7 +3360,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426d">Daddy Cool <em>(1976)</em></h3>
   She's crazy like a fool
   — What about it daddy cool
@@ -3287,7 +3408,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426e">El Lute <em>(1979)</em></h3>
   This is the story of El Lute -
   A man who was born to be hunted like a wild animal.
@@ -3397,7 +3518,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426h">Hooray, Hooray! It's A Holi-Holiday <em>(1979)</em></h3>
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
   Di-di-di-di-du di-di-di-di-du heydiheydihoh
@@ -3487,7 +3608,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym holly show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426a">I Am Born Again <em>(1979)</em></h3>
   I'm born again, I feel free
   No longer alone
@@ -3561,7 +3682,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426b">I See A Boat On The River <em>(1980)</em></h3>
   He left on a boat / Just to follow a dream
   He had to find.
@@ -3637,7 +3758,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym holly" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426c">Mary's Boy Child / Oh My Lord <em>(1978)</em></h3>
   Mary's boy child Jesus Christ,
   Was born on Christmas Day.
@@ -3783,7 +3904,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426o">Ocean Of Fantasy <em>(1979)</em></h3>
   My world is filled with oceans
   Oceans of fantasy
@@ -3849,7 +3970,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426v">River Of Babylon <em>(1978)</em></h3>
   <i>*</i> By the rivers of Babylon,
   there we sat down;
@@ -3911,7 +4032,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog boneym" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20080426s">Sunny <em>(1976)</em></h3>
   Sunny, yesterday my life was filled with rain.
   Sunny, you smiled at me and really eased the pain.
@@ -4105,7 +4226,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog holly" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101201x">God Rest Ye Merry Gentlemen <em>(1760)</em></h3>
   God rest ye merry gentlemen
   Let nothing you dismay
@@ -4231,7 +4352,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog holly show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101202x">Hark, the Herald Angels Sing <em>(1739)</em></h3>
   Hark the herald angels sing
   “Glory to the newborn King!
@@ -4303,7 +4424,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog holly" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101206x">O Come, All Ye Faithful <em>(1744)</em></h3>
   O come, all ye faithful, joyful and triumphant,
   O come ye, O come ye, to Bethlehem.
@@ -4355,7 +4476,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog holly" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20101209x">What Child Is This / Greensleeves <em>(1865)</em></h3>
   What child is this who laid to rest
   On Mary's lap is sleeping
@@ -4415,7 +4536,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog adele" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20110321x">Set Fire To The Rain <em>(2011)</em></h3>
   I let it fall, my heart,
   And as it fell, you rose to claim it,
@@ -4511,7 +4632,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog adele" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121028x">Rolling In the Deep <em></em></h3>
   There's a fire starting in my heart
   Reaching a fever pitch and it's bring me out the dark
@@ -4581,7 +4702,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog adele" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121030x">Don't You Remember <em>(2011)</em></h3>
   When will I see you again?
   You left with no goodbye, not a single word was said,
@@ -4644,7 +4765,7 @@
 <a href="#chinese-lyrics" class="goto">⇑</a>
 
 
-<div class="blog" name="zhyx">
+<div class="blog adele show" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121030s">Someone Like You <em>(2011)</em></h3>
   I heard that you're settled down
   That you found a girl and you're married now
@@ -4734,7 +4855,7 @@
 
 
 <!--中文填词-->
-<div class="blog" name="zhyx">
+<div class="blog adele" name="zhyx">
 <div class="yuan"><h3 class="t3 yuan" id="p20121031x">One And Only <em>(2011)</em></h3>
   You've been on my mind
   I grow fonder every day,
@@ -5921,11 +6042,26 @@
 
 <!--Bottom-Left Anchor-->
 <div id="goto" class="noprint">
-  <div id="acat" class="noprint">
+  <span id="aquo">&laquo;</span>
+<div id="menu" class="noprint">
+  <span title="Close menu">
+    <label id="hide" for="cbox">ⓧ</label><!--&#9447;-->
+  </span>
+<div id="acat" class="noprint">
   <a href="#atoc" title="⇐ Back to TOC ⇒"
      onclick="return setLocation('atoc', 'acat')">目录</a><br/>
   <a href="#catg" title="⇐ Back to Category ⇒"
      onclick="return setLocation('catg', 'acat')">分类</a>
+  <br/>
+  <a href="#abba" title="ABBA Lyrics" class="tags"
+     onclick="return showTags('abba')">ABBA</a>
+  <a href="#boneym" title="Boney M Lyrics" class="tags"
+     onclick="return showTags('boneym')">Boney M</a>
+  <br/>
+  <a href="#adele" title="Adele Lyrics" class="tags"
+     onclick="return showTags('adele')">Adele</a>
+  <a href="#holly" title="Christian Lyrics" class="tags"
+     onclick="return showTags('holly')">Holly Songs</a>
   <br/>
   <a href="#zhyx" title="Show by Jason" class="tags"
      onclick="return showTags('zhyx')">Jason</a>
@@ -5938,7 +6074,7 @@
      onclick="return showTags('show')">&star;</a>
   <a href="#engp" title="English poems" class="tags"
      onclick="return showTags('engp')">E</a>
-  <a href="#view" title="Show ★★★" class="tags"
+  <a href="#view" title="Select ★★★" class="tags"
      onclick="return showTags('view')">&starf;</a>
   <p><span>………………</span></p>
   <span title="English">英语</span>
@@ -5953,29 +6089,47 @@
     href="#chinese-poems" title="Chinese Poems">诗词</a><br/>
   &middot; <a onclick="return setLocation('chinese-dayou')"
     href="#chinese-dayou" title="Chinese Etc.">白话</a><br/>
-  <br/>
-  </div>
-  <span id="aquo">&laquo;</span>
+</div><!--#acat-->
   <span id="back"><a href="#atop" class="noprint"
     onclick="return setLocation('atop', 'id-back')"
     title="⇧ Back to Home ⇧"><span>⇧</span></a>
   </span>
-</div>
+</div><!--#menu-->
+</div><!--#goto-->
 
 <!--Category List-->
-<div class="catg center"><span>英文〖
+<div class="catg center">
+  <div>
+  <a href="#atop" title="show all lyrics/poems"
+     class=tags onclick="return showTags('atop')">
+     Show All</a> |
+  英文〖
   <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
   <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
   <a class="cy" href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
   <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
-  <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
-</span>
-<div id="home" class="noprint">
-  <a href="#atop" class="noprint"
-    onclick="return setLocation('atop', 'id-home')"
-    title="⟰ Back to Home ⟰">&#8679;</a>
-</div>
-</div>
+  <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文 |
+  <a href="#atop" title="显示所有诗歌" class="tags"
+     onclick="return showTags('atop')">全</a>
+  </div>
 
+  <p class="catg center links"> &bull;
+    <a href="https://divertidalz.blogspot.com/"
+       title="divertialz blog">blog</a> &bull;
+    <a href="https://dockerian.github.io/poetry/shiji.html"
+       title="Jason's poetry collection">poetry</a> &bull;
+    <a href="https://dockerian.github.io"
+       title="dockerian home">dockerian</a> &bull;
+    <a href="../"
+      title="more collection and tools">others</a> &bull;
+  </p>
+  <div id="home" class="noprint">
+    <a href="#atop" class="noprint"
+      onclick="return setLocation('atop', 'id-home')"
+      title="⟰ Back to Title ⟰">&#8679;</a>
+  </div>
+</div><!--bottom category list-->
+
+<!--END-->
 </body>
 </html>
