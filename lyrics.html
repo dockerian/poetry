@@ -6,6 +6,24 @@
 <head>
 <title>纱糸轩诗歌集 • Lyrics & Poems</title>
 <script type="text/javascript"><!--// script
+
+  const doCount = async (s, disp, c) => {
+    let docFunc = document.getElementById;
+    let getElem = docFunc.bind(document);
+    let elemVal = getElem('counter');
+    let elemSub = getElem('subtitle');
+    let counter = parseInt(elemVal.textContent, 10);
+    let subtext = elemSub.textContent;
+    let sum = isNaN(counter) ? 0 : counter;
+    let chk = disp == 'inline-block';
+    if (chk && s.endsWith('-li')) {
+      elemVal.textContent = `${sum+c}`;
+      return sum + c;
+    } else if (disp == 'none' || s == 'blog') {
+      elemVal.textContent = '';
+    }
+    return 0;
+  }
   const showAll = async (s,
       getFunc = document.querySelectorAll,
       display = 'block') => {
@@ -21,6 +39,7 @@
         e.style.visibility = v ? 'visible' : 'collapse';
         e.style.display = display;
       });
+      await doCount(s, display, alist.length);
       console.log(s, alist.length);
       return alist;
     } catch (err) {
@@ -138,14 +157,13 @@
     // console.log(`tag = ${tag}, source = ${v}`);
     if (typeof tag != 'undefined' && tag) {
       let pageUrl = getPageUrl();
-      let url = `${pageUrl}#${tag}`;
+      let anchor = tag == 'atop' ? '' : tag;
+      let url = `${pageUrl}#${anchor}`;
       console.log(`set location = ${url}`);
       window.location.replace(url);
       if (tag == 'atop') {
         window.scrollTo(0, 0);
-        return false;
-      }
-      try {
+      } else try {
         let query = document.querySelector.bind(document);
         let anchor = query(`#${tag}`).offsetTop;
         console.log(`anchor to #${tag} ...`);
@@ -548,11 +566,15 @@
     text-indent: 0em;
     cursor: pointer;
   }
-  h1.h1 span#subtitle {
+  h1.h1 span#counter, h1.h1 span#subtitle {
     vertical-align: super;
     font-style: normal;
     font-weight: normal;
     font-size: 0.5em;
+  }
+  h1.h1 span#counter {
+    vertical-align: top;
+    font-size: 0.3em;
   }
   h2.h2 {
     color: beige;
@@ -834,7 +856,7 @@
 <a id="view" name="view"></a><!--anchor: view-->
 <h1 id="atop" class="h1" title="Lyrics and Poems"
     onclick="return setLocation('catg', 'h1')">纱糸轩诗歌集
-  <span id="subtitle"></span>
+  <span id="subtitle"></span><span id="counter"></span>
 </h1>
 <a id="zhou" name="zhou"></a><!--anchor: zhou-->
 
