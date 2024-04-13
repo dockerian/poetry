@@ -7,6 +7,7 @@
   * [王力《诗词格律》](./王力-诗词格律.epub)（增订本）
   * [平水韵表](./平水韵表.pdf)｜[doc](../books/平水韵表.doc)
   * [词林正韵](./词林正韵.pdf)｜[doc](../books/词林正韵.doc)
+  * [英文诗歌](../blog/poetry-books.md)
 
 
 <br/><a id="res" name="res"></a>
