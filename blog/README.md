@@ -7,8 +7,12 @@
 
   * 读书笔记 [html](mynotes.html)｜[text](mynotes.txt)
 
-    - 毛泽东[《心之力》](mao-xin.html)
+    - 毛泽东：[心之力](mao-xin.html)
     - 周恩来：[杂文](zhou.html)
+
+  * 英语诗歌
+
+    - [Poetry books](./poetry-books.md)
 
   * 笑料摘抄
 
