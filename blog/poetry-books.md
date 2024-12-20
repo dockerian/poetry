@@ -102,6 +102,28 @@
 * "The Vintage Book of Contemporary Poetry", edited by J. D. McClatchy. (another “textbook” I require for my beginning poetry rewriting class)
 
 
+
+<br/><hr/>
+## Poem Examples
+
+#### Anti-War Activists Protest Harvard Kennedy School Professor
+
+  ```
+  Meghan O’Sullivan, you can’t hide,
+  we can see your war crimes.
+  When missiles fly, people die,
+  and O’Sullivan’s profits multiply.
+
+  She directs Weapons company
+  while teaching Public Policy
+  She invades countries (shame on Harvard Kennedy)
+  while teaching AGEQ countries
+  Shame on Harvard Kennedy
+  ```
+
+
+
+<br/>
 ### See also
 - [BBC Maestro](https://www.bbcmaestro.com/blog/5-of-the-best-books-on-writing-poetry)
 - [DIY MFA](https://diymfa.com/reading/books-craft-of-poetry/)
