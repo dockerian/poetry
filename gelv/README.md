@@ -18,7 +18,7 @@
   - [紅樓詩鈔](html/shiji-honglou.html)｜
     [清明詩鈔](html/shiji-qingming.html)
   - [纱糸轩集](../lyrics.html)｜
-    [舟山詩詞](../shiji.html)
+    [舟山詩詞](../shiji.html)（[图片](https://photos.app.goo.gl/9t369STJZRnp9cD72)）
   - [格律速成](html/5-min.html)｜
     [马蹄韵格](html/matiyun.html)｜
     [格律圖解](html/tujie.html)（
