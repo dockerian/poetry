@@ -123,12 +123,14 @@
 
 #### From Alfred, Lord Tennyson's poem The Charge of the Light Brigade
 
-  ```Not to reason why but to do and die
+  ```
+  Not to reason why but to do and die
   ```
 
 #### John Muir "misquote"
 
-  ```Into the forest I go / to lose my mind and find my soul
+  ```
+  Into the forest I go / to lose my mind and find my soul
   ```
 
 
