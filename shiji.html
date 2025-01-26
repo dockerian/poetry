@@ -7,6 +7,7 @@
 <title>舟山詩詞 | Poetry Collection</title>
 <link rel="icon" type="image/png" href="favicon.png"/>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <style type="text/css">
   a {
     color: steelblue; text-decoration: none;
@@ -214,6 +215,14 @@
   }
   span.futi {
     font-weight: normal;
+  }
+  span.agen, .poem var {
+    color: darkslategray;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    border-bottom: solid 0.125em #A0A0A0;
+    padding-bottom: 0.075em;
   }
   span.fair, .poem i {
     font-style: normal;
@@ -424,6 +433,88 @@
       padding: 0em 0.25em 0.25em 0.25em;
     }
   }
+  @media only screen and (max-width: 960px) and (max-height: 720px) and (orientation: landscape) {
+    body {
+      padding: 0.5em;
+    }
+    body, div, p {
+      border: none;
+      line-height: 1.25em;
+      padding: 0;
+      min-height: 100vh;
+      writing-mode: vertical-rl;
+      text-align: left;
+    }
+    div.center, h1, h2, h2#main, h3, .futi {
+      background: none;
+      margin-top: 2em; padding: 0em;
+      text-align: left;
+    }
+    div#atoc {
+      display: none;
+    }
+    h1, h2, h2#main, h3 {
+      border: none;
+      margin-right: 0.75em;
+      font-size: 1em;
+    }
+    h4, h4.futi, p.futi {
+      border: none;
+      margin: 2em 0.25em 0em 0em;
+      padding: 0em;
+    }
+    p.mulu {
+      font-size: 0.85em;
+      max-height: 100vh;
+      max-width: 100vw;
+    }
+    p.mulu a, span.date, span.year {
+      letter-spacing: -0.25em;
+      /*
+      text-combine-upright: digits 2;
+      */
+      text-orientation: upright;
+      vertical-align: baseline;
+    }
+    span.year var {
+      text-orientation: mixed;
+    }
+    span.dian, .poem u {
+      border: none;
+      border-left: dotted 0.25em yellowgreen;
+      padding-left: 0.01em;
+    }
+    span.agen, .poem var {
+      border: none;
+      border-left: solid 0.125em #A0A0A0;
+      padding-left: -0.01em;
+      color: darkslategray;
+    }
+    span.fair, .poem i {
+      border: none;
+      border-left: dotted 0.25em darkseagreen;
+      padding-left: 0.0em;
+    }
+    span.good, .poem b {
+      border: none;
+      border-left: dotted 0.25em orange;
+      padding-left: 0.0em;
+    }
+    div#catg a, div#catg span {
+      text-orientation: upright;
+      text-combine-upright: all;
+      vertical-align: top;
+    }
+    div#catg .futi, h4 .futi {
+      margin: 0em;
+    }
+    div#catg.center {
+      color: gray;
+    }
+    #arrow {
+      background: none;
+    }
+  }
   @media print {
     body {
       font-size: 1.5em;
@@ -468,225 +559,237 @@
 <a href="#boathill-qigu">七言</a> |
 <a href="#boathill-qilv">七律</a> |
 <a href="#boathill-wulv">五律</a>
-<p class="spbr"><br/></p>
-<a href="#y1985">1985</a> |
-<a href="#y1990">1990</a> |
-<a href="#y1995">1995</a> |
-<a href="#y2000">2000</a> |
-<a href="#y2005">2005</a> |
-<a href="#y2010">2010</a> |
-<a href="#y2015">2015</a> |
-<a href="#y2020">2020</a><!-- |
-<a href="#y2025">2025</a>-->
+<p class="spbr"><br/></p><span class="futi">19</span> ·
+<a href="#y1985">85</a> |
+<a href="#y1990">90</a> |
+<a href="#y1995">95</a> | <span class="futi">20</span> ·
+<a href="#y2000">00</a> |
+<a href="#y2005">05</a> |
+<a href="#y2010">10</a> |
+<a href="#y2015">15</a> |
+<a href="#y2020">20</a> |
+<a href="#y2025">25</a><!-- |
+<a href="#y2030">30</a>-->
 </div>
 
 
 
-<h2 id="htoc">﻿舟山诗词目录　<span class="year">1979.4─2024.9</span></h2>
+
+
+<h2 id="htoc">﻿舟山诗词目录　<span class="year">1979·4<var> ─ </var>2025·6</span></h2>
 <hr/>
-<p class="mulu" id="y1979-chun">(2) 五律•春游鳝溪　二首　　　　　　　　<a href="#p1979-chun">1979．⒋</a></p>
-<p class="mulu" id="y1979-qiuy">(2) 五律•秋游青芝寺　二首　　　　　　　<a href="#p1979-qiuy">1979．⒐</a></p>
-<p class="mulu" id="y1980-xihu">(2) 五律•西湖　二首　　　　　　　　　　<a href="#p1980-xihu">1980．⒏</a><a id="y1980" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y1982-chun">(1) 忆江南•榕城春　　　　　　　　　　　<a href="#p1982-chun">1982．⒐</a></p>
-<p class="mulu" id="y1982-xihu">(1) 采桑子•湖趣　　　　　　　　　　　　<a href="#p1982-xihu">1982．⒐</a></p>
-<p class="mulu" id="y1982-rain">(1) 渔家傲•夜雨泊江　　　　　　　　　　<a href="#p1982-rain">1982．⒐</a></p>
-<p class="mulu" id="y1982-xiyn">(1) 六洲歌头•夕阳西下　　　　　　　　　<a href="#p1982-xiyn">1982．⒐</a></p>
-<p class="mulu" id="y1982-qigu">(3) 七言•江南感赋　春思　闽浪残昏　　　<a href="#p1982-qigu">1982．⒑</a></p>
-<p class="mulu" id="y1983-chux">(1) 水仙子•除夕　　　　　　　　　　　　<a href="#p1983-chux">1983．⒉</a></p>
-<p class="mulu" id="y1983-yuan">(1) 菩萨蛮•元夕　　　　　　　　　　　　<a href="#p1983-yuan">1983．⒉</a></p>
-<p class="mulu" id="y1983-xiao">(1) 调笑令•踏青　　　　　　　　　　　　<a href="#p1983-xiao">1983．⒋</a></p>
-<p class="mulu" id="y1983-jyou">(1) 少年游•寄友　　　　　　　　　　　　<a href="#p1983-jyou">1983．⒌</a></p>
-<p class="mulu" id="y1983-qing">(1) 满江红•清明　　　　　　　　　　　　<a href="#p1983-qing">1983．⒌</a></p>
-<p class="mulu" id="y1984-chux">(1) 青玉案•除夕　　　　　　　　　　　　<a href="#p1984-chux">1984．⒉</a></p>
-<p class="mulu" id="y1984-dlyu">(1) 渔歌子•大连风情小记　　　　　　　　<a href="#p1984-dlyu">1984．⒏</a></p>
-<p class="mulu" id="y1984-dlwu">(1) 巫山一段雲•雲中飞行　　　　　　　　<a href="#p1984-dlwu">1984．⒏</a></p>
-<p class="mulu" id="y1984-dlhg">(1) 望海潮•旅顺口怀古　　　　　　　　　<a href="#p1984-dlhg">1984．⒏</a></p>
-<p class="mulu" id="y1984-dlbx">(1) 拜星月慢•雨後黄昏，游大连星海公园　<a href="#p1984-dlbx">1984．⒏</a></p>
-<p class="mulu" id="y1985-qing">(1) 忆秦娥•清明　　　　　　　　　　　　<a href="#p1985-qing">1985．⒈</a><a id="y1985" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y1985-qigu">(2) 七言•清明诗钞题後　二首　　　　　　<a href="#p1985-qigu">1985．⒈</a></p>
-<p class="mulu" id="y1985-jyou">(1) 七言•寄书友人题後　　　　　　　　　<a href="#p1985-jyou">1985．⒈</a></p>
-<p class="mulu" id="y1985-yuan">(1) 人月圆•十五　　　　　　　　　　　　<a href="#p1985-yuan">1985．⒉</a></p>
-<p class="mulu" id="y1985-shan">(3) 七言•黄山题咏　三首　　　　　　　　<a href="#p1985-shan">1985．⒏</a></p>
-<p class="mulu" id="y1985-huai">(1) 七言•黄山抒怀　　　　　　　　　　　<a href="#p1985-huai">1985．⒏</a></p>
-<p class="mulu" id="y1986-fall">(1) 五律•秋怀　　　　　　　　　　　　　<a href="#p1986-fall">1986．⒑</a></p>
-<p class="mulu" id="y1986-shan">(1) 五律•山中感赋　　　　　　　　　　　<a href="#p1986-shan">1986．⒑</a></p>
-<p class="mulu" id="y1986-sanq">(2) 散曲•风雲健　二首　　　　　　　　　<a href="#p1986-sanq">1986．⒒</a></p>
-<p class="mulu" id="y1987-chux">(1) 五律•新春试笔　　　　　　　　　　　<a href="#p1987-chux">1987．⒉</a></p>
-<p class="mulu" id="y1987-summ">(1) 五律•夏日龙门涧道中　　　　　　　　<a href="#p1987-summer">1987．⒏</a></p>
-<p class="mulu" id="y1988-rain">(1) 五律•夜雨邀同窗龚学士戏作　　　　　<a href="#p1988-rain">1988．⒍</a></p>
-<p class="mulu" id="y1989-sanq">(1) 散曲•寒夜别　　　　　　　　　　　　<a href="#p1989-sanq">1989．⒈</a></p>
-<p class="mulu" id="y1989-snow">(1) 新韵文诗•雪　　　　　　　　　　　　<a href="#p1989-snow">1989．⒓</a></p>
-<p class="mulu" id="y1992-newy">(1) 五律•壬申新年赋笔　　　　　　　　　<a href="#p1992-newy">1992．⒉</a><a id="y1990" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y1993-rong">(1) 五律•榕城留句　　　　　　　　　　　<a href="#p1993-rong">1993．⒊</a></p>
-<p class="mulu" id="y1993-yequ">(1) 五律•夜曲　　　　　　　　　　　　　<a href="#p1993-yequ">1993．⒊</a></p>
-<p class="mulu" id="y1994-chun">(1) 临江仙•惜春　　　　　　　　　　　　<a href="#p1994-chun">1994．⒊</a></p>
-<p class="mulu" id="y1994-qiuy">(2) 五律•秋夜　二首　　　　　　　　　　<a href="#p1994-qiuy">1994．⒑</a></p>
-<p class="mulu" id="y1994-qing">(2) 五律•离情　二首　　　　　　　　　　<a href="#p1994-qing">1994．⒒</a></p>
-<p class="mulu" id="y1994-jizi">(3) 五律•集字　三首　　　　　　　　　　<a href="#z_acrostic">1994．⒓</a></p>
-<p class="mulu" id="y1995-mein">(1) 五律•美人　　　　　　　　　　　　　<a href="#p1995-mein">1995．⒈</a><a id="y1995" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y1995-liux">(6) 五律•留香集　六首　　　　　　　　　<a href="#p1995-liux">1995．⒉</a></p>
-<p class="mulu" id="y1995-wuti">(1) 五律•無题　　　　　　　　　　　　　<a href="#p1995-wuti">1995．⒉</a></p>
-<p class="mulu" id="y1995-acac">(1) 五律•相思　　　　　　　　　　　　　<a href="#p1995-acac">1995．⒉</a></p>
-<p class="mulu" id="y1995-kesi">(2) 五律•客思　二首　　　　　　　　　　<a href="#p1995-kesi">1995．⒉</a></p>
-<p class="mulu" id="y1995-ymei">(1) 虞美人•伤春景　　　　　　　　　　　<a href="#p1995-ymei">1995．⒊</a></p>
-<p class="mulu" id="y1995-huaa">(1) 五律•画帘　　　　　　　　　　　　　<a href="#p1995-huaa">1995．⒐</a></p>
-<p class="mulu" id="y1995-chun">(1) 五律•春意　　　　　　　　　　　　　<a href="#p1995-chun">1995．⒑</a></p>
-<p class="mulu" id="y1995-fall">(2) 五律•秋风　二首　　　　　　　　　　<a href="#p1995-fall">1995．⒒</a></p>
-<p class="mulu" id="y1995-suzq">(1) 虞美人•诉春情　　　　　　　　　　　<a href="#p1995-suzq">1995．⒒</a></p>
-<p class="mulu" id="y1995-xian">(2) 臨江仙•春風＊二首　　　　　　　　　<a href="#p1995-xian">1995．⒒</a></p>
-<p class="mulu" id="y1995-jijv">(3) 五律•春册集句　三首　　　　　　　　<a href="#p1995-jijv">1995．⒒</a></p>
-<p class="mulu" id="y1995-hong">(1) 五律•红楼集句　　　　　　　　　　　<a href="#p1995-hong">1995．⒒</a></p>
-<p class="mulu" id="y1995-xixj">(2) 五律•西厢　二首　　　　　　　　　　<a href="#p1995-xixj">1995．⒒</a></p>
-<p class="mulu" id="y1995-wulv">(5) 五律•孤夜　五首　　　　　　　　　　<a href="#p1995-wulv">1995．⒒</a></p>
-<p class="mulu" id="y1996-chun">(1) 临江仙•感赋　　　　　　　　　　　　<a href="#p1996-chun">1996．⒊</a></p>
-<p class="mulu" id="y1996-jizi">(1) 五律•送别　　　　　　　　　　　　　<a href="#p1996-jizi">1996．⒋</a></p>
-<p class="mulu" id="y1997-zlin">(1) 满江红•致周琳　　　　　　　　　　　<a href="#p1997-zlin">1997．⒊</a></p>
-<p class="mulu" id="y1998-zqiu">(1) 水调歌头•中秋　　　　　　　　　　　<a href="#p1998-zqiu">1998．⒐</a></p>
-<p class="mulu" id="y1999-zlin">(1) 金缕曲•中秋寄格格　　　　　　　　　<a href="#p1999-zlin">1999．⒐</a></p>
-<p class="mulu" id="y1999-zqiu">(1) 金缕曲•中秋书怀　　　　　　　　　　<a href="#p1999-zqiu">1999．⒐</a></p>
-<p class="mulu" id="y2002-rain">(1) 新韵文诗•你和雨　　　　　　　　　　<a href="#p2002-rain">2002．⒊</a><a id="y2000" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2003-zlin">(1) 五律•今夜　　　　　　　　　　　　　<a href="#p2003-zlin">2003．⒋</a></p>
-<p class="mulu" id="y2003-hawa">(1) 五律•夏威夷　　　　　　　　　　　　<a href="#p2003-hawa">2003．⒌</a></p>
-<p class="mulu" id="y2006-hiki">(2) 五律•二月登高　　　　　　　　　　　<a href="#p2006-hiki">2006．⒉</a><a id="y2005" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2006-duiz">(*) 对联•同学盛会　　　　　　　　　　　<a href="#p2006-duiz">2006．⒉</a></p>
-<p class="mulu" id="y2006-reun">(1) 水调歌头•會東　　　　　　　　　　　<a href="#p2006-reun">2006．⒊</a></p>
-<p class="mulu" id="y2006-reus">(1) 临江仙•再韻會東　　　　　　　　　　<a href="#p2006-reus">2006．⒊</a></p>
-<p class="mulu" id="y2006-chun">(1) 五律•春日午後　　　　　　　　　　　<a href="#p2006-chun">2006．⒍</a></p>
-<p class="mulu" id="y2006-fall">(1) 七言•柏梁體秋韻　　　　　　　　　　<a href="#p2006-fall">2006．⒐</a></p>
-<p class="mulu" id="y2006-meng">(1) 七言•冬夜记梦　　　　　　　　　　　<a href="#p2006-meng">2006．⒓</a></p>
-<p class="mulu" id="y2007-rain">(1) 五律•风雨　　　　　　　　　　　　　<a href="#p2007-rain">2007．⒌</a></p>
-<p class="mulu" id="y2007-nwcl">(1) 七律•流言　　　　　　　　　　　　　<a href="#p2007-nwcl">2007．⒌</a></p>
-<p class="mulu" id="y2007-nwcf">(1) 七言•讽言　　　　　　　　　　　　　<a href="#p2007-nwcf">2007．⒌</a></p>
-<p class="mulu" id="y2007-nwcn">(1) 七律•致贺　　　　　　　　　　　　　<a href="#p2007-nwcn">2007．⒍</a></p>
-<p class="mulu" id="y2008-zlin">(1) 蝶戀花•腊雪贺辰致琳儿　　　　　　　<a href="#p2008-zlin">2008．⒈</a></p>
-<p class="mulu" id="y2008-zqiu">(2) 七律•中秋二首　　　　　　　　　　　<a href="#p2008-zqiu">2008．⒐</a></p>
-<p class="mulu" id="y2008-crbn">(1) 七律•加勒比游记　　　　　　　　　　<a href="#p2008-crbn">2008．⒓</a></p>
-<p class="mulu" id="y2008-snow">(1) 七律•雪花　　　　　　　　　　　　　<a href="#p2008-snow">2008．⒓</a></p>
-<p class="mulu" id="y2009-zlin">(1) 五律•臘九賀辰　　　　　　　　　　　<a href="#p2009-zlin">2009．⒈</a></p>
-<p class="mulu" id="y2009-slan">(1) 七言•串烧网络流行语　　　　　　　　<a href="#p2009-slan">2009．⒈</a></p>
-<p class="mulu" id="y2009-news">(1) 七言•咏时事　　　　　　　　　　　　<a href="#p2009-news">2009．⒈</a></p>
-<p class="mulu" id="y2009-zqiu">(2) 七律•己丑中秋同韻二首　　　　　　　<a href="#p2009-zqiu">2009．⒐</a></p>
-<p class="mulu" id="y2009-trip">(2) 五律•冬月遠行二首　　　　　　　　　<a href="#p2009-trip">2009．⒓</a></p>
-<p class="mulu" id="y2010-rain">(1) 七言•雨中思　　　　　　　　　　　　<a href="#p2010-rain">2010．⒈</a><a id="y2010" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2010-ymei">(2) 虞美人•想念二章（冬雲、冬雨）　　　<a href="#p2010-ymei">2010．⒈</a></p>
-<p class="mulu" id="y2010-fiji">18) 天净沙•今韵斐济十题　　　　　　　　<a href="#p2010-fiji">2010．⒉</a></p>
-<p class="mulu" id="y2010-fijk">(2) 望海潮•斐济珊瑚海岸　　　　　　　　<a href="#p2010-fijk">2010．⒉</a></p>
-<p class="mulu" id="y2010-fijx">(1) 英文诗•告别斐济　　　　　　　　　　<a href="#p2010-fijx">2010．⒉</a></p>
-<p class="mulu" id="y2010-shan">(2) 山坡羊•西北偏北国家公园二首　　　　<a href="#p2010-shan">2010．⒏</a></p>
-<p class="mulu" id="y2010-zqiu">(2) 水调歌头•中秋　　　　　　　　　　　<a href="#p2010-zqiu">2010．⒐</a></p>
-<p class="mulu" id="y2010-fall">(1) 英文诗•秋色雷德蒙　　　　　　　　　<a href="#p2010-fall">2010．⒑</a></p>
-<p class="mulu" id="y2010-meng">(1) 七言•梦中梦　　　　　　　　　　　　<a href="#p2010-meng">2010．⒑</a></p>
-<p class="mulu" id="y2011-rain">(2) 七律•寒雨二首　　　　　　　　　　　<a href="#p2011-rain">2011．⒈</a></p>
-<p class="mulu" id="y2011-zhou">(1) 沁園春•重懷周公和毛詞原韻　　　　　<a href="#p2011-zhou">2011．⒈</a></p>
-<p class="mulu" id="y2011-chen">(1) 新韵文诗•晨跑　　　　　　　　　　　<a href="#p2011-chen">2011．⒈</a></p>
-<p class="mulu" id="y2011-newy">(1) 英文诗•新年伊始　　　　　　　　　　<a href="#p2011-newy">2011．⒉</a></p>
-<p class="mulu" id="y2011-yexn">(1) 五律•夜寻　　　　　　　　　　　　　<a href="#p2011-yexn">2011．⒉</a></p>
-<p class="mulu" id="y2011-refx">(1) 七律•反思（普韻）　　　　　　　　　<a href="#p2011-refx">2011．⒉</a></p>
-<p class="mulu" id="y2011-douh">(1) 七律•題四川豆花莊　　　　　　　　　<a href="#p2011-douh">2011．⒉</a></p>
-<p class="mulu" id="y2011-meng">(1) 五言•梦醒　　　　　　　　　　　　　<a href="#p2011-meng">2011．⒍</a></p>
-<p class="mulu" id="y2011-fall">(1) 行香子•中秋　　　　　　　　　　　　<a href="#p2011-fall">2011．⒐</a></p>
-<p class="mulu" id="y2011-cali">(5) 行香子•加州行五首　　　　　　　　　<a href="#p2011-cali">2011．⒐</a></p>
-<p class="mulu" id="y2011-suke">(1) 行香子•蘇克杉山　　　　　　　　　　<a href="#p2011-suke">2011．⒑</a></p>
-<p class="mulu" id="y2012-shan">(3) 七律•看山三首　　　　　　　　　　　<a href="#p2012-shan">2012．⒍</a></p>
-<p class="mulu" id="y2012-fall">(4) 七律•秋興四首　　　　　　　　　　　<a href="#p2012-fall">2012．⒑</a></p>
-<p class="mulu" id="y2013-sick">(1) 七律•病中　　　　　　　　　　　　　<a href="#p2013-sick">2013．⒒</a></p>
-<p class="mulu" id="y2014-xiyn">(1) 行香子•火燒天宮（附英文版）　　　　<a href="#p2014-xiyn">2014．⒉</a></p>
-<p class="mulu" id="y2014-noon">(1) 雙調憶江南•午後春光　　　　　　　　<a href="#p2014-noon">2014．⒊</a></p>
-<p class="mulu" id="y2014-chun">(1) 行香子•春分　　　　　　　　　　　　<a href="#p2014-spring-equinox">2014．⒊</a></p>
-<p class="mulu" id="y2014-zlin">(1) 賀新涼•小別　　　　　　　　　　　　<a href="#p2014-zlin">2014．⒊</a></p>
-<p class="mulu" id="y2014-kyun">(1) 賀新涼•看雲　　　　　　　　　　　　<a href="#p2014-kyun">2014．⒊</a></p>
-<p class="mulu" id="y2014-rain">(1) 临江仙•春雨　　　　　　　　　　　　<a href="#p2014-rain">2014．⒊</a></p>
-<p class="mulu" id="y2014-yaan">(1) 水调歌头•雅安　　　　　　　　　　　<a href="#p2014-yaan">2014．⒋</a></p>
-<p class="mulu" id="y2014-wulv">(1) 五律•初夏西雅圖　　　　　　　　　　<a href="#p2014-wulv">2014．⒍</a></p>
-<p class="mulu" id="y2014-xxue">(1) 行香子•夏入雪峰　　　　　　　　　　<a href="#p2014-xxue">2014．⒎</a></p>
-<p class="mulu" id="y2014-zhao">(1) 行香子•朝霞　　　　　　　　　　　　<a href="#p2014-zhao">2014．⒐</a></p>
-<p class="mulu" id="y2014-fall">(2) 天净沙•秋（二首）　　　　　　　　　<a href="#p2014-fall">2014．⒒</a></p>
-<p class="mulu" id="y2015-dong">(1) 七律•冬晴　　　　　　　　　　　　　<a href="#p2015-dong">2015．⒈</a><a id="y2015" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2015-gaoy">(1) 高陽臺•写在情人节　　　　　　　　　<a href="#p2015-valentine">2015．⒉</a></p>
-<p class="mulu" id="y2015-dale">(1) 五言•佛州劳德戴尔机场　　　　　　　<a href="#p2015-dale">2015．⒊</a></p>
-<p class="mulu" id="y2016-chun">(1) 五律•湖山漫步寄相思　　　　　　　　<a href="#p2016-chun">2016．⒊</a></p>
-<p class="mulu" id="y2016-bing">(1) 五言•早春病中拟句　　　　　　　　　<a href="#p2016-bing">2016．⒌</a></p>
-<p class="mulu" id="y2016-xian">(1) 五言•西安謠　　　　　　　　　　　　<a href="#p2016-xian">2016．⒌</a></p>
-<p class="mulu" id="y2016-jing">(1) 行香子•京城會　　　　　　　　　　　<a href="#p2016-jing">2016．⒌</a></p>
-<p class="mulu" id="y2016-anhw">(1) 水调歌头•皖南行　　　　　　　　　　<a href="#p2016-anhw">2016．⒌</a></p>
-<p class="mulu" id="y2017-egon">(1) 五律•俄勒冈海滩　　　　　　　　　　<a href="#p2017-egon">2017．⒐</a></p>
-<p class="mulu" id="y2017-anni">(1) 五律•週年紀念　　　　　　　　　　　<a href="#p2017-anniversary">2017．⒐</a></p>
-<p class="mulu" id="y2017-chun">(1) 新韵文诗•春天　　　　　　　　　　　<a href="#p2017-chun">2017．⒑</a></p>
-<p class="mulu" id="y2017-hawa">(1) 七律•夏威夷可愛島　　　　　　　　　<a href="#p2017-hawa">2017．⒒</a></p>
-<p class="mulu" id="y2018-jing">(1) 临江仙•重聚　　　　　　　　　　　　<a href="#p2018-jing">2018．⒍</a></p>
-<p class="mulu" id="y2019-nzlh">(2) 望海潮•新西蘭　　　　　　　　　　　<a href="#p2019-nzlh">2019．⒓</a></p>
-<p class="mulu" id="y2019-nzlw">(1) 临江仙•新西蘭萬納卡　　　　　　　　<a href="#p2019-nzlw">2019．⒓</a></p>
-<p class="mulu" id="y2019-nzlp">(1) 行香子•新西蘭懷奧塔普　　　　　　　<a href="#p2019-nzlp">2019．⒓</a></p>
-<p class="mulu" id="y2019-nzlg">(1) 七律•南島綠色　　　　　　　　　　　<a href="#p2019-nzlg">2019．⒓</a></p>
-<p class="mulu" id="y2020-kong">(2) 七律•空留　　　　　　　　　　　　　<a href="#p2020-kong">2020．⒏</a><a id="y2020" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2020-zlin">(1) 七律•赠周琳　　　　　　　　　　　　<a href="#p2020-zlin">2020．⒒</a></p>
-<p class="mulu" id="y2020-fall">(2) 七律•残秋　　　　　　　　　　　　　<a href="#p2020-fall">2020．⒒</a></p>
-<p class="mulu" id="y2020-meng">(1) 七言•记梦之纪念疫情　　　　　　　　<a href="#p2020-meng">2020．⒓</a></p>
-<p class="mulu" id="y2020-kosm">(9) 南乡子•宇宙往事　　　　　　　　　　<a href="#p2020-kosm">2020．⒓</a></p>
-<p class="mulu" id="y2020-pusa">(1) 菩萨蛮•嫦娥五号奔月归来　　　　　　<a href="#p2020-pusa">2020．⒓</a></p>
-<p class="mulu" id="y2020-shui">(2) 水调歌头•嫦娥五号　　　　　　　　　<a href="#p2020-shui">2020．⒓</a></p>
-<p class="mulu" id="y2020-xing">(1) 行香子•赠周琳　　　　　　　　　　　<a href="#p2020-xing">2020．⒓</a></p>
-<p class="mulu" id="y2021-juej">(1) 七言•论无题绝句　　　　　　　　　　<a href="#p2021-juej">2021．⒈</a><a id="y2021" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2021-misc">(3) 七言•新韵杂篇　　　　　　　　　　　<a href="#p2021-misc">2021．⒈</a></p>
-<p class="mulu" id="y2021-newy">(2) 水调歌头•新年感赋　　　　　　　　　<a href="#p2021-newy">2021．⒈</a></p>
-<p class="mulu" id="y2021-jan8">(1) 水调歌头•祭一月八　　　　　　　　　<a href="#p2021-jan8">2021．⒈</a></p>
-<p class="mulu" id="y2021-ming">(1) 五言•明宫谋　　　　　　　　　　　　<a href="#p2021-ming">2021．⒉</a></p>
-<p class="mulu" id="y2021-move">(1) 水调歌头•南迁步苏词韵　　　　　　　<a href="#p2021-move">2021．⒊</a></p>
-<p class="mulu" id="y2021-ying">(1) 虞美人•樱花　　　　　　　　　　　　<a href="#p2021-ying">2021．⒊</a></p>
-<p class="mulu" id="y2021-puri">(1) 英文诗•清平乐　　　　　　　　　　　<a href="#p2021-purity">2021．⒋</a></p>
-<p class="mulu" id="y2021-sava">(1) 英文诗•萨瓦纳　　　　　　　　　　　<a href="#p2021-savannah">2021．⒍</a></p>
-<p class="mulu" id="y2021-summ">(3) 七律•夏梦三首　　　　　　　　　　　<a href="#p2021-summer">2021．⒎</a></p>
-<p class="mulu" id="y2021-kong">(4) 七律•空度三首　　　　　　　　　　　<a href="#p2021-quantum">2021．⒏</a></p>
-<p class="mulu" id="y2021-zlin">(1) 水调歌头•周琳　　　　　　　　　　　<a href="#p2021-zlin">2021．⒏</a></p>
-<p class="mulu" id="y2021-zhib">(1) 水调歌头•纸上兵　　　　　　　　　　<a href="#p2021-zhib">2021．⒐</a></p>
-<p class="mulu" id="y2021-bing">(1) 七言•读兵法【新韵】　　　　　　　　<a href="#p2021-bing">2021．⒐</a></p>
-<p class="mulu" id="y2021-taot">(1) 七言•读老子【杂韵】　　　　　　　　<a href="#p2021-taot">2021．⒐</a></p>
-<p class="mulu" id="y2021-ever">(9) 七言•读《将夜》集句　　　　　　　　<a href="#p2021-evernight">2021．⒐</a></p>
-<p class="mulu" id="y2021-book">(6) 七律•读书札记　　　　　　　　　　　<a href="#p2021-book">2021．⒐</a></p>
-<p class="mulu" id="y2021-zqiu">(1) 水调歌头•中秋　　　　　　　　　　　<a href="#p2021-zqiu">2021．⒐</a></p>
-<p class="mulu" id="y2021-guiz">(1) 水调歌头•归来　　　　　　　　　　　<a href="#p2021-guiz">2021．⒐</a></p>
-<p class="mulu" id="y2021-shen">(1) 五律•深圳街中　　　　　　　　　　　<a href="#p2021-shen">2021．⒑</a></p>
-<p class="mulu" id="y2021-fall">(2) 七律•秋景　　　　　　　　　　　　　<a href="#p2021-fall">2021．⒒</a></p>
-<p class="mulu" id="y2022-read">(1) 五律•读《重生之药香》　　　　　　　<a href="#p2022-read">2022．⒋</a><a id="y2022" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2022-chun">(1) 行香子•寄思　　　　　　　　　　　　<a href="#p2022-chun">2022．⒌</a></p>
-<p class="mulu" id="y2022-ruzi">(1) 七言•读《孺子帝》　　　　　　　　　<a href="#p2022-ruzi">2022．⒎</a></p>
-<p class="mulu" id="y2022-nian">(1) 念奴娇•用东坡韵　　　　　　　　　　<a href="#p2022-nian">2022．⒐</a></p>
-<p class="mulu" id="y2022-anni">(1) 满江红•周年赋　　　　　　　　　　　<a href="#p2022-anni">2022．⒐</a></p>
-<p class="mulu" id="y2022-reun">(1) 临江仙•重聚　　　　　　　　　　　　<a href="#p2022-reun">2022．⒑</a></p>
-<p class="mulu" id="y2022-fall">(1) 七律•秋野　　　　　　　　　　　　　<a href="#p2022-fall">2022．⒑</a></p>
-<p class="mulu" id="y2022-esky">(1) 七律•望夜　　　　　　　　　　　　　<a href="#p2022-esky">2022．⒒</a></p>
-<p class="mulu" id="y2022-rain">(1) 七言•夜雨借佚名诗句　　　　　　　　<a href="#p2022-rain">2022．⒒</a></p>
-<p class="mulu" id="y2023-zanz">(2) 七律•读《簪中录》笔记　　　　　　　<a href="#p2023-zanz">2023．⒈</a><a id="y2023" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2023-sant">(2) 七律•读《三体》　　　　　　　　　　<a href="#p2023-sant">2023．⒉</a></p>
-<p class="mulu" id="y2023-bypu">(2) 七律•读《百妖谱》　　　　　　　　　<a href="#p2023-bypu">2023．⒊</a></p>
-<p class="mulu" id="y2023-dshi">(1) 水调歌头•读史　　　　　　　　　　　<a href="#p2023-dshi">2023．⒊</a></p>
-<p class="mulu" id="y2023-xiuz">(1) 念奴娇•修真　　　　　　　　　　　　<a href="#p2023-xiuz">2023．⒊</a></p>
-<p class="mulu" id="y2023-zgan">(4) 七律•杂感　　　　　　　　　　　　　<a href="#p2023-zgan">2023．⒊</a></p>
-<p class="mulu" id="y2023-hang">(1) 五律•雲窗　　　　　　　　　　　　　<a href="#p2023-hang">2023．⒊</a></p>
-<p class="mulu" id="y2023-wtan">(1) 满江红•上海外滩　　　　　　　　　　<a href="#p2023-wtan">2023．⒍</a></p>
-<p class="mulu" id="y2023-xihu">(1) 七律•福州午後鼓楼东街迹行湖滨路　　<a href="#p2023-xihu">2023．⒍</a></p>
-<p class="mulu" id="y2023-xing">(1) 水调歌头•福州行　　　　　　　　　　<a href="#p2023-xing">2023．⒍</a></p>
-<p class="mulu" id="y2023-nilv">(1) 五律•逆旅杂想　　　　　　　　　　　<a href="#p2023-nilv">2023．⒎</a></p>
-<p class="mulu" id="y2023-feix">(1) 七律•雲机飞行签　　　　　　　　　　<a href="#p2023-feix">2023．⒎</a></p>
-<p class="mulu" id="y2023-sick">(1) 七律•夏日病中对湖山　　　　　　　　<a href="#p2023-sick">2023．⒏</a></p>
-<p class="mulu" id="y2023-ping">(3) 七律•读如水意《战争》三部曲　　　　<a href="#p2023-ping">2023．⒑</a></p>
-<p class="mulu" id="y2023-hlfz">(1) 七律•读如水意《火力法则》　　　　　<a href="#p2023-hlfz">2023．⒓</a></p>
-<p class="mulu" id="y2023-jijv">(1) 七言•菜根谭集句　　　　　　　　　　<a href="#p2023-jijv">2023．⒓</a></p>
-<p class="mulu" id="y2024-dong">(1) 天净沙•旧城　　　　　　　　　　　　<a href="#p2024-dong">2024．⒈</a><a id="y2024" href="#catg">&#11139;</a></p>
-<p class="mulu" id="y2024-vday">(1) 七律•飞简（寄周琳）　　　　　　　　<a href="#p2024-vday">2024．⒉</a></p>
-<p class="mulu" id="y2024-time">(2) 七律•时间相对论　　　　　　　　　　<a href="#p2024-time">2024．⒊</a></p>
-<p class="mulu" id="y2024-wulv">(5) 五律•杂韵五篇　　　　　　　　　　　<a href="#p2024-wulv">2024．⒊</a></p>
-<p class="mulu" id="y2024-zhai">(1) 七绝•读书摘句　　　　　　　　　　　<a href="#p2024-zhai">2024．⒎</a></p>
-<p class="mulu" id="y2024-deut">(3) 行香子•德国游　　　　　　　　　　　<a href="#p2024-deut">2024．⒐</a></p>
+<p class="mulu" id="y1979-chun">⑵ 五律・春游鳝溪　二首　　　　　　　　<a href="#p1979-chun">1979・４</a></p>
+<p class="mulu" id="y1979-qiuy">⑵ 五律・秋游青芝寺　二首　　　　　　　<a href="#p1979-qiuy">1979・９</a></p>
+<p class="mulu" id="y1980-xihu">⑵ 五律・西湖　二首　　　　　　　　　　<a href="#p1980-xihu">1980・８</a><a id="y1980" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y1982-chun">⑴ 忆江南・榕城春　　　　　　　　　　　<a href="#p1982-chun">1982・９</a></p>
+<p class="mulu" id="y1982-xihu">⑴ 采桑子・湖趣　　　　　　　　　　　　<a href="#p1982-xihu">1982・９</a></p>
+<p class="mulu" id="y1982-rain">⑴ 渔家傲・夜雨泊江　　　　　　　　　　<a href="#p1982-rain">1982・９</a></p>
+<p class="mulu" id="y1982-xiyn">⑴ 六洲歌头・夕阳西下　　　　　　　　　<a href="#p1982-xiyn">1982・９</a></p>
+<p class="mulu" id="y1982-qigu">⑶ 七言・江南感赋　春思　闽浪残昏　　　<a href="#p1982-qigu">1982・⒑</a></p>
+<p class="mulu" id="y1983-chux">⑴ 水仙子・除夕　　　　　　　　　　　　<a href="#p1983-chux">1983・２</a></p>
+<p class="mulu" id="y1983-yuan">⑴ 菩萨蛮・元夕　　　　　　　　　　　　<a href="#p1983-yuan">1983・２</a></p>
+<p class="mulu" id="y1983-xiao">⑴ 调笑令・踏青　　　　　　　　　　　　<a href="#p1983-xiao">1983・４</a></p>
+<p class="mulu" id="y1983-jyou">⑴ 少年游・寄友　　　　　　　　　　　　<a href="#p1983-jyou">1983・５</a></p>
+<p class="mulu" id="y1983-qing">⑴ 满江红・清明　　　　　　　　　　　　<a href="#p1983-qing">1983・５</a></p>
+<p class="mulu" id="y1984-chux">⑴ 青玉案・除夕　　　　　　　　　　　　<a href="#p1984-chux">1984・２</a></p>
+<p class="mulu" id="y1984-dlyu">⑴ 渔歌子・大连风情小记　　　　　　　　<a href="#p1984-dlyu">1984・８</a></p>
+<p class="mulu" id="y1984-dlwu">⑴ 巫山一段雲・雲中飞行　　　　　　　　<a href="#p1984-dlwu">1984・８</a></p>
+<p class="mulu" id="y1984-dlhg">⑴ 望海潮・旅顺口怀古　　　　　　　　　<a href="#p1984-dlhg">1984・８</a></p>
+<p class="mulu" id="y1984-dlbx">⑴ 拜星月慢・雨後黄昏，游大连星海公园　<a href="#p1984-dlbx">1984・８</a></p>
+<p class="mulu" id="y1985-qing">⑴ 忆秦娥・清明　　　　　　　　　　　　<a href="#p1985-qing">1985・１</a><a id="y1985" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y1985-qigu">⑵ 七言・清明诗钞题後　二首　　　　　　<a href="#p1985-qigu">1985・１</a></p>
+<p class="mulu" id="y1985-jyou">⑴ 七言・寄书友人题後　　　　　　　　　<a href="#p1985-jyou">1985・１</a></p>
+<p class="mulu" id="y1985-yuan">⑴ 人月圆・十五　　　　　　　　　　　　<a href="#p1985-yuan">1985・２</a></p>
+<p class="mulu" id="y1985-shan">⑶ 七言・黄山题咏　三首　　　　　　　　<a href="#p1985-shan">1985・８</a></p>
+<p class="mulu" id="y1985-huai">⑴ 七言・黄山抒怀　　　　　　　　　　　<a href="#p1985-huai">1985・８</a></p>
+<p class="mulu" id="y1986-fall">⑴ 五律・秋怀　　　　　　　　　　　　　<a href="#p1986-fall">1986・⒑</a></p>
+<p class="mulu" id="y1986-shan">⑴ 五律・山中感赋　　　　　　　　　　　<a href="#p1986-shan">1986・⒑</a></p>
+<p class="mulu" id="y1986-sanq">⑵ 散曲・风雲健　二首　　　　　　　　　<a href="#p1986-sanq">1986・⒒</a></p>
+<p class="mulu" id="y1987-chux">⑴ 五律・新春试笔　　　　　　　　　　　<a href="#p1987-chux">1987・２</a></p>
+<p class="mulu" id="y1987-summ">⑴ 五律・夏日龙门涧道中　　　　　　　　<a href="#p1987-summer">1987・８</a></p>
+<p class="mulu" id="y1988-rain">⑴ 五律・夜雨邀同窗龚学士戏作　　　　　<a href="#p1988-rain">1988・６</a></p>
+<p class="mulu" id="y1989-sanq">⑴ 散曲・寒夜别　　　　　　　　　　　　<a href="#p1989-sanq">1989・１</a></p>
+<p class="mulu" id="y1989-snow">⑴ 新韵文诗・雪　　　　　　　　　　　　<a href="#p1989-snow">1989・⒓</a></p>
+<p class="mulu" id="y1992-newy">⑴ 五律・壬申新年赋笔　　　　　　　　　<a href="#p1992-newy">1992・２</a><a id="y1990" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y1993-rong">⑴ 五律・榕城留句　　　　　　　　　　　<a href="#p1993-rong">1993・３</a></p>
+<p class="mulu" id="y1993-yequ">⑴ 五律・夜曲　　　　　　　　　　　　　<a href="#p1993-yequ">1993・３</a></p>
+<p class="mulu" id="y1994-chun">⑴ 临江仙・惜春　　　　　　　　　　　　<a href="#p1994-chun">1994・３</a></p>
+<p class="mulu" id="y1994-qiuy">⑵ 五律・秋夜　二首　　　　　　　　　　<a href="#p1994-qiuy">1994・⒑</a></p>
+<p class="mulu" id="y1994-qing">⑵ 五律・离情　二首　　　　　　　　　　<a href="#p1994-qing">1994・⒒</a></p>
+<p class="mulu" id="y1994-jizi">⑶ 五律・集字　三首　　　　　　　　　　<a href="#z_acrostic">1994・⒓</a></p>
+<p class="mulu" id="y1995-mein">⑴ 五律・美人　　　　　　　　　　　　　<a href="#p1995-mein">1995・１</a><a id="y1995" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y1995-liux">⑹ 五律・留香集　六首　　　　　　　　　<a href="#p1995-liux">1995・２</a></p>
+<p class="mulu" id="y1995-wuti">⑴ 五律・無题　　　　　　　　　　　　　<a href="#p1995-wuti">1995・２</a></p>
+<p class="mulu" id="y1995-acac">⑴ 五律・相思　　　　　　　　　　　　　<a href="#p1995-acac">1995・２</a></p>
+<p class="mulu" id="y1995-kesi">⑵ 五律・客思　二首　　　　　　　　　　<a href="#p1995-kesi">1995・２</a></p>
+<p class="mulu" id="y1995-ymei">⑴ 虞美人・伤春景　　　　　　　　　　　<a href="#p1995-ymei">1995・３</a></p>
+<p class="mulu" id="y1995-huaa">⑴ 五律・画帘　　　　　　　　　　　　　<a href="#p1995-huaa">1995・９</a></p>
+<p class="mulu" id="y1995-chun">⑴ 五律・春意　　　　　　　　　　　　　<a href="#p1995-chun">1995・⒑</a></p>
+<p class="mulu" id="y1995-fall">⑵ 五律・秋风　二首　　　　　　　　　　<a href="#p1995-fall">1995・⒒</a></p>
+<p class="mulu" id="y1995-suzq">⑴ 虞美人・诉春情　　　　　　　　　　　<a href="#p1995-suzq">1995・⒒</a></p>
+<p class="mulu" id="y1995-xian">⑵ 臨江仙・春風＊二首　　　　　　　　　<a href="#p1995-xian">1995・⒒</a></p>
+<p class="mulu" id="y1995-jijv">⑶ 五律・春册集句　三首　　　　　　　　<a href="#p1995-jijv">1995・⒒</a></p>
+<p class="mulu" id="y1995-hong">⑴ 五律・红楼集句　　　　　　　　　　　<a href="#p1995-hong">1995・⒒</a></p>
+<p class="mulu" id="y1995-xixj">⑵ 五律・西厢　二首　　　　　　　　　　<a href="#p1995-xixj">1995・⒒</a></p>
+<p class="mulu" id="y1995-wulv">⑸ 五律・孤夜　五首　　　　　　　　　　<a href="#p1995-wulv">1995・⒒</a></p>
+<p class="mulu" id="y1996-chun">⑴ 临江仙・感赋　　　　　　　　　　　　<a href="#p1996-chun">1996・３</a></p>
+<p class="mulu" id="y1996-jizi">⑴ 五律・送别　　　　　　　　　　　　　<a href="#p1996-jizi">1996・４</a></p>
+<p class="mulu" id="y1997-zlin">⑴ 满江红・致周琳　　　　　　　　　　　<a href="#p1997-zlin">1997・３</a></p>
+<p class="mulu" id="y1998-zqiu">⑴ 水调歌头・中秋　　　　　　　　　　　<a href="#p1998-zqiu">1998・９</a></p>
+<p class="mulu" id="y1999-zlin">⑴ 金缕曲・中秋寄格格　　　　　　　　　<a href="#p1999-zlin">1999・９</a></p>
+<p class="mulu" id="y1999-zqiu">⑴ 金缕曲・中秋书怀　　　　　　　　　　<a href="#p1999-zqiu">1999・９</a></p>
+<p class="mulu" id="y2002-rain">⑴ 新韵文诗・你和雨　　　　　　　　　　<a href="#p2002-rain">2002・３</a><a id="y2000" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2003-zlin">⑴ 五律・今夜　　　　　　　　　　　　　<a href="#p2003-zlin">2003・４</a></p>
+<p class="mulu" id="y2003-hawa">⑴ 五律・夏威夷　　　　　　　　　　　　<a href="#p2003-hawa">2003・５</a></p>
+<p class="mulu" id="y2006-hiki">⑵ 五律・二月登高　　　　　　　　　　　<a href="#p2006-hiki">2006・２</a><a id="y2005" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2006-duiz">＊ 对联・同学盛会　　　　　　　　　　　<a href="#p2006-duiz">2006・２</a></p>
+<p class="mulu" id="y2006-reun">⑴ 水调歌头・會東　　　　　　　　　　　<a href="#p2006-reun">2006・３</a></p>
+<p class="mulu" id="y2006-reus">⑴ 临江仙・再韻會東　　　　　　　　　　<a href="#p2006-reus">2006・３</a></p>
+<p class="mulu" id="y2006-chun">⑴ 五律・春日午後　　　　　　　　　　　<a href="#p2006-chun">2006・６</a></p>
+<p class="mulu" id="y2006-fall">⑴ 七言・柏梁體秋韻　　　　　　　　　　<a href="#p2006-fall">2006・９</a></p>
+<p class="mulu" id="y2006-meng">⑴ 七言・冬夜记梦　　　　　　　　　　　<a href="#p2006-meng">2006・⒓</a></p>
+<p class="mulu" id="y2007-rain">⑴ 五律・风雨　　　　　　　　　　　　　<a href="#p2007-rain">2007・５</a></p>
+<p class="mulu" id="y2007-nwcl">⑴ 七律・流言　　　　　　　　　　　　　<a href="#p2007-nwcl">2007・５</a></p>
+<p class="mulu" id="y2007-nwcf">⑴ 七言・讽言　　　　　　　　　　　　　<a href="#p2007-nwcf">2007・５</a></p>
+<p class="mulu" id="y2007-nwcn">⑴ 七律・致贺　　　　　　　　　　　　　<a href="#p2007-nwcn">2007・６</a></p>
+<p class="mulu" id="y2008-zlin">⑴ 蝶戀花・腊雪贺辰致琳儿　　　　　　　<a href="#p2008-zlin">2008・１</a></p>
+<p class="mulu" id="y2008-zqiu">⑵ 七律・中秋二首　　　　　　　　　　　<a href="#p2008-zqiu">2008・９</a></p>
+<p class="mulu" id="y2008-crbn">⑴ 七律・加勒比游记　　　　　　　　　　<a href="#p2008-crbn">2008・⒓</a></p>
+<p class="mulu" id="y2008-snow">⑴ 七律・雪花　　　　　　　　　　　　　<a href="#p2008-snow">2008・⒓</a></p>
+<p class="mulu" id="y2009-zlin">⑴ 五律・臘九賀辰　　　　　　　　　　　<a href="#p2009-zlin">2009・１</a></p>
+<p class="mulu" id="y2009-slan">⑴ 七言・串烧网络流行语　　　　　　　　<a href="#p2009-slan">2009・１</a></p>
+<p class="mulu" id="y2009-news">⑴ 七言・咏时事　　　　　　　　　　　　<a href="#p2009-news">2009・１</a></p>
+<p class="mulu" id="y2009-zqiu">⑵ 七律・己丑中秋同韻二首　　　　　　　<a href="#p2009-zqiu">2009・９</a></p>
+<p class="mulu" id="y2009-trip">⑵ 五律・冬月遠行二首　　　　　　　　　<a href="#p2009-trip">2009・⒓</a></p>
+<p class="mulu" id="y2010-rain">⑴ 七言・雨中思　　　　　　　　　　　　<a href="#p2010-rain">2010・１</a><a id="y2010" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2010-ymei">⑵ 虞美人・想念二章（冬雲、冬雨）　　　<a href="#p2010-ymei">2010・１</a></p>
+<p class="mulu" id="y2010-fiji">⒅ 天净沙・今韵斐济十题　　　　　　　　<a href="#p2010-fiji">2010・２</a></p>
+<p class="mulu" id="y2010-fijk">⑵ 望海潮・斐济珊瑚海岸　　　　　　　　<a href="#p2010-fijk">2010・２</a></p>
+<p class="mulu" id="y2010-fijx">⑴ 英文诗・告别斐济　　　　　　　　　　<a href="#p2010-fijx">2010・２</a></p>
+<p class="mulu" id="y2010-shan">⑵ 山坡羊・西北偏北国家公园二首　　　　<a href="#p2010-shan">2010・８</a></p>
+<p class="mulu" id="y2010-zqiu">⑵ 水调歌头・中秋　　　　　　　　　　　<a href="#p2010-zqiu">2010・９</a></p>
+<p class="mulu" id="y2010-fall">⑴ 英文诗・秋色雷德蒙　　　　　　　　　<a href="#p2010-fall">2010・⒑</a></p>
+<p class="mulu" id="y2010-meng">⑴ 七言・梦中梦　　　　　　　　　　　　<a href="#p2010-meng">2010・⒑</a></p>
+<p class="mulu" id="y2011-rain">⑵ 七律・寒雨二首　　　　　　　　　　　<a href="#p2011-rain">2011・１</a></p>
+<p class="mulu" id="y2011-zhou">⑴ 沁園春・重懷周公和毛詞原韻　　　　　<a href="#p2011-zhou">2011・１</a></p>
+<p class="mulu" id="y2011-chen">⑴ 新韵文诗・晨跑　　　　　　　　　　　<a href="#p2011-chen">2011・１</a></p>
+<p class="mulu" id="y2011-newy">⑴ 英文诗・新年伊始　　　　　　　　　　<a href="#p2011-newy">2011・２</a></p>
+<p class="mulu" id="y2011-yexn">⑴ 五律・夜寻　　　　　　　　　　　　　<a href="#p2011-yexn">2011・２</a></p>
+<p class="mulu" id="y2011-refx">⑴ 七律・反思（普韻）　　　　　　　　　<a href="#p2011-refx">2011・２</a></p>
+<p class="mulu" id="y2011-douh">⑴ 七律・題四川豆花莊　　　　　　　　　<a href="#p2011-douh">2011・２</a></p>
+<p class="mulu" id="y2011-meng">⑴ 五言・梦醒　　　　　　　　　　　　　<a href="#p2011-meng">2011・６</a></p>
+<p class="mulu" id="y2011-fall">⑴ 行香子・中秋　　　　　　　　　　　　<a href="#p2011-fall">2011・９</a></p>
+<p class="mulu" id="y2011-cali">⑸ 行香子・加州行五首　　　　　　　　　<a href="#p2011-cali">2011・９</a></p>
+<p class="mulu" id="y2011-suke">⑴ 行香子・蘇克杉山　　　　　　　　　　<a href="#p2011-suke">2011・⒑</a></p>
+<p class="mulu" id="y2012-shan">⑶ 七律・看山三首　　　　　　　　　　　<a href="#p2012-shan">2012・６</a></p>
+<p class="mulu" id="y2012-fall">⑷ 七律・秋興四首　　　　　　　　　　　<a href="#p2012-fall">2012・⒑</a></p>
+<p class="mulu" id="y2013-sick">⑴ 七律・病中　　　　　　　　　　　　　<a href="#p2013-sick">2013・⒒</a></p>
+<p class="mulu" id="y2014-xiyn">⑴ 行香子・火燒天宮（附英文版）　　　　<a href="#p2014-xiyn">2014・２</a></p>
+<p class="mulu" id="y2014-noon">⑴ 雙調憶江南・午後春光　　　　　　　　<a href="#p2014-noon">2014・３</a></p>
+<p class="mulu" id="y2014-chun">⑴ 行香子・春分　　　　　　　　　　　　<a href="#p2014-spring-equinox">2014・３</a></p>
+<p class="mulu" id="y2014-zlin">⑴ 賀新涼・小別　　　　　　　　　　　　<a href="#p2014-zlin">2014・３</a></p>
+<p class="mulu" id="y2014-kyun">⑴ 賀新涼・看雲　　　　　　　　　　　　<a href="#p2014-kyun">2014・３</a></p>
+<p class="mulu" id="y2014-rain">⑴ 临江仙・春雨　　　　　　　　　　　　<a href="#p2014-rain">2014・３</a></p>
+<p class="mulu" id="y2014-yaan">⑴ 水调歌头・雅安　　　　　　　　　　　<a href="#p2014-yaan">2014・４</a></p>
+<p class="mulu" id="y2014-wulv">⑴ 五律・初夏西雅圖　　　　　　　　　　<a href="#p2014-wulv">2014・６</a></p>
+<p class="mulu" id="y2014-xxue">⑴ 行香子・夏入雪峰　　　　　　　　　　<a href="#p2014-xxue">2014・７</a></p>
+<p class="mulu" id="y2014-zhao">⑴ 行香子・朝霞　　　　　　　　　　　　<a href="#p2014-zhao">2014・９</a></p>
+<p class="mulu" id="y2014-fall">⑵ 天净沙・秋（二首）　　　　　　　　　<a href="#p2014-fall">2014・⒒</a></p>
+<p class="mulu" id="y2015-dong">⑴ 七律・冬晴　　　　　　　　　　　　　<a href="#p2015-dong">2015・１</a><a id="y2015" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2015-gaoy">⑴ 高陽臺・写在情人节　　　　　　　　　<a href="#p2015-valentine">2015・２</a></p>
+<p class="mulu" id="y2015-dale">⑴ 五言・佛州劳德戴尔机场　　　　　　　<a href="#p2015-dale">2015・３</a></p>
+<p class="mulu" id="y2016-chun">⑴ 五律・湖山漫步寄相思　　　　　　　　<a href="#p2016-chun">2016・３</a></p>
+<p class="mulu" id="y2016-bing">⑴ 五言・早春病中拟句　　　　　　　　　<a href="#p2016-bing">2016・５</a></p>
+<p class="mulu" id="y2016-xian">⑴ 五言・西安謠　　　　　　　　　　　　<a href="#p2016-xian">2016・５</a></p>
+<p class="mulu" id="y2016-jing">⑴ 行香子・京城會　　　　　　　　　　　<a href="#p2016-jing">2016・５</a></p>
+<p class="mulu" id="y2016-anhw">⑴ 水调歌头・皖南行　　　　　　　　　　<a href="#p2016-anhw">2016・５</a></p>
+<p class="mulu" id="y2017-egon">⑴ 五律・俄勒冈海滩　　　　　　　　　　<a href="#p2017-egon">2017・９</a></p>
+<p class="mulu" id="y2017-anni">⑴ 五律・週年紀念　　　　　　　　　　　<a href="#p2017-anniversary">2017・９</a></p>
+<p class="mulu" id="y2017-chun">⑴ 新韵文诗・春天　　　　　　　　　　　<a href="#p2017-chun">2017・⒑</a></p>
+<p class="mulu" id="y2017-hawa">⑴ 七律・夏威夷可愛島　　　　　　　　　<a href="#p2017-hawa">2017・⒒</a></p>
+<p class="mulu" id="y2018-jing">⑴ 临江仙・重聚　　　　　　　　　　　　<a href="#p2018-jing">2018・６</a></p>
+<p class="mulu" id="y2019-nzlh">⑵ 望海潮・新西蘭　　　　　　　　　　　<a href="#p2019-nzlh">2019・⒓</a></p>
+<p class="mulu" id="y2019-nzlw">⑴ 临江仙・新西蘭萬納卡　　　　　　　　<a href="#p2019-nzlw">2019・⒓</a></p>
+<p class="mulu" id="y2019-nzlp">⑴ 行香子・新西蘭懷奧塔普　　　　　　　<a href="#p2019-nzlp">2019・⒓</a></p>
+<p class="mulu" id="y2019-nzlg">⑴ 七律・南島綠色　　　　　　　　　　　<a href="#p2019-nzlg">2019・⒓</a></p>
+<p class="mulu" id="y2020-kong">⑵ 七律・空留　　　　　　　　　　　　　<a href="#p2020-kong">2020・８</a><a id="y2020" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2020-zlin">⑴ 七律・赠周琳　　　　　　　　　　　　<a href="#p2020-zlin">2020・⒒</a></p>
+<p class="mulu" id="y2020-fall">⑵ 七律・残秋　　　　　　　　　　　　　<a href="#p2020-fall">2020・⒒</a></p>
+<p class="mulu" id="y2020-meng">⑴ 七言・记梦之纪念疫情　　　　　　　　<a href="#p2020-meng">2020・⒓</a></p>
+<p class="mulu" id="y2020-kosm">⑼ 南乡子・宇宙往事　　　　　　　　　　<a href="#p2020-kosm">2020・⒓</a></p>
+<p class="mulu" id="y2020-pusa">⑴ 菩萨蛮・嫦娥五号奔月归来　　　　　　<a href="#p2020-pusa">2020・⒓</a></p>
+<p class="mulu" id="y2020-shui">⑵ 水调歌头・嫦娥五号　　　　　　　　　<a href="#p2020-shui">2020・⒓</a></p>
+<p class="mulu" id="y2020-xing">⑴ 行香子・赠周琳　　　　　　　　　　　<a href="#p2020-xing">2020・⒓</a></p>
+<p class="mulu" id="y2021-juej">⑴ 七言・论无题绝句　　　　　　　　　　<a href="#p2021-juej">2021・１</a><a id="y2021" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2021-misc">⑶ 七言・新韵杂篇　　　　　　　　　　　<a href="#p2021-misc">2021・１</a></p>
+<p class="mulu" id="y2021-newy">⑵ 水调歌头・新年感赋　　　　　　　　　<a href="#p2021-newy">2021・１</a></p>
+<p class="mulu" id="y2021-jan8">⑴ 水调歌头・祭一月八　　　　　　　　　<a href="#p2021-jan8">2021・１</a></p>
+<p class="mulu" id="y2021-ming">⑴ 五言・明宫谋　　　　　　　　　　　　<a href="#p2021-ming">2021・２</a></p>
+<p class="mulu" id="y2021-move">⑴ 水调歌头・南迁步苏词韵　　　　　　　<a href="#p2021-move">2021・３</a></p>
+<p class="mulu" id="y2021-ying">⑴ 虞美人・樱花　　　　　　　　　　　　<a href="#p2021-ying">2021・３</a></p>
+<p class="mulu" id="y2021-puri">⑴ 英文诗・清平乐　　　　　　　　　　　<a href="#p2021-purity">2021・４</a></p>
+<p class="mulu" id="y2021-sava">⑴ 英文诗・萨瓦纳　　　　　　　　　　　<a href="#p2021-savannah">2021・６</a></p>
+<p class="mulu" id="y2021-summ">⑶ 七律・夏梦三首　　　　　　　　　　　<a href="#p2021-summer">2021・７</a></p>
+<p class="mulu" id="y2021-kong">⑷ 七律・空度三首　　　　　　　　　　　<a href="#p2021-quantum">2021・８</a></p>
+<p class="mulu" id="y2021-zlin">⑴ 水调歌头・周琳　　　　　　　　　　　<a href="#p2021-zlin">2021・８</a></p>
+<p class="mulu" id="y2021-zhib">⑴ 水调歌头・纸上兵　　　　　　　　　　<a href="#p2021-zhib">2021・９</a></p>
+<p class="mulu" id="y2021-bing">⑴ 七言・读兵法【新韵】　　　　　　　　<a href="#p2021-bing">2021・９</a></p>
+<p class="mulu" id="y2021-taot">⑴ 七言・读老子【杂韵】　　　　　　　　<a href="#p2021-taot">2021・９</a></p>
+<p class="mulu" id="y2021-ever">⑼ 七言・读《将夜》集句　　　　　　　　<a href="#p2021-evernight">2021・９</a></p>
+<p class="mulu" id="y2021-book">⑹ 七律・读书札记　　　　　　　　　　　<a href="#p2021-book">2021・９</a></p>
+<p class="mulu" id="y2021-zqiu">⑴ 水调歌头・中秋　　　　　　　　　　　<a href="#p2021-zqiu">2021・９</a></p>
+<p class="mulu" id="y2021-guiz">⑴ 水调歌头・归来　　　　　　　　　　　<a href="#p2021-guiz">2021・９</a></p>
+<p class="mulu" id="y2021-shen">⑴ 五律・深圳街中　　　　　　　　　　　<a href="#p2021-shen">2021・⒑</a></p>
+<p class="mulu" id="y2021-fall">⑵ 七律・秋景　　　　　　　　　　　　　<a href="#p2021-fall">2021・⒒</a></p>
+<p class="mulu" id="y2022-read">⑴ 五律・读《重生之药香》　　　　　　　<a href="#p2022-read">2022・４</a><a id="y2022" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2022-chun">⑴ 行香子・寄思　　　　　　　　　　　　<a href="#p2022-chun">2022・５</a></p>
+<p class="mulu" id="y2022-ruzi">⑴ 七言・读《孺子帝》　　　　　　　　　<a href="#p2022-ruzi">2022・７</a></p>
+<p class="mulu" id="y2022-nian">⑴ 念奴娇・用东坡韵　　　　　　　　　　<a href="#p2022-nian">2022・９</a></p>
+<p class="mulu" id="y2022-anni">⑴ 满江红・周年赋　　　　　　　　　　　<a href="#p2022-anni">2022・９</a></p>
+<p class="mulu" id="y2022-reun">⑴ 临江仙・重聚　　　　　　　　　　　　<a href="#p2022-reun">2022・⒑</a></p>
+<p class="mulu" id="y2022-fall">⑴ 七律・秋野　　　　　　　　　　　　　<a href="#p2022-fall">2022・⒑</a></p>
+<p class="mulu" id="y2022-esky">⑴ 七律・望夜　　　　　　　　　　　　　<a href="#p2022-esky">2022・⒒</a></p>
+<p class="mulu" id="y2022-rain">⑴ 七言・夜雨借佚名诗句　　　　　　　　<a href="#p2022-rain">2022・⒒</a></p>
+<p class="mulu" id="y2023-zanz">⑵ 七律・读《簪中录》笔记　　　　　　　<a href="#p2023-zanz">2023・１</a><a id="y2023" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2023-sant">⑵ 七律・读《三体》　　　　　　　　　　<a href="#p2023-sant">2023・２</a></p>
+<p class="mulu" id="y2023-bypu">⑵ 七律・读《百妖谱》　　　　　　　　　<a href="#p2023-bypu">2023・３</a></p>
+<p class="mulu" id="y2023-dshi">⑴ 水调歌头・读史　　　　　　　　　　　<a href="#p2023-dshi">2023・３</a></p>
+<p class="mulu" id="y2023-xiuz">⑴ 念奴娇・修真　　　　　　　　　　　　<a href="#p2023-xiuz">2023・３</a></p>
+<p class="mulu" id="y2023-zgan">⑷ 七律・杂感　　　　　　　　　　　　　<a href="#p2023-zgan">2023・３</a></p>
+<p class="mulu" id="y2023-hang">⑴ 五律・雲窗　　　　　　　　　　　　　<a href="#p2023-hang">2023・３</a></p>
+<p class="mulu" id="y2023-wtan">⑴ 满江红・上海外滩　　　　　　　　　　<a href="#p2023-wtan">2023・６</a></p>
+<p class="mulu" id="y2023-xihu">⑴ 七律・福州午後鼓楼东街迹行湖滨路　　<a href="#p2023-xihu">2023・６</a></p>
+<p class="mulu" id="y2023-xing">⑴ 水调歌头・福州行　　　　　　　　　　<a href="#p2023-xing">2023・６</a></p>
+<p class="mulu" id="y2023-nilv">⑴ 五律・逆旅杂想　　　　　　　　　　　<a href="#p2023-nilv">2023・７</a></p>
+<p class="mulu" id="y2023-feix">⑴ 七律・雲机飞行签　　　　　　　　　　<a href="#p2023-feix">2023・７</a></p>
+<p class="mulu" id="y2023-sick">⑴ 七律・夏日病中对湖山　　　　　　　　<a href="#p2023-sick">2023・８</a></p>
+<p class="mulu" id="y2023-ping">⑶ 七律・读如水意《战争》三部曲　　　　<a href="#p2023-ping">2023・⒑</a></p>
+<p class="mulu" id="y2023-hlfz">⑴ 七律・读如水意《火力法则》　　　　　<a href="#p2023-hlfz">2023・⒓</a></p>
+<p class="mulu" id="y2023-jijv">⑴ 七言・菜根谭集句　　　　　　　　　　<a href="#p2023-jijv">2023・⒓</a></p>
+<p class="mulu" id="y2024-dong">⑴ 天净沙・旧城　　　　　　　　　　　　<a href="#p2024-dong">2024・１</a><a id="y2024" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2024-vday">⑴ 七律・飞简（寄周琳）　　　　　　　　<a href="#p2024-vday">2024・２</a></p>
+<p class="mulu" id="y2024-time">⑵ 七律・时间相对论　　　　　　　　　　<a href="#p2024-time">2024・３</a></p>
+<p class="mulu" id="y2024-wulv">⑸ 五律・杂韵五篇　　　　　　　　　　　<a href="#p2024-wulv">2024・３</a></p>
+<p class="mulu" id="y2024-zhai">⑴ 七律・读书摘句　　　　　　　　　　　<a href="#p2024-zhai">2024・７</a></p>
+<p class="mulu" id="y2024-deut">⑶ 行香子・德国游　　　　　　　　　　　<a href="#p2024-deut">2024・９</a></p>
+<p class="mulu" id="y2024-kyun">⑴ 五律・雲机　　　　　　　　　　　　　<a href="#p2024-kyun">2024・⒑</a></p>
+<p class="mulu" id="y2025-qilv">⑵ 七律・写意二首　　　　　　　　　　　<a href="#p2025-qilv">2025・２</a><a id="y2025" href="#catg">&#11139;</a></p>
+<p class="mulu" id="y2025-geci">⑴ 七律・新韵骊歌改自李宗盛词　　　　　<a href="#p2025-geci">2025・２</a></p>
+<p class="mulu" id="y2025-agen">⑼ 七律・杂题＋电脑集句　　　　　　　　<a href="#p2025-agen">2025・２</a></p>
+<p class="mulu" id="y2025-daof">⑴ 水调歌头・道法鸿蒙　　　　　　　　　<a href="#p2025-daof">2025・２</a></p>
+<p class="mulu" id="y2025-kyun">⑴ 水调歌头・雲中阙　　　　　　　　　　<a href="#p2025-kyun">2025・２</a></p>
+<p class="mulu" id="y2025-yeli">⑴ 五律・落仙　　　　　　　　　　　　　<a href="#p2025-yeli">2025・２</a></p>
+<p class="mulu" id="y2025-xihu">⑴ 满江红・游思杭州学士亭　　　　　　　<a href="#p2025-xihu">2025・５</a></p>
+<p class="mulu" id="y2025-zhua">⑴ 七律・墨西芝华湾　　　　　　　　　　<a href="#p2025-zhua">2025・６</a></p>
 <hr/>
-<p class="futi">以上留存詩詞凡三百零六首</p>
+<p class="futi">以上留存詩詞凡三百二十四首</p>
 <p class="right"><a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
 <h2 id="main" style="page-break-before:always">舟山堂诗词稿</h2>
-<p class="author">　　绍兴•竺晖宇昕</p>
+<p class="author">　　绍兴・竺晖宇昕</p>
 <p class="spbr"><br/></p>
 <h4 class="futi">詩曰：</h4>
 <p class="note">　　無边雲水翠屏中，有怀霜雪映古松。</p>
@@ -694,7 +797,7 @@
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-ciqu"><span>词曲</span>　<span class="shou">一百一十七首</span></h3>
+<h3 id="boathill-ciqu"><span>词曲</span>　<span class="shou">一百二十首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-fiji">天净沙·今韵斐济十题<span class="shou">十八首</span>　<span class="date"><a href="#y2010-fiji">2010.2</a></span></h4>
@@ -1016,6 +1119,10 @@
 <p class="poem">雾洗初晴，湿湿意，雲低黄浦。江流过，华亭沪渎，松江申府。身後百年亡辱史，眼前两岸兴平路。期未来，逆浪正行舟，争飞渡。<span class="cibr"></span>　　千灯上，光成影；十里舫，星无数。羡昔之骚客，今之博主。<i>生不逢时当忆古，生於此时且歌舞</i>。夜未央，广厦类虚舟，空空赋。</p>
 <p class="spbr"><br/></p>
 
+<h4 id="p2025-xihu">满江红·游思·<span class="futi">午後於杭州西湖学士亭</span>　<span class="date"><a href="#y2025-xihu">2025.05.18</a></span></h4>
+<p class="poem">绕水莺啼，天色暖、山河气派。画桥岸、碧波生绿，远眉含黛。满树争春花绽放，雁来弄影雲飞霭。莫负了、如此好風光，成诗债。<span class="cibr"></span>　　韶华逝，情未改；霜侵鬓，心观海。叹人间如梦，几番成败。茶酒一杯浇块垒，清歌数曲无关碍。意轻随、墨里问禅机，舒姿态。</p>
+<p class="spbr"><br/></p>
+
 <h4 id="p2015-valentine">高陽臺·情若在、当是节　<span class="date"><a href="#y2015-gaoy">2015.02.14</a></span></h4>
 <p class="futi">與周琳共填此詞於紗糸軒以祝情人節快樂。</p>
 <p class="poem">彩卡一方，鲜花一束，商家描绘成图。美酒杯紅，难呈携侣征途。送迎晩照和晨露，有爱時，萬事心舒。岁华浮，功朽名消，竹翠林疏。<span class="cibr"></span>　　真情不在情人节，在分分你我，秒秒雲殊。在葉之秋，在春雁阵成書。在經風雨彩虹後，再回眸，恋似当初。在能乎，终世相扶，至老相如。</p>
@@ -1111,6 +1218,14 @@
 <p class="poem">海外归来客，寻迹遍三山。花茶美馔新酿，风物四时观。八面屏峦远翠，一带西湖碧水，秀丽抚心澜。竹下高士品，藻底慕鱼闲。<span class="cibr"></span>　　劝樽盏，茗饮满，尽谈欢。念念必有回响，珍重晓霜寒。酒到真诚方醉，情到真知方贵。新曲送阳关。此去江湖路，朋友略相看。</p>
 <p class="spbr"><br/></p>
 
+<h4 id="p2025-daof">水调歌头·道法鸿蒙<span class="futi">·读《老子》</span>　<span class="date"><a href="#y2025-daof">2025.02.09</a></span></h4>
+<p class="poem">天地开混沌，大道本玄名。有无相化，虚实缘灭道浑成。<span class="good">阴在阳之内里，非是阳之对比</span>，此见辨分明。执守求心问，破悟证长生。<span class="cibr"></span>　　观其徼，守其静，得其精。至柔克物，江海從善百川盈。如履薄冰则拢，万象雷霆则动，刚弱用於平。抱朴归真处，坐看霭云轻。</p>
+<p class="spbr"><br/></p>
+
+<h4 id="p2025-kyun">水调歌头·雲中阙　<span class="date"><a href="#y2025-kyun">2025.02</a></span></h4>
+<p class="poem">蛇练绕牙帐，楼雾隐江汀。星罗棋布万点，山势漫扬旌。雲逸如纱散乱，雲聚如冰浮漫，变幻总无情。绵羽浮残塔，朵霭锁危亭。<span class="cibr"></span>　　光阴逝，流如水，太匆行。俯观尘世渺渺，悟在寸心明。若得时间回转，难补人生圆满，何必叹孤零？万象风中烛，天地一飘萍。</p>
+<p class="spbr"><br/></p>
+
 <h4 id="p2011-zhou">沁園春·重懷周公<span class="futi">·和毛詞原韻</span>　<span class="date"><a href="#y2011-zhou">2011.01.08</a></span></h4>
 <p class="poem">久逝容光，歲月塵封，思念遠飄。記當年國喪，陰雲翳翳；人民心碎，淚雨滔滔。萬業親躬，先憂後已，誰比周公品質高？一生夢，為中華崛起，富裕妖嬈。<span class="cibr"></span>　　山河自古多嬌，是烈士拋顱與折腰。想伍毫學社，初揚文采；南昌黃埔，盡顯風騷。外交和談，蜚聲宇內，政治功夫巧射雕。多少代，留傳奇故事，遺唱今朝。</p>
 <p class="spbr"><br/></p>
@@ -1164,7 +1279,7 @@
 <h4 id="p1982-xiyn">六洲歌头·夕阳西下　<span class="date"><a href="#y1982-xiyn">1982.9</a></span></h4>
 <p class="poem"><span class="fair">雄天望断，雲暗莽如山</span>。斜晖照，惊鸿影，漫天蓝。落红残。万里横雲聚，流金碎，征尘乱；又恰似，寒崖雪，映酡颜。村舍炊烟，灯火三四点，疑是人寰。更夕阳欲去，青雾远腾山，狼籍如棉。共盘餐。<span class="cibr"></span>　　访林和靖，孤山下，寻竹友，问坡仙。几曾见，夕阳好，对危栏。酒微酣。回想凭生志，空怀恨，叹当年。佳景短，人易老，怕灰髯。疏淡一轮新月，邀相饮，未醉先贪。羡西霞如画，欲踏浪银帆，追逐天边。</p>
 <p><br/></p>
-<p class="zong">　　右录词曲一百一十七首</p>
+<p class="zong">　　右录词曲一百二十首</p>
 <p class="zong">　　纱糸轩藏</p>
 <p class="right"><a href="#boathill-ciqu" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
@@ -1522,7 +1637,7 @@
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-qilv"><span>七言律绝</span>　<span class="shou">七十五首</span></h3>
+<h3 id="boathill-qilv"><span>七言律绝</span>　<span class="shou">八十八首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2007-nwcl">七律·流言　<span class="date"><a href="#y2007-nwcl">2007.5</a></span></h4>
@@ -1677,9 +1792,9 @@
 <p class="futi">其三</p>
 <p class="poem">千顷平湖浇块垒，一身浩气沛雲巅。刹思鱼跃此时海，顿悟花开彼岸天。<b>死後觉非成在道，生而知是证於仙</b>。从心所欲常無距，随性之情自有缘。</p>
 <p class="futi">其四</p>
-<p class="poem">星穹似问满天雨，人世如题各种痴。落落桃花飘远道，炎炎圣火唤先知。断尘断世断执念，残水残山残睿识。万剑成囚生结界，一生因果证心池。</p>
+<p class="poem">星穹似问满天雨，人世如题各种痴。落落桃花飘远道，炎炎圣火唤先知。断尘断世断执念，残水残山残睿识。万剑困囚成结界，一生因果证心池。</p>
 <p class="futi">其五</p>
-<p class="poem">一黛深弯愁暮雨，双睫轻眨剪春风。<i>每多冰雪飞霜剑，最少青春不老童</i>。天道唯其应命定，人力甚或有时穷。万事强求便为过，诸物不进唯此空。</p>
+<p class="poem">一黛深弯愁暮雨，双睫轻眨剪春风。<i>每多冰雪飞霜剑，最少青春不老童</i>。天道唯其应命定，人力甚或有时穷。万事强求便为过，诸物不进在此空。</p>
 <p class="futi">其六</p>
 <p class="poem">钟离山底千繁洞，知守观前百悔池。识海焚心方入魔，灵台见性已成痴。看雲看雨看流水，听曲听风听落棋。有色常於修道里，無声只在破题时。</p>
 <p class="futi">其七</p>
@@ -1758,8 +1873,40 @@
 <p class="futi">其二</p>
 <p class="poem">时间似在川流水，质量如缘引力能。过去未来统一场，星空宇宙四维层。勇求奇想新思辨，敢面常识大厦崩。<b>不变难得唯信仰，方知造物是光恒</b>。</p>
 
-<h4 id="p2024-zhai">七绝·读书摘句　<span class="date"><a href="#y2024-zhai">2024.07</a></span></h4>
-<p class="poem">藕生多窍天然成，莲出泥淤洁自清。若是寻根深到底，原来两者本同茎。</p>
+<h4 id="p2024-zhai">七律·读书摘句　<span class="date"><a href="#y2024-zhai">2024.07</a></span></h4>
+<p class="poem">藕生多窍浑然成，莲出淤泥洁自清。未惧浊流藏玉质，偏从幽暗立娉婷。风摧雨打身犹直，暑往寒来色愈明。若是寻根深到底，原来两者本同茎。</p>
+
+<h4 id="p2025-geci">七律·新韵骊歌·<span class="futi">改自李宗盛词</span>　<span class="date"><a href="#y2025-geci">2025.2</a></span></h4>
+<p class="poem">漂洋过海来看你，积蓄半年痴与迷。多少失眠无愿寝，几番演练入呼吸。恋中记忆常积累，爱里添增思愈宜。情意至深终阙憾，词言难表万分一。纵怀绝望仍坚忍，只为诺承兑现期。<span class="fair">天漫风沙君远去，心伤泣泪我独惜</span>。也曾面对亦曾叹，似此抱拥如此唏。水尽山穷千里送，今生唯盼到相依。</p>
+
+<h4 id="p2025-agen">七律·新韵杂题＋电脑集句　<span class="date"><a href="#y2025-agen">2025.2</a></span></h4>
+<p class="futi">其一</p>
+<p class="poem"><var>混沌初分奇点裂，阴阳交泰演玄机</var>。两仪四象得八卦，万物三生自太极。<var>日月循天调律历，乾坤载物蕴灵犀</var>。浩然运势叠今古，元始无形贯於一。</p>
+<p class="futi">其二</p>
+<p class="poem">渡劫泽厚天雷滚，回路清奇脑电波。<var>一念通神开紫府，三花聚顶化金钵</var>。<span class="good">乾坤袋里星辰住，日月轮中昼夜挪</span>。<var>莫道修真皆寂寞，人间烟火最堪磨</var>。</p>
+<p class="futi">其三</p>
+<p class="poem">岁月磨成柳叶刀，削平棱角刻深槽。风霜万道藏丘壑，世事千般聚梦涛。<var>纵得初心长似酒，何堪前路远如蒿</var>。浮雲半影窗前过，<var>一任沧桑染鬓毛</var>。</p>
+<p class="futi">其四</p>
+<p class="poem">漂泊湖海剑当门，野盏孤灯映夜沉。<span class="fair">雁过留声风过影，人残剩骨誉残身</span>。<var>刀光未冷恩仇累，血泪难干爱恨嗔</var>。<var>敢向苍茫求一诺，相逢莫问旧伤痕</var>。</p>
+<p class="futi">其五</p>
+<p class="poem">梦里时间慢似雲，个中因果乱还真。虚空幻灭情犹聚，错位浮萍爱未分。<span class="fair">穿越重生前後眼，转回再世古今身</span>。但余一点迷执念，犹记尘缘第几轮。</p>
+<p class="futi">其六</p>
+<p class="poem">內忌外宽诚似善，阴违阳奉敬如宾。虔恭犹自无羞赫，盛赞唯他至汗频。<var>客去茶凉权作戏，财空友散妄存身</var>。除非己处不尴尬，尽数留於尴尬人。</p>
+<p class="futi">其七</p>
+<p class="poem"><var>帝厦余晖暮色残，百年劫掠岂无殚</var>？文明点火他乡血，泪海征帆异域冤。多少殖民埋骨地，几经风雨望家园。今朝海内惊回首，昔日强梁非亦然。</p>
+<p class="futi">其八</p>
+<p class="poem">百年局变启新元，沧海横流国运传。<var>千古山河凝剑气，八方风雨砺龙泉</var>。<span class="fair">近忧远虑图大志，上愿下福结中缘</span>。自有晦韬施远岸，终将光谱照穹寰。</p>
+<p class="futi">其九</p>
+<p class="poem">星河璀璨聚文川，烟雨苍茫汇大千。今律诗余词曲调，古风赋作韵歌骈。<var>笔雕龙篆传神采，墨染雲章动碧烟</var>。<var>一念灵台连浩宇，百年镌册写名篇</var>。</p>
+
+<h4 id="p2025-qilv">七律·写意　<span class="date"><a href="#y2025-qilv">2025.2</a></span></h4>
+<p class="futi">其一</p>
+<p class="poem">悠悠远目放飞鹰，落落神魂任恃凭。<span class="fair">溪豸焉能图若海，夏虫不可语於冰</span>。庭闲影下抚心静，风寂雲中定气凝。寥阔动聆歌以赋，见微草木比而兴。</p>
+<p class="futi">其二</p>
+<p class="poem">白雲山色衣梳枕，翠意湖光画扇屏。<span class="fair">绵雨碎檐非碎念，遥思关爱总关情</span>。闲时独坐鱼吞浪，静处微吟鸟叩棂。暮染烟霞舟自远，心随碧水共澄明。</p>
+
+<h4 id="p2025-zhua">七律·墨西芝华湾　<span class="date"><a href="#y2025-zhua">2025.6.10</a></span></h4>
+<p class="poem">帘卷望洋画景开，天涯寻迹慕名来。一帆归远夕霞渡，四季花繁点绿裁。浪缓沙平雲错影，潮生澄碧水徘徊。此时热雨吹蕉叶，彼岸波声上露台。</p>
 
 <p><br/></p>
 <p class="right"><a href="#boathill-qilv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
@@ -1797,7 +1944,7 @@
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-wulv"><span>五言律诗</span>　<span class="shou">四十九首</span></h3>
+<h3 id="boathill-wulv"><span>五言律诗</span>　<span class="shou">五十一首</span></h3>
 <p class="spbr"><br/></p>
 
 
@@ -1988,6 +2135,13 @@
 <p class="poem">美澳洋插队，欧非热下乡。海南雲晒被，漠北雪当床。死死生生爱，轰轰烈烈光。青春怀理想，老去剩迷茫。</p>
 <h4 class="futi">其五</h4>
 <p class="poem">还愿重生客，拨雲穿越人。清风如认字，拂面若封尘。移景消愁苦，别情抱恨嗔。思她无所梦，抚枕有余温。</p>
+<p><br/></p>
+
+<h4 id="p2024-kyun">五律·雲機　<span class="date"><a href="#y2024-kyun">2024.10</a></span></h4>
+<p class="poem">破雾银机起，舷窗俯九陲。江河蛇练舞，城寨演棋推。翼下桑田阔，雲间雪岭奇。时如涛怒卷，又似乱绵离。白朵开千态，青峰隐数姿。略观尘世渺，顿觉寸心怡。万象归一眼，浮生余片时。乘风游碧落，何必问归期。</p>
+
+<h4 id="p2025-yeli">五律·落仙　<span class="date"><a href="#y2025-yeli">2025.4</a></span></h4>
+<p class="poem">天宫开一线，疑似落雲仙。风携千鹤起，野采万花鲜。柔音歌渺渺，玉影舞翩翩。借令春司帝，此生长驻颜。</p>
 <p class="spbr"><br/></p>
 
 <p class="right"><a href="#boathill-wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
@@ -2093,7 +2247,7 @@
 <p><br/></p>
 </div>
 
-<p class="zong">　　右录詩詞三百零六首</p>
+<p class="zong">　　右录詩詞三百二十四首</p>
 <p class="zong">　　纱糸轩藏</p>
 
 <p class="right"><a id="endz" href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
