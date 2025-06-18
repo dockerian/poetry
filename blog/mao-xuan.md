@@ -2,6 +2,8 @@
 <a id="contents" name="contents"></a>
 > 当你觉得困顿的时候，当你觉得坚持不下去的时候，不如静下心来，读一读《毛选》。从毛主席的深刻的，充满智慧的思想中，你可能会找到不一样的答案。
 
+<div style="display:block;text-align:right">VOL &middot; <a href="#v1">1</a> &middot; <a href="#v2">2</a> &middot; <a href="#v3">3</a> &middot; <a href="#v4">4</a> &middot; <a href="#v5">5</a> &middot; &nbsp;</div>
+
 <br/><a id="v1" name="v1"></a>
 ## 第一卷
 
@@ -35,6 +37,8 @@
   * 在同一性中存在着斗争性，在特殊性中存在着普遍性，在个性中存在着共性。拿列宁的话来说，叫做“在相对的东西里面有着绝对的东西”。
   * 对抗是矛盾斗争的一种形式，而不是矛盾斗争的一切形式。
 
+<div style="display:block;text-align:right">VOL &middot; <a href="#v1">1</a> &middot; <a href="#v2">2</a> &middot; <a href="#v3">3</a> &middot; <a href="#v4">4</a> &middot; <a href="#v5">5</a> &middot; &nbsp;</div>
+
 <br/><a id="v1" name="v1"></a>
 ## 第二卷
 
@@ -54,6 +58,9 @@
   * 所谓领导权，不是要一天到晚当作口号去高喊，也不是盛气凌人地要人家服从我们，而是以党的正确政策和自己的模范工作，说服和教育党外人士，使他们愿意接受我们的建议。
   * 科学的态度是“实事求是”，“自以为是”和“好为人师”那样狂妄的态度是决不能解决问题的。
   * 以斗争求团结则团结存，以退让求团结则团结亡。
+
+
+<div style="display:block;text-align:right">VOL &middot; <a href="#v1">1</a> &middot; <a href="#v2">2</a> &middot; <a href="#v3">3</a> &middot; <a href="#v4">4</a> &middot; <a href="#v5">5</a> &middot; &nbsp;</div>
 
 <br/><a id="v3" name="v3"></a>
 ## 第三卷
@@ -82,6 +89,8 @@
   * 上级机关也不要不分轻重缓急地没有中心地同时指定下级机关做很多项工作，以致引起下级在工作步骤上的凌乱，而得不到确定的结果。
   * 在一切工作中，命令主义是错误的，因为它超过群众的觉悟程度，违反了群众的自愿原则，害了急性病。我们的同志不要以为自己了解了的东西，广大群众也和自己一样都了解了。群众是否已经了解并且是否愿意行动起来，要到群众中去考察才会知道。
 
+<div style="display:block;text-align:right">VOL &middot; <a href="#v1">1</a> &middot; <a href="#v2">2</a> &middot; <a href="#v3">3</a> &middot; <a href="#v4">4</a> &middot; <a href="#v5">5</a> &middot; &nbsp;</div>
+
 <br/><a id="v4" name="v4"></a>
 ## 第四卷
 
@@ -102,6 +111,8 @@
   * 我们必须克服困难，我们必须学会自己不懂的东西。我们必须向一切内行的人们（不管什么人）学经济工作。拜他们做老师，恭恭敬敬地学，老老实实地学。不懂就是不懂，不要装懂。不要摆官僚架子。
   * 世间一切事物中，人是第一个可宝贵的。
 
+<div style="display:block;text-align:right">VOL &middot; <a href="#v1">1</a> &middot; <a href="#v2">2</a> &middot; <a href="#v3">3</a> &middot; <a href="#v4">4</a> &middot; <a href="#v5">5</a> &middot; &nbsp;</div>
+
 <br/><a id="v5" name="v5"></a>
 ## 第五卷
 
@@ -121,6 +132,8 @@
   * 不要低估了自己方面的力量，不要夸大敌人方面的力量。
   * 我们要振作精神，下苦功学习。下苦功，三个字，一个叫下，一个叫苦，一个叫功，一定要振作精神，下苦功。
   * 在战略上我们要藐视一切敌人，在战术上我们要重视一切敌人。
+
+<div style="display:block;text-align:right">VOL &middot; <a href="#v1">1</a> &middot; <a href="#v2">2</a> &middot; <a href="#v3">3</a> &middot; <a href="#v4">4</a> &middot; <a href="#v5">5</a> &middot; &nbsp;</div>
 
 <p><br/><br/></p>
 

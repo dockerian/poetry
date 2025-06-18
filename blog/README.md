@@ -7,12 +7,14 @@
 
   * 读书笔记 [html](mynotes.html)｜[text](mynotes.txt)
 
+    - 吕蒙正：[寒窑赋](hanyaofu.md)
     - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
     - 周恩来：[杂文](zhou.html)
 
   * 英语诗歌
 
-    - [Poetry books](./poetry-books.md)
+    - [Poetry Study](poetry-study.md)
+    - [Song Lyrics](song-lyrics.md)
 
   * 笑料摘抄
 
