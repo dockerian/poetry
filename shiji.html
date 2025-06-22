@@ -24,6 +24,17 @@
     width: 100%;
   }
 
+  @keyframes op-start {
+    from {
+      background-color: skyblue;
+      border-radius: 1.5em;
+      opacity: 1;
+      right: 25%;
+    }
+    to {
+      background-color: transparent;
+      opacity: 0.25; }
+  }
   .author, .shou, .jiao, .note {
     font-family: "Georgia", "Segoe UI", "Calibri", "Garamond", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
   }
@@ -78,9 +89,11 @@
     background-color: gold;
   }
   div#atoc {
+    animation-duration: 5s;
+    animation-name: op-start;
     opacity: 0.25;
     position: fixed;
-    bottom: 1.25em; right: 0em;
+    bottom: 1.25em; right: 0.05em;
     background-color: transparent;
     line-height: 1.35em;
     margin: 0.35em 0em 0.35em 0em;
@@ -294,12 +307,25 @@
     font-weight: bold;
     font-size: 1em;
   }
+  p sup {
+    color: gray;
+    font-size: 0.75em;
+    margin: 0em 0.25em 0.25em 0em;
+    vertical-align: top;
+  }
 
   span.jiao {
     font-weight: normal;
   }
   span.cibr {
     display: inline;
+    white-space: pre-wrap;
+  }
+  span.cibr::before {
+    content: '║ ';
+    color: lightgray;
+    word-break: break-word;
+    width: 2ch;
   }
   span.date, span.year {
     display: block;
@@ -318,10 +344,9 @@
   span.date a {
     color: lightslategray; text-decoration: none;
   }
-  @media only screen and (min-width: 40em) {
-    span.cibr {
-      line-height: 1em;
-      display: block;
+  @media only screen and (min-width: 80em) {
+    span.cibr::before {
+      content: '\00000A　　';
     }
     span.date, span.year {
       display: inline-block;
@@ -433,7 +458,7 @@
       padding: 0em 0.25em 0.25em 0.25em;
     }
   }
-  @media only screen and (max-width: 960px) and (max-height: 720px) and (orientation: landscape) {
+  @media only screen and (min-width: 1200px) and (max-height: 900px) and (orientation: landscape) {
     body {
       padding: 0.5em;
     }
@@ -538,14 +563,14 @@
 
 <div id="atoc" class="noprint">
 <div id="acat">
-&middot; <a href="#boathill-ciqu">词曲</a><br/>
-         <a href="#boathill-diao">长调</a><br/>
-&middot; <a href="#boathill-xiny">新韵</a><br/>
-&middot; <a href="#boathill-qigu">七言</a><br/>
-&middot; <a href="#boathill-qilv">七律</a><br/>
-&middot; <a href="#boathill-wulv">五律</a><br/>
+&middot; <a href="#ciqu">词曲</a><br/>
+         <a href="#diao">长调</a><br/>
+&middot; <a href="#xyun">新韵</a><br/>
+&middot; <a href="#qigu">七言</a><br/>
+&middot; <a href="#qilv">七律</a><br/>
+&middot; <a href="#wulv">五律</a><br/>
 <span id="xmulu">
-&middot; <a href="#boathill-zaji">外篇</a><br/>
+&middot; <a href="#zaji">外篇</a><br/>
 </span>
 </div>
 <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">&laquo;</a>
@@ -554,11 +579,11 @@
 
 <!--Category List-->
 <div id="catg" class="center">
-<a href="#boathill-ciqu">词曲</a> |
-<a href="#boathill-xiny">新韵</a> |
-<a href="#boathill-qigu">七言</a> |
-<a href="#boathill-qilv">七律</a> |
-<a href="#boathill-wulv">五律</a>
+<a href="#ciqu">词曲</a> |
+<a href="#xyun">新韵</a> |
+<a href="#qigu">七言</a> |
+<a href="#qilv">七律</a> |
+<a href="#wulv">五律</a>
 <p class="spbr"><br/></p><span class="futi">19</span> ·
 <a href="#y1985">85</a> |
 <a href="#y1990">90</a> |
@@ -569,11 +594,12 @@
 <a href="#y2015">15</a> |
 <a href="#y2020">20</a> |
 <a href="#y2025">25</a><!-- |
-<a href="#y2030">30</a>-->
+<a href="#y2030">30</a> |
+<a href="#y2035">35</a> |
+<a href="#y2040">40</a> |
+<a href="#y2045">45</a> |
+<a href="#y2050">50</a>-->
 </div>
-
-
-
 
 
 <h2 id="htoc">﻿舟山诗词目录　<span class="year">1979·4<var> ─ </var>2025·6</span></h2>
@@ -711,7 +737,7 @@
 <p class="mulu" id="y2019-nzlh">⑵ 望海潮・新西蘭　　　　　　　　　　　<a href="#p2019-nzlh">2019・⒓</a></p>
 <p class="mulu" id="y2019-nzlw">⑴ 临江仙・新西蘭萬納卡　　　　　　　　<a href="#p2019-nzlw">2019・⒓</a></p>
 <p class="mulu" id="y2019-nzlp">⑴ 行香子・新西蘭懷奧塔普　　　　　　　<a href="#p2019-nzlp">2019・⒓</a></p>
-<p class="mulu" id="y2019-nzlg">⑴ 七律・南島綠色　　　　　　　　　　　<a href="#p2019-nzlg">2019・⒓</a></p>
+<p class="mulu" id="y2019-nzlg">⑴ 七律・新西蘭南島綠色　　　　　　　　<a href="#p2019-nzlg">2019・⒓</a></p>
 <p class="mulu" id="y2020-kong">⑵ 七律・空留　　　　　　　　　　　　　<a href="#p2020-kong">2020・８</a><a id="y2020" href="#catg">&#11139;</a></p>
 <p class="mulu" id="y2020-zlin">⑴ 七律・赠周琳　　　　　　　　　　　　<a href="#p2020-zlin">2020・⒒</a></p>
 <p class="mulu" id="y2020-fall">⑵ 七律・残秋　　　　　　　　　　　　　<a href="#p2020-fall">2020・⒒</a></p>
@@ -797,7 +823,7 @@
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-ciqu"><span>词曲</span>　<span class="shou">一百二十首</span></h3>
+<h3 id="ciqu"><span>词曲</span>　<span class="shou">一百二十首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-fiji">天净沙·今韵斐济十题<span class="shou">十八首</span>　<span class="date"><a href="#y2010-fiji">2010.2</a></span></h4>
@@ -862,50 +888,50 @@
 <p class="spbr"><br/></p>
 
 <h4 id="p1982-xihu">采桑子·湖趣　<span class="date"><a href="#y1982-xihu">1982.9</a></span></h4>
-<p class="poem">傍湖坐卧听风雨，细雨萧萧，翠竹萧萧。荡水泊船人过桥。<span class="cibr"></span>　　闲来好与钓翁话，蛙鸣悄悄，人语悄悄，山远天高任逍遥。</p>
+<p class="poem">傍湖坐卧听风雨，细雨萧萧，翠竹萧萧。荡水泊船人过桥。<span class="cibr"></span>闲来好与钓翁话，蛙鸣悄悄，人语悄悄，山远天高任逍遥。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1983-yuan">菩萨蛮·元夕　<span class="date"><a href="#y1983-yuan">1983.2</a></span></h4>
-<p class="poem">霓虹摇醉鱼龙影，高窗帘卷人初醒。宝气宴金樽，香壶酒色昏。<span class="cibr"></span>　　灯花迷碧树，望尽天涯路。夜雨竞豪华，春风入万家。</p>
+<p class="poem">霓虹摇醉鱼龙影，高窗帘卷人初醒。宝气宴金樽，香壶酒色昏。<span class="cibr"></span>灯花迷碧树，望尽天涯路。夜雨竞豪华，春风入万家。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2020-pusa">菩萨蛮·嫦娥五号奔月归来　<span class="date"><a href="#y2020-pusa">2020.12.18</a></span></h4>
-<p class="poem">长征火举升空火，嫦娥采月蟾宫座。舞步一筹高，太空滑水漂。<span class="cibr"></span>　　十年蓝图证，千载飞天梦。航测里程碑，收官绕落回。</p>
+<p class="poem">长征火举升空火，嫦娥采月蟾宫座。舞步一筹高，太空滑水漂。<span class="cibr"></span>十年蓝图证，千载飞天梦。航测里程碑，收官绕落回。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1983-chux">水仙子·除夕　<span class="date"><a href="#y1983-chux">1983.2</a></span></h4>
-<p class="poem">一声鞭竹一声春，两点花灯两点明，三更烟火三更深。<span class="cibr"></span>　　玉箫吹彻昆仑，叹人间岁岁风尘。酒落愁肠外，梦回野老村，又是新晨。</p>
+<p class="poem">一声鞭竹一声春，两点花灯两点明，三更烟火三更深。<span class="cibr"></span>玉箫吹彻昆仑，叹人间岁岁风尘。酒落愁肠外，梦回野老村，又是新晨。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1984-dlwu">巫山一段雲·雲中飞行　<span class="date"><a href="#y1984-dlwu">1984.8</a></span></h4>
-<p class="poem">山雪积雲冷，烟湖流浪平。雨声惊散梦魂轻。迷眼看凡瀛。<span class="cibr"></span>　　东海千帆静，蓬莱一粟晴。微风吹皱绿荷萍。南浦接阑汀。</p>
+<p class="poem">山雪积雲冷，烟湖流浪平。雨声惊散梦魂轻。迷眼看凡瀛。<span class="cibr"></span>东海千帆静，蓬莱一粟晴。微风吹皱绿荷萍。南浦接阑汀。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1985-qing">忆秦娥·清明　<span class="date"><a href="#y1985-qing">1985.1</a></span></h4>
-<p class="poem">呜声咽，寒风泪雨雲遮月。雲遮月，长安街上，万民伤别。<span class="cibr"></span>　　从今岁岁清明节，音容笑貌思难绝。思难绝，英灵常在，九天宫阙。</p>
+<p class="poem">呜声咽，寒风泪雨雲遮月。雲遮月，长安街上，万民伤别。<span class="cibr"></span>从今岁岁清明节，音容笑貌思难绝。思难绝，英灵常在，九天宫阙。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1985-yuan">人月圆·十五　<span class="date"><a href="#y1985-yuan">1985.2</a></span></h4>
-<p class="poem">烛花影里冬风暖，春雨响良宵。年年此景，华灯俱放，爆竹声嚣。<span class="cibr"></span>　　星河飞翠，烟红雲绿，笑语轻飘。侯门歌舞，金窗绣户，豪厦琼瑶。</p>
+<p class="poem">烛花影里冬风暖，春雨响良宵。年年此景，华灯俱放，爆竹声嚣。<span class="cibr"></span>星河飞翠，烟红雲绿，笑语轻飘。侯门歌舞，金窗绣户，豪厦琼瑶。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1986-sanq">自度散曲·风雲健　<span class="date"><a href="#y1986-sanq">1986.11</a></span></h4>
-<p class="poem">寄思花间下，無语怨西风。未知雲意，月何阴缺，晚山松。<span class="cibr"></span>　　那堪寂寞三秋，不见伊容。一去逝無踪。向寒更、盼不到相思梦，恨情钟！</p>
+<p class="poem">寄思花间下，無语怨西风。未知雲意，月何阴缺，晚山松。<span class="cibr"></span>那堪寂寞三秋，不见伊容。一去逝無踪。向寒更、盼不到相思梦，恨情钟！</p>
 <h4 class="futi">其二</h4>
-<p class="poem">爱也無由我，情也不由天。愁思悠悠，白雲淡淡，正清寒。<span class="cibr"></span>　　怎禁冷落残杯，欲诉無言。独自去凭栏。是前生、注定了风月债，却难还。</p>
+<p class="poem">爱也無由我，情也不由天。愁思悠悠，白雲淡淡，正清寒。<span class="cibr"></span>怎禁冷落残杯，欲诉無言。独自去凭栏。是前生、注定了风月债，却难还。</p>
 <p class="note">批曰：残花对孤影，心乱恼無情。無时或忘，斯病甚矣。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1983-jyou">少年游·寄友　<span class="date"><a href="#y1983-jyou">1983.5</a></span></h4>
-<p class="poem">班荆说故，穿窗叠影，清酒夜幽阑。灯前长忆，莲池水暖，春雨碎低檐。<span class="cibr"></span>　　欲共金樽同一刻，独自卷珠帘。为问何时重相见，冰轮满，梦情酣。</p>
+<p class="poem">班荆说故，穿窗叠影，清酒夜幽阑。灯前长忆，莲池水暖，春雨碎低檐。<span class="cibr"></span>欲共金樽同一刻，独自卷珠帘。为问何时重相见，冰轮满，梦情酣。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1982-rain">渔家傲·夜雨泊江　<span class="date"><a href="#y1982-rain">1982.9</a></span></h4>
-<p class="poem">暮落夜来阴雨袭，长帆收尽水流急。翻浪打湿船翁笠。对青壁，笛声吹荡寒风里。<span class="cibr"></span>　　一曲新词思万里，江山渐起家乡忆。风晚渔歌音寂寂。梦侵泪，浩乐常使鱼龙泣。</p>
+<p class="poem">暮落夜来阴雨袭，长帆收尽水流急。翻浪打湿船翁笠。对青壁，笛声吹荡寒风里。<span class="cibr"></span>一曲新词思万里，江山渐起家乡忆。风晚渔歌音寂寂。梦侵泪，浩乐常使鱼龙泣。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1989-sanq">散曲·寒夜别　<span class="date"><a href="#y1989-sanq">1989.1</a></span></h4>
-<p class="poem">愁雲向晚，向寒风楼台、明月夜里。不见伊人重举袂，欲凝心中热泪。空怨松影不留情，折枝香素手，看尽两眸媚。<span class="cibr"></span>　　烛窗孤盏对壁影，识遍闲愁滋味。宿酒难醒，梦里相寻，拼得糊涂醉。奈何情来仍無计，自从人去後，日日伤春水。</p>
+<p class="poem">愁雲向晚，向寒风楼台、明月夜里。不见伊人重举袂，欲凝心中热泪。空怨松影不留情，折枝香素手，看尽两眸媚。<span class="cibr"></span>烛窗孤盏对壁影，识遍闲愁滋味。宿酒难醒，梦里相寻，拼得糊涂醉。奈何情来仍無计，自从人去後，日日伤春水。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-shan">中吕·山坡羊<span class="futi">·黃石公園</span>　<span class="date"><a href="#y2010-shan">2010.8</a></span></h4>
@@ -920,118 +946,118 @@
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-noon">雙調憶江南·午後春光　<span class="date"><a href="#y2014-noon">2014.3</a></span></h4>
-<p class="poem">春來也，花暖淡雲飄。日影穿林翻亮綠，柳聲飛葉倩新條。風舞自逍遙。<span class="cibr"></span>　　心不老，詩意比天高。蔚海湖藍能看透，佳時美景最難邀。存想在今朝。</p>
+<p class="poem">春來也，花暖淡雲飄。日影穿林翻亮綠，柳聲飛葉倩新條。風舞自逍遙。<span class="cibr"></span>心不老，詩意比天高。蔚海湖藍能看透，佳時美景最難邀。存想在今朝。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1995-ymei">虞美人·伤春景　<span class="date"><a href="#y1995-ymei">1995.3</a></span></h4>
-<p class="poem">危栏望断烟缥渺，绿水添烦恼。雲来山色有無中，寂寞春怀不解怨花红。<span class="cibr"></span>　　微风细雨真無奈，聚散情和爱。此生还有万千愁，眼泪为她抛尽也难休。</p>
+<p class="poem">危栏望断烟缥渺，绿水添烦恼。雲来山色有無中，寂寞春怀不解怨花红。<span class="cibr"></span>微风细雨真無奈，聚散情和爱。此生还有万千愁，眼泪为她抛尽也难休。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1995-suzq">虞美人·诉春情　<span class="date"><a href="#y1995-suzq">1995.11</a></span></h4>
-<p class="poem">花柔色嫩胭脂雨，温沁香如玉。轻盈体态让人怜，解舞娇肢垂柳晚风前。<span class="cibr"></span>　　芳心自警情思艳，尺素凭鱼雁。离愁转似各天涯，何日楚山雲雨会巫峡？</p>
+<p class="poem">花柔色嫩胭脂雨，温沁香如玉。轻盈体态让人怜，解舞娇肢垂柳晚风前。<span class="cibr"></span>芳心自警情思艳，尺素凭鱼雁。离愁转似各天涯，何日楚山雲雨会巫峡？</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-ymei">虞美人·想念二章　<span class="date"><a href="#y2010-ymei">2010.1</a></span></h4>
 <h4 class="futi">其一·冬雲</h4>
-<p class="poem">別愁離緒何由去，昨夜疏狂雨。東風慣把海雲吹，一縷相思隔斷遠山眉。<span class="cibr"></span>　　無時或忘她微笑，與我相偕老。幾多牽掛伴歸程，切記今生路上玉金盟。</p>
+<p class="poem">別愁離緒何由去，昨夜疏狂雨。東風慣把海雲吹，一縷相思隔斷遠山眉。<span class="cibr"></span>無時或忘她微笑，與我相偕老。幾多牽掛伴歸程，切記今生路上玉金盟。</p>
 <p class="spbr"><br/></p>
 <h4 class="futi">其二·冬雨</h4>
-<p class="poem">冰窗凍雨人行錯，畫染層層墨。新離小別念難收，愛似一天不見也煩懮。<span class="cibr"></span>　　淅淅瀝瀝屋檐上，續續低吟唱。問君何事枕無眠，惟愿今宵珍重夢輕恬。</p>
+<p class="poem">冰窗凍雨人行錯，畫染層層墨。新離小別念難收，愛似一天不見也煩懮。<span class="cibr"></span>淅淅瀝瀝屋檐上，續續低吟唱。問君何事枕無眠，惟愿今宵珍重夢輕恬。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-ying">虞美人·樱花　<span class="date"><a href="#y2021-ying">2021.03.29</a></span></h4>
-<p class="poem">心争料峭香争暖，争艳争花满。一春一水待朝霞，一岸一堤一树向人家。<span class="cibr"></span>　　落时清丽生时短，时聚时离散。随风随雨付尘沙，随梦随雲随爱到天涯。</p>
+<p class="poem">心争料峭香争暖，争艳争花满。一春一水待朝霞，一岸一堤一树向人家。<span class="cibr"></span>落时清丽生时短，时聚时离散。随风随雨付尘沙，随梦随雲随爱到天涯。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2020-kosm">南乡子·宇宙往事　<span class="date"><a href="#y2020-kosm">2020.12</a>. Seattle</span></h4>
 <p class="futi">其一·逝空</p>
-<p class="poem">太始辟鸿濛，煮沸一锅量子羹。<span class="fair">萬古银河流不尽，熵增</span>。曲振超弦破暗声。<span class="cibr"></span>　　星际叹生逢，乱世人心宇宙锋。黑洞慢看光逸去，奔腾。波粒维度在永恒。</p>
+<p class="poem">太始辟鸿濛，煮沸一锅量子羹。<span class="fair">萬古银河流不尽，熵增</span>。曲振超弦破暗声。<span class="cibr"></span>星际叹生逢，乱世人心宇宙锋。黑洞慢看光逸去，奔腾。波粒维度在永恒。</p>
 <p class="futi">其二·虚空</p>
-<p class="poem">先古望星坑，不灭恒雲不灭灯。能量尽头成热寂，蒸蒸。静待时间流溢衡。<span class="cibr"></span>　　断舍乱离崩，昨夜楼台此夜风。<span class="good">世事通达非太久，平生。一场虚無莫与争</span>。</p>
+<p class="poem">先古望星坑，不灭恒雲不灭灯。能量尽头成热寂，蒸蒸。静待时间流溢衡。<span class="cibr"></span>断舍乱离崩，昨夜楼台此夜风。<span class="good">世事通达非太久，平生。一场虚無莫与争</span>。</p>
 <p class="futi">其三·视空</p>
-<p class="poem">理想彩如虹，磁矩核旋引力钟。<span class="fair">弯曲时空弯曲场，星宫。浩瀚無边望似穹</span>。<span class="cibr"></span>　　老去亦心童，何羡光年枉费功。视界平行不必再、匆匆。但信人生有始终。</p>
+<p class="poem">理想彩如虹，磁矩核旋引力钟。<span class="fair">弯曲时空弯曲场，星宫。浩瀚無边望似穹</span>。<span class="cibr"></span>老去亦心童，何羡光年枉费功。视界平行不必再、匆匆。但信人生有始终。</p>
 <p class="futi">其四·身空</p>
-<p class="poem">滴水我为缸，<span class="fair">星动涡旋宇宙光</span>。雲想天心吞四海、八荒。<span class="fair">思是加持意是疆</span>。<span class="cibr"></span>　　脑洞大开窗，不费轮回萬古熵。無量劫生無间道，阴阳。梦里蝶身入梦庄。</p>
+<p class="poem">滴水我为缸，<span class="fair">星动涡旋宇宙光</span>。雲想天心吞四海、八荒。<span class="fair">思是加持意是疆</span>。<span class="cibr"></span>脑洞大开窗，不费轮回萬古熵。無量劫生無间道，阴阳。梦里蝶身入梦庄。</p>
 <p class="futi">其五·相空</p>
-<p class="poem">佛手拈如花，物我無心境最佳。<span class="fair">一念不生不具相，坍塌。萬物思成似聚沙</span>。<span class="cibr"></span>　　妙想在天涯，遮断星雲哪几家？量子意识魂在气，叠加。随爱纠缠随爱杀。</p>
+<p class="poem">佛手拈如花，物我無心境最佳。<span class="fair">一念不生不具相，坍塌。萬物思成似聚沙</span>。<span class="cibr"></span>妙想在天涯，遮断星雲哪几家？量子意识魂在气，叠加。随爱纠缠随爱杀。</p>
 <p class="futi">其六·明空</p>
-<p class="poem">曲率渡星帆，寂寞迷航逆旅寒。际会风雲留不住、光年。超限思维粒子船。<span class="cibr"></span>　　性悟法心观，弹指成眠入定禅。<span class="good">無明而生在一念，三千。众妙之门秘又玄</span>。</p>
+<p class="poem">曲率渡星帆，寂寞迷航逆旅寒。际会风雲留不住、光年。超限思维粒子船。<span class="cibr"></span>性悟法心观，弹指成眠入定禅。<span class="good">無明而生在一念，三千。众妙之门秘又玄</span>。</p>
 <p class="futi">其七·梦空</p>
-<p class="poem">再醒百年身，回首不识浩瀚辰。猎暗黑林谁试手？森森。一点灵华萬点魂。<span class="cibr"></span>　　生死憎离分，雨散雲停爱俱焚。众物由心千百界，芸芸。<span class="good">悟到真时梦亦真</span>。</p>
+<p class="poem">再醒百年身，回首不识浩瀚辰。猎暗黑林谁试手？森森。一点灵华萬点魂。<span class="cibr"></span>生死憎离分，雨散雲停爱俱焚。众物由心千百界，芸芸。<span class="good">悟到真时梦亦真</span>。</p>
 <p class="futi">其八·缘空</p>
-<p class="poem">强弱电磁吸，亿兆星盘布似棋。大道無声凭有力，红移。穿越龙腾量子泥。<span class="cibr"></span>　　成住坏空离，劫在千年命在期。三界念消一刹那，灯熄。缘起生生创世谜。</p>
+<p class="poem">强弱电磁吸，亿兆星盘布似棋。大道無声凭有力，红移。穿越龙腾量子泥。<span class="cibr"></span>成住坏空离，劫在千年命在期。三界念消一刹那，灯熄。缘起生生创世谜。</p>
 <p class="futi">其九·岁空</p>
-<p class="poem">举目望繁星，<span class="fair">雲在浮尘影在瓶</span>。坐井欲知恒古事，倾听。默默长河浩宇鸣。<span class="cibr"></span>　　射电向天庭，动问回音岁几龄？<span class="good">道可非常非可道，無名</span>。三体归一信必灵。</p>
+<p class="poem">举目望繁星，<span class="fair">雲在浮尘影在瓶</span>。坐井欲知恒古事，倾听。默默长河浩宇鸣。<span class="cibr"></span>射电向天庭，动问回音岁几龄？<span class="good">道可非常非可道，無名</span>。三体归一信必灵。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1994-chun">临江仙·惜春　<span class="date"><a href="#y1994-chun">1994.3</a></span></h4>
-<p class="poem">苔静长门凝暮霭，楼台一抹残霞。晚风情绪不归家。绿塘藏睡鹤，暗柳带栖鸦。<span class="cibr"></span>　　已是分离独自苦，此身犹在天涯。闲愁容易逝年华。<span class="fair">落红堆成阵，夜雨乱鸣笳</span>。</p>
+<p class="poem">苔静长门凝暮霭，楼台一抹残霞。晚风情绪不归家。绿塘藏睡鹤，暗柳带栖鸦。<span class="cibr"></span>已是分离独自苦，此身犹在天涯。闲愁容易逝年华。<span class="fair">落红堆成阵，夜雨乱鸣笳</span>。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1996-chun">临江仙·感赋　<span class="date"><a href="#y1996-chun">1996.3</a></span></h4>
-<p class="poem">寂寞楼台风起舞，寒空月上西窗。离愁别绪暗神伤。<span class="good">情丝堆又老，孤梦恨初长</span>。<span class="cibr"></span>　　恩爱一生谁与共？惟余诗赋文章。人情世故太凄凉。十年磨砺後，四海一空囊。</p>
+<p class="poem">寂寞楼台风起舞，寒空月上西窗。离愁别绪暗神伤。<span class="good">情丝堆又老，孤梦恨初长</span>。<span class="cibr"></span>恩爱一生谁与共？惟余诗赋文章。人情世故太凄凉。十年磨砺後，四海一空囊。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2006-reus">临江仙·會東<span class="futi">·遥贺同学会</span>　<span class="date"><a href="#y2006-reus">2006.3</a></span></h4>
-<p class="poem">脉脉远山雲积雪，春心漫染春红。五湖胜会友情浓，西来生番客，东海看飞鸿。<span class="cibr"></span>　　记取疏狂年少梦，别来想见音容。今朝尽醉舞姿丰，珍惜明月夜，莫散太匆匆。</p>
+<p class="poem">脉脉远山雲积雪，春心漫染春红。五湖胜会友情浓，西来生番客，东海看飞鸿。<span class="cibr"></span>记取疏狂年少梦，别来想见音容。今朝尽醉舞姿丰，珍惜明月夜，莫散太匆匆。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-rain">临江仙·春雨　<span class="date"><a href="#y2014-rain">2014.03.28</a>. Sammamish</span></h4>
-<p class="poem">雲暗芳園失翠色，隱約霧裡湖山。東風送暖又歸寒。碎簷春雨夜，想起有晴天。<span class="cibr"></span>　　或恐牽懷驚睡夢，孤窗默數更殘。絲絲縷縷付詩函。幾行相思句，燈下苦參研。</p>
+<p class="poem">雲暗芳園失翠色，隱約霧裡湖山。東風送暖又歸寒。碎簷春雨夜，想起有晴天。<span class="cibr"></span>或恐牽懷驚睡夢，孤窗默數更殘。絲絲縷縷付詩函。幾行相思句，燈下苦參研。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2018-jing">临江仙·重聚　<span class="date"><a href="#y2018-jing">2018.6</a></span></h4>
-<p class="poem">敘古談今時入酒，聊聊夏夜方長。不羈年少意輕狂。好功千件記，糗事一籮筐。①<span class="cibr"></span>　　別去江湖豪氣顯，更多幾許擔當。慢煮茗茶話同窗。眉間識舊影，「微信」有新章。②</p>
-<p class="note">①注<span class="jiao">〖此記和青同學少時為得獎勵拼湊上千件好事〗</span></p>
-<p class="note">②注<span class="jiao">〖微信：手機社交軟件〗</span></p>
+<p class="poem">敘古談今時入酒，聊聊夏夜方長。不羈年少意輕狂。好功千件記，糗事一籮筐。<sup>①</sup><span class="cibr"></span>別去江湖豪氣顯，更多幾許擔當。慢煮茗茶話同窗。眉間識舊影，「微信」有新章。<sup>②</sup></p>
+<p class="note"><sup>①</sup>注<span class="jiao">〖此記和青同學少時為得獎勵拼湊上千件好事〗</span></p>
+<p class="note"><sup>②</sup>注<span class="jiao">〖微信：手機社交軟件〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2019-nzlw">临江仙·新西蘭萬納卡　<span class="date"><a href="#y2019-nzlw">2019.12</a></span></h4>
-<p class="poem">初破晴空積雪線，風吹雲見藍天。融冰化作水方圓。千頃湖波靜，一影樹孤單。<span class="cibr"></span>　　小鎮咖啡飲品店，路邊盡享清閒。黑金鮑價百拾元。旦夕名望顯，眾口贊相傳。</p>
+<p class="poem">初破晴空積雪線，風吹雲見藍天。融冰化作水方圓。千頃湖波靜，一影樹孤單。<span class="cibr"></span>小鎮咖啡飲品店，路邊盡享清閒。黑金鮑價百拾元。旦夕名望顯，眾口贊相傳。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2022-reun">临江仙·重聚用陈与义《忆昔午桥》原韵　<span class="date"><a href="#y2022-reun">2022.10.24</a></span></h4>
-<p class="poem">再别经年重聚饮，座中畅谈豪英。青春岁月余有声。金黄秋叶影，期待柳花明。<span class="cibr"></span>　　壮志归来博一笑，穷达宠辱不惊。犹怀诗意看新晴。人生当半醒，轻梦付三更。</p>
+<p class="poem">再别经年重聚饮，座中畅谈豪英。青春岁月余有声。金黄秋叶影，期待柳花明。<span class="cibr"></span>壮志归来博一笑，穷达宠辱不惊。犹怀诗意看新晴。人生当半醒，轻梦付三更。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2008-zlin">蝶戀花·臘雪賀辰致琳兒　<span class="date"><a href="#y2008-zlin">2008.1</a></span></h4>
-<p class="poem"><span class="fair">昨夜冰封冬送雪，倦枕依窗，街岸人清絕</span>。一片微光凝似月，滿園悄寂銀裝疊。<span class="cibr"></span>　　萬念此時如玉潔，忘卻平凡，真義情難缺。<span class="good">今世但求無所别，明朝攜手凌山岳</span>。</p>
+<p class="poem"><span class="fair">昨夜冰封冬送雪，倦枕依窗，街岸人清絕</span>。一片微光凝似月，滿園悄寂銀裝疊。<span class="cibr"></span>萬念此時如玉潔，忘卻平凡，真義情難缺。<span class="good">今世但求無所别，明朝攜手凌山岳</span>。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1984-chux">青玉案·除夕　<span class="date"><a href="#y1984-chux">1984.2</a></span></h4>
-<p class="poem">梦魂盼到雲楼暮，醉中认，繁华路。窗绿帘红人影故，灯深元夜，寒轻银树，歌舞寻呼处。<span class="cibr"></span>　　冬风待雪听春度，万紫千花飞盈户。一片欢声随雨入。阶台碎响，迷天沉雾，欲引婵娟顾。</p>
+<p class="poem">梦魂盼到雲楼暮，醉中认，繁华路。窗绿帘红人影故，灯深元夜，寒轻银树，歌舞寻呼处。<span class="cibr"></span>冬风待雪听春度，万紫千花飞盈户。一片欢声随雨入。阶台碎响，迷天沉雾，欲引婵娟顾。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-fall">行香子·中秋　<span class="date"><a href="#y2011-fall">2011.9</a></span></h4>
-<p class="poem"><span class="fair">淡淡疏晴，莽莽雲青。雨飛輕，落落残英</span>。霓灯初上，晚照霞明。看夜方濃，秋方好，月方盈。<span class="cibr"></span>　　華髮暗換，回首堪驚。為虛名，意氣難平。爭些圓缺，嘗盡輸贏。想古時闋，今時夢，此時情。</p>
+<p class="poem"><span class="fair">淡淡疏晴，莽莽雲青。雨飛輕，落落残英</span>。霓灯初上，晚照霞明。看夜方濃，秋方好，月方盈。<span class="cibr"></span>華髮暗換，回首堪驚。為虛名，意氣難平。爭些圓缺，嘗盡輸贏。想古時闋，今時夢，此時情。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-cali">行香子·夜航<span class="futi">·西雅圖至舊金山</span>　<span class="date"><a href="#y2011-cali">2011.9</a></span></h4>
-<p class="poem">睏意嗡鳴，睡念猶輕。暮色凝，夜燈和平。暫拋塵務，漸入深靈。正<span class="good">雲機行，俗機去，禪機明</span>。<span class="cibr"></span>　　人生遽夢，世事繁盈。似時空，變換無凴。縱非顯達，亦有真情。但隨了心，成了願，忘了名。</p>
+<p class="poem">睏意嗡鳴，睡念猶輕。暮色凝，夜燈和平。暫拋塵務，漸入深靈。正<span class="good">雲機行，俗機去，禪機明</span>。<span class="cibr"></span>人生遽夢，世事繁盈。似時空，變換無凴。縱非顯達，亦有真情。但隨了心，成了願，忘了名。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-cali-goldengate">行香子·金門橋　<span class="date"><a href="#y2011-cali">2011.9</a>. San Francisco</span></h4>
-<p class="poem">霧鎖金門，幾近無痕。水連塵，迷陣橫陳。天香繚繞，氣象平吞。漸路彎失，山彎斷，海灣深。<span class="cibr"></span>　　<span class="fair">重重似障，密密如森。最難尋，至理真身</span>。一點靈犀，萬物承恩。照波光鱗，雲光亂，霞光沉。</p>
+<p class="poem">霧鎖金門，幾近無痕。水連塵，迷陣橫陳。天香繚繞，氣象平吞。漸路彎失，山彎斷，海灣深。<span class="cibr"></span><span class="fair">重重似障，密密如森。最難尋，至理真身</span>。一點靈犀，萬物承恩。照波光鱗，雲光亂，霞光沉。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-cali-yang">行香子·贈楊大夫　<span class="date"><a href="#y2011-cali">2011.9</a></span></h4>
-<p class="poem">指按陰陽，針下柔剛。問疾康，經略良方。懸壺濟世，救病扶傷。聚醫廬功，金廬氣，茶廬香。<span class="cibr"></span>　　率真天性，老成文章。無私藏，解惑傾囊。人情故我，笑談飛揚。仰學林尊，雲林壽，杏林長。</p>
+<p class="poem">指按陰陽，針下柔剛。問疾康，經略良方。懸壺濟世，救病扶傷。聚醫廬功，金廬氣，茶廬香。<span class="cibr"></span>率真天性，老成文章。無私藏，解惑傾囊。人情故我，笑談飛揚。仰學林尊，雲林壽，杏林長。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-cali-17miles">行香子·陰雨加州海岸　<span class="date"><a href="#y2011-cali">2011.9</a></span></h4>
-<p class="poem">十七哩灘，南去三藩。棧橋邊，浪影爭帆。紅黃岸草，飛鳥漁船。望崖石高，礁石暗，淺石淹。<span class="cibr"></span>　　酒樓華麗，街巷舒閑。路宛延，葉茂枝繁。清幽緑地，錦綉花園。襯雲紗青，婚紗白，海紗藍。</p>
+<p class="poem">十七哩灘，南去三藩。棧橋邊，浪影爭帆。紅黃岸草，飛鳥漁船。望崖石高，礁石暗，淺石淹。<span class="cibr"></span>酒樓華麗，街巷舒閑。路宛延，葉茂枝繁。清幽緑地，錦綉花園。襯雲紗青，婚紗白，海紗藍。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-cali-sanf">行香子·舊金山藝術宮　<span class="date"><a href="#y2011-cali">2011.9</a></span></h4>
-<p class="poem">一片湖潭，半壁雕垣。巨門懸，高柱擎天。鵝行影緑，鴿點漪漣。讓水流長，雲流散，景留連。<span class="cibr"></span>　　森森藝殿，偉偉穹觀。有時間，見證良緣。風風雨雨，愛愛歡歡。記暖情閑，花晴好，真情綿。</p>
+<p class="poem">一片湖潭，半壁雕垣。巨門懸，高柱擎天。鵝行影緑，鴿點漪漣。讓水流長，雲流散，景留連。<span class="cibr"></span>森森藝殿，偉偉穹觀。有時間，見證良緣。風風雨雨，愛愛歡歡。記暖情閑，花晴好，真情綿。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-suke">行香子·貝克山蘇克衫峰　<span class="date"><a href="#y2011-suke">2011.10</a></span></h4>
-<p class="poem"><span class="fair">遠望飛鷹，暢想身輕</span>。萬仞迎，空谷獨行。高岩絕壁，勝似閑庭。待暮雲紅，流雲聚，岭雲平。<span class="cibr"></span>　　峰迴路轉，彎急坡停。看崖晴，深澗心驚。入秋顔色，水墨濃盈。趁松山明，湖山凈，雪山青。</p>
+<p class="poem"><span class="fair">遠望飛鷹，暢想身輕</span>。萬仞迎，空谷獨行。高岩絕壁，勝似閑庭。待暮雲紅，流雲聚，岭雲平。<span class="cibr"></span>峰迴路轉，彎急坡停。看崖晴，深澗心驚。入秋顔色，水墨濃盈。趁松山明，湖山凈，雪山青。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-xiyn">行香子·火燒天宮　<span class="date"><a href="#y2014-xiyn">2014.2</a></span></h4>
-<p class="poem">夕照如铜，畫染晴松。望天蓝，似海深穹。千帆逐陣，萬浪随風。聚<span class="fair">雲飛霞，霞飛墨，墨飛紅</span>。<span class="cibr"></span>　　逆旅人生，過客凡功。與佳景，際遇而逢。一时妙筆，雨雪消融。讓<span class="good">夢成虚，虚成幻，幻成空</span>。</p>
+<p class="poem">夕照如铜，畫染晴松。望天蓝，似海深穹。千帆逐陣，萬浪随風。聚<span class="fair">雲飛霞，霞飛墨，墨飛紅</span>。<span class="cibr"></span>逆旅人生，過客凡功。與佳景，際遇而逢。一时妙筆，雨雪消融。讓<span class="good">夢成虚，虚成幻，幻成空</span>。</p>
 <p class="spbr"><br/></p>
 <h4 class="futi">English version: A Vanilla Song</h4>
 <p class="ying">Sunset light brown,</p>
@@ -1053,91 +1079,91 @@
 <p class="ying">be your own</p>
 <p class="spbr"><br/></p>
 <h4 id="a2014-xiyn" class="futi">附：周琳《行香子·霞映雪峰·<span class="futi">遥應舟山</span>》</h4>
-<p class="fulu">雲卷蛟龍，橫掃苍穹。曙光明，氣勢金虹。雪峰破霧，百鸟齐衝。看天如緞，霞如箭，山如弓。<span class="cibr"></span>　　欢喜人生，谁解其中？似佳景，稍縱即空。朝陽之下，料峭霜重。取意當切，情當永，爱當浓。</p>
+<p class="fulu">雲卷蛟龍，橫掃苍穹。曙光明，氣勢金虹。雪峰破霧，百鸟齐衝。看天如緞，霞如箭，山如弓。<span class="cibr"></span>欢喜人生，谁解其中？似佳景，稍縱即空。朝陽之下，料峭霜重。取意當切，情當永，爱當浓。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-spring-equinox">行香子·春分　<span class="date"><a href="#y2014-chun">2014.3</a></span></h4>
-<p class="poem">貪看春光，滿目芬芳。湛藍天，深海之窗。青松翠溢，櫻樹姿揚。讓花心醉，草新綠，人新妝。<span class="cibr"></span>　　經雨風霜，生命徜徉。雪連山，薄霧微茫。<span class="fair">斑駁斜影，詩意深藏</span>。願雲留住，歲流金，水流長。</p>
+<p class="poem">貪看春光，滿目芬芳。湛藍天，深海之窗。青松翠溢，櫻樹姿揚。讓花心醉，草新綠，人新妝。<span class="cibr"></span>經雨風霜，生命徜徉。雪連山，薄霧微茫。<span class="fair">斑駁斜影，詩意深藏</span>。願雲留住，歲流金，水流長。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-xxue">行香子·夏入雪峰　<span class="date"><a href="#y2014-xxue">2014.07.12</a>. Granite Falls</span></h4>
-<p class="poem">高嶺重巒，暑氣消殘。水窮處，野趣營盤。松林花徑，光影斑斕。看冬凝玉，春流澗，夏成潭。<span class="cibr"></span>　　<span class="fair">地聚峰連，古化熔岩。千年雪，陸海奇緣</span>。山陰背後，滴水洞前。數四冰窟，兩坡綠，一天藍。</p>
+<p class="poem">高嶺重巒，暑氣消殘。水窮處，野趣營盤。松林花徑，光影斑斕。看冬凝玉，春流澗，夏成潭。<span class="cibr"></span><span class="fair">地聚峰連，古化熔岩。千年雪，陸海奇緣</span>。山陰背後，滴水洞前。數四冰窟，兩坡綠，一天藍。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-zhao">行香子·朝霞　<span class="date"><a href="#y2014-zhao">2014.09.23</a>. Sammamish</span></h4>
-<p class="poem">一線黎明，數點晨燈。曙光昇，破霧層層。松林薄靄，遠嶺微朦。漸天如海，雲如火，雪如橙。<span class="cibr"></span>　　分隔兩地，思念偕行。人生路，亦師亦朋。親容迥慕，地久心恆。願情添濃，歲添永，愛添增。</p>
+<p class="poem">一線黎明，數點晨燈。曙光昇，破霧層層。松林薄靄，遠嶺微朦。漸天如海，雲如火，雪如橙。<span class="cibr"></span>分隔兩地，思念偕行。人生路，亦師亦朋。親容迥慕，地久心恆。願情添濃，歲添永，愛添增。</p>
 <h4 id="a2014-bday" class="futi">附：周琳原詞　<span class="date">2014.09.22. Narrows Drive</span></h4>
-<p class="fulu">入夜秋風，雨打窗燈。青階臺，落葉層層。何時邀夢，趁影迷朦。待雪山晴，湖水綠，楓林橙。<span class="cibr"></span>　　一十七載，你我同行。閱詩書，似伴如朋。有愛如此，不求永恆。知情常在，思不斷，念相增。</p>
+<p class="fulu">入夜秋風，雨打窗燈。青階臺，落葉層層。何時邀夢，趁影迷朦。待雪山晴，湖水綠，楓林橙。<span class="cibr"></span>一十七載，你我同行。閱詩書，似伴如朋。有愛如此，不求永恆。知情常在，思不斷，念相增。</p>
 <p class="spbr"><br/></p>
 <h4 id="a2014-anniversary" class="futi">附：满江红·纪念日　<span class="date"><a href="#y2014-zhao">2014.09.25</a></span></h4>
 <p class="note poem">無所求，但得相守；無所留，成詩一首。週年兩分，故言此序，曰：<i>年年譜新意，歲歲有情珍。草作贈妙侶，閱後請即焚</i>。</p>
-<p class="fulu">方過中秋節，轉眼入秋分。匆匆三周半月，辛苦費心神。培訓兼職翻譯，教學融於娛戲，導遊購物村。忙騰累妳尓①，累克花生屯②。<span class="cibr"></span>　　勤人事，拼努力，熬昏晨。萬機料理，不厭細節與公文。尊愛才情公理，篤信家庭友義，付出有情真。值此佳辰賦，寄書相思人。</p>
+<p class="fulu">方過中秋節，轉眼入秋分。匆匆三周半月，辛苦費心神。培訓兼職翻譯，教學融於娛戲，導遊購物村。忙騰累妳尓①，累克花生屯②。<span class="cibr"></span>勤人事，拼努力，熬昏晨。萬機料理，不厭細節與公文。尊愛才情公理，篤信家庭友義，付出有情真。值此佳辰賦，寄書相思人。</p>
 <p class="note">①注【忙騰累妳尓】諧音 Mount Rainier (美国雷尼尔雪山国家公园)。</p>
 <p class="note">②注【累克花生屯】諧音 Lake Washington (美国华州华盛顿湖)。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2016-jing">行香子·京城會　<span class="date"><a href="#y2016-jing">2016.05.16</a></span></h4>
-<p class="poem">學業同修，年少同俦。光陰似、浪里飛舟。晶莹雨露，淘盡而收。記<span class="fair">一昔友、一席酒、一夕篝</span>。<span class="cibr"></span>　　岁月長流，綿綿難休。今朝聚，舊地重游。經年一别，惟誼永留。願情得厚、念得久、志得酬。</p>
+<p class="poem">學業同修，年少同俦。光陰似、浪里飛舟。晶莹雨露，淘盡而收。記<span class="fair">一昔友、一席酒、一夕篝</span>。<span class="cibr"></span>岁月長流，綿綿難休。今朝聚，舊地重游。經年一别，惟誼永留。願情得厚、念得久、志得酬。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2019-nzlp">行香子·新西蘭懷奧塔普　<span class="date"><a href="#y2019-nzlp">2019.12</a></span></h4>
-<p class="poem">雲卷雲舒，風聚風離。霧吹開，時隱時晰。仙人會海，萬象輕騎。見一巒青、一峰雪、一山迷。<span class="cibr"></span>　　<span class="fair">地火流年，千古為期</span>。密林間，暫忘俗機。岩漿猶烈，熱氣不息。暖一泉湯、一溝水、一潭泥。</p>
+<p class="poem">雲卷雲舒，風聚風離。霧吹開，時隱時晰。仙人會海，萬象輕騎。見一巒青、一峰雪、一山迷。<span class="cibr"></span><span class="fair">地火流年，千古為期</span>。密林間，暫忘俗機。岩漿猶烈，熱氣不息。暖一泉湯、一溝水、一潭泥。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2020-xing">行香子·读水之物理形态喻赠周琳　<span class="date"><a href="#y2020-xing">2020.12</a></span></h4>
-<p class="poem">纯水無冰，尘入而凝。界三态，固状膨晶；液流不朽，气化为轻。属坚而硬，洁而净，透而明。<span class="cibr"></span>　　人亦随名，物里存灵。敏思细，睿智刚英。雪聪似玉，眸慧如星。有镜中影，眼中梦，心中情。</p>
+<p class="poem">纯水無冰，尘入而凝。界三态，固状膨晶；液流不朽，气化为轻。属坚而硬，洁而净，透而明。<span class="cibr"></span>人亦随名，物里存灵。敏思细，睿智刚英。雪聪似玉，眸慧如星。有镜中影，眼中梦，心中情。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2022-chun">行香子·寄思　<span class="date"><a href="#y2022-chun">2022.05.17</a></span></h4>
-<p class="poem">如夜如冰，非雾非晴。月方盈、别远离行。春迟残暖，思近空灵。送一夕念、一夕恋、一息明。<span class="cibr"></span>　　天边雨墨，阶下风铃。晓声聽、细数叮咛。今朝未醒，昨梦还轻。似一声乱、一声缓、一生宁。</p>
+<p class="poem">如夜如冰，非雾非晴。月方盈、别远离行。春迟残暖，思近空灵。送一夕念、一夕恋、一息明。<span class="cibr"></span>天边雨墨，阶下风铃。晓声聽、细数叮咛。今朝未醒，昨梦还轻。似一声乱、一声缓、一生宁。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2024-deut">行香子·德国游　<span class="date"><a href="#y2024-deut">2024.09</a></span></h4>
-<p class="poem">红顶白墙，斜框长窗。依山势，绿野农庄。钟楼塔庙，石拱铜镶。踏青砖路，步雲阶，拜教堂。<span class="cibr"></span>　　人生美食，啤酒香肠。一杯饮，逆旅徜徉。匆匆过客，累累行囊。且抛心念，或留住，亦无妨。</p>
+<p class="poem">红顶白墙，斜框长窗。依山势，绿野农庄。钟楼塔庙，石拱铜镶。踏青砖路，步雲阶，拜教堂。<span class="cibr"></span>人生美食，啤酒香肠。一杯饮，逆旅徜徉。匆匆过客，累累行囊。且抛心念，或留住，亦无妨。</p>
 <p class="futi">其二·柏林·与周琳联句</p>
-<p class="poem">擎柱雕梁，细饰繁详。立铜像，尚武张扬。巍巍广场，圣殿华堂。证日之光，月之辉，星之芒。<span class="cibr"></span>　　族谱雲章，行在回廊。裱金壁，画尽辉煌。夏萝帝后，普鲁士皇。见昔遗迹、今成赞、我为王。</p>
+<p class="poem">擎柱雕梁，细饰繁详。立铜像，尚武张扬。巍巍广场，圣殿华堂。证日之光，月之辉，星之芒。<span class="cibr"></span>族谱雲章，行在回廊。裱金壁，画尽辉煌。夏萝帝后，普鲁士皇。见昔遗迹、今成赞、我为王。</p>
 <p class="futi">其三·环游</p>
-<p class="poem">自驾德疆，九月余章。最难忘，繁绘雲窗。斜椽倾顶，寺宇拱墙。过青石镇、水溪桥、葡萄庄。<span class="cibr"></span>　　科隆教堂，汉堡夕阳。慕尼黑，步街匆忙。天鹅新堡，夏洛宫房。启诸神殿、匠心作、圣徒光。</p>
+<p class="poem">自驾德疆，九月余章。最难忘，繁绘雲窗。斜椽倾顶，寺宇拱墙。过青石镇、水溪桥、葡萄庄。<span class="cibr"></span>科隆教堂，汉堡夕阳。慕尼黑，步街匆忙。天鹅新堡，夏洛宫房。启诸神殿、匠心作、圣徒光。</p>
 <p class="spbr"><br/></p>
 
 
-<a id="boathill-diao" name="boathill-diao"></a>
+<a id="diao" name="diao"></a>
 
 <h4 id="p1983-qing">满江红·清明　<span class="date"><a href="#y1983-qing">1983.5</a></span></h4>
-<p class="poem">一往情深，今又是寒食祭节。名万古，一年一度、哀思先烈。犹记当年家国恨，志矢解放民族业。传救国，妙手著文章，言词切。<span class="cibr"></span>　　求良策，尽心血。奋国群，党人结。为中华崛起，飞腾世界。高筑神州风雨楼，遍开共产红花叶。看至今、回首字無痕，清明月。</p>
+<p class="poem">一往情深，今又是寒食祭节。名万古，一年一度、哀思先烈。犹记当年家国恨，志矢解放民族业。传救国，妙手著文章，言词切。<span class="cibr"></span>求良策，尽心血。奋国群，党人结。为中华崛起，飞腾世界。高筑神州风雨楼，遍开共产红花叶。看至今、回首字無痕，清明月。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1997-zlin">满江红·致周琳　<span class="date"><a href="#y1997-zlin">1997.3</a></span></h4>
-<p class="poem">已忘柔情，偏又是，柔情困阻。人如玉，眉峰疏淡，风姿楚楚。梦里身形挥不去，胸中绮想奔难住。怕别离，容易负相思，痴成误。<span class="cibr"></span>　　一份爱，深几许；缘两处，何时聚？似滴滴点点，万丝千缕。前世为寻一知己，今生来共君相遇。看两眸，一笑解春心，温存语。</p>
+<p class="poem">已忘柔情，偏又是，柔情困阻。人如玉，眉峰疏淡，风姿楚楚。梦里身形挥不去，胸中绮想奔难住。怕别离，容易负相思，痴成误。<span class="cibr"></span>一份爱，深几许；缘两处，何时聚？似滴滴点点，万丝千缕。前世为寻一知己，今生来共君相遇。看两眸，一笑解春心，温存语。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2022-anni">满江红·週年賦　<span class="date"><a href="#y2022-anni">2022.09.25</a></span></h4>
-<p class="poem">举案齐眉，人生路，方歌半阕。细雨无痕，梳流过，几多残屑。甘苦和尘知底味，星光与露相明灭。爱在深，亦在历情劫，轰轰烈。<span class="cibr"></span>　　歌轻曼，身翩婕；厨香暖，尝新切。品繁华同赏，生生同穴。不憾青春花过雨，志存理想雲追月。泪在眸，犹在洗心扉，欢欢悦。</p>
+<p class="poem">举案齐眉，人生路，方歌半阕。细雨无痕，梳流过，几多残屑。甘苦和尘知底味，星光与露相明灭。爱在深，亦在历情劫，轰轰烈。<span class="cibr"></span>歌轻曼，身翩婕；厨香暖，尝新切。品繁华同赏，生生同穴。不憾青春花过雨，志存理想雲追月。泪在眸，犹在洗心扉，欢欢悦。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2023-wtan">满江红·上海外滩　<span class="date"><a href="#y2023-wtan">2023.06.26</a></span></h4>
-<p class="poem">雾洗初晴，湿湿意，雲低黄浦。江流过，华亭沪渎，松江申府。身後百年亡辱史，眼前两岸兴平路。期未来，逆浪正行舟，争飞渡。<span class="cibr"></span>　　千灯上，光成影；十里舫，星无数。羡昔之骚客，今之博主。<i>生不逢时当忆古，生於此时且歌舞</i>。夜未央，广厦类虚舟，空空赋。</p>
+<p class="poem">雾洗初晴，湿湿意，雲低黄浦。江流过，华亭沪渎，松江申府。身後百年亡辱史，眼前两岸兴平路。期未来，逆浪正行舟，争飞渡。<span class="cibr"></span>千灯上，光成影；十里舫，星无数。羡昔之骚客，今之博主。<i>生不逢时当忆古，生於此时且歌舞</i>。夜未央，广厦类虚舟，空空赋。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2025-xihu">满江红·游思·<span class="futi">午後於杭州西湖学士亭</span>　<span class="date"><a href="#y2025-xihu">2025.05.18</a></span></h4>
-<p class="poem">绕水莺啼，天色暖、山河气派。画桥岸、碧波生绿，远眉含黛。满树争春花绽放，雁来弄影雲飞霭。莫负了、如此好風光，成诗债。<span class="cibr"></span>　　韶华逝，情未改；霜侵鬓，心观海。叹人间如梦，几番成败。茶酒一杯浇块垒，清歌数曲无关碍。意轻随、墨里问禅机，舒姿态。</p>
+<p class="poem">绕水莺啼，天色暖、山河气派。画桥岸、碧波生绿，远眉含黛。满树争春花绽放，雁来弄影雲飞霭。莫负了、如此好風光，成诗债。<span class="cibr"></span>韶华逝，情未改；霜侵鬓，心观海。叹人间如梦，几番成败。茶酒一杯浇块垒，清歌数曲无关碍。意轻随、墨里问禅机，舒姿态。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2015-valentine">高陽臺·情若在、当是节　<span class="date"><a href="#y2015-gaoy">2015.02.14</a></span></h4>
 <p class="futi">與周琳共填此詞於紗糸軒以祝情人節快樂。</p>
-<p class="poem">彩卡一方，鲜花一束，商家描绘成图。美酒杯紅，难呈携侣征途。送迎晩照和晨露，有爱時，萬事心舒。岁华浮，功朽名消，竹翠林疏。<span class="cibr"></span>　　真情不在情人节，在分分你我，秒秒雲殊。在葉之秋，在春雁阵成書。在經風雨彩虹後，再回眸，恋似当初。在能乎，终世相扶，至老相如。</p>
+<p class="poem">彩卡一方，鲜花一束，商家描绘成图。美酒杯紅，难呈携侣征途。送迎晩照和晨露，有爱時，萬事心舒。岁华浮，功朽名消，竹翠林疏。<span class="cibr"></span>真情不在情人节，在分分你我，秒秒雲殊。在葉之秋，在春雁阵成書。在經風雨彩虹後，再回眸，恋似当初。在能乎，终世相扶，至老相如。</p>
 <p class="spbr"><br/></p>
 <h4 id="a2012-zhyx" class="futi">附：周琳《西江月》一首　<span class="date"><a href="#y2015-gaoy" class="futi">2012.09.23</a></span></h4>
-<p class="fulu poem">林中遍寻翠<u>竹</u>，落日尽闪余<u>晖</u>，海上茫茫飛细<u>雨</u>，此情依旧如<u>新</u>。<span class="cibr"></span>　　<u>四</u>面环山翠绿，<u>十</u>里麦田金黄，<u>五</u>岳哪有此山强，<u>岁</u>岁年年不忘。</p>
+<p class="fulu poem">林中遍寻翠<u>竹</u>，落日尽闪余<u>晖</u>，海上茫茫飛细<u>雨</u>，此情依旧如<u>新</u>。<span class="cibr"></span><u>四</u>面环山翠绿，<u>十</u>里麦田金黄，<u>五</u>岳哪有此山强，<u>岁</u>岁年年不忘。</p>
 <p class="note">注：上闋各句尾字（諧音）及下闋各句首字合成此詞標題。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1998-zqiu">水调歌头·中秋　<span class="date"><a href="#y1998-zqiu">1998.9</a></span></h4>
-<p class="poem">明月起遥想，思绪渐情稠。前番一别数日，仿佛已三秋。<span class="fair">细数窗前风景，看破晴空雲影，睹物略生愁</span>。天赐好人愿，佳梦枕边留。<span class="cibr"></span>　　两眸炯，颦妩媚，语温柔。真情相守，平淡之处忘烦忧。共筑二人天地，足慰平生快意，一样雄心酬。美酒赋良辰，相对咏高楼。</p>
+<p class="poem">明月起遥想，思绪渐情稠。前番一别数日，仿佛已三秋。<span class="fair">细数窗前风景，看破晴空雲影，睹物略生愁</span>。天赐好人愿，佳梦枕边留。<span class="cibr"></span>两眸炯，颦妩媚，语温柔。真情相守，平淡之处忘烦忧。共筑二人天地，足慰平生快意，一样雄心酬。美酒赋良辰，相对咏高楼。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2006-reun">水调歌头·會東　<span class="date"><a href="#y2006-reun">2006.3</a></span></h4>
-<p class="poem">滿目朢新綠，北美又春風。如花似火心緒，裝點自然紅。故國回眸一笑，牵動纏思無數，時逝太匆匆。再聚五湖客，慷慨論英雄。<span class="cibr"></span>　　凌雲志，比翼夢，少年同。而今飛越、重山疊水喜相逢。彻夜殷勤挚語，對酒高歌放醉，盡興在其中。借我豪情墨，揮畫向長空。</p>
+<p class="poem">滿目朢新綠，北美又春風。如花似火心緒，裝點自然紅。故國回眸一笑，牵動纏思無數，時逝太匆匆。再聚五湖客，慷慨論英雄。<span class="cibr"></span>凌雲志，比翼夢，少年同。而今飛越、重山疊水喜相逢。彻夜殷勤挚語，對酒高歌放醉，盡興在其中。借我豪情墨，揮畫向長空。</p>
 <p class="spbr"><br/></p>
 <h4 id="p2006-duiz" class="futi">附联：同学盛会</h4>
 <p class="fulu">同学同窗同龄同梦不同事业各抒壮志情怀四方同此一刻</p>
@@ -1145,148 +1171,148 @@
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-zqiu">水调歌头·中秋·步東坡原韻　<span class="date"><a href="#y2010-zqiu">2010.9</a></span></h4>
-<p class="poem">明月賞心否？轉眼已昨天。應知宇宙瓊閣，一夕逝千年。遙想東坡風采，詞曲流傳世代，詩酒可勝寒。好夢留仙境，小醉在人間。<span class="cibr"></span>　　若思念，若鄉愁，枕無眠。一年似短、萬事能有幾回圓？<span class="fair">福亦禍所伏時，禍亦福所倚之</span>，心底自求全。能享其中樂，何須待嬋娟。</p>
+<p class="poem">明月賞心否？轉眼已昨天。應知宇宙瓊閣，一夕逝千年。遙想東坡風采，詞曲流傳世代，詩酒可勝寒。好夢留仙境，小醉在人間。<span class="cibr"></span>若思念，若鄉愁，枕無眠。一年似短、萬事能有幾回圓？<span class="fair">福亦禍所伏時，禍亦福所倚之</span>，心底自求全。能享其中樂，何須待嬋娟。</p>
 <h4 class="futi">又</h4>
-<p class="poem">明月本常有，何必問青天？自從天上宮闕，悠悠已千年。但想仙臺瓊露，又怕空虛無助，獨處方知寒。塵世多牽挂，碌碌在凡間。<span class="cibr"></span>　　數辰歲，翻往事，更難眠。個中難免、煩惱多過月無圓。苦後方知甜蜜，分別才惜相聚，再也不求全。似此能長樂，今夜共嬋娟。</p>
+<p class="poem">明月本常有，何必問青天？自從天上宮闕，悠悠已千年。但想仙臺瓊露，又怕空虛無助，獨處方知寒。塵世多牽挂，碌碌在凡間。<span class="cibr"></span>數辰歲，翻往事，更難眠。個中難免、煩惱多過月無圓。苦後方知甜蜜，分別才惜相聚，再也不求全。似此能長樂，今夜共嬋娟。</p>
 <p class="spbr"><br/></p>
 <h4 class="futi">千年以來，此曲無能出東坡右者，莫若戲之。</h4>
-<p class="fulu">月餅何時有？新鮮不新鮮？不知今年貨色，能值多少圓？本想自制一盒，又恐油放太多，一點兒不省錢。棗泥和豆沙，哪个會更甜？<span class="cibr"></span>　　五仁餡兒，火腿月，勾饞涎。不应有悔，一年才吃这一天！人有高矮肥瘦，月有丰满苗條，萬事難兩全。但愿節常有，天天都過年。</p>
+<p class="fulu">月餅何時有？新鮮不新鮮？不知今年貨色，能值多少圓？本想自制一盒，又恐油放太多，一點兒不省錢。棗泥和豆沙，哪个會更甜？<span class="cibr"></span>五仁餡兒，火腿月，勾饞涎。不应有悔，一年才吃这一天！人有高矮肥瘦，月有丰满苗條，萬事難兩全。但愿節常有，天天都過年。</p>
 <p class="spbr"><br/></p>
 <h4 id="a2010-zqiu" class="futi">附：周琳《水调歌头·中秋》二首</h4>
 <p class="futi">水煮魚頭·兼答舟山原詞　<span class="date">2010.9</span></p>
-<p class="fulu">明月幾時有，沒什麽相干。今天要做月餅，只爲解解饞。但想試試棗泥，又要扒皮去核兒，實在太痲煩。發面烙大餅，一樣吃的歡。<span class="cibr"></span>　　炒個菜，下點兒酒，賽過年。不需有肉，健康飲食醋少鹽。家有鍋碗瓢盆，桌上八筷六碟兒，幸福我占全。佳節又壽辰，喜慶不一般。</p>
+<p class="fulu">明月幾時有，沒什麽相干。今天要做月餅，只爲解解饞。但想試試棗泥，又要扒皮去核兒，實在太痲煩。發面烙大餅，一樣吃的歡。<span class="cibr"></span>炒個菜，下點兒酒，賽過年。不需有肉，健康飲食醋少鹽。家有鍋碗瓢盆，桌上八筷六碟兒，幸福我占全。佳節又壽辰，喜慶不一般。</p>
 <p class="spbr"><br/></p>
 <p class="futi">加班随想　<span class="date">2011.9</span></p>
-<p class="fulu">中秋西雅图，夜半月儿圆。不知不觉之间，转眼又一年。本想轻松度日，奈何家庭负担，还得多挣钱。加班再上学，毕业苦变甜。<span class="cibr"></span>　　减预算，增次贷，少美元。不该抱怨，命苦当上公务员。只羡嫦娥吴刚，忘却人间凡事，桂宫两相欢。但愿长相伴，情爱永绵绵。</p>
+<p class="fulu">中秋西雅图，夜半月儿圆。不知不觉之间，转眼又一年。本想轻松度日，奈何家庭负担，还得多挣钱。加班再上学，毕业苦变甜。<span class="cibr"></span>减预算，增次贷，少美元。不该抱怨，命苦当上公务员。只羡嫦娥吴刚，忘却人间凡事，桂宫两相欢。但愿长相伴，情爱永绵绵。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-yaan">水调歌头·雅安　<span class="date"><a href="#y2014-yaan">2014.04.16</a></span></h4>
 <p class="futi">春四月，自綿陽過平樂鎮、入上里，至雅安，隨建峰、瑶、琳并其同學舊友燕華共餐，复返青衣江畔品茶觀夜景，暢談而别。</p>
-<p class="poem">四月古茶道，十里菜花田。深山水潤村寨，橋下碧溪漣。青瓦青磚石鼓，金字金絲楠木，雕坊捲飛檐。<span class="fair">綠氧森森海，鷺鳥在雲間</span>。<span class="cibr"></span>　　雅雨绵，雅女倩，雅魚鮮。酒香鹵腊，麻團脆餅米糕黏。白藕白湯鴨骨，紅笋紅油豆腐，小宴賽新年。待客砂鍋煲，品茗夜江邊。</p>
+<p class="poem">四月古茶道，十里菜花田。深山水潤村寨，橋下碧溪漣。青瓦青磚石鼓，金字金絲楠木，雕坊捲飛檐。<span class="fair">綠氧森森海，鷺鳥在雲間</span>。<span class="cibr"></span>雅雨绵，雅女倩，雅魚鮮。酒香鹵腊，麻團脆餅米糕黏。白藕白湯鴨骨，紅笋紅油豆腐，小宴賽新年。待客砂鍋煲，品茗夜江邊。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2016-anhw">水调歌头·皖南行　<span class="date"><a href="#y2016-anhw">2016.05.22</a></span></h4>
 <p class="futi">春五月，自京高鐵南下入徽。三日内隨毅敏駆車過黄山、屯溪、黟县、北返銅陵市。畅游之暇，特與琳填詞以記之。</p>
-<p class="poem">农宿蛙声里，雾岭玉溪田。木坑竹海村落，碧水小橋邊。白壁雕紋黛瓦，竖坊高牆似馬，日月壶中悬。<span class="good">深巷舒微舍，方井夜星天</span>。<span class="cibr"></span>　　河豚肥，魤魚嫩，鱖魚鮮。石雞石耳雙味，腊肉炖笋尖。香笼粉蒸排骨，烤盘油煎豆腐，燒饼芡糕甜。米酒與新茶，情義在其間。</p>
+<p class="poem">农宿蛙声里，雾岭玉溪田。木坑竹海村落，碧水小橋邊。白壁雕紋黛瓦，竖坊高牆似馬，日月壶中悬。<span class="good">深巷舒微舍，方井夜星天</span>。<span class="cibr"></span>河豚肥，魤魚嫩，鱖魚鮮。石雞石耳雙味，腊肉炖笋尖。香笼粉蒸排骨，烤盘油煎豆腐，燒饼芡糕甜。米酒與新茶，情義在其間。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2020-shui">水调歌头·嫦娥五号　<span class="date"><a href="#y2020-shui">2020.12.18</a></span></h4>
 <p class="futi">其一　</p>
-<p class="poem">千年飞月梦，十载赋星河。嫦娥玉兔着陆，漫步采石车，不见蟾蜍宫阙，敢想时空穿越，桂殿影婆娑。四海涛声起，浩宇响雲歌。<span class="cibr"></span>　　养韬略，谋远策，揽长波。重工科技，一部精器萬重磨。古老相传神话，壮丽和平图画，盛世舞婀娜。九霄鲲鹏志，不负岁蹉跎。</p>
+<p class="poem">千年飞月梦，十载赋星河。嫦娥玉兔着陆，漫步采石车，不见蟾蜍宫阙，敢想时空穿越，桂殿影婆娑。四海涛声起，浩宇响雲歌。<span class="cibr"></span>养韬略，谋远策，揽长波。重工科技，一部精器萬重磨。古老相传神话，壮丽和平图画，盛世舞婀娜。九霄鲲鹏志，不负岁蹉跎。</p>
 <p class="futi">其二　和毛词原韵</p>
-<p class="poem">古有冰轮梦，今探火岩山。萬里登临桂殿，一举展新颜。独领漂空妙舞，再启航征阔步，存想寄雲端。不忘披荆路，当记向前看。【觀】<span class="cibr"></span>　　潮之动，心之奋，宇之寰。兴废存亡进退，正反得失间。上溯银河揽月，下蹈潭泥鱼鳖，天道好相还。科技非常事，勇在苦登攀。</p>
+<p class="poem">古有冰轮梦，今探火岩山。萬里登临桂殿，一举展新颜。独领漂空妙舞，再启航征阔步，存想寄雲端。不忘披荆路，当记向前看。【觀】<span class="cibr"></span>潮之动，心之奋，宇之寰。兴废存亡进退，正反得失间。上溯银河揽月，下蹈潭泥鱼鳖，天道好相还。科技非常事，勇在苦登攀。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-newy">水调歌头·新年感赋　<span class="date"><a href="#y2021-newy">2021.01.01</a></span></h4>
 <p class="futi">其一</p>
-<p class="poem">世界风和雨，别旧入新年。几番明暗攻守，刀剑在心悬。或有流言为借，或为留名而戒，仁义爱求全。功过论今古，毁誉问时间。<span class="cibr"></span>　　国成运，民成势，局成繁。个中参透，孰是因果溯推原？天地無常福劫，不为存亡尧桀，公理自循环。上下鉴通史，左右辨三观。</p>
+<p class="poem">世界风和雨，别旧入新年。几番明暗攻守，刀剑在心悬。或有流言为借，或为留名而戒，仁义爱求全。功过论今古，毁誉问时间。<span class="cibr"></span>国成运，民成势，局成繁。个中参透，孰是因果溯推原？天地無常福劫，不为存亡尧桀，公理自循环。上下鉴通史，左右辨三观。</p>
 <p class="note">注：天行有常，不为尧存，不为桀亡。——荀子《天论》</p>
 <p class="note">注：世界观、价值观、人生观，谓之三观。</p>
 <p class="futi">其二</p>
-<p class="poem">代势有更替，国运往复兴。恰时攻守相易，舆论见输赢。合纵连横陷阱，陆海棋分水岭，纸上苦鏖兵。莫信好战争，未必坏和平。<span class="cibr"></span>　　在於度、在於义、在於行。世间真理，常借天道与繁名。一半风雲随性，一半得失定命，醒後梦無凭。身自放持正，心任雨和晴。</p>
+<p class="poem">代势有更替，国运往复兴。恰时攻守相易，舆论见输赢。合纵连横陷阱，陆海棋分水岭，纸上苦鏖兵。莫信好战争，未必坏和平。<span class="cibr"></span>在於度、在於义、在於行。世间真理，常借天道与繁名。一半风雲随性，一半得失定命，醒後梦無凭。身自放持正，心任雨和晴。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-jan8">水调歌头·借句祭周公四十五週年<span class="futi">【今韵】</span>　<span class="date"><a href="#y2021-jan8">2021.01.08</a></span></h4>
-<p class="poem">正道沧桑路，天亦有情無？当年雲恨愁雨，举世恸一哭。故事流传萬户，风采辉煌千古，记得伍豪乎？周公字翔宇，别号必成胡。<span class="cibr"></span>　　为中华、之崛起、而读书。大江歌罢东去，蹈海创国图。声声语语嘱咐，点点滴滴领悟，伟梦伴征途。灰骨青山处，应慰九州殊。</p>
+<p class="poem">正道沧桑路，天亦有情無？当年雲恨愁雨，举世恸一哭。故事流传萬户，风采辉煌千古，记得伍豪乎？周公字翔宇，别号必成胡。<span class="cibr"></span>为中华、之崛起、而读书。大江歌罢东去，蹈海创国图。声声语语嘱咐，点点滴滴领悟，伟梦伴征途。灰骨青山处，应慰九州殊。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-move">水调歌头·南迁步苏词韵　<span class="date"><a href="#y2021-move">2021.03.12</a></span></h4>
-<p class="poem">冬去花舒展，雁过暖晴空。庭前一派春景，别样抹青红。枕上忽来新句，窗外歇停旧雨，诗意似飞鸿。记得东坡韵，山色有無中。<span class="cibr"></span>　　碧如顷，涛色净，雪连峰。依然故我，不羡湖海钓鱼翁。不羡长轩阔步，不羡高亭远麓，陋室亦文雄。心底水雲济，笔下快哉风。</p>
+<p class="poem">冬去花舒展，雁过暖晴空。庭前一派春景，别样抹青红。枕上忽来新句，窗外歇停旧雨，诗意似飞鸿。记得东坡韵，山色有無中。<span class="cibr"></span>碧如顷，涛色净，雪连峰。依然故我，不羡湖海钓鱼翁。不羡长轩阔步，不羡高亭远麓，陋室亦文雄。心底水雲济，笔下快哉风。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-zlin">水调歌头·赠周琳　<span class="date"><a href="#y2021-zlin">2021.08.12</a></span></h4>
-<p class="poem">绝壁方知险，拼力久识坚。风风雨雨得失，理想置於前。山在更高自己、路在最深心底，默默有音弦。眼界梦宽阔，领路王者先。<span class="cibr"></span>　　养於气，谨於律，比於贤。艰难烦恨相伴，福禄隐身边。平淡人生亦喜、精彩须臾似戏，故事付雲烟。万苦千辛後，一片雪晴天。</p>
+<p class="poem">绝壁方知险，拼力久识坚。风风雨雨得失，理想置於前。山在更高自己、路在最深心底，默默有音弦。眼界梦宽阔，领路王者先。<span class="cibr"></span>养於气，谨於律，比於贤。艰难烦恨相伴，福禄隐身边。平淡人生亦喜、精彩须臾似戏，故事付雲烟。万苦千辛後，一片雪晴天。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-zhib">水调歌头·纸上兵　<span class="date"><a href="#y2021-zhib">2021.09.06</a></span></h4>
-<p class="poem">风御雨驰剑，车纵马呼卢。平生男儿之志，行武阵开图。攻其不守必取，守其不攻则固，攻余守不足。一将挡关处，灰灭萬千夫。<span class="cibr"></span>　　以奇变、以正合、以谋殊。纶巾羽扇帷幄，妙策定国途。唯可胜犹在敌，不可胜在自己，形之极於無。心有慧棋眼，手握智明珠。</p>
+<p class="poem">风御雨驰剑，车纵马呼卢。平生男儿之志，行武阵开图。攻其不守必取，守其不攻则固，攻余守不足。一将挡关处，灰灭萬千夫。<span class="cibr"></span>以奇变、以正合、以谋殊。纶巾羽扇帷幄，妙策定国途。唯可胜犹在敌，不可胜在自己，形之极於無。心有慧棋眼，手握智明珠。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-zqiu">水调歌头·中秋　<span class="date"><a href="#y2021-zqiu">2021.09.20</a></span></h4>
-<p class="poem">太初向盈满，金镜起未央。天之道补不足，余损奉阴阳。形而上之道者，形而下之器舍，出入世之方。一片证心月，万物有其光。<span class="cibr"></span>　　乱变治，怯见勇，弱生强。不争上善如水，其势亦無疆。反者道之在动，弱者道之在用，至柔胜极刚。外我身而久，後我身而长。</p>
+<p class="poem">太初向盈满，金镜起未央。天之道补不足，余损奉阴阳。形而上之道者，形而下之器舍，出入世之方。一片证心月，万物有其光。<span class="cibr"></span>乱变治，怯见勇，弱生强。不争上善如水，其势亦無疆。反者道之在动，弱者道之在用，至柔胜极刚。外我身而久，後我身而长。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2021-guiz">水调歌头·归来　<span class="date"><a href="#y2021-guiz">2021.09.25</a></span></h4>
-<p class="poem">四海起明月，最远在家乡。几曾万里星梦，念念望雲窗。甚爱虚名而费，韬略阳谋不晦，心使气曰强。知止战无辱，勇者胜於刚。<span class="cibr"></span>　　挫其锐，解其纷，和其光。同尘道路回首，磨砺百年长。时命身存华夏，时代胸怀天下，诗唱慨而慷。祖国扬帆夜，晚舟又归航。</p>
+<p class="poem">四海起明月，最远在家乡。几曾万里星梦，念念望雲窗。甚爱虚名而费，韬略阳谋不晦，心使气曰强。知止战无辱，勇者胜於刚。<span class="cibr"></span>挫其锐，解其纷，和其光。同尘道路回首，磨砺百年长。时命身存华夏，时代胸怀天下，诗唱慨而慷。祖国扬帆夜，晚舟又归航。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2023-dshi">水调歌头·读史　<span class="date"><a href="#y2023-dshi">2023.03.19</a></span></h4>
-<p class="poem">扶酒且停盏，忘却此时身。风雲几度吞吐，难醒梦中人。世界思潮翻滚，宇宙流熵混沌，正反两途分。纵有祈神念，历历在凡嗔。<span class="cibr"></span>　　荀之礼，孟之义，孔之仁。阳明见理，微芒万古夜星辰。证道知行为本，往圣先贤再论，求是以存真。筚缕百年路，激荡五洲魂。</p>
+<p class="poem">扶酒且停盏，忘却此时身。风雲几度吞吐，难醒梦中人。世界思潮翻滚，宇宙流熵混沌，正反两途分。纵有祈神念，历历在凡嗔。<span class="cibr"></span>荀之礼，孟之义，孔之仁。阳明见理，微芒万古夜星辰。证道知行为本，往圣先贤再论，求是以存真。筚缕百年路，激荡五洲魂。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2023-xing">水调歌头·福州行<span class="futi">·步稼轩《说与西湖客》原韵</span>　<span class="date"><a href="#y2023-xing">2023.06.30</a></span></h4>
-<p class="poem">海外归来客，寻迹遍三山。花茶美馔新酿，风物四时观。八面屏峦远翠，一带西湖碧水，秀丽抚心澜。竹下高士品，藻底慕鱼闲。<span class="cibr"></span>　　劝樽盏，茗饮满，尽谈欢。念念必有回响，珍重晓霜寒。酒到真诚方醉，情到真知方贵。新曲送阳关。此去江湖路，朋友略相看。</p>
+<p class="poem">海外归来客，寻迹遍三山。花茶美馔新酿，风物四时观。八面屏峦远翠，一带西湖碧水，秀丽抚心澜。竹下高士品，藻底慕鱼闲。<span class="cibr"></span>劝樽盏，茗饮满，尽谈欢。念念必有回响，珍重晓霜寒。酒到真诚方醉，情到真知方贵。新曲送阳关。此去江湖路，朋友略相看。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2025-daof">水调歌头·道法鸿蒙<span class="futi">·读《老子》</span>　<span class="date"><a href="#y2025-daof">2025.02.09</a></span></h4>
-<p class="poem">天地开混沌，大道本玄名。有无相化，虚实缘灭道浑成。<span class="good">阴在阳之内里，非是阳之对比</span>，此见辨分明。执守求心问，破悟证长生。<span class="cibr"></span>　　观其徼，守其静，得其精。至柔克物，江海從善百川盈。如履薄冰则拢，万象雷霆则动，刚弱用於平。抱朴归真处，坐看霭云轻。</p>
+<p class="poem">天地开混沌，大道本玄名。有无相化，虚实缘灭道浑成。<span class="good">阴在阳之内里，非是阳之对比</span>，此见辨分明。执守求心问，破悟证长生。<span class="cibr"></span>观其徼，守其静，得其精。至柔克物，江海從善百川盈。如履薄冰则拢，万象雷霆则动，刚弱用於平。抱朴归真处，坐看霭云轻。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2025-kyun">水调歌头·雲中阙　<span class="date"><a href="#y2025-kyun">2025.02</a></span></h4>
-<p class="poem">蛇练绕牙帐，楼雾隐江汀。星罗棋布万点，山势漫扬旌。雲逸如纱散乱，雲聚如冰浮漫，变幻总无情。绵羽浮残塔，朵霭锁危亭。<span class="cibr"></span>　　光阴逝，流如水，太匆行。俯观尘世渺渺，悟在寸心明。若得时间回转，难补人生圆满，何必叹孤零？万象风中烛，天地一飘萍。</p>
+<p class="poem">蛇练绕牙帐，楼雾隐江汀。星罗棋布万点，山势漫扬旌。雲逸如纱散乱，雲聚如冰浮漫，变幻总无情。绵羽浮残塔，朵霭锁危亭。<span class="cibr"></span>光阴逝，流如水，太匆行。俯观尘世渺渺，悟在寸心明。若得时间回转，难补人生圆满，何必叹孤零？万象风中烛，天地一飘萍。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-zhou">沁園春·重懷周公<span class="futi">·和毛詞原韻</span>　<span class="date"><a href="#y2011-zhou">2011.01.08</a></span></h4>
-<p class="poem">久逝容光，歲月塵封，思念遠飄。記當年國喪，陰雲翳翳；人民心碎，淚雨滔滔。萬業親躬，先憂後已，誰比周公品質高？一生夢，為中華崛起，富裕妖嬈。<span class="cibr"></span>　　山河自古多嬌，是烈士拋顱與折腰。想伍毫學社，初揚文采；南昌黃埔，盡顯風騷。外交和談，蜚聲宇內，政治功夫巧射雕。多少代，留傳奇故事，遺唱今朝。</p>
+<p class="poem">久逝容光，歲月塵封，思念遠飄。記當年國喪，陰雲翳翳；人民心碎，淚雨滔滔。萬業親躬，先憂後已，誰比周公品質高？一生夢，為中華崛起，富裕妖嬈。<span class="cibr"></span>山河自古多嬌，是烈士拋顱與折腰。想伍毫學社，初揚文采；南昌黃埔，盡顯風騷。外交和談，蜚聲宇內，政治功夫巧射雕。多少代，留傳奇故事，遺唱今朝。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2022-nian">念奴娇·用东坡调　<span class="date"><a href="#y2022-nian">2022.09.25</a></span></h4>
-<p class="poem">海盟心誓，未辜负、一笑看從君顾。廿五周年，回首处，风雨携舟同渡。夏岛夕霞，秋山晓雾，漫步雲中路。至今慷慨，画成天地诗赋。<span class="cibr"></span>　　缘眷怜子孤零，有神仙为我，韶华倾注。展智抒怀，应不误，柔骨情深無数。小院花香，露台星月夜，坐拥相付。蓬莱重约，再签三世呵护。</p>
+<p class="poem">海盟心誓，未辜负、一笑看從君顾。廿五周年，回首处，风雨携舟同渡。夏岛夕霞，秋山晓雾，漫步雲中路。至今慷慨，画成天地诗赋。<span class="cibr"></span>缘眷怜子孤零，有神仙为我，韶华倾注。展智抒怀，应不误，柔骨情深無数。小院花香，露台星月夜，坐拥相付。蓬莱重约，再签三世呵护。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2023-xiuz">念奴娇·修真·<span class="futi">读《道门法则》</span>　<span class="date"><a href="#y2023-xiuz">2023.03.25</a></span></h4>
-<p class="poem">证仙合道，破元婴、筑基金丹真气。直上扶摇神识路，万里雲同风起。炼骨松姿，脱凡玉体，内视如冰洗。太虚宫里，慧光流转疏异。<span class="cibr"></span>　　幻镜玄界重生，韶华旖旎，曼妙人清丽。彩梦瑶池元宇宙，重外洞天灵地。羽化飞升，唯凭信力，渡劫原非易。剪裁诗意，栖霞飘渺如霁。</p>
+<p class="poem">证仙合道，破元婴、筑基金丹真气。直上扶摇神识路，万里雲同风起。炼骨松姿，脱凡玉体，内视如冰洗。太虚宫里，慧光流转疏异。<span class="cibr"></span>幻镜玄界重生，韶华旖旎，曼妙人清丽。彩梦瑶池元宇宙，重外洞天灵地。羽化飞升，唯凭信力，渡劫原非易。剪裁诗意，栖霞飘渺如霁。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1999-zlin">金缕曲·中秋寄周琳　<span class="date"><a href="#y1999-zlin">1999.9</a></span></h4>
-<p class="poem">去似光阴箭。数归期、孤然客里，暗中参遍。秋水重叠深与浅，谁振凌霄翼展？看不见、一行书雁。望尽天晴连海岸，要晴天为我飞鸿遣。千万里，白雲倩。<span class="cibr"></span>　　日来落叶堆成柬。对苍穹、一样景色，两相思念。漫撒冰壶全世界，共享琼楼玉殿。但离别、何时能免？<span class="good">古有兹盟今朝月，愿生生爱到無极限</span>。吾与汝，光和电。</p>
+<p class="poem">去似光阴箭。数归期、孤然客里，暗中参遍。秋水重叠深与浅，谁振凌霄翼展？看不见、一行书雁。望尽天晴连海岸，要晴天为我飞鸿遣。千万里，白雲倩。<span class="cibr"></span>日来落叶堆成柬。对苍穹、一样景色，两相思念。漫撒冰壶全世界，共享琼楼玉殿。但离别、何时能免？<span class="good">古有兹盟今朝月，愿生生爱到無极限</span>。吾与汝，光和电。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1999-zqiu">金缕曲·中秋书怀　<span class="date"><a href="#y1999-zqiu">1999.9</a></span></h4>
-<p class="poem">唱和人长久。念佳期、思乡万里，问达亲友。飘落异邦闲暇客，不忘时局战守。是君子、刀兵从口。披纵高谈天下事，论英雄、当世谁敌手？何必煮，涂炭酒！<span class="cibr"></span>　　不识此月何年有。但明年、几家聚散，月圆能否？自古乾坤多沉重，争要虚名不朽。演一曲、悲凉宇宙。赌注国家一筹码，到头来、苦了人民瘦！真伟业，退而後。</p>
+<p class="poem">唱和人长久。念佳期、思乡万里，问达亲友。飘落异邦闲暇客，不忘时局战守。是君子、刀兵从口。披纵高谈天下事，论英雄、当世谁敌手？何必煮，涂炭酒！<span class="cibr"></span>不识此月何年有。但明年、几家聚散，月圆能否？自古乾坤多沉重，争要虚名不朽。演一曲、悲凉宇宙。赌注国家一筹码，到头来、苦了人民瘦！真伟业，退而後。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-zlin">賀新涼·小別<span class="futi">【今韻·略取稼軒句】</span>　<span class="date"><a href="#y2014-zlin">2014.03.26</a>. Redmond</span></h4>
-<p class="poem">望斷天如墨。讓絲絲，離情化雨，別愁飄落。此去東行冰雪地，冷暖剎時交錯。祗留下、淒清蕭索。<span class="fair">不恨相思天氣惡，恨相思天氣無顏色</span>。遠有念，最難舍。<span class="cibr"></span>　　胸中自比豪狂客。倩詩心、長歌一曲，視空寬闊。記得曾經溫存語，秒秒分分數過。重聚後，履約成諾。非羨人生多歡樂，知歡樂唯共你和我。俩擁坐，看雲朵。</p>
+<p class="poem">望斷天如墨。讓絲絲，離情化雨，別愁飄落。此去東行冰雪地，冷暖剎時交錯。祗留下、淒清蕭索。<span class="fair">不恨相思天氣惡，恨相思天氣無顏色</span>。遠有念，最難舍。<span class="cibr"></span>胸中自比豪狂客。倩詩心、長歌一曲，視空寬闊。記得曾經溫存語，秒秒分分數過。重聚後，履約成諾。非羨人生多歡樂，知歡樂唯共你和我。俩擁坐，看雲朵。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2014-kyun">賀新涼·看雲<span class="futi">【今韻】</span>　<span class="date"><a href="#y2014-kyun">2014.03.27</a></span></h4>
-<p class="poem">蔚海空凝目。仰天河，雲舒雲卷，似煙如霧。透徹深邃藍無底，伸手清涼可觸。微細覺、絲絲雨沐。難信俗身仍朽立，霎時間、心在高穹處。眼欲眩，身臨瀑。<span class="cibr"></span>　　西城小住年十數。往来回，月升日落，歷經朝暮。碌碌晨光都看過，別樣今春風物。隨境轉、重溫感悟。暖照影中花偎樹，化相思、眼里動明楚。一葉草，有瑩露。</p>
+<p class="poem">蔚海空凝目。仰天河，雲舒雲卷，似煙如霧。透徹深邃藍無底，伸手清涼可觸。微細覺、絲絲雨沐。難信俗身仍朽立，霎時間、心在高穹處。眼欲眩，身臨瀑。<span class="cibr"></span>西城小住年十數。往来回，月升日落，歷經朝暮。碌碌晨光都看過，別樣今春風物。隨境轉、重溫感悟。暖照影中花偎樹，化相思、眼里動明楚。一葉草，有瑩露。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1984-dlbx">拜星月慢·星海公园　<span class="date"><a href="#y1984-dlbx">1984.8</a></span></h4>
-<p class="poem"><span class="fair">雨後松山，寒雲微渡，空翠霜天碧树</span>。柳径鸣幽，被苔石凝露。落英处。慢舞。低香暗浸枝软，冷影轻挪羞步。思绪無声，隔风林凄诉。<span class="cibr"></span>　　渐黄昏，浪履平沙入。都输与、烟霭晴红暮。雪嶂断壁排空，叩灵壶仙府。欲龙潜，洞锁重重户。三石在、日月经天古。彩雲路，细认星帆，唱夕阳别赋。</p>
+<p class="poem"><span class="fair">雨後松山，寒雲微渡，空翠霜天碧树</span>。柳径鸣幽，被苔石凝露。落英处。慢舞。低香暗浸枝软，冷影轻挪羞步。思绪無声，隔风林凄诉。<span class="cibr"></span>渐黄昏，浪履平沙入。都输与、烟霭晴红暮。雪嶂断壁排空，叩灵壶仙府。欲龙潜，洞锁重重户。三石在、日月经天古。彩雲路，细认星帆，唱夕阳别赋。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1984-dlhg">望海潮·旅顺口怀古　<span class="date"><a href="#y1984-dlhg">1984.8</a></span></h4>
-<p class="poem">东港门户，军防前哨，险关掩扼平湖。<span class="fair">风浪不兴，金山拱立，新晴碧海藏珠</span>。雲路翠屏舒。更天低北府，人物不俗。暖气移来，柳烟拖绿杏花疏。<span class="cibr"></span>　　凭高未忘当初。有残碑字迹，古塔遗图。碉垒废台，铁蹄踏破，一时烽火焦途。武运霸军夫。恨中原失鹿，弦管闻胡。梅雨浮沉，声声潮打忆皇姑。</p>
+<p class="poem">东港门户，军防前哨，险关掩扼平湖。<span class="fair">风浪不兴，金山拱立，新晴碧海藏珠</span>。雲路翠屏舒。更天低北府，人物不俗。暖气移来，柳烟拖绿杏花疏。<span class="cibr"></span>凭高未忘当初。有残碑字迹，古塔遗图。碉垒废台，铁蹄踏破，一时烽火焦途。武运霸军夫。恨中原失鹿，弦管闻胡。梅雨浮沉，声声潮打忆皇姑。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2010-fijk">望海潮·珊瑚海岸　<span class="date"><a href="#y2010-fijk">2010.2</a></span></h4>
-<p class="poem">天藍藍透，水如湖色，蔚波白浪銀沙。<span class="fair">雲淡淡飛，椰風似醉，輕拂綠影紅花</span>。遠島玉珠遐。望珊瑚海岸，婉轉疊嘉。櫚港棕灣，草亭閑坐待夕霞。<span class="cibr"></span>　　佳節不必繁華。羡山村麗景，世外人家。魚蟹鮮肥，蚌蛤味美，青青舞爪龍蝦。迎客有胡茶。更奇珍異果，熱帶番瓜。斐濟歸來，珍藏回憶久堪誇。</p>
+<p class="poem">天藍藍透，水如湖色，蔚波白浪銀沙。<span class="fair">雲淡淡飛，椰風似醉，輕拂綠影紅花</span>。遠島玉珠遐。望珊瑚海岸，婉轉疊嘉。櫚港棕灣，草亭閑坐待夕霞。<span class="cibr"></span>佳節不必繁華。羡山村麗景，世外人家。魚蟹鮮肥，蚌蛤味美，青青舞爪龍蝦。迎客有胡茶。更奇珍異果，熱帶番瓜。斐濟歸來，珍藏回憶久堪誇。</p>
 <h4 class="futi">又（与琳儿联句）</h4>
-<p class="poem">天珠遗落，南洋仙岛，远客到此如家。苏瓦首都，楠迪湾港，珊瑚岸曲無涯。椰绿画银沙。有自然村落，歌舞娇娃。热带林园，巨人山下看兰花。<span class="cibr"></span>　　游玩不忘休暇。坐凉台趁晚，啤酒一扎。红炖海参，椒盐大虾，石斑鼓暴鱼牙。西米配木瓜。会「金枪」、蟹将，铁板锅巴。一日三餐秀色，尽享好年华。</p>
+<p class="poem">天珠遗落，南洋仙岛，远客到此如家。苏瓦首都，楠迪湾港，珊瑚岸曲無涯。椰绿画银沙。有自然村落，歌舞娇娃。热带林园，巨人山下看兰花。<span class="cibr"></span>游玩不忘休暇。坐凉台趁晚，啤酒一扎。红炖海参，椒盐大虾，石斑鼓暴鱼牙。西米配木瓜。会「金枪」、蟹将，铁板锅巴。一日三餐秀色，尽享好年华。</p>
 <p class="note">注<span class="jiao">〖<a href="https://baike.baidu.com/item/%E9%87%91%E6%9E%AA%E9%B1%BC" target="_new">金枪</a>：海鱼也，頭形似長槍。〗</span></p>
 <p class="spbr"><br/></p>
 
 <h4 id="p2019-nzlh">望海潮·新西蘭　<span class="date"><a href="#y2019-nzlh">2019.12</a></span></h4>
 <h4 class="futi">其一　印象</h4>
-<p class="poem">天堂之右，南極之上，孤懸澳外平洋。湖海碧藍，山林翠綠，險灘灣急風強。岩裂出青岡。有湍流雨瀑，地熱泉湯。雪嶺遙遙，漸融冰線下溪江。<span class="cibr"></span>　　人煙俯瞰蒼茫。向牛羊村落，長白雲鄉。魚米果蔬，蜂膠蜜酪，蝦蠔鮑蟹紅姜。秀麗攬晴光。染鮮花路陌，點點金黃。更待星繁夜燦，逆旅送斜陽。</p>
+<p class="poem">天堂之右，南極之上，孤懸澳外平洋。湖海碧藍，山林翠綠，險灘灣急風強。岩裂出青岡。有湍流雨瀑，地熱泉湯。雪嶺遙遙，漸融冰線下溪江。<span class="cibr"></span>人煙俯瞰蒼茫。向牛羊村落，長白雲鄉。魚米果蔬，蜂膠蜜酪，蝦蠔鮑蟹紅姜。秀麗攬晴光。染鮮花路陌，點點金黃。更待星繁夜燦，逆旅送斜陽。</p>
 <h4 class="futi">其二　風光</h4>
-<p class="poem">峽灣成島，熔漿沖嶼，明珠遺落天南。<span class="fair">破霧雨林，穿雲雪脈，碧湖圍抱森巒</span>。千頁書層岩。有青石秀瀑，虎踞龍盤。棋佈星羅，氣蒸間歇熱溪泉。<span class="cibr"></span>　　粼波萬頃孤帆。守一隅偏世，海外桃源。奇異果甜，醇香蜜貴，糧倉漁牧田園。坡上草綿綿。看紅裙袖舞，風動冰川。<span class="fair">壹樹壹山壹路，壹片野花繁</span>。</p>
+<p class="poem">峽灣成島，熔漿沖嶼，明珠遺落天南。<span class="fair">破霧雨林，穿雲雪脈，碧湖圍抱森巒</span>。千頁書層岩。有青石秀瀑，虎踞龍盤。棋佈星羅，氣蒸間歇熱溪泉。<span class="cibr"></span>粼波萬頃孤帆。守一隅偏世，海外桃源。奇異果甜，醇香蜜貴，糧倉漁牧田園。坡上草綿綿。看紅裙袖舞，風動冰川。<span class="fair">壹樹壹山壹路，壹片野花繁</span>。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1982-xiyn">六洲歌头·夕阳西下　<span class="date"><a href="#y1982-xiyn">1982.9</a></span></h4>
-<p class="poem"><span class="fair">雄天望断，雲暗莽如山</span>。斜晖照，惊鸿影，漫天蓝。落红残。万里横雲聚，流金碎，征尘乱；又恰似，寒崖雪，映酡颜。村舍炊烟，灯火三四点，疑是人寰。更夕阳欲去，青雾远腾山，狼籍如棉。共盘餐。<span class="cibr"></span>　　访林和靖，孤山下，寻竹友，问坡仙。几曾见，夕阳好，对危栏。酒微酣。回想凭生志，空怀恨，叹当年。佳景短，人易老，怕灰髯。疏淡一轮新月，邀相饮，未醉先贪。羡西霞如画，欲踏浪银帆，追逐天边。</p>
+<p class="poem"><span class="fair">雄天望断，雲暗莽如山</span>。斜晖照，惊鸿影，漫天蓝。落红残。万里横雲聚，流金碎，征尘乱；又恰似，寒崖雪，映酡颜。村舍炊烟，灯火三四点，疑是人寰。更夕阳欲去，青雾远腾山，狼籍如棉。共盘餐。<span class="cibr"></span>访林和靖，孤山下，寻竹友，问坡仙。几曾见，夕阳好，对危栏。酒微酣。回想凭生志，空怀恨，叹当年。佳景短，人易老，怕灰髯。疏淡一轮新月，邀相饮，未醉先贪。羡西霞如画，欲踏浪银帆，追逐天边。</p>
 <p><br/></p>
 <p class="zong">　　右录词曲一百二十首</p>
 <p class="zong">　　纱糸轩藏</p>
-<p class="right"><a href="#boathill-ciqu" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#ciqu" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-xiny"><span>新韵文诗</span>　<span class="shou">九首</span></h3>
+<h3 id="xyun"><span>新韵文诗</span>　<span class="shou">九首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p1989-snow">雪　<span class="date"><a href="#y1989-snow">1989.12</a></span></h4>
@@ -1502,12 +1528,12 @@
 <p class="text">　　Shine the past empire another dawn</p>
 <p class="text">　　All glory days dusted ‘n’ gone</p>
 
-<p class="right"><a href="#boathill-xiny" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#xyun" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="poem"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-qigu"><span>七言古诗</span>　<span class="shou">二十七首</span></h3>
+<h3 id="qigu"><span>七言古诗</span>　<span class="shou">二十七首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p1982-qigu">江南感赋<span class="shou">三首</span>　<span class="date"><a href="#y1982-qigu">1982.10</a></span></h4>
@@ -1632,12 +1658,12 @@
 <p class="poem">事功须履薄冰过，炼玉当从烈火来。<i>万善全得一世济，一错方觉百行非</i>。白日欺人夜愧报，红颜失志皓首悲。五更枕席参心体，三时饮食谙世味。洪炉何患镕顽铁，江海不据纳污渎。雲烟影里现真身，始悟形骸为桎梏。躯壳看破有皆空，心常虚则义理居。性命认真万理备，心常实则欲不入。身忙闲暇惕惰气，心放收摄畅天机。钟鼓体虚声击撞，麋鹿性逸养羈縻。创业建功实地着，修德讲道虚处立。时时检点多入少，有无学问真消息。纷扰固溺志之场，枯寂亦槁心之地。<i>栖心元默宁真体，适志恬愉养圆肌</i>。<i>万善莫如心挹损，百福基在念祥慈</i>。不染尘开地天网，常醒避去神鬼矢。明珠入土心障蔽，银饰洗涤情开识。忙处常自闲中检，动时预從静里持。禽鸟声中闻自性，方知情识是戈矛。节名但重非执念，富贵能轻莫系心。容得偏私大学问，消得嫌隙好经纶。<i>天地自当有和气，人心不可无喜神</i>。功夫自难处去做，学问苦得获如金。面上扫开千层甲，胸中涤去数斗尘。不为气撑天地柱，不忍念生物芽根。<i>异於禽兽唯重义，同此牺牲当舍身</i>。身心槁木顽空堕，寒焰敝裘本目真。万变不穷妙之用，百折不回真士襟。欲遇变而无仓忙，常时念念守得定；欲临死而无贪恋，生时事事看得轻。情之同处即为性，舍情则性不可见；欲之公处即为理，舍欲则理不可明。非能绝欲唯寡欲，不可灭情唯平情。为善得心高胜众，施恩结好欲求名。勺水便具四海味，千江总是月光清。尘氛未扫名义重，芥蒂难忘富贵轻。骇俗修业常惊世，标异竹植愈见争。昨日之非不可留，留之则根烬复萌。今日之是不可执，执之则渣滓难烹。<i>是非谢在耳声过，物我忘於月色空</i>。朔雪阴凝杀万物，春风宽厚育三生。天地立心民立命，继学往圣万世平。才敏学问摄其躁，气昂德性融其偏。不同刀案皆鱼肉，已覆倾巢俱卵丸。<i>得意谈天水底月，拂意啮雪火中莲</i>。一念足丧平生善，终身难盖一事愆。拨开尘氛胸冰竞，消却鄙吝月风恬。<i>养性即所以立命，尽人事自可回天</i>。</p>
 
 <p><br/></p>
-<p class="right"><a href="#boathill-qigu" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#qigu" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-qilv"><span>七言律绝</span>　<span class="shou">八十八首</span></h3>
+<h3 id="qilv"><span>七言律绝</span>　<span class="shou">八十八首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2007-nwcl">七律·流言　<span class="date"><a href="#y2007-nwcl">2007.5</a></span></h4>
@@ -1726,7 +1752,7 @@
 <p class="poem">人生放任知何處，熱帶風光度假村。換季陰晴間快雨，排石濤浪透紗裙。<span class="fair">白雲畫出藍天眼，綠島彎成碧海心</span>。閑坐朝霞無所慮，彈唱晚照有諸琴。</p>
 <p class="spbr"><br/></p>
 
-<h4 id="p2019-nzlg">七律·南岛绿色　<span class="date"><a href="#y2019-nzlg">2019.12</a></span></h4>
+<h4 id="p2019-nzlg">七律·新西兰南岛绿色　<span class="date"><a href="#y2019-nzlg">2019.12</a></span></h4>
 <p class="poem">浓淡葱青湿暗墨，缤纷翠意阵叠排。湖光翡色蓝天影，海曲涛声浪抱怀。<span class="fair">新绿方盈非雨至，夕霞只为有雲来</span>。风中夏梦随花舞，雾里诗心待月猜。</p>
 <p class="spbr"><br/></p>
 
@@ -1741,11 +1767,12 @@
 <p class="poem">志向雲高敢问新，耽於正气胜胸襟。<span class="fair">明唇秀影颜如梦，皓齿清眸语若琴</span>。恩爱每多平淡处，传奇唯少是非心。双飞共守堪盟玉，一路相持可比金。</p>
 
 <h4 id="p2020-fall">七律·残秋　<span class="date"><a href="#y2020-fall">2020.11</a></span></h4>
-<p class="poem">一阵秋风一阵寒，寒风阵阵到秋残。<i>残秋残雨残花落，落暮落雲落叶繁</i>。繁叶堆金成乱绪，绪思聚墨画前峦。<b>峦前树色丘前谷，谷底溪声心底澜</b>。</p>
+<p class="poem">一阵秋风一阵寒，寒风阵阵到秋残。<i>残秋残雨残花落，落暮落雲落叶繁</i>。繁叶堆金成乱绪，绪思聚墨画重峦。<b>峦前树色丘前谷，谷底溪声心底澜</b>。</p>
 <p class="futi">又：可作顶针回文一首<q>【<a href="https://sou-yun.cn/QR.aspx?ct=%e5%af%92" title="搜韵韵典" target="_link">平水韵十四寒</a>】</q></p>
-<p class="note"><span class="poem">澜底心声溪底<u>谷</u>，<u>谷</u>前壑色树前<u>峦</u>。<u>峦</u>前画墨凝思<u>绪</u>，<u>绪</u>乱成金聚叶<u>繁</u>。<u>繁</u>叶落雲成暮<u>落</u>，<u>落</u>花残雨剩秋<u>残</u>。<u>残</u>秋到晓霜湿<u>霭</u>，<u>霭</u>起深更漏夜阑。</span></p>
-<p class="futi">注：於古律之<span class="note"><var>平</var><var>仄</var></span>略有失措。</p>
-<p class="note"><kbd><var>仄</var></kbd>仄平平平仄仄，<var>平</var>平仄<em>仄</em>仄平平。<kbd>平</kbd>平仄<em>仄</em>平平仄，仄仄平<em>平</em>仄仄平。<kbd><var>仄</var></kbd>仄<var>平</var><em>平</em>平仄仄，<var>平</var>平<var>仄</var><em>仄</em>仄平平。<kbd>平</kbd>平仄<em>仄</em>平平仄，仄仄平平仄仄平。</p>
+<p class="note"><span class="poem"><b>澜</b>底心声溪底<u>谷</u>，<u>谷</u>前丘色树前<b>峦</b>。<b>峦</b>重画墨凝思<u>绪</u>，<u>绪</u>乱堆金聚叶<b>繁</b>。<u>繁</u>叶落雲成暮<u>落</u>，<u>落</u>花残雨剩秋<b>残</b>。<b>残</b>秋到晓霜迷<u>霭</u>，<u>霭</u>宿深更漏夜<b>阑</b>。</span></p>
+<p class="note"><span class="poem"><b>阑</b>夜漏更深宿<u>霭</u>，<u>霭</u>迷霜晓到秋<b>残</b>。<b>残</b>秋剩雨残花<u>落</u>，<u>落</u>暮成雲落叶<b>繁</b>。<b>繁</b>叶聚金堆乱<u>绪</u>，<u>绪</u>思凝墨画重<b>峦</b>。<b>峦</b>前树色丘前<u>谷</u>，<u>谷</u>底溪声心底<b>澜</b>。</span></p>
+<p class="futi">注：原句「落雲」处孤平；然合於<span class="note"><var>平</var><var>仄</var><kbd>粘</kbd><em>对</em>。</span></p>
+<p class="note"><var>仄</var><em>仄</em><var>平</var>平平仄仄，<var>平</var><kbd>平</kbd><var>仄</var>仄仄平平。<var>平</var><kbd>平</kbd><var>仄</var>仄平平仄，<var>仄</var><em>仄</em><var>平</var>平仄仄平。<var>仄</var><em>仄</em><var>平</var>平平仄仄，<var>平</var><kbd>平</kbd><var>仄</var>仄仄平平。<var>平</var><kbd>平</kbd><var>仄</var>仄平平仄，<var>仄</var><em>仄</em><var>平</var>平仄仄平。</p>
 <p class="futi">其二</p>
 <p class="poem">难留晚照难留水，值此江河值此潮。棋世如繁如费解，人心似恨似無聊。功名大道疑成伪，言语非常乱必妖。形势风来情困窘，溪山雨落叶飘摇。</p>
 
@@ -1909,12 +1936,12 @@
 <p class="poem">帘卷望洋画景开，天涯寻迹慕名来。一帆归远夕霞渡，四季花繁点绿裁。浪缓沙平雲错影，潮生澄碧水徘徊。此时热雨吹蕉叶，彼岸波声上露台。</p>
 
 <p><br/></p>
-<p class="right"><a href="#boathill-qilv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#qilv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-wuyan"><span>五言古诗</span>　<span class="shou">五首</span></h3>
+<h3 id="wugu"><span>五言古诗</span>　<span class="shou">五首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p2011-meng">五言·夢醒　<span class="date"><a href="#y2011-meng">2011.06.02</a></span></h4>
@@ -1939,12 +1966,12 @@
 <h4 id="p2021-ming">五言·明宫谋　<span class="date"><a href="#y2021-ming">2021.02.11</a></span></h4>
 <p class="poem">历史是个托，言情占其窝。明宫有真爱，清泪不需多。</p>
 <p><br/></p>
-<p class="right"><a href="#boathill-wuyan" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#wugu" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
 
-<h3 id="boathill-wulv"><span>五言律诗</span>　<span class="shou">五十一首</span></h3>
+<h3 id="wulv"><span>五言律诗</span>　<span class="shou">五十一首</span></h3>
 <p class="spbr"><br/></p>
 
 
@@ -1968,7 +1995,7 @@
 <h4 class="futi">其二</h4>
 <p class="poem">愁雲渡雨阴，松阶响春霖。<span class="fair">声断芭蕉碎，丝连水镜沉</span>。泥香幽浸草，枝翠绿湿襟。欲去归無路，难融是此心。</p>
 <p class="spbr"><br/></p>
-<p class="right"><a href="#boathill-wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 
 
 <h4 id="z_xishan"><span class="juan">西山集</span></h4>
@@ -1988,7 +2015,7 @@
 
 <h4 id="p1988-rain">夜雨邀龚学士戏作　<span class="date"><a href="#y1988-rain">1988.6</a></span></h4>
 <p class="poem">夜已四更了，一看三点钟。轻轻窗外雨，剪剪耳边风。老恨蛙声乱，新愁睡意浓。明天考网络，心事两重重。</p>
-<p class="right"><a href="#boathill-wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="pause">***<br/></p>
 
 
@@ -2144,7 +2171,7 @@
 <p class="poem">天宫开一线，疑似落雲仙。风携千鹤起，野采万花鲜。柔音歌渺渺，玉影舞翩翩。借令春司帝，此生长驻颜。</p>
 <p class="spbr"><br/></p>
 
-<p class="right"><a href="#boathill-wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
+<p class="right"><a href="#wulv" class="noprint">⇐</a> <a href="#atop" class="noprint" title="⇐ Back to TOC ⇒">⇑</a></p>
 <p class="spbr"><br/></p>
 <p class="spbr"><br/></p>
 
@@ -2152,7 +2179,7 @@
 <div class="xiang">
 <hr style="margin:0px 25%;width:50%;"/>
 
-<h3 id="boathill-zaji"><span>外编</span>　<span class="shou">二十四首</span></h3>
+<h3 id="zaji"><span>外编</span>　<span class="shou">二十四首</span></h3>
 <p class="spbr"><br/></p>
 
 <h4 id="p1995-hong">红楼集句　<span class="date"><a href="#y1995-hong">1995.11</a></span></h4>
@@ -2215,9 +2242,9 @@
 
 <h4 id="p1995-xian">附词<span class="shou">二首</span>　<span class="date"><a href="#y1995-xian">1995.11</a></span></h4>
 <h4 class="futi">臨江仙·春風</h4>
-<p class="poem">艳日初长身正暖，解衣落展情芳。乳珠娇嫩散桃香。双双学戏水，携共试兰汤。<span class="cibr"></span>　　玉股酥胸贴紧抱，消魂不顾残妆。鱼游春兴太颠狂。风光都占尽，滴露洒花房。</p>
+<p class="poem">艳日初长身正暖，解衣落展情芳。乳珠娇嫩散桃香。双双学戏水，携共试兰汤。<span class="cibr"></span>玉股酥胸贴紧抱，消魂不顾残妆。鱼游春兴太颠狂。风光都占尽，滴露洒花房。</p>
 <h4 class="futi">又</h4>
-<p class="poem">丽冶春风想同穴，别来枕上轻纱。裤裙羞褪似流霞。两条白玉腿，一朵牡丹花。<span class="cibr"></span>　　浅入香唇逢褶皱，深行始觉路滑。孤独浪子又回家。恣情人困倦，遍体骨酥麻。</p>
+<p class="poem">丽冶春风想同穴，别来枕上轻纱。裤裙羞褪似流霞。两条白玉腿，一朵牡丹花。<span class="cibr"></span>浅入香唇逢褶皱，深行始觉路滑。孤独浪子又回家。恣情人困倦，遍体骨酥麻。</p>
 <p class="spbr"><br/></p>
 
 <h4 id="p1993-yequ">夜曲　<span class="date"><a href="#y1993-yequ">1993.3</a></span></h4>
