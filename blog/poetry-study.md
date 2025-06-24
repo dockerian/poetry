@@ -551,6 +551,12 @@
 <br/><a name="see"></a>
 <hr/>
 ### See also
+- Assistant tools
+  * [DeepSonnet](https://www.deepsonnet.com/)
+  * [HyperWrite](https://app.hyperwriteai.com/)
+  * [Poem Generator](https://www.poemgenerator.com/)
+  * [SudoWrite.com](https://editor.sudowrite.com/)
+  * [WriteSonic](https://writesonic.com/)
 - [BBC Maestro](https://www.bbcmaestro.com/blog/5-of-the-best-books-on-writing-poetry)
 - [DIY MFA](https://diymfa.com/reading/books-craft-of-poetry/)
 - [Lttle Infinite](https://www.littleinfinite.com/5-books-about-writing-poetry/)
