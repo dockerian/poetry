@@ -11,6 +11,14 @@
     - [Book Excerpt](#excerpt)
   * [Books List](#books)
   * [Poem Examples](#examples)
+  * [AGI Poetry Guide](#agi)
+    - [The Poetry's Play](#chatgpt)
+    - [A Poet's Primer, in Poetic Time](#copilot)
+    - [The Poet's Codex: Learning Through Verse](#claude)
+    - [The Poet's Grand Bazaar](#deepseek)
+    - [The Poetic Tapestry](#gemini)
+    - [The Bard's Blueprint](#google-ai)
+    - [The Song of Poetry](#grok)
   * [See also](#see)
 
 
@@ -182,7 +190,7 @@
 * Evangeline (*Henry Wadsworth Longfellow*) ~ _dactylic hexameter_
 
   ```
-   ●   ○   ○   ●  ○  ○   ●  ○   ○   
+   ●   ○   ○   ●  ○  ○   ●  ○   ○
   This is the forest primeval, The
    ●  ○  ○   ●    ○    ○   ●   ○  
   murmuring pines and the hemlocks
@@ -351,7 +359,7 @@
 
 * "**The Poetry Handbook**: A Guide to Reading Poetry for Pleasure and Practical Criticism" by *John Lennard*: This comprehensive guide provides readers with tools to understand and analyze poetry. It covers various aspects, including form, meter, rhyme, and poetic devices, offering practical exercises and examples.
 
-* "**The Poetry Home Repair Manual**", by *Ted Kooser*, is similarly approachable, in a somewhat grandfatherly way. Very re-readable and affirming at times. Ted Kooser is a Pulitzer Prize-winning poet and former United States poet laureate. It’s a really good, accessible, “reader-friendly” book (and it’s short, and inexpensive too!). Not dry and “academic” at all. It’s really designed for total beginners (although experienced poets can get something out of it, too, I think). I think you’d find it very helpful. It’s a good place to start, and you can go from there. And by all means, read as much really good poetry as you can. No one who never read the best poets of all time ever wrote good poetry. (Start with the basics, like Walt Whitman, Emily Dickinson, Robert Frost, E. E. Cummings, Anne Sexton—and many others!) +++
+* "**The Poetry Home Repair Manual**", by *Ted Kooser*, is similarly approachable, in a somewhat grandfatherly way. Very re-readable and affirming at times. Ted Kooser is a Pulitzer Prize-winning poet and former United States poet laureate. It’s a really good, accessible, “reader-friendly” book (and it’s short, and inexpensive too!). Not dry and “academic” at all. It’s really designed for total beginners (although experienced poets can get something out of it, too, I think). I think you’d find it very helpful. It’s a good place to start, and you can go from there. And by all means, read as much really good poetry as you can. No one who never read the best poets of all time ever wrote good poetry. (Start with the basics, like Walt Whitman, Emily Dickinson, Robert Frost, E. E. Cummings, Anne Sexton, and many others!) +++
 
 * "**The Poetry Home Repair Manual** - Practical Advice for Beginning Poets" by *Ted Kooser*: This book offers practical guidance and inspiration for aspiring poets. It covers topics such as finding ideas, refining language, and developing one's unique voice, while providing examples and exercises to help readers improve their craft.
 
@@ -399,21 +407,6 @@
 <br/><a name="examples"></a>
 <hr/>
 ## Poem Examples
-
-* Anti-War Activists Protest Harvard Kennedy School Professor
-
-  ```
-  Meghan O’Sullivan, you can’t hide,
-  we can see all your war crimes.
-  When missiles fly, people die,
-  and O’Sullivan’s profits multiply.
-
-  She directs Weapons company
-  while teaching Public Policy
-  She invades countries (shame on Harvard Kennedy)
-  while teaching AGEQ countries
-  Shame on Harvard Kennedy
-  ```
 
 * The Charge of the Light Brigade (*Alfred, Lord Tennyson*)
 
@@ -543,6 +536,652 @@
 
   ```
   Into the forest I go / to lose my mind and find my soul
+  ```
+
+[Back](#examples) | [Home](#home)
+
+
+<br/><a name="agi"></a>
+<hr/>
+## AGI Poetry Guide
+
+<a name="chatgpt"></a>
+#### **The Poetry's Play**, by [ChatGPT](https://chatgpt.com/) [&uArr;](#home)
+
+  ```
+  A verse begins not just with words,
+  But syllables like songs of birds.
+  A vowel gives it breath and tone,
+  A consonant makes bone from stone.
+
+  Some beats are accented, strong and proud,
+  While others whisper, soft—— not loud.
+  The accentuation makes it glide,
+  With stresses rising like a tide.
+
+  This line’s an iamb: soft then strong——
+  It’s heartbeat-paced, it hums along.
+  But flip it round: a trochee starts
+  With thunder drums and dancing hearts.
+
+  A dactyl gallops—— DUM-da-da,
+  Like “elephant” or “Canada.”
+  While anapest goes light-light-BOOM,
+  It sneaks up fast and fills the room.
+  Spondees stomp like boots on stone:
+  DUM-DUM, with weight, a granite tone.
+  Pyrrhics whisper—— soft and slight,
+  Two unstressed steps in fading light.
+
+  Then comes amphibrach, da-DUM-da, a mid-rise blend,
+  Like deCISive or reLIable friend.
+  A cretic (or amphimacer): DUM-da-DUM,
+  Like bold and true or love shall live.
+  While molossus, DUM-DUM-DUM, roars all through——
+  Like Bang! Bang! Bang!—— it's coming for you!
+  A four-beat shape? Try paeon next,
+  With one strong stress, the rest unflexed.
+
+  We count our feet: this math is meter.
+  Scansion marks the pulse, makes it neater.
+  The lines are built in meter’s name:
+  Trimeter's three feet in a frame.
+  With four, it’s tetrameter’s cheer;
+  And pentameter—— Shakespeare’s dear.
+  Six feet? Then hexameter makes its play——
+  Like Homer’s Greek epics far away.
+
+  We shape these lines in stanza’s form,
+  Some square and tight, some loose and warm.
+  A refrain returns like memory’s tune——
+  The echoing cry beneath the moon.
+
+  Couplets rhyme in pairs so tight,
+  Like day is done / the fading light.
+  A tercet gives us three in line,
+  A quatrain four—— it feels just fine.
+
+  A quintet, sestet, septet, grow,
+  And octave brings the formal show.
+  The sonnet holds its fourteen frame,
+  Shakespearean or Petrarchan name.
+
+  Let’s add some music—— rhyme in pairs:
+  “Moon” and “tune” like dancing flares.
+  A masculine rhyme hits strong and neat:
+  “Sky” with “fly” makes the close complete.
+  But feminine rhyme, with an extra fall,
+  Like “falling” and “calling,” softens all.
+
+  There’s alliteration—— sound repeat:
+  Softly sighs the summer heat.
+  Alliteration brings sound alive:
+  With consonants like “crickets cry.”
+  While assonance lets vowels chime,
+  In “high tide’s time,” it sings through rhyme.
+  Consonance repeats in scattered place——
+  Like “blank bank’s bark” in a quiet space.
+
+  Onomatopoeia shouts or drips——
+  Like bang!, whirr, or slish-slosh lips.
+  Caesura, in two, breaks a line——
+  Like "To err is human // to forgive, divine".
+  Enjambment spills without a pause:
+  The line moves on without a clause.
+
+  Rhyme may be masculine (one strong beat):
+  Confess / redress—— so bold, complete.
+  Or feminine, two beats that fall:
+  Ending / bending, soft and small.
+
+  We scan the lines with scansion's lore,
+  To mark the stress and check the score.
+  The whole is called prosody, dear——
+  The music wrapped in what you hear.
+
+  Scan it all with scansion’s grace,
+  Mark feet and beats in every place.
+  Feel the rhythm, fast or slow,
+  It’s prosody that makes it flow.
+
+  Some poems have a refrain to bind——
+  “Nevermore,” the Raven’s mind.
+  And prosody? The name for all——
+  The art of how the rhythms fall.
+
+  Free verse plays loose—— no strict beat.
+  Blank verse has meter, but no rhyme to meet.
+  From limericks and odes to epic lines,
+  Each form reveals poetic signs.
+
+  So here’s a poem on poetry made——
+  With terms and tunes in bright parade.
+  From pitch and beat, just trust the sound,
+  And let your language dance around.
+  ```
+
+<a name="copilot"></a>
+#### **A Poet's Primer, in Poetic Time**, by [Copilot](https://copilot.microsoft.com/) [&uArr;](#home)
+
+  ```
+  A poem begins where the silence breaks,
+  With accented beats that the breathing makes.
+  In verse we trust, each syllable weighed,
+  Where vowel and consonant dances are played.
+
+  An iambus is light then strong in tone,
+  Like “To be or not”—— you are not alone.
+  Iambs arise like a heart that’s ticking,
+  Spondees stomp with boots a-kicking.
+  Anapest, bold with a runaway pace,
+  Outruns the others in sprinting grace.
+  Anapest scampers, da-da-DUM, it goes,
+  While dactyl dives deep in tripping rows.
+
+  Accentuation lifts the beat——
+  A trochee trips with tumbling feet.
+  A trochaic foot has a marching start,
+  “Tyger Tyger” burns with fiery heart.
+  Choree, its twin from another name,
+  Still stamps out rhythm just the same.
+  A pyrrhic sneaks in softly, slight,
+  While dactyls gallop with airy delight.
+  An amphibrach wraps with a hug so neat——
+  da-DUM-da, like a whisper you just can’t repeat.
+  Cretic punches in DUM-da-DUM style,
+  Bold in its strut with a double-mile.
+  Molossus booms with a triple stress——
+  DUM-DUM-DUM sound in a heavy dress.
+
+  Now enter paeon, the scholar's delight,
+  With one strong beat where the others are light.
+  So many feet make metrical stew——
+  Dibrachs hide where the accents flew.
+
+  Couplets rhyme in married pair,
+  A kiss of words, light as air.
+  Tercets, threes with a flowing grace,
+  Quatrains square off in a balanced space.
+
+  Quintets, sestets, keep the climb,
+  Septets, octaves stretch to time.
+  Each stanza, a room with its own set of rules,
+  Where scansion uncovers the architect’s tools.
+
+  With trimeter’s light and tetrameter’s sway, Pentameter rules what the greats often say.
+  Hexameter, grand, in epics you'll see——
+  A rhythmic line fit for Homer or sea.
+
+  Scansion maps the rising tide,
+  Where prosody and pitch collide.
+  Rhythm throbs like a pulse in song,
+  Pulling the stanza clean along.
+
+  A refrain repeats what we wish to retain,
+  A chorus returned, again and again.
+  Masculine rhymes, they end quite bold,
+  While feminine rhymes let the rhythm unfold.
+
+  Assonance, vowels hum in tune,
+  Like “low moan” or “blue noon moon.”
+  Assonance hums with inner rhyme,
+  "Light of the fire, dying in time."
+  And consonance clicks in the echoing night,
+  "Blank bark cracked by frostbite’s bite."
+  Consonance clicks when the harsh sounds cling,
+  As “black clocks” strike with icy ring.
+
+  Alliteration starts a sound parade:
+  "Flickering flames in forests fade."
+  Masculine rhymes land firm at the tail,
+  "Boom" and "doom" in their thunderous gale.
+  Feminine rhymes like a dancer’s delight,
+  "Falling" and "calling" float feather-light.
+
+  So here's a poem, a toolkit in line,
+  To show how mechanics and magic combine.
+  Read it aloud—— let meter unroll,
+  And find where the beats of a poem take hold.
+
+  Let every refrain be a bell we can ring,
+  A memory folded in poems we sing.
+  Let every poet—— young, ancient, or new——
+  Feel how the Muse threads her logic through you.
+
+  Prosody’s canvas is pitch and pace,
+  Rhythm the soul, and rhyme the lace.
+  And there, where theory and magic conspire——
+  A poem ignites with linguistic fire.
+  ```
+
+<a name="claude"></a>
+#### **The Poet's Codex: Learning Through Verse**, by [Claude.Ai](https://claude.ai/) [&uArr;](#home)
+
+  ```
+  1: The Building Blocks
+  Consonant meets vowel in harmony sweet,
+  Each syllable dancing to rhythm's beat.
+  The verse unfolds with prosody's art,
+  Where sound and sense play equal part.
+
+  2: The Music of Language
+  Alliteration loves to link and play——
+  "Softly sighing summer's day."
+  Assonance echoes through the night,
+  "The light bright kite takes flight."
+  Consonance binds the ending sounds,
+  "The wind behind the blind man rounds."
+
+  3: The Heartbeat of Poetry
+  Iamb steps forward, weak then strong (ba-DUM),
+  "Be-FORE the DAY is DONE."
+  Trochee stomps with heavy start (DUM-ba),
+  "TI-ger, TI-ger, burn-ing BRIGHT."
+  Anapest gallops three by three (ba-ba-DUM),
+  "In the NIGHT, by the LIGHT of the moon."
+
+  4: More Rhythmic Feet
+  Dactyl dances, strong then weak twice over (DUM-ba-ba),
+  "HON-or-ing, GATH-er-ing, WHIS-per-ing."
+  Spondee pounds with equal weight (DUM-DUM),
+  "STOP! LOOK! NIGHT-MARE! HEART-BREAK!"
+  Pyrrhic whispers soft and light (ba-ba),
+  "In the shadow of the night."
+
+  5: Measuring the Lines
+  Trimeter counts its three-beat song,
+  Tetrameter marches four beats strong,
+  Pentameter walks with five in line,
+  Hexameter flows with six divine.
+  Scansion marks each foot's true place,
+  Revealing rhythm's measured grace.
+
+  6: The Art of Sound and Stress
+  Masculine rhyme ends with power——
+  "Tower" meets "shower" in the hour.
+  Feminine endings dance with two——
+  "Singing" pairs with "ringing" true.
+  Accentuation shows us where
+  The pitch rises in the air.
+
+  7: The Binding Elements
+  Rhyme connects both far and near,
+  Making music for the ear.
+  Refrain returns again, again,
+  A chorus binding joy and pain.
+  Like this line that will repeat:
+  "Poetry makes language sweet."
+
+  8: The Complete Art
+  Now see how consonant and vowel combine,
+  How syllables build each crafted line.
+  Alliteration, assonance, consonance too,
+  Prosody binds them all for you.
+  From iamb to trochee, anapest to dactyl,
+  Each foot makes rhythm more tactile.
+  Trimeter, tetrameter, pentameter flow,
+  While scansion reveals what poets know.
+  In every stanza, every verse,
+  These elements help us rehearse
+  The ancient art of word and sound——
+  Where poetry makes language sweet.
+  (The refrain comes round!)
+  ```
+
+<a name="deepseek"></a>
+#### **The Poet's Grand Bazaar** (_An Encyclopedic Romp Through Versification_) by [deepseek](https://chat.deepseek.com/) [&uArr;](#home)
+
+  ```
+  Listen close now, budding bard, unlock the verse's gate,
+  Where consonant and vowel meet, deciding word and fate.
+  A syllable is each small beat, a pulse within the line,
+  Some light, some heavy, quick or slow, a rhythmic, shifting sign.
+  A verse begins not just with words,
+  But syllables like songs of birds.
+  A consonant makes bone from stone,
+  A vowel gives it breath and tone.
+
+  Accentuation stamps the beat——
+  Which sound will rise? Which sound's discreet?
+  Some beats are accented, strong and proud,
+  While others whisper, soft—— not loud.
+  In couplets first, two lines that rhyme:
+  The accented beats keep perfect time.
+  To map this pulse, we scansion make, with marks for stressed and weak,
+  Revealing feet that march along, the rhythm that we seek.
+
+  An iamb (da-DUM) steps gently forth, like "the sun sets low",
+  A trochee (DUM-da) leads the charge, like "flowers start to grow".
+  The spondee (DUM-DUM) STRONG STRESS commands, "TRUE BLUE", beyond compare!
+  The pyrrhic (da-da) whispers soft, two light steps barely there.
+  An anapest (da-da-DUM) rebounds, "to the beat of the drum";
+  A dactyl (DUM-da-da) gallops free, "merrily we roam".
+
+  Some feet get strange, beyond the norm,
+  Like creatures weathering a storm:
+  Amphibrach (da-DUM-da) delightful skip!
+  "The Assyr*i*an came down..." on swift ships dip.
+  The cretic (DUM-da-DUM) HEAR it thump?
+  "BREAK, again, BREAK!" on cold grey stone's wet rump.
+  The molossus (DUM-DUM-DUM) DEEP DARK DOOM!
+  A triple accented crashing boom!
+  The paeon (DUM-da-da-da) running free,
+  Or (da-DUM-DUM-DUM) like "in *a* wild hurricane's spree".
+  Choree (DUM-da) = trochee, swift and keen,
+  Dibrach (da-da) two lights, barely seen.
+
+  Next count the feet within the line, the meter finds its name:
+  Trimeter has three bold beats, igniting passion's flame.
+  Tetrameter brings four strong strides, a common, steady pace,
+  Pentameter (five feet!) holds court in time and measured grace.
+  Hexameter (six feet!) rolls long, like waves upon the sand ––
+  The building blocks of music made by structure's careful hand.
+
+  But sound's not just in stressed attack, it sings in other ways:
+  Alliteration links first consonants through phrase on phrase
+  ("Simple sounds seek sweetness", see the 's' begin to play?).
+  Assonance repeats the vowel tones, holding sound at bay
+  ("Hold the coal", the 'o' rings deep, a resonant display).
+  Consonance finds kindred consonants, though vowels may decay
+  ("Strike a strong string", 'str' echoes, pushing words astray).
+
+  Then rhyme arrives, the chiming end, where matching sounds align:
+  One stressed syllable: "light" meets "night,
+  Masculine rhyme ("cat/hat") snaps tight;
+  Stressed, then unstressed: "ending" with "pretending",
+  Feminine rhyme ("drowning/frowning") takes flight.
+  Enjambment flows where thoughts don't end –
+  Like Milton's lines that break and bend.
+  A refrain circles back again, its message never ending,
+  A line repeated, like a bell, its constant tone ascending.
+
+  Now build your house! A stanza forms:
+  Couplets (two lines): where matching thought warms.
+  "True wit is Nature to advantage dressed,
+  What oft was thought, but ne'er so well expressed."
+  Tercets (three lines): weave thoughts as one,
+  Or quatrains (four): the work's half done!
+  Quintets (five), sestets (six), septets (seven) grow,
+  An octave (eight): a sonnet's starting glow.
+  The accentuation shifts, the pitch can rise or fall,
+  Prosody (the art of sound!) controls and masters all.
+
+  So wield your lines with conscious craft, let every choice be known,
+  These tools and etc.eras help the poet's seeds be sown.
+  For rhythm, rhyme, and sound combined create the vital spark,
+  The verse that moves, the music found within the poem's dark.
+  From cretic's thump to paeon's race,
+  Prosody is time and space!
+  ```
+
+<a name="gemini"></a>
+#### **The Poetic Tapestry** (_A Rhythmic Guide Unveiling_), by [Gemini](https://gemini.google.com/) [&uArr;](#home)
+
+  ```
+  In verses where our thoughts entwine,
+  Let prosody's sweet art define
+  The rhythm of each flowing line.
+  A stanza forms, a thought complete,
+  With measured scansion, oh so neat.
+  Perhaps a couplet, paired and tight,
+  Or tercet's three, a hopeful light.
+  A quatrain strong, a classic form,
+  Through changing moods, it weathers storm.
+  A quintet dances, five in glee,
+  While sestet holds complexities.
+  A septet weaves a longer thread,
+  An octave's fullness, finely spread.
+
+  The vowel sings, a vibrant sound,
+  While consonant surrounds it round.
+  Each syllable, a beat, a sign,
+  With varied pitch, a sweet design.
+  And hear the accentuation strong,
+  Where accented notes precisely throng.
+
+  An iamb is soft, "da-DUM," it goes,
+  Like morning's breath, a gentle rose.
+  A trochee drops, "DUM-da," it falls,
+  Responding to the muse's calls.
+  The anapest, "da-da-DUM", a quickening pace,
+  A joyful chase in time and space.
+  Then dactyl, "DUM-da-da" strides free,
+  A triple beat for you and me.
+  A spondee, slow, "da-DUM" it stands,
+  With emphasis in willing hands.
+  While pyrrhic whispers, "da-da" light,
+  Its presence subtle, soft, and slight.
+
+  For iambus read 'iamb,' you see,
+  And trochaic is 'trochee' for me.
+  Choree's a trochee, in some old lore,
+  And dibrach means two unstressed, no more,
+  Like 'da-da,' light, as pyrrhic shows,
+  The subtle currents, as verse flows.
+
+  New feet appear, for varied strain:
+  The amphibrach, "da-DUM-da," again,
+  Like "to mar·ket to · mar·ket," light.
+  The cretic, "DUM-da-DUM", a forceful bite,
+  It sounds like "fire · light · bright."
+  The molossus, three stresses in a row,
+  Like "dark · night · storm," a heavy flow.
+  The paeon, four, one stress so grand,
+  A varied rhythm close at hand.
+
+  When alliteration starts to play,
+  Like "whispering winds" along the way,
+  The same sound starts, a charming art,
+  Engaging mind and eager heart.
+  And assonance, a chiming sound,
+  Like "light bright skies" on hallowed ground,
+  Repeats the vowel, a gentle hum,
+  Before the closing words do come.
+
+  Then consonance begins to weave,
+  Like "black specked track," you will believe,
+  A repetition, soft and deep,
+  Of consonant sounds, secrets to keep.
+  The refrain, a line that comes again,
+  A whispered echo, now and then,
+  To emphasize, to make it clear,
+  A thought or feeling held so dear.
+
+  We speak of lines, how they combine:
+  A trimeter has three lines, divine.
+  A tetrameter, with four beats strong,
+  Where melodies and thoughts belong.
+  A pentameter, with five it flies,
+  As Shakespeare's noble verse implies:
+  "Shall I · compare · thee to · a sum·mer's day?"
+  A perfect example, come what may.
+  And hexameter, with six it gleams,
+  Like epic tales and waking dreams.
+
+  The rhyme concludes, a joyful chime,
+  In perfect synchrony with time.
+  A masculine one, strong and bold,
+  Like "day" and "play," a story told.
+  A feminine one, with gentle grace,
+  Like "flowing" and "going," in its place,
+  Two syllables, the second soft,
+  A whispered echo, borne aloft.
+
+  A limerick with wit and zest,
+  Its "AABBA" rhyme, a playful test:
+  There once · was a man · from Naga·saki,
+  Whose poems · were not · very tack·y.
+  He wrote · them with glee,
+  For the world · to see,
+  And his meter · was never · quite lack·y.
+
+  So this verse, a lesson clear,
+  Explains the art we hold so dear.
+  From rhythm's pulse to rhyme's sweet end,
+  A poem's magic, our true friend.
+  A verse for learning, light and free,
+  The grandest tapestry for thee!
+  ```
+
+<a name="google-ai"></a>
+#### **The Bard's Blueprint** (_A Verse Compendium_), by [Gemini](https://gemini.google.com/) [&uArr;](#home)
+
+  ```
+  In prosody's realm, where words alight,
+  We weave a tapestry of sound and light.
+  Each syllable, a tiny, measured beat,
+  Guiding our rhythm, bittersweet.
+  The vowel's open song, a flowing grace,
+  While consonant defines its very space.
+  Hear pitch ascend, a note held high or low,
+  And accentuation makes the meaning glow.
+  A word accented, bold and standing clear,
+  Dispelling doubt, removing every fear.
+
+  A stanza forms, a thought contained and neat,
+  From couplet's pair to octave's full retreat.
+  A tercet often three, a gentle chime,
+  Then quatrain strong, conquering space and time.
+  A quintet's five, a playful, lively bound,
+  While sestet brings conclusions all around.
+  A septet stretches, gathering the theme,
+  Before the verse fulfills its waking dream.
+
+  Now scansion calls, our guide through patterned ways,
+  To mark the feet in poetry's vast maze.
+  The iamb strolls, "da-DUM," a steady pace,
+  (Or iambus called in time and place).
+  The trochee falls, "DA-dum," a downward trend,
+  (Trochaic's nature, to the very end).
+  The choree too, another name you'll find,
+  For trochee's sister, for the musing mind.
+  The anapest skips, "da-da-DUM," so fleet,
+  "Twas the night · before · Christmas," oh so sweet!
+  The dactyl gallops, "DA-dum-dum," with might,
+  "Hick-o-ry · dick-o-ry · dock," how it takes flight!
+  The spondee lands, "DA-DUM," with solemn sound,
+  Like "cold · stones" laid upon the hallowed ground.
+  The pyrrhic flits, "da-da," a whispered grace,
+  Two unstressed beats, lost in time and space.
+  (Dibrach, by some, for this light step is known,
+  Two "x" marks, where no strong stress is sown.)
+
+  More feet arrive, to stretch the poetic art:
+  The amphibrach, "x / x," a beating heart,
+  "To mar·ket to · mar·ket," a subtle sway,
+  A central stress upon its gentle way.
+  The cretic strikes, "/ x /," a forceful blend,
+  Like "true · love · true," until the very end.
+  The molossus, "///," three stresses in a line,
+  "Deep · dark · night," its power truly fine.
+  The paeon, four, with just one stress held grand,
+  A varied pulse across the poetic land.
+
+  When alliteration starts to gleam,
+  Like "slippery snakes," a shimmering stream,
+  The same sound starts, a charming, whispered art,
+  Engaging mind and eager, beating heart.
+  And assonance, a chiming, inner grace,
+  Like "mellow wedding bells" in time and space,
+  Repeats the vowel, a sweet, recurring hum,
+  Before the closing phrases gently come.
+
+  Then consonance begins its subtle play,
+  Like "pitter-patter," at the close of day,
+  A repetition, soft and deep, unseen,
+  Of consonant sounds, where shadows convene.
+  The refrain, a line that comes again,
+  A whispered echo, now and then,
+  To emphasize, to make the meaning clear,
+  A thought or feeling held profoundly dear.
+
+  We speak of lines, how many beats they hold:
+  A trimeter has three, a story told.
+  A tetrameter, with four strong steps it strides,
+  Where classic tales and easy rhythm glides.
+  A pentameter, with five it grandly flies,
+  As Shakespeare's noble verse often implies:
+  "A rose · by an·y oth·er name · would smell · as sweet."
+  A measured rhythm, wonderfully complete.
+  And hexameter, with six it brightly gleams,
+  Like epic voyages and waking dreams.
+
+  The rhyme concludes, a joyful, perfect chime,
+  Connecting lines, defying passing time.
+  A masculine one, strong and bold and brief,
+  Like "day" and "play," bringing quick relief.
+  A feminine one, with gentle, soft embrace,
+  Like "flowing" and "going," in its proper place,
+  Two syllables, the second soft and light,
+  A whispered echo in the fading night.
+
+  So this long poem, a lesson clear and bright,
+  Explains the art that fills the soul with light.
+  From rhythm's pulse to rhyme's sweet, whispered end,
+  Poetic magic, our forever friend.
+  May this verse help, in every single way,
+  To light your path through poetry's grand display!
+  ```
+
+<a name="grok"></a>
+#### **The Song of Poetry**, by [Grok](https://grok.com/) [&uArr;](#home)
+
+  ```
+  Poetry’s pulse, a verse of vibrant sound,
+  Each syllable a step where dreams are found.
+  Vowels sing clear, their pitch a soaring flight,
+  Consonants clash, with accented delight.
+
+  Iambus, soft, da-DUM, the heart’s own beat,
+  “To be or not to be,” Hamlet’s repeat.
+  In pentameter, five iambs gently glide,
+  A couplet seals the rhyme, with love as guide.
+
+  Trochee, or choree, DUM-da, bold and spry,
+  “Tyger, Tyger, burning bright,” Blake’s cry.
+  Trochaic tetrameter, four steps in stride,
+  Masculine rhyme, like “night,” cuts sharp with pride.
+
+  Anapest, da-da-DUM, leaps light and free,
+  “And the sheen of their spears was like stars on the sea,”
+  Byron’s quatrain, in rhythm wild and grand,
+  Assonance hums, with “sheen” and “sea” at hand.
+
+  Dactyl, DUM-da-da, sways in lilting fall,
+  “Half a league, half a league,” Tennyson’s call.
+  Hexameter rolls, a six-beat mighty wave,
+  Consonance links, with “league” sounds that engrave.
+
+  Spondee, DUM-DUM, stomps heavy, loud, and sure,
+  “Out, out,” cries Macbeth, with grief’s allure.
+  Pyrrhic, or dibrach, da-da, soft and fleet,
+  In trimeter, it dances, light on feet.
+
+  Amphibrach, da-DUM-da, swings with gentle grace,
+  “The night was alive with a song in its place.”
+  Cretic, DUM-da-DUM, bold in measured tone,
+  Molossus, DUM-DUM-DUM, thunders on its own.
+
+  Paeon, DUM-da-da-da, a playful, skipping air,
+  In limerick form, it laughs without a care:
+  “A poet from Stratford did write,
+  With alliteration so bright,
+  His verse sparkled fair!”
+
+  Tercet, three lines, or quintet, five in song,
+  Sestet, six, or septet, seven strong,
+  Octave, eight, crafts a sonnet’s stately frame,
+  Prosody weaves their rhythm, none the same.
+
+  Refrain returns, a chant to bind the heart,
+  “Do not go gentle,” Thomas’ fiery art.
+  Scansion charts the feet, the stress, the flow,
+  Accentuation lifts where words must grow.
+
+  Feminine rhyme, like “dancing” and “prancing,”
+  Softens the close, with extra syllables glancing.
+  Stanza and rhyme, the poet’s joyful play,
+  Sing poetry’s song through night and day.
   ```
 
 [Back](#examples) | [Home](#home)
