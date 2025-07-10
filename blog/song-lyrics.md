@@ -117,6 +117,49 @@
   And then he looked right through me as if I wasn’t there.
   ```
 
+* Lady Come Down (_Charlie Mole_)
+
+  ```
+  The western wind is blowing fair
+  Across the dark Aegean sea,
+  And at the secret marble stair
+  My Tyrian galley waits for thee.
+  Come down! The purple sail is spread,
+  The watchman sleeps within the town,
+  O leave thy lily-flowered bed,
+  O Lady mine come down, come down!
+  Lady, come down!
+  Come down, Lady come down,
+  Lady, come down!
+  She will not come, I know her well,
+  Of lover′s vows she hath no care,
+  And little good a man can tell
+  Of one so cruel and so fair.
+  True love is but a woman's toy,
+  They never know the lover′s pain,
+  And I who loved as loves a boy
+  Must love in vain, must love in vain.
+  Come down, Lady come down
+  Come down, Lady come down
+  ```
+
+* Lover Me Tender (_Love Me Tender_)
+
+```
+Love me tender, love me sweet, never let me go.
+You have made my life complete, and I love you so.
+Love me tender, love me true, all my dreams fulfilled.
+For my darlin' I love you, and I always will.
+
+Love me tender, love me long, take me to your heart.
+For it's there that I belong, and we'll never part.
+Love me tender, love me dear, tell me you are mine.
+I'll be yours through all the years, till the end of time.
+
+When at last my dreams come true, darling this I know
+Happiness will follow you, everywhere you go.
+```
+
 * Old Money (_Lana Del Rey_)
 
   ```

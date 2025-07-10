@@ -402,10 +402,23 @@
     color: lightgray;
   }
 
+  @keyframes op-start {
+    from {
+      background-color: skyblue;
+      border-radius: 1.5em;
+      height: 2em; width: 1em;
+      padding: 0.125em 0.75em 0em 0.25em;
+      opacity: 1; right: 39%;
+    }
+    to {
+      background-color: transparent;
+      opacity: 0.25;
+    }
+  }
   div#goto {
-    opacity: 0.3;
+    opacity: 0.75;
     position: fixed;
-    bottom: 0; right: 0;
+    bottom: 1.75em; right: 1em;
     border-radius: 0.25em 0em 0em 0em;
     background-color: transparent;
     line-height: 1.35em;
@@ -431,6 +444,9 @@
     display: none;
   }
   div#goto #aquo {
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-name: op-start;
     display: inline-block;
     border-radius: 1em;
     background-color: whitesmoke;
@@ -1095,7 +1111,7 @@
   <li id="d20130814x" class="show-li" name="zhyx-li"><a href="#p20130814x"><q>☆</q> Stronger【愛過心更強】 <i>2013.08.14.</i></a></li>
   <li id="d20130915x" class="show-li" name="zhyx-li"><a href="#p20130915x" title="Working My Way Back To You (1980 by The Spinners)"><q>☆</q> Working My Way Back ...【用心贏你回】 <i>2013.09.15.</i></a></li>
   <li id="d20130916x" name="zhyx-li"><a href="#p20130916x">Somewhere Over The Rainbow【彩虹之上】 <i>2013.09.16.</i></a></li>
-  <li id="d20140203x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20140203x"> <u title="English poem">E</u> <b>A Vanila Song</b>〖行香子·火燒天宮〗 <i>2014.02.03.</i></a></li>
+  <li id="d20140203x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20140203x"> <u title="English poem">E</u> <b>A Vanilla Song</b>〖行香子·火燒天宮〗 <i>2014.02.03.</i></a></li>
   <li id="d20140819x" class="show-li" name="zhyx-li"><a href="#p20140819x" title="Anna Kendrick - Cups Song (Pitch Perfect 2012)"><q>☆</q> When I'm Gone【远行快唱】 <i>2014.08.19</i></a></li>
   <li id="d20140922x" class="mulu show-li" name="zhou-li"><a href="./shiji.html#a2014-bday" title="Happy Birthday Poem to Jason" target="_blog"><q>☆</q> <em title="周琳填词">周</em> <b>Poem From Tacoma</b>【行香子】 <i>2014.09.22</i></a></li>
   <li id="d20140925x" class="mulu zhou-li" name="zhou-li"><a href="./shiji.html#a2014-anniversary" title="Happy Anniversary" target="_blog"> <em title="周琳填词">周</em> <b>Happy Anniversary</b>【满江红·纪念日】 <i>2014.09.25</i></a></li>
@@ -1847,9 +1863,9 @@
   一时妙筆，雨雪消融。
   讓夢成虚，虚成幻，幻成空。
 
-<b><a href="https://divertidalz.blogspot.com/2014/02/sunrise-tacoma.html" title="Blog: Sunrise Tacoma" target="_blog">&raquo; See Lin's echoed song.</a></b>
+<b><a href="https://divertidalz.blogspot.com/2014/02/sunrise-tacoma.html" title="Blog: Sunrise Tacoma" target="_blog">&raquo; 见周琳《霞映雪山》</a></b>
 </div>
-<div class="ying"><h3 class="t3 ying" id="p20140203x">A Vanila Song <em>(2014.02.03)</em>  <em><a class="sup" href="#d20140203x" title="2014.02.03">&#11139;&nbsp;</a></em></h3>
+<div class="ying"><h3 class="t3 ying" id="p20140203x">A Vanilla Song <em>(2014.02.03)</em>  <em><a class="sup" href="#d20140203x" title="2014.02.03">&#11139;&nbsp;</a></em></h3>
   The sunset burns in brown on trees and stone
   As deep as oceans, as blue as sky grown
   Clouds form battle lines and wave to open zone
@@ -1860,7 +1876,7 @@
   Of beauty and peace, well before it is gone
   Be the dream, be the love, be your own
 
-<em><i>By </i> Boathill 2014.02.03.</em>
+<em><i>English version revised in </i> 2025</em>
 </div>
 </div><!-- blog -->
 <a href="#english-poems" class="goto">⇑</a>
@@ -2444,6 +2460,9 @@
   哪有什么岁月静好，
   只因有人为你负重前行。
 
+  天青色等烟雨，
+  而我在等你……
+
   人生如戏，
   全靠演技。
 <em>2008-2025 舟山选译</em>
@@ -2493,6 +2512,9 @@
 
   Life might be easy and gone
   Remember who's carry-on
+
+  The sky's darken to rain;
+  And my waitin' in vain.
 
   Life is a drama as you play
   How to act it everyday
