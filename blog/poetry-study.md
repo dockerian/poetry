@@ -99,9 +99,13 @@
 
 - **scansion**: scanning a poem for "meter", the number of feet in a line.
 
+- **sonnet** /ˈsänət/: a poem of fourteen lines using any of a number of formal rhyme schemes, in English typically having ten syllables per line.【十四行诗】
+
 - **stanza** /ˈstanzə/: a group of lines forming the basic recurring metrical unit in a poem; a verse.
   * **couplet**: a (2) two-line stanza.
   * others: **tercet** (3), **quatrain** (4), **quintet** (5), **sestet** (6), **septet** (7), and **octave** or **octet** (8)
+
+- **prose** /prōz/: free verse, written or spoken language in its ordinary form, without metrical structure. Poems that read like prose don't follow any prosodic conventions (e.g. meter, rhyme).
 
 - **prosody** /ˈpräsədē/: the patterns of rhythm and sound used in poetry; the study of the *metrical* structure of verse; the patterns of stress and intonation in a language.(_"rhythmology"_)【韵律;诗体学】
 
@@ -620,6 +624,7 @@
 | unstressed | `/ - ` | trochee|
 | unusual | `- / -` | amphibrach ? |
 | usually | `/ - -` | dactyl |
+| window  | `/-` | trochee |
 | yacht | | |
 
 #### Identify poetic rhythm and meters
@@ -658,18 +663,36 @@
 
   - Iamb pentameter
 
-  ```
-  But soft! What light thru yonder window breaks?
-  It is the east and Juliet is the sun
-  ```
+    ```
+    But soft! What light thru yonder window breaks?
+    It is the east and Juliet is the sun
+    ```
+
+  - Iamb pentrameter (Richard III, by *Shakespeare*)
+
+    ```
+    Now is the winter of our discontent
+    Made glorious summer by this sun of York;
+    And all the clouds that lour'd upon our house
+    In deep bosom of the ocean buried.
+    ```
+
+  - Trochaic tetrameter (The Song of Hiawatha, by *Longfellow*)
+
+    ```
+    Should you ask me, whence these stories?
+    Whence these legends and traditions,
+    With the odors of the forest,
+    With the dew and damp of meadows.
+    ```
 
   - Trchee tetrameter
 
     ```
-     ● ○    ● ○    ●  ○    ●   ~
-    Tyger  Tyger, burning bright
-     ●  ○   ● ○    ●  ○    ●   ~
-     In the forest of the  night
+    ● ○   ● ○    ●  ○    ●   ~
+    Tyger Tyger, burning bright
+    ●  ○   ● ○    ●  ○   ●   ~
+    In the forest of the night
     ```
 
 
@@ -738,7 +761,7 @@
 
   > If it’s some gentle beginner’s guidance on how to write a poem you’re after, Mary Oliver should be able to provide you with what you’re looking for with this useful handbook.
   > Here you’ll find her breakdown of poetry’s basics – from different poetic forms and language techniques to practical tips on the creative process – like the importance of workshopping your pieces and the value solitude can bring to your writing too.
-  > The latter is something many poets swear by, including Carol Ann Duffy. “I’ve learnt to value silence. I’ve learnt to value thinking, reading, contemplating, rather than rushing straight to the blank page,” she says in her BBC Maestro poetry course.
+  > The latter is something many poets swear by, including Carol Ann Duffy. “I’ve learnt to value silence. I’ve learnt to value thinking, reading, contemplating, rather than rushing straight to the blank page”, she says in her BBC Maestro poetry course.
 
 
 * "**Melodious Guile**: Fictive Pattern in Poetic Langauge" - *John Hollander*
@@ -771,7 +794,7 @@
   > For those poets who need a confidence boost from time to time, this book may well be your new trusty companion.
   > Expect to come across a range of brilliant essays on all things poetry, like forming exciting ideas and navigating classic poetry techniques. At the same time, many appreciate this book for its comforting approach to the entire writing poetry process – acknowledging the inevitable self-doubt, the challenges of writing in a hyper-digital era and the forever rocky stability of a writing career. Even better – it encourages you to tackle it all at your own pace too.
   > Even if you have no idea where to start, hopefully, there’s something in here to help get you going. Remind yourself of the reasons why writing poetry interests you. Maybe you’re looking for a new way to express your thoughts and ideas, or you feel you have something important to say.
-  > If so, remember the words of Carol Ann Duffy, “the poet must feel that they have something to give,” says Carol Ann. Keen to learn more? Take a look at her BBC Maestro course, Writing Poetry.
+  > If so, remember the words of Carol Ann Duffy, “the poet must feel that they have something to give”, says Carol Ann. Keen to learn more? Take a look at her BBC Maestro course, Writing Poetry.
 
 
 * "**The Practice of Poetry** - Writing Exercises From Poets Who Teach" edited by *Robin Behn* and *Chase Twichell*: This anthology features writing exercises and prompts from renowned poets. It provides a range of approaches and perspectives on the craft of writing poetry, making it a valuable resource for both beginners and experienced poets.
@@ -825,6 +848,15 @@
   The wrinkled sea beneath him crawls;
   He watches from his mountain walls,
   And like a thunderbolt he falls
+  ```
+
+* Evening Solace (*Charlotte Brontë*, 1816-1855)
+
+  ```
+  The human heart has hidden treasures,
+  In secret kept, in silence sealed;—
+  The thoughts, the hopes, the dreams, the pleasures,
+  Whose charms were broken if revealed.
   ```
 
 * The Immortal Part (*A. E. Housman*, 1859-1936)
@@ -898,9 +930,43 @@
   That very old house I know
   ```
 
+* Sea-Fever (*John Masefield*, 1878—1967)
+
+  ```
+  I must go down to the seas again, to the lonely sea and the sky,
+  And all I ask is a tall ship and a star to steer her by;
+  And the wheel’s kick and the wind’s song and the white sail’s shaking,
+  And a grey mist on the sea’s face, and a grey dawn breaking.
+
+  I must go down to the seas again, for the call of the running tide
+  Is a wild call and a clear call that may not be denied;
+  And all I ask is a windy day with the white clouds flying,
+  And the flung spray and the blown spume, and the sea-gulls crying.
+
+  I must go down to the seas again, to the vagrant gypsy life,
+  To the gull’s way and the whale’s way where the wind’s like a whetted knife;
+  And all I ask is a merry yarn from a laughing fellow-rover,
+  And quiet sleep and a sweet dream when the long trick’s over.
+  ```
+
 * Snowy Evening, The Night Before Christmas (*Robert Frost*)
 
   ```
+  Whose woods these are I think I know.
+  His house is in the village though;
+  He will not see me stopping here
+  To watch his woods fill up with snow.
+
+  My little horse must think it queer
+  To stop without a farmhouse near
+  Between the woods and frozen lake
+  The darkest evening of the year.
+
+  He gives his harness bells a shake
+  To ask if there is some mistake.
+  The only other sound’s the sweep
+  Of easy wind and downy flake.
+
   The woods are lovely, dark, and deep,
   But I have promises to keep,
   And miles to go before I sleep,
@@ -942,6 +1008,7 @@
 | General | Poetic wording |
 |:---------------|:---------------|
 | don’t regret | regret nothing |
+| possible solution | find an alternative approach to achieving a satisfactory outcome for all concerned, ideally avoiding, if at all possible, |
 | ver important | a matter of no small importance |
 | useful | to be of use   |
 
@@ -964,16 +1031,16 @@
 
   Some beats are accented, strong and proud,
   While others whisper, soft—— not loud.
-  The accentuation makes it glide,
+  The accentuation makes them glide,
   With stresses rising like a tide.
 
   This line’s an iamb: soft then strong——
   It’s heartbeat-paced, it hums along.
   But flip it round: a trochee starts
-  With thunder drums and dancing hearts.
+  With thunder drums & dancing hearts.
 
   A dactyl gallops—— DUM-da-da,
-  Like “elephant” or “Canada.”
+  Like “elephant” or “Canada”.
   While anapest goes light-light-BOOM,
   It sneaks up fast and fills the room.
   Spondees stomp like boots on stone:
@@ -1019,14 +1086,14 @@
   A masculine rhyme hits strong and neat:
   “Sky” with “fly” makes the close complete.
   But feminine rhyme, with an extra fall,
-  Like “falling” and “calling,” softens all.
+  Like “falling” and “calling”, softens all.
 
   There’s alliteration—— sound repeat:
   Softly sighs the summer heat.
   Alliteration brings sound alive:
-  With consonants like “crickets cry.”
+  With consonants like “crickets cry”.
   While assonance lets vowels chime,
-  In “high tide’s time,” it sings through rhyme.
+  In “high tide’s time”, it sings through rhyme.
   Consonance repeats in scattered place——
   Like “blank bank’s bark” in a quiet space.
 
@@ -1044,7 +1111,7 @@
 
   We scan the lines with scansion's lore,
   To mark the stress and check the score.
-  The whole is called prosody, dear——
+  The whole is called prosody, my dear——
   The music wrapped in what you hear.
 
   Scan it all with scansion’s grace,
@@ -1053,8 +1120,8 @@
   It’s prosody that makes it flow.
 
   Some poems have a refrain to bind——
-  “Nevermore,” the Raven’s mind.
-  And prosody? The name for all——
+  “Nevermore”, the Raven’s mind.
+  And prosody? The name for it all——
   The art of how the rhythms fall.
 
   Free verse plays loose—— no strict beat.
@@ -1075,7 +1142,7 @@
   A poem begins where the silence breaks,
   With accented beats that the breathing makes.
   In verse we trust, each syllable weighed,
-  Where vowel and consonant dances are played.
+  Where vowel and consonant dances played.
 
   An iambus is light then strong in tone,
   Like “To be or not”—— you are not alone.
@@ -1116,7 +1183,8 @@
   Each stanza, a room with its own set of rules,
   Where scansion uncovers the architect’s tools.
 
-  With trimeter’s light and tetrameter’s sway, Pentameter rules what the greats often say.
+  With trimeter’s light and tetrameter’s sway,
+  Pentameter rules what the greats often say.
   Hexameter, grand, in epics you'll see——
   A rhythmic line fit for Homer or sea.
 
@@ -1131,7 +1199,7 @@
   While feminine rhymes let the rhythm unfold.
 
   Assonance, vowels hum in tune,
-  Like “low moan” or “blue noon moon.”
+  Like “low moan” or “blue noon moon”.
   Assonance hums with inner rhyme,
   "Light of the fire, dying in time."
   And consonance clicks in the echoing night,
@@ -1541,32 +1609,32 @@
   Consonants clash, with accented delight.
 
   Iambus, soft, da-DUM, the heart’s own beat,
-  “To be or not to be,” Hamlet’s repeat.
+  “To be or not to be”, Hamlet’s repeat.
   In pentameter, five iambs gently glide,
   A couplet seals the rhyme, with love as guide.
 
   Trochee, or choree, DUM-da, bold and spry,
-  “Tyger, Tyger, burning bright,” Blake’s cry.
+  “Tyger, Tyger, burning bright”, Blake’s cry.
   Trochaic tetrameter, four steps in stride,
-  Masculine rhyme, like “night,” cuts sharp with pride.
+  Masculine rhyme, like “night”, cuts sharp with pride.
 
   Anapest, da-da-DUM, leaps light and free,
-  “And the sheen of their spears was like stars on the sea,”
+  “And the sheen of their spears was like stars on the sea”,
   Byron’s quatrain, in rhythm wild and grand,
   Assonance hums, with “sheen” and “sea” at hand.
 
   Dactyl, DUM-da-da, sways in lilting fall,
-  “Half a league, half a league,” Tennyson’s call.
+  “Half a league, half a league”, Tennyson’s call.
   Hexameter rolls, a six-beat mighty wave,
   Consonance links, with “league” sounds that engrave.
 
   Spondee, DUM-DUM, stomps heavy, loud, and sure,
-  “Out, out,” cries Macbeth, with grief’s allure.
+  “Out, out”, cries Macbeth, with grief’s allure.
   Pyrrhic, or dibrach, da-da, soft and fleet,
   In trimeter, it dances, light on feet.
 
   Amphibrach, da-DUM-da, swings with gentle grace,
-  “The night was alive with a song in its place.”
+  “The night was alive with a song in its place”.
   Cretic, DUM-da-DUM, bold in measured tone,
   Molossus, DUM-DUM-DUM, thunders on its own.
 
@@ -1582,11 +1650,11 @@
   Prosody weaves their rhythm, none the same.
 
   Refrain returns, a chant to bind the heart,
-  “Do not go gentle,” Thomas’ fiery art.
+  “Do not go gentle”, Thomas’ fiery art.
   Scansion charts the feet, the stress, the flow,
   Accentuation lifts where words must grow.
 
-  Feminine rhyme, like “dancing” and “prancing,”
+  Feminine rhyme, like “dancing” and “prancing”,
   Softens the close, with extra syllables glancing.
   Stanza and rhyme, the poet’s joyful play,
   Sing poetry’s song through night and day.
@@ -1607,6 +1675,7 @@
 - [BBC Maestro](https://www.bbcmaestro.com/blog/5-of-the-best-books-on-writing-poetry)
 - [DIY MFA](https://diymfa.com/reading/books-craft-of-poetry/)
 - [Lttle Infinite](https://www.littleinfinite.com/5-books-about-writing-poetry/)
+- [Poetry Foundation](https://www.poetryfoundation.org)
 - Scansion methods
   * [Arguments](https://www.poemtree.com/articles/Scansion.htm).
   * [Latin Meter The Ultimate Guide](https://booksnbackpacks.com/latin-meter-and-scansion/)
