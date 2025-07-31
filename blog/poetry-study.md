@@ -4,6 +4,7 @@
 
   * [Poetry Notes](#notes)
     - [Basic Concepts](#concepts)
+    - [Poetic Meter vs Phonetic Stress & Intonation](#phonetics) by [Copilot](https://copilot.microsoft.com/)
     - [List of Sample Words](#samplewords)
     - [Complete List of Metric Feet](#metricfeet)
     - [Demonstration of Meters](#metricmeters)
@@ -59,11 +60,11 @@
 * poetic **foot**
   > in English, poetic feet are limited to six: iamb; trochee; spondee; dactyl; anapest; and pyrrhic. (The last is sometimes disputed.)
 
-  - **i·amb** /ˈīˌam(b)/: a metrical foot consisting of a short (or unaccented, unstressed) syllable followed by a long (or accented, stressed) syllable. `- /`【抑扬格,长短格】
+  - **i·amb** /ˈīˌam(b)/: a metrical foot consisting of a short (or unaccented, unstressed) syllable followed by a long (or accented, stressed) syllable. `- /`【抑扬格,短长格,轻重格,弱强格】
     ex: _impossible_
-  - **trochee** /ˈtrōˌkē/: a backwards **iamb**, a falling rhythm, a metrical foot consisting of one long (or accented, stressed) syllable followed by one short (or unaccented, unstressed) syllable. `/ -`【扬抑格,短长格】
+  - **trochee** /ˈtrōˌkē/: a backwards **iamb**, a falling rhythm, a metrical foot consisting of one long (or accented, stressed) syllable followed by one short (or unaccented, unstressed) syllable. `/ -`【扬抑格,长短格,重轻格,强弱格】
     ex: _dreadful_, _helpless_
-  - **spondee** /ˈspänˌdē/: is of equal stressed units, a metrical foot consisting of two long (or accented, stressed) syllables. `/ /`【长长格】
+  - **spondee** /ˈspänˌdē/: is of equal stressed units, a metrical foot consisting of two long (or accented, stressed) syllables. `/ /`【扬扬格,长长格】
     ex: _Drop dead!_, _Bite this!_, _No kiss!_
   - **pyrrhic** /ˈpirik/: a metrical foot of two short (or unaccented, unstressed) syllables. `- -`【短短格】
   - **anapest** /ˈanəˌpest/: two short or unstressed syllables followed by one long or stressed syllable. `- - /`【短短长】
@@ -120,6 +121,75 @@
   - **half-rime**: feminine rimes in which only half of the word rimes -- the accented half, as in "lightly and frightful", or the unaccented half, as in "yellow and willow".
 
 [Back](#concepts) | [Home](#home)
+
+<a name="phonetics"></a>
+### Poetic Meter vs Phonetic Stress & Intonation 📚
+
+#### Stress vs Intonation 🧠
+
+**Stress** (Phonetics):
+* Relative **prominence of a syllable**.
+* Often marked by:
+  - ↑ Loudness
+  - ↑ Pitch
+  - ↑ Duration
+  - ↑ Vowel clarity
+
+**Intonation** (Prosody):
+* Refers to **pitch contour** over a phrase.
+* Governs **rising or falling pitch** across entire words or sentences.
+
+> **intonation** /ˌin(t)əˈnāSH(ə)n/: noun.〖腔调,发声法〗
+> 1. the rise and fall of the voice in speaking;
+> 2. accuracy of pitch in playing or singing, or on a stringed instrument such as a guitar.
+> 3. the opening phrase of a plainsong melody.
+
+> **prominence** /ˈprämən(ə)ns/: noun.〖突出,显著性〗
+> 1. the state of being important or famous.
+> 2. the fact or condition of standing out from something by physically projecting or being particularly noticeable.
+
+> Stress works at the syllable level; intonation flows across phrases. They can overlap—but they're not the same force. 🔎
+
+#### Case Study: “_behold_” 🗣
+
+**Natural Speech**:
+* IPA: `/bɪˈhoʊld/`
+* First syllable `/bɪ/` = reduced vowel
+* Second syllable `/hoʊld/` = louder, longer, clearer
+* Stress on second syllable: "_hold_"
+
+**Pitch Behavior**:
+* In conversation, stress often coincides with a falling pitch, especially in declaratives.
+* This makes <span style="color:darkred">the stressed syllable sound “**heavier**”, not “**higher**”</span>, despite its phonetic prominence.
+
+In Poetic Reading:
+* Poets often amplify metrical clarity.
+* Iambic rhythm encourages a rising tone from unstressed to stressed:
+  - Here, “_hold_” may be read with a gentle lift in pitch to reflect metrical rise.
+
+#### Additional Examples 🔍
+
+| Word |IPA|Metrical Foot|Natural Intonation|Poetic Reading|
+|:-------|:----------|:---|:-----------|:-----------|
+| begin  |`/bɪˈɡɪn/` |iamb|↓ on “gin”  |↑ to “gin”  |
+| delight|`/dɪˈlaɪt/`|iamb|↓ on “light”|↑ to “light”|
+| resist |`/rɪˈzɪst/`|iamb|↓ on “zist” |↑ to “zist” |
+
+> In poetry, rhythmic clarity often trumps natural cadence—hence the rise.
+
+#### Why the Contrast? 🧩
+
+* English is **stress-timed**, not syllable-timed.
+* Phrase-level intonation may **drop pitch** even on stressed syllables.
+* Poetic meter prioritizes **structural rhythm** over natural prosody.
+* This yields expressive divergence: speech **falls**, verse **rises**.
+
+#### 中文学习笔记
+
+* 字典中单词<code style="font-weight:bold;margin: 0">“iamb”</code>的翻译是〖抑扬格、短长格〗，符合英文韵律学和诗歌朗读的习惯；而在语音学上，重音降调的发声，似乎和朗读的扬声是相对的。
+* 所谓〖抑扬格、短长格〗，和汉语的〖平仄〗是相对应的吗？同理 <code style="font-weight:bold;margin-left:0.1em">“trochee”</code>〖扬抑格、长短格〗是〖仄平〗声吗？
+
+[Back](#phonetics) | [Home](#home)
 
 <a name="samplewords"></a>
 ### Sample Words of Metric Feet
@@ -613,6 +683,7 @@
 | en·cy·clo·pe·di·a | `- / - / - -` | ? |
 | enormous | | ? |
 | hendeca·syllabic | `/ - - / - -` | dactyl |
+| impossible | `- / - -` | amphibrach ? |
 | poetical | `/ - -` | dactyl |
 | potato | | ? |
 | raccoon | `- /` | iamb |
