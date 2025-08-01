@@ -112,6 +112,8 @@
 
 - **rhythm** /ˈrithəm/: a beat/flow/pattern/pulse of associated with words or music, basically accented (stressed) and accented (unstressed) syllables in a line of verse.
 
+- **rhythmically** /ˈriT͟Hmək(ə)lē/: adverb. in a way that relates to rhythm; in a rhythmic manner.
+
 - **rhyme** (**rime**) /rīm/: the repetition of the accented vowel sound and all succeeding sounds.
   - **masculine**: the rime sounds involve only one syllable, as in "decks and sex", "support and resort".
   - **feminine**: the rime sound involve two or more syllables, as in "turtle and fertile", "spitefully and delightfully".
