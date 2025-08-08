@@ -16,36 +16,42 @@
 
 　　在格律被固定之前、和旧规被湮没的现代，许多诗歌是自由为体的。除了那些硬掰句子、连押韵都不在意的，还是有思想、内容、甚或名气赢过形式的。打油诗也有它的诙谐，民谚、儿歌、顺口溜，不也是朗朗上口？汉家自有制度，本以霸王道杂之。如今还未炼成英汉混合双打，且以一首中文通韵七言作结：　
 
-　　才学术业皆不成，文字功夫又入坑。
-　　读懂节奏轻重缓，方知雅趣两三层。
-　　长扬短抑分格式，音步多用语调升。
-　　华韵仄平尊杜甫，英诗格律看莎翁。　
+　　才学术业皆不成，文字功夫又入坑。<br/>
+　　读懂节奏轻重缓，方知雅趣两三层。<br/>
+　　长扬短抑分格式，音步多用语调升。<br/>
+　　华韵仄平尊杜甫，英诗格律看莎翁。<br/>　
 
 2025.07.30. 於耐若斋
 　
+
 附读书笔记：https://dockerian.github.io/poetry/blog/poetry-study.html
 帖下九宫格有几首旧作，按抑扬格标准修改翻新。
 
 
---- 
+---
 道可道，非常道；名可名，非常名。
-The way of the way, no way divine, 
-A name of a name, no word define. 
 
-不到长城非好汉！ 
-To conquer the Great Wall to stand, 
+The way of the way, no way divine,
+A name of a name, no word define.
+
+不到长城非好汉！
+
+To conquer the Great Wall to stand,
 Or not to be a great man
 
-你会爱一个人到尘埃里，却没有人爱尘埃中的你 
+你会爱一个人到尘埃里，却没有人爱尘埃中的你
+
 As lowering yourself, for love, as down to dust,
 No one would love what you become at last.
 
-我吹过你吹过的晚风，那我们算不算相拥 
-The wind was blowing me as blowing on you, 
-Does it not count we‘re held together too? 
+我吹过你吹过的晚风，那我们算不算相拥
 
-天青色等烟雨，而我在等你 
-The sky has darkened into rain, 
+The wind was blowing me as blowing on you,
+Does it not count we‘re held together too?
+
+天青色等烟雨，而我在等你
+
+The sky has darkened into rain,
 And all my waiting was in vain.
 
 ---

@@ -11,9 +11,14 @@
     - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
     - 周恩来：[杂文](zhou.html)
 
-  * 英语诗歌
+  * 诗词博客
 
+    - [Boathill](https://boathill.blogspot.com/)｜
+      [WordPress](https://boathill.wordpress.com/category/poems/)
+    - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem)｜
+      [Wordpress](https://divertidalz.wordpress.com/category/poem/)
     - [Poetry Study](poetry-study.md)
+    - [Prosody Summary](prosody-summary.md)
     - [Song Lyrics](song-lyrics.md)
 
   * 笑料摘抄
