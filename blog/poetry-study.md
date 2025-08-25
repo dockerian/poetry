@@ -1081,8 +1081,10 @@ In Poetic Reading:
 | General | Poetic wording |
 |:---------------|:---------------|
 | don’t regret | regret nothing |
+| exact that | nothing less (than that) |
+| if sb accepted it | should I accept it (without question mark) |
 | possible solution | find an alternative approach to achieving a satisfactory outcome for all concerned, ideally avoiding, if at all possible, |
-| ver important | a matter of no small importance |
+| very important to | a matter of no small importance to |
 | useful | to be of use   |
 
 
