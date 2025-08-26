@@ -1,4 +1,4 @@
-华韵仄平尊杜甫，英诗格律看莎翁
+<a name="title"></a>华韵仄平尊杜甫，英诗格律看莎翁
 ---
  　　最近几个月，专门读了一两本关於英文诗的格律和音韵知识的书，又上网查资料、看视频，做了几十页的笔记，大致摸清了一些朗读和创作英文诗歌的门道。目前仍有许多疑惑和费解之处，特别是某些讲解、包括不同引擎人工智能在某些细节上都有完全不同的答案，但至少有了入手的思路。　
 
@@ -24,58 +24,50 @@
 2025.07.30. 於耐若斋
 　
 
-附读书笔记：https://dockerian.github.io/poetry/blog/poetry-study.html
-帖下九宫格有几首旧作，按抑扬格标准修改翻新。
+附：[读书笔记](poetry-study.md)｜[纱糸轩歌词集](../lyrics.html)
+
+另：帖下几首旧作，按抑扬格标准修改翻新。
 
 
 ---
 道可道，非常道；名可名，非常名。
 
-The way of the way, no way divine,
+The way of the way, no way divine;<br/>
 A name of a name, no word define.
 
 不到长城非好汉！
 
-To conquer the Great Wall to stand,
+To conquer the Great Wall to stand,<br/>
 Or not to be a great man
 
 你会爱一个人到尘埃里，却没有人爱尘埃中的你
 
-As lowering yourself, for love, as down to dust,
+As lowering yourself, for love, as down to dust,<br/>
 No one would love what you become at last.
 
 我吹过你吹过的晚风，那我们算不算相拥
 
-The wind was blowing me as blowing on you,
+The wind was blowing me as blowing on you,<br/>
 Does it not count we‘re held together too?
 
-天青色等烟雨，而我在等你
+雲青青兮欲雨，水澹澹兮生烟
 
-The sky has darkened into rain,
-And all my waiting was in vain.
+As bluer and bluer the clouds about to rain,<br/>
+It's vain and vain the water smokes remain.
 
 ---
 七言•英诗研习心得【新韵】
 
-才学术业无從就，咬字功夫又入坑。
-读懂节拍轻重缓，方知雅趣两三层。
-长扬短抑分格式，音步強音语调升。
-华韵仄平尊杜甫，英诗格律看莎翁。
-
-一得启示幡然悟，百咏佳篇意境成。
-文似山峰非喜缓，食如营养要均衡。
-骄奢最怕他没有，骨气常失我不能。
-利锁名缰终破梦，闲情逸趣过余生。
+才学术业无從就，咬字功夫又入坑。<br/>
+读懂节拍轻重缓，方知雅趣两三层。<br/>
+长扬短抑分格式，音步強音语调升。<br/>
+华韵仄平尊杜甫，英诗格律看莎翁。<br/>
+<br/>
+一得启示幡然悟，百咏佳篇意境成。<br/>
+文似山峰非喜缓，食如营养要均衡。<br/>
+骄奢最怕他没有，骨气常失我不能。<br/>
+利锁名缰终破梦，闲情逸趣过余生。<br/>
+　
 
 ---
-七律•双韵联句
-
-负重一生如纸薄，存身时代共飘摇。
-恐应聚散离情少，惧未风霜去路迢。
-妄动凡尘空渺渺，难逢知己话寥寥。
-杂陈往事熬成药，岁守新年除破妖。
-深谷崖前迎晚照，宽江雨後见平潮。
-领隅风景寻常好，锦簇繁花最易凋。
-笑问世间谁不老，安知梦里我唯翘。
-穷经皓首求於道，悟性灵台在九霄。
-　
+&raquo; Back to [Blog](./README.md) | [Title](#title)

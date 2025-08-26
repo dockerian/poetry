@@ -1082,6 +1082,7 @@ In Poetic Reading:
 |:---------------|:---------------|
 | don’t regret | regret nothing |
 | exact that | nothing less (than that) |
+| from dawn to dusk | all day long; sun up to sun down |
 | if sb accepted it | should I accept it (without question mark) |
 | possible solution | find an alternative approach to achieving a satisfactory outcome for all concerned, ideally avoiding, if at all possible, |
 | very important to | a matter of no small importance to |
@@ -1764,4 +1765,4 @@ In Poetic Reading:
 - [YouTube](https://www.youtube.com/results?search_query=poetic+meter)
 
 
-[Back](#see) | [Home](#home)
+[Back](#see) | [Home](#home) | [Blog](./README.md)
