@@ -16,6 +16,19 @@
   body {
     font-size: 1.25em;
   }
+
+  @keyframes op-start {
+    from {
+      background-color: skyblue;
+      border-radius: 1.5em;
+      padding: 0em 0.5em 0.35em 0.6em;
+      opacity: 0.85;
+      right: 25%;
+    }
+    to {
+      background-color: transparent;
+      opacity: 0.35; }
+  }
   div#acat a {
     color: darkred;
     background-color: transparent;
@@ -27,6 +40,9 @@
     background-color: gold;
   }
   div#atoc {
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-name: op-start;
     opacity: 0.25;
     background-color: transparent;
     bottom: 0; right: 0;
@@ -1077,6 +1093,7 @@
 
   <p class="right"><a href="#brainstorm" class="noprint" title="头脑风暴 - Brainstorm">⇑</a></p>
 </div>
+
 
 <div><h3 id="signatures">
 <pre id="" class="sig">
