@@ -17,15 +17,24 @@
     let docFunc = document.getElementById;
     let getElem = docFunc.bind(document);
     let elemVal = getElem('counter');
+    let elemAll = getElem('countAll');
     let elemSub = getElem('subtitle');
     let counter = parseInt(elemVal.textContent, 10);
     let subtext = elemSub.textContent;
     let sum = isNaN(counter) ? 0 : counter;
     let chk = disp == 'inline-block';
-    if (chk && s.endsWith('-li')) {
+    console.log(`check = ${chk}, s = ${s}, sum + c = ${sum} + ${c} = ${sum+c}`);
+    if (chk && s == 'li') {
+      elemAll.textContent = `${c}`;
+      console.log(`rendering all counts as ${c}`);
+      return c;
+    } else if (chk && s.endsWith('-li')) {
+      console.log(`rendering counter as ${sum+c}`);
       elemVal.textContent = `${sum+c}`;
+      elemAll.textContent = '';
       return sum + c;
     } else if (disp == 'none' || s == 'blog') {
+      console.log(`clearing counter ...`);
       elemVal.textContent = '';
     }
     return 0;
@@ -686,7 +695,7 @@
     font-weight: normal;
     font-size: 0.5em;
   }
-  h1.h1 span#counter {
+  h1.h1 span#counter, h1.h1 span#countAll {
     vertical-align: top;
     font-size: 0.3em;
   }
@@ -991,7 +1000,7 @@
 <!--Heading Title Bar-->
 <h1 id="atop" class="h1" title="Lyrics and Poems"
     onclick="return showOnCounts()">纱糸轩诗歌集
-  <span id="subtitle"></span><span id="counter"></span>
+  <span id="subtitle"></span><span id="counter"></span><span id="countAll"></span>
 </h1>
 
 <!--toc and tags heading-->
@@ -1075,7 +1084,7 @@
   <li id="d20090911x" class="mulu" name="zhou-li"><a href="#p20090911x" title="Cohort Class at Siver Falls"><b></b><em title="周琳作品">周</em> 【博士班第一天】 <i>2009.09.11.</i></a></li>
   <li id="d20091005x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20091005x"><u title="English poem">E</u> <b>Full Moon</b>〖<q>中秋二首</q>〗 <i>2009.10.05.</i></a></li>
   <li id="d20091127x" class="mulu" name="zhou-li"><a href="#p20091127x" title="Black Friday Shopping"><em title="周琳作品">周</em> <b></b>【感恩节「血拼」夜】 <i>2009.11.27.</i></a></li>
-  <li id="d20091225x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20091225x"><u title="English poem">E</u> <b>Morning Hike</b>〖圣诞早晨〗 <i>2009.12.25.</i></a></li>
+  <li id="d20091225x" class="ying engp-li" name="zhyx-li"><a href="#p20091225x"><u title="English poem">E</u> <b>Morning Hike</b>〖圣诞早晨〗 <i>2009.12.25.</i></a></li>
   <li id="d20091231x" class="mulu show-li" name="zhou-li"><a href="#p20091231x" title="Mala Snacks (Recipe)"><em title="周琳作品">周</em> <u>Recipe</u><u>白话诗</u>【麻辣花生】 <i>2009.12.31.</i></a></li>
   <li id="d20100724x" class="mulu" name="zhou-li"><a href="#p20100724x" title="Cook"><em title="周琳作品">周</em> <u>白话诗</u>【小资生活】 <i>2010.07.24.</i></a></li>
   <li id="d20100828x" class="mulu" name="zhou-li"><a href="#p20100828x"><em title="周琳作品">周</em> <b>North By Northwest</b>【西北偏北游记】 <i>2010.08.28.</i></a></li>
@@ -1577,7 +1586,7 @@
 
 
 <!--英文诗歌-->
-<div class="blog engp view" name="zhyx">
+<div class="blog engp" name="zhyx">
 <div class="poem"><h3 class="t3 poem" id="p20091225x">Morning Hike <em>(2009.12.25)</em></h3>
   Hiking on a Christmas day
   By the lake from home, not far away
