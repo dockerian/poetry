@@ -1084,7 +1084,10 @@ In Poetic Reading:
 | exact that | nothing less (than that) |
 | from dawn to dusk | all day long; sun up to sun down |
 | if sb accepted it | should I accept it (without question mark) |
-| possible solution | find an alternative approach to achieving a satisfactory outcome for all concerned, ideally avoiding, if at all possible, |
+| me/you too | that makes two of us |
+| off limits | out of bounds |
+| possible solution | find an alternative approach to achieving a satisfactory outcome for all concerned, ideally avoiding, if at all possible |
+| unable being saved | beyond saving |
 | very important to | a matter of no small importance to |
 | useful | to be of use   |
 
