@@ -898,6 +898,19 @@ In Poetic Reading:
 <hr/>
 ## Poem Examples
 
+* A Blessing on the Poets (*Annie Finch*)
+
+  ```
+  Patient earth-digger, impatient fire-maker,
+  Hungry word-taker and roving sound-lover,
+  Sharer and saver, muser, and acher,
+  You who are open to hide or uncover,
+  Time-keeper and -hater, wake-sleeper, sleep-waker:
+  May langauge's language, the silence that lies
+    under each word, move you over and over,
+  Turning you, wondering, back to surprise
+  ```
+
 * The Charge of the Light Brigade (*Alfred, Lord Tennyson*)
 
   ```
@@ -1002,6 +1015,18 @@ In Poetic Reading:
   As, one by one, the people go into
   That very old house I know
   ```
+
+* The Rubáiyát of *Omar Khayyám* (1048-1131), English translation by *Edward FitzGerald*:
+
+  ```
+  Into this Universe, and Why not knowing
+  Nor Whence, like Water willy-nilly flowing;
+  And out of it, as Wind along the Waste,
+  I know not Whither, willy-nilly blowing.
+
+  来如流水兮逝如风；不知何处来兮何所终！〖金庸·译〗
+  ```
+  ——摘自：波斯诗人峨默《鲁拜集》英译：费慈吉拉德
 
 * Sea-Fever (*John Masefield*, 1878—1967)
 
