@@ -5,6 +5,8 @@
   * [Poetry Notes](#notes)
     - [Basic Concepts](#concepts)
     - [Poetic Meter vs Phonetic Stress & Intonation](#phonetics) by [Copilot](https://copilot.microsoft.com/)
+    - [English vs Chinese Rhythmic Systems](#systems)
+    - [English vs Chinese Lyrics Cover](cover-lyrics)
     - [List of Sample Words](#samplewords)
     - [Complete List of Metric Feet](#metricfeet)
     - [Demonstration of Meters](#metricmeters)
@@ -57,6 +59,8 @@
 
 - **pitch**: sound going up and down; the degree of highness or lowness of a tone.
 
+* poetic **cadence** /ˈkādns/: the natural rhythm and flow of spoken language, including the rise and fall of pitch; less formal than meter and relates to how a line or phrase sounds, much like musical phrasing or natural speech patterns.【韵律】
+
 * poetic **foot**
   > in English, poetic feet are limited to six: iamb; trochee; spondee; dactyl; anapest; and pyrrhic. (The last is sometimes disputed.)
 
@@ -94,7 +98,9 @@
   - **hep·tameter** /hepˈtamədər/: a line of seven metrical feet.【七步格,七音步】
   - **oc·tameter** /äkˈtamədər/: a line of 8 metrical feet.【八步格,八音步】
 
-- **rising meter** (e.g. _iambic_ or _dactylic_ meter) vs **falling meter** (e.g. _trochaic_ or _dactylic_ meter)
+* poetic **metre** categories:
+  - **falling meter** (e.g. _trochaic_ or _dactylic_ meter)
+  - **rising meter** (e.g. _iambic_ or _dactylic_ meter)
 
 - **limerick** /ˈlɪmərɪk/: a form of verse written in five-line, predominantly **anapestic** and **amphibrach** **trimeter** with a strict rhyme scheme of `- / - - / - - /`, in which the 1st, 2nd and 5th line rhyme, while the 3rd and 4th lines are shorter (e.g. `- / - - /`) and share a different rhyme. see [poets.org](https://poets.org/glossary/limerick) or [wiki](https://en.wikipedia.org/wiki/Limerick_(poetry)).
 
@@ -192,6 +198,199 @@ In Poetic Reading:
 * 所谓〖抑扬格、短长格〗，和汉语的〖平仄〗是相对应的吗？同理 <code style="font-weight:bold;margin-left:0.1em">“trochee”</code>〖扬抑格、长短格〗是〖仄平〗声吗？
 
 [Back](#phonetics) | [Home](#home)
+
+<a name="systems"></a>
+### English vs Chinese Rhythmic Systems
+
+  > Here is a rich and fascinating comparison that bridges two poetic traditions with very different sonic architectures, using both linguistic and aesthetic lenses.
+
+| Feature |English Meter|Chinese 平仄·Tone Pattern|
+|:--------|:------------|:------|
+| Basis of Rhythm | Stress (accented vs unaccented syllables) | Tone (level vs oblique tones) |
+| Unit of Measure | Metrical foot (e.g. iamb, trochee) | Tone category per character |
+| Structural Role | Builds rhythm through stress patterns | Governs tonal alternation in lines |
+| Phonetic Mechanism | Duration, loudness, pitch contour | Pitch height and contour (Middle Chinese) |
+| Visual Encoding | Not marked in writing | Often encoded in regulated verse formats |
+| Flexibility | Allows substitution, inversion, variation | Strict in regulated verse, flexible in lyric forms |
+
+#### English Meter: Stress-Based Rhythm
+
+  English poetry relies on **accentual-syllabic meter**, where rhythm is shaped by patterns of **stressed** (`´`) and **unstressed** (`˘`) syllables. Common feet include:
+
+  * **Iamb** (`˘ ´`): “_behold_”
+  * **Trochee** (`´ ˘`): “_gather_”
+  * **Anapest** (`˘ ˘ ´`): “_interrupt_”
+  * **Dactyl** (`´ ˘ ˘`): “_happiness_”
+
+  These feet are arranged into lines (e.g., iambic pentameter = 5 iambs per line), creating a **musical cadence** that can be regular or intentionally disrupted.
+
+#### Chinese〖平仄〗·Tonal Alternation
+
+  In Classical Chinese poetry, especially **regulated verse**〖律詩〗and **ci**〖詞〗, tone patterns are governed by〖平仄〗:
+
+  * píng〖平〗: Level tones (from Middle Chinese: typically modern Mandarin tone 1 and 2)
+  * zè〖仄〗: Oblique tones (rising, departing, entering; modern Mandarin tone 3 and 4)
+
+  Each character in a line is assigned a tone category, and specific patterns (e.g.,〖仄仄平平仄〗) are required for certain poetic forms. These patterns often alternate between lines, creating a **tonal symmetry** akin to rhyme and rhythm.
+
+#### Key Differences and Analogies
+
+  * Stress vs Tone
+    - English meter is **dynamic**—stress can shift depending on context or poetic license.
+    - Chinese〖平仄〗is **static**—tone is intrinsic to the character and rarely changes.
+
+  * Foot vs Character
+    - English uses **feet** (multi-syllable units) to build rhythm.
+    - Chinese uses **characters** (monosyllabic) with fixed tone categories.
+
+  * Rhythmic Function
+    - English meter creates **temporal rhythm** through stress intervals.
+    - Chinese〖平仄〗creates **tonal rhythm** through pitch contour and alternation.
+
+  * Aesthetic Parallel
+    Both systems aim to:
+    - Balance **variation** and **symmetry**
+    - Create **musicality** and **emotional pacing**
+    - Reinforce formal structure (e.g., sonnet vs regulated verse)
+
+#### Philosophical Resonance
+
+  Both are deeply tied to their linguistic roots: English’s stress-timed rhythm vs Chinese’s tonal syllables. Yet both traditions converge in their pursuit of **musical structure**, **emotional cadence**, and **formal elegance**.
+
+  - English meter emphasizes temporal flow—the movement of breath and beat.
+  - Chinese〖平仄〗emphasizes tonal architecture—the balance of sound and meaning.
+
+#### Rhyme The Core Tension: Tone vs Stress
+
+  > Notice the apparent contradiction: in Classical Chinese poetry,〖平〗tones (level tones) are preferred for end rhymes, and they often carry auditory prominence in performance. Yet in English meter, a trochee (`´ ˘`) begins with stress and ends weakly, which seems to reverse that dynamic.
+
+| Feature | Chinese〖平〗tone | English Trochee |
+|:--------|:-----------------|:----------------|
+| Phonetic Role | Level tone〖平〗| Stressed → Unstressed |
+| Position in Line | End of line (rhyme) | Start of foot |
+| Auditory Effect | Often prominent in singing or recitation | Falls off softly |
+| Structural Function | Anchors rhyme and cadence | Drives rhythm forward |
+
+  So while〖平〗tones are tonally “level,” they often **sound strong** at the end of a line—especially when sung or recited with emphasis. This gives them a **functional stress**, even though they’re not stressed in the English sense.
+
+#### Why〖平〗Rhymes Feel “Stressed”
+
+  * **Final Position = Emphasis**
+    In both Chinese and English, the end of a poetic line is a place of **natural emphasis**—whether through rhyme, cadence, or musical resolution.
+  * **Musical Setting**
+    In sung Chinese poetry,〖平〗-tone rhymes often fall on **long**, **sustained notes**, giving them **acoustic prominence** even if the tone itself is level.
+  * **Semantic Weight**
+    Rhyming syllables often carry **key emotional** or **thematic content**, which invites vocal emphasis regardless of tone.
+
+#### Trochee vs〖平〗Tone Rhyme
+
+  A trochee (`´ ˘`) begins with stress and ends weakly. So if you tried to map a Chinese line ending in a 〖平〗-tone rhyme to a trochaic foot, you'd get:
+
+  > “**Heaven**” → /ˈhɛv.ən/ → trochee, but in Chinese:
+  >〖天〗(tiān, tone 1) →〖平〗tone, rhymed and emphasized
+
+  This mismatch shows that trochaic meter doesn’t naturally align with the〖平〗-**tone rhyme emphasis**. Instead, the Chinese rhyme position behaves more like the **stressed syllable of an iamb** (`˘ ´`), even though the tone is level.
+
+#### Best Analogy: Iambic Cadence
+
+  In English verse, **iambic meter** (`˘ ´`) places stress at the **end of the foot**, which matches the **final emphasis** of Chinese〖平〗-tone rhymes more closely.
+
+  - Chinese: 春眠不觉晓〖平平仄仄仄〗→ ends with〖仄〗, but many rhymed lines end with〖平〗
+  - English: “The woods are lovely, dark and deep” (`˘ ´ ˘ ´ ˘ ´ ˘ ´ ˘ ´`) → stress lands on “deep”
+
+Another example from Chinese verse “床前明月光，疑是地上霜”；the rhymes are **tonally level**, but in performance—especially sung—they often receive **emphatic delivery**, giving them a **functional stress** or **acoustic weight**. Translation in iambic tetrameter:
+
+  ```
+  The moonlight shines, before my bed
+  It seems like frost upon the ground
+  ```
+
+So while〖平〗tones are **tonally level**, their position and function in Chinese verse **mimic the stressed syllables** of English iambic meter—not trochees.
+
+#### Translation Implication
+
+When adapting Chinese rhymed lines into English:
+  - Treat〖平〗-tone rhymes as **metrically strong**.
+  - Place them on **stressed syllables**, ideally at the **end of iambic feet**. Keep rhyme on strong syllables.
+  - Avoid trochaic endings unless the tone or emotion calls for a softer close.
+  - Maintain the quiet, reflective tone—don’t over-embellish.
+  - Use **iambic meter** to preserve the final stress.
+
+
+[Back](#systems) | [Home](#home)
+
+<a name="cover-lyrics"></a>
+### English vs Chinese Lyrics Cover
+
+  > Tranlation between Chinese and English lyrics is a nuanced and musically sensitive challenge, Jason—especially given your poetic expertise. Translating Chinese lyrics into English (or vice versa) for singing involves more than linguistic fidelity; it’s a choreography of **stress**, **tone**, **syllable count**, **melodic contour**, and **emotional resonance**.
+
+#### Differences: Stress vs Tone
+
+| Feature | Chinese Lyrics | English Lyrics |
+|:--------|:---------------|:---------------|
+| Phonetic Basis | Tone (pitch contour per syllable) | Stress (emphasis per syllable) |
+| Syllable Count | One syllable per character | Variable syllable length per word |
+| Melodic Fit | Tone may clash with melody | Stress must align with musical beat |
+| Flexibility | Tone often overridden by melody | Stress must be preserved for clarity |
+
+  * In Mandarin, tones are lexically essential, but in singing, they’re often **flattened** or **overridden** by melody. This can obscure meaning unless context or rhyme compensates.
+  * In English, **misplacing** stress can make lyrics sound unnatural or even unintelligible.
+
+#### Strategies for Matching Stress and Tone
+
+  * Prioritize Musical Stress Over Lexical Tone
+    - In Chinese-to-English translation, match English **stress** to musical **downbeats**.
+    - If a Chinese character is tonally heavy (e.g., fourth tone), consider translating it to a **stressed syllable** in English.
+    - Conversely, lighter tones (e.g., second tone) may map better to **unstressed syllables**.
+
+  * Use Prosodic Equivalence
+    - Instead of literal tone-to-stress mapping, aim for **emotional contour**: rising tones → rising melodic phrases; falling tones → cadential stress.
+    - This preserves **expressive shape**, even if phonetic features differ.
+
+  * Adjust Syllable Count and Word Order
+    - Chinese lyrics are often **compact** (e.g., 7 characters per line), while English may need **expansion**.
+    - Use **filler syllables** or **repetition** to match musical phrasing without distorting meaning3.
+
+  * Respect Melodic Contour
+    - If the melody rises, avoid placing a heavily stressed English syllable there unless it matches the emotional arc.
+    - For Chinese lyrics, avoid placing a fourth-tone character on a high sustained note—it may sound unnatural or harsh.
+
+  * Use Rhyme and Rhythm to Anchor Meaning
+    - When tone or stress alignment is imperfect, **rhyme** and **rhythmic placement** can help listeners infer meaning.
+    - This is especially useful in **choruses**, where repetition reinforces comprehension.
+
+#### Example: Translating a Line
+
+  Let’s read a Chinese verse:
+
+  ```
+  红豆生南国，春来发几枝
+  ```
+
+  The verse (“Red beans grow in the south; in spring, how many sprout?”) is:
+    - Tonally balanced:〖平仄〗alternation
+    - Compact: 7 characters per line
+    - Emotionally rich: longing and seasonal metaphor
+
+  ```
+  In southern lands, the red beans grow,
+  How many bloom when spring winds blow?
+  ```
+
+  The English singing translation:
+    - Preserves rhyme (grow/blow)
+    - Matches stress to musical beats (iambic rhythm)
+    - Expands syllables to fit melody
+    - Echoes emotional contour without literal tone mapping
+
+#### Bonus Tips for Singability
+
+  - Sing the translation aloud to test stress alignment.
+  - Use scansion tools to mark stress and meter.
+  - Consider melodic phrasing: where does the breath fall? Where does the emotion peak?
+  - If translating for performance, collaborate with vocalists to ensure natural delivery.
+
+[Back](#cover-lyrics) | [Home](#home)
 
 <a name="samplewords"></a>
 ### Sample Words of Metric Feet
@@ -943,6 +1142,15 @@ In Poetic Reading:
   In secret kept, in silence sealed;—
   The thoughts, the hopes, the dreams, the pleasures,
   Whose charms were broken if revealed.
+  ```
+
+* Fist Fig (*Edna St. Vincent Millay*, 1852-1950)
+
+  ```
+  My candle burns at both ends;
+      It will not last the night;
+  But ah, my foes, and oh, my friends—
+      It gives a lovely light!
   ```
 
 * The Immortal Part (*A. E. Housman*, 1859-1936)
