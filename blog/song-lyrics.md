@@ -18,6 +18,7 @@
     - [易家揚](#yjy)《遇见》
   * [英文歌词｜English Songs](#english)
     - [Hotel California](#hotel-california) (_Eagles_)
+    - [Nothing’s Gonna Stop Us Now](#n) (_Starship_)
     - [Scarborough Fair](#scarborough-fair) (_Simon_ & _Garfunkel_)
     - [Suicide Is Painless](#suicide) (_Mike Altman_)
     - [Sound of Silence](#sound) (_Paul Simon_)
@@ -567,6 +568,15 @@
   Could make me love you less
   ```
 
+#### In the Sun She Lies (_Lace Manhattan_, by _Jack Antonoff_ & _Ethan Cohen_)
+
+  ```
+  My town, my city, the sun so high
+  It's where I was born, it's where I will die
+  She's half in shadow morning time
+  All afternoon, in the sun she lies
+  ```
+
 #### Killing Me Softly (_Norman Gimbel_ & _Charles Fox_)
 
   ```
@@ -618,6 +628,38 @@
   Happiness will follow you, everywhere you go.
   ```
 
+<a name="n"></a>
+#### Nothing’s Gonna Stop Us Now (_Starship_)
+
+  ```
+  Lookin' in your eyes, I see a paradise
+  This world that I found is too good to be true
+  Standin' here beside you, want so much to give you
+  This love in my heart that I'm feelin' for you
+
+  Let 'em say we're crazy, I don't care 'bout that
+  Put your hand in my hand, baby, don't ever look back
+  Let the world around us just fall apart
+  Baby, we can make it if we're heart to heart
+
+  And we can build this dream together
+  Standing strong forever
+  Nothing's gonna stop us now
+  And if this world runs out of lovers
+  We'll still have each other
+  Nothing's gonna stop us
+
+  I'm so glad I found you, I'm not gonna lose you
+  Whatever it takes, I will stay here with you
+  Take it to the good times, see it through the bad times
+  Whatever it takes is what I'm gonna do
+
+  Let 'em say we're crazy, what do they know?
+  Put your arms around me, baby, don't ever let go
+  Let the world around us just fall apart
+  Baby, we can make it if we're heart to heart
+  ```
+
 <a name="o"></a>
 #### Old Money (_Lana Del Rey_)
 
@@ -638,6 +680,30 @@
   all the things we said we'd do.
   All the freckles on your face,
   tell me of your storied grace.
+  ```
+
+#### Only Time (_Enya_)
+
+  ```
+  Who can say where the road goes?
+  Where the day flows? Only time
+  And who can say if your love grows
+  As your heart chose? Only time
+
+  Who can say why your heart sighs
+  As your love flies? Only time
+  And who can say why your heart cries
+  When your love lies? Only time
+
+  Who can say when the roads meet?
+  That love might be in your heart?
+  And who can say when the day sleeps
+  If the night keeps all your heart?
+
+  Who can say if your love grows
+  As your heart chose? Only time
+  And who can say where the road goes?
+  Where the day flows? Only time
   ```
 
 <a name="s"></a>

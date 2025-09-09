@@ -5,19 +5,20 @@
 <br/><a id="toc" name="toc"></a>
 ## 笔记
 
-  * 读书笔记 [html](mynotes.html)｜[text](mynotes.txt)
+  * 读书笔记〖 [html](mynotes.html)｜[text](mynotes.txt) 〗
     - 吕蒙正：[寒窑赋](hanyaofu.md)
     - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
     - 周恩来：[杂文](zhou.html)
 
   * 诗词博客
-    - [Boathill](https://boathill.blogspot.com/)｜
+    - [学诗笔记·Poetry Study](poetry-study.md)
+    - [英律小结·Prosody Summary](prosody-summary.md)
+    - [歌词翻唱·Song Lyrics Translation](song-cover.md)
+    - [流行歌词·Song Lyrics](song-lyrics.md)
+    - [Boathill](https://boathill.blogspot.com/) ·
       [WordPress](https://boathill.wordpress.com/category/poems/)
-    - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem)｜
+    - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
-    - [学诗笔记｜Poetry Study](poetry-study.md)
-    - [英律小结｜Prosody Summary](prosody-summary.md)
-    - [流行歌词｜Song Lyrics](song-lyrics.md)
     - [纱糸轩集](../lyrics.html)
     - [舟山诗稿](../shiji.html)
 
