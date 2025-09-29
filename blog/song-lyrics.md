@@ -9,6 +9,7 @@
     - [段思思](#dss)《星梦》
     - [樊孝斌](#fan)《向天再借五百年》
     - [高晓松](#gao)《越过山丘》
+    - [林汝为](#lin)《重整河山待後生》
     - [琅琊榜](#lyb)《赤血长殷》
     - [毛不易](#mao)《东北民谣》《牧马城市》《消愁》
     - [宋雪苍](#scx)《大天蓬》
@@ -22,6 +23,7 @@
     - [Scarborough Fair](#scarborough-fair) (_Simon_ & _Garfunkel_)
     - [Suicide Is Painless](#suicide) (_Mike Altman_)
     - [Sound of Silence](#sound) (_Paul Simon_)
+    - [Woman in Love](#woman) (_The Bee Gees_)
 
 
 <br/><a name="chinese"></a>
@@ -166,6 +168,16 @@
   戴着一雙白手套，喝着我的喜酒
   他問我幸福與否，是否永別了憂愁
   為何婚禮上那麼多人，沒有一個當年的朋友
+  ```
+
+<a name="lin"></a>
+#### 林汝为《重整河山待後生》；演唱：骆玉笙
+
+  ```
+  千里刀光影，仇恨燃九城。
+  月圆之夜人不归，花香之地无和平。
+  一腔无声血，万缕慈母情。
+  为雪国耻身先去，重整河山待後生。
   ```
 
 <a name="lyb"></a>
@@ -524,6 +536,13 @@
   ```
 
 <a name="c"></a>
+#### Chasin' Whisky (_Julie Roberts_)
+
+  ```
+  Some drink water, some drink beer
+  Some don't need anything but I end up here
+  ```
+
 #### Cherry Wine (_Andrew Hozier-Byrne_)
 
   ```
@@ -854,6 +873,38 @@
   I've drowned and dreamt this moment
   So overdue, I owe them
   Swept away, I'm stolen
+  ```
+
+<a name="woman"></a>
+### Woman in Love (_Barry and Robin Gibb_ of _The Bee Gees_, performed by _Barbra Streisand_)
+
+  ```
+  Life is a moment in space
+  When the dream is gone, it's a lonelier place
+  I kissed the morning goodbye
+  But down inside, you know we never know why
+  The road is narrow and long
+  When eyes meet eyes and the feeling is strong
+  I turn away from the wall
+  I stumble and fall but I give you it all
+
+  I am a woman in love and I'd do anything
+  To get you into my world and hold you within
+  It's a right I defend over and over again
+  What do I do?
+
+  With you eternally mine
+  In love there is no measure of time
+  We planned it all at the start
+  That you and I live in each other's heart
+  We may be oceans away
+  You feel my love, I hear what you say
+  No truth is ever a lie
+  I stumble and fall but I give you it all
+
+  I am a woman in love and I'd do anything
+  To get you into my world and hold you within
+  It's a right I defend over and over again
   ```
 
 ---
