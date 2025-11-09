@@ -19,8 +19,9 @@
       [WordPress](https://boathill.wordpress.com/category/poems/)
     - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
+    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="./shiji.html" style="height:1em;padding:0em 0em 0.25em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="absmiddle" style="height:1em;vertical-align:middle;padding-bottom:0.15em" title="Markdown" alt="markdown"/></a>
     - [纱糸轩集](../lyrics.html)
-    - [舟山诗稿](../shiji.html)
+    - [纱糸轩集](../lyrics.html)
 
   * 笑料摘抄
     - [土味情话](mylines.html#qinghua)｜
