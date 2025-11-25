@@ -393,6 +393,12 @@ When adapting Chinese rhymed lines into English:
 [Back](#cover-lyrics) | [Home](#home)
 
 <a name="samplewords"></a>
+### Sample Iambic Words
+
+  * **nouns and adjectives**: aboard (a-BOARD), abstain (ab-STAIN), abused (a-BUSED), abyss, accent, account, accord, accrue, addict, address, adult (a-DULT), adverse, advice, afar, affair, again, aglow, alarm, alike, aloft, almond, along, anew, appease (ap-PEASE), archive, array, asleep, award, awhile, balance (ba-LANCE), cafe, canal, canoe (ca-NOE), cartoon, ceasar, Chanel, chateau, cigar, cocaine, command, control (con-TROL), delight (de-LIGHT), extreme (ex-TREME), Japan (Ja-PAN), machine (ma-CHINE), polite (po-LITE), regard (re-GARD), surprise (sur-PRISE), uptight, upturn, urban, upset, unwound, without
+
+  * **verbs and prepositions**: abide (a-BIDE), abort (a-BORT), absorb (ab-SORB), abound (a-BOUND), about (a-BOUT), above (a-BOVE), abuse, accept, acclaim, across (a-CROSS), accuse, achieve, adapt, adjust, admit, affect, affirm, afford, against (a-GAINST), agree, ascend, assign, attend (at-TEND), attain, avert, await, away (a-WAY), before (be-FORE), behold (be-HOLD), belong (be-LONG), beyond (be-YOND), commit, compare (com-PARE), conceal, consent, constrain, delay (de-LAY), describe (des-CRIBE), descend, destroy (des-TROY), divine (di-VINE), effect (ef-FECT), emerge (e-MERGE), enjoy (en-JOY), enough (e-NOUGH), escape (e-SCAPE), exist (ex-IST), explain (ex-PLAIN), indeed (in-DEED), instead (in-STEAD), involve (in-VOLVE), obtain (ob-TAIN), occur (oc-CUR), perhaps (per-HAPS), portray (por-TRAY), return (re-TURN), upon, withstand, whereas, whereby, within (wi-THIN)
+
 ### Sample Words of Metric Feet
 
 |Foot    |Rhythm | Examples |
