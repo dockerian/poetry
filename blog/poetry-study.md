@@ -1321,6 +1321,7 @@ When adapting Chinese rhymed lines into English:
 |:---------------|:---------------|
 | don’t regret | regret nothing |
 | exact that | nothing less (than that) |
+| extremely remarkable | nothing short of remarkable |
 | from dawn to dusk | all day long; sun up to sun down |
 | if sb accepted it | should I accept it (without question mark) |
 | me/you too | that makes two of us |
