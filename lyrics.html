@@ -225,10 +225,11 @@
     }
     return false;
   };
-  const showTags = (e = 'atop') => {
+  const showTags = (e = 'atop', nextLoc = '') => {
     let chk = typeof e != 'string' || e == '';
     let tag = chk ? getPageAnchor() : e;
     console.log(`page anchor/tag = ${tag}`);
+    let aLoc = nextLoc ? nextLoc : tag;
     let subtitle = '';
     let showFunc = showBlogByClass;
     switch (tag) {
@@ -277,11 +278,11 @@
       showFunc(tag).then(() => {
         // console.log(`subtitle = ${subtitle}`);
         showSubtitle(subtitle).then(() => {
-          setLocation(tag, subtitle);
+          setLocation(aLoc, subtitle);
         });
       });
     } else {
-      setLocation(tag, 'all');
+      setLocation(aLoc, 'all');
       show();
     }
     return false;
@@ -1150,7 +1151,7 @@
   <li id="d20210628x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20210628x"><u title="English poem">E</u> <b>Savannah</b>〖美国南方之萨瓦纳〗 <i>2021.06.28.</i></a></li>
   <li id="d20210921x" class="ying engp-li show-li" name="zhyx-li"><a href="#p20210921x"><u title="English poem">E</u> <span>Mid-Autumn〖中秋〗</span> <i>2021.09.21.</i></a></li>
   <li id="d20220514x" class="engp-li" name="zhou-li"><a href="#p20220514x"><em title="周琳作品">周</em> <u title="English poem">E</u> <span>Birthday Card〖贺辰〗</span> <i>2022.05.14.</i></a></li>
-  <li id="d20220523x" class="ying cl2e-li engp-li view-li" name="zhyx-li"><a href="#p20220523z" title="English cover">〖翻唱〗</a>＋ <a href="#p20220523x"><q>☆</q> <u title="English lyrics">L</u> <span>Lonely Warrior</span>〖孤勇者〗 <i>2022.05.23.</i></a></li>
+  <li id="d20220523x" class="ying cl2e-li engp-li view-li" name="zhyx-li"><a href="#p20220523c" title="English cover #show tag">〖翻唱〗</a>＋ <a href="#p20220523x"><q>☆</q> <u title="English lyrics">L</u> <span>Lonely Warrior</span>〖孤勇者〗 <i>2022.05.23.</i></a></li>
   <li id="d20241027x" class="mulu" name="zhou-li"><a href="#p20241027x" title="Youth Day 4th of May"><em title="周琳作品">周</em> <u>六言诗</u>【武汉小记】 <i>2024.10.27.</i></a></li>
   <li id="d20241216x" class="el2c-li show-li" name="zhyx-li"><a href="#p20241216x"><q>☆</q> Always Remember Us ...【永铭此爱】 <i>2024.12.16.</i></a></li>
   <li id="d20250205x" class="ying engp-li view-li" name="zhyx-li"><a href="#p20250205x"><u title="English poem">E</u> <span>English Rhymes</span>〖诗文名句〗 <i>2025.02.05.</i></a></li>
@@ -1262,16 +1263,16 @@
 </div>
 <div class="ying"><h3 class="t3">The Way Of The Way  <em>(2001)</em> <em><a class="sup" href="#d20010923x" title="2001.09.23">&#11139;&nbsp;</a></em></h3>
   The way of the way, no way divined;
-  A name of a name, no word defined
+  A name of a name, no word defined.
   Nothing, name the beginning of the world;
-  Having, name the origin of the earth
+  Having, name the origin of the earth.
   So all of nothing, to see its infinite;
-  All of having, to see its limit
+  All of having, to see its limit.
   And name of the difference,
-  Both of them, came from the same
-  And both called mystery
+  Both of them, came from the same,
+  And both called mystery.
   Mystery of mysteries, of
-  All marvelous the way<br/>
+  All marvelous the way.<br/>
 <em><i>English Translation by </i> Jason Zhu</em>
 </div>
 </div><!-- blog -->
@@ -2183,7 +2184,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show view" name="zhyx">
+<div class="blog cl2e engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20110106x">糊涂的爱 <em>〖原词〗</em></h3>
   爱有几分能说清楚　
   还有几分是糊里又糊涂　
@@ -2332,7 +2333,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show view" name="zhyx">
+<div class="blog cl2e engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20130602x">海闊天空 <em>〖原词〗</em></h3>
   今天我　
   寒夜里看雪飘过
@@ -2382,7 +2383,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show view" name="zhyx">
+<div class="blog cl2e engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20220523x">孤勇者 <em>〖原词〗</em></h3>
   都～是勇敢的，你额头的伤口
   　　你的不同，你犯的错
@@ -2493,9 +2494,14 @@
 </div>
 </div>
 <a href="#english-lyrics" class="goto">⇑</a>
+<a href="#show" id="p20220523c" title="Cover versions"
+   onclick="return showTags('show', 'p20220523z')"
+   style="display:block;margin:0.5em">
+   &star; 中英文翻唱 ▼
+</a>
 
 
-<div class="blog cl2e engp view" name="misc">
+<div class="blog cl2e engp show" name="misc">
 <div class="geci"><h3 class="t3 geci" id="p20220523z">附：孤勇者 <em>〖<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">翻唱</a>〗</em></h3>
   你眼中是什么
   像烈火在燃烧
@@ -2607,7 +2613,7 @@
 
 
 <!--英文译词-->
-<div class="blog engp show view" name="zhyx">
+<div class="blog engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20250205x">诗文名句 <em>〖中文〗</em></h3>
   工欲善其事，
   必先利其器。——《論語·衛靈公》
@@ -2713,7 +2719,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show view" name="zhyx">
+<div class="blog cl2e engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20250816x">一笑江湖 <em>〖原词〗</em></h3>
   江湖一笑浪滔滔，紅塵盡忘了，
   俱往矣何足言道；
@@ -2769,7 +2775,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show view" name="zhyx">
+<div class="blog cl2e engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20250831x">越过山丘 <em>〖原词〗</em></h3>
   越過山丘
   遇見十九歲的我
@@ -2905,7 +2911,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show view" name="zhyx">
+<div class="blog cl2e engp view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20251011x">人间道 <em>〖原词〗</em></h3>
   我要走穿这条命，去看雪兰花
   我要踏破这双鞋，光脚平风沙
