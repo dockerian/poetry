@@ -11,15 +11,15 @@
     - 周恩来：[杂文](zhou.html)
 
   * 诗词博客
-    - [学诗笔记·Poetry Study](poetry-study.md)
-    - [英律小结·Prosody Summary](prosody-summary.md)
-    - [歌词翻唱·Song Lyrics Translation](song-cover.md)
-    - [流行歌词·Song Lyrics](song-lyrics.md)
+    - [学诗笔记 · Poetry Study](poetry-study.md)
+    - [英律小结 · Prosody Summary](prosody-summary.md)
+    - [歌词翻唱 · Song Lyrics Translation](song-cover.md)
+    - [流行歌词 · Song Lyrics](song-lyrics.md)
     - [Boathill](https://boathill.blogspot.com/) ·
       [WordPress](https://boathill.wordpress.com/category/poems/)
     - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
-    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="./shiji.html" style="height:1em;padding:0em 0em 0.25em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="absmiddle" style="height:1em;vertical-align:middle;padding-bottom:0.15em" title="Markdown" alt="markdown"/></a>
+    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.html" style="height:1.15em;padding:0em 0em 0.5em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="middle" style="height:1em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/></a>
     - [纱糸轩集](../lyrics.html)
     - [纱糸轩集](../lyrics.html)
 
