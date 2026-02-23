@@ -23,8 +23,10 @@
     - [薛之谦](#xue)《丑八怪》
     - [易家揚](#yjy)《遇见》
   * [英文歌词｜English Songs](#english)
+    - [Greensleeves](#greensleeves) (_Unkown_)
     - [Hotel California](#hotel-california) (_Eagles_)
     - [Nothing’s Gonna Stop Us Now](#n) (_Starship_)
+    - [Sadness in Your Eyes](#sadness) (_Kirka_)
     - [Scarborough Fair](#scarborough-fair) (_Simon_ & _Garfunkel_)
     - [Suicide Is Painless](#suicide) (_Mike Altman_)
     - [Sound of Silence](#sound) (_Paul Simon_)
@@ -546,6 +548,27 @@
   共倾诉、将心守护
   ```
 
+<a name="tyu"></a>
+#### 勝嶼《何为永恒》；词曲：胜屿；演唱：胡夏
+
+  ```
+  就別追問，因果落地生根
+  人世浮塵，生死總有常倫
+  心存寬仁，傷與痛一笑泯
+  只怕殘忍，多情傷癡情人
+  能有幾人，穿過糾纏留初心幾分
+  能有幾人，躲得過緣劫終被情困
+  何為永恆，何畏俗世紛爭
+  人間暖冷，亂了浮華半生
+  繁花落盡，我願埋名隱姓給你安穩
+  只此一吻，我無忌無怨無嗔
+
+  舊傷新痕，往事化成一瞬
+  情仇愛恨，恩與怨一杯盛
+  手中刀刃，斬不斷是緣分
+  你便是我，命運安排的人
+  ```
+
 <a name="wqi"></a>
 #### 王琪《可可托海的牧羊人》
 
@@ -840,6 +863,27 @@
   Hills of satin grass and maidens fair
   ```
 
+<a name="g"></a>
+<a name="greensleeves"></a>
+#### Greensleeves (_Unkown_)
+
+  ```
+  Alas my love you do me wrong
+  To cast me off discourteously
+  For I have loved you so long
+  Delighting in your company
+
+  Greensleeves was all my joy
+  Greensleeves was my delight
+  Greensleeves was my heart of gold
+  And who but my Lady Greensleeves?
+
+  Alas my love that you should own
+  A heart of wanton vanity
+  So I must laddie think alone
+  Upon your insincerity
+  ```
+
 <a name="h"></a>
 <a name="hotel-california"></a>
 #### Hotel California (_Eagles_)
@@ -1008,6 +1052,31 @@
   ```
 
 <a name="s"></a>
+<a name="sadness"></a>
+#### Sadness in Your Eyes, The (_Kirka_)
+
+  ```
+  All the time I wake up calling out your name
+  And I realize my life is not the same
+  I try to reach you but it's all in vain
+  I'm alone with just a heart that's full of pain
+
+  I remember how we held each other tight
+  Just the two of us doing what is right
+  Now I'm losing you and I'd like one more try
+  All you say is that you're sorry, never why
+
+  I hate to see the sadness in your eyes
+  But don't you see that I'm the one who cries
+  'Cause after all the things that we've been through
+  I have to say I'm still in love with you
+
+  Now the time has come for me to say goodbye
+  I'm still hoping there's a chance for last try
+  'Cause I need you to be here right by my side
+  And together we could say "at least we tried"
+  ```
+
 <a name="scarborough-fair"></a>
 #### Scarborough Fair (_Simon_ & _Garfunkel_)
 

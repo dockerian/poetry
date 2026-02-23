@@ -1150,6 +1150,15 @@ When adapting Chinese rhymed lines into English:
   Whose charms were broken if revealed.
   ```
 
+* F9 (*Emily Dickinson*, 1858)
+
+  ```
+  If recollecting were forgetting,
+  Then I remember not.
+  And if forgetting, recollecting,
+  How near I had forgot.
+  ```
+
 * Fist Fig (*Edna St. Vincent Millay*, 1852-1950)
 
   ```
