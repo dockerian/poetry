@@ -6,6 +6,8 @@
 ## 笔记
 
   * 读书笔记〖 [html](mynotes.html)｜[text](mynotes.txt) 〗
+
+  * 名家文摘
     - 吕蒙正：[寒窑赋](hanyaofu.md)
     - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
     - 周恩来：[杂文](zhou.html)
@@ -21,7 +23,7 @@
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
     - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.html" style="height:1.15em;padding:0em 0em 0.5em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="middle" style="height:1em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/></a>
     - [纱糸轩集](../lyrics.html)
-    - [纱糸轩集](../lyrics.html)
+    - [古诗英译](../gushi.md)
 
   * 笑料摘抄
     - [土味情话](mylines.html#qinghua)｜
