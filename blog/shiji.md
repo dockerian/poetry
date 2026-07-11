@@ -2132,7 +2132,7 @@ h3,h4,h5 {
 }
 img {
   margin: 0em 0em 0em -0.25em !important;
-  padding: 0.5em 0 !important;
+  padding: 0.25em 0 !important;
   width: 100% !important;
 }
 img.half {
