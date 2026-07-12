@@ -1,4 +1,5 @@
-﻿古诗十九首｜Nineteen Ancient Poems
+# ﻿古诗十九首｜Nineteen Ancient Poems <a name="title"></a>
+<!--Recommend to use Markdown viewer or plugin in browser-->
 ---
 > English version drafted by AI tools.
 
@@ -374,3 +375,44 @@ Though wanderers find delight, best soon homeward leave
 Alone I roam outdoors — to whom my grief believe
 At turn and gaze afar; tears drench a robe’s sleeve
 ```
+
+
+<p><br/><hr/></p>
+
+&raquo; [Blog](./README.md) | [Title ⇑](#title)
+
+<!--stylesheet-->
+<div style="display:none">
+<style type="text/css"><!--
+a:hover {
+  color: darkred !important;
+  text-decoration: none !important;
+  background-color: lightyellow;
+}
+body,h1,h2,h3,h4,h5,p,pre,code {
+  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  text-align: justify;
+}
+blockquote {
+  border-color: #DDDD !important;
+}
+h3 {
+  border-right: inset 0.5em lightgray;
+  margin: 1.25em 0em 0.5em !important;
+  color: darkred;
+}
+p {
+  font-size: 1.25em !important;
+  line-height: 1.35em;
+}
+p>code {
+  font-size: 1.03em !important;
+}
+pre {
+  margin-left: 0.35em !important;
+}
+pre>code {
+  font-size: 1.5em !important;
+}
+--></style>
+</div>
