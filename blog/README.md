@@ -1,9 +1,6 @@
-# 博客杂记
+# 博客杂记 <a id="toc" name="toc"></a>
 
 > 读书笔记＋摘抄
-
-<br/><a id="toc" name="toc"></a>
-## 笔记
 
   * 读书笔记〖 [html](mynotes.html)｜[text](mynotes.txt) 〗
 
@@ -23,7 +20,8 @@
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
     - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="height:1.15em;padding:0em 0em 0.5em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="middle" style="height:1em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/></a>
     - [纱糸轩集](../lyrics.html)
-    - [古诗英译](../gushi.md)
+    - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
+    - [古诗英译](./gushi-cap.md)
 
   * 笑料摘抄
     - [土味情话](mylines.html#qinghua)｜

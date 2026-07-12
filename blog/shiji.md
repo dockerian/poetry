@@ -1,4 +1,5 @@
 <a name="mulu">目录</a>
+<!--Recommend to use Markdown viewer or plugin in browser-->
 <div id="anchor"><!--page anchor-->
 <div id="access"><a href="#ciqu">词曲</a>·<a href="#diao">长调</a>｜<a href="#xyun">新韵</a>｜<a href="#qigu">七言</a>｜<a href="#qilv">七律</a>｜<a href="#wulv">五律</a>｜<a href="#zaji">外篇</a>｜<a href="#char">图表</a>
 </div>
@@ -377,7 +378,7 @@
 
 爱也無由我，情也不由天。愁思悠悠，白雲淡淡，正清寒。`　`怎禁冷落残杯，欲诉無言。独自去凭栏。是前生、注定了风月债，却难还。
 
->　　批曰：残花对孤影，心乱恼無情。無时或忘，斯病甚矣。
+> 批曰：残花对孤影，心乱恼無情。無时或忘，斯病甚矣。
 
 #### 少年游·寄友 (1983.5)
 
