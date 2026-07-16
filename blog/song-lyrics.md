@@ -1,4 +1,4 @@
-# <a name="home"></a>Song Lyrics
+# <a name="top"></a>Song Lyrics
 
 > A collection of classical and pop song lyrics.
 
@@ -17,6 +17,7 @@
     - [蓉宝儿](#rbr)《爱到最後还是离分》
     - [宋雪苍](#scx)《大天蓬》
     - [蘇家寧](#sjn)《縱然對你心有不甘》
+    - [未夫子](#wei)《这一生你会遇见谁早已注定》
     - [王　琪](#wqi)《可可托海的牧羊人》
     - [王月飞](#wyf)《苍穹唤》
     - [聞人聽書](#wen)《一笑江湖》
@@ -29,12 +30,12 @@
     - [Sadness in Your Eyes](#sadness) (_Kirka_)
     - [Scarborough Fair](#scarborough-fair) (_Simon_ & _Garfunkel_)
     - [Suicide Is Painless](#suicide) (_Mike Altman_)
-    - [Sound of Silence](#sound) (_Paul Simon_)
+    - [Sound of Silence, The](#sound) (_Paul Simon_)
     - [Woman in Love](#woman) (_The Bee Gees_)
 
 
 <br/><a name="chinese"></a>
-## Chinese Songs
+## Chinese Songs <b><a href="#english" title="English Songs">&dArr;</a>&middot;<a href="#top" title="Top">&uArr;</a></b>
 
 <a name="clr"></a><a name="chen"></a>
 #### 陈乐融《问情》；演唱：蔡幸娟
@@ -498,6 +499,32 @@
   忘了曾经、伤的那么深，爱到最后终究还是离分
   ```
 
+<a name="ren"></a>
+#### 任夏《这一生你会遇见谁早已注定》
+
+```
+你是不是也浪费过　几段大好青春
+伤痕累累也要去爱　本不该爱的人
+总以为承诺太真，一许诺就是一生
+害怕错过了、就再遇不到更好的人
+
+你是否也红着眼眶　熬亮几段清晨
+心都碎了一地　也没换来某人心疼
+总以为足够认真，总会能换来真诚
+可惜单向的付出，留不住要走的人
+
+这一生你会遇见谁、上天早已注定
+是恩赐是劫都是你、逃不开的宿命
+有些人出现又离开、是为了教会你死心
+也有人跨越山海只为来爱你
+
+这一生你会遇见谁、上天早已注定
+结局是幸福或遗憾、由不得你决定
+有些人明明动了情、可还是走到分离
+不用太在意拥有和失去
+这都是天意
+```
+
 <a name="scx"></a>
 #### 宋雪苍《大天蓬》；演唱：李袁杰
 
@@ -567,6 +594,23 @@
   情仇愛恨，恩與怨一杯盛
   手中刀刃，斬不斷是緣分
   你便是我，命運安排的人
+  ```
+
+<a name="wei"></a>
+#### 未夫子《想一次落一粒沙》；作曲：徐嘉良；演唱：大潞
+
+  ```
+  晚風沙沙吹起了淚花，我的傷口、密密麻麻
+  前塵往事被歲月風化，句句情話、都變了卦
+  就像白鴿不會愛烏鴉，你像野馬不會為我停下
+  我們走過了一段最美年華，最後變成了最痛傷疤
+
+  想你一次就落一粒沙，世上從此有了撒哈拉
+  我曾為你犯錯為你犯傻，如今依然為你痴痴牽掛
+  想你一次就落一粒沙，可惜我們早已各安天涯
+  山盟海誓刻在三生石下，若有來生、再愛好嗎
+  人世間匆匆又幾個冬夏，
+  再也聽不見、你的回答
   ```
 
 <a name="wqi"></a>
@@ -799,11 +843,11 @@
 
 ---
 
-[Back](#chinese) | [Home](#home) | [Blog](./README.md)
+[Back &rarr; Ch](#chinese) | [Home](#top) | [Blog](./README.md)
 
 
 <br/><a name="english"></a>
-## English Songs
+## English Songs <b><a href="#chinese" title="Chinese Songs">&uArr;</a>&middot;<a href="#end" title="End">&dArr;</a></b>
 
 <a name="a"></a>
 #### All Too Well (_Taylor Swift_)
@@ -1227,7 +1271,7 @@
   ```
 
 <a name="woman"></a>
-#### Woman in Love (_Barry and Robin Gibb_ of _The Bee Gees_, performed by _Barbra Streisand_)
+#### Woman in Love (_Barry and Robin Gibb_ of _The Bee Gees_)
 
   ```
   Life is a moment in space
@@ -1258,6 +1302,42 @@
   It's a right I defend over and over again
   ```
 
+<a name="end"></a>
+<!--stylesheet-->
+<div style="display:none">
+<style type="text/css"><!--
+a:hover {
+  color: darkred !important;
+  text-decoration: none !important;
+  background-color: lightyellow;
+}
+body,h1,h2,h3,h4,h5,p,pre,code {
+  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  text-align: left;
+}
+blockquote {
+  border-color: #DDDD !important;
+}
+div>ul>li {
+  font-size: 1.05em !important;
+  margin: 0.75em 0 !important;
+}
+h2>b {
+  display: inline-block;
+  float: right;
+}
+h4,pre>code {
+  font-size: 1.25em !important;
+}
+pre {
+  margin-left: 0.35em !important;
+}
+code {
+  color: darkblue;
+}
+--></style>
+</div>
+
 ---
 
-[Back](#english) | [Home](#home) | [Blog](./README.md)
+[Back &rarr; En](#english)&middot;[Ch](#chinese) | [Blog &larr;](./README.md) | [Home &uArr;](#top)
