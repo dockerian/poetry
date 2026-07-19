@@ -348,9 +348,10 @@
     color: darkslategray;
   }
 
-  body, div.blog {
+  html, body, div.blog {
     max-width: 100vw !important;
     min-width: 100vw !important;
+    overflow-x: hidden; /* prevents horizontal scrolling */
     width: 100vw !important;
   }
   body, p {
@@ -363,6 +364,9 @@
     margin: 0.75em 0em 0.75em 0em;
     white-space: nowrap;
     text-align: center;
+  }
+  div.atoc {
+    margin: 0em 1.25em 0em 0;
   }
   div.center {
     text-align: center;
@@ -549,6 +553,7 @@
     padding: 0em 0em 0.5em 0em;
     page-break-before: always;
     position: relative;
+    overflow-y: hidden;
     gap: 1em;
   }
   div.blog:last-of-type { /* must be in a wrapper */
@@ -706,7 +711,7 @@
     border-bottom: solid cornflowerblue 1px;
     line-height: 2.25em;
     margin: 0em 0em 0.125em 0em;
-    padding: 0em 0.37em 0em 0.25em;
+    padding: 0em 0.6em 0em 0.25em;
     white-space: nowrap;
     text-align: left;
     text-indent: 0em;
@@ -755,7 +760,7 @@
     justify-content: flex-end;
     line-height: 2.75em;
     margin: 0.125em 0em 0.25em 0em;
-    padding-right: 0.5em;
+    padding: 0em 0.75em 0em 0em;
     page-break-before: avoid;
     text-align: right;
     text-indent: 0.25em;
@@ -804,7 +809,7 @@
     list-style: none;
     line-height: 1.5em;
     margin: 0em 0em 0em 0em;
-    padding: 0em 0.5em;
+    padding: 0em 0em;
     text-align: right;
     vertical-align: baseline;
     white-space: normal;
@@ -818,9 +823,9 @@
   }
   ul li {
     display: inline-block;
-    margin: 0 1.25em 0em 0em;
+    margin: 0em 0em 0em 0em;
     max-width: 50%; min-width: 25em;
-    padding: 0em;
+    padding: 0em 0em 0em 0em;
     text-align: right;
     text-indent: 0em;
     vertical-align: baseline;
@@ -916,7 +921,7 @@
  and (min-device-width: 100px)
  and (max-device-width: 639px) {
   body, div, p, ul {
-    font-size: 1.25em;
+    font-size: 1.10em;
   }
   div.text {
     display: none;
@@ -924,21 +929,21 @@
 }
 @media only screen
  and (min-device-width: 640px)
- and (max-device-width: 1024px) {
+ and (max-device-width: 1199px) {
   body, div, p {
-    font-size: 1.15em;
+    font-size: 1.10em;
   }
 }
 @media only screen
- and (min-device-width: 1023px)
+ and (min-device-width: 1200px)
  and (max-device-width: 1599px) {
   body, div, p {
-    font-size: 1.25em;
+    font-size: 1.15em;
   }
 }
 @media only screen and (min-width: 1600px) {
   div, p {
-    font-size: 1.15em;
+    font-size: 1.20em;
   }
   ul {
     font-size: 1.05em;
@@ -946,7 +951,7 @@
 }
 @media only screen and (max-width: 1024px) {
   body {
-    width: 125vw;
+    width: 100vw;
   }
   div.geci, div.yuan { /* 中文原词，Oringal lyrics */
     border: none;
@@ -979,7 +984,7 @@
   ul li {
     margin: 0px;
     max-width: 100%; min-width: 21em;
-    padding: 0em 1em 0em 0em;
+    padding: 0em 0.35em 0em 0em;
     width: 100%;
   }
   ul {
