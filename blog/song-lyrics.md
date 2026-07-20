@@ -15,13 +15,15 @@
     - [琅琊榜](#lyb)《赤血长殷》
     - [毛不易](#mao)《东北民谣》《牧马城市》《消愁》
     - [蓉宝儿](#rbr)《爱到最後还是离分》
+    - [任　夏](#ren)《这一生你会遇见谁早已注定》
     - [宋雪苍](#scx)《大天蓬》
     - [蘇家寧](#sjn)《縱然對你心有不甘》
-    - [未夫子](#wei)《这一生你会遇见谁早已注定》
     - [王　琪](#wqi)《可可托海的牧羊人》
     - [王月飞](#wyf)《苍穹唤》
     - [聞人聽書](#wen)《一笑江湖》
+    - [未夫子](#wei)《想一次落一粒沙》
     - [薛之谦](#xue)《丑八怪》
+    - [央金拉姆](#yjl)《不跪的花》
     - [易家揚](#yjy)《遇见》
   * [英文歌词｜English Songs](#english)
     - [Greensleeves](#greensleeves) (_Unkown_)
@@ -190,6 +192,23 @@
   ```
 
 <a name="hzh"></a>
+#### 黄霑《沧海一声笑》
+
+  ```
+  沧海一声笑，滔滔两岸潮
+  浮沉随浪只记今朝
+  苍天笑，纷纷世上潮
+  谁负谁胜出天知晓
+
+  江山笑，烟雨遥
+  涛浪淘尽红尘俗世几多娇
+  清风笑，竟惹寂寥
+  豪情还剩了一襟晚照
+
+  苍生笑，不再寂寥
+  豪情仍在痴痴笑笑
+  ```
+
 #### 黃霑《上海滩》；作曲：顧嘉煇；演唱：葉麗儀
 
   ```
@@ -502,28 +521,28 @@
 <a name="ren"></a>
 #### 任夏《这一生你会遇见谁早已注定》
 
-```
-你是不是也浪费过　几段大好青春
-伤痕累累也要去爱　本不该爱的人
-总以为承诺太真，一许诺就是一生
-害怕错过了、就再遇不到更好的人
+  ```
+  你是不是也浪费过　几段大好青春
+  伤痕累累也要去爱　本不该爱的人
+  总以为承诺太真，一许诺就是一生
+  害怕错过了、就再遇不到更好的人
 
-你是否也红着眼眶　熬亮几段清晨
-心都碎了一地　也没换来某人心疼
-总以为足够认真，总会能换来真诚
-可惜单向的付出，留不住要走的人
+  你是否也红着眼眶　熬亮几段清晨
+  心都碎了一地　也没换来某人心疼
+  总以为足够认真，总会能换来真诚
+  可惜单向的付出，留不住要走的人
 
-这一生你会遇见谁、上天早已注定
-是恩赐是劫都是你、逃不开的宿命
-有些人出现又离开、是为了教会你死心
-也有人跨越山海只为来爱你
+  这一生你会遇见谁、上天早已注定
+  是恩赐是劫都是你、逃不开的宿命
+  有些人出现又离开、是为了教会你死心
+  也有人跨越山海只为来爱你
 
-这一生你会遇见谁、上天早已注定
-结局是幸福或遗憾、由不得你决定
-有些人明明动了情、可还是走到分离
-不用太在意拥有和失去
-这都是天意
-```
+  这一生你会遇见谁、上天早已注定
+  结局是幸福或遗憾、由不得你决定
+  有些人明明动了情、可还是走到分离
+  不用太在意拥有和失去
+  这都是天意
+  ```
 
 <a name="scx"></a>
 #### 宋雪苍《大天蓬》；演唱：李袁杰
@@ -742,6 +761,35 @@
   敢問路在何方、路在腳下
   ```
 
+<a name="yjl"></a>
+#### 央金拉姆《不跪的花》
+
+  ```
+  沒人問我累不累，眼淚流給雪山背
+  桿細瓣小風吹碎，可我從沒跪過誰
+  你聽好、我從不後退
+
+  我就是、那朵格桑花，風再大也吹不垮
+  心裡有痛、嘴裡嚥下，咬碎牙也要開成花
+  石頭縫裡找活路，轉經筒前不訴苦
+  阿媽說女人像這花，腰桿斷了也不趴下
+  你看我、瘦小普通，
+  可風雪來了、我紋絲不動
+
+  我就是、那朵格桑花，雨再大也打不趴
+  身上有傷、臉上帶霞，這輩子的苦、一口吞下
+  風愈狂、我身愈挺，雨愈打、我葉愈翠
+  太陽愈曬、我開得愈燦爛
+  瑪尼堆前、我發過誓
+  這一生、像格桑、不低頭
+  不流淚，不退
+
+  我就是那朵格桑花，再難的路自己爬
+  青稞地裡扎西德勒
+  開給全世界、我有多強大
+  我有多強大
+  ```
+
 <a name="yjy"></a>
 #### 易家揚《遇见》；演唱：孙燕姿
 
@@ -885,6 +933,20 @@
   ```
 
 <a name="c"></a>
+#### C’est La Mort (_The Civil Wars_)
+
+  ```
+  Swan dive down eleven stories high
+  Hold your breath until you see the light
+  You can sink to the bottom of the sea
+  Just don't go without me
+
+  Go get lost where no one can be found
+  Drink so long and deep until you drown
+  Say your goodbyes but darlin' if you please,
+  Don't go without me
+  ```
+
 #### Chasin' Whisky (_Julie Roberts_)
 
   ```
@@ -966,11 +1028,21 @@
   All afternoon, in the sun she lies
   ```
 
+<a name="k"></a>
 #### Killing Me Softly (_Norman Gimbel_ & _Charles Fox_)
 
   ```
   He sang as if he knew me in all my dark despair
   And then he looked right through me as if I wasn’t there.
+  ```
+
+#### Kingdom Come (_The Civil Wars_)
+
+  ```
+  Run fast as you can
+  No one has to understand
+  Fly high across the sky from here to kingdom come
+  Fall back down to where you're from
   ```
 
 <a name="l"></a>
@@ -1000,7 +1072,7 @@
   Come down, Lady come down
   ```
 
-#### Lover Me Tender (_Love Me Tender_)
+#### Love Me Tender (_Elvis Presley_, _Ken Darby_ & _Vera Matson_)
 
   ```
   Love me tender, love me sweet, never let me go.
@@ -1015,6 +1087,16 @@
 
   When at last my dreams come true, darling this I know
   Happiness will follow you, everywhere you go.
+  ```
+
+<a name="m"></a>
+#### My Father’s Father (_The Civil Wars_)
+
+  ```
+  The winding roads that led me here
+  Burn like coal and dry like tears
+  So here's my hope
+  My tired soul
   ```
 
 <a name="n"></a>

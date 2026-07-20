@@ -23,6 +23,7 @@
       [WordPress](https://boathill.wordpress.com/category/poems/)
     - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
+    - [新韵字表](./xinyun.md)｜[漢字符號](./zi.md)
     - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
     - [古诗英译](./gushi-cap.md)
 
