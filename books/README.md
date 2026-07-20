@@ -9,6 +9,7 @@
   * [平水韵表](./平水韵表.pdf)｜[doc](../books/平水韵表.doc)
   * [词林正韵](./词林正韵.pdf)｜[doc](../books/词林正韵.doc)
   * [英文诗歌](../blog/poetry-study.md)
+  * [图书附录](../gelv/README.md)
 
 
 <br/><a id="res" name="res"></a>
@@ -33,4 +34,4 @@
 
 
 
-&raquo; Back to <a href="#toc">Contents</a> | [home](../README.md)
+&raquo; Back to <a href="#toc">Contents</a> | [Home](../README.md)

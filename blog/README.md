@@ -9,7 +9,12 @@
     - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
     - 周恩来：[杂文](zhou.html)
 
-  * 诗词博客
+  * 文稿诗集｜[统计数据](data/README.md)
+    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="height:1.15em;padding:0em 0em 0.5em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="middle" style="height:1em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/></a>
+    - [清明诗抄](../gelv/html/shiji-qingming.html)｜[新词对韵](../gelv/html/shenglv-duiyun.html)
+    - [纱糸轩集](../lyrics.html)
+
+  * 诗词博客｜[附录](../gelv/README.md)
     - [学诗笔记 · Poetry Study](poetry-study.md)
     - [英律小结 · Prosody Summary](prosody-summary.md)
     - [歌词翻唱 · Song Lyrics Translation](song-cover.md)
@@ -18,8 +23,6 @@
       [WordPress](https://boathill.wordpress.com/category/poems/)
     - [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
       [Wordpress](https://divertidalz.wordpress.com/category/poem/)
-    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="height:1.15em;padding:0em 0em 0.5em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="middle" style="height:1em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/></a>
-    - [纱糸轩集](../lyrics.html)
     - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
     - [古诗英译](./gushi-cap.md)
 
