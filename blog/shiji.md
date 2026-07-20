@@ -1,7 +1,7 @@
 <a name="mulu">目录</a>
 <!--Recommend to use Markdown viewer or plugin in browser-->
 <div id="anchor"><!--page anchor-->
-<div id="access"><a href="#ciqu">词曲</a>·<a href="#diao">长调</a>｜<a href="#xyun">新韵</a>｜<a href="#qigu">七言</a>｜<a href="#qilv">七律</a>｜<a href="#wulv">五律</a>｜<a href="#zaji">外篇</a>｜<a href="#char">图表</a>
+<div id="access"><a href="#ciqu">词曲</a>·<a href="#diao">长调</a>｜<a href="#xyun">新韵</a>｜<a href="#qigu">七言</a>｜<a href="#qilv">七律</a>｜<a href="#wulv">五律</a>｜<a href="#zaji">外篇</a>
 </div>
 </div>
 
@@ -236,7 +236,7 @@
 
 <br/><br/><a name="bcti"></a>
 
-[目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五律](#wulv)｜[外篇](#zaji)
+[目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五言](#wugu)｜[五律](#wulv)｜[外篇](#zaji) &middot; <a class="arrow" href="#endp">&dArr;</a> <a class="arrow" href="#mulu" title="TOC">&uArr;</a>
 
 ---
 # 舟山堂・[诗词稿](#mulu)
@@ -250,7 +250,7 @@
 
 
 <br/><br/><a name="ciqu"></a>
-## 词曲一百二十五首　<a class="arrow" href="#mulu">⇑</a>
+## 词曲一百二十五首　<a class="arrow" href="#bcti" title="Contents">&uArr;</a>&middot;<a class="arrow" href="#diao" title="NEXT｜长调">&dArr;</a>
 
 
 #### 天净沙·斐济十题今韵十八首 (2010.2)
@@ -620,7 +620,9 @@
 退隐山庄，收敛行囊。恣清扬，忘却匆忙。重拾健跑，打卡夕阳。养一痴迷，一情趣，一收藏。`　`美食影赞，厨艺精良。玉盘妆，夏赏秋尝。於心妙手，有爱风光。见肴成品、汤余味、彩留香。
 
 
-<a name="diao"></a>
+<br/><a name="diao"></a>
+## 词曲（长调）　<a class="arrow" href="#ciqu" title="PREV｜词曲">&uArr;</a>&middot;<a class="arrow" href="#xyun" title="NEXT｜新韵">&dArr;</a>
+
 #### 满江红·清明 (1983.5)
 
 一往情深，今又是寒食祭节。名万古，一年一度、哀思先烈。犹记当年家国恨，志矢解放民族业。传救国，妙手著文章，言词切。`　`求良策，尽心血。奋国群，党人结。为中华崛起，飞腾世界。高筑神州风雨楼，遍开共产红花叶。看至今、回首字無痕，清明月。
@@ -841,7 +843,7 @@
 
 
 <br/><br/><a name="xyun"></a>
-## 新韵文诗九首　<a class="arrow" href="#mulu">⇑</a>
+## 新韵文诗九首　<a class="arrow" href="#diao" title="PREV｜长调">&uArr;</a>&middot;<a class="arrow" href="#qigu" title="NEXT｜七言">&dArr;</a>
 
 
 #### 雪 (1989.12)
@@ -1052,7 +1054,7 @@
 
 
 <br/><br/><a name="qigu"></a>
-## 七言古诗三十一首　<a class="arrow" href="#mulu">⇑</a>
+## 七言古诗三十一首　<a class="arrow" href="#xyun" title="PREV｜新韵">&uArr;</a>&middot;<a class="arrow" href="#qilv" title="NEXT｜七律">&dArr;</a>
 
 
 #### 江南感赋 (1982.10)
@@ -1218,7 +1220,7 @@
 
 
 <br/><br/><a name="qilv"></a>
-## 七言律绝九十六首　<a class="arrow" href="#mulu">⇑</a>
+## 七言律绝九十六首　<a class="arrow" href="#qigu" title="PREV｜七言">&uArr;</a>&middot;<a class="arrow" href="#wugu" title="NEXT｜五言">&dArr;</a>
 
 
 #### 七律·中秋月·孤懸海外兼詠嬋娟同韻二題 (2008.9)
@@ -1677,7 +1679,7 @@
 
 
 <br/><br/><a name="wugu"></a>
-## 五言古诗六首　<a class="arrow" href="#mulu">⇑</a>
+## 五言古诗六首　<a class="arrow" href="#qilv" title="PREV｜七律">&uArr;</a>&middot;<a class="arrow" href="#wulv" title="NEXT｜五律">&dArr;</a>
 
 
 #### 五言·夢醒 (2011.06.02)
@@ -1713,7 +1715,7 @@
 
 
 <br/><br/><a name="wulv"></a>
-## 五言律诗五十二首　<a class="arrow" href="#mulu">⇑</a>
+## 五言律诗五十二首　<a class="arrow" href="#wugu" title="PREV｜五言">&uArr;</a>&middot;<a class="arrow" href="#sigu" title="NEXT｜四言">&dArr;</a>
 
 
 ### 思远集（六首）
@@ -1959,7 +1961,7 @@
 
 
 <br/><br/><a name="sigu"></a>
-## 四言古诗一首　<a class="arrow" href="#mulu">⇑</a>
+## 四言古诗一首　<a class="arrow" href="#wulv" title="PREV｜五律">&uArr;</a>&middot;<a class="arrow" href="#zaji" title="NEXT｜外篇">&dArr;</a>
 
 
 #### 四言·赠黄老·纪念二十年後重聚渥太华 (2025.10.13)
@@ -1969,7 +1971,7 @@
 
 
 <br/><br/><a name="zaji"></a>
-## 外编二十四首
+## 外编二十四首　<a class="arrow" href="#sigu" title="PREV｜四言">&uArr;</a>&middot;<a class="arrow" href="#endp" title="EOF">&dArr;</a>
 
 
 #### 红楼集句 (1995.11)
@@ -2083,18 +2085,9 @@
 >　　右录詩詞三百四十五首<br/>
 >　　耐若斋藏
 
-<p><br/></p>
+<p><a name="endp"></a><br/></p>
 
-<a name="char"></a><a name="chart"></a>
-
-![Poems By Years Chart](data/shiji-by-year.png)
-
-<img class="half" src="data/shiji-by-category.png" />
-<img class="half" src="data/shiji-by-decade.png" />
-<img class="half" src="data/shiji-by-seasons.png" />
-<img class="half" src="data/shiji-by-months.png" />
-
-[目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五律](#wulv)｜[外篇](#zaji) <a class="arrow" href="#mulu">⇑</a>
+[目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五言](#wugu)｜[五律](#wulv)｜[外篇](#zaji)｜<a href="data/">图表</a>&middot;<a class="arrow" href="#mulu" title="TOC">&uArr;</a>
 
 <br/>
 
