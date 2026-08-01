@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<head>
+<title>[TEST]纱糸轩诗歌集 • Lyrics &amp; Poems</title>
+<meta charset="utf-8"/>
+<meta name="author" content="Jason Zhu"/>
+<meta name="description" content="Lyrics and Poems"/>
+<meta name="keywords" content="lyrics,poems,诗歌,翻译,填词,divertidalz,boathill,blog"/>
+<script type="text/javascript"><!--// script
+
+  var atag = ''; // NOTE: page top anchor is 'atop'
+
+  const doCount = async (s, disp, c) => {
+    let docFunc = document.getElementById;
+    let getElem = docFunc.bind(document);
+    let elemVal = getElem('counter');
+    let elemAll = getElem('countAll');
+    let elemSub = getElem('subtitle');
+    let counter = parseInt(elemVal.textContent, 10);
+    let subtext = elemSub.textContent;
+    let sum = isNaN(counter) ? 0 : counter;
+    let chk = disp == 'inline-block';
+    console.log(`check = ${chk}, s = ${s}, sum + c = ${sum} + ${c} = ${sum+c}`);
+    if (chk && s == 'li') {
+      elemAll.textContent = `${c}`;
+      console.log(`rendering all counts as ${c}`);
+      return c;
+    } else if (chk && s.endsWith('-li')) {
+      console.log(`rendering counter as ${sum+c}`);
+      elemVal.textContent = `${sum+c}`;
+      elemAll.textContent = '';
+      return sum + c;
+    } else if (disp == 'none' || s == 'blog') {
+      console.log(`clearing counter ...`);
+      elemVal.textContent = '';
+    }
+    return 0;
+  };
+  const showSubtitle = async (text = '') => {
+    console.log(`setting subtitle = ${text}`);
+    let getFunc = document.getElementById;
+    let sub = getFunc.bind(document)('subtitle');
+    sub.textContent = text ? `${text}` : '';
+    return sub;
+  };
+
+  const showAll = async (s,
+      getFunc = document.querySelectorAll,
+      display = 'block') => {
+    try {
+      console.log(`showing all s = ${s}, display = ${display}`);
+      let elems = getFunc.bind(document)(s);
+      let alist = Array.from(elems);
+      alist.forEach((e) => {
+        let v = display != 'none';
+        let o = display != 'none' ? 1 : 0.01;
+        e.style.height = v ? '100%' : '0px';
+        e.style.opacity = o;
+        e.style.visibility = v ? 'visible' : 'collapse';
+        e.style.display = display;
+      });
+      await doCount(s, display, alist.length);
+      console.log(s, alist.length);
+      return alist;
+    } catch (err) {
+      console.log(err);
+      return [];
+    }
+  };
+  const showBySelector = async (s, display = 'block') => {
+    return showAll(s,
+      document.querySelectorAll,
+      display);
+  };
+  const showByClass = async (cls, disp = 'block') => {
+    console.log(`showByClass, cls=${cls}, display=${disp}`);
+    return showAll(cls,
+      document.getElementsByClassName,
+      disp);
+  };
+  const showByName = async (name, display = 'block') => {
+    let visible = display != 'none' ? true : false;
+    let prop = visible ? 'block' : 'none';
+    return showAll(name,
+      document.getElementsByName,
+      display).then(() => {
+        // console.log(`name = ${name}, prop = ${prop}`)
+        return showBySelector(
+        `div[name=${name}] + a.goto`,
+        prop);
+    });
+  };
+
+  const showList = async (visible = true) => {
+    let prop = visible ? 'inline-block' : 'none';
+    console.log(`showing list = ${visible}, prop = ${prop}`);
+    return showAll('li',
+      document.getElementsByTagName, prop);
+  };
+  const showBlog = async (visible = true) => {
+    let disp = visible ? 'flex' : 'none';
+    let prop = visible ? 'block' : 'none';
+    return showSubtitle().then(() => {
+      showByClass("blog", disp).then(() => {
+        // console.log(`prop = ${prop}`)
+        return showBySelector(
+        `div.blog + a.goto`, prop);
+      });});
+  };
+  const showBlogByClassName = async (cls) => {
+    let dli = 'inline-block';
+    console.log(`showing blog, cls = ${cls}`);
+    return showByClass(cls, 'flex').then(() => {
+      return showBySelector(
+        `div.${cls} + a.goto`, 'block').then(() => {
+          return showByClass(`${cls}-li`, dli);
+    });});
+  };
+  const showBlogByClass = async (cls) => {
+    return showList(false).then(() => {
+      return showBlog(false).then(() => {
+      return showBlogByClassName(cls);
+    });});
+  };
+  const showBlogByName = async (name) => {
+    let dli = 'inline-block';
+    return showBlog(false).then(() => {
+      return showByName(name, 'flex').then(() => {
+    return showList(false).then(() => {
+      return showByName(`${name}-li`, dli);
+    });});});
+  };
+  const showBlogByStar = async () => {
+    let dli = 'inline-block';
+    console.log('showing stars ...');
+    return showList(false).then(() => {
+      return showBlog(false).then(() => {
+      return showBlogByClassName('show').then(() => {
+      return showBlogByClassName('view');
+    });});});
+  };
+  const show = async (v = 'true') => {
+    return showList(v).then(() => {
+      return showBlog(v);
+    });
+  };
+
+  const clearSelection = () => {
+    let sel = window.getSelection ?
+      window.getSelection() : document.selection;
+    if (sel) {
+      if (sel.empty) {
+        sel.empty(); // older browsers, Safari, IE
+      } else if (sel.removeAllRanges) {
+        sel.removeAllRanges();
+      }
+    }
+  };
+  const getCounts = () => {
+    let docFunc = document.getElementById;
+    let getElem = docFunc.bind(document);
+    let elemVal = getElem('counter');
+    let counter = parseInt(elemVal.textContent, 10);
+    let sum = isNaN(counter) ? 0 : counter;
+    return sum;
+  };
+  const getPageAnchor = (page) => {
+    let url = page ? page : window.location.href;
+    // console.log(`page = ${url}`);
+    // let chk = url && url.indexOf('#') != 0;
+    // let ndx = url.indexOf('#');
+    // console.log(`condition == ${chk}, index = ${ndx}`);
+    if (url && url.indexOf('#') > 0) {
+      let tag = url.split('#')[1];
+      // console.log(`page tag = ${tag}`);
+      return tag;
+    }
+    return '';
+  };
+  const getPageUrl = (page) => {
+    let url = page ? page : window.location.href;
+    if (url && url.indexOf('#') != 0) {
+      let pageUrl = url.split('#')[0];
+      return pageUrl;
+    }
+    return url;
+  };
+  const setLocation = (tag, v) => {
+    event.stopPropagation();
+    // console.log(`tag = ${tag}, source = ${v}`);
+    if (typeof tag != 'undefined' && tag) {
+      let pageUrl = getPageUrl();
+      let anchor = tag == 'atop' ? '' : tag;
+      let url = `${pageUrl}#${anchor}`;
+      console.log(`set location = ${url}`);
+      window.location.replace(url);
+      if (tag == 'atop') {
+        window.scrollTo(0, 0);
+      } else try {
+        let query = document.querySelector.bind(document);
+        let anchor = query(`#${tag}`).offsetTop;
+        console.log(`anchor to #${tag} ...`);
+        window.scrollTop = anchor;
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    return false;
+  };
+  const showOnCounts = () => {
+    let counts = getCounts();
+    let starts = counts == 0 && atag == '';
+    let ataged = counts != 0 && atag != '';
+    console.log(`counts = ${counts}, atag = ${atag}`);
+    if (starts) {
+      setLocation('catg', 'showOnCounts');
+    } else if (ataged) {
+      showTags('atop');
+      clearSelection();
+    } else {
+      showTags(atag);
+    }
+    return false;
+  };
+  const showTags = (e = 'atop', nextLoc = '') => {
+    let chk = typeof e != 'string' || e == '';
+    let tag = chk ? getPageAnchor() : e;
+    console.log(`page anchor/tag = ${tag}`);
+    let aLoc = nextLoc ? nextLoc : tag;
+    let subtitle = '';
+    let showFunc = showBlogByClass;
+    switch (tag) {
+      case 'abba':
+        subtitle = "(ABBA Lyrics)";
+        break;
+      case 'adele':
+        subtitle = "(Adele Lyrics)";
+        break;
+      case 'boneym':
+        subtitle = "(Boney M Lyrics)";
+        break;
+      case 'epic':
+        subtitle = "(Epic Music)";
+        break;
+      case 'holly':
+        subtitle = "(Christian Songs)";
+        break;
+      case 'cl2e':
+        subtitle = "(Lyrics to English)";
+        break;
+      case 'el2c':
+        subtitle = "(Lyrics to Chinese)";
+        break;
+      case 'engp':
+        subtitle = "(english poems)";
+        break;
+      case 'dual':
+        subtitle = "(bilingual poems)";
+        break;
+      case 'show':
+        showFunc = showBlogByStar; // show both stars
+        subtitle = "☆☆☆★★";
+        break;
+      case 'view':
+        subtitle = "★★★";
+        break;
+      case 'zhyx':
+        showFunc = showBlogByName;
+        subtitle = "(by Jason)";
+        break;
+      case 'zhou':
+        showFunc = showBlogByName;
+        subtitle = "(by Lin)";
+        break;
+      default:
+        tag = 'atop';
+    }
+    console.log(`tag = ${tag}, subtitle = ${subtitle}`);
+    if (subtitle) {
+      atag = tag; // save selected tag
+      showFunc(tag).then(() => {
+        // console.log(`subtitle = ${subtitle}`);
+        showSubtitle(subtitle).then(() => {
+          setLocation(aLoc, subtitle);
+        });
+      });
+    } else {
+      setLocation(aLoc, 'all');
+      show();
+    }
+    return false;
+  };
+
+  window.onload = showTags;
+//-->
+</script>
+
+<link href="gelv/Images/smx-fangzhuan.png" rel="icon" type="image/x-icon">
+<link href="gelv/Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="gelv/Styles/shiji.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+  a {
+    border: none;
+    outline: none;
+    -moz-outline-style: none;
+    text-decoration: none;
+  }
+  a.goto {
+    content: "⇑"; /* "⇐" */
+    display: block;
+    font-size: smaller;
+    margin: -0.35em 0.75em 0.25em 0em;
+    text-align: right;
+    float: right;
+  }
+  a.goto:last-of-type {
+    visibility: hidden;
+    height: 0px;
+  }
+  a.goto:hover, a.goto:active {
+    color: darkorange;
+    font-size: larger;
+    font-weight: bold;
+  }
+  a.tags {
+    margin: 0em 0.125em;
+    padding: 0.125em 0.1em;
+    color: lightslategray;
+  }
+  a.tags:visited {
+    color: darkgray;
+  }
+  a.tags:active {
+    border: none;
+    border-bottom: dotted 0.075em powderblue;
+    color: darkslategray;
+  }
+  a.tags:focus {
+    border: none;
+    border-bottom: dotted 0.075em darkred;
+    border-top: dotted 0.075em darkred;
+    color: darkred;
+  }
+  a.tags:hover {
+    border: none;
+    border-radius: 0.25em;
+    background-color: powderblue;
+    color: darkslategray;
+  }
+
+  html, body, div.blog {
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    overflow-x: hidden; /* prevents horizontal scrolling */
+    width: 100vw !important;
+  }
+  body, p {
+    font-family: "Calibri", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif, serif;
+    font-size: 1.25em;
+  }
+
+  div > p.links {
+    font-size: smaller;
+    margin: 0.75em 0em 0.75em 0em;
+    white-space: nowrap;
+    text-align: center;
+  }
+  div.atoc {
+    margin: 0em 1.25em 0em 0;
+  }
+  div.center {
+    text-align: center;
+  }
+  div.catg {
+    color: darkgray;
+    cursor: default;
+    line-height: 2em;
+    white-space: nowrap;
+    width: 100%;
+  }
+  div.catg>span {
+    border-top: double 0.25em lightgray;
+    padding: 0.25em 0em;
+  }
+  div.catg>span a:hover, div.catg>span a:active {
+    background: gold;
+    border-radius: 0.25em;
+    margin: 0em -0.2em;
+    padding: 0em 0.2em;
+  }
+  div.catg p {
+    line-height: 0.5em;
+  }
+  div.pack {
+    letter-spacing: -0.05em;
+    left: 0.075em;
+  }
+  div.slim {
+    font-width: 95%; /* 75% = condensed */
+    font-variation-settings: "wdth" 95;
+    font-stretch: 95%; /* 75% = condensed */
+    left: -0.005em;
+    transform-origin: left top;
+    transform: scale(.95, 1);
+  }
+
+  div#acat {
+    color: gray;
+    cursor: default;
+    border-radius: 0.5em;
+    background-color: whitesmoke;
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 1.75em;
+    margin: 0.5em 0em 1em 0em;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  div#acat a {
+    color: darkred;
+    background-color: transparent;
+    border-radius: 0.25em;
+    border: dotted 0.05em darkred;
+    padding: 0.1em 0.25em;
+    margin: 0.35em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
+  }
+  div#acat a.tags {
+    font-size: smaller;
+  }
+  div#acat a.tags:hover {
+    background-color: lightskyblue;
+    border-color: powderblue;
+  }
+  div#acat span {
+    color: lightgray;
+  }
+
+  @keyframes op-start {
+    from {
+      background-color: skyblue;
+      border-radius: 1.5em;
+      height: 2em; width: 1em;
+      padding: 0.125em 0.75em 0em 0.25em;
+      opacity: 1; right: 39%;
+    }
+    to {
+      background-color: transparent;
+      opacity: 0.25;
+    }
+  }
+  div#goto {
+    opacity: 0.75;
+    position: fixed;
+    bottom: 1.75em; right: 1em;
+    border-radius: 0.25em 0em 0em 0em;
+    background-color: transparent;
+    line-height: 1.35em;
+    margin: 0.5em 0em 0em 0.5em;
+    padding: 0em 0.0em 0em 0em;
+    text-align: right;
+  }
+  #cbox {
+    display: none; /* hide always */
+  }
+  #cbox:checked ~ div#goto,
+  #cbox:checked ~ div#goto #hide,
+  div#goto:hover, div#goto:active {
+    opacity: 0.95;
+  }
+  #cbox:checked ~ div#goto div#menu,
+  div#goto:hover div#menu, div#goto:active div#menu {
+    display: block;
+    opacity: 0.95;
+  }
+  #cbox:checked ~ div#goto #aquo,
+  div#goto:hover #aquo, div#goto:active #aquo {
+    display: none;
+  }
+  div#goto #aquo {
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-name: op-start;
+    display: inline-block;
+    border-radius: 1em;
+    background-color: whitesmoke;
+    padding: 0.1em 0.5em 0.25em 0.5em;
+    height: 1em; width: 1.25em;
+    right: 1em; bottom: 1.75em;
+    position: fixed;
+    opacity: 0.5;
+  }
+  div#goto p {
+    line-height: 0.5em;
+    margin: 0.5em 0;
+  }
+  div#menu {
+    display: none;
+    background-color: whitesmoke;
+    border-radius: 0.5em 0em 0em 0em;
+    border: dotted 1px lightgray;
+    padding: 0.5em 1em;
+    position: relative;
+  }
+  div#menu #back {
+    display: inline-block;
+    background-color: beige;
+    border: solid 0.125em lightyellow;
+    border-radius: 1em;
+    font-size: larger;
+    font-weight: bold;
+    height: 1em; width: 1em;
+    margin: 0em -0.125em 0.5em 0;
+    padding: 0.1em 0.35em 0.25em 0.35em;
+    opacity: 1;
+  }
+  div#menu #hide {
+    float: left;
+    font-size: 1em;
+    color: darkslategray;
+    cursor: pointer;
+    border: none;
+    border-radius: 1em;
+    height: 1em; width: 1em;
+    left: 1.25em; top: 1.25em;
+    position: absolute;
+    margin: -0.25em -0.5em -0.5em -0.5em;
+    padding: 0em 1em 1em 0;
+    opacity: 0;
+  }
+  div#menu #hide:hover {
+    color: darkred;
+  }
+  div#home a {
+    display: block; width: 100%;
+  }
+  div#home {
+    background-color: #e0e0e0; /* whitesmoke */
+    position: relative;
+  }
+
+  div.blog {
+    display: flex;
+    border-top: dotted 0.25em lightgray;
+    border-radius: 0em 0em 1.75em 0em;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0.5em 0em;
+    page-break-before: always;
+    position: relative;
+    overflow-y: hidden;
+    gap: 1em;
+  }
+  div.blog:last-of-type { /* must be in a wrapper */
+    margin-bottom: 0.25em;
+    border-radius: 0;
+  }
+  div.blog:nth-of-type(even) {
+    background-color: aliceblue; /*
+    background-color: lavender;
+    background-color: azure;
+    */
+  }
+  div.blog:nth-of-type(odd) {
+    background-color: oldlace; /*
+    background-color: papayawhip;
+    background-color: seashell;
+    */
+  }
+  div.blog br {
+    border: none;
+    content: ' ';
+    height: 0.25em;
+    display: block;
+    margin-top: -1em;
+    padding: 0em;
+  }
+  div.blog em {
+    color: darkgray;
+    background-color: transparent;
+    border-top: double 0.25em lightgray;
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: "Segoe UI", "Tahoma", "Helvetica", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "zw", serif;
+    font-style: normal;
+    font-size: 0.75em;
+    margin-top: 0.75em;
+    padding: 0em;
+  }
+  div.blog i {
+    color: darkgray;
+  }
+  div.blog h3.t3, div.blog h4 {
+    border: none;
+    color: darkred;
+    display: inline-block;
+    font-family: "Calibri", "Segoe UI", Tahoma, Helvetica, Arial, "DK-XIHEITI", "STXihei", "细黑体", "xihei", "Microsoft YaHei", "微软雅黑", "微軟雅黑", sans-serif, serif;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0em 0em 0.5em;
+    white-space: nowrap;
+    text-align: left;
+    text-indent: 0em;
+  }
+  div.blog h4 {
+    color: darkolivegreen;
+  }
+  div.blog h3.t3 > a.sup:hover {
+    color: darkorange; font-size: large;
+  }
+  div.blog h3 a.sup {
+    font-size: 0.75em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  div.blog h3 em {
+    border: none;
+    vertical-align: top;
+    padding: 0em;
+    margin: 0em;
+  }
+
+  div.engp, div.show, div.view, div.zhou, div.zhyx {
+    position: relative;
+  }
+  div.geci, div.yuan, div.ying, div.tian, div.poem {
+    line-height: 1.5em;
+    margin: 0em 0.5em 0em 0em;
+    padding: 0em 0.5em 0em 0em;
+    white-space: pre;
+  }
+  div.geci, div.yuan, div.poem { /* 中文原词，Oringal lyrics */
+    border-radius: 3.9em;
+    border-right: dotted 1px lightgray;
+    color: darkslategray;
+    padding-left: 0.5em;
+  }
+  div.geci, div.tian, div.poem {
+    padding-left: 0.5em;
+    min-width: 20em;
+  }
+  div.ying, div.yuan {
+    padding-left: 0.5em;
+    min-width: 25em;
+  }
+  div.geci::after, div.yuan::after {
+    content: "";
+    background: lightgray;
+    bottom: 0px; right: 0px;
+    height: 90%;
+    position: relative;
+    width: 0.25em;
+  }
+  div.ying, div.tian, div.poem {
+    color: black;
+  }
+  div.text {
+    font-size: 0.85em;
+    line-height: 1.65em;
+    margin: 3.5em 1.5em 0em 0em;
+    padding: 0em 1em 1em 0em;
+    vertical-align: top;
+    white-space: normal;
+  }
+  div.text > div.note {
+    font-size: 1em;
+    color: darkslategray;
+    max-height: 32.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 25.5;
+    -webkit-box-orient: vertical;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  div.text > div.note > p.note {
+    font-size: 0.85em;
+  }
+  div.text pre {
+    font-size: 1.25em;
+  }
+
+  em a {
+    color: darkolivegreen;
+  }
+  em a:hover {
+    font-weight: bold;
+    color: darkorange;
+  }
+  sup {
+    color: darkgray;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Segoe UI", "Tahoma", "Arial", "DK-HEITI", "ht", "HeiTi", "STHeiti", "黑体", "黑體", "华文黑体", "Microsoft YaHei", "微软雅黑", "微軟雅黑", "Hiragino Sans GB", "sans-serif";
+  }
+  h1.h1 {
+    color: lightgray;
+    font-size: 2.25em;
+    background-color: cornflowerblue; /* dodgerblue; */
+    background-image: url('gelv/Images/smx-fangzhuan.png');
+    background-origin: content-box;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1.25em 1.5em;
+    border-bottom: solid cornflowerblue 1px;
+    line-height: 2.25em;
+    margin: 0em 0em 0.125em 0em;
+    padding: 0em 0.6em 0em 0.25em;
+    white-space: nowrap;
+    text-align: left;
+    text-indent: 0em;
+    cursor: pointer;
+  }
+  h1.h1 span#counter, h1.h1 span#subtitle {
+    vertical-align: super;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.5em;
+  }
+  h1.h1 span#counter, h1.h1 span#countAll {
+    vertical-align: top;
+    font-size: 0.3em;
+  }
+  h2.h2 {
+    color: beige;
+    border: none;
+    background-color: darkseagreen; /* dodgerblue; */
+    font-size: 1.25em;
+    line-height: 1.75em;
+    margin: 1.25em 0em 0em 0em;
+    padding: 0em 0.5em 0em 0.5em;
+    page-break-before: always;
+    position: relative;
+  }
+  h2.h2:hover {
+    background-color: steelblue; /* cornflowerblue; */
+  }
+  h2.h2 a.back, div#back a.back {
+    content: "\0020";
+    display: inline-block;
+    position: absolute;
+    bottom: 0px; right: 0px; top: -0.25em; left: 0px;
+    text-align: right;
+    title: "\21D2 Back to Category \21D0";
+    width: 100%;
+  }
+  h3.h3 {
+    display: block;
+    cursor: pointer;
+    background-color: #FFFF99;
+    border-right-width: 0.75em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    line-height: 2.75em;
+    margin: 0.125em 0em 0.25em 0em;
+    padding: 0em 0.75em 0em 0em;
+    page-break-before: avoid;
+    text-align: right;
+    text-indent: 0.25em;
+    vertical-align: middle;
+    white-space: nowrap;
+    user-select: none;
+  }
+  h3 span#hamb label {
+    color: darkslategray;
+    cursor: pointer;
+  }
+  h3 span#hbar {
+    display: inline-block;
+    flex-grow: 1;
+  }
+  h3 span#star {
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.95em;
+    color: silver; /* gainsboro */
+  }
+  h3 span#star i {
+    font-style: normal;
+    opacity: 0.5;
+  }
+  h3 span#star a em {
+    border-radius: 0.25em;
+    border: dotted 1px gray;
+    background-color: transparent;
+    font-size: 0.9em;
+    font-style: normal;
+    height: 1em; min-width: 1.25em;
+    padding: 0em 0.25em;
+  }
+  h3 span#nojs {
+    background-color: #FFFF99; /* match to h3 */
+    display: inline-block;
+    margin-left: -15em; /* overlap to left */
+    width: 15em;
+  }
+
+  ul {
+    display: block;
+    column-count: 2;
+    list-style: none;
+    line-height: 1.5em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em;
+    text-align: right;
+    vertical-align: baseline;
+    white-space: normal;
+    width: 100%;
+  }
+  ul li::after {
+    content: "\0020 ";
+  }
+  ul li:hover {
+    background-color: lavenderblush;
+  }
+  ul li {
+    display: inline-block;
+    margin: 0em 0em 0em 0em;
+    max-width: 50%; min-width: 25em;
+    padding: 0em 0em 0em 0em;
+    text-align: right;
+    text-indent: 0em;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 50%;
+  }
+  ul li em {
+    color: darkviolet;
+    display: inline;
+    border-radius: 1.5em;
+    border: dotted 1px slateblue;
+    padding: 0.3em 0.39em 0.3em 0.39em;
+    height: 0.5em;
+    width: 0.95em;
+  }
+  ul li kbd, ul li var {
+    color: darkgray;
+    font-size: 0.75em;
+    vertical-align: top;
+    quotes: none;
+  }
+  ul li q:first-child {
+    color: darkred;
+    font-size: 0.75em;
+    display: inline-block;
+    vertical-align: top;
+    quotes: none;
+  }
+  ul li u, ul li em {
+    font-size: 0.65em;
+    font-style: normal;
+    background-color: transparent;
+    margin: 0em 0.15em 0.25em 0.35em;
+    vertical-align: bottom;
+    text-decoration: none;
+  }
+  ul li u {
+    border-radius: 0.25em;
+    border: solid 1px darkolivegreen;
+    padding: 0.2em 0.25em 0.15em 0.25em;
+  }
+  ul li u:hover, ul li em:hover {
+    background-color: khaki;
+    border-color: darkkhaki;
+    color: darkred;
+  }
+  ul li u, span a.cu {
+    color: olive;
+  }
+  ul li.mulu b, span a.cp {
+    color: darkgreen; font-weight: normal;
+  }
+  ul li.ying b, span a.ep {
+    color: royalblue; font-weight: normal;
+  }
+  ul li.ying q {
+    color: brown;
+    quotes: none;
+  }
+  ul li.ying span, span a.ey {
+    color: midnightblue;
+  }
+  ul li.engp-li, ul li.show-li, ul li.view-li,
+  ul li.zhou-li, ul li.zhyx-li {
+    white-space: nowrap;
+  }
+  ul li a, span a.cy {
+    color: darkslategray;
+    z-index: 100;
+  }
+  ul li a {
+    font-family: "Calibri", "Segoe UI", "Tahoma", "Helvetica", "DK-FANGSONG", "仿宋", "Fangsong", "STFangsong", "STSong", "fangsong", "fs", "DK-KAITI", "KaiTi", "STKaiti", "kt", "楷體", "楷体", "zw", "Arial", "sans-serif", serif;
+  }
+  ul li a:hover, ul li span:hover {
+    color: darkorange;
+    font-weight: bold;
+  }
+  ul li i:hover {
+    color: brown;
+  }
+  ul li i {
+    color: lightgray;
+    font-size: 0.85em;
+    font-style: normal;
+    display: inline-block;
+    max-width: 5.0em; min-width: 5.0em;
+    padding-right: 0.25em;
+    text-align: right;
+    width: 5.0em;
+  }
+
+@media only screen
+ and (min-device-width: 100px)
+ and (max-device-width: 639px) {
+  body, div, p, ul {
+    font-size: 1.10em;
+  }
+  div.text {
+    display: none;
+  }
+}
+@media only screen
+ and (min-device-width: 640px)
+ and (max-device-width: 1199px) {
+  body, div, p {
+    font-size: 1.10em;
+  }
+}
+@media only screen
+ and (min-device-width: 1200px)
+ and (max-device-width: 1599px) {
+  body, div, p {
+    font-size: 1.15em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  div, p {
+    font-size: 1.10em;
+  }
+  ul {
+    font-size: 1.05em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    width: 100vw;
+  }
+  div.geci, div.yuan { /* 中文原词，Oringal lyrics */
+    border: none;
+    line-height: 2.75em;
+    margin: 0em 0em 1.25em 0.5em;
+  }
+  div.geci > em, div.yuan > em {
+    padding-left: 0.05em;
+  }
+  div.tian, div.ying { /* 中文填词，英文译词 */
+    border: none;
+    line-height: 2.75em;
+    padding: 1.35em 0em 1.55em 1.05em;
+    position: absolute;
+  }
+  div.blog h3.t3 {
+    display: inline-block;
+    padding-bottom: 1em;
+    vertical-align: top;
+  }
+  div.tian em, div.ying em {
+    border: none;
+  }
+  div.blog br {
+    margin: -1.05em 0em;
+  }
+  div.poem br {
+    margin: -0.5em 0em;
+  }
+  ul li::after {
+    content: "\0020\2022"; color: lightgray;
+  }
+  ul li {
+    margin: 0px;
+    max-width: 100%; min-width: 21em;
+    padding: 0em 0.35em 0em 0em;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+    /*
+    column-count: 1;
+    */
+  }
+}
+@media print {
+  a.goto, h3.t3 > a.sup {
+    visibility: hidden;
+  }
+  h2.h2 {
+    margin-top: 9%;
+  }
+}
+@media only print  and (max-width: 33em) {
+  div.geci, div.yuan, div.text { /* 中文原词，Oringal lyrics */
+    display: none;
+  }
+  ul {
+    column-count: 1;
+  }
+}
+@media only print  and (min-width: 32em) {
+  div.geci { /* 中文原词，Oringal lyrics */
+    min-width: 15em;
+  }
+}
+</style>
+</head>
+<body>
+<a id="abba" name="abba"></a><!--anchor: abba-->
+<a id="adele" name="adele"></a><!--anchor: adele-->
+<a id="boneym" name="boneym"></a><!--anchor: boneym-->
+<a id="holly" name="holly"></a><!--anchor: holly-->
+<a id="epic" name="epic"></a><!--anchor: holly-->
+<a id="cl2e" name="cl2e"></a><!--anchor: cl2e-->
+<a id="el2c" name="el2c"></a><!--anchor: el2c-->
+<a id="engp" name="engp"></a><!--anchor: engp-->
+<a id="show" name="show"></a><!--anchor: show-->
+<a id="view" name="view"></a><!--anchor: view-->
+<a id="zhou" name="zhou"></a><!--anchor: zhou-->
+
+<!--Heading Title Bar-->
+<h1 id="atop" class="h1" title="Lyrics and Poems"
+    onclick="return showOnCounts()">纱糸轩诗歌集
+  <span id="subtitle"></span><span id="counter"></span><span id="countAll"></span>
+</h1>
+
+<!--toc and tags heading-->
+<h3 id="atoc" class="h3">
+  <span id="hbar" title="by category or tag"
+    onclick="return setLocation('catg', 'h3')">&nbsp;</span>
+  <span id="star" class="noprint"><a
+    href="#show" onclick="return showTags('show')"
+    title="show ☆☆☆" type="button"
+    class="tags">&star;</a><i>&bull;</i><a
+    href="#engp" onclick="return showTags('engp')"
+    title="english poems" type="button"
+    class="tags"><em>E</em></a><i>&bull;</i><a
+    href="#view" onclick="return showTags('view')"
+    title="view ★★★" type="button"
+    class="tags">&starf;</a><i>|</i><a
+    href="#zhyx" onclick="return showTags('zhyx')"
+    title="show by Jason" type="button"
+    class="tags">Jason</a><i>|</i><a
+    href="#zhou" onclick="return showTags('zhou')"
+    title="show by Lin" type="button"
+    class="tags">Lin</a><i>|</i><a
+    href="#acat" onclick="return showTags('atop')"
+    title="show all" type="button"
+    class="tags">All</a><i>|</i>
+  <noscript><span id="nojs">
+    <a href="#acat" title="Category">分类</a>｜
+  </span></noscript>
+  <span id="hamb" title="quick menu toggle">
+    <label for="cbox">&equiv;</label>
+  </span><i>|</i>
+  </span>
+  <span>目录</span>
+</h3>
+<input id="cbox" name="cbox" type="checkbox" hidden />
+
+<div class="atoc" name="atoc">
+<ul><!--start toc-->
+  <li id="d20080202x" class="ying engp-li show-li" name="zhou-li"><a href="#p20080202x" title="Somnambulate"><em title="周琳作品">周</em> <u title="English poem">E</u> <b>Night Mystery</b>〖<q>梦游</q>〗 <i>2008.02.02.</i></a></li>
+  <li id="d20080207x" class="ying" name="zhyx-li"><a href="#p20080207x" title="Do You Cheer, Do You Hear?"> <b>Do You Hear</b>〖两只老虎〗 <i>2008.02.07.</i></a></li>
+  <li id="d20080415x" class="ying engp-li" name="zhyx-li"><a href="#p20080415x" title=""> <b>One Day No See</b>〖一日不見〗 <i>2008.04.15.</i></a></li>
+<!--
+  <li id="d20001231x" name="name-li"><a href="#p20001231x">【】 <i></i></a></li>
+-->
+</ul><!-- end toc-->
+<p><br/></p>
+</div>
+
+<div class="content"><!-- the blog wrapper -->
+<!--Category List-->
+<a id="zhyx" name="zhyx"></a><!--anchor: zhyx-->
+<div id="catg" class="catg center"><span>英文〖
+  <a class="ep" onclick="return setLocation('english-poems')"
+    href="#english-poems" title="English Poems">诗歌</a> |
+  <a class="ey" onclick="return setLocation('english-lyrics')"
+    href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
+  <a class="cy" onclick="return setLocation('chinese-lyrics')"
+    href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
+  <a class="cp" onclick="return setLocation('chinese-poems')"
+    href="#chinese-poems" title="Chinese Poems">诗词</a> |
+  <a class="cu" onclick="return setLocation('chinese-dayou')"
+    href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文
+</span>
+<p class="catg center links"> &raquo;
+  <a href="https://divertidalz.blogspot.com/search/label/Poem"
+     title="divertialz poems blog"
+     target="_blog">poems</a>
+  <a href="https://divertidalz.blogspot.com/search/label/Poem"
+     title="divertialz poems blog"
+     target="_blog">blog</a> &bull;
+  <a href="./shiji.html" target="_blog"
+     title="Jason's poetry">poetry</a> &bull;
+  <a href="https://dockerian.github.io" target="_"
+     title="dockerian home">dockerian</a> &bull;
+  <a href="./gelv" target="_blog"
+     title="collection and tools">misc</a> &laquo;
+  <br/>
+</p>
+</div><!--#catg-->
+<!--anchor links-->
+<a onclick="return setLocation('atop', '⇑')"
+  href="#atop" class="goto">⇑</a>
+<a onclick="return setLocation('atoc', '⇐')"
+  href="#atoc" class="goto">⇐</a>
+
+
+
+<!--Start Blogs-->
+<h2 class="h2" onclick="return setLocation('atop', 'h2')"
+  id="english-poems">英文诗歌 (English Poems)</h2>
+
+
+
+
+<!--英文诗歌-->
+<div class="blog engp dual show" name="zhou">
+<div class="geci"><h3 class="t3 geci" id="p20080202x">非打油者，「夢油」是也 <em></em></h3>
+  无眠的灵魂
+  在四处游荡
+  寂静的冬夜里
+  传来一声门响
+  黑暗的恐惧
+  堆积莫名的紧张
+  心中的怪想
+  仿佛最後的抵抗
+  借着微弱灯光
+  我迷朦地张望
+  轻轻走过的
+  原来是俺娘
+<br/>
+<em>没头脑 2008.02.02.</em>
+</div>
+<div class="ying"><h3 class="t3 ying">Night Mystery  <em>(2008)</em> <em><a class="sup" href="#d20080202x" title="2008.02.02">&#11139;&nbsp;</a></em></h3>
+  A sleepless soul
+  in the night of winter
+  Stillness in stillness
+  dream came out to wander
+  The dark was deeper
+  the dread was bigger
+  As puzzle built up fever
+  nightmare seized thriller
+  Shadow of a feather
+  sunk heart like a hammer
+  Gently into the picture
+  - it was my dear mother
+<br/>
+<em>Conjugal doggerel series, by Divertida LZ</em>
+</div>
+</div><!-- blog -->
+<a href="#english-poems" class="goto">⇑</a>
+
+
+<!--英文诗歌-->
+<div class="blog" name="zhyx">
+<div class="geci slim"><h3 class="t3 geci" id="p20080207x">两只老虎<em></em></h3>
+<h4 class="h4">儿歌版</h4>
+  两只老虎，两只老虎，
+  跑得快，跑得快，
+  一只没有耳朵（眼睛），一只没有尾巴，
+  真奇怪！真奇怪！<br/>
+<h4 class="h4">附原版 (<a href="http://en.wikipedia.org/wiki/Fr%C3%A8re_Jacques" target="_blank">Frère Jacques</a>)</h4>
+  睡眼朦胧，睡眼朦胧
+  约翰兄，约翰兄？
+  外面响起晨钟，外面响起晨钟
+  叮、铛、咚！叮、铛、咚！<br/>
+<em>2008.02.07.</em>
+</div>
+<div class="ying slim"><h3 class="t3 ying">Do You Hear <em>(2008)</em> <em><a class="sup" href="#d20080207x" title="2008.02.07">&#11139;&nbsp;</a></em></h3>
+<h4 class="h4">+ English Translation</h4>
+  There're two tigers, there're two tigers
+  Ran like deers, ran like deers
+  One had no tail, one had no ear
+  It's so weird, it's so queer<br/>
+<h4 class="h4">+ My English version</h4>
+  Do you cheer, do you hear?
+  I am here, I am near
+  Do you like to stare? Don't you have to fear?
+  Oh my deer, oh my dear
+<br/>
+<em><i>Lyrics by </i> Jason Zhu</em>
+</div>
+</div><!-- blog -->
+<a href="#english-poems" class="goto">⇑</a>
+
+
+<!--英文译诗-->
+<div class="blog engp" name="zhyx">
+<div class="geci"><h3 class="t3 geci" id="p20080415x">一日不見 <em></em></h3>
+  彼采葛兮。
+  一日不见，如三月兮。
+  彼采萧兮。
+  一日不见，如三秋兮。
+  彼采艾兮。
+  一日不见，如三岁兮。<br/>
+<em>原作出自《诗经•王风•采葛》</em>
+</div>
+<div class="ying"><h3 class="t3 ying">One Day No See <em>(2008)</em> <em><a class="sup" href="#d20080415x" title="2008.04.15">&#11139;&nbsp;</a></em></h3>
+  One month no mail, No bail in jail
+  One week no see, Far from the sea
+  One day no call, Long as one fall
+  And far and long, I sing this song
+  As far as long, I send this poem
+  <br/>
+<em>英译：舟山 2008.04.15.</em>
+</div>
+</div><!-- blog -->
+<a href="#english-poems" class="goto">⇑</a>
+
+
+<!--英文译词--><!--
+<div class="blog" name="zhxx">
+<div class="geci"><h3 class="t3 geci" id="p20yymmdd"> <em>〖原词〗</em></h3>
+<em>作曲：；作词：；原唱：</em>
+</div>
+<div class="ying"><h3 class="t3 ying"> <em><a class="sup" href="#d20yymmdd" title="">&#11139;&nbsp;</a></em></h3>
+<em>填词：舟山 20</em>
+</div>
+</div>--><!-- blog --><!--
+<a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
+-->
+
+
+<!--英文译词--><!--
+<div class="blog cl2e" name="zhxx">
+<div class="geci"><h3 class="t3 geci" id="p20yymmdd"> <em>〖原词〗</em></h3>
+<em>作曲：；作词：；原唱：</em>
+</div>
+<div class="ying"><h3 class="t3 ying"> <em><a class="sup" href="#d20yymmdd" title="">&#11139;&nbsp;</a></em></h3>
+<em>填词：舟山 20yy</em>
+</div>
+</div>--><!-- blog --><!--
+<a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
+-->
+
+
+
+
+<h2 class="h2" onclick="return setLocation('catg', 'h2')" id="chinese-lyrics">中文填词 (Chinese Lyrics)</h2>
+
+
+
+
+<!--中文填词--><!--
+<div class="blog el2c" name="zhxx">
+<div class="yuan"><h3 class="t3 yuan" id="p20x"> <em></em></h3>
+<em><i>Song by </i> </em>
+</div>
+<div class="tian"><h3 class="t3 tian"> <em>【填词】</em><em><a class="sup" href="#d20x" title="">&#11139;&nbsp;</a></em></h3>
+<em>中文填词 20</em>
+</div>
+</div>--><!-- blog --><!--
+<a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
+-->
+
+
+
+
+<!--Bottom-Left Anchor-->
+<div id="goto" class="noprint">
+  <span id="aquo">&laquo;</span>
+<div id="menu" class="noprint">
+  <span title="Close menu">
+    <label id="hide" for="cbox">ⓧ</label><!--&#9447;-->
+  </span>
+<div id="acat" class="noprint">
+  <a href="#atoc" title="⇐ Back to TOC ⇒"
+     onclick="return setLocation('atoc', 'acat')">目录</a><br/>
+  <a href="#catg" title="⇐ Back to Category ⇒"
+     onclick="return setLocation('catg', 'acat')">分类</a>
+  <br/>
+  <a href="#abba" title="ABBA Lyrics" class="tags"
+     onclick="return showTags('abba')">ABBA</a>
+  <a href="#boneym" title="Boney M Lyrics" class="tags"
+     onclick="return showTags('boneym')">Boney M</a>
+  <br/>
+  <a href="#adele" title="Adele Lyrics" class="tags"
+     onclick="return showTags('adele')">Adele</a>
+  <a href="#holly" title="Christian Lyrics" class="tags"
+     onclick="return showTags('holly')">Holly Songs</a>
+  <a href="#epic" title="Epic Lyrics" class="tags"
+     onclick="return showTags('epic')">Epic</a>
+  <br/>
+  <a href="#dual" title="Bilingual Poems" class="tags"
+     onclick="return showTags('dual')">DL</a>
+  Lyrics:
+  <a href="#el2c" title="Lyrics to Chinese" class="tags"
+     onclick="return showTags('el2c')">Ch</a>
+  <a href="#cl2e" title="Lyrics to English" class="tags"
+     onclick="return showTags('cl2e')">En</a>
+  <br/>
+  <a href="#zhyx" title="Show by Jason" class="tags"
+     onclick="return showTags('zhyx')">Jason</a>
+  <a href="#zhou" title="Show by Lin" class="tags"
+     onclick="return showTags('zhou')">Lin</a>
+  <a href="#atop" title="Show all" class="tags"
+     onclick="return showTags('atop')">All</a>
+  <br/>
+  <a href="#show" title="Show ☆☆☆" class="tags"
+     onclick="return showTags('show')">&star;</a>
+  <a href="#engp" title="English poems" class="tags"
+     onclick="return showTags('engp')">E</a>
+  <a href="#view" title="Select ★★★" class="tags"
+     onclick="return showTags('view')">&starf;</a>
+  <p><span>………………</span></p>
+  <span title="English">英语</span>
+  &middot; <a onclick="return setLocation('english-poems')"
+    href="#english-poems" title="English Poems">诗歌</a><br/>
+  &middot; <a onclick="return setLocation('english-lyrics')"
+    href="#english-lyrics" title="English Lyrics">译词</a><br/>
+  <span title="Chinese">中文</span>
+  &middot; <a onclick="return setLocation('chinese-lyrics')"
+    href="#chinese-lyrics" title="Chinese Lyrics">填词</a><br/>
+  &middot; <a onclick="return setLocation('chinese-poems')"
+    href="#chinese-poems" title="Chinese Poems">诗词</a><br/>
+  &middot; <a onclick="return setLocation('chinese-dayou')"
+    href="#chinese-dayou" title="Chinese Etc.">白话</a><br/>
+</div><!--#acat-->
+  <span id="back"><a href="#atop" class="noprint"
+    onclick="return setLocation('atop', 'id-back')"
+    title="⇧ Back to Home ⇧"><span>⇧</span></a>
+  </span>
+</div><!--#menu-->
+</div><!--#goto-->
+
+<!--Category List-->
+<div class="catg center">
+  <a href="#atop" title="show all lyrics/poems"
+     class="tags" onclick="return showTags('atop')">
+     Show All</a> |
+  <span>英文〖
+  <a class="ep" href="#english-poems" title="English Poems">诗歌</a> |
+  <a class="ey" href="#english-lyrics" title="English Lyrics">译词</a> 〗|【
+  <a class="cy" href="#chinese-lyrics" title="Chinese Lyrics">填词</a> |
+  <a class="cp" href="#chinese-poems" title="Chinese Poems">诗词</a> |
+  <a class="cu" href="#chinese-dayou" title="Chinese Etc.">白话</a> 】中文 |
+  <a href="#atop" title="显示所有诗歌" class="tags"
+     onclick="return showTags('atop')">全</a>
+  </span>
+
+  <p class="catg center links"> &raquo;
+    <a href="https://divertidalz.blogspot.com/"
+       title="divertialz blog"
+       target="_blog">blog</a> &bull;
+    <a href="./shiji.html" target="_blog"
+       title="Jason's poetry">poetry</a> &bull;
+    <a href="https://dockerian.github.io" target="_"
+       title="dockerian home">dockerian</a> &bull;
+    <a href="./gelv" target="_blog"
+       title="collection and tools">misc</a> &laquo;
+  </p>
+  <div id="home" class="noprint">
+    <a href="#atop" class="noprint"
+       onclick="return setLocation('atop', 'id-home')"
+       title="⟰ Back to Title ⟰">&#8679;</a>
+  </div>
+</div><!--bottom category list-->
+
+<!--END-->
+</body>
+</html>

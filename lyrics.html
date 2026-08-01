@@ -242,6 +242,9 @@
       case 'boneym':
         subtitle = "(Boney M Lyrics)";
         break;
+      case 'epic':
+        subtitle = "(Epic Music)";
+        break;
       case 'holly':
         subtitle = "(Christian Songs)";
         break;
@@ -309,7 +312,7 @@
     content: "⇑"; /* "⇐" */
     display: block;
     font-size: smaller;
-    margin: -0.35em 0.25em 0.25em 0em;
+    margin: -0.35em 0.75em 0.25em 0em;
     text-align: right;
     float: right;
   }
@@ -392,16 +395,16 @@
     line-height: 0.5em;
   }
   div.pack {
-    letter-spacing: -1.25px;
+    letter-spacing: -0.05em;
+    left: 0.075em;
   }
   div.slim {
-    font-width: condensed; /* 75% */
-    font-variation-settings: "wdth" 75;
-    font-stretch: condensed; /* 75% */
-    left: 0.25em;
+    font-width: 95%; /* 75% = condensed */
+    font-variation-settings: "wdth" 95;
+    font-stretch: 95%; /* 75% = condensed */
+    left: -0.005em;
     transform-origin: left top;
-    transform: scale(.75, 1);
-    text-align: text;
+    transform: scale(.95, 1);
   }
 
   div#acat {
@@ -837,7 +840,7 @@
     display: inline;
     border-radius: 1.5em;
     border: dotted 1px slateblue;
-    padding: 0.25em 0.39em 0.35em 0.39em;
+    padding: 0.3em 0.39em 0.3em 0.39em;
     height: 0.5em;
     width: 0.95em;
   }
@@ -865,7 +868,7 @@
   ul li u {
     border-radius: 0.25em;
     border: solid 1px darkolivegreen;
-    padding: 0em 0.2em 0.15em 0.2em;
+    padding: 0.2em 0.25em 0.15em 0.25em;
   }
   ul li u:hover, ul li em:hover {
     background-color: khaki;
@@ -943,7 +946,7 @@
 }
 @media only screen and (min-width: 1600px) {
   div, p {
-    font-size: 1.20em;
+    font-size: 1.10em;
   }
   ul {
     font-size: 1.05em;
@@ -958,10 +961,13 @@
     line-height: 2.75em;
     margin: 0em 0em 1.25em 0.5em;
   }
+  div.geci > em, div.yuan > em {
+    padding-left: 0.05em;
+  }
   div.tian, div.ying { /* 中文填词，英文译词 */
     border: none;
     line-height: 2.75em;
-    padding: 1.25em 0em 1.55em 1em;
+    padding: 1.35em 0em 1.55em 1.05em;
     position: absolute;
   }
   div.blog h3.t3 {
@@ -1026,6 +1032,7 @@
 <a id="adele" name="adele"></a><!--anchor: adele-->
 <a id="boneym" name="boneym"></a><!--anchor: boneym-->
 <a id="holly" name="holly"></a><!--anchor: holly-->
+<a id="epic" name="epic"></a><!--anchor: holly-->
 <a id="cl2e" name="cl2e"></a><!--anchor: cl2e-->
 <a id="el2c" name="el2c"></a><!--anchor: el2c-->
 <a id="engp" name="engp"></a><!--anchor: engp-->
@@ -1090,7 +1097,7 @@
   <li id="d20080301c" class="abba-li el2c-li show-li" name="zhyx-li"><a href="#p20080301c"><q>☆</q> <u>ABBA</u> Chiquitita【惜惜其佳】 <i>2008.03.01.</i></a></li>
   <li id="d20080301d" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301d"><u>ABBA</u> Dancing Queen【舞之情】 <i>2008.03.01.</i></a></li>
   <li id="d20080301e" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301e"><u>ABBA</u> Eagle【飞鹰】 <i>2008.03.01.</i></a></li>
-  <li id="d20080301f" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
+  <li id="d20080301f" class="abba-li el2c-li epic-li" name="zhyx-li"><a href="#p20080301f"><u>ABBA</u> Fernando【费尔南多】 <i>2008.03.01.</i></a></li>
   <li id="d20080301h" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301h"><u>ABBA</u> I Have A Dream【我的梦】 <i>2008.03.01.</i></a></li>
   <li id="d20080301m" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301m"><u>ABBA</u> Move On【生活的航程】 <i>2008.03.01.</i></a></li>
   <li id="d20080301o" class="abba-li el2c-li show-li" name="zhyx-li"><a href="#p20080301o"><q>☆</q> <u>ABBA</u> One Of Us【你我之间】 <i>2008.03.01.</i></a></li>
@@ -1099,13 +1106,13 @@
   <li id="d20080301x" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301x"><u>ABBA</u> Thank You For The Music【感谢音乐】 <i>2008.03.01.</i></a></li>
   <li id="d20080301w" class="abba-li el2c-li" name="zhyx-li"><a href="#p20080301w" title="The Winner Takes It All (ABBA)"><u>ABBA</u> The Winner Takes ...【你赢了我所有】 <i>2008.03.01.</i></a></li>
   <li id="d20080426d" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426d"><u title="Boney M">B/M</u> Daddy Cool【爸爸真酷】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426e" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426e" class="boneym-li el2c-li epic-li" name="zhyx-li"><a href="#p20080426e"><u title="Boney M">B/M</u> El Lute【好汉鲁达】 <i>2008.04.26.</i></a></li>
   <li id="d20080426h" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426h"><u title="Boney M">B/M</u> Hooray, Hooray!【小妹】 <i>2008.04.26.</i></a></li>
   <li id="d20080426a" class="boneym-li el2c-li holly-li show-li" name="zhyx-li"><q>☆</q> <a href="#p20080426a"><u title="Christian song">H</u><u title="Boney M">B/M</u> I'm Born Again【我的新生】 <i>2008.04.26.</i></a></li>
   <li id="d20080426b" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426b"><u title="Boney M">B/M</u> I See A Boat On The River【远行的船】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426c" class="boneym-li el2c-li holly-li" name="zhyx-li"><a href="#p20080426c"><u title="Christian song">H</u><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426c" class="boneym-li el2c-li holly-li epic-li" name="zhyx-li"><a href="#p20080426c"><u title="Christian song">H</u><u title="Boney M">B/M</u> Mary's Boy Child【玛丽的孩子】 <i>2008.04.26.</i></a></li>
   <li id="d20080426o" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426o"><u title="Boney M">B/M</u> Ocean Of Fantasy【大海幻想曲】 <i>2008.04.26.</i></a></li>
-  <li id="d20080426v" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
+  <li id="d20080426v" class="boneym-li el2c-li epic-li" name="zhyx-li"><a href="#p20080426v"><u title="Boney M">B/M</u> Rivers Of Babylon【巴比伦之河】 <i>2008.04.26.</i></a></li>
   <li id="d20080426s" class="boneym-li el2c-li" name="zhyx-li"><a href="#p20080426s"><u title="Boney M">B/M</u> Sunny【想你】 <i>2008.04.26.</i></a></li>
   <li id="d20080730x" class="el2c-li show-li" name="zhyx-li"><a href="#p20080730x" title="Never Gonna Fall In Love Again"><q>☆</q> Never Gonna Fall ...【今夜逝去情不再】 <i>2008.07.30.</i></a></li>
   <li id="d20081229x" class="ying engp-li" name="zhyx-li"><a href="#p20081229x"><u title="English poem">E</u> <b>A Little Too Little</b>〖经济杂言〗 <i>2008.12.29.</i></a></li>
@@ -1143,7 +1150,7 @@
   <li id="d20110202x" class="ying engp-li show-li" name="zhyx-li"><a href="#p20110202x" title="Happy Chinese New Year"> <u title="English poem">E</u> <b>Chinese New Year</b>〖新年致辞〗 <i>2011.02.02.</i></a></li>
   <li id="d20110214x" class="ying engp-li dual-li show-li" name="zhou-li"><a href="#p20110214x" title="My Valentine"><q>☆</q> <em title="周琳作品">周</em> <u title="English poem">E</u> <b>My Valentine</b>〖致宇昕〗 <i>2011.02.14.</i></a></li>
   <li id="d20110318x" class="ying cl2e-li engp-li show-li" name="zhyx-li"><a href="#p20110318x"> <u title="English lyrics">L</u> <span>Legend</span>〖傳奇〗 <i>2011.03.18.</i></a></li>
-  <li id="d20110318p" class="ying cl2e-li engp-li show-li" name="zhyx-li"><a href="#p20110318p"><q>☆</q> <u title="English lyrics">L</u> <span>Coming From The Prairie</span>〖我從草原來〗 <i>2011.03.18.</i></a></li>
+  <li id="d20110318p" class="ying cl2e-li engp-li epic-li show-li" name="zhyx-li"><a href="#p20110318p"><q>☆</q> <u title="English lyrics">L</u> <span>Coming From The Prairie</span>〖我從草原來〗 <i>2011.03.18.</i></a></li>
   <li id="d20120923x" class="mulu show-li" name="zhou-li"><a href="./shiji.html#a2012-zhyx" title="Happy Birthday Acrostic Poem to Jason" target="_blog"><var>*</var> <em title="周琳填词">周</em> <b>Birthday Song</b>【西江月】 <i>2012.09.23</i></a></li>
   <li id="d20120930x" class="mulu show-li" name="zhou-li"><a href="./shiji.html#a2012-egon" title="" target="_blog"><var>*</var> <em title="周琳作品">周</em> <b>Oregon Coast</b>【五言·俄州海岸】 <i>2012.09.30</i></a></li>
   <li id="d20120321x" class="adele-li el2c-li" name="zhyx-li"><a href="#p20120321x"><em title="Song by Adele">A</em> Set Fire To The Rain【雨落情逝心已焚】 <i>2012.03.21.</i></a></li>
@@ -1181,7 +1188,7 @@
   <li id="d20250611x" class="dual-li" name="zhyx-li"><a href="#p20250611x" title="Zihuatanejo"><u>新骈俪</u> <span>Zihuatanejo</span>【夏日芝华】 <i>2025.06.11.</i></a></li>
   <li id="d20250816x" class="ying cl2e-li engp-li view-li" name="zhyx-li"><a href="#p20250816x"><q>☆</q> <u title="English lyrics">L</u> <span>A Knight's Wild Heart</span>〖一笑江湖〗 <i>2025.08.16.</i></a></li>
   <li id="d20250825x" class="ying engp-li dual-li show-li" name="zhyx-li"><a href="#p20250825x"><kbd>*</kbd> <u title="English poem">E</u> <b>Golden Leisure</b>〖行香子·致友〗 <i>2025.08.25.</i></a></li>
-  <li id="d20250831x" class="ying cl2e-li engp-li view-li" name="zhyx-li"><a href="#p20250831x"><q>☆</q> <u title="English lyrics">L</u> <span>Crossing the Hill</span>〖越过山丘〗 <i>2025.08.31.</i></a></li>
+  <li id="d20250831x" class="ying cl2e-li engp-li epic-li view-li" name="zhyx-li"><a href="#p20250831x"><q>☆</q> <u title="English lyrics">L</u> <span>Crossing the Hill</span>〖越过山丘〗 <i>2025.08.31.</i></a></li>
   <li id="d20250920x" class="el2c-li show-li" name="zhyx-li"><a href="#p20250920x" title="Levitating (2020 by Dua Lipa)"><q>☆</q> Levitating【爱意未停】 <i>2025.09.20.</i></a></li>
   <li id="d20251002x" class="ying engp-li show-li" name="zhyx-li"><a href="#p20251002x" title="Lyrics translation in English"><u title="English poems">E</u> <b>Nostalgia by Riverside</b>〖临江仙〗 <i>2025.10.02.</i></a></li>
   <li id="d20251011x" class="ying cl2e-li engp-li view-li" name="zhyx-li"><a href="#p20251011x"><q>☆</q> <u title="English lyrics">L</u> <span>The Rightful World</span>〖人间道〗 <i>2025.10.11.</i></a></li>
@@ -1236,7 +1243,7 @@
 
 <!--英文译诗-->
 <div class="blog engp view" name="zhyx">
-<div class="poem pack"><h3 class="t3" id="p20010101x">The Three Realms <em>(2001)</em></h3>
+<div class="poem slim"><h3 class="t3" id="p20010101x">The Three Realms <em>(2001)</em></h3>
 <h4 class="h4">1. Seek, see, and set a goal</h4>
   “Butterfly Loves Flower”
    – by Yan-Shu (991~1055):
@@ -1671,7 +1678,7 @@
   寂静　欢喜　　　　　　　<br/>
 <em>原作：第六世达赖喇嘛·仓央嘉措</em>
 </div>
-<div class="ying pack"><h3 class="t3 ying">Love Poem by Tsangyang Gyatso <em><a class="sup" href="#d20100923p" title="2010.09.23">&#11139;&nbsp;</a></em></h3>
+<div class="ying slim"><h3 class="t3 ying">Love Poem by Tsangyang Gyatso <em><a class="sup" href="#d20100923p" title="2010.09.23">&#11139;&nbsp;</a></em></h3>
   You see me, or not see me
   I am there - not sad, nor happy
   You miss me, or not miss me
@@ -1852,7 +1859,7 @@
 
 <!--英文诗歌-->
 <div class="blog engp" name="zhou">
-<div class="poem pack"><h3 class="t3 poem" id="p20110111x">Farewell to Sharon <em>(2011.01.11)</em></h3>
+<div class="poem"><h3 class="t3 poem" id="p20110111x">Farewell to Sharon <em>(2011.01.11)</em></h3>
   This is to Dr. McGavick, Sharon
   The President always has passion
   She gives us the direction
@@ -1921,7 +1928,7 @@
 
 <!--英文诗歌-->
 <div class="blog engp dual show" name="zhou">
-<div class="geci pack"><h3 class="t3 geci" id="p20110214x">情人节致宇昕</h3>
+<div class="geci"><h3 class="t3 geci" id="p20110214x">情人节致宇昕</h3>
   無所謂人生
   是不是無奈
   不去想如何
@@ -1937,7 +1944,7 @@
   　　───Valentine<br/>
 <em>By Divertida LZ - 2014.02.14.</em>
 </div>
-<div class="ying pack"><h3 class="t3 ying">Happy Valentine's Day <em>(2011)</em> <em><a class="sup" href="#d20110214x" title="2011.02.14">&#11139;&nbsp;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Happy Valentine's Day <em>(2011)</em> <em><a class="sup" href="#d20110214x" title="2011.02.14">&#11139;&nbsp;</a></em></h3>
   Sometimes life could be rough and divine
   Sometimes love could be hard to define
   From the day I met you
@@ -2253,7 +2260,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp show" name="zhyx">
-<div class="geci pack"><h3 class="t3 geci" id="p20110318x">傳奇 <em>〖原词〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20110318x">傳奇 <em>〖原词〗</em></h3>
   只因为在人群中多看了你一眼
   再也没能忘掉你的容颜
   梦想着偶然能有一天
@@ -2281,7 +2288,7 @@
   宁愿用这一生等你发现
   我一直在你身旁　从未走远……<br/>
 <em>作曲：李健；作詞：劉兵</em></div>
-<div class="ying pack"><h3 class="t3 ying">Legend <em>(2011.03.18)</em> <em><a class="sup" href="#d20110318x" title="2011.03.18.">&#11139;&nbsp;</a></em></h3>
+<div class="ying"><h3 class="t3 ying">Legend <em>(2011.03.18)</em> <em><a class="sup" href="#d20110318x" title="2011.03.18.">&#11139;&nbsp;</a></em></h3>
   Since in the crowd I had one more glance
   Never forget the day of your appearance
   Dreaming in my dream there's a chance
@@ -2315,8 +2322,8 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp show" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20110318p">我從草原來 <em>〖原词〗</em></h3>
+<div class="blog cl2e engp epic show" name="zhyx">
+<div class="geci"><h3 class="t3 geci" id="p20110318p">我從草原來 <em>〖原词〗</em></h3>
   我立马千山外，听风唱着天籁
   岁月已经更改，心胸依然自在
   我放歌万里外，明月与我同在
@@ -2329,7 +2336,7 @@
   　吹来我的爱，这花香的海
   　我从草原来，温暖你心怀
   　不变我的情，那天蓝的爱<br/>
-  ※说唱※雲白，白出了毡房华盖
+  ＊说唱＊雲白，白出了毡房华盖
   　　　　草绿，绿出了绵延如海
   　　　　花红，红出了急风烈马
   　　　　酒醉，醉出了一生所爱<br/>
@@ -2360,7 +2367,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp view" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20130602x">海闊天空 <em>〖原词〗</em></h3>
+<div class="geci pack"><h3 class="t3 geci" id="p20130602x">海闊天空 <em>〖原词〗</em></h3>
   今天我　
   寒夜里看雪飘过
   怀著冷却了的心窝飘远方
@@ -2410,7 +2417,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp view" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20220523x">孤勇者 <em>〖原词〗</em><em><a href="#show" id="p20220523c" title="Cover versions" onclick="return showTags('show', 'p20220523z')"> ▼ 其他翻唱 ▼</a></em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20220523x">孤勇者 <em>〖原词〗</em><em><a href="#show" id="p20220523c" title="Cover versions" onclick="return showTags('show', 'p20220523z')"> ▼ 其他翻唱 ▼</a></em></h3>
   都～是勇敢的，你额头的伤口
   　　你的不同，你犯的错
   都～不必隐藏，你破旧的玩偶
@@ -2523,7 +2530,7 @@
 
 
 <div class="blog cl2e engp show" name="misc">
-<div class="geci slim"><h3 class="t3 geci" id="p20220523z">附：孤勇者 <em>〖<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">翻唱</a>〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20220523z">附：孤勇者 <em>〖<a href="https://www.bilibili.com/video/BV11g411A7cF/" target="_bili">翻唱</a>〗</em></h3>
   你眼中是什么
   像烈火在燃烧
   诉说着那才是你的本色
@@ -2631,7 +2638,7 @@
 
 <!--英文译词-->
 <div class="blog engp view" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20250205x">诗文名句 <em>〖中文〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20250205x">诗文名句 <em>〖中文〗</em></h3>
   工欲善其事，
   必先利其器。——《論語·衛靈公》
 
@@ -2739,7 +2746,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp view" name="zhyx">
-<div class="geci pack"><h3 class="t3 geci" id="p20250816x">一笑江湖 <em>〖原词〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20250816x">一笑江湖 <em>〖原词〗</em></h3>
   江湖一笑浪滔滔，紅塵盡忘了，
   俱往矣何足言道；
   蒼天一笑笑不老，豪情卻會了，
@@ -2764,7 +2771,7 @@
   留不住愛恨離潮。<br/>
 <em><i>词曲：</i>祝何<i>；原唱：</i>聞人聽書</em>
 </div>
-<div class="ying pack"><h3 class="t3 ying">A Knight's Wild Heart <em>(2025.08.16)</em> <em><a class="sup" href="#d20250816x" title="2025.08.16.">&#11139;&nbsp;</a></em></h3>
+<div class="ying slim"><h3 class="t3 ying">A Knight's Wild Heart <em>(2025.08.16)</em> <em><a class="sup" href="#d20250816x" title="2025.08.16.">&#11139;&nbsp;</a></em></h3>
   The river surges, and laughter echoes bold
   The past is gone, and (mortal) dust grows old
   All (my) valiant pride, in a lonely tale untold
@@ -2794,7 +2801,7 @@
 
 
 <!--英文译词-->
-<div class="blog cl2e engp view" name="zhyx">
+<div class="blog cl2e engp epic view" name="zhyx">
 <div class="geci"><h3 class="t3 geci" id="p20250831x">越过山丘 <em>〖原词〗</em></h3>
   越過山丘
   遇見十九歲的我
@@ -2931,7 +2938,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp view" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20251011x">人间道 <em>〖原词〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20251011x">人间道 <em>〖原词〗</em></h3>
   我要走穿这条命，去看雪兰花
   我要踏破这双鞋，光脚平风沙
   我要白日见雲霞、夜里举火把
@@ -3105,7 +3112,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp show" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20251121x">左手指月 <em>〖原词〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20251121x">左手指月 <em>〖原词〗</em></h3>
   左手握大地、右手握著天
   掌纹裂出了、十方的闪电
   把时光、匆匆兑换成了年
@@ -3179,7 +3186,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp" name="zhyx">
-<div class="geci pack"><h3 class="t3 geci" id="p20251122x">孤独的浪客 <em>〖原词〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20251122x">孤独的浪客 <em>〖原词〗</em></h3>
   一双鞋、一壶酒
   游子无根随风走
   异乡月、故乡愁
@@ -3193,7 +3200,7 @@
   一杯浊酒何必多<br/>
 <em>词曲：黑奔驰；演唱：铃花儿</em>
 </div>
-<div class="ying pack"><h3 class="t3 ying">Lonely Wanderer <em>(2025.11.22)</em> <em><a class="sup" href="#d20251122x" title="2025.11.22.">&#11139;&nbsp;</a></em></h3>
+<div class="ying slim"><h3 class="t3 ying">Lonely Wanderer <em>(2025.11.22)</em> <em><a class="sup" href="#d20251122x" title="2025.11.22.">&#11139;&nbsp;</a></em></h3>
   A pair of boots, behold a jug of soul
   My journey drifts, no roots, nor goal
   A homesick moon, within a homeland’s woe
@@ -3307,7 +3314,7 @@
   　高過不相見<br/>
 <em>词曲：任素汐；演唱：任素汐《故乡别来无恙》</em>
 </div>
-<div class="ying pack"><h3 class="t3 ying">Year After Year <em>(2025.11.25)</em> <em><a class="sup" href="#d20251125x" title="2025.11.25.">&#11139;&nbsp;</a></em></h3>
+<div class="ying slim"><h3 class="t3 ying">Year After Year <em>(2025.11.25)</em> <em><a class="sup" href="#d20251125x" title="2025.11.25.">&#11139;&nbsp;</a></em></h3>
   The day the sunset pierced thru branches,
   　brushed the wall
   The play’s refrain, with laughter’s chain,
@@ -3349,7 +3356,7 @@
 
 <!--英文译词-->
 <div class="blog cl2e engp show" name="zhyx">
-<div class="geci slim"><h3 class="t3 geci" id="p20251130x">敢问路在何方 <em>〖原词〗</em></h3>
+<div class="geci"><h3 class="t3 geci" id="p20251130x">敢问路在何方 <em>〖原词〗</em></h3>
   你挑著擔、我牽著馬，
   迎來日出、送走晚霞。
   踏平坎坷成大道，
@@ -3388,12 +3395,12 @@
 
 
 <!--英文译词--><!--
-<div class="blog" name="zhxx">
-<div class="geci"><h3 class="t3 geci" id="p20x"> <em>〖原词〗</em></h3>
+<div class="blog cl2e" name="zhxx">
+<div class="geci"><h3 class="t3 geci" id="p20yymmdd"> <em>〖原词〗</em></h3>
 <em>作曲：；作词：；原唱：</em>
 </div>
-<div class="ying"><h3 class="t3 ying"> <em><a class="sup" href="#d20x" title="">&#11139;&nbsp;</a></em></h3>
-<em>填词：舟山 20</em>
+<div class="ying"><h3 class="t3 ying"> <em><a class="sup" href="#d20yymmdd" title="">&#11139;&nbsp;</a></em></h3>
+<em>填词：舟山 20yy</em>
 </div>
 </div>--><!-- blog --><!--
 <a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
@@ -3407,7 +3414,7 @@
 
 <!--中文填词-->
 <div class="blog el2c" name="zhou">
-<div class="yuan pack"><h3 class="t3 yuan" id="p20030101x">I Could Fall In Love With You <em>(1999)</em></h3>
+<div class="yuan"><h3 class="t3 yuan" id="p20030101x">I Could Fall In Love With You <em>(1999)</em></h3>
   I could lose my heart tonight
   If you don't turn and walk away
   'Cause the way I feel I might
@@ -3436,7 +3443,7 @@
   I could fall in love, (3x) with you ...<br/>
 <em><i>Songwriters</i>: Keith Thomas; <i>Song by </i>: Selena</em>
 </div>
-<div class="tian pack"><h3 class="t3 tian">我會愛上你 <em>【填词】</em><em><a class="sup" href="#d20030101x" title="2003.01.01.">&#11139;&nbsp;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">我會愛上你 <em>【填词】</em><em><a class="sup" href="#d20030101x" title="2003.01.01.">&#11139;&nbsp;</a></em></h3>
   我心在今夜迷失　　　　　　
   如果你不转身消逝。　　　　
   因为我可能让你　　　　　　
@@ -3651,7 +3658,7 @@
 
 <!--中文填词-->
 <div class="blog el2c abba show" name="zhyx">
-<div class="yuan slim"><h3 class="t3 yuan" id="p20080301c">Chiquitita <em>(ABBA)</em></h3>
+<div class="yuan"><h3 class="t3 yuan" id="p20080301c">Chiquitita <em>(ABBA)</em></h3>
   Chiquitita, tell me what's wrong
   You're enchained by your own sorrow
   In your eyes there is no hope for tomorrow
@@ -3767,7 +3774,7 @@
   <i>(Chorus)</i><br/>
 <em><i>Songwriters</i>: Stig Erik Leopold Anderson / ABBA</em>
 </div>
-<div class="tian"><h3 class="t3 tian">舞之情 <em>【填词】</em><em><a class="sup" href="#d20080301d" title="">&#11139;&nbsp;</a></em></h3>
+<div class="tian slim"><h3 class="t3 tian">舞之情 <em>【填词】</em><em><a class="sup" href="#d20080301d" title="">&#11139;&nbsp;</a></em></h3>
   舞起來──搖起來──
   屬于妳生命的時代
   （舞）一支歌，一曲盡興
@@ -3881,7 +3888,7 @@
 
 
 <!--中文填词-->
-<div class="blog el2c abba" name="zhyx">
+<div class="blog el2c abba epic" name="zhyx">
 <div class="yuan slim"><h3 class="t3 yuan" id="p20080301f">Fernando <em>(ABBA 1976)</em></h3>
   Can you hear the drums, Fernando?
   I remember long ago another starry night like this
@@ -4492,7 +4499,7 @@
 
 <!--中文填词-->
 <div class="blog el2c boneym" name="zhyx">
-<div class="yuan slim"><h3 class="t3 yuan" id="p20080426d">Daddy Cool <em>(1976)</em></h3>
+<div class="yuan"><h3 class="t3 yuan" id="p20080426d">Daddy Cool <em>(1976)</em></h3>
   She's crazy like a fool
   — What about it daddy cool
   She's crazy like a fool
@@ -4539,7 +4546,7 @@
 
 
 <!--中文填词-->
-<div class="blog el2c boneym" name="zhyx">
+<div class="blog el2c boneym epic" name="zhyx">
 <div class="yuan slim"><h3 class="t3 yuan" id="p20080426e">El Lute <em>(1979)</em></h3>
   This is the story of El Lute -
   A man who was born to be hunted like a wild animal.
@@ -4774,7 +4781,7 @@
   – 'Cause I'm born again<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
-<div class="tian slim"><h3 class="t3 tian">我的新生 <em>【填词】</em><em><a class="sup" href="#d20080426a" title="">&#11139;&nbsp;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">我的新生 <em>【填词】</em><em><a class="sup" href="#d20080426a" title="">&#11139;&nbsp;</a></em></h3>
   获得重生在今天，
   获自由，不再孤单。
   迎来光明的詩篇，
@@ -4849,7 +4856,7 @@
   If you should find him - Please greet him from me.<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian</em>
 </div>
-<div class="tian slim"><h3 class="t3 tian">远行的船 <em>【填词】</em><em><a class="sup" href="#d20080426b" title="">&#11139;&nbsp;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">远行的船 <em>【填词】</em><em><a class="sup" href="#d20080426b" title="">&#11139;&nbsp;</a></em></h3>
   你扬起远帆，驶向那未知旅程，
   去　追一个梦。
   谁能够阻挡　你满怀理想出征，
@@ -4889,7 +4896,7 @@
 
 
 <!--中文填词-->
-<div class="blog el2c boneym holly" name="zhyx">
+<div class="blog el2c boneym holly epic" name="zhyx">
 <div class="yuan slim"><h3 class="t3 yuan" id="p20080426c">Mary's Boy Child / Oh My Lord <em>(1978)</em></h3>
   Mary's boy child Jesus Christ,
   Was born on Christmas Day.
@@ -4960,7 +4967,7 @@
   And love may reign once more<br/>
 <em><i>Songwriters</i>: Fred Jay / Frank Farian / Jester Hairston</em>
 </div>
-<div class="tian slim"><h3 class="t3 tian">玛丽的孩子 <em>【填词】</em><em><a class="sup" href="#d20080426c" title="">&#11139;&nbsp;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">玛丽的孩子 <em>【填词】</em><em><a class="sup" href="#d20080426c" title="">&#11139;&nbsp;</a></em></h3>
   瑪麗的孩子神之子，
   出生　在　圣誕夜。
   世人從此　得永生，
@@ -5066,7 +5073,7 @@
   Come down and follow me<br/>
 <em><i>Songwriters</i>: Frank Farian</em>
 </div>
-<div class="tian slim"><h3 class="t3 tian">大海幻想曲 <em>【填词】</em><em><a class="sup" href="#d20080426o" title="">&#11139;&nbsp;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">大海幻想曲 <em>【填词】</em><em><a class="sup" href="#d20080426o" title="">&#11139;&nbsp;</a></em></h3>
   大海绚烂我的人生
   她像一首幻想曲
   那无边无际的漫想激情
@@ -5101,7 +5108,7 @@
 
 
 <!--中文填词-->
-<div class="blog el2c boneym" name="zhyx">
+<div class="blog el2c boneym epic" name="zhyx">
 <div class="yuan slim"><h3 class="t3 yuan" id="p20080426v">River Of Babylon <em>(1978)</em></h3>
   <i>*</i> By the rivers of Babylon,
   there we sat down;
@@ -5608,7 +5615,7 @@
 
 <!--中文填词-->
 <div class="blog el2c holly" name="zhyx">
-<div class="yuan pack"><h3 class="t3 yuan" id="p20101209x">What Child Is This / Greensleeves <em>(1865)</em></h3>
+<div class="yuan slim"><h3 class="t3 yuan" id="p20101209x">What Child Is This / Greensleeves <em>(1865)</em></h3>
   What child is this who laid to rest
   On Mary's lap is sleeping
   Whom angels greet with anthems sweet
@@ -5635,7 +5642,7 @@
   The Babe, the Son of Mary<br/>
 <em><i>Songwriters</i>: <a href="https://en.wikipedia.org/wiki/What_Child_Is_This%3F" target="_wiki">Thomas Hewitt Jones</a></em>
 </div>
-<div class="tian pack"><h3 class="t3 tian">誰之子 <em>【填词】</em><em><a class="sup" href="#d20101209x" title="">&#11139;&nbsp;</a></em></h3>
+<div class="tian"><h3 class="t3 tian">誰之子 <em>【填词】</em><em><a class="sup" href="#d20101209x" title="">&#11139;&nbsp;</a></em></h3>
   是誰的孩子在安睡
   在瑪麗的懷中未醒
   有天使頌歌的甜美
@@ -5805,7 +5812,7 @@
   将你赶出　我爱情的首都
   我心升起　无名火一把
   高烧过後　身体更疲乏<br/>
-  ※　留下的伤口，如回忆一丝丝
+  ＊　留下的伤口，如回忆一丝丝
   　　每当我想起，那是爱过的宇宙；
   　　留下的伤口，让希望的心死
   　　我无奈呻吟───<br/>
@@ -5820,7 +5827,7 @@
   痴情愿想　绝望地破灭
   不可能得到的答案　
   终究一样没有解<br/>
-（重复※、☆）<br/>
+（重复＊、☆）<br/>
   给你自由　似绽放的花朵
   给你祝福　找到追寻的归所
   还我心囚　如丰厚的报酬
@@ -7061,12 +7068,12 @@
 
 
 <!--中文填词--><!--
-<div class="blog" name="zhxx">
-<div class="yuan"><h3 class="t3 yuan" id="p20x"> <em></em></h3>
+<div class="blog el2c" name="zhxx">
+<div class="yuan"><h3 class="t3 yuan" id="p20yymmdd"> <em></em></h3>
 <em><i>Song by </i> </em>
 </div>
-<div class="tian"><h3 class="t3 tian"> <em>【填词】</em><em><a class="sup" href="#d20x" title="">&#11139;&nbsp;</a></em></h3>
-<em>中文填词 20</em>
+<div class="tian"><h3 class="t3 tian"> <em>【填词】</em><em><a class="sup" href="#d20yymmdd" title="">&#11139;&nbsp;</a></em></h3>
+<em>中文填词 20yy</em>
 </div>
 </div>--><!-- blog --><!--
 <a onclick="return setLocation('atop')" href="#atop" class="goto">⇑</a>
@@ -7614,7 +7621,7 @@ Part II (continued)
 
 
 <div class="blog dual" name="zhou">
-<div class="geci slim"><h3 class="t3 geci" id="p20260710x">转机旅程 <em>(2026.07.10)</em></h3>
+<div class="geci pack"><h3 class="t3 geci" id="p20260710x">转机旅程 <em>(2026.07.10)</em></h3>
   一个人拖着行李出发，病中的你留在了家
   冰箱里整整齐齐饭盒，像我反复叮嘱的话
   同事已托付妥当，若有需要，会有人替我到达
@@ -7699,6 +7706,8 @@ Part II (continued)
      onclick="return showTags('adele')">Adele</a>
   <a href="#holly" title="Christian Lyrics" class="tags"
      onclick="return showTags('holly')">Holly Songs</a>
+  <a href="#epic" title="Epic Lyrics" class="tags"
+     onclick="return showTags('epic')">Epic</a>
   <br/>
   <a href="#dual" title="Bilingual Poems" class="tags"
      onclick="return showTags('dual')">DL</a>
