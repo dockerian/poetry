@@ -10,12 +10,7 @@
 
 ![Poems By Years Chart](./shiji-by-year.png)
 
-<img class="half" src="./shiji-by-category.png" />
-<img class="half" src="./shiji-by-catwords.png" />
-<img class="half" src="./shiji-by-seasons.png" />
-<img class="half" src="./shiji-by-months.png" />
-<img class="half" src="./shiji-by-location.png" />
-<img class="half" src="./shiji-by-decade.png" />
+&raquo; [More Charts](./shiji-charts.html)
 
 <p><br/><a name="alias"></a></p>
 
@@ -30,7 +25,7 @@
 * 雷德蒙市·听雨庐｜1999-2000, <a href="https://google.com/maps/place/18666+Redmond+Way,+Redmond,+WA+98052/@47.659172,-122.0905803,382m" target="_maps" title="Archstone - Redmond, WA">Redmond</a>
 * 华州别号·依沙阁｜2001-2006, <a href="https://google.com/maps/place/25042+SE+42nd+St,+Issaquah,+WA+98029/@47.5699171,-122.008251,766m" target="_maps" title="Klahanie - Issaquah, WA">Issaquah</a>
 * 湖东新府·纱糸轩｜2006-2021, <a href="https://google.com/maps/place/533+234th+Pl+NE,+Sammamish,+WA+98074/@47.6148057,-122.029793,1531m" target="_maps" title="Sammamish Lake">Sammamish</a>
-* 塔港狭桥·耐若斋｜2013-, <a href="https://google.com/maps/place/3008+N+Narrows+Dr,+Tacoma,+WA+98407/@47.2750981,-122.5293262,1541m" target="_maps" title="Narrows Drive">Tacoma</a>
+* 塔港狭桥·耐若斋｜2021-, <a href="https://google.com/maps/place/3008+N+Narrows+Dr,+Tacoma,+WA+98407/@47.2750981,-122.5293262,1541m" target="_maps" title="Narrows Drive">Tacoma</a>
 
 <img class="half" src="./g2-Beijing.jpg" />
 <img class="half" src="./g3-USA.jpg" />

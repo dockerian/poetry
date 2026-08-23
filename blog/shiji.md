@@ -1,11 +1,11 @@
-<a name="mulu">目录</a>
+<h3 id="mulu">目录<a name="mulu"></a></h3>
 <!--Recommend to use Markdown viewer or plugin in browser-->
 <div id="anchor"><!--page anchor-->
 <div id="access"><a href="#ciqu">词曲</a>·<a href="#diao">长调</a>｜<a href="#xyun">新韵</a>｜<a href="#qigu">七言</a>｜<a href="#qilv">七律</a>｜<a href="#wulv">五律</a>｜<a href="#zaji">外篇</a>
 </div>
 </div>
 
-<div id="title">｜舟山堂<a href="#bcti">诗词稿</a> 1979.4─2026.6</div>
+<div id="title">｜舟山堂<a href="#bcti">诗词稿</a> 1979.4─2026.8</div>
 
 ```
 (2) 五律•春游鳝溪二首　　　　　　　　　1979．⒋
@@ -15,7 +15,7 @@
 (1) 采桑子•湖趣　　　　　　　　　　　　1982．⒐
 (1) 渔家傲•夜雨泊江　　　　　　　　　　1982．⒐
 (1) 六洲歌头•夕阳西下　　　　　　　　　1982．⒐
-(3) 七言•江南感赋　春思　闽浪残昏　　　1982．⒑
+(3) 七言•江南感赋、春思、闽浪残昏　　　1982．⒑
 (1) 水仙子•除夕　　　　　　　　　　　　1983．⒉
 (1) 菩萨蛮•元夕　　　　　　　　　　　　1983．⒉
 (1) 调笑令•踏青　　　　　　　　　　　　1983．⒋
@@ -229,9 +229,12 @@
 (2) 七绝•旅途小记　　　　　　　　　　　2026．⒌
 (1) 五律•论毛词　　　　　　　　　　　　2026．⒌
 (1) 七律•晨雨　　　　　　　　　　　　　2026．⒍
+(1) 七律•论改革开放之中国　　　　　　　2026．⒎
+(9) 七律•记梦九章附习对一首　　　　　　2026．⒏
+(1) 五言•擬古　　　　　　　　　　　　　2026．⒏
 ```
 
-　　以上留存詩詞凡三百四十五首
+　　以上留存詩詞凡三百五十六首
 
 
 <br/><br/><a name="bcti"></a>
@@ -250,7 +253,7 @@
 
 
 <br/><br/><a name="ciqu"></a>
-## 词曲一百二十五首　<a class="arrow" href="#bcti" title="Contents">&uArr;</a>&middot;<a class="arrow" href="#diao" title="NEXT｜长调">&dArr;</a>
+## 词曲一百二十五首　<span><a class="arrow" href="#bcti" title="Contents">&uArr;</a>&middot;<a class="arrow" href="#diao" title="NEXT｜长调">&dArr;</a></span>
 
 
 #### 天净沙·斐济十题今韵十八首 (2010.2)
@@ -621,7 +624,7 @@
 
 
 <br/><a name="diao"></a>
-## 词曲（长调）　<a class="arrow" href="#ciqu" title="PREV｜词曲">&uArr;</a>&middot;<a class="arrow" href="#xyun" title="NEXT｜新韵">&dArr;</a>
+## 词曲（长调）　<span><a class="arrow" href="#ciqu" title="PREV｜词曲">&uArr;</a>&middot;<a class="arrow" href="#xyun" title="NEXT｜新韵">&dArr;</a></span>
 
 #### 满江红·清明 (1983.5)
 
@@ -843,7 +846,7 @@
 
 
 <br/><br/><a name="xyun"></a>
-## 新韵文诗九首　<a class="arrow" href="#diao" title="PREV｜长调">&uArr;</a>&middot;<a class="arrow" href="#qigu" title="NEXT｜七言">&dArr;</a>
+## 新韵文诗九首　<span><a class="arrow" href="#diao" title="PREV｜长调">&uArr;</a>&middot;<a class="arrow" href="#qigu" title="NEXT｜七言">&dArr;</a></span>
 
 
 #### 雪 (1989.12)
@@ -1054,7 +1057,7 @@
 
 
 <br/><br/><a name="qigu"></a>
-## 七言古诗三十一首　<a class="arrow" href="#xyun" title="PREV｜新韵">&uArr;</a>&middot;<a class="arrow" href="#qilv" title="NEXT｜七律">&dArr;</a>
+## 七言古诗三十一首　<span><a class="arrow" href="#xyun" title="PREV｜新韵">&uArr;</a>&middot;<a class="arrow" href="#qilv" title="NEXT｜七律">&dArr;</a></span>
 
 
 #### 江南感赋 (1982.10)
@@ -1220,7 +1223,7 @@
 
 
 <br/><br/><a name="qilv"></a>
-## 七言律绝九十六首　<a class="arrow" href="#qigu" title="PREV｜七言">&uArr;</a>&middot;<a class="arrow" href="#wugu" title="NEXT｜五言">&dArr;</a>
+## 七言律绝一百零七首　<span><a class="arrow" href="#qigu" title="PREV｜七言">&uArr;</a>&middot;<a class="arrow" href="#wugu" title="NEXT｜五言">&dArr;</a></span>
 
 
 #### 七律·中秋月·孤懸海外兼詠嬋娟同韻二題 (2008.9)
@@ -1341,7 +1344,7 @@
 
 一阵秋风一阵寒，寒风阵阵到秋残。残秋残雨残花落，落暮落雲落叶繁。繁叶堆金成乱绪，绪思聚墨画重峦。峦前树色丘前谷，谷底溪声心底澜。
 
-##### 又：可作顶针回文一首【平水韵十四寒】
+##### ＊｜又：可作顶针回文一首【平水韵十四寒】
 
 澜底心声溪底谷，谷前壑色树前峦。峦重画墨凝思绪，绪乱成金聚叶繁。繁叶落雲成暮落，落花残雨剩秋残。残秋到晓霜湿霭，霭起深更漏夜阑。
 
@@ -1391,7 +1394,7 @@
 
 兴废功名惊皓首，拓开机遇慰青山。有时理想迷茫处，无限风光成败间。肝胆相期同月梦，胸怀应许共雲关。古今狭路难於敢，华夏先锋勇在攀。　
 
-### 七律·读《理想之城》【新韵】(2021.09)
+#### 七律·读《理想之城》【新韵】(2021.09)
 
 ##### 其一
 
@@ -1671,15 +1674,64 @@
 
 #### 七律·晨雨特纪 (2026.06.26)
 
-红尘最怕是情深，长夜犹思不顾身。母慈已错长离误，儿孝还唏远去人。前世种因而得果，後时溯果再成因。此生泯灭无初见，彼岸花开又一春。自古求仁多乱主，從来论迹反喧宾。迷思难辩名和理，执念未分疏与亲。心斩疯魔知在圣，雷鸣雨电问於神。返真雾隐层层幻，惟梦依稀旧事新。
+长夜犹思不顾身，情深最怕是红尘。母慈已错长离误，儿孝还唏远去人。前世种因而得果，後时溯果再成因。此生泯灭无初见，彼岸花开又一春。自古求仁多乱主，從来论迹反喧宾。迷思难辩名和理，执念未分疏与亲。心斩疯魔知在圣，雷鸣雨电问於神。返真雾隐层层幻，惟梦依稀旧事新。
 
 > 注：特纪西元二零二六年六月十三晨，岁在华历丙午甲午戊午三午日。<br/>
 > 求仁得仁者稀，未得心安，实乱主也。论迹论心者卑，心魔在我，大慧在神。
 
+#### 七律·论改革开放之中国 (2026.07.11)
+
+眼界雲开革改深，邓公方略见胸襟。几摸河底石头过，一拓世间难路寻。先富领携成後富，扶贫力聚变脱贫。才赢舆战分高下，又祭先贤论古今。自信更生轻僭贵，毛思余响焕人心。常铭积弱群狼入，未忘列强环伺侵。大道坚苛多折曲，和平理念少知音。体制得失谈何易，生民立命可试金。
+
+
+#### 七律·新韵记梦 (2026.08)
+
+##### 其一
+
+翩跹鹤影霭雲轻，潋滟水波烟雨盈。古刹微传听晚磬，寒炊淡起课晨声。孤皮瘦骨倚窗重，两鬓残灰烛照轻。半世沉吟千缕梦，一生往事万丝情。
+
+##### 其二
+
+ 光阴暗度催人老，客酒频添惹泪倾。帘後台前迷众眼，弦中曲里顾频惊。流行艺术流行病，落幕余音落幕城。俗念不除悲靡已，杂思终有意难平。
+
+##### 其三
+
+前尘似雾随风散，远绪如灯守夜星。幻境从来成缥缈，空华过眼亦虚灵。此花未觑心同寂，看此花时颜色明。非是风兮非幡动，当知仁者动心生。
+
+##### 其四·华州桤溪园庄 (2026.08.20)
+
+青山缈缈画烟苍，秋水悠悠船影凉。小径晨风犹带梦，闲庭急鸟未临堂。独行阔岸听鱼语，群坐高台品酒香。莫让俗机堆尺案，但凭松墨写诗章。
+
+##### 其五
+
+金屋广阔虚荣欲，陋室澹泊方寸藏。俗事如棋频落子，流年若旅总迷航。趋名逐利尘纷扰，守性栖身志气刚。一喜一悲生色动，三生三世忘情伤。
+
+##### 其六
+
+红烛易见同心暖，黑夜难熬别恨长。白雪糕中非有雪，太阳饼里亦无阳。虚华入眼皆空幻，真意存怀自久芳。过後方知何所羡，当时只道是寻常。
+
+##### 其七
+
+流光往事入眼空，落日孤帆向水东。几世高楼千古月，一江风雨半山钟。天朝气运乾坤里，霸业权谋帷幄中。此际闲身皆过客，昔时行者是英雄。
+
+##### 其八
+
+少年书剑报家国，应试文章堪砺磨。墨伴灯前酬远志，风随晓色渡长河。心中理想追贤圣，世上崎岖添奈何。回首半生嘘逝水，初心一片入雲歌。
+
+##### 其九 (2026.08.25)
+
+咖啡因自咖啡果，草木盛於草木衰。万物流形寻本始，千缘衍势溯轮回。功成每见繁华尽，势退方知幻梦埋。但看荣枯皆定数，且将闲意附瑶台。
+
+##### 习对
+
+玛瑙红搭玛瑙绿，薄荷醇配薄荷浓。咖啡因自咖啡果，芍药殿前芍药宫。螃蟹公逢螃蟹母，枸杞盏迎枸杞盅。江湖路走江湖道，岁月始於岁月终。
+
+> 注：因循特定双字之复合名词，故有平仄难合之处。
+
 
 
 <br/><br/><a name="wugu"></a>
-## 五言古诗六首　<a class="arrow" href="#qilv" title="PREV｜七律">&uArr;</a>&middot;<a class="arrow" href="#wulv" title="NEXT｜五律">&dArr;</a>
+## 五言古诗七首　<span><a class="arrow" href="#qilv" title="PREV｜七律">&uArr;</a>&middot;<a class="arrow" href="#wulv" title="NEXT｜五律">&dArr;</a></span>
 
 
 #### 五言·夢醒 (2011.06.02)
@@ -1712,10 +1764,18 @@
 
 > 注：第一联下句第四字仄音失律；第四联「熬」字出韵。
 
+#### 五言·擬古·見詩而感唐風不遠 (2026.8)
+
+洛阳旧时月，长安古道风。终南山雨後，渭北水雲空。塞外孤烟冷，关中岁草荣。凭栏思渺渺，望远寄归蓬。
+
+##### ＊｜附：附：谭勇《五律·丙午伏尾七夕晨跑再探嘉定某公园平水韵》(2026.8.19)
+
+燠热消七月，凉风起水边。蓊茸湖畔树，睍睆叶中鹃。绿意延神目，高雲引远仙。何须人伴我，自晓一方天。
+
 
 
 <br/><br/><a name="wulv"></a>
-## 五言律诗五十二首　<a class="arrow" href="#wugu" title="PREV｜五言">&uArr;</a>&middot;<a class="arrow" href="#sigu" title="NEXT｜四言">&dArr;</a>
+## 五言律诗五十二首　<span><a class="arrow" href="#wugu" title="PREV｜五言">&uArr;</a>&middot;<a class="arrow" href="#sigu" title="NEXT｜四言">&dArr;</a></span>
 
 
 ### 思远集（六首）
@@ -1961,7 +2021,7 @@
 
 
 <br/><br/><a name="sigu"></a>
-## 四言古诗一首　<a class="arrow" href="#wulv" title="PREV｜五律">&uArr;</a>&middot;<a class="arrow" href="#zaji" title="NEXT｜外篇">&dArr;</a>
+## 四言古诗一首　<span><a class="arrow" href="#wulv" title="PREV｜五律">&uArr;</a>&middot;<a class="arrow" href="#zaji" title="NEXT｜外篇">&dArr;</a></span>
 
 
 #### 四言·赠黄老·纪念二十年後重聚渥太华 (2025.10.13)
@@ -1971,7 +2031,7 @@
 
 
 <br/><br/><a name="zaji"></a>
-## 外编二十四首　<a class="arrow" href="#sigu" title="PREV｜四言">&uArr;</a>&middot;<a class="arrow" href="#endp" title="EOF">&dArr;</a>
+## 外编二十四首　<span><a class="arrow" href="#sigu" title="PREV｜四言">&uArr;</a>&middot;<a class="arrow" href="#endp" title="EOF">&dArr;</a></span>
 
 
 #### 红楼集句 (1995.11)
@@ -2082,7 +2142,7 @@
 
 <p><br/></p>
 
->　　右录詩詞三百四十五首<br/>
+>　　右录詩詞三百五十六首<br/>
 >　　耐若斋藏
 
 <p><a name="endp"></a><br/></p>
@@ -2094,6 +2154,9 @@
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 a.arrow {
   font-size: 0.85em;
 }
@@ -2107,7 +2170,7 @@ body,h1,h2,h3,h4,h5,p,pre,code {
   line-height: 1.5em;
 }
 body,h1,h2 {
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 section#main_content,section.inner {
   font-size: 0.725em !important;
@@ -2117,7 +2180,7 @@ div#access {
   font-size: 1em;
   position: absolute;
   right: 0.25em;
-  top: 0.25em
+  top: 0.05em
 }
 div#anchor {
   font-size: 1.15em;
@@ -2127,17 +2190,34 @@ div#anchor {
 }
 div#title {
   color: darkgray;
-  font-size: 1.25em;
-  margin: 0em 0.25em 0.5em 0;
-  position: relative; top: -0.5em;
+  font-size: 1.15em;
+  margin: 0em 0.25em 0.75em 0;
+  position: relative; top: 0.25em;
   white-space: nowrap;
   text-align: right;
+}
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+h2 span {
+  display: inline-block;
+  margin-left: auto;  /* Pushes the element to the right */
+  width: max-content; /* or any specific width like 200px */
+  right: 0;
 }
 h3,h4,h5 {
   font-size: 1.25em !important;
   line-height: 1.25em;
   margin: 1em 0em 0.5em 0 !important;
   text-indent: 0em;
+}
+h3#mulu {
+  color: darkred;
+  background-color: lightyellow;
+  margin: 0.5em 0em 0em 0em !important;
+  padding: 0.25em 0em 0.25em 0.75em;
 }
 img {
   margin: 0em 0em 0em -0.25em !important;
@@ -2176,6 +2256,8 @@ pre {
   padding-left: 1em !important;
 }
 pre>code {
+  font-family: Consolas, "Andale Mono", "Lucida Console", "DejaVu Sans Mono", Monaco, "Courier New", Courier, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", monospace !important;
+  font-variant-numeric: tabular-nums;
   font-size: 1.15em !important;
 }
 pre,.highlight {
@@ -2188,7 +2270,7 @@ h5 {
 }
 @media print {
   body,div,div#_html,p,code,pre {
-    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Verdana", sans-serif !important;
   }
   div#anchor {
     display: none;

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<head><title>舟山诗词·图表｜Statistic Charts</title>
+<meta charset="utf-8"/>
+<meta name="author" content="Jason Zhu"/>
+<meta name="description" content="Lyrics and Poems"/>
+<meta name="keywords" content="lyrics,poems,诗歌,翻译,填词,舟山,博客,dockerian,boathill,blog"/>
+<script type="text/javascript">
+  const images = [
+    { cat: "Count", des: "Form Type", pid: "form" },
+    { cat: "Words", des: "Form Type", pid: "formwords" },
+    { cat: "Count", des: "Category", pid: "category" },
+    { cat: "Count", des: "Decade", pid: "decade" },
+    { cat: "Count", des: "Seasons", pid: "seasons" },
+    { cat: "Count", des: "Months", pid: "months" },
+    { cat: "Words", des: "Category", pid: "catwords" },
+    { cat: "Count", des: "Location", pid: "location" }
+  ];
+  const render = () => {
+    var altp = (p) => `Poems ${p.cat} by ${p.des}`;
+    var outp = (p) => `
+    <!-- The Thumbnail Link -->
+    <a href="#p-${p.pid}" title="${altp(p)}">
+      <img src="shiji-by-${p.pid}.png" alt="${altp(p)} | click to enlarge" class="half">
+    </a>
+    <!-- The Full-Screen Lightbox Overly -->
+    <div id="p-${p.pid}" class="show">
+      <a href="#" class="overlay" title="${altp(p)}">
+        <img src="shiji-by-${p.pid}.png" alt="enlarged">
+      </a>
+    </div>\n`;
+    console.log(`chart template: ${outp}`);
+    const elem = document.getElementById("charts");
+    console.log(`elem: ${elem.outerHTML}`);
+    elem.innerHTML = images.map(
+        v => outp(v)).join("\n");
+    var eSize =elem.innerHTML.length;
+    var samples = elem.innerHTML.split("\n\n");
+    var slice = samples.slice(-1).join('\n\n');
+    console.log(`elem #charts length: ${eSize}`);
+    console.log(`elem #charts slice: ${slice}`);
+    console.log("charts loaded.");
+  };
+  window.load = render;
+</script>
+<style type="text/css">
+a {
+  text-decoration: none;
+}
+body {
+  margin: 1em 0.5em 1em 2em;
+}
+h3 a {
+  padding: 0.5em 0.25em;
+}
+h3 a:hover {
+  text-decoration: none !important;
+  background-color: lightyellow;
+  color: darkred !important;
+}
+
+div.charts {
+  display: flex;
+  border: dotted 3px red !important;
+  justify-content: center; /* horizontally centers the inner content */
+  align-items: center;
+  text-align: center;
+  padding: 0em 0em 0em 5em;
+  width: 100%;
+}
+
+img.half {
+  display: inline-block;
+  margin: 0px 0px 0px -0.5em;
+  width: 25% !important;
+}
+
+/* Javscript onClick method */
+/* e.g.
+  <img src="src.png" class="zoom"
+       onClick="this.classList.toggle('enlarged')"/>
+*/
+img.zoom {
+  cursor: zoom-in;
+  transition: transform 0.3s ease; /* Smooth enlargement animation */
+  width: 25%;
+}
+/* The class applied when clicked or hover */
+img.zoom.enlarged, img.zoom:hover {
+  cursor: zoom-out;
+  position: relative;
+  transform: scale(1.5); /* Scales the image up by 150% */
+  z-index: 99; /* Ensures on top of neighboring content */
+}
+img.half:hover {
+  transform: scale(1.025);
+}
+
+/* Pure CSS thumbnail method */
+.view {
+  cursor: zoom-in;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  width: 25%;
+}
+
+.view:hover {
+  transform: scale(1.02); /* 1.0, optional keep no animation */
+}
+
+/* Close wrapper spans the whole background */
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+/* Lightbox container hidden by default */
+.show {
+  display: none;
+  background: rgba(0, 0, 0, 0.8); /* darker transparent */
+  align-items: center;
+  justify-content: center;
+  position: fixed; left: 0; top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+
+/* Enlarged image styling */
+.show img {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); /* half transparent */
+  cursor: zoom-out;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+/* Display the lightbox when its ID is targeted in the URL */
+.show:target {
+  display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  img.half {
+    width: 50% !important;
+  }
+}
+</style>
+</head>
+<body onload="render('onload')">
+<h3><a href="./">&raquo; 统计图表｜Charts &laquo;</a><a name="title"></a></h3>
+<div id="charts"></div>
+
+<noscript>
+<img class="half" src="./shiji-by-form.png" />
+<img class="half" src="./shiji-by-formwords.png" />
+<img class="half" src="./shiji-by-category.png" />
+<img class="half" src="./shiji-by-decade.png" />
+<img class="half" src="./shiji-by-seasons.png" />
+<img class="half" src="./shiji-by-months.png" />
+<img class="half" src="./shiji-by-catwords.png" />
+<img class="half" src="./shiji-by-location.png" />
+</noscript>
+
+</body>
+</html>
