@@ -17,8 +17,8 @@
   * 诗词博客｜[附录](../gelv/README.md)
     - [学诗笔记 · Poetry Study](poetry-study.md)
     - [英律小结 · Prosody Summary](prosody-summary.md) ｜
-      [歌词翻唱 · Lyrics Translation](song-cover.md)
-    - [流行歌词 · Song Lyrics](song-lyrics.md)
+      [歌词翻唱 · Lyrics Cover](song-cover.md)
+    - [流行歌词 · Song lyrics](song-lyrics.md) ｜ [译词续编](song-lyrics-cover.md)
     - [舟山博客](https://boathill.blogspot.com/) ·
       [WordPress](https://boathill.wordpress.com/category/poems/) ｜
       [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
