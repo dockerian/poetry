@@ -384,17 +384,29 @@ At turn and gaze afar; tears drench a robe’s sleeve
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 a:hover {
   color: darkred !important;
   text-decoration: none !important;
   background-color: lightyellow;
 }
 body,h1,h2,h3,h4,h5,p,pre,code {
-  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
-  text-align: justify;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
+  text-align: left;
 }
 blockquote {
   border-color: #DDDD !important;
+}
+body,h1,h2 {
+  font-size: 1.35em;
+}
+h3,h4,h5 {
+  font-size: 1.25em !important;
+  line-height: 1.25em;
+  margin: 1em 0em 0.5em 0;
+  text-indent: 0em;
 }
 h3 {
   border-right: inset 0.5em lightgray;
@@ -402,11 +414,11 @@ h3 {
   color: darkred;
 }
 p {
-  font-size: 1.25em !important;
+  font-size: 1.0em !important;
   line-height: 1.35em;
 }
 p>code {
-  font-size: 1.03em !important;
+  font-size: 1.0em !important;
 }
 pre {
   margin-left: 0.35em !important;

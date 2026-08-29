@@ -14,6 +14,11 @@
       display: block;
       text-align: right;
     }
+    body {
+      font-size: 1.25em;
+      overflow-x: hidden; /* prevents horizontal scrolling */
+      width: 100%;
+    }
     h2#digest {
       page-break-before: always;
     }
@@ -37,10 +42,10 @@
     div.pendix p {
       color: darkslategray;
       font-size: 0.95em;
-      margin: 0.2em 0em 0.3em 4em;
+      margin: 0.2em 1.5em 0.3em 4em;
       padding: 0.25em 0em;
-      white-space: nowrap;
       text-indent: -4em;
+      white-space: wrap;
     }
     div.pendix p:nth-of-type(even) {
       background-color: honeydew;
@@ -48,6 +53,9 @@
     }
     div.pendix p:nth-of-type(odd) {
       background-color: lavenderblush;
+    }
+    p.poem {
+      margin-right: 1.5em;
     }
   @media print {
     body {
@@ -160,7 +168,7 @@
   <p class="poem">幻想曲，意识流，四海对五洲。扫街对打野，晨练对午休。</p>
   <p class="poem">长寿面，腊八粥，酱爆对醋溜。轻装对重彩，减负对加油。</p>
 
-<p class="center">　　— 舟山 2021.09. 於西雅图 —<br/></p>
+<p class="center poem">　　— 舟山 2021.09. 於西雅图 —<br/></p>
 <a href="#atop" class="atop">⇑</a>
 <p><br/></p>
 </div>
@@ -200,7 +208,7 @@
 
 <h4 id="x11"><span>杂对</span></h4>
   <p class="poem">雲对雨，雪对风；红楼梦，苍井空。淘宝对搜狐，苏北对京东。外包对内卷，离异对合同。开电脑，出风头，撸猫对舔狗。玉溪红塔山，云烟黄鹤楼。支付宝，理财通；凡士林，仙人洞；牡丹花下死，雄黄马前卒。局部坏死，整个好活；天降白莲，地塞米松。马尔代夫度假，木兰替父从军。愿普天下有情人终成眷属，让全世界无产者联合起来。</p>
-  <p>信达雅，比赋兴；利胆片，培肝丸；心机婊，凤凰男；求生欲，送命题；红脖子，白莲花；……</p>
+  <p class="poem">信达雅，比赋兴；利胆片，培肝丸；心机婊，凤凰男；求生欲，送命题；红脖子，白莲花；……</p>
 
 </div>
 

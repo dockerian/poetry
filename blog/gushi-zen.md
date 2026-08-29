@@ -1421,13 +1421,16 @@
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 a:hover {
   color: darkred !important;
   text-decoration: none !important;
   background-color: lightyellow;
 }
 body,h1,h2,h3,h4,h5,p,pre,code {
-  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
   text-align: justify;
 }
 blockquote {

@@ -260,6 +260,9 @@
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 a.arrow {
   font-size: 0.85em;
 }
@@ -273,7 +276,7 @@ body,h1,h2,h3,h4,h5,p,pre,code {
   line-height: 1.5em;
 }
 body,h1,h2 {
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 h3,h4,h5 {
   font-size: 1.25em !important;
@@ -297,7 +300,7 @@ p.up {
 }
 @media print {
   body,div,div#_html,p,code,pre {
-    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
   }
   div#anchor {
     display: none;
