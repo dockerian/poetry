@@ -1,4 +1,5 @@
 # 禅诗三百首 <a name="title"></a>
+
 <!--Recommend to use Markdown viewer or plugin in browser-->
 
 > 汇集历代禅宗高僧与文人悟道、寄情的经典诗作，以空灵旷达的意境著称，常借助山水、自然来阐释禅理。其中最为大众熟知的名篇如：神秀大师《[示法偈](#shifajie)》、六祖惠能大师的《[无相偈](#wuxiang)》、布袋和尚的《[插秧诗](#chayang)》、灵一《[题僧院](tisengyuan)》、李翱《[赠药山高僧惟俨](#zengyaoshan)》、翁卷《[野望](#yewang)》等，深刻影响中国人的处世哲学。原摘：[佛弟子文库](https://fodizi.net/qt/qita/26707.html)；另见知乎《[禅意诗百首讲解](gushi-zen.md)》。
@@ -2306,13 +2307,16 @@
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 a:hover {
   color: darkred !important;
   text-decoration: none !important;
   background-color: lightyellow;
 }
 body,h1,h2,h3,h4,h5,p,pre,code {
-  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
   text-align: justify;
 }
 blockquote {

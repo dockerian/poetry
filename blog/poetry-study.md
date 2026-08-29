@@ -128,7 +128,7 @@
   - **slant rime** (approximate rime): words with any kind of sound similarity, from close to fairly remote. Slant rhyme include alliteration, assonance, and consonance or their combination when used at the end of the line.
   - **half-rime**: feminine rimes in which only half of the word rimes -- the accented half, as in "lightly and frightful", or the unaccented half, as in "yellow and willow".
 
-[Back](#concepts) | [Home](#home)
+&raquo; [Back](#concepts)｜[Home](#home)
 
 <a name="phonetics"></a>
 ### Poetic Meter vs Phonetic Stress & Intonation 📚
@@ -197,7 +197,7 @@ In Poetic Reading:
 * 字典中单词<code style="font-weight:bold;margin: 0">“iamb”</code>的翻译是〖抑扬格、短长格〗，符合英文韵律学和诗歌朗读的习惯；而在语音学上，重音降调的发声，似乎和朗读的扬声是相对的。
 * 所谓〖抑扬格、短长格〗，和汉语的〖平仄〗是相对应的吗？同理 <code style="font-weight:bold;margin-left:0.1em">“trochee”</code>〖扬抑格、长短格〗是〖仄平〗声吗？
 
-[Back](#phonetics) | [Home](#home)
+&raquo; [Back](#phonetics)｜[Home](#home)
 
 <a name="systems"></a>
 ### English vs Chinese Rhythmic Systems
@@ -273,7 +273,7 @@ In Poetic Reading:
 
   So while〖平〗tones are tonally “level,” they often **sound strong** at the end of a line—especially when sung or recited with emphasis. This gives them a **functional stress**, even though they’re not stressed in the English sense.
 
-#### Why〖平〗Rhymes Feel “Stressed”
+#### Why 〖平〗Rhymes Feel “Stressed”
 
   * **Final Position = Emphasis**
     In both Chinese and English, the end of a poetic line is a place of **natural emphasis**—whether through rhyme, cadence, or musical resolution.
@@ -282,7 +282,7 @@ In Poetic Reading:
   * **Semantic Weight**
     Rhyming syllables often carry **key emotional** or **thematic content**, which invites vocal emphasis regardless of tone.
 
-#### Trochee vs〖平〗Tone Rhyme
+#### Trochee vs 〖平〗Tone Rhyme
 
   A trochee (`´ ˘`) begins with stress and ends weakly. So if you tried to map a Chinese line ending in a 〖平〗-tone rhyme to a trochaic foot, you'd get:
 
@@ -317,7 +317,7 @@ When adapting Chinese rhymed lines into English:
   - Use **iambic meter** to preserve the final stress.
 
 
-[Back](#systems) | [Home](#home)
+&raquo; [Back](#systems)｜[Home](#home)
 
 <a name="cover-lyrics"></a>
 ### English vs Chinese Lyrics Cover
@@ -390,7 +390,7 @@ When adapting Chinese rhymed lines into English:
   - Consider melodic phrasing: where does the breath fall? Where does the emotion peak?
   - If translating for performance, collaborate with vocalists to ensure natural delivery.
 
-[Back](#cover-lyrics) | [Home](#home)
+&raquo; [Back](#cover-lyrics)｜[Home](#home)
 
 <a name="samplewords"></a>
 ### Sample Iambic Words
@@ -410,7 +410,7 @@ When adapting Chinese rhymed lines into English:
 |Spondee | ● ● | aircraft, blackboard, breakdown, bookstore, checklist, childhood, cowboy, deadbolt, deadlock, football, footstep, greenhouse, heartbeat, kickstart, landslide, rainstorm, schoolyard, standpoint, sunshine, undone; hard-earned, man-made, world-class; black night, cold fire, last call, no pain, storm front, true love, ...|
 |Pyrrhic | ○ ○ | in a, of a, to a, and a, on a, in the, to the, of the, for the, by the, with a, at a, from a, and the, or a, as a, in my, of my, in our, in her, is a, has a, was a, will a, were a, in me, ...|
 
-[Back](#samplewords) | [Home](#home)
+&raquo; [Back](#samplewords)｜[Home](#home)
 
 <a name="metricfeet"></a>
 ### Complete List of Metric Feet
@@ -457,7 +457,7 @@ When adapting Chinese rhymed lines into English:
  | Hemiepes | ●○○ ●○○ ● _or_<br/> ●○○ ●○○ ●● | | Very Rare |
  | Sapphic | ●○●○●○○●○●○ _or_<br/> ●○●●●○○●○●○ | | Very Rare |
 
-[Back](#metricfeet) | [Home](#home)
+&raquo; [Back](#metricfeet)｜[Home](#home)
 
 <a name="metricmeters"></a>
 ### Demonstration of Metric Meters
@@ -513,7 +513,7 @@ When adapting Chinese rhymed lines into English:
                     feel like Atlanta adopted us
   ```
 
-[Back](#metricmeters) | [Home](#home)
+&raquo; [Back](#metricmeters)｜[Home](#home)
 
 <br/><a name="scansion"></a>
 ### Poetry Scansion
@@ -552,7 +552,7 @@ When adapting Chinese rhymed lines into English:
   | Category | Natural Stress | Example Line & Poet | Scansion in Context | Explanation |
   |:---------|--|--|--|-------|:-----|
   | `forgotten` | for–GOT–ten (anapest) | "The **for–GOT–ten** child" (Rossetti) | `for–GOT–ten` (anapest) | Natural anapest. |
-  | `forgot` | for–GOT (iamb) | "She **LONG** **for–GOT** **LOST** dreams" (Auden) | `for–GOT` (iamb) | Sandwiched between stressed syllables (`LONG`, `LOST`), "for-" becomes unstressed. |
+  | `forgot` | for–GOT (iamb) | "She **LONG** **for–GOT** **LOST** dreams" (Auden) | `for–GOT` (iamb) | Sand-wiched between stressed syllables (`LONG`, `LOST`), "for-" becomes unstressed. |
   | `heaven` | HEAV–en (trochee) | "**HEAV–en’s** gate" (Milton) | `HEAV–en’s` (trochee) | Natural trochee. |
   | | heav–EN (iamb) | "And **heav–EN** **SHINES**" (Herbert) | `heav–EN` (iamb) | Stressed "SHINES" forces stress shift to "-en". |
   | `over` | O–ver (trochee) | "**O–ver** the hill" (Blake) | `O–ver` (trochee) | Natural trochee. |
@@ -568,18 +568,18 @@ When adapting Chinese rhymed lines into English:
 
 **Function Words**: *Typically unstressed, but stressed for meter* [&uArr;](#stress-shift)
 
- | Category | Natural Stress | Example Line & Poet | Scansion in Context | Explanation |
+ | Cat | Natural Stress | Example Line & Poet | Scansion in Context | Explanation |
   |:---------|--|--|--|-------|:-----|
- | `and` | Unstressed | "The sea **and** sky" (Byron) | `and` (`–`) | Naturally unstressed. |
- | | Stressed | "**AND** the **STARS**!" (Whitman) | `AND` (`/`) | Starts a line; emphasized for dramatic trochee. |
- | `the` | Unstressed | "**The** moon ascends" (Wordsworth) | `the` (`–`) | Normally unstressed. |
- | | Stressed | "**THE** **KING** is dead!" (Tennyson) | `THE` (`/`) | Capitalization/metrical stress for emphasis. |
- | `to` | Unstressed | "**To** be or not" (Shakespeare) | `to` (`–`) | Unstressed in iambic foot. |
- | | Stressed | "**TO** **DIE**, to sleep" (Shakespeare) | `TO` (`/`) | Stressed for spondaic substitution (`TO DIE`). |
- | `that` | Unstressed | "I know **that** sound" (Eliot) | `that` (`–`) | Unstressed. |
- | | Stressed | "**THAT** **TIME** of year" (Shakespeare) | `THAT` (`/`) | Trochaic inversion at line start. |
- | `of` | Unstressed | "Sonnet **of** the Moon" (Marlowe) | `of` (`–`) | Typically weak. |
- | | Stressed | "**OF** **MAN’S** dis–o–bed–i–ence" (Milton) | `OF` (`/`) | Stressed for spondaic effect (`OF MAN’S`).                                  |
+ | `and` | un-stressed | "The sea **and** sky" (Byron) | `and` (`–`) | Naturally un-stressed. |
+ | | stressed | "**AND** the **STARS**!" (Whitman) | `AND` (`/`) | Starts a line; emphasized for dramatic trochee. |
+ | `the` | un-stressed | "**The** moon ascends" (Wordsworth) | `the` (`–`) | Normally un-stressed. |
+ | | stressed | "**THE** **KING** is dead!" (Tennyson) | `THE` (`/`) | Capitalization/metrical stress for emphasis. |
+ | `to` | un-stressed | "**To** be or not" (Shakespeare) | `to` (`–`) | Unstressed in iambic foot. |
+ | | stressed | "**TO** **DIE**, to sleep" (Shakespeare) | `TO` (`/`) | Stressed for spondaic substitution (`TO DIE`). |
+ | `that` | un-stressed | "I know **that** sound" (Eliot) | `that` (`–`) | Unstressed. |
+ | | stressed | "**THAT** **TIME** of year" (Shakespeare) | `THAT` (`/`) | Trochaic inversion at line start. |
+ | `of` | un-stressed | "Sonnet **of** the Moon" (Marlowe) | `of` (`–`) | Typically weak. |
+ | | stressed | "**OF** **MAN’S** dis–o–bed–i–ence" (Milton) | `OF` (`/`) | Stressed for spondaic effect (`OF MAN’S`).                                  |
 
 #### Key Insights: [&uArr;](#stress-shift)
 
@@ -631,7 +631,7 @@ When adapting Chinese rhymed lines into English:
   | about | a-BOUT | "Think a-BOUT it twice" | Iamb | "AB-out the meadow green" | Trochee |
   | above | a-BOVE | "Look a-BOVE the clouds" | Iamb | "AB-ove the treetops high" | Trochee |
   | across | a-CROSS | "Walk a-CROSS the bridge" | Iamb | "ACR-oss the valley wide" | Trochee |
-  | and | unstressed | "bread and butter" | Unstressed | "AND the mountains echoed" | Stressed |
+  | and | un-stress-ed | "bread and butter" | un-stress-ed | "AND the mountains echoed" | stressed |
   | around | a-ROUND | "Turn a-ROUND and look" | Iamb | "AR-ound the ancient oak" | Trochee |
   | because | be-CAUSE | "She left be-CAUSE of him" | Iamb | "BEC-ause the time has come" | Trochee |
   | before | be-FORE | "Come be-FORE the dawn" | Iamb | "BEF-ore the world was made" | Trochee |
@@ -660,17 +660,17 @@ When adapting Chinese rhymed lines into English:
   | eighteen | eigh-TEEN | "She's eigh-TEEN today" | Iamb | "EIGH-teen TALL trees" | Trochee |
   | fifteen | fif-TEEN | "Wait fif-TEEN minutes" | Iamb | "FIF-teen FAST horses" | Trochee |
   | fourteen | four-TEEN | "Count four-TEEN sheep" | Iamb | "FOUR-teen FIERCE storms" | Trochee |
-  | go | GO (stressed) | "I must GO now" | Stressed | "go FORTH and conquer" | Unstressed |
-  | here | HERE (stressed) | "Come HERE to me" | Stressed | "here LIES the problem" | Unstressed |
-  | how | HOW (stressed) | "HOW are you today?" | Stressed | "how LONG will this take?" | Unstressed |
-  | let | LET (stressed) | "LET me help you" | Stressed | "let FREEDOM ring out" | Unstressed |
+  | go | GO / stressed | "I must GO now" | stressed | "go FORTH and conquer" | unstressed |
+  | here | HERE / stressed | "Come HERE to me" | stressed | "here LIES the problem" | unstressed |
+  | how | HOW / stressed | "HOW are you today?" | stressed | "how LONG will this take?" | unstressed |
+  | let | LET / stressed | "LET me help you" | stressed | "let FREEDOM ring out" | unstressed |
   | nineteen | nine-TEEN | "The year nine-TEEN-forty" | Iamb | "NINE-teen DARK nights" | Trochee |
   | sixteen | six-TEEN | "She's six-TEEN years old" | Iamb | "SIX-teen BOLD knights" | Trochee |
   | thirteen | thir-TEEN | "Buy thir-TEEN red roses" | Iamb | "THIR-teen STRONG warriors" | Trochee |
-  | what | WHAT (stressed) | "WHAT did you say?" | Stressed | "what MATTERS most is love" | Unstressed |
-  | when | WHEN (stressed) | "WHEN will you arrive?" | Stressed | "when MORNING comes at last" | Unstressed |
-  | where | WHERE (stressed) | "WHERE did you go?" | Stressed | "where ANGELS fear to tread" | Unstressed |
-  | will | WILL (stressed) | "I WILL be there" | Stressed | "will NEVER be forgotten" | Unstressed |
+  | what | WHAT / stressed | "WHAT did you say?" | stressed | "what MATTERS most is love" | unstressed |
+  | when | WHEN / stressed | "WHEN will you arrive?" | stressed | "when MORNING comes at last" | unstressed |
+  | where | WHERE / stressed | "WHERE did you go?" | stressed | "where ANGELS fear to tread" | unstressed |
+  | will | WILL / stressed | "I WILL be there" | stressed | "will NEVER be forgotten" | unstressed |
 
 **Line Breaks and Enjambment** [&uArr;](#stress-shift-claude)
 
@@ -690,7 +690,7 @@ When adapting Chinese rhymed lines into English:
   | remember | re-MEM-ber | "I re-MEM-ber well" | Amphibrach | "...never / RE-mem-ber again" | Dactyl |
   | thirteen | thir-TEEN | "Count thir-TEEN slowly" | Iamb | "...exactly / THIR-teen steps" | Trochee |
   | together | to-GETH-er | "We'll work to-GETH-er" | Anapest | "...stay close / TO-geth-er now" | Dactyl |
-  | understand | un-der-STAND | "I don't un-der-STAND this" | Anapest | "...hard to / UN-der-stand this" | Dactyl |
+  | under-stand | un-der-STAND | "I don't un-der-STAND this" | Anapest | "...hard to / UN-der-stand this" | Dactyl |
   | whatever | what-EV-er | "Take what-EV-er you need" | Anapest | "...keep / WHAT-ev-er you find" | Dactyl |
   | whenever | when-EV-er | "Come when-EV-er you can" | Anapest | "...arrive / WHEN-ev-er you wish" | Dactyl |
   | wherever | where-EV-er | "Go where-EV-er you want" | Anapest | "...follow / WHERE-ev-er leads" | Dactyl |
@@ -740,7 +740,7 @@ When adapting Chinese rhymed lines into English:
   | snowfall | snow-FALL | "Heavy snow-FALL came" | Iamb | "Gentle SNOW-fall, white" | Trochee |
   | sunshine | sun-SHINE | "Bright sun-SHINE today" | Iamb | "Golden SUN-shine, warm" | Trochee |
   | telephone | tel-e-PHONE | "The tel-e-PHONE rang" | Anapest | "Old TEL-e-phone, black" | Dactyl |
-  | thunderstorm | thun-der-STORM | "A thun-der-STORM approaches" | Anapest | "Wild THUN-der-storm, fierce" | Dactyl |
+  | thunder-storm | thun-der-STORM | "A thun-der-STORM approaches" | Anapest | "Wild THUN-der-storm, fierce" | Dactyl |
   | understand | un-der-STAND | "I un-der-STAND now" | Anapest | "Hard to UN-der-stand, complex" | Dactyl |
   | valentine | val-en-TINE | "Sweet val-en-TINE card" | Anapest | "Red VAL-en-tine, loving" | Dactyl |
   | waterfall | wa-ter-FALL | "The wa-ter-FALL roared" | Anapest | "Tall WAT-er-fall, misty" | Dactyl |
@@ -760,7 +760,7 @@ When adapting Chinese rhymed lines into English:
  | let | × | / | Let him run! Let him run! | Repetition = emphasis |
  | today | × / | / × | Today, we rise | Trochee (for emphasis) |
  | what | × | / | What will you do? | Emphatic use |
- | when | × | / | When? Tell me when! | Stressed monosyllable |
+ | when | × | / | When? Tell me when! | Stressed mono·syllable |
  | where | × | / | Where have you been? | Question word stress |
  | will | × | / | Will you not speak? | Spondee or trochee start |
 
@@ -817,7 +817,7 @@ When adapting Chinese rhymed lines into English:
 
 **Sentence Stress / Grammatical Emphasis**
 
-  | Word | Na tural Stress | Context Example | Metrical Role | Notes |
+  | Word | Natural Stress | Context Example | Metrical Role | Notes |
   |:-----|:-:|:-|:-:|:-|
   | again | a-GAIN | “A-gain, I dream of fire” | Trochee | Can be flipped at line start |
   | become | be-COME | “BE-come the thing you seek” | Trochee | Metrical reweighting |
@@ -863,19 +863,19 @@ When adapting Chinese rhymed lines into English:
 **Enjambment / Line Break Effects** [&uArr;](#stress-shift-gpt)
 
   | Word | Natural Stress | Example (Break-Induced) | Metrical Role | Foot Type Used | Notes |
-  |:-----|:-:|---|:-:|:-|:-|
-  | and | unstressed | “She wept, / And none could help” | Promoted | Spondee/iamb | Conjunction gains poetic weight |
-  | here | stressed | “They stood— / Here, not in vain” | Strong | Stressed monosyllable | Poetic placement makes “here” peak |
+  |:-----|:-:|:-----|:-:|:-|:-|
+  | and | un-stressed | “She wept, / And none could help” | Promoted | Spondee / iamb | Conjunction gains poetic weight |
+  | here | stressed | “They stood— / Here, not in vain” | Strong | Stressed mono·syllable | Poetic placement makes “here” peak |
   | how | stressed | “She smiled— / How strange it was” | Emphatic | Trochee or start foot | Reflective mood intensifies it |
-  | let | stressed | “The bell tolled— / Let all be still” | Command stress | Stressed | Heightened by dramatic pause |
-  | still | stressed | “They spoke— / Still, I stayed” | Command-style | Monosyllabic stress | Temporal/emotional role |
-  | there | stressed | “I looked— / There, and saw the sky” | Stressed | Spondee/iamb | Meaning deepened by line break |
-  | what | stressed | “I asked— / What did he mean?” | Strong | Stressed monosyllable | Line break increases emphasis |
+  | let | stressed | “The bell tolled— / Let all be still” | Command stress | stressed | Heightened by dramatic pause |
+  | still | stressed | “They spoke— / Still, I stayed” | Command-style | Mono·syllabic stress | Temporal/emotional role |
+  | there | stressed | “I looked— / There, and saw the sky” | Stressed | Spondee / iamb | Meaning deepened by line break |
+  | what | stressed | “I asked— / What did he mean?” | Strong | Stressed mono·syllable | Line break increases emphasis |
   | when | stressed | “He left— / When none could know” | Strong | Iamb or spondee | Contrast sharpened by break |
-  | where | stressed | “They died— / Where no one came” | Stressed | Monosyllabic foot | Visual isolation adds stress |
-  | will | stressed/unstressed | “I know— / Will you return?” | Strong | Re-weighted | Question form promotes stress |
+  | where | stressed | “They died— / Where no one came” | Stressed | Mono·syllabic foot | Visual isolation adds stress |
+  | will | stressed / un-stressed | “I know— / Will you return?” | Strong | Re-weighted | Question form promotes stress |
 
-[Back](#stress-shift) | [Home](#home)
+&raquo; [Back](#stress-shift)｜[Home](#home)
 
 <br/><a name="exercises"></a>
 ### Exercises of Meters
@@ -984,7 +984,7 @@ When adapting Chinese rhymed lines into English:
   Brought Death into the World, and all our woe
   ```
 
-[Back](#exercises) | [Home](#home)
+&raquo; [Back](#exercises)｜[Home](#home)
 
 
 <br/><a name="excerpt"></a>
@@ -998,7 +998,7 @@ When adapting Chinese rhymed lines into English:
 
 * The freedom and the ease with which a master can do belies immense skill derived from practice.
 
-[Back](#excerpt) | [Home](#home)
+&raquo; [Back](#excerpt)｜[Home](#home)
 
 
 <br/><a name="books"></a>
@@ -1097,7 +1097,7 @@ When adapting Chinese rhymed lines into English:
 * "**The Vintage Book of Contemporary Poetry**", edited by *J. D. McClatchy*. (another “textbook” I require for my beginning poetry rewriting class)
 
 
-[Back](#books) | [Home](#home)
+&raquo; [Back](#books)｜[Home](#home)
 
 <br/><a name="examples"></a>
 <hr/>
@@ -1319,7 +1319,7 @@ When adapting Chinese rhymed lines into English:
   Into the forest I go / to lose my mind and find my soul
   ```
 
-[Back](#examples) | [Home](#home)
+&raquo; [Back](#examples)｜[Home](#home)
 
 
 <br/><a name="wording"></a>
@@ -1341,7 +1341,7 @@ When adapting Chinese rhymed lines into English:
 | useful | to be of use   |
 
 
-[Back](#wording) | [Home](#home)
+&raquo; [Back](#wording)｜[Home](#home)
 
 
 <br/><a name="agi"></a>
@@ -1988,12 +1988,14 @@ When adapting Chinese rhymed lines into English:
   Sing poetry’s song through night and day.
   ```
 
-[Back](#agi) | [Home](#home)
+&raquo; [Back](#agi)｜[Home](#home)
 
 
 <br/><a name="see"></a>
 <hr/>
+
 ### See also
+
 - Assistant tools
   * [DeepSonnet](https://www.deepsonnet.com/)
   * [HyperWrite](https://app.hyperwriteai.com/)
@@ -2017,4 +2019,41 @@ When adapting Chinese rhymed lines into English:
 - [YouTube](https://www.youtube.com/results?search_query=poetic+meter)
 
 
-[Back](#see) | [Home](#home) | [Blog](./README.md)
+&raquo; [Back](#see)｜[Home](#home)｜[Blog](./README.md)
+
+<!--stylesheet-->
+<div style="display:none">
+<style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:hover {
+  color: darkred !important;
+  text-decoration: none !important;
+  background-color: lightyellow;
+}
+body,html {
+  font-size: 1.15;
+  overflow-x: hidden; /* prevents horizontal scrolling */
+  width: 100%;
+}
+body,h1,h2,h3,h4,h5,p,pre,code {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
+  line-height: 1.5em;
+}
+td,th {
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+pre>code {
+  font-family: "Lucida Console", "Verdana", "Trebuchet MS", "Segoe UI", "Helvetica", "Calibri", sans-serif !important;
+  font-style: normal !important;
+  font-size: 1.15em !important;
+}
+@media print {
+  body,div,div#_html,p,code,pre {
+    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  }
+}
+--></style>
+</div>
