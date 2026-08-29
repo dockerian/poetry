@@ -3,7 +3,7 @@
 > 本书以中华书局出版的《[诗词格律](https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BC%A0%E7%BB%9F%E8%AF%97%E8%AF%8D%E7%BB%8F%E5%85%B8%EF%BC%9A%E8%AF%97%E8%AF%8D%E6%A0%BC%E5%BE%8B)》为基础，附加多种音律工具和诗词范例。
 
 <br/><a id="toc" name="toc"></a>
-## 书籍
+## 书籍・[&#128218;](../books)
 
   * [龙榆生《近三百年名家词选》](../books/龙榆生-近三百年名家词选.epub)
   * [王力《诗词格律》](../books/王力-诗词格律.epub)（增订本）
@@ -53,11 +53,9 @@
   * [词林正韵](https://baike.baidu.com/item/%E8%AF%8D%E6%9E%97%E6%AD%A3%E9%9F%B5)
   * [格律检测](http://www.52shici.com/)
   * [诗词格律·精编点要](http://www.ziyexing.com/shicigelv/scgl_index.htm)（[子夜行](http://www.ziyexing.com/)）
-  * [中华诗词网](https://www.zhonghuashici.com/)
-  * [中华诗库](https://www.shiku.org/)
-  * [古诗文](http://www.gushiwen.org/)
-  * [好诗词](http://www.haoshici.com/)
-  * [在线工具·组词](https://zuci.bmcx.com/)
+  * [中华诗库](https://www.shiku.org/)｜[中华诗词网](https://www.zhonghuashici.com/)
+  * [古诗文](http://www.gushiwen.org/)｜[古诗词](https://www.gushici.net/)｜[好诗词](http://www.haoshici.com/)
+  * [在线工具](https://www.bmcx.com/)：[组词](https://zuci.bmcx.com/)｜[索引](https://zuci.gushici.net/)｜[查询](https://www.hanyuguoxue.com/zuci/)｜[对仗](https://ai.binwang.me/)
   * [九歌——计算机古诗创作系统](http://jiuge.thunlp.org/)
   * [稻香居电脑作诗机网络版](https://www.google.com/search?q=%E7%A8%BB%E9%A6%99%E5%B1%85%E7%94%B5%E8%84%91%E4%BD%9C%E8%AF%97%E6%9C%BA)
   * [龙榆生](http://longyusheng.org)：[唐宋词格律](http://longyusheng.org/cipai/)
@@ -69,4 +67,53 @@
 
 ![格律图谱](./Images/poem-forms.jpg)
 
-&raquo; Back to <a href="#toc">Contents</a> | [Home](../README.md)
+&raquo; Back to <a href="#toc">Contents</a>｜[Home](../README.md)
+
+<!--stylesheet-->
+<div style="display:none">
+<style type="text/css"><!--
+a.arrow {
+  font-size: 0.85em;
+}
+a:hover {
+  color: darkred !important;
+  text-decoration: none !important;
+  background-color: lightyellow;
+}
+body,h1,h2,h3,h4,h5,li,p,pre,code {
+  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  line-height: 1.5em;
+}
+body,h1,h2 {
+  font-size: 1.25em;
+}
+h3,h4,h5 {
+  font-size: 1.15em !important;
+  line-height: 1.25em;
+  margin: 1em 0em 0.5em 0 !important;
+  text-indent: 0em;
+}
+blockquote p {
+  margin-left: 0.75em !important;
+  text-indent: 0em;
+}
+blockquote p>br {
+  display: block !important;
+}
+div>ul>li>p, div>ul>li>ul>li {
+  font-size: 1.0em;
+  margin: 0em 0em 0.35em !important;
+}
+p.up {
+  text-align: right;
+}
+@media print {
+  body,div,div#_html,p,code,pre {
+    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  }
+  div#anchor {
+    display: none;
+  }
+}
+--></style>
+</div>

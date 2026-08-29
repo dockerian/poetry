@@ -1,6 +1,7 @@
 # 博客杂记 <a id="toc" name="toc"></a>
 
-> 读书笔记＋摘抄
+> 古诗、歌词、雅译翻唱、诗集、图片，读书笔记＋摘抄
+
 
   * 读书笔记〖 [html](mynotes.html)｜[text](mynotes.txt) 〗
 
@@ -16,22 +17,23 @@
 
   * 诗词博客｜[附录](../gelv/README.md)
     - [学诗笔记 · Poetry Study](poetry-study.md)
+    - [舟山博客](https://boathill.blogspot.com/) ·
+      [_WordPress_](https://boathill.wordpress.com/category/poems/) ｜
+      [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
+      [_Wordpress_](https://divertidalz.wordpress.com/category/poem/)
     - [英律小结 · Prosody Summary](prosody-summary.md) ｜
       [歌词翻唱 · Lyrics Cover](song-cover.md)
     - [流行歌词 · Song lyrics](song-lyrics.md) ｜ [译词续编](song-lyrics-cover.md)
-    - [舟山博客](https://boathill.blogspot.com/) ·
-      [WordPress](https://boathill.wordpress.com/category/poems/) ｜
-      [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
-      [Wordpress](https://divertidalz.wordpress.com/category/poem/)
-    - [新韵字表](./xinyun.md)｜[漢字符號](./zi.md)
-    - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
-    - [古诗英译](./gushi-cap.md)
 
   * 网络摘抄
     - [北欧神话体系](norse.md)
     - [土味情话](mylines.html#qinghua)｜
       [撩妹大全](mylines.html#liaomei)
     - [消化油墨集.epub](../books/消化油墨集.epub)
+    - [新韵字表](./xinyun.md)｜[漢字符號](./zi.md)
+    - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
+    - [水浒传诗钞](./gushi-shuihu.md)
+    - [古诗英译](./gushi.md)
 
   * 旅图网址・纱糸轩：
     - [谷歌](https://divertidalz.blogspot.com/)｜
@@ -51,11 +53,17 @@
 
 <p><br/><br/></p>
 
-&raquo; Back to <a href="#toc">Contents</a> | [Home](../README.md)
+&raquo; Back to <a href="#toc">Contents</a>｜[Home](../README.md)
 
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
 a.arrow {
   font-size: 0.85em;
 }
@@ -65,14 +73,15 @@ a:hover {
   background-color: lightyellow;
 }
 body,h1,h2,h3,h4,h5,li,p,pre,code {
-  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
   line-height: 1.5em;
+  font-size: 1.05em;
 }
-body,h1,h2 {
-  font-size: 1.5em;
+h1,h2 {
+  font-size: 1.25em;
 }
 h3,h4,h5 {
-  font-size: 1.25em !important;
+  font-size: 1.15em !important;
   line-height: 1.25em;
   margin: 1em 0em 0.5em 0 !important;
   text-indent: 0em;
@@ -85,7 +94,7 @@ blockquote p>br {
   display: block !important;
 }
 div>ul>li>p, div>ul>li>ul>li {
-  font-size: 1.03em;
+  font-size: 1.0em;
   margin: 0em 0em 0.35em !important;
 }
 p.up {
@@ -93,7 +102,7 @@ p.up {
 }
 @media print {
   body,div,div#_html,p,code,pre {
-    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
   }
   div#anchor {
     display: none;

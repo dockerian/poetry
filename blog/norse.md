@@ -122,6 +122,9 @@ Fólkvangr and Valhalla are the two primary afterlife realms for those who die i
 <!--stylesheet-->
 <div style="display:none">
 <style type="text/css"><!--
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 a.lang {
   border: solid 1px;
   border-radius: 0.25em;
@@ -141,7 +144,7 @@ body,h1,h2,h3,h4,h5,p,pre,code {
   line-height: 1.5em;
 }
 body,h1,h2 {
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 h3,h4,h5 {
   color: darkslategray;
@@ -158,7 +161,7 @@ pre>code {
   font-size: 1.25em !important;
 }
 p,li {
-  font-size: 1.05em !important;
+  font-size: 1.0em !important;
   margin: 0em 0em 0.35em !important;
   text-align: justify;
 }
@@ -193,7 +196,7 @@ u {
 }
 @media print {
   body,div,div#_html,p,code,pre {
-    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
   }
   div#anchor {
     display: none;
