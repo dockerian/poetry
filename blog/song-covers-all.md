@@ -4,9 +4,9 @@
 
 
 <!--
-    NOTE: Use markdown=1, otherwise markdown code does not render within any enclosed html block element on github.io pages.
+    NOTE: Use markdown=1 to render markdown code within any enclosed html block element on github.io pages.
 -->
-<div id="_main" class="_main"></div>
+<div id="_main" class="_main" markdown="1">
 
 <div class="divtag" id="mulu">
 <form><span class="hamb">
@@ -15,9 +15,15 @@
 </form>
 </div>
 
-<!--NOTE: Flatten contents list-->
+<div id="mulu-delails" class="mulu" markdown="1">
+<details markdown="1" open>
+<summary>新译品｜Latest Trans</summary>
 
-* 中译英｜English Cover
+  - 寂静之声<code>2026</code>・[The Sound of Silence](#sound-of-silence)
+
+</details>
+<details markdown="1">
+<summary>中译英｜English Cover</summary>
 
   - 如愿　　　　　・[As You Wished](#ruyuan)
   - 我从草原来　　・[Coming From The Prairie](#wocongcaoyuanlai)
@@ -34,7 +40,9 @@
   - 左手指月　　　・[Upwards to the Moon](#zuoshouzhiyue)
   - 岁岁　　　　　・[Year After Year](#suisui)
 
-* 英译中｜ABBA
+</details>
+<details markdown="1">
+<summary>英译中｜ABBA</summary>
 
   - 曼舞歌兮　　　・[Andante, Andante](#abba-andante)
   - 惜惜其佳　　　・[Chiquitita](#abba-chiquitita)
@@ -49,7 +57,9 @@
   - 感谢音乐　　　・[Thank You For The Music](#abba-thank-you-for-the-music)
   - 赢了所有　　　・[The Winner Takes It All](#abba-the-winner-takes-it-all)
 
-* 英译中｜Boney M
+</details>
+<details markdown="1">
+<summary>英译中｜Boney M</summary>
 
   - 爸爸真酷　　　・[Daddy Cool](#boneym-daddy-cool)
   - 好汉鲁达　　　・[El Lute](#boneym-el-lute)
@@ -61,14 +71,18 @@
   - 巴比伦之河　　・[River Of Babylon](#boneym-river-of-babylon)
   - 想你　　　　　・[Sunny](#boneym-sunny)
 
-* 英译中｜Holly Songs
+</details>
+<details markdown="1">
+<summary>英译中｜Holly Songs</summary>
 
   - 上帝讓人快樂　・[God Rest Ye Merry Gentlemen](#holly-god-rest)
   - 天使高歌世界聽・[Hark, the Herald Angels Sing](#holly-hark)
   - 萬方齊來敬仰　・[O Come, All Ye Faithful](#holly-o-come)
   - 誰之子　　　　・[What Child Is This / Greensleeves](#holly-what-child)
 
-* 英译中｜Adele
+</details>
+<details markdown="1">
+<summary>英译中｜Adele</summary>
 
   - 無愛的挽歌　　・[Don't You Remember](#adele-dont-you-remember)
   - 愛的唯一　　　・[One And Only](#adele-one-and-only)
@@ -76,7 +90,9 @@
   - 雨落情逝心已焚・[Set Fire To The Rain](#adele-set-fire-to-the-rain)
   - 此情依舊　　　・[Someone Like You](#adele-some-one-like-you)
 
-* 英译中｜Others
+</details>
+<details markdown="1">
+<summary>英译中｜Others</summary>
 
   - 萬千夢想　　　・[A Million Dreams](#a-million-dream)
   - 永铭此爱不消退・[Always Remember Us This Way](#ladygaga-always-remember)
@@ -96,7 +112,9 @@
   - 用心贏你回　　・[Working My Way Back To You](#working-my-way-back)
   - 昨日重现　　　・[Yesterday Once More](#yesterday-once-more)
 
-* 英译中｜Epic
+</details>
+<details markdown="1">
+<summary>英译中｜Epic</summary>
 
   - 必信客　　　　・[Believer](#ra-believer)
   - 鸦将之女暴风种・[Daughter of the Raven, Son of the Storm](#ai-daughter-of-the-raven)
@@ -105,6 +123,8 @@
   - 英灵之女　　　・[Valhalla's Daughters](#ra-valhallas-daughters) (Raven Astrid)
   - 维京梦　　　　・[Viking Dream](#ra-viking-dream)
 
+</details>
+</div>
 
 
 <p class="up"><a href="#mulu">&lArr;</a> &middot; <a href="#title">&uArr;</a></p><hr/>
@@ -1413,7 +1433,7 @@
 ### 想你｜Sunny (1976) <a name="boneym-sunny"></a>
 
   ```
-  想你　我怎能放弃对你　的眷恋　　　Sunny, yesterday my life was filled with rain.
+  想你　我怎能放弃对你　的眷恋。　　Sunny, yesterday my life was filled with rain.
   想你　那微笑是我心中　的火焰。　　Sunny, you smiled at me and really eased the pain.
   不论　绿水山岗，不分　昏晓星夜，　The dark days are gone, and the bright days are here,
   我想你　的梦　不　能　绝。　　　　My sunny one shines so sincere.
@@ -2974,9 +2994,9 @@
 <div id="el2c-count" class="counts"></div>
 
 
-<div id="counts" class="corner" title="Lyrics Count"></div>
+<p class="up"><a href="#el2c">&#x21e7;</a><a name="_ends"></a></p><hr/>
 
-<p class="up"><a href="#el2c">&#x21e7;</a></p><hr/>
+<div id="counts" class="corner" title="Lyrics Count"></div>
 
 
 <!--Bottom-Left Popup-->
@@ -3007,7 +3027,7 @@
 </div><!--#menu-->
 </div><!--#goto-->
 
-<div id="_ends"></div>
+</div><!--_main-->
 
 
 &raquo; Back to <a href="#title">Content Title</a>｜[Blog](./README.md)｜[Home](../README.md)
@@ -3054,7 +3074,7 @@ h2:has(a#el2c) ~ h3 {
   background-color: lightcyan;
   counter-increment: el2c-count h3-counter;
 }
-#_ends::after, .counts {
+#_main::after, .counts {
   color: dimgray;
   background-color: honeydew;
   line-height: 1.5em;
@@ -3064,7 +3084,7 @@ h2:has(a#el2c) ~ h3 {
   right: 0px; top: 0;
   display: block;
 }
-#_ends::after {
+#_main::after {
   content: "Lyrics count: " counter(h3-counter);
   background-color: lightyellow;
 }
@@ -3209,6 +3229,16 @@ summary {
   background-color: whitesmoke !important;
   color: darkslategray;
   cursor: pointer;
+}
+summary ~ ul li code {
+  display: inline-block;
+  background-color: transparent !important;
+  font-size: 0.75em !important;
+  transform: translateY(-0.15em);
+  margin: 0 !important;
+  padding: 0em 0.5em !important;
+  max-width: 4em;
+  width: 4em;
 }
 summary {
   list-style: none;
