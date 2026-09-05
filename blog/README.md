@@ -11,19 +11,17 @@
     - 周恩来：[杂文](zhou.html)
 
   * 文稿诗集｜[统计数据](data/README.md)
-    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="height:1.15em;padding:0em 0em 0.5em"><img src="../gelv/Images/markdown.png" height="13.5px" valign="middle" style="height:1em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/></a>
+    - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="color:gray;height:1.25em;padding:0em 0em 0.5em"> ☆ <img src="../gelv/Images/markdown.png" height="1.35em" valign="middle" style="height:1.35em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/> ☆ </a>
     - [清明诗抄](../gelv/html/shiji-qingming.html)｜[新词对韵](../gelv/html/shenglv-duiyun.html)
     - [纱糸轩集](../lyrics.html)
 
   * 诗词博客｜[附录](../gelv/README.md)
-    - [学诗笔记 · Poetry Study](poetry-study.md)
-    - [舟山博客](https://boathill.blogspot.com/) ·
-      [_WordPress_](https://boathill.wordpress.com/category/poems/) ｜
-      [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem) ·
-      [_Wordpress_](https://divertidalz.wordpress.com/category/poem/)
-    - [英律小结 · Prosody Summary](prosody-summary.md) ｜
-      [歌词翻唱 · Lyrics Cover](song-cover.md)
-    - [流行歌词 · Song lyrics](song-lyrics.md) ｜ [译词续编](song-lyrics-cover.md)
+    - [学诗笔记・Poetry Study](poetry-study.md)
+    - [英律小结・Prosody Summary＋歌词翻唱・Lyrics Cover](song-cover.md)
+    - [舟山博客](https://boathill.blogspot.com/)・[_WordPress_](https://boathill.wordpress.com/category/poems/) ｜
+      [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem)・[_Wordpress_](https://divertidalz.wordpress.com/category/poem/)
+    - [翻唱全集](song-covers-all.md)・[En-Ch](song-covers-e2c.md)｜[Ch-En](song-covers-c2e.md) <a href="song-covers-all.md" style="color:gray;height:1.25em;padding:0em 0em 0.5em"> ☆ <img src="../gelv/Images/markdown.png" height="1.35em" valign="middle" style="height:1.35em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/> ☆ </a>
+    - [流行歌词・Song lyrics](song-lyrics.md)
 
   * 网络摘抄
     - [北欧神话体系](norse.md)
