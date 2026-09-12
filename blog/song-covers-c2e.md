@@ -2,35 +2,26 @@
 
 > A collection of Chinese ⇒ English lyrics cover. See [html page](https://dockerian.github.io/poetry/lyrics.html#cl2e) and [En→Ch](song-covers-e2c.md) lyrics.
 
-<div id="_main" class="_main"></div>
-
-<div id="anchor" class="anchor">
-<!-- hidden checkbox to handle toggle states -->
-<input type="checkbox" id="chk-toggle" class="chk-toggle" checked="checked" />
-<!-- label acts as clickable button -->
-<label for="chk-toggle" class="btn-toggle">
-  <span class="sign-hide" title="Collapse lyrics">－</span>
-  <span class="sign-show" title="Expand lyrics">＋</span>
-</label>
-</div>
+<div id="_main" class="_main" markdown="1">
 
 <div id="mulu" name="mulu"></div>
 
 * 目录｜Contents
 
-  - 糊涂的爱　　　・[The Puzzle Of Love](#hutudeai)
-  - 传奇　　　　　・[Legend](#chuanqi)
-  - 我从草原来　　・[Coming From The Prairie](#wocongcaoyuanlai)
-  - 海闊天空　　　・[Under A Vast Sky](#haikuotiankong)
-  - 孤勇者　　　　・[Lonely Warrior](#guyongzhe)
-  - 一笑江湖　　　・[A Knight's Wild Heart](#yixiaojianghu)
-  - 越过山丘　　　・[Another Me I Waving To](#yueguoshanqiu)
-  - 人间道　　　　・[The Rightful World](#rightful-world)
   - 如愿　　　　　・[As You Wished](#ruyuan)
-  - 左手指月　　　・[Upwards to the Moon](#zuoshouzhiyue)
-  - 孤独的浪客　　・[Lonely Wanderer](#gududelangke)
+  - 我从草原来　　・[Coming From The Prairie](#wocongcaoyuanlai)
+  - 越过山丘　　　・[Crossing The Hill](#yueguoshanqiu)
   - 苍穹唤　　　　・[Echo of the Sky](#cangqionghuan)
+  - 一笑江湖　　　・[A Knight's Wild Heart](#yixiaojianghu)
+  - 传奇　　　　　・[Legend](#chuanqi)
+  - 孤独的浪客　　・[Lonely Wanderer](#gududelangke)
+  - 孤勇者　　　　・[Lonely Warrior](#guyongzhe)
+  - 红尘客一个　　・[A Mortal Wanderer](#hongchenke)
+  - 糊涂的爱　　　・[The Puzzle Of Love](#hutudeai)
+  - 人间道　　　　・[The Rightful World](#renjiandao)
   - 敢问路在何方　・[The Road Beneath](#ganwenluzaihefang)
+  - 海闊天空　　　・[Under A Vast Sky](#haikuotiankong)
+  - 左手指月　　　・[Upwards to the Moon](#zuoshouzhiyue)
   - 岁岁　　　　　・[Year After Year](#suisui)
 
 <p class="up"><a href="#mulu">&lArr;</a> &middot; <a href="#title">&uArr;</a><a id="cl2e" name="cl2e"><hr/></a></p>
@@ -476,6 +467,35 @@
 
 <p class="up"><a href="#ganwenluzaihefang">&lArr;</a> &middot; <a href="#cl2e">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
+### 红尘客一个｜A Mortal Wanderer <a name="hongchenke"></a>
+
+  ```
+  叹红尘客一个，　　　　　　　Sigh, in mortal world, a wanderer
+  难逃情海的漩涡，　　　　　　And I am caught within love’s endless shore
+  爱恨、情仇、半点都不由我。　Through pain and bitter joy, I’m never chosen for
+  为何伤心人那么多，　　　　　With aching hearts, so many many more
+  我也算其中一个，　　　　　　And I am one among them before
+  爱来爱去只剩下寂寞。　　　　This turning love will leave nothing but a sore
+
+  叹红尘客一个，　　　　　　　Sigh, in mortal world, a wanderer
+  难逃生活的枷锁，　　　　　　And I am bound within life’s tightening cord
+  是苦是乐、都要淌岁月的河。　The weight of passing days I cannot long ignore
+  也问风追要过结果，　　　　　I chased the wind to hear the ocean roar
+  问苍天为何爱而不得，　　　　And why must love depart, as storms outpour
+  爱来爱去只留下难过。　　　　This turning love will leave only aching lore
+
+  我是伤心的人一个，　　　　　I'm a wounded heart, and little more
+  只是红尘的客一个；　　　　　Just in mortal world, a wanderer
+  让我心碎泪流成河、　　　　　Let shattered heart release a river’s pour
+  在这一刻。　　　　　　　　　As tears implore
+  我是心碎的人一个，　　　　　I'm a broken heart, and little more
+  也是红尘的客一个，　　　　　Yet in mortal world, a wanderer
+  让我最後一次脆弱、　　　　　Allow this final weakness to the core
+  泪眼婆娑。　　　　　　　　　As eyes implore
+  ```
+
+<p class="up"><a href="#hongchenke">&lArr;</a> &middot; <a href="#cl2e">〇</a> &middot; <a href="#title">&uArr;</a></p>
+
 ### 岁岁｜Year After Year <a name="suisui"></a>
 
   ```
@@ -507,13 +527,26 @@
 
 
 
+<!--Bottom-left Corner-->
+<div id="anchor" class="anchor" markdown="0">
+<!-- hidden checkbox to handle toggle states -->
+<input type="checkbox" id="chk-toggle" class="chk-toggle" checked="checked" />
+<!-- label acts as clickable button -->
+<label for="chk-toggle" class="btn-toggle">
+  <span class="sign-hide" title="Collapse lyrics">－</span>
+  <span class="sign-show" title="Expand lyrics">＋</span>
+</label>
+</div>
+
 <div id="counts" title="Lyrics Counter"></div>
 
 <div id="_ends" class="counts"></div>
 
 <p class="up"><a href="#mulu">&#x21e7;</a></p><hr/>
 
-&raquo; Back to <a href="#title">Content Title</a> | [Blog](./README.md) | [Home](../README.md)
+</div><!--_main-->
+
+&raquo; Back to <a href="#title">Content Title</a>｜[Blog](./README.md)｜[Home](../README.md)
 
 <div style="display:none"><!--stylesheet-->
 <style type="text/css"><!--
@@ -536,34 +569,6 @@
   div#anchor, .noprint {
     display: none;
   }
-}
-/* BEGIN styles for counters */
-#_main {
-  counter-reset: h3-counter;
-}
-#_main ~ h3 {
-  counter-increment: h3-counter;
-}
-#_ends::after {
-  color: dimgray;
-  content: "Lyrics count: " counter(h3-counter);
-  background-color: lightyellow;
-  line-height: 1.5em;
-  margin: 0em 0em 0.5em 0;
-  padding: 0.25em 0.25em 0.5em;
-  text-align: right;
-  display: block;
-}
-#counts::after {
-  color: darkgreen;
-  border: solid 1px darkgreen;
-  border-radius: 0.5em;
-  content: counter(h3-counter);
-  right: 0px; top: 0;
-  margin: 1.25em 0.75em;
-  padding: 0.65em 0.85em;
-  position: fixed;
-  opacity: 0.75;
 }
 a {
   text-decoration: none;
@@ -600,19 +605,23 @@ li>p {
 h2,h3 {
   line-height: 1.85em !important;
 }
-h2 {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-}
-h2>b {
+h2 > b, h2 span {
   display: inline-block;
+  font-size: 0.65em;
   float: right;
 }
-h3:hover,h2:hover {
+h2:hover, h3:hover, ul>li:hover {
   background-color: lightyellow !important;
   color: darkslategray;
   cursor: default;
+}
+h3 {
+  background-color: mintcream;
+  line-height: 2em !important;
+}
+h3:hover + pre {
+  line-height: 1.65em;
+  padding: 1.25em;
 }
 h3:hover + pre code, pre:hover > code, pre:active {
   background-color: whitesmoke;
@@ -622,22 +631,25 @@ h4,pre>code {
   font-size: 1.25em !important;
 }
 code {
-  color: dimgray;
+  background-color: whitesmoke;
+  color: darkslategray;
 }
 pre {
+  background-color: whitesmoke;
   margin-left: 0.35em !important;
   break-before: avoid-page;
   /* Fallback for older systems */
   page-break-before: avoid;
 }
-p.divtag {
+p.divtag, div.divtag {
   color: gray;
   cursor: default;
   border-left: double 0.5em lightgray;
+  margin: 0.5em 0;
   text-align: right;
   width: 100$;
 }
-p.divtag span, h2 span {
+p.divtag span, div.divtag span {
   display: inline-block;
   background-color: lemonchiffon;
   border: solid 1px lightcoral;
@@ -647,15 +659,40 @@ p.divtag span, h2 span {
   width: max-content; /* or any specific width like 200px */
   right: 0;
 }
-h2 span {
-  font-size: 0.65em;
-}
 p.divtag span b {
   color: dimgray;
 }
 p.up {
   text-align: right;
 }
+/* BEGIN styles for counters */
+#_main {
+  counter-reset: h3-counter;
+}
+#_main h3 {
+  counter-increment: h3-counter;
+}
+#_ends::after {
+  color: dimgray;
+  background-color: honeydew;
+  line-height: 1.5em;
+  padding: 0.25em 0.25em 0.5em;
+  text-align: right;
+  content: "Lyrics count: " counter(h3-counter);
+  display: block;
+}
+#counts::after {
+  color: darkgreen;
+  border: solid 1px darkgreen;
+  border-radius: 0.5em;
+  content: counter(h3-counter);
+  right: 0px; top: 0;
+  margin: 1.25em 0.75em;
+  padding: 0.65em 0.85em;
+  position: fixed;
+  opacity: 0.75;
+}
+/* END styles for counters */
 /* BEGIN styles to hide/show lyrics section */
 #_main {
   position: relative;
@@ -695,7 +732,7 @@ p.up {
 }
 #_main:has(.chk-toggle:not(:checked)) pre {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   line-height: 1.25em;
   padding-top: 0.5em;
@@ -704,68 +741,6 @@ p.up {
 #_main:has(.chk-toggle:checked) pre {
   display: block;
 }
-h3 {
-  line-height: 2em !important;
-}
-h3:hover {
-  background-color: lightyellow;
-}
-h3:hover + pre code, pre:hover > code, pre:active {
-  background-color: whitesmoke;
-  color: darkblue;
-}
-h3:hover + pre {
-  line-height: 1.65em;
-  padding: 1.25em;
-}
-/* BEGIN details and summary */
-details {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-details ul li {
-  list-style: none;
-  margin-left: -0.75em;
-}
-details ul li::before {
-  content: "○　";
-  font-size: 0.5em;
-  position: relative;
-  bottom: 0.25em;
-}
-details[open] summary::after {
-  content: '';
-}
-summary, ::details-content {
-  margin: 0em 0.5em 0em 2em;
-  user-select: none;
-}
-summary {
-  list-style: none;
-}
-summary:hover {
-  background-color: lightyellow !important;
-  border-top: dotted 1px dimgray;
-}
-summary::-webkit-details-marker {
-  display: none; /* Legacy Safari/Chrome support */
-}
-summary::after {
-  content: ' +';
-}
-summary {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  background-color: whitesmoke !important;
-  padding: 0em 0em 0.5em 0.25em !important;
-  margin: 0em 0em 0em 2em !important;
-}
-summary::marker {
-  content: "• ";
-  transition: transform 2s ease;
-  font-size: 1.5em;
-}
-/* END details and summary */
+/* END styles of corner anchor */
 --></style>
 </div>
