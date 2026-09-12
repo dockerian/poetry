@@ -20,6 +20,7 @@
 <summary>新译品｜Latest Trans</summary>
 
   - 寂静之声<code>2026</code>・[The Sound of Silence](#sound-of-silence)
+  - 红尘客<code>2026</code>　・[A Mortal Wanderer](#hongchenke)
 
 </details>
 <details markdown="1">
@@ -33,6 +34,7 @@
   - 传奇　　　　　・[Legend](#chuanqi)
   - 孤独的浪客　　・[Lonely Wanderer](#gududelangke)
   - 孤勇者　　　　・[Lonely Warrior](#guyongzhe)
+  - 红尘客一个　　・[A Mortal Wanderer](#hongchenke)
   - 糊涂的爱　　　・[The Puzzle Of Love](#hutudeai)
   - 人间道　　　　・[The Rightful World](#renjiandao)
   - 敢问路在何方　・[The Road Beneath](#ganwenluzaihefang)
@@ -574,6 +576,35 @@
 
 <p class="up"><a href="#ganwenluzaihefang">&lArr;</a> &middot; <a href="#cl2e">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
+### 红尘客一个｜A Mortal Wanderer <a name="hongchenke"></a>
+
+  ```
+  叹红尘客一个，　　　　　　　Sigh, in mortal world, a wanderer
+  难逃情海的漩涡，　　　　　　And I am caught within love’s endless shore
+  爱恨、情仇、半点都不由我。　Through pain and bitter joy, I’m never chosen for
+  为何伤心人那么多，　　　　　With aching hearts, so many many more
+  我也算其中一个，　　　　　　And I am one among them before
+  爱来爱去只剩下寂寞。　　　　This turning love will leave nothing but a sore
+
+  叹红尘客一个，　　　　　　　Sigh, in mortal world, a wanderer
+  难逃生活的枷锁，　　　　　　And I am bound within life’s tightening cord
+  是苦是乐、都要淌岁月的河。　The weight of passing days I cannot long ignore
+  也问风追要过结果，　　　　　I chased the wind to hear the ocean roar
+  问苍天为何爱而不得，　　　　And why must love depart, as storms outpour
+  爱来爱去只留下难过。　　　　This turning love will leave only aching lore
+
+  我是伤心的人一个，　　　　　I'm a wounded heart, and little more
+  只是红尘的客一个；　　　　　Just in mortal world, a wanderer
+  让我心碎泪流成河、　　　　　Let shattered heart release a river’s pour
+  在这一刻。　　　　　　　　　As tears implore
+  我是心碎的人一个，　　　　　I'm a broken heart, and little more
+  也是红尘的客一个，　　　　　And in mortal world, a wanderer
+  让我最後一次脆弱、　　　　　Allow this final weakness to the core
+  泪眼婆娑。　　　　　　　　　As eyes implore
+  ```
+
+<p class="up"><a href="#hongchenke">&lArr;</a> &middot; <a href="#cl2e">〇</a> &middot; <a href="#title">&uArr;</a></p>
+
 ### 岁岁｜Year After Year <a name="suisui"></a>
 
   ```
@@ -611,7 +642,7 @@
 
 <p class="divtag"><a id="el2c-abba" name="el2c-abba"></a><span>En-Ch · <b>ABBA</b></span></p>
 
-### 曼舞歌兮｜Andante, Andante <a name="abba-andante"></a>
+### 曼舞歌兮｜Andante, Andante (ABBA) <a name="abba-andante"></a>
 
   ```
   不徐不急，和我相依　　　　　　　Take it easy with me, please
@@ -646,7 +677,7 @@
 
 <p class="up"><a href="#abba-andante">&lArr;</a> &middot; <a href="#el2c-abba">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 惜惜其佳｜Chiquitita <a name="abba-chiquitita"></a>
+### 惜惜其佳｜Chiquitita (ABBA) <a name="abba-chiquitita"></a>
 
   ```
   惜惜其佳，何事心愁｜小小女孩，何事而迷惘　　　Chiquitita, tell me what's wrong
@@ -688,7 +719,7 @@
 
 <p class="up"><a href="#abba-chiquitita">&lArr;</a> &middot; <a href="#el2c-abba">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 舞之情｜Dancing Queen <a name="abba-dancing-queen"></a>
+### 舞之情｜Dancing Queen (ABBA) <a name="abba-dancing-queen"></a>
 
   ```
   舞起來、搖起來，　　　You can dance, you can jive,
@@ -727,7 +758,7 @@
 
 <p class="up"><a href="#abba-dancing-queen">&lArr;</a> &middot; <a href="#el2c-abba">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 飞鹰｜Eagle <a name="abba-eagle"></a>
+### 飞鹰｜Eagle (ABBA) <a name="abba-eagle"></a>
 
   ```
   來自遠方他們任意飛　　　　They came flying from far away,
@@ -768,7 +799,7 @@
 
 <p class="up"><a href="#abba-eagle">&lArr;</a> &middot; <a href="#el2c-abba">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 费尔南多｜Fernando <a name="abba-fernando"></a>
+### 费尔南多｜Fernando (ABBA) <a name="abba-fernando"></a>
 
   ```
   還能聽見戰鼓聲嗎，費爾南多　Can you hear the drums, Fernando?
@@ -1194,7 +1225,7 @@
 
 <p class="up"><a href="#boneym-hooray">&lArr;</a> &middot; <a href="#el2c-boneym">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 我的新生｜I Am Born Again (Boney M) <a name="boneym-born-again"></a>
+### 我的新生｜I Am Born Again (1979 Boney M) <a name="boneym-born-again"></a>
 
   ```
   获得重生在今天　　　　　　　　I'm born again, I feel free
@@ -1356,7 +1387,7 @@
 
 <p class="up"><a href="#boneym-marys-boy">&lArr;</a> &middot; <a href="#el2c-boneym">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 大海幻想曲｜Ocean Of Fantasy (1979) <a name="boneym-ocean-of-fantasy"></a>
+### 大海幻想曲｜Ocean Of Fantasy (1979 Boney M) <a name="boneym-ocean-of-fantasy"></a>
 
   ```
   大海绚烂我的人生　　　　My world is filled with oceans
@@ -1393,7 +1424,7 @@
 
 <p class="up"><a href="#boneym-ocean-of-fantasy">&lArr;</a> &middot; <a href="#el2c-boneym">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 巴比伦之河｜River Of Babylon (1978) <a name="boneym-river-of-babylon"></a>
+### 巴比伦之河｜River Of Babylon (1978 Boney M) <a name="boneym-river-of-babylon"></a>
 
   ```
   坐在巴比倫河岸上，　　　　By the rivers of Babylon,
@@ -1430,7 +1461,7 @@
 
 <p class="up"><a href="#boneym-river-of-babylon">&lArr;</a> &middot; <a href="#el2c-boneym">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 想你｜Sunny (1976) <a name="boneym-sunny"></a>
+### 想你｜Sunny (1976 Boney M) <a name="boneym-sunny"></a>
 
   ```
   想你　我怎能放弃对你　的眷恋。　　Sunny, yesterday my life was filled with rain.
@@ -1463,7 +1494,7 @@
 
 <p class="divtag"><a id="el2c-adele" name="el2c-adele"></a><span>En-Ch · <b>Adele</b></span></p>
 
-### 雨落情逝心已焚｜Set Fire To The Rain (2011 Adele) <a name="adele-set-fire-to-the-rain"></a>
+### 雨落情逝心已焚｜Set Fire To The Rain (Adele) <a name="adele-set-fire-to-the-rain"></a>
 
   ```
   譲祂坠落，我的心　　　　　　　　　I let it fall, my heart,
@@ -1554,7 +1585,7 @@
 
 <p class="up"><a href="#adele-rolling-in-the-deep">&lArr;</a> &middot; <a href="#el2c-adele">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 無愛的挽歌｜Don't You Remember (2011 Adele) <a name="adele-dont-you-remember"></a>
+### 無愛的挽歌｜Don't You Remember (Adele) <a name="adele-dont-you-remember"></a>
 
   ```
   何时与你再相见～　　　　　　　　When will I see you again?
@@ -1593,7 +1624,7 @@
 
 <p class="up"><a href="#adele-dont-you-remember">&lArr;</a> &middot; <a href="#el2c-adele">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 此情依舊｜Someone Like You (2011 Adele) <a name="adele-some-one-like-you"></a>
+### 此情依舊｜Someone Like You (Adele) <a name="adele-some-one-like-you"></a>
 
   ```
   得知你終於成了家　　　　　　　　　I heard that you're settled down
@@ -1646,7 +1677,7 @@
 
 <p class="up"><a href="#adele-some-one-like-you">&lArr;</a> &middot; <a href="#el2c-adele">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 愛的唯一｜One And Only (2011 Adele) <a name="adele-one-and-only"></a>
+### 愛的唯一｜One And Only (Adele) <a name="adele-one-and-only"></a>
 
   ```
   你一直在我心田　　　　　　　　　　　You've been on my mind
@@ -1882,6 +1913,8 @@
 
 ### 我會愛上你｜I Could Fall In Love With You <a name="i-could-fall-in-love-with-you"></a>
 
+  > Chinese lyrics by [Divertida LZ](https://dockerian.github.io/poetry/lyrics.html#zhou).
+
   ```
   我心在今夜迷失　　　　　　　　I could lose my heart tonight
   如果你不转身消逝　　　　　　　If you don't turn and walk away
@@ -1918,6 +1951,8 @@
 <p class="up"><a href="#i-could-fall-in-love-with-you">&lArr;</a> &middot; <a href="#el2c-others">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
 ### 为你骄傲｜Proud Of You (2008 by Fiona Fung) <a name="proud-of-you"></a>
+
+  > Chinese lyrics by [Divertida LZ](https://dockerian.github.io/poetry/lyrics.html#zhou).
 
   ```
   爱在眼中、静静坐在我身旁　Love in your eyes / Sitting silent by my side
@@ -2502,51 +2537,51 @@
 
 <p class="up"><a href="#dualipa-levitating">&lArr;</a> &middot; <a href="#el2c-others">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
-### 寂静之声｜The Sound of Silence <a name="sound-of-silence"></a>
+### 寂静之声｜The Sound of Silence (1964) <a name="sound-of-silence"></a>
 
   ```
   你好暗夜，老友平安　　Hello darkness, my old friend
-  我又要找你攀谈一番　　I’ve come to talk with you again
+  我要来找你攀谈一番　　I’ve come to talk with you again
   只因轻轻蔓延的梦境　　Because a vision softly creeping
-  沉睡时播种在我心灵　　Left its seeds while I was sleeping
+  沉睡之时播在我心灵　　Left its seeds while I was sleeping
   而那梦境　　　　　　　And the vision
   在我脑海扎下根　　　　that was planted in my brain
   逝而犹存、　　　　　　Still remains,
-  听寂静声之湮沦　　　　within the sound of silence
+  听寂静之声湮沦　　　　within the sound of silence
 
   行走在无尽的睡梦中　　In restless dreams I walked alone
-  鹅卵石街道窄而如洞　　Narrow streets of cobblestone
-  晕色街灯下的栅影暗　　‘Neath the halo of a streetlamp
-  衣领翻起潮湿和夜寒　　I turned my collar to the cold and damp
+  鹅卵石路　狭窄似洞　　Narrow streets of cobblestone
+  街灯黑落的晕色影乱　　‘Neath the halo of a streetlamp
+  衣领翻起了湿寒夜暗　　I turned my collar to the cold and damp
   忍着碍眼的刺白　　　　When my eyes were stabbed
   闪着炫光下的霓虹彩　　By the flash of a neon light
   它撕开夜色如黛　　　　That split the night
-  暗触了寂静声之湮沦　　And touched the sound of silence
+  暗触着寂静之声湮沦　　And touched the sound of silence
 
-  曝光之下我曾见过　　　And in the naked light I saw
+  曝光之下来而复过　　　And in the naked light I saw
   十万之众也许更多　　　Ten thousand people, maybe more
   普罗之众鸣而不兴　　　People talking without speaking
   普罗之众闻而不听　　　People hearing without listening
-  普罗之众從不分享所学　People writing songs that voices never share
-  无有胆略　　　　　　　No one dare
-  打扰那寂静声之湮沦　　Disturb the sound of silence
+  普罗之众唱而未得其解　People writing songs that voices never share
+  无那胆略　　　　　　　No one dare
+  去打扰寂静之声湮沦　　Disturb the sound of silence
 
   自负的人、你猜不透　　“Fools” said I, “You do not know
   沉默如癌、越长越厚　　Silence like a cancer grow
-  听我一言、为你传授　　Hear my words that I might teach you
+  听我一句、为你传授　　Hear my words that I might teach you
   牵我的手、可带你走　　Take my arms that I might reach you”
-  而我的话如寂静雨落　　But my words like silent raindrops fell
-  回声在寂静井中湮没　　And echoed in the wells of silence
+  而我的话如无言雨落　　But my words like silent raindrops fell
+  回声在寂静井中湮沦　　And echoed in the wells of silence
 
-  普罗大众躬身而卑微　　And the people bowed and prayed
-  为了霓虹而造神追随　　To the neon god they made
-  闪亮出一个预示警醒　　And the sign flashed out its warning
-  形成清晰的文字写明　　In the words that it was forming
-  按那警示的意味　　　　And the sign said
+  普罗大众身躬而卑微　　And the people bowed and prayed
+  为霓虹世界造神追随　　To the neon god they made
+  闪亮的预示一如火警　　And the sign flashed out its warning
+  形成清晰的文字说明　　In the words that it was forming
+  按那警世的意味　　　　And the sign said
   一个预言的词汇　　　　The words of the prophets
-  书写在地铁墙外表　　　Are written on subway walls
-  　　在大门和甬道　　　And tenement halls
-  微吟在寂静声中湮没　　And whispered in the sounds of silence
+  誊写在地铁和海报　　　Are written on subway walls
+  　　在寓所门和道　　　And tenement halls
+  微语在寂静之声湮沦　　And whispered in the sounds of silence
   ```
 
 <p class="up"><a href="#sound-of-silence">&lArr;</a> &middot; <a href="#el2c-others">〇</a> &middot; <a href="#title">&uArr;</a></p>
@@ -2702,7 +2737,7 @@
   鴉將的女兒，風暴的種　　　　Daughter of the raven, son of the storm
   沒有注定的、安福與優容　　　We were never meant to be safe or warm
   走過了火海，穿越浪沫空　　　We walked the fire, we crossed the foam
-  每一戰鬥、都為了家國　　　　Made every battle a kind of home
+  每一戰鬥、為家為國為眾　　　Made every battle a kind of home
   若海汐和潮勢，抹去了你的痕　If the sea should rise and take your name
   我要招之而回，透過風火之门　I will call it back through wind and flame
   無阻、無隔、生死與海崖　　　No grave, no shore, could keep us apart
@@ -2999,6 +3034,17 @@
 <div id="counts" class="corner" title="Lyrics Count"></div>
 
 
+<!--Bottom-left Corner-->
+<div id="anchor" class="anchor" markdown="0">
+<!-- hidden checkbox to handle toggle states -->
+<input type="checkbox" id="chk-toggle" class="chk-toggle" checked="checked" />
+<!-- label acts as clickable button -->
+<label for="chk-toggle" class="btn-toggle">
+  <span class="sign-hide" title="Collapse lyrics">－</span>
+  <span class="sign-show" title="Expand lyrics">＋</span>
+</label>
+</div>
+
 <!--Bottom-Left Popup-->
 <div id="goto" class="noprint">
   <span id="aquo">&laquo;</span>
@@ -3009,17 +3055,17 @@
 <div id="acat" class="noprint">
   <a href="#mulu" title="⇐ Back to TOC ⇒">目录</a>
   <br/>
+  <a href="#el2c-adele" title="Adele Lyrics" class="tags">Adele</a>
+  <a href="#el2c-others" title="Others" class="tags">Others</a>
+  <br/>
   <a href="#el2c-abba" title="ABBA Lyrics" class="tags">ABBA</a>
   <a href="#el2c-boneym" title="Boney M Lyrics" class="tags">Boney M</a>
   <br/>
-  <a href="#el2c-adele" title="Adele Lyrics" class="tags">Adele</a>
-  <a href="#el2c-epic" title="Epic Lyrics" class="tags">Epic</a>
-  <a href="#el2c-others" title="Others" class="tags">Others</a>
-  <br/>
   <a href="#el2c-holly" title="Christian Lyrics" class="tags">Holly Songs</a>
+  <a href="#el2c-epic" title="Epic Lyrics" class="tags">Epic</a>
   <br/>
-  <a href="#el2c" title="Lyrics to Chinese" class="tags">Ch</a>
-  <a href="#cl2e" title="Lyrics to English" class="tags">En</a>
+  <a href="#cl2e" title="Lyrics to English" class="tags">C → E</a>
+  <a href="#el2c" title="Lyrics to Chinese" class="tags">E → C</a>
 </div><!--#acat-->
   <span id="back"><a href="#atop" class="noprint"
     title="⇧ Back to Home ⇧"><span>⇧</span></a>
@@ -3054,64 +3100,6 @@
     display: none;
   }
 }
-/* BEGIN styles for counters */
-#_main {
-  counter-reset: h3-counter;
-}
-h2:has(a#cl2e) {
-  counter-reset: cl2e-count;
-}
-h2:has(a#el2c) {
-  counter-reset: el2c-count;
-}
-h2:has(a#cl2e) ~ h3 {
-  color: darkslategray;
-  background-color: honeydew;
-  counter-increment: cl2e-count h3-counter;
-}
-h2:has(a#el2c) ~ h3 {
-  color: darkslategray;
-  background-color: lightcyan;
-  counter-increment: el2c-count h3-counter;
-}
-#_main::after, .counts {
-  color: dimgray;
-  background-color: honeydew;
-  line-height: 1.5em;
-  margin: 1em 0em 0.5em;
-  padding: 0.35em 0.25em 0.5em;
-  text-align: right;
-  right: 0px; top: 0;
-  display: block;
-}
-#_main::after {
-  content: "Lyrics count: " counter(h3-counter);
-  background-color: lightyellow;
-}
-#counts::after {
-  color: darkgreen;
-  border: solid 1px darkgreen;
-  border-radius: 0.5em;
-  content: counter(h3-counter);
-  right: 0px; top: 0;
-  margin: 1.25em 0.75em;
-  padding: 0.65em 0.85em;
-  position: fixed;
-  opacity: 0.75;
-}
-#cl2e-count {
-  background-color: honeydew;
-}
-#cl2e-count::after {
-  content: "Ch ⇒ En Lyrics count: " counter(cl2e-count)
-}
-#el2c-count {
-  background-color: lightcyan;
-}
-#el2c-count::after {
-  content: "En ⇒ Ch Lyrics count: " counter(el2c-count)
-}
-/* END styles for counters */
 a {
   text-decoration: none;
 }
@@ -3147,14 +3135,23 @@ li>p {
 h2,h3 {
   line-height: 1.85em !important;
 }
-h2>b {
+h2 > b, h2 span {
   display: inline-block;
+  font-size: 0.65em;
   float: right;
 }
-h3:hover,h2:hover,ul>li:hover {
+h2:hover, h3:hover, ul>li:hover {
   background-color: lightyellow !important;
   color: darkslategray;
   cursor: default;
+}
+h3 {
+  background-color: mintcream;
+  line-height: 2em !important;
+}
+h3:hover + pre {
+  line-height: 1.65em;
+  padding: 1.25em;
 }
 h3:hover + pre code, pre:hover > code, pre:active {
   background-color: whitesmoke;
@@ -3164,9 +3161,11 @@ h4,pre>code {
   font-size: 1.25em !important;
 }
 code {
-  color: dimgray;
+  background-color: whitesmoke;
+  color: darkslategray;
 }
 pre {
+  background-color: whitesmoke;
   margin-left: 0.35em !important;
   break-before: avoid-page;
   /* Fallback for older systems */
@@ -3190,15 +3189,69 @@ p.divtag span, div.divtag span {
   width: max-content; /* or any specific width like 200px */
   right: 0;
 }
-h2 span {
-  font-size: 0.65em;
-}
 p.divtag span b {
   color: dimgray;
 }
 p.up {
   text-align: right;
 }
+/* BEGIN styles for counters */
+#_main {
+  counter-reset: h3-counter;
+}
+h2:has(a#cl2e) {
+  counter-reset: cl2e-count;
+}
+h2:has(a#el2c) {
+  counter-reset: el2c-count;
+}
+h2:has(a#cl2e) ~ h3 {
+  color: darkslategray;
+  background-color: honeydew;
+  counter-increment: cl2e-count h3-counter;
+}
+h2:has(a#el2c) ~ h3 {
+  color: darkslategray;
+  background-color: lightcyan;
+  counter-increment: el2c-count h3-counter;
+}
+#_main::after, .counts {
+  color: dimgray;
+  background-color: honeydew;
+  line-height: 1.5em;
+  padding: 0.25em 0.25em 0.5em;
+  text-align: right;
+  right: 0px; top: 0;
+  display: block;
+}
+#_main::after {
+  content: "Lyrics count: " counter(h3-counter);
+  background-color: lightyellow;
+}
+#counts::after {
+  color: darkgreen;
+  border: solid 1px darkgreen;
+  border-radius: 0.5em;
+  content: counter(h3-counter);
+  right: 0px; top: 0;
+  margin: 1.25em 0.75em;
+  padding: 0.65em 0.85em;
+  position: fixed;
+  opacity: 0.75;
+}
+#cl2e-count {
+  background-color: honeydew;
+}
+#cl2e-count::after {
+  content: "Ch ⇒ En Lyrics count: " counter(cl2e-count)
+}
+#el2c-count {
+  background-color: lightcyan;
+}
+#el2c-count::after {
+  content: "En ⇒ Ch Lyrics count: " counter(el2c-count)
+}
+/* END styles for counters */
 /* BEGIN details and summary */
 details {
   margin: 0.25em 0em !important;
@@ -3247,7 +3300,8 @@ summary::-webkit-details-marker {
   display: none; /* Legacy Safari/Chrome support */
 }
 summary::after {
-  content: ' + ';
+  padding-left: 0.5em;
+  content: '+';
 }
 summary::marker {
   content: "• ";
@@ -3260,6 +3314,56 @@ summary:hover {
   border-top: dotted 1px dimgray;
 }
 /* END details and summary */
+/* BEGIN styles to hide/show lyrics section */
+#_main {
+  position: relative;
+}
+#anchor, div.anchor {
+  position: fixed;
+  bottom: 0; right: 0px;
+  padding: 1em 0.75em;
+  text-align: right;
+  vertical-align: top;
+  user-select: none;
+}
+#anchor .btn-toggle {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.75em;
+  height: 1.75em;
+  border: solid 1px gray;
+  border-radius: 0.25em;
+  padding: 0.25em 0.35em;
+  user-select: none;
+  opacity: 0.35;
+}
+#anchor .btn-toggle:hover {
+  border-color: darkred;
+  color: darkred;
+  opacity: 1;
+}
+#anchor .chk-toggle { /* hide the checkbox */
+  display: none;
+}
+#anchor .chk-toggle:checked ~ .btn-toggle .sign-show {
+  display: none;
+}
+#anchor .chk-toggle:not(:checked) ~ .btn-toggle .sign-hide {
+  display: none;
+}
+#_main:has(.chk-toggle:not(:checked)) pre {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  background-color: transparent;
+  line-height: 1.25em;
+  padding-top: 0.25em;
+  overflow: hidden;
+}
+#_main:has(.chk-toggle:checked) pre {
+  display: block;
+}
+/* END styles of corner anchor */
 /* BEGIN styles for popup */
 div#acat {
   color: gray;
