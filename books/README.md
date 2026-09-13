@@ -18,14 +18,9 @@
 
   * [搜韵](https://sou-yun.com/)
   * [词林正韵](https://baike.baidu.com/item/%E8%AF%8D%E6%9E%97%E6%AD%A3%E9%9F%B5)
-  * [格律检测](http://www.52shici.com/)
-  * [诗词理论](http://www.chinapoesy.com/ShiCiZhiShiIndex.html)
-  * [诗词格律·精编点要](http://www.ziyexing.com/shicigelv/scgl_index.htm)（[子夜行](http://www.ziyexing.com/)）
-  * [中华诗词（精简版）](http://www.cnpoem.net/)
-  * [中华诗词网](http://www.zhsc.net/)
-  * [诗词名句](http://www.shicimingju.com/)
-  * [古诗文](http://www.gushiwen.org/)
-  * [好诗词](http://www.haoshici.com/)
+  * [格律检测](http://www.52shici.com/)｜[诗词理论](http://www.chinapoesy.com/ShiCiZhiShiIndex.html)｜[诗词格律·精编点要](http://www.ziyexing.com/shicigelv/scgl_index.htm)（[子夜行](http://www.ziyexing.com/)）
+  * [诗词名句](http://www.shicimingju.com/)｜[识典古籍](https://www.shidianguji.com/)｜[好诗词](http://www.haoshici.com/)｜[古诗文](http://www.gushiwen.org/)
+  * [中华诗词・精简网版](http://www.cnpoem.net/)｜[中华诗词网](http://www.zhsc.net/)
   * [九歌——计算机古诗创作系统](http://jiuge.thunlp.org/)
   * [稻香居电脑作诗机网络版](http://www.poeming.com/web/shuoming.htm)
   * [龙榆生](http://longyusheng.org)：[唐宋词格律](http://longyusheng.org/cipai/)

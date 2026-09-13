@@ -1,14 +1,9 @@
-# 博客杂记 <a id="toc" name="toc"></a>
+# 博客札记 <a id="toc" name="toc"></a>
 
 > 古诗、歌词、雅译翻唱、诗集、图片，读书笔记＋摘抄
 
 
-  * 读书笔记〖 [html](mynotes.html)｜[text](mynotes.txt) 〗
-
-  * 名家文摘
-    - 吕蒙正：[寒窑赋](hanyaofu.md)
-    - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
-    - 周恩来：[杂文](zhou.html)
+  * 读书笔记・[html](mynotes.html)・[text](mynotes.txt)
 
   * 文稿诗集｜[统计数据](data/README.md)
     - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="color:gray;height:1.25em;padding:0em 0em 0.5em"> ☆ <img src="../gelv/Images/markdown.png" height="1.35em" valign="middle" style="height:1.35em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/> ☆ </a>
@@ -18,16 +13,20 @@
   * 诗词博客｜[附录](../gelv/README.md)
     - [学诗笔记・Poetry Study](poetry-study.md)
     - [英律小结・Prosody Summary＋歌词翻唱・Lyrics Cover](song-cover.md)
-    - [舟山博客](https://boathill.blogspot.com/)・[_WordPress_](https://boathill.wordpress.com/category/poems/) ｜
-      [Divertida LZ](https://divertidalz.blogspot.com/search/label/Poem)・[_Wordpress_](https://divertidalz.wordpress.com/category/poem/)
-    - [翻唱全集](song-covers-all.md)・[En-Ch](song-covers-e2c.md)｜[Ch-En](song-covers-c2e.md) <a href="song-covers-all.md" style="color:gray;height:1.25em;padding:0em 0em 0.5em"> ☆ <img src="../gelv/Images/markdown.png" height="1.35em" valign="middle" style="height:1.35em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/> ☆ </a>
+    - [舟山博客](https://boathill.blogspot.com/)・[_WordPress_](https://boathill.wordpress.com/category/poems/)｜[Divertida
+    LZ](https://divertidalz.blogspot.com/search/label/Poem)・[_Wordpress_](https://divertidalz.wordpress.com/category/poem/)
+    - [翻唱全集](songs.md)・[En-Ch](songs-e2c.md)｜[Ch-En](songs-c2e.md) <a href="songs.md" style="color:gray;height:1.25em;padding:0em 0em 0.5em"> ☆ <img src="../gelv/Images/markdown.png" height="1.35em" valign="middle" style="height:1.35em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/> ☆ </a>
     - [流行歌词・Song lyrics](song-lyrics.md)
 
+  * 名家文摘
+    - 吕蒙正：[寒窑赋](hanyaofu.md)
+    - 毛泽东：[毛选一百句](mao-xuan.md)｜[心之力](mao-xin.html)
+    - 周恩来：[杂文](zhou.html)
+
   * 网络摘抄
-    - [北欧神话体系](norse.md)
-    - [土味情话](mylines.html#qinghua)｜
-      [撩妹大全](mylines.html#liaomei)
-    - [消化油墨集.epub](../books/消化油墨集.epub)
+    - [中国哲学](gu.md)｜[北欧神话体系](norse.md)
+    - [土味情话](mylines.html#qinghua)｜[撩妹大全](mylines.html#liaomei)
+    - [電子書籍](../books)｜[读书笔记](mynotes.pdf)｜[消化油墨集.epub](../books/消化油墨集.epub)・&#128218;
     - [新韵字表](./xinyun.md)｜[漢字符號](./zi.md)
     - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
     - [水浒传诗钞](./gushi-shuihu.md)
@@ -100,7 +99,12 @@ p.up {
 }
 @media print {
   body,div,div#_html,p,code,pre {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
+    font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+    font-size: 1.25em;
+  }
+  div>ul>li>p, div>ul>li>ul>li {
+    font-size: 1.0em;
+    margin: 0em 0em 0.35em !important;
   }
   div#anchor {
     display: none;

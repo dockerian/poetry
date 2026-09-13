@@ -41,8 +41,12 @@
   - [平水韵表](html/pingshui.html)｜
     [正韵简编](html/cilinzhengyun.html)｜
     [拼音韻表](html/xinyun.html)
+  - [新韵字表](../blog/xinyun.md)｜[漢字符號](../blog/zi.md)
   - [新词对韵](html/shenglv-duiyun.html)｜
     [十三大辙](html/shisanzhe.html)
+  - [禅意诗评](../blog/gushi-zen.md)｜[禅诗三百首](../blog/gushi-chan.md)
+  - [水浒传诗钞](../blog/gushi-shuihu.md)
+  - [古诗英译](./gushi.md)
   - [英诗中译](html/shiji-star.html)
 
 
@@ -110,6 +114,11 @@ p.up {
 @media print {
   body,div,div#_html,p,code,pre {
     font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
+    font-size: 1.25em;
+  }
+  div>ul>li>p, div>ul>li>ul>li {
+    font-size: 1.0em;
+    margin: 0em 0em 0.35em !important;
   }
   div#anchor {
     display: none;
