@@ -1,11 +1,11 @@
-<h3 id="mulu">目录<a name="mulu"></a></h3>
+<h3 id="mulu"><b>目录</b><a name="mulu"></a></h3>
 <!--Recommend to use Markdown viewer or plugin in browser-->
 <div id="anchor"><!--page anchor-->
 <div id="access"><a href="#ciqu">词曲</a>·<a href="#diao">长调</a>｜<a href="#xyun">新韵</a>｜<a href="#qigu">七言</a>｜<a href="#qilv">七律</a>｜<a href="#wulv">五律</a>｜<a href="#zaji">外篇</a>
 </div>
 </div>
 
-<div id="title">｜舟山堂<a href="#bcti">诗词稿</a> 1979.4─2026.8</div>
+<div id="title">舟山堂·<a href="#bcti">诗词稿</a> <span class="date">1979.4─2026.9</span></div>
 
 ```
 (2) 五律•春游鳝溪二首　　　　　　　　　1979．⒋
@@ -232,12 +232,13 @@
 (1) 七律•论改革开放之中国　　　　　　　2026．⒎
 (9) 七律•记梦九章附习对一首　　　　　　2026．⒏
 (1) 五言•擬古　　　　　　　　　　　　　2026．⒏
+(1) 七言•网帖　　　　　　　　　　　　　2026．⒐
 ```
 
-　　以上留存詩詞凡三百五十六首
+　　以上留存詩詞凡三百五十七首
 
 
-<br/><br/><a name="bcti"></a>
+<br/><br/><a id="bcti" name="bcti"></a>
 
 [目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五言](#wugu)｜[五律](#wulv)｜[外篇](#zaji) &middot; <a class="arrow" href="#endp">&dArr;</a> <a class="arrow" href="#mulu" title="TOC">&uArr;</a>
 
@@ -1057,7 +1058,7 @@
 
 
 <br/><br/><a name="qigu"></a>
-## 七言古诗三十一首　<span><a class="arrow" href="#xyun" title="PREV｜新韵">&uArr;</a>&middot;<a class="arrow" href="#qilv" title="NEXT｜七律">&dArr;</a></span>
+## 七言古诗三十二首　<span><a class="arrow" href="#xyun" title="PREV｜新韵">&uArr;</a>&middot;<a class="arrow" href="#qilv" title="NEXT｜七律">&dArr;</a></span>
 
 
 #### 江南感赋 (1982.10)
@@ -1220,6 +1221,14 @@
 
 命里穷通身不识，个中冷暖胃先知。秋凉沾染前情险，客病归来後怕迟。软饭硬吃成干饭，旧词新谱变陈词。四时造化人生课，万物天然我老师。
 
+#### 七言·新韵网帖 (2026.9)
+
+一辱是非天下动，两家恩怨古今同。恨無缘浅不堪赞，爱有弥深未必怂。众口铄金言铄骨，偏心遮眼理遮穷。欲当还立当模特，不做不呆做网红。
+
+> 欲当还立：[既什么…又什么…](https://baike.baidu.com/item/%E6%97%A2%E5%BD%93%E5%A9%8A%E5%AD%90%EF%BC%8C%E5%8F%88%E7%AB%8B%E7%89%8C%E5%9D%8A/53915821)〖饭圈用语〗；<br/>
+> 不做不呆：不作不死｜[No zuo no die](https://en.wikipedia.org/wiki/No_zuo_no_die)〖网络用语〗。<br/>
+> 用韵｜怂：sóng〖方言东韵二声〗，或依新韵作【庸】。<br/>
+> 附注：网观某女发帖怨夫因婚前受娘家辱至今难平，虽仍事事到场但不满其态度不佳。众皆称奇。<br/>
 
 
 <br/><br/><a name="qilv"></a>
@@ -2142,10 +2151,10 @@
 
 <p><br/></p>
 
->　　右录詩詞三百五十六首<br/>
+>　　右录詩詞三百五十七首<br/>
 >　　耐若斋藏
 
-<p><a name="endp"></a><br/></p>
+<p id="endp"><a id="endp" name="endp"></a><br/></p>
 
 [目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五言](#wugu)｜[五律](#wulv)｜[外篇](#zaji)｜<a href="data/">图表</a>&middot;<a class="arrow" href="#mulu" title="TOC">&uArr;</a>
 
@@ -2228,12 +2237,24 @@ img.half {
   display: inline-block;
   width: 50% !important;
 }
+blockquote {
+  margin-right: 0em !important;
+  padding-right: 0em !important;
+}
 blockquote p {
   margin-left: 0.95em !important;
   text-indent: 0em;
 }
 blockquote p>br {
   display: block !important;
+}
+blockquote:has(+ p#endp) p {
+  margin-right: 0em !important;
+  padding-right: 0em !important;
+  text-align: right !important;
+}
+div#title::before {
+  content: "｜";
 }
 p {
   font-size: 1.25em !important;
@@ -2268,13 +2289,40 @@ h5 {
   margin: 0.5em 0em 0.5em 0 !important;
   color: darkgreen;
 }
+/* BEGIN printing styles */
 @media print {
   body,div,div#_html,p,code,pre {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Verdana", sans-serif !important;
   }
-  div#anchor {
+  blockquote {
+    page-break-before: avoid;
+  }
+  div#anchor, p:has(a#endp) ~ p,
+  div#title span:first-of-type, h3#mulu b {
     display: none;
   }
+  div#title {
+    color: black;
+    font-size: 5em;
+    font-family: "微软雅黑", "黑体", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Verdana", sans-serif;
+    font-weight: bold;
+    line-height: 2.75em;
+    margin: 2.5em 0em 2em 0;
+    text-align: center;
+    white-space: wrap;
+  }
+  div#title::before {
+    content: "";
+  }
+  div#title span.date {
+    color: dimgray;
+    display: inline-block;
+    font-size: 0.5em;
+  }
+  h2 {
+    page-break-before: always;
+  }
 }
+/* END printing styles */
 --></style>
 </div>

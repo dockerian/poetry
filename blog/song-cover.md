@@ -1,4 +1,4 @@
-## 华韵仄平尊杜甫，英诗格律看莎翁 <a name="ylv"></a>
+## 华韵仄平尊杜甫，英诗格律看莎翁 <a id="top" name="top"></a><a name="ylv"></a>
 
 > [英律笔记](poetry-study.md)小结｜[歌词翻唱](#fan)
 
@@ -195,6 +195,26 @@ A name of a name, no word define.
 
 <p class="up"><a href="#fan">&uArr;</a><a name="end"></a></p>
 
+<!--Bottom-Left Popup-->
+<div id="goto" class="noprint">
+<div id="bgcc" class="noprint"></div>
+<div id="menu" class="noprint">
+  <span id="ding" class="yuan"><a id="ding" href="#top" title="⇧ Page Top ⇧">⇧</a></span><br/>
+<div id="acat" class="noprint">
+  <a href="#ylv" title="Poetry Study Summary"
+    class="tags">英律小结</a><br/>
+  <a href="#fan" title="Song Lyrics Cover"
+    class="tags">歌词翻唱</a><br/>
+  <a href="#shi" title="A Summary Poem"
+    class="tags">学诗心得</a><br/>
+</div><!--#acat-->
+  <span id="back" class="yuan"><a href="./"
+    title="⇐ Back to Blog ⇐"><span>⇧</span></a>
+  </span>
+</div><!--#menu-->
+</div><!--#goto-->
+
+
 ---
 &raquo; Back to [Blog](./README.md) | [Poetry Study](poetry-study.md) | [Prosody Summary](#ylv) | [Song Cover](#fan)
 
@@ -207,6 +227,10 @@ A name of a name, no word define.
     color: darkred !important;
     text-decoration: none !important;
     background-color: lightyellow;
+  }
+  a#top {
+    position: absolute;
+    top: 0;
   }
   body,h1,h2,h3,h4,h5,p,pre,code {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, sans-serif !important;
@@ -242,9 +266,113 @@ A name of a name, no word define.
     body,div,div#_html,p,code,pre {
       font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", "Helvetica", "Verdana", sans-serif !important;
     }
-    div#anchor {
+    div#goto {
       display: none;
     }
   }
+  /* BEGIN styles for anchor index */
+  div#acat {
+    color: gray;
+    cursor: default;
+    border-radius: 0.5em;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2.25em;
+    margin: 0.5em -0.25em 1em 0em;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  div#acat a {
+    color: darkred;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: dotted 0.05em darkred;
+    padding: 0.25em 0.25em;
+    margin: 0.5em 0em;
+  }
+  div#acat a:hover, div#acat a:active {
+    background-color: gold;
+  }
+  div#acat a.tags {
+    font-size: 1.05em;
+  }
+  div#acat a.tags:hover {
+    background-color: lightskyblue;
+    border-color: powderblue;
+  }
+  div#acat span {
+    color: lightgray;
+  }
+  div#bgcc {
+    background-color: dimgray;
+    border-radius: 0.5em 0em 0em 0em;
+    grid-column: 1; grid-row: 1;
+    opacity: 0.05;
+  }
+  div#goto {
+    bottom: 1em; right: 1em;
+    border-radius: 0.25em 0em 0em 0em;
+    background-color: transparent;
+    line-height: 1.35em;
+    margin: 0.5em 0em 0em 0.5em;
+    padding: 0em 0.0em 0em 0em;
+    text-align: right;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    opacity: 0.35;
+  }
+  div#goto:hover, div#goto:active {
+    opacity: 1;
+  }
+  div#menu {
+    background-color: transparent;
+    border-radius: 0.5em 0em 0em 0em;
+    border: dotted 1px lightgray;
+    grid-column: 1; grid-row: 1;
+    padding: 0.5em 1em;
+    z-index: 9;
+  }
+  div#menu:hover {
+    opacty: 1;
+  }
+  div#menu .yuan:hover {
+    background-color: beige;
+    border: solid 0.125em lightyellow;
+    border-radius: 1em;
+    font-weight: bold;
+    height: 1em; width: 1em;
+    margin: 0em -0.25em 0em 0;
+    padding: 0.2em 0.35em 0.35em 0.35em;
+    opacity: 1;
+  }
+  div#menu #back a {
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: larger;
+  }
+  div#menu #back:hover {
+    padding: 0.25em 0.35em 0.2em 0.2em;
+  }
+  div#menu #hide {
+    float: left;
+    font-size: 1em;
+    color: darkslategray;
+    cursor: pointer;
+    border: none;
+    border-radius: 1em;
+    height: 1em; width: 1em;
+    left: 1.25em; top: 1.25em;
+    position: absolute;
+    margin: -0.25em -0.5em -0.5em -0.5em;
+    padding: 0em 1em 1em 0;
+    opacity: 0;
+  }
+  div#menu #hide:hover {
+    color: darkred;
+  }
+  /* END styles for anchor index */
 --></style>
 </div>
