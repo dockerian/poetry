@@ -1,6 +1,6 @@
 # Lyrics Trans｜英文填詞 <a name="title"></a><!--Recommend to use Markdown viewer or plugin in browser-->
 
-> A collection of Chinese ⇒ English lyrics cover. See [html page](https://dockerian.github.io/poetry/lyrics.html#cl2e) and [En→Ch](song-covers-e2c.md) lyrics.
+> A collection of Chinese ⇒ English lyrics cover. See [html page](https://dockerian.github.io/poetry/lyrics.html#cl2e) and [En→Ch](songs-e2c.md) lyrics.
 
 <div id="_main" class="_main" markdown="1">
 
