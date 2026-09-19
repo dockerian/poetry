@@ -12,7 +12,7 @@
   - [平水韻表.doc](./books/平水韵表.doc)｜[pdf](./books/平水韵表.pdf)
   - [词林正韵](./books/词林正韵.pdf)
 
-* 舟山[詩詞](./shiji.html)｜[图片](https://photos.app.goo.gl/9t369STJZRnp9cD72)｜[图表](blog/data/README.md)
+* 舟山[詩詞](./shiji.html)｜[影集](./album/)｜[图册](https://photos.app.goo.gl/9t369STJZRnp9cD72)｜[图表](blog/data/README.md)
 
 * 纱糸轩[歌词集](./lyrics.html)｜[翻唱全集](blog/songs.md) (Chinese ⇌ English lyrics)
 
