@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Poetry Photo Album</title>
+<meta charset="utf-8"/>
+<meta name="author" content="Jason Zhu,竺宇昕,竺晖"/>
+<meta name="description" content="Dynamic Responsive EXIF Poetry Photo Album."/>
+<meta name="keywords" content="古诗,律诗,诗词,五言律诗,七言律诗,平水韵,新韵,诗歌,poem,chinese poems,chinese lyrics,boathill,blog"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="icon" type="image/png" href="images/poetry.png"/>
+<link rel="stylesheet" href="styles.css">
+<script src="cdn-jsdelivr-exif.js"></script>
+<script src="cdn-utf8-regex.js"></script>
+<script src="common.js"></script>
+<script src="album-array.js"></script>
+<script src="album-const.js"></script>
+<script src="album-data.js"></script>
+</head>
+<body>
+<div id="divAlbum" class="box-album">
+  <div id="divLSide" class="div-Pane"></div>
+  <div id="divHZone" class="div-Pane"></div>
+  <div id="divRSide" class="div-Pane"></div>
+
+  <!-- UI Controls Overlay -->
+  <div class="ui-overlay p-actions" id="pActions">
+    <label for="hidFiles" class="btn-Label">
+      <span class="btn-Style" id="btnFiles" tabindex="0" role="button">
+        <b class="btn-Image"><!--&#x1F4C2;--></b><span>Local Images</span>
+      </span>
+      <input id="hidFiles" type="file" tabindex="0" multiple accept="image/*"/>
+      <span id="numFiles" class="p-number"></span>
+      <img id="gifFiles" class="char-png" height="25" src="images/awaiting.gif"/>
+    </label>
+    <div class="p-slideshow" id="divSlide">
+      <label class="btn-Label">
+        <span class="btn-Style" id="btnSlide" aria-disabled="false" tabindex="0" role="button">
+          <b class="btn-Image"><!--&#x25B6;--></b><span>Start Slideshow</span>
+        </span>
+      </label>
+      <input id="numInput" type="number" min="1" max="9" value="3" tabindex="0" title="Slideshow interval in seconds"/>
+    </div>
+    <label class="btn-Label">
+      <span class="btn-Style" id="btnFresh" tabindex="0" role="button">
+        <b class="btn-Image"><!--&#x21BB;--></b><span>Refresh</span>
+      </span>
+      <span id="numStats" class="p-number"></span>
+      <img id="gifStats" class="char-png"
+        height="25" src="images/awaiting-gray.gif"/>
+    </label>
+  </div>
+
+  <!-- Center Display Viewport View -->
+  <div id="boxImage" class="box-image">
+    <img id="curImage" alt="Image View Frame" src="images/awaiting-dots.gif"/>
+    <div id="clikZone" class="click-zone" title="">
+      No album data yet
+    </div>
+  </div>
+
+  <!-- Dynamic EXIF Information Panel Overlay -->
+  <div id="bgcPanel" class="p-exif"></div>
+  <div id="divPanel" class="p-exif">
+    <div id="divBlack" class="divBlack"></div>
+    <div class="p-scroll">
+    <h3 id="divTitle">
+      <img id="gifExifP" class="char-png"
+        height="25" src="images/awaiting.svg" />
+      <img id="btnOpenP" class="char-png" tabindex="0"
+        height="25" src="images/open-image.png"/>
+      <span id="h3Header">Image Information</span>
+    </h3>
+    <div id="exifInfo">Awaiting data loading and sequence processing<br/>...</div>
+    </div>
+  </div>
+
+  <!-- Quick Navigation Buttons (sit on top) -->
+  <button id="btnPrevP" class="btn-nav btn-prev" aria-label="Previous image" tabindex="1">&lsaquo;</button>
+  <button id="btnNextP" class="btn-nav btn-next" aria-label="Next image" tabindex="2">&rsaquo;</button>
+</div>
+
+<div id="divAwait" class="divAwait"><img src="images/awaiting.gif"/></div>
+<div id="divLinks" class="divLinks" tabindex="0">
+  <a href="../" target="_myPage" title="My poetry page">
+    <img height="59" src="images/poetry.png"/>
+  </a>
+</div>
+<div id="divCount" class="divCount" title="Photo Count"><span
+     id="digitNum"></span></div>
+<div id="divCover" class="cover-overlay"><div><div id="bgcCover"></div>
+  <div class="cover-content"></div></div>
+  <div class="cover-extra"></div>
+</div>
+
+<!-- BEGIN main script -->
+<script src="album.js"></script>
+<!-- CLOSE main script -->
+</body>
+</html>

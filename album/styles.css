@@ -1,0 +1,789 @@
+/*
+ * main.css for album.html
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* clamp(MIN, VAL, MAX) */
+  font-size: clamp(12px, 1rem + 0.5vw, 24px);
+}
+
+a {
+  color: gray !important;
+  text-decoration: none;
+}
+a:active {
+  color: deepskyblue;
+}
+a:focus-visible {
+  border-radius: 0.25em;
+  /* lighter or semi-transparent border */
+  outline: 0.125em solid rgba(0,255,255,0.375);
+  outline-offset: 0.125em;
+}
+a:visited {
+  color: darkseagreen;
+}
+a:hover {
+  color: darkorange !important;
+  border-bottom: dotted 0.125em dimgray;
+  padding-bottom: 0.125em;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+body {
+  align-items: center;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, "Microsoft YaHei", "STHeiti", "Heiti SC", "PingFang SC", "微软雅黑", "黑体", "华文细黑", "Hiragino Sans GB", "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, Arial, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Remove outline on mouse click, but keep it for keyboard */
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* BEGIN cover */
+@keyframes effectFadeOut {
+  0% {
+    /* Blocks background clicks while active */
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  85% {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    /* Allows clicking elements underneath */
+    pointer-events: none;
+    visibility: hidden; /* completely gone from the layout */
+    opacity: 0;
+  }
+}
+/* The animation class triggered by JavaScript */
+.animate {
+  animation: effectFadeOut var(--duration, 5s) ease-out forwards;
+}
+/* The full-screen overlay */
+.cover-overlay {
+  background-color: rgba(0,0,0,0.85); /* semi-transparent */
+  height: 100vh; width: 100vw;
+  left: 0; top: 10;
+  position: fixed;
+  z-index: 999; /* must be higher than all other elements */
+  /* Centering the content inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Default state: hidden and non-interactive */
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.cover-overlay div:first-child {
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+.cover-overlay div:first-child div#bgcCover {
+  background-color: rgba(0,0,80,0.5); /* navy */
+  border-radius: 0.55rem;
+  height: 100%; width: 100%;
+  left: 0; top: 0;
+  position: absolute;
+  z-index: -1;
+}
+/* The content element centered inside the overlay */
+.cover-content {
+  z-index: 1;
+  position: relative;
+  color: lightgray;
+  background-color: transparent;
+  border: double 1rem gray;
+  border-radius: 0.55rem;
+  font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "Heiti SC", "黑体", "Hiragino Sans GB", "Segoe UI", Helvetica, "Helvetica Neue", "Sarasa Gothic", "Source Code Pro", Verdana, Arial, -apple-system, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+/* Default landscape or standard layout */
+.cover-content,
+.cover-overlay .cover-extra,
+.cover-content::before {
+  writing-mode: horizontal-tb;
+}
+.cover-overlay .cover-extra::after {
+  /*
+  color: transparent;
+  /* &#x23F9; &#x23F8; &#x23F5; &#x23EF; */
+  color: dimgray;
+  content: '© Boathill'; /* content: '■ ⏸ ▶ ⏯'; */
+  display: inline-block;
+  height: 3.5rem; /* adding extra gap */
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.5rem 0.125rem;
+  vertical-align: middle;
+}
+.cover-content::before {
+  content: "舟山诗词影集";
+}
+/* Portrait layout media query */
+@media (orientation: portrait) {
+  .cover-content,
+  .cover-content::before {
+    text-orientation: mixed; /* or upright */
+    writing-mode: vertical-rl;
+  }
+  .cover-overlap .cover-extra {
+    height: 6.5rem; /* adding extra gap */
+  }
+  .cover-content::before {
+    content: "诗 词 影 集";
+  }
+}
+/* END cover */
+
+/* responsive container to portrait and landscape forms */
+.box-album {
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 0.5em;
+  border: 0.125em solid #333;
+  box-shadow: 0 0.625em 1.875em rgba(0,0,0,0.7);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  max-height: 99vh;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+.box-album:hover .p-exif {
+  transform: translateX(0);
+}
+/* box containing images, handling flexible boundaries */
+.box-image {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative; /* Essential to anchor absolute positioning context */
+  width: 100%;
+}
+.box-image img, .box-image #curImage {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  pointer-events: none; /* Prevents image tracking dragging from fighting touches */
+  user-select: none;
+}
+.box-image #curImage.disabled {
+  height: 35%;
+  max-height: 35%;
+  max-width: 35%;
+  width: 35%;
+}
+
+/* standard interactive UI overlays */
+.ui-overlay {
+  pointer-events: none;
+  position: absolute;
+  z-index: 10;
+}
+.ui-overlay button,
+.ui-overlay input {
+  background: rgba(0,0,0,0.6);
+  border-radius: 0.25em;
+  border: 0.0625em solid rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875em;
+  opacity: 0;
+  padding: 0.5em 0.75em;
+  pointer-events: auto;
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.1s ease;
+}
+
+.ui-overlay button:hover {
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+}
+.ui-overlay button:active {
+  transform: scale(0.95);
+}
+
+/* active visibility elements on container hover */
+.box-album:hover .ui-overlay button,
+.box-album:hover .ui-overlay input,
+.box-album:hover .btn-nav {
+  opacity: 1;
+}
+/* optional visual feedback hint when hovering over the exact center */
+.box-album:hover .click-zone:hover {
+  background: rgba(0,0,0,0.05);
+  border-color: rgba(255,255,255,0.075);
+  border-radius: 20em;
+}
+
+/* dead-center overlay hitbox */
+.click-zone:active {
+  /* mobile device tap */
+  -webkit-tap-highlight-color: rgba(0,0,0,0.25);
+  border-radius: 50% !important; /* circle */
+  transition: background-color 0.1s ease;
+}
+.click-zone {
+  -webkit-tap-highlight-color: transparent;
+  background: rgba(255,255,255,0); /* Invisible but fully actionable */
+  border: 0.0625em dashed rgba(255,255,255,0); /* Hidden boundary frame */
+  border-radius: 7em;
+  color: darkred;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 11.5em; /* Custom centralized hitbox height */
+  left: 50%;
+  padding: 5em 1em 2em 1em;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  text-align: center;
+  width: 12em;  /* Custom centralized hitbox width */
+  z-index: 99;  /* Over the image info pane */
+}
+.click-zone#clikZone:focus-visible {
+  outline-color: rgb(0,0,0,0.125);
+  outline-style: doted;
+  outline-width: 0.125em;
+  outline-offset: 0.25em;
+}
+
+#btnOpenP.active, #clikZone.active {
+  display: inline-block;
+  opacity: 1;
+}
+#btnOpenP.disabled, #clikZone.disabled {
+  display: inline-block;
+  opacity: 0.35;
+  outline: none;
+  border: none;
+}
+
+.divAwait, #divAwait {
+  display: flex;
+  background-position: center;
+  background-image: url(images/awaiting-dots.gif);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  place-items: center;
+  height: 100vh; width: 100vw;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  left: 0; top: 0;
+  position: fixed;
+  z-index: 9;
+  opacity: 0;
+}
+.divAwait img {
+  display: none; /* DOES NOT center as inline-block */
+  border: dotted 1px red;
+  object-fit: contain;
+  max-height: 33%;
+  max-width: 33%;
+}
+
+.divCount, .sequence {
+  bottom: 0em;
+  left: 0em; right: auto;
+  margin: 2em 1em;
+  position: fixed;
+  opacity: 0.35;
+  z-index: 99;
+}
+.divCount #digitNum {
+  cursor: default;
+  align-items: center;     /* Vertically centers content */
+  display: inline-flex;
+  justify-content: center; /* Horizontally centers content */
+  font-size: 1.5em;
+  border-radius: 0.25em;
+  border: solid 1px gray;
+  min-width: 2.75em;
+  padding: 0.5em;
+}
+.divCount #gigitNum.done {
+  border-color: lime;
+  color: lawngreen;
+}
+.divCount #digitNum.fair {
+  border-color: gold;
+  color: darkorange;
+}
+.divCount #digitNum.good {
+  border-color: darkseagreen;
+  color: limegreen;
+}
+.divCount #digitNum.okay {
+  border-color: deepskyblue;
+  color: whitesmoke;
+}
+.divCount #digitNum.poor {
+  border-color: darkred;
+  color: crimson;
+}
+.divCount #digitNum.step {
+  color: gray;
+}
+.divCount:hover, #digiNum:hover, .step:hover {
+  color: white;
+  opacity: 1;
+}
+.divCount#divCount.await {
+  opacity: 0.05;
+}
+.divCount#divCount.ready {
+  opacity: 0.75;
+}
+
+.divLinks {
+  bottom: 3.75em;
+  left: 0em; right: auto;
+  margin: 2em 1.25em;
+  position: fixed;
+  opacity: 0.35;
+  z-index: 99;
+}
+.divLinks img {
+  height: 3.5em;
+}
+.divLinks:hover {
+  opacity: 1;
+}
+.divLinks:hover a {
+  border: none !important; /* disable border */
+}
+
+.div-Pane {
+  background: transparent;
+  height: 100vh;
+  opacity: 0.15;
+  pointer-events: auto;
+  position: fixed;
+  top: 0;
+  width: 30vw; /* 30% of the viewport width */
+  z-index: 1; /* Ensure it sits on top */
+}
+.div-Pane#divHZone {
+  left: 25vw; width: 50vw;
+  opacity: 1;
+}
+.div-Pane#divLSide {
+  left: 0; right: auto;
+}
+.div-Pane#divLSide:hover ~ .p-actions {
+  opacity: 1;
+}
+.div-Pane#divLSide:hover ~ .p-actions #btnSlide,
+.p-actions#pActions #divSlide:hover #btnSlide {
+  max-width: 10em;
+  width: 10em;
+}
+.div-Pane#divRSide {
+  left: auto; right: 0;
+}
+
+/* actions panel for configuration transformations */
+.p-actions {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  height: 25vh; width: 25vw;
+  min-height: 25vh;
+  min-width: 25vw;
+  opacity: 0.5;
+  pointer-events: none;
+  position: fixed;
+  left: 0.75em;
+  top: 1em;
+}
+.p-actions, .p-exif h3 {
+  /* Prevent from selecting text */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Old versions of Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version */
+}
+.p-actions:hover,
+.p-actions:hover .p-slideshow,
+.p-actions:hover .btn-Label .btn-Style,
+.p-actions:hover #btnSlide {
+  opacity: 0.95;
+}
+.p-slideshow {
+  cursor: default;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  border-radius: 0.25em;
+  border: 0.075em solid rgba(255,255,255,0.2);
+  display: flex;
+  gap: 0.25em;
+  padding-right: 0.75em;
+  text-align: left;
+  transition: opacity 0.2s ease;
+  opacity: 0.75;
+}
+.p-slideshow:hover {
+  opacity: 1;
+}
+
+/* show on hover */
+.box-album:hover .btn-Label .btn-Style {
+  opacity: 0.75;
+}
+
+.btn-Label {
+  display: inline-block;
+  pointer-events: auto;
+  white-space: nowrap;
+  text-align: left;
+}
+.btn-Label .btn-Style#btnFiles,
+.btn-Label .btn-Style#btnFresh,
+.btn-Label .btn-Style#btnSlide {
+  background: rgba(0,0,0,0.5);
+  border-radius: 0.25em;
+  border: 0.0625em solid rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-flex;
+  justify-content: flex-start; /* horizontal */
+  align-items: center; /* vertical */
+  gap: 0em;
+  margin: 0em 0em 0em 0em;
+  padding: 0.35em 0.75em 0.5em 0.75em;
+  pointer-events: auto;
+  transition: opacity 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+  user-select: none;
+}
+.btn-Label .btn-Style b,
+.btn-Label .btn-Style span {
+  margin: 0em; padding: 0em;
+  display: inline-block;
+}
+
+/* highlight on button hover */
+.btn-Label .btn-Style:hover,
+.btn-Label .btn-Style:focus-visible {
+  background: rgba(0,0,0,0.5);
+  border-color: #fff;
+  color: cyan;
+  white-space: nowrap;
+  text-align: left;
+  opacity: 1;
+}
+/* responsive spring scaling effect on click/press */
+.btn-Label .btn-Style:active,
+.btn-Label .btn-Style:is-pressed {
+  transform: scale(0.95);
+}
+
+.btn-Label #btnFiles ~ input {
+  display: none;
+}
+
+.btn-Style#btnFiles b,
+.btn-Style#btnFresh b,
+.btn-Style#btnSlide b {
+  /* Comparing to visibility setting, in order to
+     prevent from its behaviors being overwritten by
+     pseudo b::before or its children, use
+  display: none; /* remove from element tree */
+  visibility: collapse;
+}
+.btn-Style#btnFiles::before,
+.btn-Style#btnFresh::before,
+.btn-Style#btnSlide::before {
+  content: "";
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: contain; /* scales to fit */
+  box-sizing: border-box; /* ensures padding/borders don't break the 1em size */
+  display: inline-block;
+  flex: 0em 0em 1em; /* do not grow, do not shrink, fix width at 1em */
+  margin: 0em 0.25em 0em 0em;
+  padding: 0;
+  height: 1em; width: 1em;
+  max-height: 1em; max-width: 1em;
+  min-height: 1em; min-width: 1em;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.btn-Style#btnFiles::before {
+  background-image: url("images/btn-folder.png");
+  content: "\01F4C2"; /* set its color to transparent vs
+  color: aliceblue;   /* no color bg-image is present */
+  color: transparent;
+}
+.btn-Style#btnFresh::before {
+  background-image: url("images/btn-refresh.png");
+  content: "\021BA;"; /* set its color to transparent vs
+  color: violet;      /* no color bg-image is present */
+  color: transparent;
+}
+
+.btn-Style#btnSlide {
+  border: none;
+  background: transparent;
+  display: inline-block;
+  font-size: 1em;
+  text-align: left !important;
+  overflow: hidden;
+  width: 4.5em;
+}
+.p-slideshow #btnSlide:hover {
+  background: rgba(0,0,0,0.5);
+  border: dotted 1px gray;
+  border-radius: 0.25em;
+  color: cyan;
+  opacity: 1;
+}
+.btn-Style#btnSlide[aria-disabled="false"]::before {
+  background-image: url("images/btn-start.png");
+  content: "►";     /* set its color to transparent vs
+  color: palegreen; /* no color bg-image is present */
+  color: transparent;
+}
+.btn-Style#btnSlide[aria-disabled="true"]::before {
+  background-image: url("images/btn-stop.png");
+  content: "■";   /* set its color to transparent vs
+  color: crimson; /* no color bg-image is present */
+  color: transparent;
+  pointer-events: none; /* prevents mouse clicks, but keyboard users can still focus */
+  cursor: not-allowed;
+}
+
+#divSlide:has(#btnSlide[aria-disabled="true"]) {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.p-slideshow input {
+  margin: 0em 0.25em;
+}
+.p-slideshow input[type="number"] {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  opacity: 1;
+  padding: 0.35em;
+  text-align: center;
+  width: 3em;
+}
+.p-slideshow::after {
+  content: "sec";
+  padding: 0em 0em 0.25em 0;
+  display: inline-block;
+}
+
+/* base navigation arrow overlays configuration */
+.btn-nav {
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  border: 0.04em solid rgba(255,255,255,0.3);
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  height: 2.5em;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.1s ease;
+  width: 2.5em;
+  z-index: 99; /* Elevated higher than the .p-exif panel */
+}
+/* solid 100% opacity on desktop mouse pointer hover */
+.btn-nav:hover {
+  background: rgba(0,0,0,0.9);
+  opacity: 1 !important; /* Forces peak focus priority over container state checks */
+}
+/* state rule applied dynamically by JS during mobile touch operations */
+.btn-nav.force-visible {
+  opacity: 1 !important;
+}
+.btn-next { right: 0.5em; }
+.btn-prev { left: 0.5em; }
+/* active hover visibility logic for parent desktop container tracking */
+.box-album:hover .btn-nav {
+  opacity: 0.75;
+}
+
+/* dynamic EXIF metadata panel: hover-triggered slide out */
+.p-exif {
+  background: rgba(20,20,20,0.95);
+  border-left: 0.0625em solid #333;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  font-size: 0.8125em;
+  text-align: right;
+  width: 18em;
+  z-index: 20;
+}
+.p-exif .p-scroll {
+  /* ensure padding doesn't break the 100% height */
+  box-sizing: border-box;
+  height: 100%; width: 100%;
+  overflow-y: auto;
+  padding: 0em 1em;
+}
+.p-exif#bgcPanel {
+  background-color: black;
+  border-radius: 0em 0em 0em 0em;
+  position: absolute;
+  opacity: 0.75;
+  z-index: 10;
+}
+.p-exif#divPanel {
+  background-color: transparent;
+}
+.p-exif div#divBlack {
+  cursor: default;
+  background-color: black;
+  height: 3.85em; width: 125%;
+  margin: 0em -2em 0em -2em !important;
+  padding: 0em 0em 0em 0em !important;
+  position: absolute !important;
+  top: 0em;
+}
+.p-exif .p-scroll h3 {
+  color: lightsteelblue;
+  background-color: #1F1F1F;
+  border-bottom: 0.0625em solid #444;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0.75em -0.5em 0.75em -0.5em;
+  padding: 0.5em 0.55em;
+  position: sticky;
+  top: 0.5em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.p-exif-bar {
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+  overflow-wrap: break-word; /* Modern standard */
+  word-wrap: break-word;     /* Legacy fallback for older browsers */
+  white-space: normal;
+}
+.p-exif-tag {
+  display: block;
+  font-weight: bold;
+  color: #888;
+}
+
+.p-number {
+  color: gray;
+  font-size: 0.875em;
+  display: none;
+}
+.p-number::before {
+  content: "(";
+}
+.p-number::after {
+  content: ")";
+}
+
+.char-png {
+  display: inline-block;
+  height: 1.5em;
+  padding: 0em 0.5em 0em 0.5em;
+  vertical-align: middle;
+  opacity: 0.25;
+}
+.char-png#gifStats {
+  padding: 0em 0.25em 0.35em 0.25em;
+  height: 2em;
+}
+.char-png#btnOpenP, .char-png#gifExifP {
+  height: 1.25em;
+  display: none;
+}
+.char-png#btnOpenP {
+  cursor: pointer;
+}
+
+/* media overrides for portrait and mobile */
+@media (max-width: 30em)
+    or (orientation: portrait) {
+  .box-album {
+    height: 99vh;
+    width: 99vw;
+  }
+  .box-album:hover .p-exif {
+    transform: translateY(0);
+  }
+  .btn-nav {
+    font-size: 1.25em;
+    height: 2em;
+    opacity: 0.5; /* Baseline safe visibility for mobile hardware screens */
+    width: 2em;
+  }
+  .divCount, .divLinks {
+    right: 0; left: auto;
+  }
+  .p-exif {
+    border-left: none;
+    border-top: 0.0625em solid #333;
+    height: 35svh;
+    top: auto;
+    transform: translateY(100%);
+    text-align: left;
+    width: 100%;
+    z-index: 15; /* Sub-layer stack depth behind overlay buttons */
+  }
+  .p-exif#bgcPanel {
+    opacity: 0.75;
+    z-index: 10;
+  }
+  .p-exif .p-scroll h3 #h3Header { order: 1 }
+  .p-exif .p-scroll h3 #btnOpenP { order: 2 }
+  .p-exif .p-scroll h3 #gifExifP { order: 3 }
+  .p-exif .p-scroll h3 {
+    justify-content: flex-start;
+    margin-top: 0.55em;
+  }
+}
