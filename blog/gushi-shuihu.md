@@ -249,7 +249,7 @@
 
 <!--NOTE: Use regex `^[^#\>\na-zA-Z\-<>{}\&\*]` to count numbers of poems in this page.-->
 
-<div style="display:none"><!--stylesheet-->
+<div style="display:none" markdown="0"><!--stylesheet-->
 <style type="text/css"><!--
 *, *::before, *::after {
   box-sizing: border-box;

@@ -1420,7 +1420,7 @@
 &raquo; [Blog](./README.md) | [Title ⇑](#title)
 
 <!--stylesheet-->
-<div style="display:none">
+<div style="display:none" markdown="0">
 <style type="text/css"><!--
 *, *::before, *::after {
   box-sizing: border-box;

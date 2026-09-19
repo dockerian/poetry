@@ -28,7 +28,7 @@
 
 &raquo; Back to <a href="#toc">Contents</a> ｜ <a href="https://dockerian.github.io">Home</a>
 
-<div style="display:none"><!--stylesheet-->
+<div style="display:none" markdown="0"><!--stylesheet-->
 <style type="text/css"><!--
 *, *::before, *::after {
   box-sizing: border-box;

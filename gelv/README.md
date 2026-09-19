@@ -74,7 +74,7 @@
 &raquo; Back to <a href="#toc">Contents</a>｜[Home](../README.md)
 
 <!--stylesheet-->
-<div style="display:none">
+<div style="display:none" markdown="0">
 <style type="text/css"><!--
 a.arrow {
   font-size: 0.85em;

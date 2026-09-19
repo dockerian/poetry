@@ -191,7 +191,7 @@
 &raquo; Back to <a href="#title">Content Title</a> | [Home](../README.md)
 
 <!--stylesheet-->
-<div style="display:none">
+<div style="display:none" markdown="0">
 <style type="text/css"><!--
 *, *::before, *::after {
   box-sizing: border-box;
