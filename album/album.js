@@ -74,7 +74,7 @@ const controls = [
  *****************************/
 
 // Function to show the cover with animation duration
-function animateCover(seconds = 1) {
+function animateCover(seconds = 1, init = false) {
   if (!divCover) return;
   let sec = getIntegerByRange(seconds, 1, secAnimation);
   // Reset the animation in case it's already running
@@ -90,6 +90,9 @@ function animateCover(seconds = 1) {
         divCover.classList.add('animate');
     });
   });
+  if (init) {
+    buildLookup();
+  }
 }
 
 function clearAsyncUpdate(clearCycled = false) {
@@ -758,7 +761,7 @@ clikZone.addEventListener('keydown', (event) => {
 
 // Show cover on the page finishes loading
 window.addEventListener('DOMContentLoaded', () => {
-  animateCover(secAnimation);
+  animateCover(secAnimation, true);
 });
 
 // Keyboard bindings configurations mapping

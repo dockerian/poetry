@@ -157,6 +157,24 @@ class Album {
 // Global class Album instance
 const album = new Album();
 
+// Build up data lookup
+function buildLookup () {
+  for (const poem of mulu) {
+    let files = [];
+    let regex = new RegExp(poem.dataFile);
+    for (const fileName of defaultImages) {
+      let found = fileName == poem.dataFile ||
+          regex.test(fileName);
+      if (found) {
+        dataLookup[fileName] = poem;
+        files.push(fileName);
+      }
+    }
+    poem.files = files;
+  }
+  console.debug(`Data lookup and mulu is ready.`, mulu);
+}
+
 // Calculate album ratio state per default settings
 function calculateState() {
   let state = 'poor';
