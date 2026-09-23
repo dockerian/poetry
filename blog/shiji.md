@@ -2156,7 +2156,7 @@
 
 <p id="endp"><a id="endp" name="endp"></a><br/></p>
 
-[目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五言](#wugu)｜[五律](#wulv)｜[外篇](#zaji)｜<a href="data/">图表</a>&middot;<a class="arrow" href="#mulu" title="TOC">&uArr;</a>
+[目录](#mulu)：[词曲](#ciqu)·[长调](#diao)｜[新韵](#xyun)｜[七言](#qigu)｜[七律](#qilv)｜[五言](#wugu)｜[五律](#wulv)｜[外篇](#zaji)｜<a href="../album/data/">图表</a>&middot;<a class="arrow" href="#mulu" title="TOC">&uArr;</a>
 
 <br/>
 

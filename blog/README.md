@@ -5,7 +5,7 @@
 
   * 读书笔记・[html](mynotes.html)・[text](mynotes.txt)
 
-  * 文稿诗集｜[统计数据](data/README.md)｜[影集](../album/)
+  * 文稿诗集｜[统计数据](../album/data/README.md)｜[影集](../album/)
     - [舟山诗稿](../shiji.html)｜[Markdown](shiji.md) <a href="shiji.md" style="color:gray;height:1.25em;padding:0em 0em 0.5em"> ☆ <img src="../gelv/Images/markdown.png" height="1.35em" valign="middle" style="height:1.35em;vertical-align:middle;margin:-0.15em 0em 0em" title="Markdown" alt="markdown"/> ☆ </a>｜[图册](https://photos.app.goo.gl/9t369STJZRnp9cD72)
     - [清明诗抄](../gelv/html/shiji-qingming.html)｜[新词对韵](../gelv/html/shenglv-duiyun.html)
     - [纱糸轩集](../lyrics.html)
