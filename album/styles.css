@@ -140,6 +140,11 @@ button:focus:not(:focus-visible) {
 }
 .cover-content::before {
   content: "舟山诗词影集";
+  background-image: url('images/album-title.png');
+  background-position: center;
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: contain;; /* scales to fit */
+  color: transparent;
 }
 /* Portrait layout media query */
 @media (orientation: portrait) {
@@ -152,10 +157,12 @@ button:focus:not(:focus-visible) {
     height: 6.5rem; /* adding extra gap */
   }
   .cover-overlay .cover-extra::after {
-    content: '© Boat+Hill'; /* content: '■ ⏸ ▶ ⏯'; */
+    content: '© Jason Zhu'; /* content: '■ ⏸ ▶ ⏯'; */
   }
   .cover-content::before {
     content: "诗 词 影 集";
+    background-image: url('images/album-poetry.png');
+    color: transparent;
   }
 }
 /* END cover */
