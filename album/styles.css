@@ -139,7 +139,12 @@ button:focus:not(:focus-visible) {
   vertical-align: middle;
 }
 .cover-content::before {
+  background-image: url('images/album-title.png');
+  background-position: center;
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: contain;; /* scales to fit */
   content: "舟山诗词影集";
+  color: transparent;
 }
 /* Portrait layout media query */
 @media (orientation: portrait) {
@@ -152,7 +157,9 @@ button:focus:not(:focus-visible) {
     height: 6.5rem; /* adding extra gap */
   }
   .cover-content::before {
+    background-image: url('images/album-poetry.png');
     content: "诗 词 影 集";
+    color: transparent;
   }
 }
 /* END cover */
