@@ -3,12 +3,18 @@
 > 舟山堂＋纱糸轩：诗词、歌词・[相册｜Photo Album](index.html) of Poetry Collection.<br/>
 > Designated Web URL: [http://dockerian.github.io/poetry/album/](./)<br/>
 > Features and [Reference](#ref)
+> - [EXIF library](#exifjs)
+> - [Open files or folder](#winapi)
+> - [Map URL](#mapurl) and [Map API](#mapapi)
+> - [RegExp](#regexp)
+> <br/>
 
 
 ## Poetry Album &copy; 2026 Features
 
   * Static HTML and JavaScript code album app
   * Load a set of pre-defined static pictures, or optional from local image files
+  * Loading images may support by selecting a folder for all image files
   * The images list may have a data lookup table per [shiji.html](../shiji.html)
   * The images list may optionally have data reference from [lyrics.html](../lyrics.html)
   * On fetch image URL, other than the basic image name, information, such as file size and EXIF metadata should be deferred to load in current view
@@ -18,7 +24,7 @@
   * The image height and width may vary and the viewbox container should be adjusted to fit the screen size
   * UI should display the number of loaded images
   * UI has Action panel and Image Info panel
-  * The left-side of the screen has Action panel, including `Load Image Files`, Slideshow controls, and `Refresh` buttons
+  * The left-side of the screen has Action panel, including &#x1F5BC;`Load Images` or from &#x1F4C2;`Folder`, &#x25B6; &#x25A0; Slideshow controls, and &#x21BB;`Refresh` buttons
   * The right-side panel displays real EXIF info of the image (by importing external library)
   * The Action panel should be inside at corner of the container without taking extra space and active on mouse over
   * UI should allow using `Tab` (⇥) key to navigate through controls
@@ -58,10 +64,41 @@
 
 ## Reference <a name="ref" id="ref"></a>
 
-### EXIF library
+### EXIF library <a name="exifjs" id="exifjs"></a>
 
   * [ExifReader](https://www.jsdelivr.com/package/npm/exifreader) by [jsdelivr](https://www.jsdelivr.com)
   * [EXIT](https://cdnjs.com/libraries/exif-js) Ajax class
+
+### Open files or folder <a name="winapi" id="winapi"></a>
+
+  **Note**: Using `window.showOpenFilePicker` on `click` may conflict with `keydown` event.
+
+  ```javascript
+  btnFoldr.addEventListener('click', async (event) => {
+    if (window.showOpenFilePicker) {
+      const openfiles = [];
+      try {
+        const handles = await window.showOpenFilePicker({
+          excludeAcceptAllOption: false,
+          multiple: true
+        });
+        for (const handle of handles) {
+          const file = await handle.getFile();
+          openfiles.push(file);
+        }
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error(err);
+        }
+      }
+      event.preventDefault();
+      console.debug("On window.showOpenFilePicker:", openfiles);
+      // await loadFiles(null, openfiles);
+    } else {
+      // onKeydownButton(event, btnFoldr, hidFoldr);
+    }
+  });
+  ```
 
 ### Maps URL <a name="mapurl" id="mapurl"></a>
 

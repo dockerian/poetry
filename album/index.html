@@ -33,6 +33,13 @@
         <b class="btn-Image"><!--&#x1F4C2;--></b><span>Local Images</span>
       </span>
       <input id="hidFiles" type="file" tabindex="0" accept="image/*" multiple />
+      <!--&middot;-->
+      <label id="lblFoldr" for="hidFoldr" class="btn-Label">
+        <span class="btn-Style" id="btnFoldr" tabindex="0" role="button">
+          <b class="btn-Image"><!--&#x1F5BC;--></b><span>Folder</span>
+        </span>
+        <input id="hidFoldr" type="file" tabindex="0" accept="image/*" hidden multiple directory webkitdirectory />
+      </label>
       <span id="numFiles" class="p-number"></span>
       <img id="gifFiles" class="char-png" height="25" src="images/awaiting.gif"/>
     </label>

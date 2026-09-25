@@ -81,6 +81,8 @@ const divCover = document.getElementById('divCover');
 const exifInfo = document.getElementById('exifInfo');
 const btnFiles = document.getElementById('btnFiles');
 const hidFiles = document.getElementById('hidFiles');
+const btnFoldr = document.getElementById('btnFoldr');
+const hidFoldr = document.getElementById('hidFoldr');
 const btnFresh = document.getElementById('btnFresh');
 const divSlide = document.getElementById('divSlide');
 const btnSlide = document.getElementById('btnSlide');
@@ -277,14 +279,20 @@ function flashMobileControls() {
 }
 
 // Load local image files from open dialog
-async function loadFiles(event) {
-  showAwait();
+async function loadFiles(event, files) {
   clearAsyncUpdate(true);
-  console.debug("On input file event change:", event);
-  const rawFiles = Array.from(event.target.files);
+  let rawFiles = [];
+  if (event && event.target) {
+    rawFiles = Array.from(event.target.files);
+    console.log("On input file event change:", event);
+  } else if (isImageFileList(files)) {
+    console.log("From files:", files);
+    rawFiles = files;
+  }
   if (rawFiles.length === 0) return;
   console.info(`Local files:`, rawFiles);
 
+  showAwait();
   quitSlideshow();
   exifInfo.innerHTML = `
     Filtering & parsing items chronologically
@@ -723,6 +731,9 @@ function hideAwait(bFlag = true) {
     divCount.classList.remove('await');
     clikZone.innerText = '';
   } else {
+    if (onMobileDevice) {
+      btnFoldr.style.display = 'none';
+    }
     curImage.src = coverImage;
     curImage.style.opacity = 0.5;
     divAwait.style.display = 'block';
@@ -903,11 +914,32 @@ boxImage.addEventListener('touchend', (event) => {
 
 // File buffer extraction processor layer
 hidFiles.addEventListener('change', async (event) => {
+  console.debug(`Listener hidFiles.change`);
   await loadFiles(event);
   btnFiles.blur();
 });
-btnFiles.addEventListener('keydown', (event) => {
+btnFiles.addEventListener('keydown', async (event) => {
+  console.debug(`Listener btnFiles.keydown`);
   onKeydownButton(event, btnFiles, hidFiles);
+});
+
+// Load images from folder/directory
+hidFoldr.addEventListener('change', async (event) => {
+  if (onMobileDevice) {
+    console.log(`Not allowed from mobile device.`);
+    return;
+  }
+  console.debug(`Listener hidFoldr.change`);
+  await loadFiles(event);
+  btnFoldr.blur();
+});
+btnFoldr.addEventListener('keydown', (event) => {
+  if (onMobileDevice) {
+    console.log(`Not allowed from mobile device.`);
+    return;
+  }
+  console.debug(`Listener btnFoldr.keydown`);
+  onKeydownButton(event, btnFoldr, hidFoldr);
 });
 
 btnFresh.addEventListener('click', async (event) => {

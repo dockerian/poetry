@@ -67,6 +67,8 @@ const formatter = new Intl.DateTimeFormat('en-CA', {
 
 const maxLength = 60; // for caption/description
 
+const onMobileDevice = navigator && navigator.userAgentData && navigator.userAgentData.mobile;
+
 // country code (3-letter uppper case): province/state abbreviation map
 const states = {
   'USA' : {
