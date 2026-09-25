@@ -75,6 +75,8 @@ const mapServices = [{
   name: 'Amap｜高德地图', getFunc: amapUrl
 }];
 
+const openMapUrl = 'https://nominatim.openstreetmap.org';
+
 
 /* Global variables */
 let openLinkhref = null;
@@ -90,7 +92,12 @@ const clearClassList = (elem) => {
 
 /* Functions using utf8-regex.js */
 function convertUtf8(rawString) {
-  return decodeURIComponent(escape(rawString));
+  try {
+    return decodeURIComponent(escape(rawString));
+  } catch(err) {
+    console.debug(err);
+  }
+  return rawString;
 }
 function decodeBytes(asciiString) {
   const bytes = Uint8Array.from(asciiString, c => c.charCodeAt(0));
@@ -172,6 +179,36 @@ function getFilenameWithoutExtension(path) {
   // otherwise return the whole filename
   return dotIndex === -1 ? filename :
     filename.substring(0, dotIndex);
+}
+
+// Reverse Geocoding
+async function getGPSAddress(lat, lon, debug = false) {
+  let url = `${openMapUrl}/reverse`;
+  // see https://nominatim.org/release-docs/develop/api/Reverse/
+  // optional params: addressdetails=1&namedetails=1&zoom=16
+  let params = 'format=json';
+  let addr = null;
+  let data = null;
+  try {
+    const fetchUrl = `${url}?&lat=${lat}&lon=${lon}&${params}`;
+    const response = await fetch(fetchUrl, {
+      headers: { // OSM requires Access-Control-Allow-Origin
+        'Access-Control-Allow-Methods': 'GET',
+        'Access-Control-Allow-Origin': '*',
+        'User-Agent': 'App/1.0 (dockerian@gmail.com)'
+      },
+      method: 'GET'
+    });
+    data = await response.json();
+    addr = data && data.address ? data.address : null;
+  } catch (error) {
+    if (!debug) {
+      console.warn(error, data);
+    } else {
+      outputError(error);
+    }
+  }
+  return addr;
 }
 
 function getPureUrl(href) {
@@ -379,8 +416,9 @@ const toGPSLocation = (gpsDict) => {
       gpsLoc[0] = toGPSDecimal(val);
       continue;
     }
-    if (key == "GPSLatitudeRef") {
-      gpsLatitNorth = val === 'N' ? true : false;
+    if (key == "GPSLatitudeRef" && typeof val === 'string') {
+      let ref = val[0];
+      gpsLatitNorth = ref === 'N' ? true : false;
       console.debug(`GPSLatitudeRef: ${val}`);
       continue;
     }
@@ -388,9 +426,10 @@ const toGPSLocation = (gpsDict) => {
       gpsLoc[1] = toGPSDecimal(val);
       continue;
     }
-    if (key == "GPSLongitudeRef") {
+    if (key == "GPSLongitudeRef" && typeof val === 'string') {
       console.debug(`GPSLongitudeRef: ${val}`);
-      gpsLongitEast = val === 'E' ? true : false;
+      let ref = val[0];
+      gpsLongitEast = ref === 'E' ? true : false;
       continue;
     }
   }
@@ -409,6 +448,7 @@ const toGPSLocation = (gpsDict) => {
 // GPS Numbers (array) to decimal
 const toGPSDecimal = (gpsNumbers) => {
   if (gpsNumbers instanceof Array) {
+    let decimal;
     const d = gpsNumbers[0];
     const m = gpsNumbers[1];
     const s = gpsNumbers[2];
@@ -416,10 +456,19 @@ const toGPSDecimal = (gpsNumbers) => {
       const degrees = d.numerator / d.denominator;
       const minutes = m.numerator / m.denominator;
       const seconds = s.numerator / s.denominator;
-      const decimal = degrees + (minutes / 60) + (seconds / 3600);
+      decimal = degrees + (minutes / 60) + (seconds / 3600);
+    } else if ([d, m, s].every(v => typeof v === 'number')) {
+      decimal = d + (m / 60) + (s / 3600);
+    }
+    if (decimal) {
       return Number(decimal.toFixed(6));
     }
+  } else if (typeof gpsNumbers === 'string') {
+    return Number(gpsNumbers.replace(/[^\d.]/g, ''));
+  } else if (typeof gpsNumbers === 'number') {
+    return gpsNumbers;
   }
+  console.debug(`Invalid GPS latitude/longitude:`, gpsNumbers);
   return '';
 };
 

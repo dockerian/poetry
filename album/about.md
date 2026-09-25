@@ -5,7 +5,7 @@
 > Features and [Reference](#ref)
 
 
-### Poetry Album &copy; 2026 Features
+## Poetry Album &copy; 2026 Features
 
   * Static HTML and JavaScript code album app
   * Load a set of pre-defined static pictures, or optional from local image files
@@ -48,9 +48,14 @@
   * CSS uses `em` instead of pixel measurements
   * Separated HTML, JavaScript, and CSS code
 
-### Reference <a name="ref" id="ref"></a>
+## Reference <a name="ref" id="ref"></a>
 
-#### Maps URL <a name="mapurl" id="mapurl"></a>
+### EXIF library
+
+  * [ExifReader](https://www.jsdelivr.com/package/npm/exifreader) by [jsdelivr](https://www.jsdelivr.com)
+  * [EXIT](https://cdnjs.com/libraries/exif-js) Ajax class
+
+### Maps URL <a name="mapurl" id="mapurl"></a>
 
   - Amap｜高德地图
     ```javascript
@@ -79,7 +84,26 @@
     let url = `${googleMapSite}/?q=${lat},${lng}`;
     ```
 
-#### RegExp <a name="regexp" id="regexp"></a>
+### Maps API <a name="mapapi" id="mapapi"></a>
+
+#### Reverse Geocoding
+
+Nominatim API provide an address from a coordinate given as latitude and longitude. See [API manual](https://nominatim.org/release-docs/develop/api/Reverse/).
+
+  ```javascript
+  const api = 'https://nominatim.openstreetmap.org/reverse';
+  const params = 'addressdetails=1&namedetails=1&zoom=16&format=json';
+  const url = `${api}?lat=${lat}&lon=${lon}&${params}`;
+  const res = await fetch(url, {
+    headers: { // API requires these headers
+      'Access-Control-Allow-Origin' : '*',
+      'User-Agent': 'App/1.0 (user@gmail.com)'
+    }});
+  const data = await res.json();
+  ```
+
+
+### RegExp <a name="regexp" id="regexp"></a>
 
 The [shiji.html](../shiji.html) and [lyrics.html](../lyrics.html) pages have `#mulu` section, as a TOC (Table of Contents), to include all normalized poems or lyrics info. This Poetry Photo app may use regular expression to build a simple Javascript dictionary.
 
@@ -141,6 +165,10 @@ a:hover {
   color: darkred !important;
   text-decoration: none !important;
   background-color: lightyellow;
+}
+body,h4,h5,li,p {
+  font-size: 1.05em !important;
+  line-height: 1.5em;
 }
 b, strong {
   color: darkcyan;

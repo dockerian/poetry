@@ -1,5 +1,5 @@
 /*
-  ExifReader to parse metadata headers from image.
+  EXIF class to parse metadata headers from image.
   other CDN: https://cdn.jsdelivr.net/npm/exif-js
   or https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.js
   see https://cdnjs.com/libraries/exif-js

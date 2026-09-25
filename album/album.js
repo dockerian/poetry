@@ -503,7 +503,7 @@ function renderBasic(item) {
 }
 
 // Render file info and metadata from payload tags
-function renderExifInfo(item, seqNum) {
+async function renderExifInfo(item, seqNum) {
   if (!item.file) {
     renderMockInfo(item);
     return;
@@ -511,7 +511,6 @@ function renderExifInfo(item, seqNum) {
   // console.info(`Item: `, item, item.file);
 
   let error = '';
-  let gpsData = []; // [latitude, longitude]
   let gpsTags = {};
   let parts = [];
   let emptysp = '<p><br/><br/><br/><br/><br/></p>';
@@ -519,53 +518,39 @@ function renderExifInfo(item, seqNum) {
 
   renderFileInfo(parts, item, seqNum);
 
-  if (item.tags) {
-    let hasLookupTags = false;
-    let tagValue;
+  if (item.exif) {
     for (const [key, nameLabel] of Object.entries(exifKeyLookup)) {
-      tagValue = item.tags[key];
-      if (!tagValue) continue;
-      if (key.startsWith('GPS')) {
-        gpsTags[key] = tagValue;
-        continue;
-      }
-      let sValue = convertUtf8(tagValue);
-      console.debug(`key: ${key}, value: ${sValue}`);
-      if (key == "caption") {
-        console.debug(`CAPTION: `, sValue);
-        sValue = sValue.split(/[\r\n\-#]/)[0];
-        if (sValue.length > maxLength) {
-          sValue = sValue.slice(0, maxLength) + '...';
-        }
-      }
-      if (key == "ExposureTime") {
-        let sv = Math.round(1 / sValue);
-        sValue = `1 / ${sv}`;
-      }
+      let sValue = item.exif[key];
+      if (!sValue || key.startsWith('GPS')) continue;
       content = `
       <div class="p-exif-bar">
         <span class="p-exif-tag">${nameLabel}</span>
         ${sValue}
       </div>`;
-      hasLookupTags = true;
       parts.push(content);
     }
-
-    if (hasLookupTags) {
-      gpsData = toGPSLocation(gpsTags);
-    } else {
-      error = `
+    await setExifAddress(item, true);
+    if (item.exif['address']) {
+      content = `
       <div class="p-exif-bar">
-        <em>No nested system EXIF fields parsed.</em>
+        <span class="p-exif-tag">Location</span>
+        ${item.exif['address']}
       </div>`;
+      parts.push(content);
     }
-  } else {
+  } else if (!item.tags) {
     error = `
       <div class="p-exif-bar">
         <span class="p-exif-tag">Others</span>
         <em>Invalid or missing structural metadata</em>
       </div>`;
+  } else {
+    error = `
+      <div class="p-exif-bar">
+        <em>No nested system EXIF fields parsed.</em>
+      </div>`;
   }
+  const gpsData = item.gpsData; // [latitude, longitude]
   if (gpsData && gpsData.length == 2) {
     renderLocation(parts, gpsData);
   }
@@ -598,6 +583,10 @@ function renderFileInfo(parts, item, seqNum) {
 }
 
 function renderLocation(parts, gpsLoc) {
+  if (!gpsLoc || gpsLoc.length != 2) {
+    console.debug(`renderLocation: no valid GPS location`);
+    return;
+  }
   let content = '';
   let svcData = toGPSServices(gpsLoc);
   if (hasDictionaryData(svcData)) {
@@ -612,7 +601,7 @@ function renderLocation(parts, gpsLoc) {
     if (sHtml.length > 0) {
       content = `
       <div class="p-exif-bar p-exif-loc" id="p-exif-loc">
-        <span class="p-exif-tag">Location</span>
+        <span class="p-exif-tag">Maps</span>
         ${sHtml.join('\n<br/> ・ ')}
       </div>`;
     }
@@ -858,7 +847,7 @@ async function updateCurrentView(onInit = false) {
       }
     }
     console.debug(`Current [${currentIndex}]:`, name);
-    renderExifInfo(activeItem, seqNum);
+    await renderExifInfo(activeItem, seqNum);
     hideAwaitExif();
     enableImage();
     await updateAlbum();

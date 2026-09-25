@@ -123,7 +123,7 @@ class Album {
   sortByDate() {
     this.data.sort((alpha, beta) => {
       if (!alpha.dateCaptured) return -1;
-      if (!beta.dateCaptured) return -1;
+      if (!beta.dateCaptured) return 1;
       // Chronological ascending arrangement configuration
       return alpha.dateCaptured - beta.dateCaptured;
     });
@@ -169,6 +169,8 @@ class Album {
 
 // Global class Album instance
 const album = new Album();
+const exifByClass = typeof EXIF == 'undefined';
+const exifReader = typeof ExifReader == 'undefined';
 
 // Build up data lookup
 function buildLookup() {
@@ -284,7 +286,7 @@ async function getDatumFromFile(file, deferredTags = false) {
 
   if (deferredTags) return datum;
 
-  await setDatumTags(datumn);
+  await setDatumTags(datum);
 
   return datum;
 }
@@ -306,7 +308,7 @@ function getExifTagsAsync(file) {
   });
 }
 
-async function getExifDatetime(dataTags) {
+function getExifDatetime(dataTags) {
   if (dataTags) {
     // console.info(`EXIF tags: `, dataTags);
     // exif-js prioritizes 'DateTimeOriginal' (taken) and 'DateTime' (modified)
@@ -326,6 +328,26 @@ async function getExifDatetime(dataTags) {
   return null;
 }
 
+function getExifReaderDateTime(exifTags) {
+  let oDate = null
+  if (exifTags && exifTags['DateTime'] &&
+      exifTags['DateTime'].description) {
+    // Normalizes EXIF format date string variations ("YYYY:MM:DD HH:MM:SS") to standard Date engine elements
+    const structuredSegments = exifTags['DateTime'].description.split(/[: ]/);
+    if (structuredSegments.length >= 6) {
+      oDate = new Date(
+        structuredSegments[0],
+        structuredSegments[1] - 1, // standard 0-indexed month array adjustment
+        structuredSegments[2],
+        structuredSegments[3],
+        structuredSegments[4],
+        structuredSegments[5]
+      );
+    }
+  }
+  return oDate;
+}
+
 function getQueryKeyFromUrl() {
   const queryKey = getQueryKey();
   // digits, letters, or dash, without encoded
@@ -340,19 +362,20 @@ async function setDatumTags(datum) {
   let chkExit = datum == 'undefined' ||
     !(datum && datum.file instanceof File);
   if (chkExit || !datum.file) return;
+  if (!datum.tags) datum.tags = {};
 
   let file = datum.file;
 
   if (typeof EXIF != 'undefined') {
     let exifTags = await getExifTagsAsync(file);
-    let sDate = await getExifDatetime(exifTags);
+    let sDate = getExifDatetime(exifTags);
     if (sDate) {
       datum.dateCaptured = sDate;
       datum.tags = exifTags;
     }
     // parsed but no metadata
     datum.parsed = true;
-    return;
+    // return;
   }
   // For ExifReader module
   if (typeof ExifReader == 'undefined') {
@@ -360,25 +383,126 @@ async function setDatumTags(datum) {
     return;
   }
   try {
-    let parsedTags = await ExifReader.load(file);
-    if (parsedTags && parsedTags['DateTime'] &&
-        parsedTags['DateTime'].description) {
-      // Normalizes EXIF format date string variations ("YYYY:MM:DD HH:MM:SS") to standard Date engine elements
-      const structuredSegments = parsedTags['DateTime'].description.split(/[: ]/);
-      if (structuredSegments.length >= 6) {
-        datum.dateCaptured = new Date(
-          structuredSegments[0],
-          structuredSegments[1] - 1, // standard 0-indexed month array adjustment
-          structuredSegments[2],
-          structuredSegments[3],
-          structuredSegments[4],
-          structuredSegments[5]
-        );
-      }
-      datum.tags = parsedTags;
-      datum.parsed = true;
+    const oTags = await ExifReader.load(file);
+    const oDate = getExifReaderDateTime(oTags);
+    if (oDate) {
+      datum.dateCaptured = oDate;
     }
+    for (const key of Object.keys(oTags)) {
+      const tag = oTags[key];
+      // Each tag contains a description and raw value
+      if (datum.tags[key]) {
+        console.debug(`EXIF------ [${datum.name}].tags[${key}] =`, datum.tags[key]);
+      }
+      console.debug(`ExifReader [${datum.name}].tags[${key}] = ${tag.description}`, tag);
+      if (tag && !datum.tags[key] && tag.description) {
+        datum.tags[key] = tag.description;
+      }
+    }
+    datum.parsed = true;
   } catch (metadataProcessingFailure) {
     console.warn(`EXIF properties extraction omitted on ${file.name}:`, metadataProcessingFailure);
   }
+  await setExifTags(datum);
+}
+
+// set address info per GPS Reverse Geocoding
+async function setExifAddress(datum, checkExist = false) {
+  if (!datum || !datum.tags) return;
+  if (!datum.exif || datum.exif['address'] && checkExist) {
+    console.debug(`Skip overwriting address:`, datum.exif['address']);
+    return;
+  }
+
+  let addrInfo, addrFromGPS = false;
+  let city, state, country, countryCode;
+  const hasGPS = datum.gpsData && datum.gpsData.length == 2;
+  if (datum.tags['City']) {
+    city = datum.tags['City'];
+    country = datum.tags['Country'];
+    countryCode = datum.tags['CountryCode'];
+    state = datum.tags['Province/State'] || datum.tags['State'];
+    addrInfo = [city, state, country];
+  } else if (hasGPS) {
+    let gpsLoc = datum.gpsData;
+    let addr = await getGPSAddress(gpsLoc[0], gpsLoc[1]);
+    if (addr) {
+      addrFromGPS = true; // reverse geocoding indicator
+      city = addr.city || addr.town || addr.village || 'Unkown';
+      country = addr.country || '';
+      countryCode = addr.country_code || '';
+      state = addr.state || addr.province || '';
+      addrInfo = [city, state, country];
+    } else {
+      console.debug(`No address info per GPS coordinate`, datum.gpsData);
+    }
+  } else {
+    console.debug(`No address info nor GPS coordinate`, datum);
+  }
+  if (addrInfo) {
+    const c = addrInfo[2]; // country
+    const p = addrInfo[1]; // province or state
+    const a = [
+      addrInfo[0], // city
+      c === 'China' && p.startsWith(addrInfo[0]) ? '' :
+        statesLookup(countryCode, p) || p, // province or state
+      countryCode === 'USA' ? countryCode : c, // country
+    ];
+    const s = Array.from(new Set(a));
+    const address = s.filter(v => typeof v === "string" && v.trim() !== '').join(", ");
+    datum.exif['address'] = (addrFromGPS ? '* ' : '') + address;
+    console.debug(`Location: ${address}`, addrInfo, datum);
+  }
+}
+
+// Set EXIF tags to album datum
+async function setExifTags(datum) {
+  if (!datum || !datum.tags) return;
+  if (!datum.exif) {
+    datum.exif = {};
+  }
+  let gpsTags = {};
+  let hasLookupTags = false;
+  let hasGPSTags = false;
+  for (const [key, tagLabel] of Object.entries(exifKeyLookup)) {
+    let tagValue = datum.tags[key];
+    if (!tagValue) continue;
+    if (key.startsWith('GPS')) {
+      hasGPSTags = true;
+      gpsTags[key] = tagValue;
+      continue;
+    }
+    let sValue = convertUtf8(tagValue);
+    console.debug(`key: ${key}, value: ${sValue}`);
+    if (key == 'caption' || key == 'ImageDescription') {
+      console.debug(`CAPTION: `, sValue);
+      sValue = sValue.split(/[\r\n\-#]/)[0];
+      if (sValue.length > maxLength) {
+        sValue = sValue.slice(0, maxLength) + '...';
+      }
+    }
+    if (key == 'ExposureTime' && typeof tagValue !== 'string') {
+      let sv = Math.round(1 / Number(sValue));
+      sValue = `1 / ${sv}`;
+    }
+    datum.exif[key] = sValue;
+    hasLookupTags = true;
+  }
+  if (!hasLookupTags) {
+    console.debug('No lookup key in EXIF tags', exifKeyLookup, datum.tags);
+  }
+  if (!hasGPSTags) {
+    console.debug(`No GPS tags from [${datum.name}] tags:`, datum.tags);
+  }
+
+  let gpsData = toGPSLocation(gpsTags);
+  if (Array.isArray(gpsData) && gpsData.length === 2) {
+    datum.gpsData = gpsData;
+  } else {
+    console.debug(`No GPS coordinate [${datum.name}] gpsTags:`, gpsTags, datum.tags);
+  }
+
+  await setExifAddress(datum);
+
+  return hasLookupTags;
 }

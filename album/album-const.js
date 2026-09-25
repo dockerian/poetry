@@ -66,3 +66,86 @@ const formatter = new Intl.DateTimeFormat('en-CA', {
 });
 
 const maxLength = 60; // for caption/description
+
+// country code (3-letter uppper case): province/state abbreviation map
+const states = {
+  'USA' : {
+    'AK' : 'Alaska',
+    'AL' : 'Alabama',
+    'AR' : 'Arkansas',
+    'AS' : 'American Samoa',
+    'AZ' : 'Arizona',
+    'CA' : 'California',
+    'CO' : 'Colorado',
+    'CT' : 'Connecticut',
+    'DC' : 'District of Columbia',
+    'DE' : 'Delaware',
+    'FL' : 'Florida',
+    'GA' : 'Georgia',
+    'GU' : 'Guam',
+    'HI' : 'Hawaii',
+    'IA' : 'Iowa',
+    'ID' : 'Idaho',
+    'IL' : 'Illinois',
+    'IN' : 'Indiana',
+    'KS' : 'Kansas',
+    'KY' : 'Kentucky',
+    'LA' : 'Louisiana',
+    'MA' : 'Massachusetts',
+    'MD' : 'Maryland',
+    'ME' : 'Maine',
+    'MI' : 'Michigan',
+    'MN' : 'Minnesota',
+    'MO' : 'Missouri',
+    'MP' : 'Northern Mariana Islands',
+    'MS' : 'Mississippi',
+    'MT' : 'Montana',
+    'NC' : 'North Carolina',
+    'ND' : 'North Dakota',
+    'NE' : 'Nebraska',
+    'NH' : 'New Hampshire',
+    'NJ' : 'New Jersey',
+    'NM' : 'New Mexico',
+    'NV' : 'Nevada',
+    'NY' : 'New York',
+    'OH' : 'Ohio',
+    'OK' : 'Oklahoma',
+    'OR' : 'Oregon',
+    'PA' : 'Pennsylvania',
+    'PR' : 'Puerto Rico',
+    'RI' : 'Rhode Island',
+    'SC' : 'South Carolina',
+    'SD' : 'South Dakota',
+    'TN' : 'Tennessee',
+    'TT' : 'Trust Territories',
+    'TX' : 'Texas',
+    'UT' : 'Utah',
+    'VA' : 'Virginia',
+    'VI' : 'Virgin Islands',
+    'VT' : 'Vermont',
+    'WA' : 'Washington',
+    'WI' : 'Wisconsin',
+    'WV' : 'West Virginia',
+    'WY' : 'Wyoming',
+  },
+};
+
+const usaStatesLookup = Object.fromEntries(
+  Object.entries(states['USA']).map(([a, s]) => [s, a]));
+
+const statesLookup = (countryCode, state) => {
+  if (typeof countryCode !== 'string') return '';
+  if (typeof state !== 'string') return '';
+
+  const usa = ['US', 'USA', 'United States', 'United States of America'];
+  if (usa.some(v => v.toUpperCase() == countryCode.toUpperCase())) {
+    return usaStatesLookup[state] || '';
+  }
+  if (states[countryCode]) {
+    const sdict = states[countryCode.toUpperCase()];
+    const vdict = Object.fromEntries(Object.entries(
+      sdict).map(([a, s]) => [s, a]));
+    return vdict[state] || '';
+  }
+  return '';
+};
