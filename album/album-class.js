@@ -366,6 +366,11 @@ async function setDatumTags(datum) {
 
   let file = datum.file;
 
+  if (!datum.dateCaptured) {
+    datum.dateCaptured = file.lastModified ? new Date(
+      file.lastModified) : file.lastModifiedDate;
+  }
+
   if (typeof EXIF != 'undefined') {
     let exifTags = await getExifTagsAsync(file);
     let sDate = getExifDatetime(exifTags);
@@ -403,6 +408,7 @@ async function setDatumTags(datum) {
   } catch (metadataProcessingFailure) {
     console.warn(`EXIF properties extraction omitted on ${file.name}:`, metadataProcessingFailure);
   }
+
   await setExifTags(datum);
 }
 
@@ -440,6 +446,9 @@ async function setExifAddress(datum, checkExist = false) {
     console.debug(`No address info nor GPS coordinate`, datum);
   }
   if (addrInfo) {
+    if (country.startsWith('United States')) {
+      countryCode = 'USA';
+    }
     const c = addrInfo[2]; // country
     const p = addrInfo[1]; // province or state
     const a = [

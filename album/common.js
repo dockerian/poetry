@@ -277,6 +277,14 @@ const isDictionaryEmpty = (obj) => {
     && obj.constructor === Object;
 };
 
+function isImageFileList(v) {
+  return Array.isArray(v) && v.some(o => o instanceof File && o.type.startsWith('image/'));
+}
+
+function isFileList(v) {
+  return Array.isArray(v) && v.every(o => o instanceof File);
+}
+
 const isNumber = (v) => {
   return typeof v === 'number' && Number.isFinite(v);
 }

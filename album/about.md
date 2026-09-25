@@ -3,22 +3,29 @@
 > 舟山堂＋纱糸轩：诗词、歌词・[相册｜Photo Album](index.html) of Poetry Collection.<br/>
 > Designated Web URL: [http://dockerian.github.io/poetry/album/](./)<br/>
 > Features and [Reference](#ref)
+> - [EXIF library](#exifjs)
+> - [Open files or folder](#winapi)
+> - [Map URL](#mapurl) and [Map API](#mapapi)
+> - [RegExp](#regexp)
+> <br/>
 
 
-## Poetry Album &copy; 2026 Features
+## Poetry Album &copy; 2026 Features　<span><a class="arrow" href="#toc" title="Contents">&uArr;</a>&middot;<a class="arrow" href="#ref" title="Reference">&dArr;</a></span>
 
   * Static HTML and JavaScript code album app
   * Load a set of pre-defined static pictures, or optional from local image files
+  * Loading images may support by selecting a folder for all image files
   * The images list may have a data lookup table per [shiji.html](../shiji.html)
   * The images list may optionally have data reference from [lyrics.html](../lyrics.html)
   * On fetch image URL, other than the basic image name, information, such as file size and EXIF metadata should be deferred to load in current view
+  * The date and time are displayed as GMT+0 based ISO string
   * The app page may read from URL query string to search and show matched image
   * The app page may NOT have search function without enough image info or rich database
   * The app page should navigate to an image per its file name or internal ID (including `#mulu` id and poem id from [shiji.html](../shiji.html), and lyrics id from [lyrics.html](../lyrics.html)); see [regexp code](#regexp)
   * The image height and width may vary and the viewbox container should be adjusted to fit the screen size
   * UI should display the number of loaded images
   * UI has Action panel and Image Info panel
-  * The left-side of the screen has Action panel, including `Load Image Files`, Slideshow controls, and `Refresh` buttons
+  * The left-side of the screen has Action panel, including &#x1F5BC;`Load Images` or from &#x1F4C2;`Folder`, &#x25B6; &#x25A0; Slideshow controls, and &#x21BB;`Refresh` buttons
   * The right-side panel displays real EXIF info of the image (by importing external library)
   * The Action panel should be inside at corner of the container without taking extra space and active on mouse over
   * UI should allow using `Tab` (⇥) key to navigate through controls
@@ -42,7 +49,7 @@
   * UI displays awaiting state on loading images and parsing EXIF data
   * UI may defer parsing EXIF metadata until the image is selected and displayed in current viewbox
   * UI may scroll only image information in EXIF panel with a sticky headline and other controls remain position
-  * UI may show map links if EXIF metadata contains GPS (latitude `lat` and longitude `lng`) information. See [reference](#ref)
+  * UI may show map links if EXIF metadata contains GPS (latitude `lat` and longitude `lng`) information. See [reference](#mapurl)
   * UI should show proper information on errors
   * Browser console may print info and errors
   * An option to filter and sort files by the date captured metadata
@@ -56,12 +63,45 @@
   * CSS uses `em` instead of pixel measurements
   * Separated HTML, JavaScript, and CSS code
 
-## Reference <a name="ref" id="ref"></a>
+<p><br/></p><hr/>
 
-### EXIF library
+## Reference <a name="ref" id="ref"></a>　<span><a class="arrow" href="#toc" title="Contents">&uArr;</a>&middot;<a class="arrow" href="#end" title="End">&dArr;</a></span>
+
+### EXIF library <a name="exifjs" id="exifjs"></a>
 
   * [ExifReader](https://www.jsdelivr.com/package/npm/exifreader) by [jsdelivr](https://www.jsdelivr.com)
   * [EXIT](https://cdnjs.com/libraries/exif-js) Ajax class
+
+### Open files or folder <a name="winapi" id="winapi"></a>
+
+  **Note**: Using `window.showOpenFilePicker` on `click` may conflict with `keydown` event.
+
+  ```javascript
+  btnFoldr.addEventListener('click', async (event) => {
+    if (window.showOpenFilePicker) {
+      const openfiles = [];
+      try {
+        const handles = await window.showOpenFilePicker({
+          excludeAcceptAllOption: false,
+          multiple: true
+        });
+        for (const handle of handles) {
+          const file = await handle.getFile();
+          openfiles.push(file);
+        }
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error(err);
+        }
+      }
+      event.preventDefault();
+      console.debug("On window.showOpenFilePicker:", openfiles);
+      // await loadFiles(null, openfiles);
+    } else {
+      // onKeydownButton(event, btnFoldr, hidFoldr);
+    }
+  });
+  ```
 
 ### Maps URL <a name="mapurl" id="mapurl"></a>
 
@@ -157,6 +197,7 @@ The [shiji.html](../shiji.html) and [lyrics.html](../lyrics.html) pages have `#m
 
 &raquo; Back to [Album](./index.html)｜[Contents](#toc)｜[Home](../README.md)
 
+<a id="end" name="end"></a>
 <div style="display:none" markdown="0"><!--stylesheet-->
 <style type="text/css"><!--
 *, *::before, *::after {
@@ -168,6 +209,9 @@ The [shiji.html](../shiji.html) and [lyrics.html](../lyrics.html) pages have `#m
 }
 a {
   text-decoration: none;
+}
+a.arrow {
+  font-size: 0.85em !important;
 }
 a:hover {
   color: darkred !important;
@@ -186,6 +230,17 @@ blockquote > p > code {
   line-height: 1.5em;
   padding: 0.75em 0.5em 0.75em 0.5em;
   text-indent: -0.25em;
+}
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+h2 span {
+  display: inline-block;
+  margin-left: auto;  /* Pushes the element to the right */
+  width: max-content; /* or any specific width like 200px */
+  right: 0;
 }
 @media print {
   body,div,div#_html,p,code,pre {

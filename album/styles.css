@@ -480,6 +480,7 @@ button:focus:not(:focus-visible) {
   white-space: nowrap;
   text-align: left;
 }
+.btn-Label .btn-Style#btnFoldr,
 .btn-Label .btn-Style#btnFiles,
 .btn-Label .btn-Style#btnFresh,
 .btn-Label .btn-Style#btnSlide {
@@ -526,6 +527,7 @@ button:focus:not(:focus-visible) {
 }
 
 .btn-Style#btnFiles b,
+.btn-Style#btnFoldr b,
 .btn-Style#btnFresh b,
 .btn-Style#btnSlide b {
   /* Comparing to visibility setting, in order to
@@ -534,6 +536,7 @@ button:focus:not(:focus-visible) {
   display: none; /* remove from element tree */
   visibility: collapse;
 }
+.btn-Style#btnFoldr::before,
 .btn-Style#btnFiles::before,
 .btn-Style#btnFresh::before,
 .btn-Style#btnSlide::before {
@@ -554,10 +557,17 @@ button:focus:not(:focus-visible) {
   vertical-align: middle;
   white-space: nowrap;
 }
+
 .btn-Style#btnFiles::before {
-  background-image: url("images/btn-folder.png");
+  background-image: url("images/btn-files.png");
   content: "\01F4C2"; /* set its color to transparent vs
   color: aliceblue;   /* no color bg-image is present */
+  color: transparent;
+}
+.btn-Style#btnFoldr::before {
+  background-image: url("images/btn-folder.png");
+  content: "\0F5BC;"; /* set its color to transparent vs
+  color: moccasin;    /* no color bg-image is present */
   color: transparent;
 }
 .btn-Style#btnFresh::before {
@@ -576,7 +586,10 @@ button:focus:not(:focus-visible) {
   overflow: hidden;
   width: 4.5em;
 }
-.p-slideshow #btnSlide:hover {
+.btn-Style#btnFiles:hover,
+.btn-Style#btnFoldr:hover,
+.btn-Style#btnFresh:hover,
+.btn-Style#btnSlide:hover {
   background: rgba(0,0,0,0.5);
   border: dotted 1px gray;
   border-radius: 0.25em;
@@ -795,5 +808,11 @@ button:focus:not(:focus-visible) {
   .p-exif .p-scroll h3 {
     justify-content: flex-start;
     margin-top: 0.55em;
+  }
+}
+@media (pointer: coarse) {
+  /* Styles specifically for touchscreen/mobile users */
+  #lblFoldr {
+    display: none;
   }
 }
