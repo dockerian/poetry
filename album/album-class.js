@@ -172,8 +172,10 @@ const album = new Album();
 
 // Build up data lookup
 function buildLookup() {
-  console.debug(`Build dataLookup from mulu:`, mulu);
-  for (const poem of mulu) {
+  console.debug(`Build dataLookup from mulu:`, mulu, muluLyrics);
+  // CAUTION: after spread-merging the list, one should
+  // only use keys in both mulu and muluLyrics
+  for (const poem of [...mulu, ...muluLyrics]) {
     let files = [];
     let rFile = poem.dataFile;
     let regex = rFile ? new RegExp(rFile) : null;

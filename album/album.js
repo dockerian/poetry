@@ -676,10 +676,13 @@ async function refreshOnStart() {
     console.info(`Lookup by query [${querykey}]:`, data);
   }
 
+  // data.files not-null meaning its items
+  // have been used as keys of dataLooup.files
+  // see buildLookup()
   if (data && data.files) {
     quitSlideshow();
     await reloadAlbum();
-    const filename = data.files[0] ?? '';
+    const filename = data.files[0];
     const newIndex = dataLookup.files[filename] % album.size;
     const msg = `Resolved query key [${querykey}]`;
     const ext = `album index = ${newIndex} / ${album.size}`;

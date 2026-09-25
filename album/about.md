@@ -1,7 +1,8 @@
 # 诗词影集 <a id="toc" name="toc"></a>
 
 > 舟山堂＋纱糸轩：诗词、歌词・[相册｜Photo Album](index.html) of Poetry Collection.<br/>
-> Designated Web URL: [http://dockerian.github.io/poetry/album/](./)
+> Designated Web URL: [http://dockerian.github.io/poetry/album/](./)<br/>
+> Features and [Reference](#ref)
 
 
 ### Poetry Album &copy; 2026 Features
@@ -9,8 +10,11 @@
   * Static HTML and JavaScript code album app
   * Load a set of pre-defined static pictures, or optional from local image files
   * The images list may have a data lookup table per [shiji.html](../shiji.html)
+  * The images list may optionally have data reference from [lyrics.html](../lyrics.html)
   * On fetch image URL, other than the basic image name, information, such as file size and EXIF metadata should be deferred to load in current view
-  * The page may read from URL query string to search and show matched image
+  * The app page may read from URL query string to search and show matched image
+  * The app page may NOT have search function without enough image info or rich database
+  * The app page should navigate to an image per its file name or internal ID (including `#mulu` id and poem id from [shiji.html](../shiji.html), and lyrics id from [lyrics.html](../lyrics.html)); see [regexp code](#regexp)
   * The image height and width may vary and the viewbox container should be adjusted to fit the screen size
   * UI should display the number of loaded images
   * UI has Action panel and Image Info panel
@@ -44,9 +48,10 @@
   * CSS uses `em` instead of pixel measurements
   * Separated HTML, JavaScript, and CSS code
 
-### Reference <a name="ref"></a>
+### Reference <a name="ref" id="ref"></a>
 
-* Maps URL
+#### Maps URL <a name="mapurl" id="mapurl"></a>
+
   - Amap｜高德地图
     ```javascript
     const amapUri = 'https://uri.amap.com';
@@ -74,6 +79,48 @@
     let url = `${googleMapSite}/?q=${lat},${lng}`;
     ```
 
+#### RegExp <a name="regexp" id="regexp"></a>
+
+The [shiji.html](../shiji.html) and [lyrics.html](../lyrics.html) pages have `#mulu` section, as a TOC (Table of Contents), to include all normalized poems or lyrics info. This Poetry Photo app may use regular expression to build a simple Javascript dictionary.
+
+- [lyrics.html](../lyrics.html#mulu)
+
+  * regexp search in `#mulu`:
+
+    >`<li id="d(.+?)" class="(.+?)" name="(.+?)-li">.*?<a href="((#p\1)|(.+?))" title="(.+?)( \((.+)\))*｜(.+?)｜([^a-z "=]+?)".*>.*?<([bcde])>(.*?)</\12>[〖【](.+?)[】〗] <i>(\d\d\d\d)\.(\d\d)\.(\d\d)\.</i></a></li>\n`
+
+  * replace to data:
+
+    ```javascript
+    { name: "$3-$1", dateStamp: "$15.$16.$17", dateymd: "$15-$16-$17", mulu: "d$1", pid: "p$1$6", type: "$11", subject: "$10", title: "$7｜$10", titleEng: "$7", tags: "$2 $3", dataFile: "", source: "$6", orig: "$9" },\n
+    ```
+
+- [shiji.html](../shiji.html#mulu)
+
+  * regexp search in `#mulu`:
+
+    >`<p id="y(.+?)" +data-num="(\d\d)">(.+?) (.+?)・(.+?)　+<a href="#(.+?)" title="(.+?) \| (.+?)" data-ymd="(\d\d\d\d)-(\d\d)-(\d\d)" data-tags="(.+?)" data-regex="(.*?)">(.+?)</a>.*\n`
+
+  * replace to:
+
+    ```javascript
+    { name: "$1", dateStamp: "$9.$10.$11", dateYears: "$8", dateymd: "$9-$10-$11", mulu: "y$1", pid: "$6", num: $2, dataFile: "$13", status: "$12", subject: "$5", title: "$4・$5", type: "$4" },\n
+    ```
+
+- **notes**:
+  * The HTML pages do not have image file names or info.
+  * The [lyrics.html](../lyrics.html#mulu) `#mulu li` use `class` and `name` attributes for tagging. Since some tags have format like `tagName-li` where the "`-li`" part is only used within `#atoc #mulu`, the tag name for the content **should have "`-li`" removed** in later process.
+  * The [lyrics.html](../lyrics.html#mulu) `#mulu li` use Chinese bracket characters to differentiate a main Chinese or English content. Also, any text ends with "`...`" indicating an incomplete title.
+    - `Chinese Song or Blog Title〖中文标题〗`
+    - `English Song Title ...【中文译名】`
+    - `English Poem Title【中文标题】`
+  * The [lyrics.html](../lyrics.html#mulu) `#mulu li` use html tag `<b></b>` and undefined inline tags, `c`, `d`, `e`, around the lyrics title for conventional categories.
+    - `<b>A Chinese Blog Poem</b>〖中文标题〗`
+    - `<c>Chinese cover of English song title ...</c>〖中文歌名〗`
+    - `<e>English cover of Chinese song</e>【中文译名】`
+    - `<d>An English Poem Title</d>【中文标题】`
+
+
 <p><br/></p>
 
 &raquo; Back to [Album](./index.html)｜[Contents](#toc)｜[Home](../README.md)
@@ -83,6 +130,10 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+::selection {
+  background-color: lightgray;
+  color: darkred;
+}
 a {
   text-decoration: none;
 }
@@ -90,6 +141,15 @@ a:hover {
   color: darkred !important;
   text-decoration: none !important;
   background-color: lightyellow;
+}
+b, strong {
+  color: darkcyan;
+}
+blockquote > p > code {
+  display: inline-block;
+  line-height: 1.5em;
+  padding: 0.75em 0.5em 0.75em 0.5em;
+  text-indent: -0.25em;
 }
 @media print {
   body,div,div#_html,p,code,pre {
