@@ -27,6 +27,14 @@
   * UI navigation may have varied page size per album size
   * UI has slideshow start/stop toggle button with customizable interval seconds between `1` and `9`; the number can be input, or cycling adjusted by mouse wheel or `up` (&uarr;) and `down` (&darr;) keys
   * UI slideshow may follow previous user navigation, backward or forward, for its direction
+  * UI has a `Refresh` button to reload page, in case of network error; this is different from browser page refresh, as it may remember URL query or user's navigation and show previous viewed photo after album reloaded
+  * UI supports keyboard shortcuts as below:
+    - `F4`: start slideshow from the first index
+    - `F5`: refresh page to the first index and reset user navigation
+    - `Home` (`Fn+◀`, `⌘+◀` or `↖` on MacOS): navigate to the first image
+    - `End` (`Fn+▶`, `⌘+▶`, or `↘)` on MacOS): navigate to the last image
+    - `←` (Left): navigate to previous index
+    - `→` (Right): navigate to next index
   * UI should show only center image and toggle controls visibility on click or touch at center
   * UI has a button or optionally allows clicking center zone to open image in a new window
   * UI displays images counter at loading complete

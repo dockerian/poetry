@@ -29,6 +29,7 @@ const slideshowState = {
   _max: 9,
   _default: 1,
   _direction: 1,
+  _prevIndex: 0,
   get default() { return this._default; },
   get max() { return this._max; },
   get min() { return this._min; },
@@ -36,6 +37,10 @@ const slideshowState = {
   get prev() { return this._direction < 1; },
   get startName() { return 'Start Slideshow'; },
   get stopName() { return 'Stop Slideshow'; },
+  get prevIndex() { return this._prevIndex; },
+  set prevIndex(index) {
+    this._prevIndex = (0 <= index && index < album.size) ? index : 0;
+  },
   browsePrev() { this._direction = -1; },
   browseNext() { this._direction = 1; },
   cycling(v) {
@@ -185,7 +190,7 @@ function disableViews() {
   clikZone.title = "No album image";
 }
 
-function enableCount() {
+function enableCount(onInit = false) {
   // displaying count of album items
   let spanClass = 'okay';
   if (showLocal) {
@@ -204,7 +209,9 @@ function enableCount() {
     numStats.opacity = 1;
     clearClassList(digitNum);
     digitNum.classList.add(spanClass);
-    divCount.classList.add('ready');
+    if (!onInit) {
+      divCount.classList.add('ready');
+    }
   }
   console.debug(`#digitNum class: ${digitNum.className}`);
   currentState = spanClass;
@@ -302,7 +309,6 @@ async function loadFiles(event) {
 
   if (verifiedTempList.length > 0) {
     showLocal = true;
-    currentIndex = 0;
     album.loadFromList(verifiedTempList);
     const msg = `Loaded from ${album.size} images`
     console.info(msg, album.data);
@@ -346,6 +352,9 @@ async function navigateTo(indexNumber = 0) {
   clearAsyncUpdate();
   const ndx = isNumber(indexNumber) ? indexNumber : 0;
   currentIndex = ndx % album.size;
+  if (!showLocal) {
+    slideshowState.prevIndex = currentIndex;
+  }
   divCount.classList.toggle('sequence');
   console.debug(`Update view at index:`, currentIndex);
   await updateCurrentView();
@@ -647,14 +656,14 @@ function renderMockInfo(item) {
 }
 
 // Refresh custom static images
-async function refresh() {
+async function refresh(onInit = false) {
   hideAwait();
   quitSlideshow();
   clearAsyncUpdate(true);
   showLocal = false;
 
   await reloadAlbum();
-  await updateView();
+  await updateView(onInit);
 }
 
 async function refreshOnStart() {
@@ -680,7 +689,7 @@ async function refreshOnStart() {
     return;
   }
   animateCover(secAnimation, true);
-  await refresh();
+  await refresh(true);
 }
 
 async function reloadAlbum() {
@@ -854,12 +863,17 @@ async function updateCurrentView(onInit = false) {
 }
 
 // Refresh rendering pipeline step layout updates
-async function updateView() {
+async function updateView(onInit = false) {
   digitNum.innerText = `${album.size}`;
-  if (!showLocal) {
+  if (showLocal) {
+    currentIndex = 0;
+  } else if (onInit){
     currentIndex = album.size - 1;
+    slideshowState.prevIndex = currentIndex;
+  } else {
+    currentIndex = slideshowState.prevIndex;
   }
-  await updateCurrentView(true);
+  await updateCurrentView(onInit);
 
   const nodata = album.countLoaded == 0;
   if (nodata || album.size === 0) {
@@ -998,11 +1012,33 @@ window.addEventListener('keydown', (event) => {
   console.debug(`window keydown: code=${event.code}, key=${event.key}`)
 
   switch (event.key) {
+    case 'F4':
+      navigate(album.size - currentIndex);
+      btnSlide.click();
+      break;
+    case 'F5':
+      navigate(album.size - currentIndex);
+      btnFresh.click();
+      break;
+    case 'Home':
+      navigate(album.size - currentIndex);
+      break;
+    case 'End':
+      navigate(album.size - currentIndex - 1);
+      break;
     case 'ArrowLeft':
-      navigate(-1);
+      if (event.metaKey) {
+        navigate(album.size - currentIndex);
+      } else {
+        navigate(-1);
+      }
       break;
     case 'ArrowRight':
-      navigate(1);
+      if (event.metaKey) {
+        navigate(album.size - currentIndex - 1);
+      } else {
+        navigate(1);
+      }
       break;
     case 'PageUp':
       navigate(-pageSize); // backward browse step metrics
