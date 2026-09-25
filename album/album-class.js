@@ -180,19 +180,24 @@ function buildLookup() {
   for (const poem of [...mulu, ...muluLyrics]) {
     let files = [];
     let rFile = poem.dataFile;
-    let regex = rFile ? new RegExp(rFile) : null;
+    let regex = rFile ? new RegExp(rFile, 'i') : null;
     for (const fileName of defaultImages) {
       let found = fileName == poem.dataFile || (
           rFile ? regex.test(fileName): false);
       if (found) {
+        console.debug(`Found ${fileName} matches`, rFile);
         files.push(fileName);
-        let name = getFilenameWithoutExtension(poem.name);
+        let namc = fileName.toLowerCase();
+        let name = getFilenameWithoutExtension(fileName);
         let keys = getPoemKeys(poem.mulu, poem.pid);
         for (const key of keys) {
           dataLookup.query[key] = poem;
         }
+        name = name.toLowerCase();
         dataLookup.names[fileName] = poem;
+        dataLookup.query[namc] = poem;
         dataLookup.query[name] = poem;
+        console.debug(`Added queries: ${name}, ${namc}, =>`, poem);
         poem.files = files;
       }
     }

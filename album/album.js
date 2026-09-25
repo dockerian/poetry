@@ -688,7 +688,8 @@ async function refreshOnStart() {
   if (data && data.files) {
     quitSlideshow();
     await reloadAlbum();
-    const filename = data.files[0];
+    const re = new RegExp(querykey, 'i');
+    const filename = data.files.find(v => re.test(v)) || data.files[0];
     const newIndex = dataLookup.files[filename] % album.size;
     const msg = `Resolved query key [${querykey}]`;
     const ext = `album index = ${newIndex} / ${album.size}`;
