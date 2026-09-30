@@ -116,6 +116,7 @@ class Album {
       this.data.push(...aList);
       this._countFiles = this.data.length;
       this._countRatio = 1;
+      this.sortByName();
     }
   }
 
@@ -127,6 +128,11 @@ class Album {
       // Chronological ascending arrangement configuration
       return alpha.dateCaptured - beta.dateCaptured;
     });
+  }
+
+  // Core Filtering / Sorting Engine algorithm
+  sortByName() {
+    this.data.sort((a, b) => a.name.localeCompare(b.name));
   }
 
   // Update item at index

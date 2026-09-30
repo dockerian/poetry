@@ -42,6 +42,7 @@
     - `End` (`Fn+▶`, `⌘+▶`, or `↘)` on MacOS): navigate to the last image
     - `←` (Left): navigate to previous index
     - `→` (Right): navigate to next index
+  * UI should allow user to touch the navigation key to browse, touch the counter to go to the end
   * UI should show only center image and toggle controls visibility on click or touch at center
   * UI has a button or optionally allows clicking center zone to open image in a new window
   * UI displays images counter at loading complete

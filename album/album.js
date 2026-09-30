@@ -110,6 +110,7 @@ const selectiveToIgnore = [
   '.p-exif',
   '.p-exif-loc',
   '.p-actions',
+  '.divCount',
   '.click-zone',
   '.btn-nav'
 ];
@@ -335,6 +336,7 @@ async function navigate(num, onSlideshow = false) {
     disableViews();
     return;
   }
+  console.debug(`navigate: ${num}, onSlideshow = ${onSlideshow}`);
   if (!onSlideshow) {
     quitSlideshow();
   }
@@ -1012,6 +1014,14 @@ clikZone.addEventListener('keydown', (event) => {
     clearControls();
   }
 });
+
+// Counter tap to the end
+divCount.addEventListener('touchstart', (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  navigate(album.size - currentIndex - 1);
+  flashMobileControls();
+}, { passive: false });
 
 elemIntv.addEventListener('input', (event) => {
   this.value = slideshowState.cycling(this.value);
