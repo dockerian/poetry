@@ -2014,6 +2014,7 @@ When adapting Chinese rhymed lines into English:
 - Selected Poems
   * [Classic Poetry Books](https://www.englishliteratureebooks.com/classicpoetryebooks.html)
 - Rhyme tools
+  * [Dillfrog Muse](https://muse.dillfrog.com) [Rhyming Dictionary](https://muse.dillfrog.com/rhyme/search)
   * [RhymeZone](https://www.rhymezone.com/)
 - [Writers.com](https://writers.com/becoming-a-poet-learn-to-write-poetry)
 - [YouTube](https://www.youtube.com/results?search_query=poetic+meter)

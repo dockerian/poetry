@@ -20,6 +20,7 @@
 <summary>新译品｜Latest Trans</summary>
 
   - 寂静之声<code>2026</code>・[The Sound of Silence](#sound-of-silence)
+  - 從头再来<code>2026</code>・[Start All Over Again](#congtouzailai)
   - 红尘客<code>2026</code>　・[A Mortal Wanderer](#hongchenke)
 
 </details>
@@ -38,6 +39,7 @@
   - 糊涂的爱　　　・[The Puzzle Of Love](#hutudeai)
   - 人间道　　　　・[The Rightful World](#renjiandao)
   - 敢问路在何方　・[The Road Beneath](#ganwenluzaihefang)
+  - 從头再来　　　・[Start All Over Again](#congtouzailai)
   - 海闊天空　　　・[Under A Vast Sky](#haikuotiankong)
   - 左手指月　　　・[Upwards to the Moon](#zuoshouzhiyue)
   - 岁岁　　　　　・[Year After Year](#suisui)
@@ -604,6 +606,42 @@
   ```
 
 <p class="up"><a href="#hongchenke">&lArr;</a> &middot; <a href="#cl2e">〇</a> &middot; <a href="#title">&uArr;</a></p>
+
+### 從头再来｜Start All Over Again <a name="congtouzailai"></a>
+
+  ```
+  昨天、所有的荣誉，　　The past and all its glory
+  已变成遥远的回忆。　　Has turned into a faded memory
+  辛辛苦苦已度过半生，　Through bitter toil, half a lifetime spent
+  今夜重又走入风雨。　　Once more to face the night, all stormy
+
+  我不能、随波浮沉，　　I cannot drift and thus descend
+  为了我致爱的亲人。　　For those I love, my strength I'll lend
+  再苦再难也要坚强，　　Though rough, though tough, I will be strong
+  只为那些期待眼神。　　For those whose hopes on me depend
+
+  昨天、所有的荣誉，　　Yesterday’s glory flies away
+  已变成遥远的回忆。　　As all memory turns into gray
+  辛辛苦苦已度过半生，　Toiling, moiling, half a lifetime spent
+  今夜重又走入风雨。　　Once more to face the storm and rain
+
+  我不能、随波浮沉，　　I will not drift, nor will I bend
+  为了我致爱的亲人。　　For the ones I love and I will defend
+  再苦再难也要坚强，　　Through the bitter days, I'll still stand strong
+  只为那些期待眼神。　　For those whose eyes on me depend
+
+  心若在、梦～就在，　　With hearts alive, the dreams hold might
+  天地之间还有真爱。　　The love still burns beneath the sky
+  看成败、人生豪迈，　　Through fall or rise, my soul is high
+  只不过是從头再来。　　It’s just to start again and try
+
+  心若在、梦～就在，　　As long the dreams live, so will I
+  天地之间还有真爱。　　As love still burns beneath the sky
+  看成败、人生豪迈，　　To live or die, to stand up high
+  只不过是從头再来。　　Just to start over and to try
+  ```
+
+<p class="up"><a href="#congtouzailai">&lArr;</a> &middot; <a href="#cl2e">〇</a> &middot; <a href="#title">&uArr;</a></p>
 
 ### 岁岁｜Year After Year <a name="suisui"></a>
 

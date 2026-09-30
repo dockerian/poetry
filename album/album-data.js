@@ -227,6 +227,7 @@ const defaultImages = [
   "20260626-Poem.jpg",
   "20260820-Poem.jpg",
   "20260907-Poem.jpg",
+  "20260930-Lyrics.png",
   "Poem-Forms.jpg"
 ];
 
@@ -399,7 +400,7 @@ const muluLyrics = [
   { name: "zhyx-20251013x", dateStamp: "2025.10.13", dateymd: "2025-10-13", mulu: "d20251013x", pid: "p20251013x", type: "中文译词", subject: "女人於爱", title: "Woman in Love｜女人於爱", titleEng: "Woman in Love", tags: "el2c show zhyx", dataFile: "", source: "", orig: "Barry Gibb and Robin Gibb" },
   { name: "zhyx-20251027x", dateStamp: "2025.10.27", dateymd: "2025-10-27", mulu: "d20251027x", pid: "p20251027x", type: "英文填词", subject: "如愿", title: "As You Wished｜如愿", titleEng: "As You Wished", tags: "ying cl2e engp show zhyx", dataFile: "", source: "", orig: "唐恬" },
   { name: "zhyx-20251121x", dateStamp: "2025.11.21", dateymd: "2025-11-21", mulu: "d20251121x", pid: "p20251121x", type: "英文填词", subject: "左手指月", title: "Up Towards to the Moon｜左手指月", titleEng: "Up Towards to the Moon", tags: "ying cl2e engp show zhyx", dataFile: "", source: "", orig: "俞江" },
-  { name: "zhyx-20251122x", dateStamp: "2025.11.22", dateymd: "2025-11-22", mulu: "d20251122x", pid: "p20251122x", type: "英文填词", subject: "孤独的浪客", title: "Lonely Wanderer｜孤独的浪客", titleEng: "Lonely Wanderer", tags: "ying cl2e engp zhyx", dataFile: "", source: "", orig: "Phoenix Legend｜凤凰传奇" },
+  { name: "zhyx-20251122x", dateStamp: "2025.11.22", dateymd: "2025-11-22", mulu: "d20251122x", pid: "p20251122x", type: "英文填词", subject: "孤独的浪客", title: "Lonely Wanderer｜孤独的浪客", titleEng: "Lonely Wanderer", tags: "ying cl2e engp show zhyx", dataFile: "", source: "", orig: "Phoenix Legend｜凤凰传奇" },
   { name: "zhyx-20251123x", dateStamp: "2025.11.23", dateymd: "2025-11-23", mulu: "d20251123x", pid: "p20251123x", type: "英文填词", subject: "苍穹唤", title: "Echo of the Sky｜苍穹唤", titleEng: "Echo of the Sky", tags: "ying cl2e engp show zhyx", dataFile: "", source: "", orig: "王月飞" },
   { name: "zhyx-20251125x", dateStamp: "2025.11.25", dateymd: "2025-11-25", mulu: "d20251125x", pid: "p20251125x", type: "英文填词", subject: "岁岁", title: "Year After Year｜岁岁", titleEng: "Year After Year", tags: "ying cl2e engp view zhyx", dataFile: "", source: "", orig: "任素汐" },
   { name: "zhyx-20251130x", dateStamp: "2025.11.30", dateymd: "2025-11-30", mulu: "d20251130x", pid: "p20251130x", type: "英文填词", subject: "敢问路在何方", title: "The Road Beneath｜敢问路在何方", titleEng: "The Road Beneath", tags: "ying cl2e engp show zhyx", dataFile: "20251130\-Lyrics.jpg", source: "", orig: "许镜清" },
@@ -407,11 +408,12 @@ const muluLyrics = [
   { name: "zhou-20260710x", dateStamp: "2026.07.10", dateymd: "2026-07-10", mulu: "d20260710x", pid: "p20260710x", type: "中文白话", subject: "转机旅程", title: "Layover｜转机旅程", titleEng: "Layover", tags: "mulu zhou", dataFile: "", source: "", orig: "Lin Zhou" },
   { name: "zhyx-20260815x", dateStamp: "2026.08.15", dateymd: "2026-08-15", mulu: "d20260815x", pid: "p20260815x", type: "中文译词", subject: "鸦将之女暴风种", title: "Daughter of the Raven, Son of the Storm｜鸦将之女暴风种", titleEng: "Daughter of the Raven, Son of the Storm", tags: "el2c epic zhyx", dataFile: "", source: "", orig: "Rendering Realm" },
   { name: "zhyx-20260816x", dateStamp: "2026.08.16", dateymd: "2026-08-16", mulu: "d20260816x", pid: "p20260816x", type: "中文译词", subject: "瓦尔哈拉的女儿", title: "Valhalla's Daughters｜瓦尔哈拉的女儿", titleEng: "Valhalla's Daughters", tags: "el2c epic zhyx", dataFile: "", source: "", orig: "The Leading Wolf" },
-  { name: "zhyx-20260817x", dateStamp: "2026.08.17", dateymd: "2026-08-17", mulu: "d20260817x", pid: "p20260817x", type: "中文译词", subject: "英灵之女", title: "Valhalla's Daughters｜英灵之女", titleEng: "Valhalla's Daughters", tags: "el2c epic zhyx", dataFile: "", source: "", orig: "Raven Astrid" },
-  { name: "zhyx-20260819x", dateStamp: "2026.08.19", dateymd: "2026-08-19", mulu: "d20260819x", pid: "p20260819x", type: "中文译词", subject: "鸦神之召", title: "Ravens Calling｜鸦神之召", titleEng: "Ravens Calling", tags: "el2c epic zhyx", dataFile: "", source: "", orig: "Raven Astrid" },
+  { name: "zhyx-20260817x", dateStamp: "2026.08.17", dateymd: "2026-08-17", mulu: "d20260817x", pid: "p20260817x", type: "中文译词", subject: "英灵之女", title: "Valhalla's Daughters｜英灵之女", titleEng: "Valhalla's Daughters", tags: "el2c epic show zhyx", dataFile: "", source: "", orig: "Raven Astrid" },
+  { name: "zhyx-20260819x", dateStamp: "2026.08.19", dateymd: "2026-08-19", mulu: "d20260819x", pid: "p20260819x", type: "中文译词", subject: "鸦神之召", title: "Ravens Calling｜鸦神之召", titleEng: "Ravens Calling", tags: "el2c epic show zhyx", dataFile: "", source: "", orig: "Raven Astrid" },
   { name: "zhyx-20260821x", dateStamp: "2026.08.21", dateymd: "2026-08-21", mulu: "d20260821x", pid: "p20260821x", type: "中文译词", subject: "维京梦", title: "Viking Dream｜维京梦", titleEng: "Viking Dream", tags: "el2c epic zhyx", dataFile: "", source: "", orig: "Raven Astrid" },
   { name: "zhyx-20260905x", dateStamp: "2026.09.05", dateymd: "2026-09-05", mulu: "d20260905x", pid: "p20260905x", type: "中文译词", subject: "寂静之声", title: "The Sound of Silence｜寂静之声", titleEng: "The Sound of Silence", tags: "el2c zhyx", dataFile: "", source: "", orig: "Paul Simon" },
   { name: "zhyx-20260912x", dateStamp: "2026.09.12", dateymd: "2026-09-12", mulu: "d20260912x", pid: "p20260912x", type: "英文填词", subject: "红尘客", title: "A Mortal Wanderer｜红尘客", titleEng: "A Mortal Wanderer", tags: "ying cl2e engp zhyx", dataFile: "", source: "", orig: "闫双" },
+  { name: "zhyx-20260930x", dateStamp: "2026.09.30", dateymd: "2026-09-30", mulu: "d20260930x", pid: "p20260930x", type: "英文填词", subject: "從头再来", title: "Start Over Again｜從头再来", titleEng: "Start Over Again", tags: "ying cl2e engp show zhyx", dataFile: "", source: "", orig: "陈涛" },
 ];
 /* END const muluLyrics */
 
