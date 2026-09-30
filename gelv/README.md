@@ -41,13 +41,16 @@
   - [平水韵表](html/pingshui.html)｜
     [正韵简编](html/cilinzhengyun.html)｜
     [拼音韻表](html/xinyun.html)
-  - [新韵字表](../blog/xinyun.md)｜[漢字符號](../blog/zi.md)
+  - [新韵字表](../blog/xinyun.md)｜
+    [漢字符號](../blog/zi.md)
   - [新词对韵](html/shenglv-duiyun.html)｜
     [十三大辙](html/shisanzhe.html)
-  - [禅意诗评](../blog/gushi-zen.md)｜[禅诗三百首](../blog/gushi-chan.md)
-  - [水浒传诗钞](../blog/gushi-shuihu.md)
-  - [古诗英译](./gushi.md)
+  - 名著诗钞：
+    [红楼](html/shiji-honglou.html)｜[三国](../blog/gushi-sanguo.md)｜[水浒](../blog/gushi-shuihu.md)｜[西游](../blog/gushi-xiyou.md)
+  - [禅意诗评](../blog/gushi-zen.md)｜
+    [禅诗三百首](../blog/gushi-chan.md)
   - [英诗中译](html/shiji-star.html)
+  - [古诗英译](../blog/gushi.md)
 
 
 <br/><a id="res" name="res"></a>

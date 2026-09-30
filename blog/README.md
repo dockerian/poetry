@@ -27,10 +27,10 @@
   * 网络摘抄
     - [中国哲学](gu.md)｜[北欧神话体系](norse.md)
     - [土味情话](mylines.html#qinghua)｜[撩妹大全](mylines.html#liaomei)
-    - [電子書籍](../books)｜[读书笔记](mynotes.pdf)｜[消化油墨集.epub](../books/消化油墨集.epub)・&#128218;
+    - [電子書籍](../books)｜[读书笔记](mynotes.pdf)｜[下载书籍](../books/)・&#128218;
     - [新韵字表](./xinyun.md)｜[漢字符號](./zi.md)
+    - 名著诗钞：[红楼](../gelv/html/shiji-honglou.html)｜[三国](./gushi-sanguo.md)｜[水浒](./gushi-shuihu.md)｜[西游](./gushi-xiyou.md)
     - [禅意诗评](./gushi-zen.md)｜[禅诗三百首](./gushi-chan.md)
-    - [水浒传诗钞](./gushi-shuihu.md)
     - [古诗英译](./gushi.md)
 
   * 旅图网址・纱糸轩：
